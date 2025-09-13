@@ -1,0 +1,275 @@
+{
+
+  "modes": ["ROS", "PE", "MSE"],
+  "sectionsByMode": {
+    "PE": ["General"],
+    "ROS": ["General"],
+    "MSE": ["General"]
+  },
+  "sectionDefs": {
+    "PE:General": {
+      "headerChecks": [
+        { "id": "vs_reviewed", "label": "Vital signs reviewed" },
+        { "id": "nursing_note", "label": "Nursing note reviewed" },
+        { "id": "chaperone", "label": "Chaperone present" }
+      ],
+      "panels": [
+        {
+          "title": "Constitutional",
+          "checkboxes": [
+            {"id":"pe_const_alert","label":"alert"},
+            {"id":"pe_const_nl_appearance","label":"nl appearance"},
+            {"id":"pe_const_nl_weight","label":"nl weight"},
+            {"id":"pe_const_obese","label":"obese"}
+          ],
+          "chips": [
+            {"id":"pe_const_acute_distress","label":"acute distress","type":"toggle","critical":true},
+            {"id":"pe_const_ill_appearing","label":"ill-appearing","type":"toggle"},
+            {"id":"pe_const_toxic_appearing","label":"toxic-appearing","type":"toggle"},
+            {"id":"pe_const_diaphoretic","label":"diaphoretic","type":"toggle"}
+          ]
+        },
+        {
+          "title": "HENT — Head",
+          "checkboxes": [
+            {"id":"pe_head_normocephalic","label":"normocephalic"},
+            {"id":"pe_head_atraumatic","label":"atraumatic"}
+          ],
+          "chips": []
+        },
+        {
+          "title": "HENT — Ears (Right)",
+          "checkboxes": [
+            {"id":"pe_ear_r_tm_nl","label":"TM nl"},
+            {"id":"pe_ear_r_canal_nl","label":"canal nl"},
+            {"id":"pe_ear_r_ext_ear_nl","label":"external ear nl"}
+          ],
+          "chips": [
+            {"id":"pe_ear_r_impacted_cerumen","label":"impacted cerumen","type":"toggle"}
+          ]
+        },
+        {
+          "title": "HENT — Ears (Left)",
+          "checkboxes": [
+            {"id":"pe_ear_l_tm_nl","label":"TM nl"},
+            {"id":"pe_ear_l_canal_nl","label":"canal nl"},
+            {"id":"pe_ear_l_ext_ear_nl","label":"external ear nl"}
+          ],
+          "chips": [
+            {"id":"pe_ear_l_impacted_cerumen","label":"impacted cerumen","type":"toggle"}
+          ]
+        },
+        {
+          "title": "HENT — Nose",
+          "checkboxes": [
+            {"id":"pe_nose_nl","label":"nose nl"}
+          ],
+          "chips": [
+            {"id":"pe_nose_congestion","label":"congestion","type":"toggle"},
+            {"id":"pe_nose_rhinorrhea","label":"rhinorrhea","type":"toggle"}
+          ]
+        },
+        {
+          "title": "HENT — Mouth/Throat",
+          "checkboxes": [
+            {"id":"pe_mouth_moist","label":"moist"},
+            {"id":"pe_mouth_dry","label":"dry"},
+            {"id":"pe_mouth_clear","label":"clear"}
+          ],
+          "chips": [
+            {"id":"pe_mouth_exudate","label":"exudate","type":"toggle"},
+            {"id":"pe_mouth_erythema","label":"erythema","type":"toggle"}
+          ]
+        },
+        {
+          "title": "Eyes",
+          "checkboxes": [
+            {"id":"pe_eyes_perrl","label":"PERRL"},
+            {"id":"pe_eyes_eom_intact","label":"EOM intact"},
+            {"id":"pe_eyes_conj_nl","label":"conjunctivae nl"}
+          ],
+          "chips": [
+            {"id":"pe_eyes_right_discharge","label":"right eye discharge","type":"toggle"},
+            {"id":"pe_eyes_left_discharge","label":"left eye discharge","type":"toggle"},
+            {"id":"pe_eyes_scleral_icterus","label":"scleral icterus","type":"toggle"}
+          ]
+        },
+        {
+          "title": "Neck",
+          "checkboxes": [
+            {"id":"pe_neck_rom_nl","label":"ROM nl"},
+            {"id":"pe_neck_supple","label":"supple"}
+          ],
+          "chips": [
+            {"id":"pe_neck_rigidity","label":"neck rigidity","type":"toggle"},
+            {"id":"pe_neck_tenderness","label":"tenderness","type":"toggle"},
+            {"id":"pe_neck_cervical_adeno","label":"cervical adenopathy","type":"toggle"},
+            {"id":"pe_neck_carotid_bruit","label":"carotid bruit","type":"toggle"}
+          ]
+        },
+        {
+          "title": "Cardiovascular — Rate",
+          "checkboxes": [
+            {"id":"pe_cv_normal_rate","label":"normal rate"}
+          ],
+          "chips": [
+            {"id":"pe_cv_tachy","label":"tachycardia","type":"toggle"},
+            {"id":"pe_cv_brady","label":"bradycardia","type":"toggle"}
+          ]
+        },
+        {
+          "title": "Cardiovascular — Rhythm",
+          "checkboxes": [
+            {"id":"pe_cv_regular_rhythm","label":"regular rhythm"}
+          ],
+          "chips": [
+            {"id":"pe_cv_irregular","label":"irregular","type":"toggle"},
+            {"id":"pe_cv_reg_irreg","label":"regularly irregular","type":"toggle"}
+          ]
+        },
+        {
+          "title": "Cardiovascular — Pulses and Heart Sounds",
+          "checkboxes": [
+            {"id":"pe_cv_pulses_nl","label":"pulses nl"},
+            {"id":"pe_cv_heart_sounds_nl","label":"heart sounds nl"}
+          ],
+          "chips": [
+            {"id":"pe_cv_murmur","label":"murmur","type":"toggle"},
+            {"id":"pe_cv_friction_rub","label":"friction rub","type":"toggle"},
+            {"id":"pe_cv_gallop","label":"gallop","type":"toggle"}
+          ]
+        },
+        {
+          "title": "Pulmonary",
+          "checkboxes": [
+            {"id":"pe_pulm_effort_nl","label":"effort nl"},
+            {"id":"pe_pulm_bs_nl","label":"breath sounds nl"}
+          ],
+          "chips": [
+            {"id":"pe_pulm_resp_distress","label":"respiratory distress","type":"toggle"},
+            {"id":"pe_pulm_wheezes","label":"wheezes","type":"toggle"},
+            {"id":"pe_pulm_rales","label":"rales","type":"toggle"},
+            {"id":"pe_pulm_stridor","label":"stridor","type":"toggle","critical":true},
+            {"id":"pe_pulm_rhonchi","label":"rhonchi","type":"toggle"},
+            {"id":"pe_pulm_chest_tenderness","label":"chest tenderness","type":"toggle"}
+          ]
+        },
+        {
+          "title": "Abdominal",
+          "checkboxes": [
+            {"id":"pe_abd_flat","label":"flat"},
+            {"id":"pe_abd_soft","label":"soft"},
+            {"id":"pe_abd_bs_nl","label":"bowel sounds nl"}
+          ],
+          "chips": [
+            {"id":"pe_abd_distension","label":"distension","type":"toggle"},
+            {"id":"pe_abd_tenderness","label":"tenderness","type":"toggle"},
+            {"id":"pe_abd_guarding","label":"guarding","type":"toggle"},
+            {"id":"pe_abd_rebound","label":"rebound","type":"toggle"},
+            {"id":"pe_abd_right_cva_tender","label":"right CVA tenderness","type":"toggle"},
+            {"id":"pe_abd_left_cva_tender","label":"left CVA tenderness","type":"toggle"},
+            {"id":"pe_abd_mass","label":"mass","type":"toggle"},
+            {"id":"pe_abd_hernia","label":"hernia","type":"toggle"}
+          ]
+        },
+        {
+          "title": "Genitourinary/Anorectal",
+          "checkboxes": [
+            {"id":"pe_gu_vulva_nl","label":"vulva nl"},
+            {"id":"pe_gu_rectum_nl","label":"rectum nl"}
+          ],
+          "chips": [
+            {"id":"pe_gu_guaiac_result","label":"guaiac result","type":"toggle"},
+            {"id":"pe_gu_vaginal_discharge","label":"vaginal discharge","type":"toggle"}
+          ]
+        },
+        {
+          "title": "Musculoskeletal",
+          "checkboxes": [
+            {"id":"pe_msk_rom_nl","label":"ROM nl"}
+          ],
+          "chips": [
+            {"id":"pe_msk_swelling","label":"swelling","type":"toggle"},
+            {"id":"pe_msk_deformity","label":"deformity","type":"toggle"},
+            {"id":"pe_msk_tenderness","label":"tenderness","type":"toggle"},
+            {"id":"pe_msk_injury","label":"injury","type":"toggle"},
+            {"id":"pe_msk_rle_edema","label":"RLE edema","type":"toggle"},
+            {"id":"pe_msk_lle_edema","label":"LLE edema","type":"toggle"}
+          ]
+        },
+        {
+          "title": "Skin",
+          "checkboxes": [
+            {"id":"pe_skin_warm","label":"warm"},
+            {"id":"pe_skin_dry","label":"dry"}
+          ],
+          "chips": [
+            {"id":"pe_skin_jaundiced","label":"jaundiced","type":"toggle"},
+            {"id":"pe_skin_bruising","label":"bruising","type":"toggle"},
+            {"id":"pe_skin_lesion","label":"lesion","type":"toggle"},
+            {"id":"pe_skin_pale","label":"pale","type":"toggle"},
+            {"id":"pe_skin_erythema","label":"erythema","type":"toggle"},
+            {"id":"pe_skin_rash","label":"rash","type":"toggle"}
+          ]
+        },
+        {
+          "title": "Neurological",
+          "checkboxes": [
+            {"id":"pe_neuro_no_focal_deficit","label":"no focal deficit"},
+            {"id":"pe_neuro_oriented_x3","label":"oriented x3"},
+            {"id":"pe_neuro_at_baseline","label":"at baseline"}
+          ],
+          "chips": [
+            {"id":"pe_neuro_disoriented","label":"disoriented","type":"toggle"},
+            {"id":"pe_neuro_cranial_nerve_deficit","label":"cranial nerve deficit","type":"toggle"},
+            {"id":"pe_neuro_sensory_deficit","label":"sensory deficit","type":"toggle"},
+            {"id":"pe_neuro_weakness","label":"weakness","type":"toggle"},
+            {"id":"pe_neuro_abnl_coordination","label":"abnl coordination","type":"toggle"},
+            {"id":"pe_neuro_abnl_gait","label":"abnl gait","type":"toggle"},
+            {"id":"pe_neuro_abnl_dtrs","label":"abnl DTRs","type":"toggle"}
+          ]
+        },
+        {
+          "title": "Psychiatric/Behavioral",
+          "checkboxes": [
+            {"id":"pe_psych_mood_nl","label":"mood nl"},
+            {"id":"pe_psych_behavior_nl","label":"behavior nl"},
+            {"id":"pe_psych_thought_nl","label":"thought content nl"},
+            {"id":"pe_psych_judgment_nl","label":"judgment nl"}
+          ],
+          "chips": []
+        }
+      ]
+    },
+ 
+    "ROS:General": {
+      "headerToggles": [{"id":"ros_const_neg","label":"neg"}],
+      "panels": [
+        { "title":"Constitutional", "chips":[
+          {"id":"ros_const_fever","label":"fever","type":"toggle"},
+          {"id":"ros_const_chills","label":"chills","type":"toggle"},
+          {"id":"ros_const_fatigue","label":"fatigue","type":"toggle"}
+        ]}
+      ]
+    },
+    "MSE:General": {
+      "panels": [
+        { "title":"Appearance",
+          "checkboxes":[
+            {"id":"mse_groomed","label":"well groomed"}
+          ],
+          "chips":[
+            {"id":"mse_disheveled","label":"disheveled","type":"toggle"}
+          ]
+        }
+      ]
+    }
+  },
+  "globals":
+    "ROS": [
+      {
+      "id":"ros_aosn",
+      "label":"All other systems negative"
+      }
+    ]
+  }
