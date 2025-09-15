@@ -322,7 +322,7 @@ function chip(def, value, onMouse){
   affMinus.textContent = "–";
   affMinus.onclick = (e) => {
     e.stopPropagation();
-    setChipNeg(def.id);
+    setChipPos(def.id); // minus now sets ABNORMAL (critical), same as right-click
     renderGrid();
     renderOutput();
   };
