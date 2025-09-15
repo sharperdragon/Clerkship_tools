@@ -5,7 +5,6 @@
   },
   "sectionDefs": {
     "ROS:General": {
-      "headerToggles": [{ "id": "ros_const_neg", "label": "neg" }],
       "panels": [
         {
           "title": "Constitutional",
