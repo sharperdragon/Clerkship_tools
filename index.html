@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NoteWriter</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="appbar">
+    <h1>NoteWriter</h1>
+    <div class="tools">
+      <button id="copyBtn" title="Copy output">Copy</button>
+      <button id="clearSectionBtn" title="Clear section">Clear Section</button>
+      <button id="clearAllBtn" title="Clear all">Clear All</button>
+    </div>
+  </header>
+
+  <nav id="tier1" class="tabs tier1"></nav>
+  <nav id="tier2" class="tabs tier2"></nav>
+  <div id="headerChecks" class="header-checks-bar" aria-live="polite"></div>
+  <main id="grid" class="section-grid" aria-live="polite"></main>
+
+  <aside class="output">
+    <div class="output-header">Output</div>
+    <textarea id="out" rows="10" spellcheck="false"></textarea>
+  </aside>
+
+  <script src="app.js"></script>
+</body>
+</html>

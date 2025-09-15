@@ -1,9 +1,7 @@
 {
-  "modes": ["ROS", "PE", "MSE"],
+  "modes": ["PE"],
   "sectionsByMode": {
-    "PE": ["General"],
-    "ROS": ["General"],
-    "MSE": ["General"]
+    "PE": ["General"]
   },
   "sectionDefs": {
     "PE:General": {
@@ -259,35 +257,7 @@
           "chips": []
         }
       ]
-    },
-    "ROS:General": {
-      "headerToggles": [{"id":"ros_const_neg","label":"neg"}],
-      "panels": [
-        { "title":"Constitutional", "chips":[
-          {"id":"ros_const_fever","label":"fever","type":"toggle"},
-          {"id":"ros_const_chills","label":"chills","type":"toggle"},
-          {"id":"ros_const_fatigue","label":"fatigue","type":"toggle"}
-        ]}
-      ]
-    },
-    "MSE:General": {
-      "panels": [
-        { "title":"Appearance",
-          "checkboxes":[
-            {"id":"mse_groomed","label":"well groomed"}
-          ],
-          "chips":[
-            {"id":"mse_disheveled","label":"disheveled","type":"toggle"}
-          ]
-        }
-      ]
     }
   },
-  "globals": {
-    "ROS": [
-      {
-      "id":"ros_aosn",
-      "label":"All other systems negative"
-      }
-    ]}
-  }
+  "globals": {}
+}

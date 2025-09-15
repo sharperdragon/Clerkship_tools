@@ -1,0 +1,191 @@
+{
+  "modes": ["ROS"],
+  "sectionsByMode": {
+    "ROS": ["General"]
+  },
+  "sectionDefs": {
+    "ROS:General": {
+      "headerToggles": [{ "id": "ros_const_neg", "label": "neg" }],
+      "panels": [
+        {
+          "title": "Constitutional",
+          "chips": [
+            { "id": "ros_const_fever", "label": "fever", "type": "toggle" },
+            { "id": "ros_const_chills", "label": "chills", "type": "toggle" },
+            { "id": "ros_const_fatigue", "label": "fatigue", "type": "toggle" },
+            { "id": "ros_const_weight_loss", "label": "weight loss", "type": "toggle" },
+            { "id": "ros_const_weight_gain", "label": "weight gain", "type": "toggle" }
+          ]
+        },
+        {
+          "title": "HENT",
+          "subsections": [
+            {
+              "title": "Head",
+              "chips": [
+                { "id": "ros_head_headache", "label": "headache", "type": "toggle" },
+                { "id": "ros_head_sinus_pressure", "label": "sinus pressure", "type": "toggle" }
+              ]
+            },
+            {
+              "title": "Ears (Right)",
+              "checkboxes": [],
+              "chips": [
+                { "id": "ros_ear_r_otalgia", "label": "ear pain (R)", "type": "toggle" },
+                { "id": "ros_ear_r_fullness", "label": "fullness (R)", "type": "toggle" },
+                { "id": "ros_ear_r_discharge", "label": "otorrhea (R)", "type": "toggle" }
+              ]
+            },
+            {
+              "title": "Ears (Left)",
+              "checkboxes": [],
+              "chips": [
+                { "id": "ros_ear_l_otalgia", "label": "ear pain (L)", "type": "toggle" },
+                { "id": "ros_ear_l_fullness", "label": "fullness (L)", "type": "toggle" },
+                { "id": "ros_ear_l_discharge", "label": "otorrhea (L)", "type": "toggle" }
+              ]
+            },
+            {
+              "title": "Nose",
+              "chips": [
+                { "id": "ros_nose_congestion", "label": "congestion", "type": "toggle" },
+                { "id": "ros_nose_rhinorrhea", "label": "rhinorrhea", "type": "toggle" },
+                { "id": "ros_nose_epistaxis", "label": "epistaxis", "type": "toggle" },
+                { "id": "ros_nose_postnasal_drip", "label": "postnasal drip", "type": "toggle" }
+              ]
+            },
+            {
+              "title": "Mouth/Throat",
+              "chips": [
+                { "id": "ros_throat_sore", "label": "sore throat", "type": "toggle" },
+                { "id": "ros_throat_dysphagia", "label": "dysphagia", "type": "toggle" },
+                { "id": "ros_throat_odynophagia", "label": "odynophagia", "type": "toggle" },
+                { "id": "ros_throat_voice_change", "label": "voice change", "type": "toggle" }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Eyes",
+          "chips": [
+            { "id": "ros_eyes_pain", "label": "eye pain", "type": "toggle" },
+            { "id": "ros_eyes_pruritus", "label": "itching", "type": "toggle" },
+            { "id": "ros_eyes_discharge_r", "label": "right eye discharge", "type": "toggle" },
+            { "id": "ros_eyes_discharge_l", "label": "left eye discharge", "type": "toggle" },
+            { "id": "ros_eyes_photophobia", "label": "photophobia", "type": "toggle" },
+            { "id": "ros_eyes_visual_change", "label": "vision change", "type": "toggle" },
+            { "id": "ros_eyes_scleral_icterus", "label": "scleral icterus", "type": "toggle" }
+          ]
+        },
+        {
+          "title": "Neck",
+          "chips": [
+            { "id": "ros_neck_stiffness", "label": "stiffness", "type": "toggle" },
+            { "id": "ros_neck_pain", "label": "pain", "type": "toggle" },
+            { "id": "ros_neck_swollen_nodes", "label": "swollen nodes", "type": "toggle" }
+          ]
+        },
+        {
+          "title": "Cardiovascular",
+          "subsections": [
+            {
+              "title": "Rate/Rhythm",
+              "chips": [
+                { "id": "ros_cv_palpitations", "label": "palpitations", "type": "toggle" },
+                { "id": "ros_cv_tachy", "label": "tachycardia", "type": "toggle" },
+                { "id": "ros_cv_brady", "label": "bradycardia", "type": "toggle" },
+                { "id": "ros_cv_irregular", "label": "irregular rhythm", "type": "toggle" }
+              ]
+            },
+            {
+              "title": "Pulses & Sounds",
+              "chips": [
+                { "id": "ros_cv_chest_pain", "label": "chest pain", "type": "toggle" },
+                { "id": "ros_cv_murmur", "label": "murmur noted", "type": "toggle" },
+                { "id": "ros_cv_edema", "label": "peripheral edema", "type": "toggle" }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Pulmonary",
+          "chips": [
+            { "id": "ros_pulm_dyspnea", "label": "shortness of breath", "type": "toggle" },
+            { "id": "ros_pulm_cough", "label": "cough", "type": "toggle" },
+            { "id": "ros_pulm_wheezes", "label": "wheezes", "type": "toggle" },
+            { "id": "ros_pulm_rales", "label": "rales", "type": "toggle" },
+            { "id": "ros_pulm_stridor", "label": "stridor", "type": "toggle", "critical": true },
+            { "id": "ros_pulm_chest_tenderness", "label": "chest wall tenderness", "type": "toggle" }
+          ]
+        },
+        {
+          "title": "Abdominal",
+          "chips": [
+            { "id": "ros_abd_pain", "label": "abdominal pain", "type": "toggle" },
+            { "id": "ros_abd_nausea", "label": "nausea", "type": "toggle" },
+            { "id": "ros_abd_vomiting", "label": "vomiting", "type": "toggle" },
+            { "id": "ros_abd_diarrhea", "label": "diarrhea", "type": "toggle" },
+            { "id": "ros_abd_constipation", "label": "constipation", "type": "toggle" },
+            { "id": "ros_abd_distension", "label": "distension", "type": "toggle" },
+            { "id": "ros_abd_brbpr", "label": "BRBPR", "type": "toggle" }
+          ]
+        },
+        {
+          "title": "Genitourinary/Anorectal",
+          "chips": [
+            { "id": "ros_gu_dysuria", "label": "dysuria", "type": "toggle" },
+            { "id": "ros_gu_frequency", "label": "frequency", "type": "toggle" },
+            { "id": "ros_gu_hematuria", "label": "hematuria", "type": "toggle" },
+            { "id": "ros_gu_vaginal_discharge", "label": "vaginal discharge", "type": "toggle" },
+            { "id": "ros_gu_melena", "label": "melena", "type": "toggle" }
+          ]
+        },
+        {
+          "title": "Musculoskeletal",
+          "chips": [
+            { "id": "ros_msk_myalgias", "label": "myalgias", "type": "toggle" },
+            { "id": "ros_msk_arthralgias", "label": "arthralgias", "type": "toggle" },
+            { "id": "ros_msk_swelling", "label": "swelling", "type": "toggle" },
+            { "id": "ros_msk_back_pain", "label": "back pain", "type": "toggle" }
+          ]
+        },
+        {
+          "title": "Skin",
+          "chips": [
+            { "id": "ros_skin_rash", "label": "rash", "type": "toggle" },
+            { "id": "ros_skin_itching", "label": "itching", "type": "toggle" },
+            { "id": "ros_skin_bruising", "label": "bruising", "type": "toggle" },
+            { "id": "ros_skin_jaundiced", "label": "jaundice", "type": "toggle" },
+            { "id": "ros_skin_pallor", "label": "pallor", "type": "toggle" },
+            { "id": "ros_skin_lesions", "label": "lesions", "type": "toggle" }
+          ]
+        },
+        {
+          "title": "Neurological",
+          "chips": [
+            { "id": "ros_neuro_headache", "label": "headache", "type": "toggle" },
+            { "id": "ros_neuro_dizziness", "label": "dizziness", "type": "toggle" },
+            { "id": "ros_neuro_syncope", "label": "syncope", "type": "toggle" },
+            { "id": "ros_neuro_weakness", "label": "weakness", "type": "toggle" },
+            { "id": "ros_neuro_numbness", "label": "numbness/tingling", "type": "toggle" },
+            { "id": "ros_neuro_gait", "label": "gait change", "type": "toggle" }
+          ]
+        },
+        {
+          "title": "Psychiatric/Behavioral",
+          "chips": [
+            { "id": "ros_psych_anxiety", "label": "anxiety", "type": "toggle" },
+            { "id": "ros_psych_depression", "label": "depression", "type": "toggle" },
+            { "id": "ros_psych_suicidal", "label": "SI/HI", "type": "toggle" },
+            { "id": "ros_psych_sleep", "label": "sleep disturbance", "type": "toggle" }
+          ]
+        }
+      ]
+    }
+  },
+  "globals": {
+    "ROS": [
+      { "id": "ros_aosn", "label": "All other systems negative" }
+    ]
+  }
+}
