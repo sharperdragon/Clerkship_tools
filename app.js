@@ -426,17 +426,23 @@ function findDef(secKey, id){
 function formatChipForOutput(secKey, id, v){
   const def = findDef(secKey, id);
   const obj = asObj(v) || {};
-  const parts = [def.label.replace(/^\+\s*/,"")];
+
+  // Prefer explicit abnormal text from template; fall back to the label
+  const base = (def.abnText || def.label || id).replace(/^\+\s*/, "");
+  const parts = [base];
+
+  // Attach modifiers (side -> leading, grade/tags -> trailing)
   if (obj.side) parts.unshift(SIDE_LABELS[obj.side] || obj.side);
   if (typeof obj.grade === "number" && def.mods?.grades){
-    const label = (GRADE_LABELS[def.mods.grades]||[])[obj.grade];
-    if (label) parts.push(label);
+    const glab = (GRADE_LABELS[def.mods.grades] || [])[obj.grade];
+    if (glab) parts.push(glab);
   }
   if (obj.tags){
-    Object.entries(obj.tags).forEach(([tag,on])=>{ if(on) parts.push(tag); });
+    Object.entries(obj.tags).forEach(([tag, on]) => { if (on) parts.push(tag); });
   }
-  const text = parts.join(" ");
-  return def.critical ? `**${text}**` : text;
+
+  // Visual criticality handled via chip classes; no bold here
+  return parts.join(" ");
 }
 
 function labelFor(secKey, id){
@@ -541,10 +547,14 @@ function formatPECheckLabel(raw){
 // Otherwise, add this full function:
 function formatChipNegForOutput(secKey, id){
   const def = findDef(secKey, id);
-  // remove any leading "+ " from labels
-  let label = (def.label || id).replace(/^\+\s*/,"").trim();
-  // lower-case the medical phrase; we'll capitalize the "No"/"Denies"
-  label = label.charAt(0).toLowerCase() + label.slice(1);
+
+  // If template provides explicit normal text, use it
+  if (def.negText) return def.negText;
+
+  // Otherwise, generate from label with mode-specific lead-in
+  let label = (def.label || id).replace(/^\+\s*/, "").trim();
+  if (label) label = label.charAt(0).toLowerCase() + label.slice(1);
+
   const isROS = secKey.startsWith("ROS:");
   return isROS ? `Denies ${label}` : `No ${label}`;
 }
