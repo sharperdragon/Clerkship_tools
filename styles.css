@@ -82,7 +82,6 @@
   font: 12px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, Arial;
   font-weight: 450;
   color: var(--ink);
-  background: var(--bg);
 }
 
 .section-grid.PE {
@@ -106,7 +105,7 @@
   -moz-column-break-inside: avoid;
 }
 
-@media (max-width: 1150px) {
+@media (max-width: 1100px) {
   .section-grid.PE {
     column-count: 2;
   }
@@ -429,4 +428,24 @@
   background: var(--chip-neg-bg);
   border: 1px solid var(--chip-neg-border);
   color: var(--chip-neg-text);
+}
+
+/* 2-column subgrid used by Cardio (Rate | Rhythm) */
+.subgrid {
+  display: grid;
+  gap: 8px;
+}
+.subgrid.cols-2 {
+  grid-template-columns: 1fr 1fr;
+}
+.subpanel {
+  border: 1px solid var(--line, #d9dee3);
+  border-radius: 6px;
+  padding: 8px;
+  background: var(--panel, #fff);
+}
+.subpanel .subhead {
+  margin: 0 0 6px 0;
+  font-weight: 600;
+  color: var(--muted, #44546a);
 }

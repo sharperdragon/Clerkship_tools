@@ -111,6 +111,7 @@
         },
         {
           "title": "Cardiovascular",
+          "layout": { "gridCols": 2, "gridUntilIndex": 1 },
           "subsections": [
             {
               "title": "Rate",
@@ -187,8 +188,8 @@
             {"id":"pe_abd_rebound","label":"rebound","type":"toggle","abnText":"rebound tenderness","negText":"no rebound tenderness"},
             {"id":"pe_abd_right_cva_tender","label":"right CVA tenderness","type":"toggle","abnText":"right CVA tenderness","negText":"no right CVA tenderness"},
             {"id":"pe_abd_left_cva_tender","label":"left CVA tenderness","type":"toggle","abnText":"left CVA tenderness","negText":"no left CVA tenderness"},
-            {"id":"pe_abd_mass","label":"mass","type":"toggle","abnText":"abdominal mass","negText":"no abdominal mass"},
-            {"id":"pe_abd_hernia","label":"hernia","type":"toggle","abnText":"hernia","negText":"no hernia"}
+            {"id":"pe_abd_mass","label":"mass","type":"toggle","abnText":"abdominal mass","negText":"no abdominal masses"},
+            {"id":"pe_abd_hernia","label":"hernia","type":"toggle","abnText":"hernia","negText":"no hernias"}
           ]
         },
         {
