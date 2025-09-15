@@ -10,11 +10,11 @@
         {
           "title": "Constitutional",
           "chips": [
-            { "id": "ros_const_fever", "label": "fever", "type": "toggle" },
-            { "id": "ros_const_chills", "label": "chills", "type": "toggle" },
-            { "id": "ros_const_fatigue", "label": "fatigue", "type": "toggle" },
-            { "id": "ros_const_weight_loss", "label": "weight loss", "type": "toggle" },
-            { "id": "ros_const_weight_gain", "label": "weight gain", "type": "toggle" }
+            { "id": "ros_const_fever",        "label": "fever",         "type": "toggle", "abnText": "fever",         "negText": "no fever" },
+            { "id": "ros_const_chills",       "label": "chills",        "type": "toggle", "abnText": "chills",        "negText": "no chills" },
+            { "id": "ros_const_fatigue",      "label": "fatigue",       "type": "toggle", "abnText": "fatigue",       "negText": "no fatigue" },
+            { "id": "ros_const_weight_loss",  "label": "weight loss",   "type": "toggle", "abnText": "weight loss",   "negText": "no weight loss" },
+            { "id": "ros_const_weight_gain",  "label": "weight gain",   "type": "toggle", "abnText": "weight gain",   "negText": "no weight gain" }
           ]
         },
         {
@@ -23,44 +23,44 @@
             {
               "title": "Head",
               "chips": [
-                { "id": "ros_head_headache", "label": "headache", "type": "toggle" },
-                { "id": "ros_head_sinus_pressure", "label": "sinus pressure", "type": "toggle" }
+                { "id": "ros_head_headache",       "label": "headache",       "type": "toggle", "abnText": "headache",       "negText": "no headache" },
+                { "id": "ros_head_sinus_pressure", "label": "sinus pressure", "type": "toggle", "abnText": "sinus pressure", "negText": "no sinus pressure" }
               ]
             },
             {
               "title": "Ears (Right)",
               "checkboxes": [],
               "chips": [
-                { "id": "ros_ear_r_otalgia", "label": "ear pain (R)", "type": "toggle" },
-                { "id": "ros_ear_r_fullness", "label": "fullness (R)", "type": "toggle" },
-                { "id": "ros_ear_r_discharge", "label": "otorrhea (R)", "type": "toggle" }
+                { "id": "ros_ear_r_otalgia",   "label": "ear pain (R)",  "type": "toggle", "abnText": "right ear pain",     "negText": "no right ear pain" },
+                { "id": "ros_ear_r_fullness",  "label": "fullness (R)",  "type": "toggle", "abnText": "right ear fullness",  "negText": "no right ear fullness" },
+                { "id": "ros_ear_r_discharge", "label": "otorrhea (R)",  "type": "toggle", "abnText": "right ear otorrhea",  "negText": "no right ear otorrhea" }
               ]
             },
             {
               "title": "Ears (Left)",
               "checkboxes": [],
               "chips": [
-                { "id": "ros_ear_l_otalgia", "label": "ear pain (L)", "type": "toggle" },
-                { "id": "ros_ear_l_fullness", "label": "fullness (L)", "type": "toggle" },
-                { "id": "ros_ear_l_discharge", "label": "otorrhea (L)", "type": "toggle" }
+                { "id": "ros_ear_l_otalgia",   "label": "ear pain (L)",  "type": "toggle", "abnText": "left ear pain",     "negText": "no left ear pain" },
+                { "id": "ros_ear_l_fullness",  "label": "fullness (L)",  "type": "toggle", "abnText": "left ear fullness",  "negText": "no left ear fullness" },
+                { "id": "ros_ear_l_discharge", "label": "otorrhea (L)",  "type": "toggle", "abnText": "left ear otorrhea",  "negText": "no left ear otorrhea" }
               ]
             },
             {
               "title": "Nose",
               "chips": [
-                { "id": "ros_nose_congestion", "label": "congestion", "type": "toggle" },
-                { "id": "ros_nose_rhinorrhea", "label": "rhinorrhea", "type": "toggle" },
-                { "id": "ros_nose_epistaxis", "label": "epistaxis", "type": "toggle" },
-                { "id": "ros_nose_postnasal_drip", "label": "postnasal drip", "type": "toggle" }
+                { "id": "ros_nose_congestion",     "label": "congestion",      "type": "toggle", "abnText": "nasal congestion",   "negText": "no nasal congestion" },
+                { "id": "ros_nose_rhinorrhea",     "label": "rhinorrhea",      "type": "toggle", "abnText": "rhinorrhea",        "negText": "no rhinorrhea" },
+                { "id": "ros_nose_epistaxis",      "label": "epistaxis",       "type": "toggle", "abnText": "epistaxis",         "negText": "no epistaxis" },
+                { "id": "ros_nose_postnasal_drip", "label": "postnasal drip",  "type": "toggle", "abnText": "postnasal drip",    "negText": "no postnasal drip" }
               ]
             },
             {
               "title": "Mouth/Throat",
               "chips": [
-                { "id": "ros_throat_sore", "label": "sore throat", "type": "toggle" },
-                { "id": "ros_throat_dysphagia", "label": "dysphagia", "type": "toggle" },
-                { "id": "ros_throat_odynophagia", "label": "odynophagia", "type": "toggle" },
-                { "id": "ros_throat_voice_change", "label": "voice change", "type": "toggle" }
+                { "id": "ros_throat_sore",        "label": "sore throat",    "type": "toggle", "abnText": "sore throat",     "negText": "no sore throat" },
+                { "id": "ros_throat_dysphagia",   "label": "dysphagia",      "type": "toggle", "abnText": "dysphagia",       "negText": "no dysphagia" },
+                { "id": "ros_throat_odynophagia", "label": "odynophagia",    "type": "toggle", "abnText": "odynophagia",     "negText": "no odynophagia" },
+                { "id": "ros_throat_voice_change", "label": "voice change",  "type": "toggle", "abnText": "voice change",    "negText": "no voice change" }
               ]
             }
           ]
@@ -68,21 +68,21 @@
         {
           "title": "Eyes",
           "chips": [
-            { "id": "ros_eyes_pain", "label": "eye pain", "type": "toggle" },
-            { "id": "ros_eyes_pruritus", "label": "itching", "type": "toggle" },
-            { "id": "ros_eyes_discharge_r", "label": "right eye discharge", "type": "toggle" },
-            { "id": "ros_eyes_discharge_l", "label": "left eye discharge", "type": "toggle" },
-            { "id": "ros_eyes_photophobia", "label": "photophobia", "type": "toggle" },
-            { "id": "ros_eyes_visual_change", "label": "vision change", "type": "toggle" },
-            { "id": "ros_eyes_scleral_icterus", "label": "scleral icterus", "type": "toggle" }
+            { "id": "ros_eyes_pain",            "label": "eye pain",           "type": "toggle", "abnText": "eye pain",            "negText": "no eye pain" },
+            { "id": "ros_eyes_pruritus",        "label": "itching",            "type": "toggle", "abnText": "eye itching",         "negText": "no eye itching" },
+            { "id": "ros_eyes_discharge_r",     "label": "right eye discharge", "type": "toggle", "abnText": "right eye discharge", "negText": "no right eye discharge" },
+            { "id": "ros_eyes_discharge_l",     "label": "left eye discharge",  "type": "toggle", "abnText": "left eye discharge",  "negText": "no left eye discharge" },
+            { "id": "ros_eyes_photophobia",     "label": "photophobia",        "type": "toggle", "abnText": "photophobia",        "negText": "no photophobia" },
+            { "id": "ros_eyes_visual_change",   "label": "vision change",      "type": "toggle", "abnText": "vision change",      "negText": "no vision change" },
+            { "id": "ros_eyes_scleral_icterus", "label": "scleral icterus",    "type": "toggle", "abnText": "scleral icterus",    "negText": "no scleral icterus" }
           ]
         },
         {
           "title": "Neck",
           "chips": [
-            { "id": "ros_neck_stiffness", "label": "stiffness", "type": "toggle" },
-            { "id": "ros_neck_pain", "label": "pain", "type": "toggle" },
-            { "id": "ros_neck_swollen_nodes", "label": "swollen nodes", "type": "toggle" }
+            { "id": "ros_neck_stiffness",    "label": "stiffness",     "type": "toggle", "abnText": "neck stiffness",     "negText": "no neck stiffness" },
+            { "id": "ros_neck_pain",         "label": "pain",          "type": "toggle", "abnText": "neck pain",          "negText": "no neck pain" },
+            { "id": "ros_neck_swollen_nodes", "label": "swollen nodes", "type": "toggle", "abnText": "neck lymphadenopathy", "negText": "no neck lymphadenopathy" }
           ]
         },
         {
@@ -91,18 +91,18 @@
             {
               "title": "Rate/Rhythm",
               "chips": [
-                { "id": "ros_cv_palpitations", "label": "palpitations", "type": "toggle" },
-                { "id": "ros_cv_tachy", "label": "tachycardia", "type": "toggle" },
-                { "id": "ros_cv_brady", "label": "bradycardia", "type": "toggle" },
-                { "id": "ros_cv_irregular", "label": "irregular rhythm", "type": "toggle" }
+                { "id": "ros_cv_palpitations", "label": "palpitations",     "type": "toggle", "abnText": "palpitations",     "negText": "no palpitations" },
+                { "id": "ros_cv_tachy",        "label": "tachycardia",      "type": "toggle", "abnText": "tachycardia",      "negText": "no tachycardia" },
+                { "id": "ros_cv_brady",        "label": "bradycardia",      "type": "toggle", "abnText": "bradycardia",      "negText": "no bradycardia" },
+                { "id": "ros_cv_irregular",    "label": "irregular rhythm", "type": "toggle", "abnText": "irregular rhythm", "negText": "no irregular rhythm" }
               ]
             },
             {
               "title": "Pulses & Sounds",
               "chips": [
-                { "id": "ros_cv_chest_pain", "label": "chest pain", "type": "toggle" },
-                { "id": "ros_cv_murmur", "label": "murmur noted", "type": "toggle" },
-                { "id": "ros_cv_edema", "label": "peripheral edema", "type": "toggle" }
+                { "id": "ros_cv_chest_pain", "label": "chest pain",       "type": "toggle", "abnText": "chest pain",       "negText": "no chest pain" },
+                { "id": "ros_cv_murmur",     "label": "murmur noted",     "type": "toggle", "abnText": "murmur",           "negText": "no murmur" },
+                { "id": "ros_cv_edema",      "label": "peripheral edema", "type": "toggle", "abnText": "peripheral edema", "negText": "no peripheral edema" }
               ]
             }
           ]
@@ -110,74 +110,74 @@
         {
           "title": "Pulmonary",
           "chips": [
-            { "id": "ros_pulm_dyspnea", "label": "shortness of breath", "type": "toggle" },
-            { "id": "ros_pulm_cough", "label": "cough", "type": "toggle" },
-            { "id": "ros_pulm_wheezes", "label": "wheezes", "type": "toggle" },
-            { "id": "ros_pulm_rales", "label": "rales", "type": "toggle" },
-            { "id": "ros_pulm_stridor", "label": "stridor", "type": "toggle", "critical": true },
-            { "id": "ros_pulm_chest_tenderness", "label": "chest wall tenderness", "type": "toggle" }
+            { "id": "ros_pulm_dyspnea",           "label": "shortness of breath", "type": "toggle", "abnText": "shortness of breath", "negText": "no shortness of breath" },
+            { "id": "ros_pulm_cough",             "label": "cough",               "type": "toggle", "abnText": "cough",               "negText": "no cough" },
+            { "id": "ros_pulm_wheezes",           "label": "wheezes",             "type": "toggle", "abnText": "wheezes",             "negText": "no wheezes" },
+            { "id": "ros_pulm_rales",             "label": "rales",               "type": "toggle", "abnText": "rales",               "negText": "no rales" },
+            { "id": "ros_pulm_stridor",           "label": "stridor",             "type": "toggle", "abnText": "stridor",             "negText": "no stridor" },
+            { "id": "ros_pulm_chest_tenderness",  "label": "chest wall tenderness", "type": "toggle", "abnText": "chest wall tenderness", "negText": "no chest wall tenderness" }
           ]
         },
         {
           "title": "Abdominal",
           "chips": [
-            { "id": "ros_abd_pain", "label": "abdominal pain", "type": "toggle" },
-            { "id": "ros_abd_nausea", "label": "nausea", "type": "toggle" },
-            { "id": "ros_abd_vomiting", "label": "vomiting", "type": "toggle" },
-            { "id": "ros_abd_diarrhea", "label": "diarrhea", "type": "toggle" },
-            { "id": "ros_abd_constipation", "label": "constipation", "type": "toggle" },
-            { "id": "ros_abd_distension", "label": "distension", "type": "toggle" },
-            { "id": "ros_abd_brbpr", "label": "BRBPR", "type": "toggle" }
+            { "id": "ros_abd_pain",        "label": "abdominal pain", "type": "toggle", "abnText": "abdominal pain", "negText": "no abdominal pain" },
+            { "id": "ros_abd_nausea",      "label": "nausea",          "type": "toggle", "abnText": "nausea",          "negText": "no nausea" },
+            { "id": "ros_abd_vomiting",    "label": "vomiting",        "type": "toggle", "abnText": "vomiting",        "negText": "no vomiting" },
+            { "id": "ros_abd_diarrhea",    "label": "diarrhea",        "type": "toggle", "abnText": "diarrhea",        "negText": "no diarrhea" },
+            { "id": "ros_abd_constipation", "label": "constipation",    "type": "toggle", "abnText": "constipation",    "negText": "no constipation" },
+            { "id": "ros_abd_distension",   "label": "distension",      "type": "toggle", "abnText": "abdominal distension", "negText": "no abdominal distension" },
+            { "id": "ros_abd_brbpr",        "label": "BRBPR",          "type": "toggle", "abnText": "BRBPR",          "negText": "no BRBPR" }
           ]
         },
         {
           "title": "Genitourinary/Anorectal",
           "chips": [
-            { "id": "ros_gu_dysuria", "label": "dysuria", "type": "toggle" },
-            { "id": "ros_gu_frequency", "label": "frequency", "type": "toggle" },
-            { "id": "ros_gu_hematuria", "label": "hematuria", "type": "toggle" },
-            { "id": "ros_gu_vaginal_discharge", "label": "vaginal discharge", "type": "toggle" },
-            { "id": "ros_gu_melena", "label": "melena", "type": "toggle" }
+            { "id": "ros_gu_dysuria",            "label": "dysuria",             "type": "toggle", "abnText": "dysuria",             "negText": "no dysuria" },
+            { "id": "ros_gu_frequency",          "label": "frequency",           "type": "toggle", "abnText": "urinary frequency",    "negText": "no urinary frequency" },
+            { "id": "ros_gu_hematuria",          "label": "hematuria",           "type": "toggle", "abnText": "hematuria",           "negText": "no hematuria" },
+            { "id": "ros_gu_vaginal_discharge",  "label": "vaginal discharge",   "type": "toggle", "abnText": "vaginal discharge",   "negText": "no vaginal discharge" },
+            { "id": "ros_gu_melena",             "label": "melena",              "type": "toggle", "abnText": "melena",              "negText": "no melena" }
           ]
         },
         {
           "title": "Musculoskeletal",
           "chips": [
-            { "id": "ros_msk_myalgias", "label": "myalgias", "type": "toggle" },
-            { "id": "ros_msk_arthralgias", "label": "arthralgias", "type": "toggle" },
-            { "id": "ros_msk_swelling", "label": "swelling", "type": "toggle" },
-            { "id": "ros_msk_back_pain", "label": "back pain", "type": "toggle" }
+            { "id": "ros_msk_myalgias",    "label": "myalgias",     "type": "toggle", "abnText": "myalgias",     "negText": "no myalgias" },
+            { "id": "ros_msk_arthralgias", "label": "arthralgias",  "type": "toggle", "abnText": "arthralgias",  "negText": "no arthralgias" },
+            { "id": "ros_msk_swelling",    "label": "swelling",     "type": "toggle", "abnText": "joint swelling", "negText": "no joint swelling" },
+            { "id": "ros_msk_back_pain",   "label": "back pain",    "type": "toggle", "abnText": "back pain",    "negText": "no back pain" }
           ]
         },
         {
           "title": "Skin",
           "chips": [
-            { "id": "ros_skin_rash", "label": "rash", "type": "toggle" },
-            { "id": "ros_skin_itching", "label": "itching", "type": "toggle" },
-            { "id": "ros_skin_bruising", "label": "bruising", "type": "toggle" },
-            { "id": "ros_skin_jaundiced", "label": "jaundice", "type": "toggle" },
-            { "id": "ros_skin_pallor", "label": "pallor", "type": "toggle" },
-            { "id": "ros_skin_lesions", "label": "lesions", "type": "toggle" }
+            { "id": "ros_skin_rash",      "label": "rash",      "type": "toggle", "abnText": "rash",      "negText": "no rash" },
+            { "id": "ros_skin_itching",   "label": "itching",   "type": "toggle", "abnText": "itching",   "negText": "no itching" },
+            { "id": "ros_skin_bruising",  "label": "bruising",  "type": "toggle", "abnText": "bruising",  "negText": "no bruising" },
+            { "id": "ros_skin_jaundiced", "label": "jaundice",  "type": "toggle", "abnText": "jaundice",  "negText": "no jaundice" },
+            { "id": "ros_skin_pallor",    "label": "pallor",    "type": "toggle", "abnText": "pallor",    "negText": "no pallor" },
+            { "id": "ros_skin_lesions",   "label": "lesions",   "type": "toggle", "abnText": "skin lesions", "negText": "no skin lesions" }
           ]
         },
         {
           "title": "Neurological",
           "chips": [
-            { "id": "ros_neuro_headache", "label": "headache", "type": "toggle" },
-            { "id": "ros_neuro_dizziness", "label": "dizziness", "type": "toggle" },
-            { "id": "ros_neuro_syncope", "label": "syncope", "type": "toggle" },
-            { "id": "ros_neuro_weakness", "label": "weakness", "type": "toggle" },
-            { "id": "ros_neuro_numbness", "label": "numbness/tingling", "type": "toggle" },
-            { "id": "ros_neuro_gait", "label": "gait change", "type": "toggle" }
+            { "id": "ros_neuro_headache", "label": "headache",       "type": "toggle", "abnText": "headache",       "negText": "no headache" },
+            { "id": "ros_neuro_dizziness", "label": "dizziness",     "type": "toggle", "abnText": "dizziness",      "negText": "no dizziness" },
+            { "id": "ros_neuro_syncope",   "label": "syncope",       "type": "toggle", "abnText": "syncope",        "negText": "no syncope" },
+            { "id": "ros_neuro_weakness",  "label": "weakness",      "type": "toggle", "abnText": "weakness",       "negText": "no weakness" },
+            { "id": "ros_neuro_numbness",  "label": "numbness/tingling", "type": "toggle", "abnText": "numbness/tingling", "negText": "no numbness or tingling" },
+            { "id": "ros_neuro_gait",      "label": "gait change",   "type": "toggle", "abnText": "gait change",   "negText": "no gait change" }
           ]
         },
         {
           "title": "Psychiatric/Behavioral",
           "chips": [
-            { "id": "ros_psych_anxiety", "label": "anxiety", "type": "toggle" },
-            { "id": "ros_psych_depression", "label": "depression", "type": "toggle" },
-            { "id": "ros_psych_suicidal", "label": "SI/HI", "type": "toggle" },
-            { "id": "ros_psych_sleep", "label": "sleep disturbance", "type": "toggle" }
+            { "id": "ros_psych_anxiety",   "label": "anxiety",           "type": "toggle", "abnText": "anxiety",           "negText": "no anxiety" },
+            { "id": "ros_psych_depression", "label": "depression",      "type": "toggle", "abnText": "depression",        "negText": "no depression" },
+            { "id": "ros_psych_suicidal",  "label": "SI/HI",            "type": "toggle", "abnText": "suicidal or homicidal ideation", "negText": "no suicidal or homicidal ideation" },
+            { "id": "ros_psych_sleep",     "label": "sleep disturbance", "type": "toggle", "abnText": "sleep disturbance",  "negText": "no sleep disturbance" }
           ]
         }
       ]
