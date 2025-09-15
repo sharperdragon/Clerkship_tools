@@ -79,6 +79,14 @@ const asObj = (v)=> (typeof v === "object" ? v : null);
 async function init(){
   await switchMode(DEFAULT_MODE);
   wireHeader();
+  // Ensure rich preview container exists (for bolding positives without altering plain text)
+  const ta = document.getElementById("out");
+  if (ta && !document.getElementById("outPreview")){
+    const pv = document.createElement("div");
+    pv.id = "outPreview";
+    pv.className = "out-preview";
+    ta.parentNode.insertBefore(pv, ta);
+  }
 }
 
 function showFatal(msg){
@@ -215,21 +223,24 @@ function renderOutput(){
   // Build preview for the CURRENT section only,
   // separating section-level header checks from panel items.
   const ta = document.getElementById("out");
+  const pv = document.getElementById("outPreview");
   const secKey = `${state.mode}:${state.activeSection}`;
   const def = Templates.sectionDefs[secKey];
   const sec = state.sections[secKey] || { checkboxes:{}, chips:{} };
 
-  if (!def) { ta.value = ""; return; }
+  if (!def) { if (ta) ta.value = ""; if (pv) pv.innerHTML = ""; return; }
 
   const lines = [];
+  const previewLines = [];
 
+  // Header checks line (admin-style statements)
   if (def.headerChecks?.length) {
     const checks = def.headerChecks
       .filter(h => !!sec.checkboxes?.[h.id])
-      .map(h => formatPECheckLabel(h.label)); // "Vital signs reviewed" etc.
+      .map(h => formatPECheckLabel(h.label));
     if (checks.length) {
-      // join by period and space for these admin-style checks
       lines.push(`${state.activeSection}: ${checks.join(". ")}.`);
+      previewLines.push(`${escapeHTML(state.activeSection)}: ${checks.map(escapeHTML).join(". ")}.`);
     }
   }
 
@@ -241,29 +252,38 @@ function renderOutput(){
       _cbs.push(...(ss.checkboxes || []));
       _chips.push(...(ss.chips || []));
     });
+
     const cbIds  = _cbs.map(c => c.id);
     const chipDs = _chips;
 
     const cbParts = cbIds
       .filter(id => !!sec.checkboxes?.[id])
-      .map(id => formatPECheckLabel(labelFor(secKey, id))); // normalize "nl appearance" -> "Normal appearance"
+      .map(id => formatPECheckLabel(labelFor(secKey, id)));
 
     const negParts = chipDs
       .filter(d => isNeg(sec.chips?.[d.id]))
-      .map(d => formatChipNegForOutput(secKey, d.id));       // "No acute distress" / "Denies wheezing"
+      .map(d => formatChipNegForOutput(secKey, d.id));
 
     const posParts = chipDs
       .filter(d => isPos(sec.chips?.[d.id]))
       .map(d => formatChipForOutput(secKey, d.id, sec.chips[d.id]));
 
-    const parts = [...cbParts, ...negParts, ...posParts];
-    if (parts.length) {
-      // For clinical findings, keep semicolons between items inside a panel
-      lines.push(`${pd.title}: ${parts.join("; ")}.`);
+    // REORDER: positives first, then negatives, then checkboxes
+    const partsPlain = [...posParts, ...negParts, ...cbParts];
+    if (partsPlain.length) {
+      lines.push(`${pd.title}: ${partsPlain.join("; ")}.`);
+
+      // Build HTML preview with bolded positives only
+      const posHTML = posParts.map(t => `<strong>${escapeHTML(t)}</strong>`);
+      const negHTML = negParts.map(escapeHTML);
+      const cbsHTML = cbParts.map(escapeHTML);
+      const partsHTML = [...posHTML, ...negHTML, ...cbsHTML];
+      previewLines.push(`${escapeHTML(pd.title)}: ${partsHTML.join("; ")}.`);
     }
   });
 
-  ta.value = lines.join("\n");
+  if (ta) ta.value = lines.join("\n");
+  if (pv) pv.innerHTML = previewLines.join("<br>");
 }
 
 function formatChipNegForOutput(secKey, id){
@@ -449,6 +469,16 @@ function formatChipForOutput(secKey, id, v){
 
   // Visual criticality handled via chip classes; no bold here
   return parts.join(" ");
+}
+
+function escapeHTML(s){
+  return String(s).replace(/[&<>\"']/g, c => ({
+    "&":"&amp;",
+    "<":"&lt;",
+    ">":"&gt;",
+    '"':"&quot;",
+    "'":"&#39;"
+  })[c]);
 }
 
 function labelFor(secKey, id){
