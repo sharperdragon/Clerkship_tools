@@ -381,7 +381,7 @@
 }
 
 
-.chip.selected {
+.chip on:hover {
   background: color-mix(in srgb, var(--accent), transparent 92%);
   border: 2px solid var(--accent);
   color: var(--chip-text);

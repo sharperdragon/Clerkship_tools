@@ -280,8 +280,7 @@ function cb(id,label,checked,on){ const w=document.createElement("label"); w.cla
   const classList = ["chip"];
   if (def.critical) classList.push("critical");
   if (neg) classList.push("neg");
-  // Only mark non-critical positives as selected
-  if (pos && !def.critical) classList.push("selected");
+  // Do not add a `selected` class; hover appearance should be handled in CSS via `.chip:hover`
   d.className = classList.join(" ");
   d.oncontextmenu = (e)=>e.preventDefault();
   d.onpointerdown = onMouse;   // use pointer events for reliable L/R detection
