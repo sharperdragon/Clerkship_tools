@@ -268,17 +268,46 @@ function renderOutput(){
       .filter(d => isPos(sec.chips?.[d.id]))
       .map(d => formatChipForOutput(secKey, d.id, sec.chips[d.id]));
 
-    // REORDER: positives first, then negatives, then checkboxes
-    const partsPlain = [...posParts, ...negParts, ...cbParts];
-    if (partsPlain.length) {
-      lines.push(`${pd.title}: ${partsPlain.join("; ")}.`);
+    // When there are positives, emit two sentences:
+    //   1) Positives first (capitalize the first positive), ending with a period.
+    //   2) Negatives/checkboxes next as a second sentence; keep first "No"/"Denies" capitalized
+    //      and lowercase subsequent occurrences ("no"/"denies") within the same sentence.
+    if (posParts.length || negParts.length || cbParts.length) {
+      let linePlain = `${pd.title}: `;
+      let lineHTML  = `${escapeHTML(pd.title)}: `;
 
-      // Build HTML preview with bolded positives only
-      const posHTML = posParts.map(t => `<strong>${escapeHTML(t)}</strong>`);
-      const negHTML = negParts.map(escapeHTML);
-      const cbsHTML = cbParts.map(escapeHTML);
-      const partsHTML = [...posHTML, ...negHTML, ...cbsHTML];
-      previewLines.push(`${escapeHTML(pd.title)}: ${partsHTML.join("; ")}.`);
+      if (posParts.length) {
+        const posPlainList = posParts.map((t,i)=> i===0 ? capFirst(t) : t);
+        const posPlainSent = `${posPlainList.join("; ")}.`;
+        linePlain += posPlainSent + (negParts.length || cbParts.length ? " " : "");
+
+        const posHTMLList = posParts.map((t,i)=> {
+          const txt = i===0 ? capFirst(t) : t;
+          return `<strong>${escapeHTML(txt)}</strong>`;
+        });
+        const posHTMLSent = `${posHTMLList.join("; ")}.`;
+        lineHTML += posHTMLSent + (negParts.length || cbParts.length ? " " : "");
+      }
+
+      // Second sentence: negatives + panel checkboxes
+      if (negParts.length || cbParts.length) {
+        // Lowercase subsequent "No"/"Denies" at the start of each subsequent negative phrase
+        const negAdj = negParts.map((t,i)=> i===0 ? t
+          : t.replace(/^No\b/, 'no').replace(/^Denies\b/, 'denies'));
+
+        const secondListPlain = [...negAdj, ...cbParts];
+        const secondSentPlain = `${secondListPlain.join("; ")}.`;
+        linePlain += secondSentPlain;
+
+        const negHTML = negAdj.map(escapeHTML);
+        const cbsHTML = cbParts.map(escapeHTML);
+        const secondListHTML = [...negHTML, ...cbsHTML];
+        const secondSentHTML = `${secondListHTML.join("; ")}.`;
+        lineHTML += secondSentHTML;
+      }
+
+      lines.push(linePlain);
+      previewLines.push(lineHTML);
     }
   });
 
