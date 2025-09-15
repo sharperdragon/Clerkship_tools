@@ -1,7 +1,11 @@
 
 const DEFAULT_MODE = "PE";
 const DEFAULT_COLUMNS = 3;
+
 const REMEMBER_STATE = false;
+
+const CLASS_CRITICAL = "critical"; // applied when abnormal/present (right-click)
+const CLASS_NORMAL   = "normal";   // applied when good/absent (left-click)
 
 // Map each mode to its own template file
 const MODE_FILES = {
@@ -273,16 +277,20 @@ function panel(title){ const s=document.createElement("section"); s.className="p
 function cb(id,label,checked,on){ const w=document.createElement("label"); w.className="cb";
   const i=document.createElement("input"); i.type="checkbox"; i.checked=checked; i.onchange=e=>on(e.target.checked);
   w.appendChild(i); w.appendChild(document.createTextNode(label)); return w; }
-  function chip(def, value, onMouse){
+function chip(def, value, onMouse){
   // value: 0 | 'neg' | {state:'pos', side?, grade?, tags?}
   const d = document.createElement("div");
   const pos = isPos(value), neg = isNeg(value);
   const classList = ["chip"];
+
+  // Two visual buckets only: critical (abnormal) or normal (good)
   if (pos) {
-    classList.push("pos");
-    if (def.critical) classList.push("critical");
+    classList.push(CLASS_CRITICAL); // right-clicked state
+  } else if (neg) {
+    classList.push(CLASS_NORMAL);   // left-clicked state
   }
-  if (neg) classList.push("neg");
+  // neutral = not clicked -> no extra class
+
   // Do not add a `selected` class; hover appearance should be handled in CSS via `.chip:hover`
   d.className = classList.join(" ");
   d.oncontextmenu = (e)=>e.preventDefault();
