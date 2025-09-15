@@ -79,14 +79,6 @@ const asObj = (v)=> (typeof v === "object" ? v : null);
 async function init(){
   await switchMode(DEFAULT_MODE);
   wireHeader();
-  // Ensure rich preview container exists (for bolding positives without altering plain text)
-  const ta = document.getElementById("out");
-  if (ta && !document.getElementById("outPreview")){
-    const pv = document.createElement("div");
-    pv.id = "outPreview";
-    pv.className = "out-preview";
-    ta.parentNode.insertBefore(pv, ta);
-  }
 }
 
 function showFatal(msg){
@@ -119,6 +111,13 @@ function renderTier2(){
     wrap.appendChild(btn);
   });
 }
+// Helper to create a row div with the current mode as a class, plus any extra class
+function makeRow(extraClass){
+  const d = document.createElement("div");
+  d.className = "row " + state.mode + (extraClass ? (" " + extraClass) : "");
+  return d;
+}
+
 function renderHeaderChecks(){
   const host = document.getElementById("headerChecks");
   host.innerHTML = "";
@@ -128,8 +127,7 @@ function renderHeaderChecks(){
     return;
   }
   host.style.display = "";
-  const wrap = document.createElement("div");
-  wrap.className = "row header-checks"; // reuse existing cb styling
+  const wrap = makeRow("header-checks");
   def.headerChecks.forEach(t=>{
     wrap.appendChild(
       cb(
@@ -144,14 +142,17 @@ function renderHeaderChecks(){
 }
 
 function renderGrid(){
-  const grid = document.getElementById("grid"); grid.innerHTML="";
+  const grid = document.getElementById("grid");
+  grid.innerHTML = "";
+  // Update grid class to include current mode
+  grid.className = "section-grid " + state.mode;
   const def = Templates.sectionDefs[`${state.mode}:${state.activeSection}`];
   if(!def){ grid.textContent = "No schema yet."; return; }
 
   if (def.headerToggles?.length){
     const p = panel("Options");
     p.classList.add("options"); // style Options panel like Epic header tray
-    const row = document.createElement("div"); row.className="row";
+    const row = makeRow();
     def.headerToggles.forEach(t=>{
       row.appendChild(cb(t.id, t.label, !!getSec().checkboxes?.[t.id], v=>{ setCB(t.id,v); renderOutput(); }));
     });
@@ -181,7 +182,7 @@ function renderGrid(){
         p.appendChild(sh);
         // subsection checkboxes
         if (ss.checkboxes && ss.checkboxes.length){
-          const rr = document.createElement("div"); rr.className = "row";
+          const rr = makeRow();
           ss.checkboxes.forEach(c=>{
             rr.appendChild(cb(c.id, c.label, !!getSec().checkboxes?.[c.id], v=>{ setCB(c.id, v); renderOutput(); }));
           });
@@ -189,7 +190,7 @@ function renderGrid(){
         }
         // subsection chips
         if (ss.chips && ss.chips.length){
-          const rr = document.createElement("div"); rr.className = "row";
+          const rr = makeRow();
           ss.chips.forEach(ch=>{
             const value = getSec().chips?.[ch.id] || 0;
             rr.appendChild(chip(ch, value, (evt)=>handleChipMouse(evt, ch.id)));
@@ -201,12 +202,12 @@ function renderGrid(){
       return; // skip the normal checkboxes/chips path for this panel
     }
     if (pd.checkboxes?.length){
-      const r = document.createElement("div"); r.className="row";
+      const r = makeRow();
       pd.checkboxes.forEach(c=> r.appendChild(cb(c.id,c.label,!!getSec().checkboxes?.[c.id], v=>{ setCB(c.id,v); renderOutput(); })));
       p.appendChild(r);
     }
     if (pd.chips?.length){
-      const r = document.createElement("div"); r.className="row";
+      const r = makeRow();
       pd.chips.forEach(ch=>{
         const value = getSec().chips?.[ch.id] || 0; // 0 | 'neg' | {state:'pos', ...}
         r.appendChild(
@@ -219,19 +220,26 @@ function renderGrid(){
   });
 }
 
+
+// Helper to create a row div with the current mode as a class, plus any extra class
+function makeRow(extraClass){
+  const d = document.createElement("div");
+  d.className = "row " + state.mode + (extraClass ? (" " + extraClass) : "");
+  return d;
+}
+
+
 function renderOutput(){
   // Build preview for the CURRENT section only,
   // separating section-level header checks from panel items.
   const ta = document.getElementById("out");
-  const pv = document.getElementById("outPreview");
   const secKey = `${state.mode}:${state.activeSection}`;
   const def = Templates.sectionDefs[secKey];
   const sec = state.sections[secKey] || { checkboxes:{}, chips:{} };
 
-  if (!def) { if (ta) ta.value = ""; if (pv) pv.innerHTML = ""; return; }
+  if (!def) { if (ta) ta.value = ""; return; }
 
   const lines = [];
-  const previewLines = [];
 
   // Header checks line (admin-style statements)
   if (def.headerChecks?.length) {
@@ -240,7 +248,6 @@ function renderOutput(){
       .map(h => formatPECheckLabel(h.label));
     if (checks.length) {
       lines.push(`${state.activeSection}: ${checks.join(". ")}.`);
-      previewLines.push(`${escapeHTML(state.activeSection)}: ${checks.map(escapeHTML).join(". ")}.`);
     }
   }
 
@@ -274,19 +281,11 @@ function renderOutput(){
     //      and lowercase subsequent occurrences ("no"/"denies") within the same sentence.
     if (posParts.length || negParts.length || cbParts.length) {
       let linePlain = `${pd.title}: `;
-      let lineHTML  = `${escapeHTML(pd.title)}: `;
 
       if (posParts.length) {
         const posPlainList = posParts.map((t,i)=> i===0 ? capFirst(t) : t);
         const posPlainSent = `${posPlainList.join("; ")}.`;
         linePlain += posPlainSent + (negParts.length || cbParts.length ? " " : "");
-
-        const posHTMLList = posParts.map((t,i)=> {
-          const txt = i===0 ? capFirst(t) : t;
-          return `<strong>${escapeHTML(txt)}</strong>`;
-        });
-        const posHTMLSent = `${posHTMLList.join("; ")}.`;
-        lineHTML += posHTMLSent + (negParts.length || cbParts.length ? " " : "");
       }
 
       // Second sentence: negatives + panel checkboxes
@@ -298,21 +297,13 @@ function renderOutput(){
         const secondListPlain = [...negAdj, ...cbParts];
         const secondSentPlain = `${secondListPlain.join("; ")}.`;
         linePlain += secondSentPlain;
-
-        const negHTML = negAdj.map(escapeHTML);
-        const cbsHTML = cbParts.map(escapeHTML);
-        const secondListHTML = [...negHTML, ...cbsHTML];
-        const secondSentHTML = `${secondListHTML.join("; ")}.`;
-        lineHTML += secondSentHTML;
       }
 
       lines.push(linePlain);
-      previewLines.push(lineHTML);
     }
   });
 
   if (ta) ta.value = lines.join("\n");
-  if (pv) pv.innerHTML = previewLines.join("<br>");
 }
 
 function formatChipNegForOutput(secKey, id){
@@ -523,7 +514,7 @@ function renderMatrixPanel(pd){
   sec.matrix ??= {}; sec.matrix[pd.id] ??= {};
   // actions row
   if (m.actions?.length){
-    const row = document.createElement("div"); row.className="row";
+    const row = makeRow();
     if (m.actions.includes("setAll2plus")) row.appendChild(miniBtn("Set all 2+", false, ()=> setMatrixAll(pd.id, 2, m)));
     if (m.actions.includes("setAll1plus")) row.appendChild(miniBtn("Set all 1+", false, ()=> setMatrixAll(pd.id, 1, m)));
     if (m.actions.includes("clearAll"))    row.appendChild(miniBtn("Clear all",  false, ()=> clearMatrix(pd.id, m)));

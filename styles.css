@@ -79,11 +79,19 @@
 
 .section-grid {
   margin: 0;
-  font: 11px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, Arial;
+  font: 12px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, Arial;
   font-weight: 450;
   color: var(--ink);
   background: var(--bg);
+}
+
+.section-grid.PE {
   column-count: 3;
+  column-gap: 4px;
+  padding: 5px;
+}
+.section-grid.ROS {
+  column-count: 4;
   column-gap: 4px;
   padding: 5px;
 }
@@ -99,17 +107,26 @@
 }
 
 @media (max-width: 1000px) {
-  .section-grid {
+  .section-grid.PE {
     column-count: 2;
   }
 }
-.row {
-  object-fit: contain;
-  max-width: 100%;
-}
+
 @media (max-width: 800px) {
-  .section-grid {
+  .section-grid.PE {
     column-count: 1;
+  }
+}
+
+@media (max-width: 1000px) {
+  .section-grid.ROS {
+    column-count: 3;
+  }
+}
+
+@media (max-width: 800px) {
+  .section-grid.ROS {
+    column-count: 2;
   }
 }
 
@@ -229,9 +246,11 @@
   font-weight: 600;
   margin: 6px 10px 4px;
 }
+
 .row {
+  object-fit: contain;
+  max-width: 100%;
   padding: 4px 8px;
-  border-top: 0.5px solid #eef2f7;
   display: flex;
   flex-wrap: wrap;
   gap: 4px 6px;
@@ -250,9 +269,23 @@
 .header-checks .cb {
   background: transparent;
   border: none;
-  font-size: 11px;
+  font-size: 12px;
   color: var(--cb-text);
 }
+.panel .row .chip{
+  flex: 1 1 calc(50% - 8px);
+  max-width: 50%;
+  min-width: min-content;
+  justify-content: flex-start;
+}
+
+.panel .row .chip{
+  flex: 1 1 calc(50% - 8px);
+  max-width: 50%;
+  min-width: min-content;
+  justify-content: flex-start;
+}
+
 .panel .row .chip{
   flex: 1 1 calc(50% - 8px);
   max-width: 50%;
@@ -308,17 +341,24 @@
 /* ==== Column-first layout inside each panel row (removes vertical gaps) ==== */
 .panel .row{
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
   grid-auto-flow: row;
   align-items: start;
+
+}
+.panel .row.PE {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 3px;
+}
+.panel .row.ROS {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 2px;
 }
 
 /* Allow row children to shrink within the grid cell */
 .panel .row > *{
   min-width: 0;
   max-width: 100%;
-  overflow-wrap: anywhere;
+  overflow-wrap: break-word;
 }
 
 /* Make items fill their grid column (not 100% of row) */
@@ -341,7 +381,7 @@
 }
 
 @media (max-width: 840px){
-  .panel .row{
+  .panel .row.PE{
     grid-template-columns: 1fr;
   }
 }
@@ -365,7 +405,7 @@
   background: transparent;
   border: 0;
   padding: 2px 6px;
-  font-size: 11px;
+  font-size: 12px;
   color: var(--cb-text);
 }
 
