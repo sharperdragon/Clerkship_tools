@@ -20,7 +20,7 @@
             {"id":"pe_const_obese","label":"obese"}
           ],
           "chips": [
-            {"id":"pe_const_acute_distress","label":"acute distress","type":"toggle","critical":true},
+            {"id":"pe_const_acute_distress","label":"acute distress","type":"toggle"},
             {"id":"pe_const_ill_appearing","label":"ill-appearing","type":"toggle"},
             {"id":"pe_const_toxic_appearing","label":"toxic-appearing","type":"toggle"},
             {"id":"pe_const_diaphoretic","label":"diaphoretic","type":"toggle"}
@@ -166,7 +166,7 @@
             {"id":"pe_pulm_resp_distress","label":"respiratory distress","type":"toggle"},
             {"id":"pe_pulm_wheezes","label":"wheezes","type":"toggle"},
             {"id":"pe_pulm_rales","label":"rales","type":"toggle"},
-            {"id":"pe_pulm_stridor","label":"stridor","type":"toggle","critical":true},
+            {"id":"pe_pulm_stridor","label":"stridor","type":"toggle"},
             {"id":"pe_pulm_rhonchi","label":"rhonchi","type":"toggle"},
             {"id":"pe_pulm_chest_tenderness","label":"chest tenderness","type":"toggle"}
           ]
