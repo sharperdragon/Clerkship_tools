@@ -278,10 +278,12 @@ function cb(id,label,checked,on){ const w=document.createElement("label"); w.cla
   // value: 0 | 'neg' | {state:'pos', side?, grade?, tags?}
   const d = document.createElement("div");
   const pos = isPos(value), neg = isNeg(value);
-  d.className = "chip"
-             + (pos ? " selected" : "")
-             + (neg ? " neg" : "")
-             + (def.critical ? " critical" : "");
+  const classList = ["chip"];
+  if (def.critical) classList.push("critical");
+  if (neg) classList.push("neg");
+  // Only mark non-critical positives as selected
+  if (pos && !def.critical) classList.push("selected");
+  d.className = classList.join(" ");
   d.oncontextmenu = (e)=>e.preventDefault();
   d.onpointerdown = onMouse;   // use pointer events for reliable L/R detection
 
