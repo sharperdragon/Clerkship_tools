@@ -106,13 +106,13 @@
   -moz-column-break-inside: avoid;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1150px) {
   .section-grid.PE {
     column-count: 2;
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 880px) {
   .section-grid.PE {
     column-count: 1;
   }
