@@ -2,7 +2,6 @@
 const DEFAULT_MODE = "PE";
 const DEFAULT_COLUMNS = 3;
 const REMEMBER_STATE = false;
-const CRITICAL_IDS = new Set(["pulm_stridor","ros_resp_stridor"]);
 
 // Map each mode to its own template file
 const MODE_FILES = {
