@@ -173,23 +173,87 @@ function renderGrid(){
       return; 
     }
     // subsections support (e.g., HENT with Head / Ears / Nose / Mouth/Throat)
+    // Optional layout hint: pd.layout = { gridCols: 2, gridUntilIndex: 1 }
     if (pd.subsections && pd.subsections.length){
+      const useGrid = pd.layout && pd.layout.gridCols;
+      const cut = typeof pd.layout?.gridUntilIndex === "number" ? pd.layout.gridUntilIndex : -1;
+
+      if (useGrid && cut >= 0) {
+        // 1) Render first N+1 subsections in a subgrid
+        const subgrid = document.createElement("div");
+        subgrid.className = `subgrid cols-${pd.layout.gridCols}`;
+
+        for (let i = 0; i <= cut && i < pd.subsections.length; i++) {
+          const ss = pd.subsections[i];
+          const box = document.createElement("div");
+          box.className = "subpanel";
+
+          const sh = document.createElement("div");
+          sh.className = "subhead";
+          sh.textContent = ss.title;
+          box.appendChild(sh);
+
+          if (ss.checkboxes?.length){
+            const rr = makeRow();
+            ss.checkboxes.forEach(c=>{
+              rr.appendChild(cb(c.id, c.label, !!getSec().checkboxes?.[c.id], v=>{ setCB(c.id, v); renderOutput(); }));
+            });
+            box.appendChild(rr);
+          }
+          if (ss.chips?.length){
+            const rr = makeRow();
+            ss.chips.forEach(ch=>{
+              const value = getSec().chips?.[ch.id] || 0;
+              rr.appendChild(chip(ch, value, (evt)=>handleChipMouse(evt, ch.id)));
+            });
+            box.appendChild(rr);
+          }
+          subgrid.appendChild(box);
+        }
+        p.appendChild(subgrid);
+
+        // 2) Render remaining subsections normally (full width)
+        for (let i = cut + 1; i < pd.subsections.length; i++) {
+          const ss = pd.subsections[i];
+          const sh = document.createElement("div");
+          sh.className = "subhead";
+          sh.textContent = ss.title;
+          p.appendChild(sh);
+
+          if (ss.checkboxes?.length){
+            const rr = makeRow();
+            ss.checkboxes.forEach(c=>{
+              rr.appendChild(cb(c.id, c.label, !!getSec().checkboxes?.[c.id], v=>{ setCB(c.id, v); renderOutput(); }));
+            });
+            p.appendChild(rr);
+          }
+          if (ss.chips?.length){
+            const rr = makeRow();
+            ss.chips.forEach(ch=>{
+              const value = getSec().chips?.[ch.id] || 0;
+              rr.appendChild(chip(ch, value, (evt)=>handleChipMouse(evt, ch.id)));
+            });
+            p.appendChild(rr);
+          }
+        }
+        grid.appendChild(p);
+        return; // done with this panel
+      }
+
+      // Fallback: original stacked rendering
       pd.subsections.forEach(ss=>{
-        // sub-title
         const sh = document.createElement("div");
         sh.className = "subhead";
         sh.textContent = ss.title;
         p.appendChild(sh);
-        // subsection checkboxes
-        if (ss.checkboxes && ss.checkboxes.length){
+        if (ss.checkboxes?.length){
           const rr = makeRow();
           ss.checkboxes.forEach(c=>{
             rr.appendChild(cb(c.id, c.label, !!getSec().checkboxes?.[c.id], v=>{ setCB(c.id, v); renderOutput(); }));
           });
           p.appendChild(rr);
         }
-        // subsection chips
-        if (ss.chips && ss.chips.length){
+        if (ss.chips?.length){
           const rr = makeRow();
           ss.chips.forEach(ch=>{
             const value = getSec().chips?.[ch.id] || 0;
@@ -221,12 +285,6 @@ function renderGrid(){
 }
 
 
-// Helper to create a row div with the current mode as a class, plus any extra class
-function makeRow(extraClass){
-  const d = document.createElement("div");
-  d.className = "row " + state.mode + (extraClass ? (" " + extraClass) : "");
-  return d;
-}
 
 
 function renderOutput(){
@@ -613,98 +671,4 @@ function formatChipNegForOutput(secKey, id){
 
   const isROS = secKey.startsWith("ROS:");
   return isROS ? `Denies ${label}` : `No ${label}`;
-}
-// subsections support (e.g., HENT with Head / Ears / Nose / Mouth/Throat)
-// Supports optional per-panel layout hint: layout.gridCols + layout.gridUntilIndex
-if (pd.subsections && pd.subsections.length) {
-  const useGrid = pd.layout && pd.layout.gridCols;
-  const cut = typeof pd.layout?.gridUntilIndex === "number" ? pd.layout.gridUntilIndex : -1;
-
-  if (useGrid && cut >= 0) {
-    // 1) Render first N+1 subsections in a 2-col subgrid
-    const subgrid = document.createElement("div");
-    subgrid.className = `subgrid cols-${pd.layout.gridCols}`;
-    for (let i = 0; i <= cut && i < pd.subsections.length; i++) {
-      const ss = pd.subsections[i];
-      const box = document.createElement("div");
-      box.className = "subpanel";
-      // sub-title
-      const sh = document.createElement("div");
-      sh.className = "subhead";
-      sh.textContent = ss.title;
-      box.appendChild(sh);
-      // subsection checkboxes
-      if (ss.checkboxes?.length) {
-        const rr = makeRow();
-        ss.checkboxes.forEach(c=>{
-          rr.appendChild(cb(c.id, c.label, !!getSec().checkboxes?.[c.id], v=>{ setCB(c.id, v); renderOutput(); }));
-        });
-        box.appendChild(rr);
-      }
-      // subsection chips
-      if (ss.chips?.length) {
-        const rr = makeRow();
-        ss.chips.forEach(ch=>{
-          const value = getSec().chips?.[ch.id] || 0;
-          rr.appendChild(chip(ch, value, (evt)=>handleChipMouse(evt, ch.id)));
-        });
-        box.appendChild(rr);
-      }
-      subgrid.appendChild(box);
-    }
-    p.appendChild(subgrid);
-
-    // 2) Render the remaining subsections normally (full width)
-    for (let i = cut + 1; i < pd.subsections.length; i++) {
-      const ss = pd.subsections[i];
-      const sh = document.createElement("div");
-      sh.className = "subhead";
-      sh.textContent = ss.title;
-      p.appendChild(sh);
-
-      if (ss.checkboxes?.length){
-        const rr = makeRow();
-        ss.checkboxes.forEach(c=>{
-          rr.appendChild(cb(c.id, c.label, !!getSec().checkboxes?.[c.id], v=>{ setCB(c.id, v); renderOutput(); }));
-        });
-        p.appendChild(rr);
-      }
-      if (ss.chips?.length){
-        const rr = makeRow();
-        ss.chips.forEach(ch=>{
-          const value = getSec().chips?.[ch.id] || 0;
-          rr.appendChild(chip(ch, value, (evt)=>handleChipMouse(evt, ch.id)));
-        });
-        p.appendChild(rr);
-      }
-    }
-
-    grid.appendChild(p);
-    return; // done with this panel
-  }
-
-  // Fallback: original (stacked) rendering
-  pd.subsections.forEach(ss=>{
-    const sh = document.createElement("div");
-    sh.className = "subhead";
-    sh.textContent = ss.title;
-    p.appendChild(sh);
-    if (ss.checkboxes?.length){
-      const rr = makeRow();
-      ss.checkboxes.forEach(c=>{
-        rr.appendChild(cb(c.id, c.label, !!getSec().checkboxes?.[c.id], v=>{ setCB(c.id, v); renderOutput(); }));
-      });
-      p.appendChild(rr);
-    }
-    if (ss.chips?.length){
-      const rr = makeRow();
-      ss.chips.forEach(ch=>{
-        const value = getSec().chips?.[ch.id] || 0;
-        rr.appendChild(chip(ch, value, (evt)=>handleChipMouse(evt, ch.id)));
-      });
-      p.appendChild(rr);
-    }
-  });
-  grid.appendChild(p);
-  return;
 }
