@@ -20,10 +20,10 @@
             {"id":"pe_const_obese","label":"obese"}
           ],
           "chips": [
-            {"id":"pe_const_acute_distress","label":"acute distress","type":"toggle"},
-            {"id":"pe_const_ill_appearing","label":"ill-appearing","type":"toggle"},
-            {"id":"pe_const_toxic_appearing","label":"toxic-appearing","type":"toggle"},
-            {"id":"pe_const_diaphoretic","label":"diaphoretic","type":"toggle"}
+            {"id":"pe_const_acute_distress","label":"acute distress","type":"toggle","abnText":"acute distress","negText":"no acute distress"},
+            {"id":"pe_const_ill_appearing","label":"ill-appearing","type":"toggle","abnText":"ill-appearing","negText":"no ill-appearing"},
+            {"id":"pe_const_toxic_appearing","label":"toxic-appearing","type":"toggle","abnText":"toxic-appearing","negText":"no toxic-appearing"},
+            {"id":"pe_const_diaphoretic","label":"diaphoretic","type":"toggle","abnText":"diaphoretic","negText":"no diaphoresis"}
           ]
         },
         {
@@ -45,7 +45,7 @@
                 {"id":"pe_ear_r_ext_ear_nl","label":"external ear nl"}
               ],
               "chips": [
-                {"id":"pe_ear_r_impacted_cerumen","label":"impacted cerumen","type":"toggle"}
+                {"id":"pe_ear_r_impacted_cerumen","label":"impacted cerumen","type":"toggle","abnText":"impacted cerumen (right)","negText":"no impacted cerumen (right)"}
               ]
             },
             {
@@ -56,7 +56,7 @@
                 {"id":"pe_ear_l_ext_ear_nl","label":"external ear nl"}
               ],
               "chips": [
-                {"id":"pe_ear_l_impacted_cerumen","label":"impacted cerumen","type":"toggle"}
+                {"id":"pe_ear_l_impacted_cerumen","label":"impacted cerumen","type":"toggle","abnText":"impacted cerumen (left)","negText":"no impacted cerumen (left)"}
               ]
             },
             {
@@ -65,8 +65,8 @@
                 {"id":"pe_nose_nl","label":"nose nl"}
               ],
               "chips": [
-                {"id":"pe_nose_congestion","label":"congestion","type":"toggle"},
-                {"id":"pe_nose_rhinorrhea","label":"rhinorrhea","type":"toggle"}
+                {"id":"pe_nose_congestion","label":"congestion","type":"toggle","abnText":"nasal congestion","negText":"no nasal congestion"},
+                {"id":"pe_nose_rhinorrhea","label":"rhinorrhea","type":"toggle","abnText":"rhinorrhea","negText":"no rhinorrhea"}
               ]
             },
             {
@@ -77,8 +77,8 @@
                 {"id":"pe_mouth_clear","label":"clear"}
               ],
               "chips": [
-                {"id":"pe_mouth_exudate","label":"exudate","type":"toggle"},
-                {"id":"pe_mouth_erythema","label":"erythema","type":"toggle"}
+                {"id":"pe_mouth_exudate","label":"exudate","type":"toggle","abnText":"oropharyngeal exudate","negText":"no oropharyngeal exudate"},
+                {"id":"pe_mouth_erythema","label":"erythema","type":"toggle","abnText":"oropharyngeal erythema","negText":"no oropharyngeal erythema"}
               ]
             }
           ]
@@ -91,9 +91,9 @@
             {"id":"pe_eyes_conj_nl","label":"conjunctivae nl"}
           ],
           "chips": [
-            {"id":"pe_eyes_right_discharge","label":"right eye discharge","type":"toggle"},
-            {"id":"pe_eyes_left_discharge","label":"left eye discharge","type":"toggle"},
-            {"id":"pe_eyes_scleral_icterus","label":"scleral icterus","type":"toggle"}
+            {"id":"pe_eyes_right_discharge","label":"right eye discharge","type":"toggle","abnText":"right eye discharge","negText":"no right eye discharge"},
+            {"id":"pe_eyes_left_discharge","label":"left eye discharge","type":"toggle","abnText":"left eye discharge","negText":"no left eye discharge"},
+            {"id":"pe_eyes_scleral_icterus","label":"scleral icterus","type":"toggle","abnText":"scleral icterus","negText":"no scleral icterus"}
           ]
         },
         {
@@ -103,10 +103,10 @@
             {"id":"pe_neck_supple","label":"supple"}
           ],
           "chips": [
-            {"id":"pe_neck_rigidity","label":"neck rigidity","type":"toggle"},
-            {"id":"pe_neck_tenderness","label":"tenderness","type":"toggle"},
-            {"id":"pe_neck_cervical_adeno","label":"cervical adenopathy","type":"toggle"},
-            {"id":"pe_neck_carotid_bruit","label":"carotid bruit","type":"toggle"}
+            {"id":"pe_neck_rigidity","label":"neck rigidity","type":"toggle","abnText":"neck rigidity","negText":"no neck rigidity"},
+            {"id":"pe_neck_tenderness","label":"tenderness","type":"toggle","abnText":"neck tenderness","negText":"no neck tenderness"},
+            {"id":"pe_neck_cervical_adeno","label":"cervical adenopathy","type":"toggle","abnText":"cervical adenopathy","negText":"no cervical adenopathy"},
+            {"id":"pe_neck_carotid_bruit","label":"carotid bruit","type":"toggle","abnText":"carotid bruit","negText":"no carotid bruit"}
           ]
         },
         {
@@ -118,8 +118,8 @@
                 { "id": "pe_cv_normal_rate", "label": "normal rate" }
               ],
               "chips": [
-                { "id": "pe_cv_tachy", "label": "tachycardia", "type": "toggle" },
-                { "id": "pe_cv_brady", "label": "bradycardia", "type": "toggle" }
+                { "id": "pe_cv_tachy", "label": "tachycardia", "type": "toggle", "abnText":"tachycardia","negText":"no tachycardia" },
+                { "id": "pe_cv_brady", "label": "bradycardia", "type": "toggle", "abnText":"bradycardia","negText":"no bradycardia" }
               ]
             },
             {
@@ -128,8 +128,8 @@
                 { "id": "pe_cv_regular_rhythm", "label": "regular rhythm" }
               ],
               "chips": [
-                { "id": "pe_cv_irregular", "label": "irregular", "type": "toggle" },
-                { "id": "pe_cv_reg_irreg", "label": "regularly irregular", "type": "toggle" }
+                { "id": "pe_cv_irregular", "label": "irregular", "type": "toggle", "abnText":"irregular rhythm","negText":"regular rhythm" },
+                { "id": "pe_cv_reg_irreg", "label": "regularly irregular", "type": "toggle", "abnText":"regularly irregular rhythm","negText":"regular rhythm" }
               ]
             },
             {
@@ -143,15 +143,17 @@
                   "id": "pe_cv_murmur",
                   "label": "murmur",
                   "type": "toggle",
+                  "abnText":"murmur",
+                  "negText":"no murmur",
                   "mods": {
                     "tags": ["systolic", "diastolic", "crescendo", "decrescendo"],
                     "grades": ["1","2","3","4","5","6"]
                   }
                 },
-                { "id": "pe_cv_friction_rub", "label": "friction rub", "type": "toggle" },
-                { "id": "pe_cv_gallop", "label": "gallop", "type": "toggle" },
-                { "id": "pe_cv_s3", "label": "S3", "type": "toggle" },
-                { "id": "pe_cv_s4", "label": "S4", "type": "toggle" }
+                { "id": "pe_cv_friction_rub", "label": "friction rub", "type": "toggle", "abnText":"friction rub","negText":"no friction rub" },
+                { "id": "pe_cv_gallop", "label": "gallop", "type": "toggle", "abnText":"gallop","negText":"no gallop" },
+                { "id": "pe_cv_s3", "label": "S3", "type": "toggle", "abnText":"S3","negText":"no S3" },
+                { "id": "pe_cv_s4", "label": "S4", "type": "toggle", "abnText":"S4","negText":"no S4" }
               ]
             }
           ]
@@ -163,12 +165,12 @@
             {"id":"pe_pulm_bs_nl","label":"breath sounds nl"}
           ],
           "chips": [
-            {"id":"pe_pulm_resp_distress","label":"respiratory distress","type":"toggle"},
-            {"id":"pe_pulm_wheezes","label":"wheezes","type":"toggle"},
-            {"id":"pe_pulm_rales","label":"rales","type":"toggle"},
-            {"id":"pe_pulm_stridor","label":"stridor","type":"toggle"},
-            {"id":"pe_pulm_rhonchi","label":"rhonchi","type":"toggle"},
-            {"id":"pe_pulm_chest_tenderness","label":"chest tenderness","type":"toggle"}
+            {"id":"pe_pulm_resp_distress","label":"respiratory distress","type":"toggle","abnText":"respiratory distress","negText":"no respiratory distress"},
+            {"id":"pe_pulm_wheezes","label":"wheezes","type":"toggle","abnText":"wheezes","negText":"no wheezes"},
+            {"id":"pe_pulm_rales","label":"rales","type":"toggle","abnText":"rales","negText":"no rales"},
+            {"id":"pe_pulm_stridor","label":"stridor","type":"toggle","abnText":"stridor","negText":"no stridor"},
+            {"id":"pe_pulm_rhonchi","label":"rhonchi","type":"toggle","abnText":"rhonchi","negText":"no rhonchi"},
+            {"id":"pe_pulm_chest_tenderness","label":"chest tenderness","type":"toggle","abnText":"chest wall tenderness","negText":"no chest wall tenderness"}
           ]
         },
         {
@@ -179,14 +181,14 @@
             {"id":"pe_abd_bs_nl","label":"bowel sounds nl"}
           ],
           "chips": [
-            {"id":"pe_abd_distension","label":"distension","type":"toggle"},
-            {"id":"pe_abd_tenderness","label":"tenderness","type":"toggle"},
-            {"id":"pe_abd_guarding","label":"guarding","type":"toggle"},
-            {"id":"pe_abd_rebound","label":"rebound","type":"toggle"},
-            {"id":"pe_abd_right_cva_tender","label":"right CVA tenderness","type":"toggle"},
-            {"id":"pe_abd_left_cva_tender","label":"left CVA tenderness","type":"toggle"},
-            {"id":"pe_abd_mass","label":"mass","type":"toggle"},
-            {"id":"pe_abd_hernia","label":"hernia","type":"toggle"}
+            {"id":"pe_abd_distension","label":"distension","type":"toggle","abnText":"abdominal distension","negText":"no abdominal distension"},
+            {"id":"pe_abd_tenderness","label":"tenderness","type":"toggle","abnText":"abdominal tenderness","negText":"no abdominal tenderness"},
+            {"id":"pe_abd_guarding","label":"guarding","type":"toggle","abnText":"guarding","negText":"no guarding"},
+            {"id":"pe_abd_rebound","label":"rebound","type":"toggle","abnText":"rebound tenderness","negText":"no rebound tenderness"},
+            {"id":"pe_abd_right_cva_tender","label":"right CVA tenderness","type":"toggle","abnText":"right CVA tenderness","negText":"no right CVA tenderness"},
+            {"id":"pe_abd_left_cva_tender","label":"left CVA tenderness","type":"toggle","abnText":"left CVA tenderness","negText":"no left CVA tenderness"},
+            {"id":"pe_abd_mass","label":"mass","type":"toggle","abnText":"abdominal mass","negText":"no abdominal mass"},
+            {"id":"pe_abd_hernia","label":"hernia","type":"toggle","abnText":"hernia","negText":"no hernia"}
           ]
         },
         {
@@ -196,8 +198,8 @@
             {"id":"pe_gu_rectum_nl","label":"rectum nl"}
           ],
           "chips": [
-            {"id":"pe_gu_guaiac_result","label":"guaiac result","type":"toggle"},
-            {"id":"pe_gu_vaginal_discharge","label":"vaginal discharge","type":"toggle"}
+            {"id":"pe_gu_guaiac_result","label":"guaiac result","type":"toggle","abnText":"guaiac positive","negText":"guaiac negative"},
+            {"id":"pe_gu_vaginal_discharge","label":"vaginal discharge","type":"toggle","abnText":"vaginal discharge","negText":"no vaginal discharge"}
           ]
         },
         {
@@ -206,12 +208,12 @@
             {"id":"pe_msk_rom_nl","label":"ROM nl"}
           ],
           "chips": [
-            {"id":"pe_msk_swelling","label":"swelling","type":"toggle"},
-            {"id":"pe_msk_deformity","label":"deformity","type":"toggle"},
-            {"id":"pe_msk_tenderness","label":"tenderness","type":"toggle"},
-            {"id":"pe_msk_injury","label":"injury","type":"toggle"},
-            {"id":"pe_msk_rle_edema","label":"RLE edema","type":"toggle"},
-            {"id":"pe_msk_lle_edema","label":"LLE edema","type":"toggle"}
+            {"id":"pe_msk_swelling","label":"swelling","type":"toggle","abnText":"swelling","negText":"no swelling"},
+            {"id":"pe_msk_deformity","label":"deformity","type":"toggle","abnText":"deformity","negText":"no deformity"},
+            {"id":"pe_msk_tenderness","label":"tenderness","type":"toggle","abnText":"tenderness","negText":"no tenderness"},
+            {"id":"pe_msk_injury","label":"injury","type":"toggle","abnText":"injury","negText":"no injury"},
+            {"id":"pe_msk_rle_edema","label":"RLE edema","type":"toggle","abnText":"RLE edema","negText":"no RLE edema"},
+            {"id":"pe_msk_lle_edema","label":"LLE edema","type":"toggle","abnText":"LLE edema","negText":"no LLE edema"}
           ]
         },
         {
@@ -221,12 +223,12 @@
             {"id":"pe_skin_dry","label":"dry"}
           ],
           "chips": [
-            {"id":"pe_skin_jaundiced","label":"jaundiced","type":"toggle"},
-            {"id":"pe_skin_bruising","label":"bruising","type":"toggle"},
-            {"id":"pe_skin_lesion","label":"lesion","type":"toggle"},
-            {"id":"pe_skin_pale","label":"pale","type":"toggle"},
-            {"id":"pe_skin_erythema","label":"erythema","type":"toggle"},
-            {"id":"pe_skin_rash","label":"rash","type":"toggle"}
+            {"id":"pe_skin_jaundiced","label":"jaundiced","type":"toggle","abnText":"jaundiced","negText":"no jaundice"},
+            {"id":"pe_skin_bruising","label":"bruising","type":"toggle","abnText":"bruising","negText":"no bruising"},
+            {"id":"pe_skin_lesion","label":"lesion","type":"toggle","abnText":"skin lesion","negText":"no skin lesion"},
+            {"id":"pe_skin_pale","label":"pale","type":"toggle","abnText":"pallor","negText":"no pallor"},
+            {"id":"pe_skin_erythema","label":"erythema","type":"toggle","abnText":"erythema","negText":"no erythema"},
+            {"id":"pe_skin_rash","label":"rash","type":"toggle","abnText":"rash","negText":"no rash"}
           ]
         },
         {
@@ -237,13 +239,13 @@
             {"id":"pe_neuro_at_baseline","label":"at baseline"}
           ],
           "chips": [
-            {"id":"pe_neuro_disoriented","label":"disoriented","type":"toggle"},
-            {"id":"pe_neuro_cranial_nerve_deficit","label":"cranial nerve deficit","type":"toggle"},
-            {"id":"pe_neuro_sensory_deficit","label":"sensory deficit","type":"toggle"},
-            {"id":"pe_neuro_weakness","label":"weakness","type":"toggle"},
-            {"id":"pe_neuro_abnl_coordination","label":"abnl coordination","type":"toggle"},
-            {"id":"pe_neuro_abnl_gait","label":"abnl gait","type":"toggle"},
-            {"id":"pe_neuro_abnl_dtrs","label":"abnl DTRs","type":"toggle"}
+            {"id":"pe_neuro_disoriented","label":"disoriented","type":"toggle","abnText":"disoriented","negText":"alert and oriented"},
+            {"id":"pe_neuro_cranial_nerve_deficit","label":"cranial nerve deficit","type":"toggle","abnText":"cranial nerve deficit","negText":"no cranial nerve deficit"},
+            {"id":"pe_neuro_sensory_deficit","label":"sensory deficit","type":"toggle","abnText":"sensory deficit","negText":"no sensory deficit"},
+            {"id":"pe_neuro_weakness","label":"weakness","type":"toggle","abnText":"weakness","negText":"no weakness"},
+            {"id":"pe_neuro_abnl_coordination","label":"abnl coordination","type":"toggle","abnText":"abnormal coordination","negText":"normal coordination"},
+            {"id":"pe_neuro_abnl_gait","label":"abnl gait","type":"toggle","abnText":"abnormal gait","negText":"normal gait"},
+            {"id":"pe_neuro_abnl_dtrs","label":"abnl DTRs","type":"toggle","abnText":"abnormal DTRs","negText":"normal DTRs"}
           ]
         },
         {
