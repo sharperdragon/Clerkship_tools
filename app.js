@@ -278,7 +278,10 @@ function cb(id,label,checked,on){ const w=document.createElement("label"); w.cla
   const d = document.createElement("div");
   const pos = isPos(value), neg = isNeg(value);
   const classList = ["chip"];
-  if (def.critical) classList.push("critical");
+  if (pos) {
+    classList.push("pos");
+    if (def.critical) classList.push("critical");
+  }
   if (neg) classList.push("neg");
   // Do not add a `selected` class; hover appearance should be handled in CSS via `.chip:hover`
   d.className = classList.join(" ");
