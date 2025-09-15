@@ -9,11 +9,12 @@ const CLASS_NORMAL   = "normal";   // applied when good/absent (left-click)
 
 // Map each mode to its own template file
 const MODE_FILES = {
-  PE:  "templates_pe.json",
   ROS: "templates_ROS.json",
+  PE:  "templates_pe.json",
   MSE: "templates_MSE.json"
 };
-const MODE_LIST = Object.keys(MODE_FILES);
+// Explicit order for tabs (so ROS appears first regardless of key enumeration)
+const MODE_LIST = ["ROS", "PE", "MSE"];
 
 async function loadTemplatesForMode(mode){
   const file = MODE_FILES[mode];
