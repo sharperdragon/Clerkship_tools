@@ -15,6 +15,7 @@ const MODE_FILES = {
 };
 // Explicit order for tabs (so ROS appears first regardless of key enumeration)
 const MODE_LIST = ["ROS", "PE", "MSE"];
+const MODE_LABELS = { ROS: "ROS", PE: "Physical Exam", MSE: "MSE" };
 
 async function loadTemplatesForMode(mode){
   const file = MODE_FILES[mode];
@@ -94,7 +95,7 @@ function renderTier1(){
   MODE_LIST.forEach(m => {
     const btn = document.createElement("button");
     btn.className = "tab" + (m === state.mode ? " active" : "");
-    btn.textContent = m;
+    btn.textContent = MODE_LABELS[m] || m;
     btn.onclick = async ()=>{ await switchMode(m); };
     wrap.appendChild(btn);
   });
