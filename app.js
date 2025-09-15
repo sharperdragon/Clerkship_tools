@@ -279,24 +279,28 @@ function panel(title){ const s=document.createElement("section"); s.className="p
 function cb(id,label,checked,on){ const w=document.createElement("label"); w.className="cb";
   const i=document.createElement("input"); i.type="checkbox"; i.checked=checked; i.onchange=e=>on(e.target.checked);
   w.appendChild(i); w.appendChild(document.createTextNode(label)); return w; }
+// Helper to apply chip visual state classes and a debug data attribute
+function applyChipVisualState(el, pos, neg){
+  const classes = ["chip"];
+  if (pos)      classes.push(CLASS_CRITICAL);
+  else if (neg) classes.push(CLASS_NORMAL);
+  el.className = classes.join(" ");
+  // Debug-friendly attribute so you can see state in DevTools
+  el.setAttribute("data-state", pos ? "critical" : (neg ? "normal" : "neutral"));
+}
+
 function chip(def, value, onMouse){
   // value: 0 | 'neg' | {state:'pos', side?, grade?, tags?}
   const d = document.createElement("div");
   const pos = isPos(value), neg = isNeg(value);
-  const classList = ["chip"];
-
-  // Two visual buckets only: critical (abnormal) or normal (good)
-  if (pos) {
-    classList.push(CLASS_CRITICAL); // right-clicked state
-  } else if (neg) {
-    classList.push(CLASS_NORMAL);   // left-clicked state
-  }
-  // neutral = not clicked -> no extra class
-
-  // Do not add a `selected` class; hover appearance should be handled in CSS via `.chip:hover`
-  d.className = classList.join(" ");
+  applyChipVisualState(d, pos, neg);
+  d.title = `state: ${pos ? "critical" : (neg ? "normal" : "neutral")}`;
   d.oncontextmenu = (e)=>e.preventDefault();
   d.onpointerdown = onMouse;   // use pointer events for reliable L/R detection
+  // Fallback for environments that don't deliver button codes on pointer events
+  if (!("onpointerdown" in window)) {
+    d.onmousedown = onMouse;
+  }
 
   const affPlus = document.createElement("button");
   affPlus.type = "button";
@@ -380,6 +384,7 @@ function setChipState(id, next){  // next: 0 | 'neg' | 'pos'
 }
 
 function handleChipMouse(e, id){
+  console.debug("chip mousedown", { id, button: e.button, mode: state.mode });
   // 0 = left, 2 = right
   if (e.button === 2) {           // right click -> present/abnormal
     e.preventDefault();
@@ -393,6 +398,7 @@ function handleChipMouse(e, id){
     const cur = getSec().chips?.[id] || 0;
     getSec().chips[id] = isNeg(cur) ? 0 : 'neg';
   }
+  console.debug("chip state", { id, value: getSec().chips[id] });
   // Repaint UI every time so classes/inline controls update immediately
   renderGrid();
   renderOutput();
