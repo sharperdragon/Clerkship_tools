@@ -438,12 +438,7 @@
 .subgrid.cols-2 {
   grid-template-columns: 1fr 1fr;
 }
-.subpanel {
-  border: 1px solid var(--line, #d9dee3);
-  border-radius: 6px;
-  padding: 8px;
-  background: var(--panel, #fff);
-}
+
 .subpanel .subhead {
   margin: 0 0 6px 0;
   font-weight: 600;
