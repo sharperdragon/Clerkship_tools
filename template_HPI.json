@@ -18,8 +18,8 @@
               "ui": { "trueLabel": "Yes", "falseLabel": "No" }
             },
             {
-              "id": "hpi_prior_details",
-              "label": "Prior details",
+              "id": "hpi_prior",
+              "label": "Prior",
               "type": "text",
               "showIf": { "field": "hpi_prior_flag", "equals": true }
             },
@@ -31,13 +31,13 @@
             { "id": "hpi_region", "label": "Region", "type": "text" },
             {
               "id": "hpi_radiate_flag",
-              "label": "Radiation present?",
+              "label": "Radiation",
               "type": "boolean",
               "ui": { "trueLabel": "Yes", "falseLabel": "No" }
             },
             {
-              "id": "hpi_radiate_details",
-              "label": "Radiation details",
+              "id": "hpi_radiate",
+              "label": "Radiation",
               "type": "text",
               "showIf": { "field": "hpi_radiate_flag", "equals": true }
             },
@@ -50,8 +50,8 @@
               "ui": { "trueLabel": "Yes", "falseLabel": "No" }
             },
             {
-              "id": "hpi_treatment_details",
-              "label": "Treatment details",
+              "id": "hpi_treatment",
+              "label": "Treatment",
               "type": "text",
               "showIf": { "field": "hpi_treatment_flag", "equals": true }
             },

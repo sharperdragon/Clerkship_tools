@@ -1,4 +1,16 @@
 
+// ===== Cache config =====
+const APP_VERSION = "2025-09-16-a";          // bump to invalidate everything
+const CACHE_ENABLED = true;                   // master switch
+const CACHE_TTL_MS = 1000 * 60 * 60 * 24;     // 24h for templates
+const STATE_AUTOSAVE_MS = 500;               // debounce for state saves
+
+// Cache keys
+const CK = {
+  TEMPLATES: `ct.templates.${APP_VERSION}`,
+  STATE:     `ct.state.${APP_VERSION}`,
+};
+
 const DEFAULT_MODE = "ROS";
 const DEFAULT_COLUMNS = 3;
 
@@ -19,13 +31,58 @@ const MODE_FILES = {
 const MODE_LIST = ["HPI", "ROS", "PE", "MSE"];
 const MODE_LABELS = { HPI: "HPI",  ROS: "ROS", PE: "Physical Exam", MSE: "MSE" };
 
+
+
+// ===== Tiny cache helper (localStorage + TTL) =====
+function cacheSet(key, value, ttlMs = 0) {
+  if (!CACHE_ENABLED) return;
+  const now = Date.now();
+  const rec = { v: value, t: now, ttl: ttlMs|0 };
+  try { localStorage.setItem(key, JSON.stringify(rec)); } catch {}
+}
+function cacheGet(key) {
+  if (!CACHE_ENABLED) return null;
+  try {
+    const raw = localStorage.getItem(key);
+    if (!raw) return null;
+    const rec = JSON.parse(raw);
+    if (rec && rec.ttl && Date.now() - rec.t > rec.ttl) {
+      localStorage.removeItem(key);
+      return null; // expired
+    }
+    return rec ? rec.v : null;
+  } catch { return null; }
+}
+function cacheDel(key) {
+  try { localStorage.removeItem(key); } catch {}
+}
+function cacheClearAllForVersion() {
+  // Clears only this APP_VERSION namespace
+  Object.keys(localStorage).forEach(k => {
+    if (k.includes(`ct.`) && k.includes(APP_VERSION)) localStorage.removeItem(k);
+  });
+}
+
+
 async function loadTemplatesForMode(mode){
   const file = MODE_FILES[mode];
   if (!file) throw new Error(`No template file for mode ${mode}`);
+
+  // Try cache bucket (object keyed by mode)
+  const bucket = cacheGet(CK.TEMPLATES) || {};
+  if (bucket && bucket[mode]) {
+    return bucket[mode];
+  }
+
+  // Fetch fresh and store in cache bucket with TTL
   const r = await fetch(file, { cache: "no-store" });
   if (!r.ok) throw new Error(`HTTP ${r.status}`);
-  return await r.json();
+  const tpl = await r.json();
+  bucket[mode] = tpl;
+  cacheSet(CK.TEMPLATES, bucket, CACHE_TTL_MS);
+  return tpl;
 }
+
 
 async function switchMode(mode){
   state.mode = mode;
@@ -80,7 +137,9 @@ const asObj = (v)=> (typeof v === "object" ? v : null);
 
 async function init(){
   await switchMode(DEFAULT_MODE);
+  const restored = maybeRestoreState();
   wireHeader();
+  if (restored) renderAll();
 }
 
 function showFatal(msg){
@@ -502,6 +561,30 @@ function renderOutput(){
   if (ta) ta.value = lines.join("\n");
 }
 
+// ====== State persistence (autosave + restore) ======
+let _saveTimer = null;
+function saveStateSoon(){
+  if (!CACHE_ENABLED) return;
+  clearTimeout(_saveTimer);
+  _saveTimer = setTimeout(()=>{
+    try { localStorage.setItem(CK.STATE, JSON.stringify(state)); } catch {}
+  }, STATE_AUTOSAVE_MS);
+}
+
+function maybeRestoreState(){
+  if (!CACHE_ENABLED) return false;
+  try {
+    const raw = localStorage.getItem(CK.STATE);
+    if (!raw) return false;
+    const restored = JSON.parse(raw);
+    if (!restored || typeof restored !== 'object') return false;
+    // shallow merge to keep current schema defaults
+    state = { ...state, ...restored };
+    return true;
+  } catch {
+    return false;
+  }
+}
 
 // helpers you also need:
 function panel(title){ const s=document.createElement("section"); s.className="panel";
@@ -531,8 +614,14 @@ function cb(id,label,checked,on){
   return w;
 }
 
-function setField(id, val){ getSec().fields[id] = val; }
-function getField(id){ return getSec().fields?.[id] ?? ""; }
+function setField(id, val){
+  getSec().fields[id] = val;
+  saveStateSoon();
+}
+function setCB(id,val){
+  getSec().checkboxes[id]=val;
+  saveStateSoon();
+}
 
 // Single-line input (text) with label
 function fieldText(id, label, value, onChange){
@@ -680,19 +769,23 @@ function miniBtn(label, active, on){
   return b;
 }
 
-function setChipPos(id){ const s=getSec(); const cur=s.chips[id];
-  s.chips[id] = isPos(cur) ? cur : { state:'pos' }; }
+function setChipPos(id){
+  const s=getSec(); const cur=s.chips[id];
+  s.chips[id] = isPos(cur) ? cur : { state:'pos' };
+  saveStateSoon();
+}
 
-function setChipNeg(id){ getSec().chips[id] = 'neg'; }
-function clearChip(id){  getSec().chips[id] = 0; }
+function setChipNeg(id){ getSec().chips[id] = 'neg'; saveStateSoon(); }
+function clearChip(id){  getSec().chips[id] = 0; saveStateSoon(); }
 
-function setChipGrade(id, grade){ setChipPos(id); getSec().chips[id].grade = grade; renderOutput(); renderGrid(); }
-function setChipSide(id, side){  setChipPos(id); getSec().chips[id].side  = side;  renderOutput(); renderGrid(); }
-function setChipTag(id, tag, on){ setChipPos(id); (getSec().chips[id].tags ??= {})[tag] = !!on; renderOutput(); }
+function setChipGrade(id, grade){ setChipPos(id); getSec().chips[id].grade = grade; saveStateSoon(); renderOutput(); renderGrid(); }
+function setChipSide(id, side){  setChipPos(id); getSec().chips[id].side  = side;  saveStateSoon(); renderOutput(); renderGrid(); }
+function setChipTag(id, tag, on){ setChipPos(id); (getSec().chips[id].tags ??= {})[tag] = !!on; saveStateSoon(); renderOutput(); }
 
 function setChipState(id, next){  // next: 0 | 'neg' | 'pos'
   const s = getSec();
   s.chips[id] = next;
+  saveStateSoon();
 }
 
 function handleChipMouse(e, id){
@@ -712,6 +805,7 @@ function handleChipMouse(e, id){
   }
   console.debug("chip state", { id, value: getSec().chips[id] });
   // Repaint UI every time so classes/inline controls update immediately
+  saveStateSoon();
   renderGrid();
   renderOutput();
 }
@@ -824,6 +918,7 @@ function setMatrixGrade(panelId, rowIdx, colIdx, gradeOrNull){
   const sec = getSec(); sec.matrix ??= {}; sec.matrix[panelId] ??= {};
   sec.matrix[panelId][rowIdx] ??= {};
   sec.matrix[panelId][rowIdx][colIdx] = gradeOrNull;
+  saveStateSoon();
   renderOutput();
 }
 function setMatrixAll(panelId, gradeIndex, meta){
@@ -833,6 +928,7 @@ function setMatrixAll(panelId, gradeIndex, meta){
     sec.matrix[panelId][r] ??= {};
     for(let c=0;c<cols;c++) sec.matrix[panelId][r][c] = gradeIndex;
   }
+  saveStateSoon();
   renderGrid(); renderOutput();
 }
 function clearMatrix(panelId, meta){
@@ -842,6 +938,7 @@ function clearMatrix(panelId, meta){
     sec.matrix[panelId][r] ??= {};
     for(let c=0;c<cols;c++) sec.matrix[panelId][r][c] = null;
   }
+  saveStateSoon();
   renderGrid(); renderOutput();
 }
 
@@ -851,10 +948,12 @@ function wireHeader(){
   };
   document.getElementById("clearSectionBtn").onclick = ()=>{
     state.sections[`${state.mode}:${state.activeSection}`] = {checkboxes:{}, chips:{}};
+    saveStateSoon();
     renderGrid(); renderOutput();
   };
   document.getElementById("clearAllBtn").onclick = ()=>{
     Object.keys(state.sections).forEach(k=> state.sections[k]={checkboxes:{},chips:{}});
+    saveStateSoon();
     renderGrid(); renderOutput();
   };
 }

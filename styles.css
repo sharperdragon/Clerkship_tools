@@ -489,3 +489,24 @@
   align-items: center;
   gap: 6px;
 }
+
+/* HPI: Stack field label above text inputs */
+.section-grid.HPI .field:not(.field-boolean) {
+  flex-direction: column;        /* label above input */
+  align-items: stretch;          /* full-width input */
+  gap: 4px;                      /* tight vertical spacing */
+}
+.section-grid.HPI .field:not(.field-boolean) .field-label {
+  min-width: 0;                  /* allow wrapping */
+  margin: 0;                     /* reset inline margins */
+}
+.section-grid.HPI .field:not(.field-boolean) input[type="text"],
+.section-grid.HPI .field:not(.field-boolean) textarea {
+  width: 100%;
+}
+
+/* Keep boolean fields horizontal in HPI */
+.section-grid.HPI .field.field-boolean {
+  flex-direction: row;
+  align-items: center;
+}
