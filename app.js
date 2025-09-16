@@ -13,8 +13,21 @@ const CK = {
   CURRENT:   `ct.patient.current.${APP_VERSION}`, // active patient id
 };
 
-const DEFAULT_MODE = "ROS";
+const DEFAULT_MODE = "HPI";
 const DEFAULT_COLUMNS = 3;
+
+// Sticky layout heights (JS-only; no CSS edits)
+const STK = {
+  appbarMin: 38,  // px fallback if measurement fails
+  tier1Min: 36,
+  tier2Min: 36,
+  z: { appbar: 6, tier1: 5, tier2: 4, checks: 3 }
+};
+
+// Tiny debounce helper
+function debounce(fn, ms=100){
+  let t; return (...a)=>{ clearTimeout(t); t=setTimeout(()=>fn(...a), ms); };
+}
 
 const REMEMBER_STATE = false;
 
@@ -155,6 +168,7 @@ async function init(){
   await switchMode(state.mode || DEFAULT_MODE);
   wireHeader();
   renderPatientControls();
+  applySticky();
 }
 
 function showFatal(msg){
@@ -163,7 +177,7 @@ function showFatal(msg){
   grid.appendChild(document.createTextNode("ERROR: " + msg));
   console.error("[NoteWriter]", msg);
 }
-function renderAll(){ renderTier1(); renderTier2(); renderHeaderChecks(); renderGrid(); renderOutput(); wireHeader(); }
+function renderAll(){ renderTier1(); renderTier2(); renderHeaderChecks(); renderGrid(); renderOutput(); wireHeader(); applySticky(); }
 
 function renderTier1(){
   const wrap = document.getElementById("tier1");
@@ -175,6 +189,7 @@ function renderTier1(){
     btn.onclick = async ()=>{ await switchMode(m); };
     wrap.appendChild(btn);
   });
+  applySticky();
 }
 
 function renderTier2(){
@@ -186,7 +201,46 @@ function renderTier2(){
     btn.onclick = ()=>{ state.activeSection = sec; ensureSectionState(); renderGrid(); renderOutput(); };
     wrap.appendChild(btn);
   });
+  applySticky();
 }
+
+function px(n){ return `${Math.max(0, Math.round(n))}px`; }
+
+function applySticky(){
+  const appbar = document.querySelector('.appbar');
+  const tier1  = document.getElementById('tier1');
+  const tier2  = document.getElementById('tier2');
+  const checks = document.getElementById('headerChecks');
+
+  if (!tier1 || !tier2 || !checks) return;
+
+  // Measure current heights (fallbacks keep it robust)
+  const appbarH = appbar?.getBoundingClientRect?.().height || STK.appbarMin;
+  const tier1H  = tier1.getBoundingClientRect?.().height || STK.tier1Min;
+  const tier2H  = tier2.getBoundingClientRect?.().height || STK.tier2Min;
+
+  // Tier 1 sticky under appbar
+  tier1.style.position = 'sticky';
+  tier1.style.top      = px(appbarH);
+  tier1.style.zIndex   = String(STK.z.tier1);
+  if (!tier1.style.background) tier1.style.background = '#eef2f7';
+
+  // Tier 2 sticky under Tier 1
+  tier2.style.position = 'sticky';
+  tier2.style.top      = px(appbarH + tier1H);
+  tier2.style.zIndex   = String(STK.z.tier2);
+  if (!tier2.style.background) tier2.style.background = '#f6f8fb';
+
+  // Header checks sticky under Tier 2
+  checks.style.position = 'sticky';
+  checks.style.top      = px(appbarH + tier1H + tier2H);
+  checks.style.zIndex   = String(STK.z.checks);
+  if (!checks.style.background)   checks.style.background   = '#fff';
+  if (!checks.style.borderBottom) checks.style.borderBottom = '1px solid var(--divider)';
+}
+
+// Re-apply sticky on window resize
+window.addEventListener('resize', debounce(applySticky, 120));
 // Helper to create a row div with the current mode as a class, plus any extra class
 function makeRow(extraClass){
   const d = document.createElement("div");
@@ -215,6 +269,7 @@ function renderHeaderChecks(){
     );
   });
   host.appendChild(wrap);
+  applySticky();
 }
 
 function renderGrid(){

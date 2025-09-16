@@ -528,3 +528,28 @@
   flex-direction: row;
   align-items: center;
 }
+.out-wrap {
+  margin: 6px 6px 10px;
+}
+.out-head {
+  font: 12px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, Arial;
+  color: var(--ink);
+  margin: 6px 0 4px;
+  font-weight: 600;
+}
+#out,
+#completeOut {
+  width: 100%;
+  min-height: 160px;
+  resize: vertical;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  font-size: 12px;
+  line-height: 1.45;
+  border: 1px solid var(--divider);
+  border-radius: 6px;
+  padding: 8px 10px;
+  background: #fff;
+}
+#completeOut {
+  min-height: 220px; /* a little taller for the full note */
+}
