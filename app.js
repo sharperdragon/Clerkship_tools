@@ -30,6 +30,8 @@ function debounce(fn, ms=100){
 }
 
 const REMEMBER_STATE = false;
+// Debounce for the full-note builder
+const COMPLETE_NOTE_MS = 150;
 
 const CLASS_CRITICAL = "critical"; // applied when abnormal/present (right-click)
 const CLASS_NORMAL   = "normal";   // applied when good/absent (left-click)
@@ -169,6 +171,7 @@ async function init(){
   wireHeader();
   renderPatientControls();
   applySticky();
+  renderCompleteSoon();
 }
 
 function showFatal(msg){
@@ -198,7 +201,7 @@ function renderTier2(){
     const btn = document.createElement("button");
     btn.className = "tab" + (sec===state.activeSection ? " active" : "");
     btn.textContent = sec;
-    btn.onclick = ()=>{ state.activeSection = sec; ensureSectionState(); renderGrid(); renderOutput(); };
+    btn.onclick = ()=>{ state.activeSection = sec; ensureSectionState(); renderGrid(); renderOutput(); renderCompleteSoon(); };
     wrap.appendChild(btn);
   });
   applySticky();
@@ -264,7 +267,7 @@ function renderHeaderChecks(){
         t.id,
         t.label,
         !!getSec().checkboxes?.[t.id],
-        v=>{ setCB(t.id, v); renderOutput(); }
+        v=>{ setCB(t.id, v); renderOutput(); renderCompleteSoon(); }
       )
     );
   });
@@ -279,6 +282,24 @@ function renderGrid(){
   grid.className = "section-grid " + state.mode;
   const def = Templates.sectionDefs[`${state.mode}:${state.activeSection}`];
   if(!def){ grid.textContent = "No schema yet."; return; }
+  
+  // Dynamic two-column layout for HPI when multiple panels exist
+  if (state.mode === "HPI") {
+    const panels = (def.panels || []);
+    if (panels.length > 1) {
+      grid.style.display = "grid";
+      grid.style.gridTemplateColumns = "1fr 1fr";
+      grid.style.gap = "8px";
+    } else {
+      grid.style.display = "";
+      grid.style.gridTemplateColumns = "";
+      grid.style.gap = "";
+    }
+  } else {
+    grid.style.display = "";
+    grid.style.gridTemplateColumns = "";
+    grid.style.gap = "";
+  }
 
   if (def.headerToggles?.length){
     const p = panel("Options");
@@ -487,7 +508,7 @@ function renderGrid(){
               f.id,
               f.label,
               typeof val === "boolean" ? val : false, // default false
-              (v) => { setField(f.id, v); renderGrid(); renderOutput(); }, // re-render to show/hide dependents
+              (v) => { setField(f.id, v); renderGrid(); renderOutput(); renderCompleteSoon(); }, // re-render to show/hide dependents
               f.ui || {}
             )
           );
@@ -497,9 +518,10 @@ function renderGrid(){
               f.id,
               f.label,
               val,
-              (v) => { setField(f.id, v); renderOutput(); }
+              (v) => { setField(f.id, v); renderOutput(); renderCompleteSoon(); },
+              f.placeholder
             )
-          );
+);
         }
 
         p.appendChild(r);
@@ -844,10 +866,12 @@ function cb(id,label,checked,on){
 function setField(id, val){
   getSec().fields[id] = val;
   saveStateSoon();
+  renderCompleteSoon();
 }
 function setCB(id,val){
   getSec().checkboxes[id]=val;
   saveStateSoon();
+  renderCompleteSoon();
 }
 
 function getField(id){
@@ -857,8 +881,74 @@ function getField(id){
     : undefined;
 }
 
+// ===== Complete Note aggregation (cross-mode) =====
+// Collect text for a specific mode without switching the visible UI mode
+async function buildNoteForMode(mode){
+  try {
+    const tpl = await loadTemplatesForMode(mode);
+    return collectTextFromTemplates(mode, tpl);
+  } catch (e) {
+    console.debug('[CompleteNote] template load failed for', mode, e?.message || e);
+    return '';
+  }
+}
+
+// Walk the templates for a mode and assemble text from state
+function collectTextFromTemplates(mode, tpl){
+  if (!tpl || typeof tpl !== 'object') return '';
+  const out = [];
+  const secDefs = tpl.sectionDefs || {};
+  Object.keys(secDefs).forEach(groupKey => {
+    const group = secDefs[groupKey];
+    (group.panels || []).forEach(pd => {
+      // Fields (skip booleans; honor showIf like renderGrid/renderOutput)
+      if (Array.isArray(pd.fields)){
+        pd.fields.forEach(f => {
+          if (!shouldShowField(f)) return;
+          if (f.type === 'boolean') return;
+          const sec = getSecFor(mode, groupKey);
+          const raw = (sec.fields && sec.fields[f.id]);
+          const v = (typeof raw === 'string' ? raw.trim() : '');
+          if (v) out.push(`${f.label}: ${v}.`);
+        });
+      }
+      // If you want chips/grades/etc included, mirror their encoding here.
+    });
+  });
+  return out.join(' ');
+}
+
+// Safe accessor for another mode's section bucket (no UI switch)
+function getSecFor(mode, groupKey){
+  const key = `${mode}:${groupKey}`;
+  state.sections[key] ??= { checkboxes:{}, chips:{}, fields:{} };
+  return state.sections[key];
+}
+
+let _completeTimer = null;
+function renderCompleteSoon(){
+  clearTimeout(_completeTimer);
+  _completeTimer = setTimeout(() => { renderCompleteNote(); }, COMPLETE_NOTE_MS);
+}
+
+async function renderCompleteNote(){
+  const box = document.getElementById('completeOut');
+  if (!box) return;
+  const modes = Object.keys(MODE_FILES || {});
+  const parts = [];
+  for (const m of modes){
+    try {
+      const txt = await buildNoteForMode(m);
+      if (txt && txt.trim()) parts.push(`${m}:\n${txt.trim()}\n`);
+    } catch (e) {
+      console.debug('[CompleteNote] skip', m, e?.message || e);
+    }
+  }
+  box.value = parts.join('\n').trim();
+}
+
 // Single-line input (text) with label
-function fieldText(id, label, value, onChange){
+function fieldText(id, label, value, onChange, placeholder){
   const wrap = document.createElement("label");
   wrap.className = "field";
   const span = document.createElement("span");
@@ -867,7 +957,7 @@ function fieldText(id, label, value, onChange){
   const input = document.createElement("input");
   input.type = "text";
   input.value = value || "";
-  input.placeholder = label;
+  input.placeholder = (placeholder ?? label);
   input.oninput = (e) => onChange(e.target.value);
   wrap.append(span, input);
   return wrap;
@@ -1012,9 +1102,9 @@ function setChipPos(id){
 function setChipNeg(id){ getSec().chips[id] = 'neg'; saveStateSoon(); }
 function clearChip(id){  getSec().chips[id] = 0; saveStateSoon(); }
 
-function setChipGrade(id, grade){ setChipPos(id); getSec().chips[id].grade = grade; saveStateSoon(); renderOutput(); renderGrid(); }
-function setChipSide(id, side){  setChipPos(id); getSec().chips[id].side  = side;  saveStateSoon(); renderOutput(); renderGrid(); }
-function setChipTag(id, tag, on){ setChipPos(id); (getSec().chips[id].tags ??= {})[tag] = !!on; saveStateSoon(); renderOutput(); }
+function setChipGrade(id, grade){ setChipPos(id); getSec().chips[id].grade = grade; saveStateSoon(); renderOutput(); renderGrid(); renderCompleteSoon(); }
+function setChipSide(id, side){  setChipPos(id); getSec().chips[id].side  = side;  saveStateSoon(); renderOutput(); renderGrid(); renderCompleteSoon(); }
+function setChipTag(id, tag, on){ setChipPos(id); (getSec().chips[id].tags ??= {})[tag] = !!on; saveStateSoon(); renderOutput(); renderCompleteSoon(); }
 
 function setChipState(id, next){  // next: 0 | 'neg' | 'pos'
   const s = getSec();
@@ -1042,6 +1132,7 @@ function handleChipMouse(e, id){
   saveStateSoon();
   renderGrid();
   renderOutput();
+  renderCompleteSoon();
 }
 
 function ensureSectionState(){
@@ -1153,6 +1244,7 @@ function setMatrixGrade(panelId, rowIdx, colIdx, gradeOrNull){
   sec.matrix[panelId][rowIdx][colIdx] = gradeOrNull;
   saveStateSoon();
   renderOutput();
+  renderCompleteSoon();
 }
 function setMatrixAll(panelId, gradeIndex, meta){
   const sec = getSec(); sec.matrix ??= {}; sec.matrix[panelId] ??= {};
@@ -1163,6 +1255,7 @@ function setMatrixAll(panelId, gradeIndex, meta){
   }
   saveStateSoon();
   renderGrid(); renderOutput();
+  renderCompleteSoon();
 }
 function clearMatrix(panelId, meta){
   const sec = getSec(); sec.matrix ??= {}; sec.matrix[panelId] ??= {};
@@ -1173,6 +1266,7 @@ function clearMatrix(panelId, meta){
   }
   saveStateSoon();
   renderGrid(); renderOutput();
+  renderCompleteSoon();
 }
 
 function wireHeader(){

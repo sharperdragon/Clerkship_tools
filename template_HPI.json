@@ -10,52 +10,71 @@
           "title": "History of Present Illness",
           "id": "hpi_main",
           "fields": [
-            { "id": "hpi_onset", "label": "Onset", "type": "text" },
+            { "id": "hpi_onset", "label": "Onset", "type": "text", "placeholder": "Onset" },
             {
               "id": "hpi_prior_flag",
               "label": "Prior?",
               "type": "boolean",
-              "ui": { "trueLabel": "Yes", "falseLabel": "No" }
+              "ui": { "trueLabel": "Yes", "falseLabel": "No" },
+              "placeholder": "Prior?"
             },
             {
               "id": "hpi_prior",
               "label": "Prior",
               "type": "text",
-              "showIf": { "field": "hpi_prior_flag", "equals": true }
+              "showIf": { "field": "hpi_prior_flag", "equals": true },
+              "placeholder": "Prior"
             },
-            { "id": "hpi_progression", "label": "Progression", "type": "text" },
-            { "id": "hpi_pallate", "label": "Pallate", "type": "text" },
-            { "id": "hpi_provoke", "label": "Provoke", "type": "text" },
-            { "id": "hpi_quality", "label": "Quality", "type": "text" },
-            { "id": "hpi_quantity", "label": "Quantity", "type": "text" },
-            { "id": "hpi_region", "label": "Region", "type": "text" },
+            { "id": "hpi_progression", "label": "Progression", "type": "text", "placeholder": "Progression" },
+            { "id": "hpi_pallate", "label": "Pallate", "type": "text", "placeholder": "Pallate" },
+            { "id": "hpi_provoke", "label": "Provoke", "type": "text", "placeholder": "Provoke" },
+            { "id": "hpi_quality", "label": "Quality", "type": "text", "placeholder": "Quality" },
+            { "id": "hpi_quantity", "label": "Quantity", "type": "text", "placeholder": "Quantity" },
+            { "id": "hpi_region", "label": "Region", "type": "text", "placeholder": "Region" },
             {
               "id": "hpi_radiate_flag",
               "label": "Radiation",
               "type": "boolean",
-              "ui": { "trueLabel": "Yes", "falseLabel": "No" }
+              "ui": { "trueLabel": "Yes", "falseLabel": "No" },
+              "placeholder": "Radiation"
             },
             {
               "id": "hpi_radiate",
               "label": "Radiation",
               "type": "text",
-              "showIf": { "field": "hpi_radiate_flag", "equals": true }
+              "showIf": { "field": "hpi_radiate_flag", "equals": true },
+              "placeholder": "Radiation"
             },
-            { "id": "hpi_scale", "label": "Scale (0/10)", "type": "text" },
-            { "id": "hpi_timing", "label": "Timing", "type": "text" },
+            { "id": "hpi_scale", "label": "Scale (0/10)", "type": "text", "placeholder": "Scale (0/10)" },
+            { "id": "hpi_timing", "label": "Timing", "type": "text", "placeholder": "Timing" },
             {
               "id": "hpi_treatment_flag",
               "label": "Treatment",
               "type": "boolean",
-              "ui": { "trueLabel": "Yes", "falseLabel": "No" }
+              "ui": { "trueLabel": "Yes", "falseLabel": "No" },
+              "placeholder": "Treatment"
             },
             {
               "id": "hpi_treatment",
               "label": "Treatment",
               "type": "text",
-              "showIf": { "field": "hpi_treatment_flag", "equals": true }
+              "showIf": { "field": "hpi_treatment_flag", "equals": true },
+              "placeholder": "Treatment"
             },
-            { "id": "hpi_assoc_symptoms", "label": "Associated Symptoms", "type": "text" }
+            { "id": "hpi_assoc_symptoms", "label": "Associated Symptoms", "type": "text", "placeholder": "Associated Symptoms" }
+          ]
+        },
+        {
+          "title": "Subjective",
+          "id": "hpi_background",
+          "fields": [
+            { "id": "hpi_pmh",      "label": "Past Medical", "type": "text", "placeholder": "Past Medical" },
+            { "id": "hpi_surg_hx",  "label": "Surgical Hx",  "type": "text", "placeholder": "Surgical Hx" },
+            { "id": "hpi_meds",     "label": "Meds",         "type": "text", "placeholder": "Meds" },
+            { "id": "hpi_allergies", "label": "Allergies",    "type": "text", "placeholder": "Allergies" },
+            { "id": "hpi_social",   "label": "Social",       "type": "text", "placeholder": "Social" },
+            { "id": "hpi_lmp",      "label": "LMP",          "type": "text", "placeholder": "LMP" },
+            { "id": "hpi_fhx",      "label": "Family Hx",    "type": "text", "placeholder": "Family Hx" }
           ]
         }
       ]
