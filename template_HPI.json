@@ -11,17 +11,50 @@
           "id": "hpi_main",
           "fields": [
             { "id": "hpi_onset", "label": "Onset", "type": "text" },
-            { "id": "hpi_prior", "label": "Prior", "type": "text" },
+            {
+              "id": "hpi_prior_flag",
+              "label": "Prior?",
+              "type": "boolean",
+              "ui": { "trueLabel": "Yes", "falseLabel": "No" }
+            },
+            {
+              "id": "hpi_prior_details",
+              "label": "Prior details",
+              "type": "text",
+              "showIf": { "field": "hpi_prior_flag", "equals": true }
+            },
             { "id": "hpi_progression", "label": "Progression", "type": "text" },
             { "id": "hpi_pallate", "label": "Pallate", "type": "text" },
             { "id": "hpi_provoke", "label": "Provoke", "type": "text" },
             { "id": "hpi_quality", "label": "Quality", "type": "text" },
             { "id": "hpi_quantity", "label": "Quantity", "type": "text" },
             { "id": "hpi_region", "label": "Region", "type": "text" },
-            { "id": "hpi_radiate", "label": "Radiate", "type": "text" },
+            {
+              "id": "hpi_radiate_flag",
+              "label": "Radiation present?",
+              "type": "boolean",
+              "ui": { "trueLabel": "Yes", "falseLabel": "No" }
+            },
+            {
+              "id": "hpi_radiate_details",
+              "label": "Radiation details",
+              "type": "text",
+              "showIf": { "field": "hpi_radiate_flag", "equals": true }
+            },
             { "id": "hpi_scale", "label": "Scale (0/10)", "type": "text" },
             { "id": "hpi_timing", "label": "Timing", "type": "text" },
-            { "id": "hpi_treatment", "label": "Treatment", "type": "text" },
+            {
+              "id": "hpi_treatment_flag",
+              "label": "Treatment tried?",
+              "type": "boolean",
+              "ui": { "trueLabel": "Yes", "falseLabel": "No" }
+            },
+            {
+              "id": "hpi_treatment_details",
+              "label": "Treatment details",
+              "type": "text",
+              "showIf": { "field": "hpi_treatment_flag", "equals": true }
+            },
             { "id": "hpi_assoc_symptoms", "label": "Associated Symptoms", "type": "text" }
           ]
         }

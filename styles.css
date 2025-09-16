@@ -470,3 +470,22 @@
 .field { display:flex; align-items:center; gap:8px; width:100%; }
 .field-label { min-width:160px; color: var(--muted, #44546a); }
 .field input[type="text"] { flex:1; padding:6px 8px; border:1px solid var(--line, #d9dee3); border-radius:4px; }
+
+
+
+.field-boolean {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.field-boolean .field-label {
+  min-width: 160px;
+}
+.field-boolean .bool-opt {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}

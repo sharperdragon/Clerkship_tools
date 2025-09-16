@@ -17,7 +17,7 @@ const MODE_FILES = {
 };
 // Explicit order for tabs (so ROS appears first regardless of key enumeration)
 const MODE_LIST = ["HPI", "ROS", "PE", "MSE"];
-const MODE_LABELS = { HPI: "HPI", ROS: "ROS", PE: "Physical Exam", MSE: "MSE" };
+const MODE_LABELS = { HPI: "HPI",  ROS: "ROS", PE: "Physical Exam", MSE: "MSE" };
 
 async function loadTemplatesForMode(mode){
   const file = MODE_FILES[mode];
@@ -346,9 +346,33 @@ function renderGrid(){
     }
     if (pd.fields?.length){
       pd.fields.forEach(f => {
+        // respect conditional visibility
+        if (!shouldShowField(f)) return;
+
         const r = makeRow();
         const val = getField(f.id);
-        r.appendChild(fieldText(f.id, f.label, val, (v)=>{ setField(f.id, v); renderOutput(); }));
+
+        if (f.type === "boolean") {
+          r.appendChild(
+            fieldBoolean(
+              f.id,
+              f.label,
+              typeof val === "boolean" ? val : false, // default false
+              (v) => { setField(f.id, v); renderGrid(); renderOutput(); }, // re-render to show/hide dependents
+              f.ui || {}
+            )
+          );
+        } else {
+          r.appendChild(
+            fieldText(
+              f.id,
+              f.label,
+              val,
+              (v) => { setField(f.id, v); renderOutput(); }
+            )
+          );
+        }
+
         p.appendChild(r);
       });
     }
@@ -408,10 +432,15 @@ function renderOutput(){
     const cbIds  = _cbs.map(c => c.id);
     const chipDs = _chips;
 
-     // HPI panels: emit one sentence per filled field and skip chip/checkbox logic
+    // HPI panels: only emit visible text fields with content.
+    // Skip boolean flag fields entirely (they just gate visibility).
     if (state.mode === "HPI" && pd.fields?.length){
       pd.fields.forEach(f => {
-        const v = (getSec().fields?.[f.id] || "").trim();
+        if (!shouldShowField(f)) return;
+        if (f.type === "boolean") return; // don't output Yes/No line
+
+        const raw = getSec().fields?.[f.id];
+        const v = (typeof raw === "string" ? raw : "").trim();
         if (v) lines.push(`${f.label}: ${v}.`);
       });
       return; // continue to next panel
@@ -518,6 +547,47 @@ function fieldText(id, label, value, onChange){
   input.placeholder = label;
   input.oninput = (e) => onChange(e.target.value);
   wrap.append(span, input);
+  return wrap;
+}
+
+// Visibility helper for conditional fields
+function shouldShowField(f) {
+  if (!f || !f.showIf) return true;
+  const depVal = getField(f.showIf.field);
+  return depVal === f.showIf.equals;
+}
+
+// Boolean field (Yes/No) with optional UI labels
+function fieldBoolean(id, label, value, onChange, ui = {}) {
+  const yesLabel = ui.trueLabel ?? "Yes";
+  const noLabel  = ui.falseLabel  ?? "No";
+
+  const wrap = document.createElement("fieldset");
+  wrap.className = "field field-boolean";
+  const legend = document.createElement("legend");
+  legend.className = "field-label";
+  legend.textContent = label;
+  wrap.appendChild(legend);
+
+  // radio group name must be unique per field id
+  const name = `bool_${id}`;
+
+  const mkOpt = (lab, val) => {
+    const optWrap = document.createElement("label");
+    optWrap.className = "bool-opt";
+    const input = document.createElement("input");
+    input.type = "radio";
+    input.name = name;
+    input.checked = value === val;
+    input.onchange = () => onChange(val);
+    const span = document.createElement("span");
+    span.textContent = lab;
+    optWrap.append(input, span);
+    return optWrap;
+  };
+
+  wrap.appendChild(mkOpt(yesLabel, true));
+  wrap.appendChild(mkOpt(noLabel, false));
   return wrap;
 }
 
