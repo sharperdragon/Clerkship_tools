@@ -1,5 +1,5 @@
 
-const DEFAULT_MODE = "PE";
+const DEFAULT_MODE = "ROS";
 const DEFAULT_COLUMNS = 3;
 
 const REMEMBER_STATE = false;
@@ -9,9 +9,12 @@ const CLASS_NORMAL   = "normal";   // applied when good/absent (left-click)
 
 // Map each mode to its own template file
 const MODE_FILES = {
+  HPI: "template_HPI.json",
+
   ROS: "templates_ROS.json",
   PE:  "templates_pe.json",
-  MSE: "templates_MSE.json"
+  MSE: "templates_MSE.json",
+
 };
 // Explicit order for tabs (so ROS appears first regardless of key enumeration)
 const MODE_LIST = ["ROS", "PE", "MSE"];
@@ -423,15 +426,28 @@ function renderOutput(){
         linePlain += posPlainSent + (negParts.length || cbParts.length ? " " : "");
       }
 
-      // Second sentence: negatives + panel checkboxes
+      // Group negatives by lead-in and collapse into list(s)
       if (negParts.length || cbParts.length) {
-        // Lowercase subsequent "No"/"Denies" at the start of each subsequent negative phrase
-        const negAdj = negParts.map((t,i)=> i===0 ? t
-          : t.replace(/^No\b/, 'no').replace(/^Denies\b/, 'denies'));
+        const deniesItems = [];
+        const noItems = [];
+        negParts.forEach(raw => {
+          const t = String(raw).trim();
+          if (/^denies\b/i.test(t)) {
+            deniesItems.push(lcFirst(t.replace(/^denies\s+/i, "")));
+          } else if (/^no\b/i.test(t)) {
+            noItems.push(lcFirst(t.replace(/^no\s+/i, "")));
+          } else {
+            // fallback: remove any stray lead-in then treat as a "No"-style term
+            noItems.push(lcFirst(t.replace(/^(denies|no)\s+/i, "")));
+          }
+        });
 
-        const secondListPlain = [...negAdj, ...cbParts];
-        const secondSentPlain = `${secondListPlain.join("; ")}.`;
-        linePlain += secondSentPlain;
+        const negSentences = [];
+        if (deniesItems.length) negSentences.push(`Denies ${joinWithOxford(deniesItems, "and")}.`);
+        if (noItems.length)     negSentences.push(`No ${joinWithOxford(noItems, "or")}.`);
+        if (cbParts.length)     negSentences.push(`${cbParts.join("; ")}.`);
+
+        linePlain += negSentences.join(" ");
       }
 
       lines.push(linePlain);
@@ -441,13 +457,7 @@ function renderOutput(){
   if (ta) ta.value = lines.join("\n");
 }
 
-function formatChipNegForOutput(secKey, id){
-  const def = findDef(secKey, id);
-  const label = (def.label || id).replace(/^\+\s*/,""); // strip any leading "+ "
-  const isROS = secKey.startsWith("ROS:");
-  // ROS uses "denies ___"; PE/MSE use "no ___"
-  return isROS ? `denies ${label}` : `no ${label}`;
-}
+
 // helpers you also need:
 function panel(title){ const s=document.createElement("section"); s.className="panel";
   const h=document.createElement("div"); h.className="panel-header"; h.textContent=title; s.appendChild(h); return s; }
@@ -739,6 +749,14 @@ function wireHeader(){
 }
 
 function capFirst(s){ return s ? s.charAt(0).toUpperCase() + s.slice(1) : s; }
+
+function lcFirst(s){ return s ? s.charAt(0).toLowerCase() + s.slice(1) : s; }
+function joinWithOxford(list, conj="or"){
+  if (!list || list.length === 0) return "";
+  if (list.length === 1) return list[0];
+  if (list.length === 2) return `${list[0]} ${conj} ${list[1]}`;
+  return `${list.slice(0, -1).join(", ")}, ${conj} ${list[list.length - 1]}`;
+}
 
 // Make PE checkbox labels read naturally.
 // Example: "nl appearance" -> "Normal appearance"
