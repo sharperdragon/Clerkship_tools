@@ -10,15 +10,14 @@ const CLASS_NORMAL   = "normal";   // applied when good/absent (left-click)
 // Map each mode to its own template file
 const MODE_FILES = {
   HPI: "template_HPI.json",
-
   ROS: "templates_ROS.json",
   PE:  "templates_pe.json",
   MSE: "templates_MSE.json",
 
 };
 // Explicit order for tabs (so ROS appears first regardless of key enumeration)
-const MODE_LIST = ["ROS", "PE", "MSE"];
-const MODE_LABELS = { ROS: "ROS", PE: "Physical Exam", MSE: "MSE" };
+const MODE_LIST = ["HPI", "ROS", "PE", "MSE"];
+const MODE_LABELS = { HPI: "HPI", ROS: "ROS", PE: "Physical Exam", MSE: "MSE" };
 
 async function loadTemplatesForMode(mode){
   const file = MODE_FILES[mode];
