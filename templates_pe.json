@@ -182,7 +182,7 @@
         {
           "title": "Abdominal",
           "checkboxes": [
-            {"id":"pe_abd_flat","label":"flat"},
+            {"id":"pe_abd_flat","label":"flat", "type": "norm", "Text": "abdomen is flat"},
             {"id":"pe_abd_soft","label":"soft"},
             {"id":"pe_abd_bs_nl","label":"bowel sounds nl", "Text": "normoactive bowel sounds"}
           ],

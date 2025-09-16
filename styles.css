@@ -21,13 +21,17 @@
   --panel-header-text: #27496d;
   --subhead-border: #98b9e9;
   --cb-text: #334;
+  --cb-bg: rgb(246, 250, 255, 0.2);
+  --subhead: #39639c;
 }
 
 * {
   box-sizing: border-box;
 }
 
-
+.group-head {
+  font-size:109%;
+}
 
 .appbar {
   position: sticky;
@@ -153,10 +157,8 @@
   align-items: center;
   gap: 6px;
   padding: 2px 2px 2px 5px;
-  border-radius: 6px;
-  border: 1px solid;
-  border-color: color-mix(in srgb, var(--divider), transparent 70%);
-  background: transparent;
+  border-radius: 8px;
+  background: var(--cb-bg);
   color: var(--cb-text);
 }
 
@@ -336,7 +338,6 @@
   margin-left: 0;
 }
 
-
 /* ==== Column-first layout inside each panel row (removes vertical gaps) ==== */
 .panel .row{
   display: grid;
@@ -439,9 +440,30 @@
 .subgrid.cols-2 {
   grid-template-columns: 1fr 1fr;
 }
+.subgrid.cols-2 > .subpanel:first-child {
+  position: relative;
+  padding-right: 0px;
+  margin-right: 0px;
+}
+.subgrid.cols-2 > .subpanel:first-child::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -0.25px;
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent, var(--divider), transparent);
+}
+.subgrid.cols-2 > .subpanel:last-child {
+  padding-left: 8px;
+  margin-left: 4px;
+}
 
 .subpanel .subhead {
-  margin: 0 0 6px 0;
+  margin: 0 0 5x 0;
   font-weight: 600;
-  color: var(--muted, #44546a);
+  color: var(--subhead)
+}
+.cb.selected {
+  background-color: color-mix(in srgb, var(--cb-bg) 70%, var(--chip) 30%);
 }

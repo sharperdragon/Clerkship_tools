@@ -451,9 +451,30 @@ function formatChipNegForOutput(secKey, id){
 // helpers you also need:
 function panel(title){ const s=document.createElement("section"); s.className="panel";
   const h=document.createElement("div"); h.className="panel-header"; h.textContent=title; s.appendChild(h); return s; }
-function cb(id,label,checked,on){ const w=document.createElement("label"); w.className="cb";
-  const i=document.createElement("input"); i.type="checkbox"; i.checked=checked; i.onchange=e=>on(e.target.checked);
-  w.appendChild(i); w.appendChild(document.createTextNode(label)); return w; }
+function applyCbSelectedClass(wrapperLabel, inputEl){
+  if (inputEl.checked) wrapperLabel.classList.add("selected");
+  else wrapperLabel.classList.remove("selected");
+}
+
+function cb(id,label,checked,on){
+  const w=document.createElement("label"); 
+  w.className="cb";
+  const i=document.createElement("input"); 
+  i.type="checkbox"; 
+  i.checked=checked;
+
+  // initial selected state class
+  applyCbSelectedClass(w, i);
+
+  i.onchange=e=>{
+    on(e.target.checked);
+    applyCbSelectedClass(w, i);
+  };
+
+  w.appendChild(i); 
+  w.appendChild(document.createTextNode(label)); 
+  return w;
+}
 // Helper to apply chip visual state classes and a debug data attribute
 function applyChipVisualState(el, pos, neg){
   const classes = ["chip"];
