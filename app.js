@@ -947,12 +947,12 @@ function wireHeader(){
     navigator.clipboard.writeText(document.getElementById("out").value);
   };
   document.getElementById("clearSectionBtn").onclick = ()=>{
-    state.sections[`${state.mode}:${state.activeSection}`] = {checkboxes:{}, chips:{}};
+    state.sections[`${state.mode}:${state.activeSection}`] = {checkboxes:{}, chips:{}, fields:{}};
     saveStateSoon();
     renderGrid(); renderOutput();
   };
   document.getElementById("clearAllBtn").onclick = ()=>{
-    Object.keys(state.sections).forEach(k=> state.sections[k]={checkboxes:{},chips:{}});
+    Object.keys(state.sections).forEach(k=> state.sections[k]={checkboxes:{},chips:{},fields:{}});
     saveStateSoon();
     renderGrid(); renderOutput();
   };
