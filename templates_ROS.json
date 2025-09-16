@@ -7,163 +7,163 @@
         {
           "title": "Constitutional",
           "chips": [
-            { "id": "ros_const_activity_change", "label": "Activity change", "type": "toggle", "abnText": "activity change", "negText": "no activity change" },
-            { "id": "ros_const_appetite_change", "label": "Appetite change", "type": "toggle", "abnText": "appetite change", "negText": "no appetite change" },
-            { "id": "ros_const_chills", "label": "Chills", "type": "toggle", "abnText": "chills", "negText": "no chills" },
-            { "id": "ros_const_diaph", "label": "Diaphoresis", "type": "toggle", "abnText": "diaphoresis", "negText": "no diaphoresis" },
-            { "id": "ros_const_fatigue", "label": "Fatigue", "type": "toggle", "abnText": "fatigue", "negText": "no fatigue" },
-            { "id": "ros_const_fever", "label": "Fever", "type": "toggle", "abnText": "fever", "negText": "no fever" },
-            { "id": "ros_const_unexp_wt_change", "label": "Unexpcd wt chnge", "type": "toggle", "abnText": "unexpected weight change", "negText": "no unexpected weight change" }
+            { "id": "ros_const_activity_change", "label": "Activity change", "type": "toggle", "abnText": "activity change", "negText": "Denies activity change" },
+            { "id": "ros_const_appetite_change", "label": "Appetite change", "type": "toggle", "abnText": "appetite change", "negText": "Denies appetite change" },
+            { "id": "ros_const_chills", "label": "Chills", "type": "toggle", "abnText": "chills", "negText": "Denies chills" },
+            { "id": "ros_const_diaph", "label": "Diaphoresis", "type": "toggle", "abnText": "diaphoresis", "negText": "Denies diaphoresis" },
+            { "id": "ros_const_fatigue", "label": "Fatigue", "type": "toggle", "abnText": "fatigue", "negText": "Denies fatigue" },
+            { "id": "ros_const_fever", "label": "Fever", "type": "toggle", "abnText": "fever", "negText": "Denies fever" },
+            { "id": "ros_const_unexp_wt_change", "label": "Unexpcd wt chnge", "type": "toggle", "abnText": "unexpected weight change", "negText": "Denies unexpcd wt chnge" }
           ]
         },
         {
           "title": "HENT",
           "chips": [
-            { "id": "ros_hent_congestion", "label": "Congestion", "type": "toggle", "abnText": "congestion", "negText": "no congestion" },
-            { "id": "ros_hent_dental_problem", "label": "Dental problem", "type": "toggle", "abnText": "dental problem", "negText": "no dental problem" },
-            { "id": "ros_hent_drooling", "label": "Drooling", "type": "toggle", "abnText": "drooling", "negText": "no drooling" },
-            { "id": "ros_hent_ear_discharge", "label": "Ear discharge", "type": "toggle", "abnText": "ear discharge", "negText": "no ear discharge" },
-            { "id": "ros_hent_ear_pain", "label": "Ear pain", "type": "toggle", "abnText": "ear pain", "negText": "no ear pain" },
-            { "id": "ros_hent_facial_swelling", "label": "Facial swelling", "type": "toggle", "abnText": "facial swelling", "negText": "no facial swelling" },
-            { "id": "ros_hent_hearing_loss", "label": "Hearing loss", "type": "toggle", "abnText": "hearing loss", "negText": "no hearing loss" },
-            { "id": "ros_hent_mouth_sores", "label": "Mouth sores", "type": "toggle", "abnText": "mouth sores", "negText": "no mouth sores" },
-            { "id": "ros_hent_nosebleeds", "label": "Nosebleeds", "type": "toggle", "abnText": "nosebleeds", "negText": "no nosebleeds" },
-            { "id": "ros_hent_postnasal_drip", "label": "Postnasal drip", "type": "toggle", "abnText": "postnasal drip", "negText": "no postnasal drip" },
-            { "id": "ros_hent_rhinorrhea", "label": "Rhinorrhea", "type": "toggle", "abnText": "rhinorrhea", "negText": "no rhinorrhea" },
-            { "id": "ros_hent_sinus_pain", "label": "Sinus pain", "type": "toggle", "abnText": "sinus pain", "negText": "no sinus pain" },
-            { "id": "ros_hent_sinus_pressure", "label": "Sinus pressure", "type": "toggle", "abnText": "sinus pressure", "negText": "no sinus pressure" },
-            { "id": "ros_hent_sneezing", "label": "Sneezing", "type": "toggle", "abnText": "sneezing", "negText": "no sneezing" },
-            { "id": "ros_hent_sore_throat", "label": "Sore throat", "type": "toggle", "abnText": "sore throat", "negText": "no sore throat" },
-            { "id": "ros_hent_tinnitus", "label": "Tinnitus", "type": "toggle", "abnText": "tinnitus", "negText": "no tinnitus" },
-            { "id": "ros_hent_trouble_swallowing", "label": "Trouble swallowing", "type": "toggle", "abnText": "trouble swallowing", "negText": "no trouble swallowing" },
-            { "id": "ros_hent_voice_change", "label": "Voice change", "type": "toggle", "abnText": "voice change", "negText": "no voice change" }
+            { "id": "ros_hent_congestion", "label": "Congestion", "type": "toggle", "abnText": "congestion", "negText": "Denies congestion" },
+            { "id": "ros_hent_dental_problem", "label": "Dental problem", "type": "toggle", "abnText": "dental problem", "negText": "Denies dental problem" },
+            { "id": "ros_hent_drooling", "label": "Drooling", "type": "toggle", "abnText": "drooling", "negText": "Denies drooling" },
+            { "id": "ros_hent_ear_discharge", "label": "Ear discharge", "type": "toggle", "abnText": "ear discharge", "negText": "Denies ear discharge" },
+            { "id": "ros_hent_ear_pain", "label": "Ear pain", "type": "toggle", "abnText": "ear pain", "negText": "Denies ear pain" },
+            { "id": "ros_hent_facial_swelling", "label": "Facial swelling", "type": "toggle", "abnText": "facial swelling", "negText": "Denies facial swelling" },
+            { "id": "ros_hent_hearing_loss", "label": "Hearing loss", "type": "toggle", "abnText": "hearing loss", "negText": "Denies hearing loss" },
+            { "id": "ros_hent_mouth_sores", "label": "Mouth sores", "type": "toggle", "abnText": "mouth sores", "negText": "Denies mouth sores" },
+            { "id": "ros_hent_nosebleeds", "label": "Nosebleeds", "type": "toggle", "abnText": "nosebleeds", "negText": "Denies nosebleeds" },
+            { "id": "ros_hent_postnasal_drip", "label": "Postnasal drip", "type": "toggle", "abnText": "postnasal drip", "negText": "Denies postnasal drip" },
+            { "id": "ros_hent_rhinorrhea", "label": "Rhinorrhea", "type": "toggle", "abnText": "rhinorrhea", "negText": "Denies rhinorrhea" },
+            { "id": "ros_hent_sinus_pain", "label": "Sinus pain", "type": "toggle", "abnText": "sinus pain", "negText": "Denies sinus pain" },
+            { "id": "ros_hent_sinus_pressure", "label": "Sinus pressure", "type": "toggle", "abnText": "sinus pressure", "negText": "Denies sinus pressure" },
+            { "id": "ros_hent_sneezing", "label": "Sneezing", "type": "toggle", "abnText": "sneezing", "negText": "Denies sneezing" },
+            { "id": "ros_hent_sore_throat", "label": "Sore throat", "type": "toggle", "abnText": "sore throat", "negText": "Denies sore throat" },
+            { "id": "ros_hent_tinnitus", "label": "Tinnitus", "type": "toggle", "abnText": "tinnitus", "negText": "Denies tinnitus" },
+            { "id": "ros_hent_trouble_swallowing", "label": "Trouble swallowing", "type": "toggle", "abnText": "trouble swallowing", "negText": "Denies trouble swallowing" },
+            { "id": "ros_hent_voice_change", "label": "Voice change", "type": "toggle", "abnText": "voice change", "negText": "Denies voice change" }
           ]
         },
         {
           "title": "Eyes",
           "chips": [
-            { "id": "ros_eyes_discharge", "label": "Eye discharge", "type": "toggle", "abnText": "eye discharge", "negText": "no eye discharge" },
-            { "id": "ros_eyes_itching", "label": "Eye itching", "type": "toggle", "abnText": "eye itching", "negText": "no eye itching" },
-            { "id": "ros_eyes_pain", "label": "Eye pain", "type": "toggle", "abnText": "eye pain", "negText": "no eye pain" },
-            { "id": "ros_eyes_redness", "label": "Eye redness", "type": "toggle", "abnText": "eye redness", "negText": "no eye redness" },
-            { "id": "ros_eyes_photophobia", "label": "Photophobia", "type": "toggle", "abnText": "photophobia", "negText": "no photophobia" },
-            { "id": "ros_eyes_visual_disturbance", "label": "Visual disturbance", "type": "toggle", "abnText": "visual disturbance", "negText": "no visual disturbance" }
+            { "id": "ros_eyes_discharge", "label": "Eye discharge", "type": "toggle", "abnText": "eye discharge", "negText": "Denies eye discharge" },
+            { "id": "ros_eyes_itching", "label": "Eye itching", "type": "toggle", "abnText": "eye itching", "negText": "Denies eye itching" },
+            { "id": "ros_eyes_pain", "label": "Eye pain", "type": "toggle", "abnText": "eye pain", "negText": "Denies eye pain" },
+            { "id": "ros_eyes_redness", "label": "Eye redness", "type": "toggle", "abnText": "eye redness", "negText": "Denies eye redness" },
+            { "id": "ros_eyes_photophobia", "label": "Photophobia", "type": "toggle", "abnText": "photophobia", "negText": "Denies photophobia" },
+            { "id": "ros_eyes_visual_disturbance", "label": "Visual disturbance", "type": "toggle", "abnText": "visual disturbance", "negText": "Denies visual disturbance" }
           ]
         },
         {
           "title": "Respiratory",
           "chips": [
-            { "id": "ros_resp_apnea", "label": "Apnea", "type": "toggle", "abnText": "apnea", "negText": "no apnea" },
-            { "id": "ros_resp_chest_tightness", "label": "Chest tightness", "type": "toggle", "abnText": "chest tightness", "negText": "no chest tightness" },
-            { "id": "ros_resp_choking", "label": "Choking", "type": "toggle", "abnText": "choking", "negText": "no choking" },
-            { "id": "ros_resp_cough", "label": "Cough", "type": "toggle", "abnText": "cough", "negText": "no cough" },
-            { "id": "ros_resp_sob", "label": "Shortness of breath", "type": "toggle", "abnText": "shortness of breath", "negText": "no shortness of breath" },
-            { "id": "ros_resp_stridor", "label": "Stridor", "type": "toggle", "abnText": "stridor", "negText": "no stridor" },
-            { "id": "ros_resp_wheezing", "label": "Wheezing", "type": "toggle", "abnText": "wheezing", "negText": "no wheezing" }
+            { "id": "ros_resp_apnea", "label": "Apnea", "type": "toggle", "abnText": "apnea", "negText": "Denies apnea" },
+            { "id": "ros_resp_chest_tightness", "label": "Chest tightness", "type": "toggle", "abnText": "chest tightness", "negText": "Denies chest tightness" },
+            { "id": "ros_resp_choking", "label": "Choking", "type": "toggle", "abnText": "choking", "negText": "Denies choking" },
+            { "id": "ros_resp_cough", "label": "Cough", "type": "toggle", "abnText": "cough", "negText": "Denies cough" },
+            { "id": "ros_resp_sob", "label": "Shortness of breath", "type": "toggle", "abnText": "shortness of breath", "negText": "Denies shortness of breath" },
+            { "id": "ros_resp_stridor", "label": "Stridor", "type": "toggle", "abnText": "stridor", "negText": "Denies stridor" },
+            { "id": "ros_resp_wheezing", "label": "Wheezing", "type": "toggle", "abnText": "wheezing", "negText": "Denies wheezing" }
           ]
         },
         {
           "title": "Cardio",
           "chips": [
-            { "id": "ros_cardio_chest_pain", "label": "Chest pain", "type": "toggle", "abnText": "chest pain", "negText": "no chest pain" },
-            { "id": "ros_cardio_leg_swelling", "label": "Leg swelling", "type": "toggle", "abnText": "leg swelling", "negText": "no leg swelling" },
-            { "id": "ros_cardio_palpitations", "label": "Palpitations", "type": "toggle", "abnText": "palpitations", "negText": "no palpitations" }
+            { "id": "ros_cardio_chest_pain", "label": "Chest pain", "type": "toggle", "abnText": "chest pain", "negText": "Denies chest pain" },
+            { "id": "ros_cardio_leg_swelling", "label": "Leg swelling", "type": "toggle", "abnText": "leg swelling", "negText": "Denies leg swelling" },
+            { "id": "ros_cardio_palpitations", "label": "Palpitations", "type": "toggle", "abnText": "palpitations", "negText": "Denies palpitations" }
           ]
         },
         {
           "title": "GI",
           "chips": [
-            { "id": "ros_gi_abd_distention", "label": "Abd distention", "type": "toggle", "abnText": "abdominal distension", "negText": "no abdominal distension" },
-            { "id": "ros_gi_abd_pain", "label": "Abdominal pain", "type": "toggle", "abnText": "abdominal pain", "negText": "no abdominal pain" },
-            { "id": "ros_gi_anal_bleeding", "label": "Anal bleeding", "type": "toggle", "abnText": "anal bleeding", "negText": "no anal bleeding" },
-            { "id": "ros_gi_blood_in_stool", "label": "Blood in stool", "type": "toggle", "abnText": "blood in stool", "negText": "no blood in stool" },
-            { "id": "ros_gi_constipation", "label": "Constipation", "type": "toggle", "abnText": "constipation", "negText": "no constipation" },
-            { "id": "ros_gi_diarrhea", "label": "Diarrhea", "type": "toggle", "abnText": "diarrhea", "negText": "no diarrhea" },
-            { "id": "ros_gi_nausea", "label": "Nausea", "type": "toggle", "abnText": "nausea", "negText": "no nausea" },
-            { "id": "ros_gi_rectal_pain", "label": "Rectal pain", "type": "toggle", "abnText": "rectal pain", "negText": "no rectal pain" }
+            { "id": "ros_gi_abd_distention", "label": "Abd distention", "type": "toggle", "abnText": "abdominal distension", "negText": "Denies abd distention" },
+            { "id": "ros_gi_abd_pain", "label": "Abdominal pain", "type": "toggle", "abnText": "abdominal pain", "negText": "Denies abdominal pain" },
+            { "id": "ros_gi_anal_bleeding", "label": "Anal bleeding", "type": "toggle", "abnText": "anal bleeding", "negText": "Denies anal bleeding" },
+            { "id": "ros_gi_blood_in_stool", "label": "Blood in stool", "type": "toggle", "abnText": "blood in stool", "negText": "Denies blood in stool" },
+            { "id": "ros_gi_constipation", "label": "Constipation", "type": "toggle", "abnText": "constipation", "negText": "Denies constipation" },
+            { "id": "ros_gi_diarrhea", "label": "Diarrhea", "type": "toggle", "abnText": "diarrhea", "negText": "Denies diarrhea" },
+            { "id": "ros_gi_nausea", "label": "Nausea", "type": "toggle", "abnText": "nausea", "negText": "Denies nausea" },
+            { "id": "ros_gi_rectal_pain", "label": "Rectal pain", "type": "toggle", "abnText": "rectal pain", "negText": "Denies rectal pain" }
           ]
         },
         {
           "title": "Endocrine",
           "chips": [
-            { "id": "ros_endo_cold_intolerance", "label": "Cold intolerance", "type": "toggle", "abnText": "cold intolerance", "negText": "no cold intolerance" },
-            { "id": "ros_endo_heat_intolerance", "label": "Heat intolerance", "type": "toggle", "abnText": "heat intolerance", "negText": "no heat intolerance" },
-            { "id": "ros_endo_polydipsia", "label": "Polydipsia", "type": "toggle", "abnText": "polydipsia", "negText": "no polydipsia" },
-            { "id": "ros_endo_polyphagia", "label": "Polyphagia", "type": "toggle", "abnText": "polyphagia", "negText": "no polyphagia" },
-            { "id": "ros_endo_polyuria", "label": "Polyuria", "type": "toggle", "abnText": "polyuria", "negText": "no polyuria" }
+            { "id": "ros_endo_cold_intolerance", "label": "Cold intolerance", "type": "toggle", "abnText": "cold intolerance", "negText": "Denies cold intolerance" },
+            { "id": "ros_endo_heat_intolerance", "label": "Heat intolerance", "type": "toggle", "abnText": "heat intolerance", "negText": "Denies heat intolerance" },
+            { "id": "ros_endo_polydipsia", "label": "Polydipsia", "type": "toggle", "abnText": "polydipsia", "negText": "Denies polydipsia" },
+            { "id": "ros_endo_polyphagia", "label": "Polyphagia", "type": "toggle", "abnText": "polyphagia", "negText": "Denies polyphagia" },
+            { "id": "ros_endo_polyuria", "label": "Polyuria", "type": "toggle", "abnText": "polyuria", "negText": "Denies polyuria" }
           ]
         },
         {
           "title": "GU",
           "chips": [
-            { "id": "ros_gu_difficulty_urinating", "label": "Difficulty urinating", "type": "toggle", "abnText": "difficulty urinating", "negText": "no difficulty urinating" },
-            { "id": "ros_gu_dyspareunia", "label": "Dyspareunia", "type": "toggle", "abnText": "dyspareunia", "negText": "no dyspareunia" },
-            { "id": "ros_gu_dysuria", "label": "Dysuria", "type": "toggle", "abnText": "dysuria", "negText": "no dysuria" },
-            { "id": "ros_gu_enuresis", "label": "Enuresis", "type": "toggle", "abnText": "enuresis", "negText": "no enuresis" },
-            { "id": "ros_gu_flank_pain", "label": "Flank pain", "type": "toggle", "abnText": "flank pain", "negText": "no flank pain" },
-            { "id": "ros_gu_frequency", "label": "Frequency", "type": "toggle", "abnText": "urinary frequency", "negText": "no urinary frequency" },
-            { "id": "ros_gu_genital_sore", "label": "Genital sore", "type": "toggle", "abnText": "genital sore", "negText": "no genital sore" },
-            { "id": "ros_gu_hematuria", "label": "Hematuria", "type": "toggle", "abnText": "hematuria", "negText": "no hematuria" },
-            { "id": "ros_gu_menstrual_problem", "label": "Menstrual problem", "type": "toggle", "abnText": "menstrual problem", "negText": "no menstrual problem" },
-            { "id": "ros_gu_pelvic_pain", "label": "Pelvic pain", "type": "toggle", "abnText": "pelvic pain", "negText": "no pelvic pain" },
-            { "id": "ros_gu_urgency", "label": "Urgency", "type": "toggle", "abnText": "urinary urgency", "negText": "no urinary urgency" },
-            { "id": "ros_gu_urine_decreased", "label": "Urine decreased", "type": "toggle", "abnText": "urine output decreased", "negText": "no decrease in urine output" },
-            { "id": "ros_gu_vaginal_bleeding", "label": "Vaginal bleeding", "type": "toggle", "abnText": "vaginal bleeding", "negText": "no vaginal bleeding" },
-            { "id": "ros_gu_vaginal_discharge", "label": "Vaginal discharge", "type": "toggle", "abnText": "vaginal discharge", "negText": "no vaginal discharge" },
-            { "id": "ros_gu_vaginal_pain", "label": "Vaginal pain", "type": "toggle", "abnText": "vaginal pain", "negText": "no vaginal pain" }
+            { "id": "ros_gu_difficulty_urinating", "label": "Difficulty urinating", "type": "toggle", "abnText": "difficulty urinating", "negText": "Denies difficulty urinating" },
+            { "id": "ros_gu_dyspareunia", "label": "Dyspareunia", "type": "toggle", "abnText": "dyspareunia", "negText": "Denies dyspareunia" },
+            { "id": "ros_gu_dysuria", "label": "Dysuria", "type": "toggle", "abnText": "dysuria", "negText": "Denies dysuria" },
+            { "id": "ros_gu_enuresis", "label": "Enuresis", "type": "toggle", "abnText": "enuresis", "negText": "Denies enuresis" },
+            { "id": "ros_gu_flank_pain", "label": "Flank pain", "type": "toggle", "abnText": "flank pain", "negText": "Denies flank pain" },
+            { "id": "ros_gu_frequency", "label": "Frequency", "type": "toggle", "abnText": "urinary frequency", "negText": "Denies frequency" },
+            { "id": "ros_gu_genital_sore", "label": "Genital sore", "type": "toggle", "abnText": "genital sore", "negText": "Denies genital sore" },
+            { "id": "ros_gu_hematuria", "label": "Hematuria", "type": "toggle", "abnText": "hematuria", "negText": "Denies hematuria" },
+            { "id": "ros_gu_menstrual_problem", "label": "Menstrual problem", "type": "toggle", "abnText": "menstrual problem", "negText": "Denies menstrual problem" },
+            { "id": "ros_gu_pelvic_pain", "label": "Pelvic pain", "type": "toggle", "abnText": "pelvic pain", "negText": "Denies pelvic pain" },
+            { "id": "ros_gu_urgency", "label": "Urgency", "type": "toggle", "abnText": "urinary urgency", "negText": "Denies urgency" },
+            { "id": "ros_gu_urine_decreased", "label": "Urine decreased", "type": "toggle", "abnText": "urine output decreased", "negText": "Denies urine decreased" },
+            { "id": "ros_gu_vaginal_bleeding", "label": "Vaginal bleeding", "type": "toggle", "abnText": "vaginal bleeding", "negText": "Denies vaginal bleeding" },
+            { "id": "ros_gu_vaginal_discharge", "label": "Vaginal discharge", "type": "toggle", "abnText": "vaginal discharge", "negText": "Denies vaginal discharge" },
+            { "id": "ros_gu_vaginal_pain", "label": "Vaginal pain", "type": "toggle", "abnText": "vaginal pain", "negText": "Denies vaginal pain" }
           ]
         },
         {
           "title": "Allerg/Immuno",
           "chips": [
-            { "id": "ros_allerg_env", "label": "Env allergies", "type": "toggle", "abnText": "environmental allergies", "negText": "no environmental allergies" },
-            { "id": "ros_allerg_food", "label": "Food allergies", "type": "toggle", "abnText": "food allergies", "negText": "no food allergies" },
-            { "id": "ros_allerg_immunocomp", "label": "Immunocompromised", "type": "toggle", "abnText": "immunocompromised", "negText": "not immunocompromised" }
+            { "id": "ros_allerg_env", "label": "Env allergies", "type": "toggle", "abnText": "environmental allergies", "negText": "Denies env allergies" },
+            { "id": "ros_allerg_food", "label": "Food allergies", "type": "toggle", "abnText": "food allergies", "negText": "Denies food allergies" },
+            { "id": "ros_allerg_immunocomp", "label": "Immunocompromised", "type": "toggle", "abnText": "immunocompromised", "negText": "Denies immunocompromised" }
           ]
         },
         {
           "title": "Neurological",
           "chips": [
-            { "id": "ros_neuro_dizziness", "label": "Dizziness", "type": "toggle", "abnText": "dizziness", "negText": "no dizziness" },
-            { "id": "ros_neuro_facial_asym", "label": "Facial asymmetry", "type": "toggle", "abnText": "facial asymmetry", "negText": "no facial asymmetry" },
-            { "id": "ros_neuro_headaches", "label": "Headaches", "type": "toggle", "abnText": "headaches", "negText": "no headaches" },
-            { "id": "ros_neuro_light_headed", "label": "Light-headedness", "type": "toggle", "abnText": "light-headedness", "negText": "no light-headedness" },
-            { "id": "ros_neuro_numbness", "label": "Numbness", "type": "toggle", "abnText": "numbness", "negText": "no numbness" },
-            { "id": "ros_neuro_seizures", "label": "Seizures", "type": "toggle", "abnText": "seizures", "negText": "no seizures" },
-            { "id": "ros_neuro_speech_difficulty", "label": "Speech difficulty", "type": "toggle", "abnText": "speech difficulty", "negText": "no speech difficulty" },
-            { "id": "ros_neuro_syncope", "label": "Syncope", "type": "toggle", "abnText": "syncope", "negText": "no syncope" },
-            { "id": "ros_neuro_tremors", "label": "Tremors", "type": "toggle", "abnText": "tremors", "negText": "no tremors" },
-            { "id": "ros_neuro_weakness", "label": "Weakness", "type": "toggle", "abnText": "weakness", "negText": "no weakness" }
+            { "id": "ros_neuro_dizziness", "label": "Dizziness", "type": "toggle", "abnText": "dizziness", "negText": "Denies dizziness" },
+            { "id": "ros_neuro_facial_asym", "label": "Facial asymmetry", "type": "toggle", "abnText": "facial asymmetry", "negText": "Denies facial asymmetry" },
+            { "id": "ros_neuro_headaches", "label": "Headaches", "type": "toggle", "abnText": "headaches", "negText": "Denies headaches" },
+            { "id": "ros_neuro_light_headed", "label": "Light-headedness", "type": "toggle", "abnText": "light-headedness", "negText": "Denies light-headedness" },
+            { "id": "ros_neuro_numbness", "label": "Numbness", "type": "toggle", "abnText": "numbness", "negText": "Denies numbness" },
+            { "id": "ros_neuro_seizures", "label": "Seizures", "type": "toggle", "abnText": "seizures", "negText": "Denies seizures" },
+            { "id": "ros_neuro_speech_difficulty", "label": "Speech difficulty", "type": "toggle", "abnText": "speech difficulty", "negText": "Denies speech difficulty" },
+            { "id": "ros_neuro_syncope", "label": "Syncope", "type": "toggle", "abnText": "syncope", "negText": "Denies syncope" },
+            { "id": "ros_neuro_tremors", "label": "Tremors", "type": "toggle", "abnText": "tremors", "negText": "Denies tremors" },
+            { "id": "ros_neuro_weakness", "label": "Weakness", "type": "toggle", "abnText": "weakness", "negText": "Denies weakness" }
           ]
         },
         {
           "title": "Hematologic",
           "chips": [
-            { "id": "ros_hem_adenopathy", "label": "Adenopathy", "type": "toggle", "abnText": "adenopathy", "negText": "no adenopathy" },
-            { "id": "ros_hem_bruises_easily", "label": "Bruises/blds easily", "type": "toggle", "abnText": "bruises/bleeds easily", "negText": "does not bruise or bleed easily" }
+            { "id": "ros_hem_adenopathy", "label": "Adenopathy", "type": "toggle", "abnText": "adenopathy", "negText": "Denies adenopathy" },
+            { "id": "ros_hem_bruises_easily", "label": "Bruises/blds easily", "type": "toggle", "abnText": "bruises/bleeds easily", "negText": "Denies bruises/blds easily" }
           ]
         },
         {
           "title": "Psychiatric",
           "chips": [
-            { "id": "ros_psych_agitation", "label": "Agitation", "type": "toggle", "abnText": "agitation", "negText": "no agitation" },
-            { "id": "ros_psych_behavior_problem", "label": "Behavior problem", "type": "toggle", "abnText": "behavior problem", "negText": "no behavior problem" },
-            { "id": "ros_psych_confusion", "label": "Confusion", "type": "toggle", "abnText": "confusion", "negText": "no confusion" },
-            { "id": "ros_psych_decr_conc", "label": "Decr concentration", "type": "toggle", "abnText": "decreased concentration", "negText": "no decreased concentration" },
-            { "id": "ros_psych_dysphoric_mood", "label": "Dysphoric mood", "type": "toggle", "abnText": "dysphoric mood", "negText": "no dysphoric mood" },
-            { "id": "ros_psych_hallucinations", "label": "Hallucinations", "type": "toggle", "abnText": "hallucinations", "negText": "no hallucinations" },
-            { "id": "ros_psych_hyperactive", "label": "Hyperactive", "type": "toggle", "abnText": "hyperactive", "negText": "not hyperactive" },
-            { "id": "ros_psych_nervous", "label": "Nervous/anxious", "type": "toggle", "abnText": "nervous/anxious", "negText": "not nervous or anxious" }
+            { "id": "ros_psych_agitation", "label": "Agitation", "type": "toggle", "abnText": "agitation", "negText": "Denies agitation" },
+            { "id": "ros_psych_behavior_problem", "label": "Behavior problem", "type": "toggle", "abnText": "behavior problem", "negText": "Denies behavior problem" },
+            { "id": "ros_psych_confusion", "label": "Confusion", "type": "toggle", "abnText": "confusion", "negText": "Denies confusion" },
+            { "id": "ros_psych_decr_conc", "label": "Decr concentration", "type": "toggle", "abnText": "decreased concentration", "negText": "Denies decr concentration" },
+            { "id": "ros_psych_dysphoric_mood", "label": "Dysphoric mood", "type": "toggle", "abnText": "dysphoric mood", "negText": "Denies dysphoric mood" },
+            { "id": "ros_psych_hallucinations", "label": "Hallucinations", "type": "toggle", "abnText": "hallucinations", "negText": "Denies hallucinations" },
+            { "id": "ros_psych_hyperactive", "label": "Hyperactive", "type": "toggle", "abnText": "hyperactive", "negText": "Denies hyperactive" },
+            { "id": "ros_psych_nervous", "label": "Nervous/anxious", "type": "toggle", "abnText": "nervous/anxious", "negText": "Denies nervous/anxious" }
           ]
         },
         {
           "title": "Musc",
           "chips": [
-            { "id": "ros_musc_arthralgias", "label": "Arthralgias", "type": "toggle", "abnText": "arthralgias", "negText": "no arthralgias" },
-            { "id": "ros_musc_back_pain", "label": "Back pain", "type": "toggle", "abnText": "back pain", "negText": "no back pain" },
-            { "id": "ros_musc_gait_problem", "label": "Gait problem", "type": "toggle", "abnText": "gait problem", "negText": "no gait problem" },
-            { "id": "ros_musc_joint_swelling", "label": "Joint swelling", "type": "toggle", "abnText": "joint swelling", "negText": "no joint swelling" },
-            { "id": "ros_musc_myalgias", "label": "Myalgias", "type": "toggle", "abnText": "myalgias", "negText": "no myalgias" }
+            { "id": "ros_musc_arthralgias", "label": "Arthralgias", "type": "toggle", "abnText": "arthralgias", "negText": "Denies arthralgias" },
+            { "id": "ros_musc_back_pain", "label": "Back pain", "type": "toggle", "abnText": "back pain", "negText": "Denies back pain" },
+            { "id": "ros_musc_gait_problem", "label": "Gait problem", "type": "toggle", "abnText": "gait problem", "negText": "Denies gait problem" },
+            { "id": "ros_musc_joint_swelling", "label": "Joint swelling", "type": "toggle", "abnText": "joint swelling", "negText": "Denies joint swelling" },
+            { "id": "ros_musc_myalgias", "label": "Myalgias", "type": "toggle", "abnText": "myalgias", "negText": "Denies myalgias" }
           ]
         }
       ]
