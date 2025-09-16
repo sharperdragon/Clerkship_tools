@@ -1,3 +1,4 @@
+import { loadModeAssets, capFirst, lcFirst, joinWithOxford, escapeHTML } from "./utils.js";
 
 const DEFAULT_MODE = "ROS";
 const DEFAULT_COLUMNS = 3;
@@ -10,22 +11,24 @@ const CLASS_NORMAL   = "normal";   // applied when good/absent (left-click)
 // Map each mode to its own template file
 const MODE_FILES = {
   HPI: "template_HPI.json",
+  OBJ: "template_OBJ.json",  
   ROS: "templates_ROS.json",
   PE:  "templates_pe.json",
   MSE: "templates_MSE.json",
 
 };
 // Explicit order for tabs (so ROS appears first regardless of key enumeration)
-const MODE_LIST = ["HPI", "ROS", "PE", "MSE"];
-const MODE_LABELS = { HPI: "HPI", ROS: "ROS", PE: "Physical Exam", MSE: "MSE" };
+const MODE_LIST = ["HPI", "OBJ", "ROS", "PE", "MSE"];
+const MODE_LABELS = { HPI: "HPI", OBJ: "OBJ", ROS: "ROS", PE: "Physical Exam", MSE: "MSE" };
 
-async function loadTemplatesForMode(mode){
-  const file = MODE_FILES[mode];
-  if (!file) throw new Error(`No template file for mode ${mode}`);
-  const r = await fetch(file, { cache: "no-store" });
-  if (!r.ok) throw new Error(`HTTP ${r.status}`);
-  return await r.json();
-}
+
+// Per-tab assets (add files only where you need them)
+const MODE_ASSETS = {
+  HPI: { css: "hpi.css", js: "hpi.js" },
+  ROS: { css: "ros.css", js: "ros.js" },
+  PE:  { css: "pe.css",  js: "pe.js"  },
+  MSE: { css: "mse.css", js: "mse.js" }
+};
 
 async function switchMode(mode){
   state.mode = mode;
@@ -344,6 +347,14 @@ function renderGrid(){
       grid.appendChild(p);
       return; // skip the normal checkboxes/chips path for this panel
     }
+    if (pd.fields?.length){
+      pd.fields.forEach(f => {
+        const r = makeRow();
+        const val = getField(f.id);
+        r.appendChild(fieldText(f.id, f.label, val, (v)=>{ setField(f.id, v); renderOutput(); }));
+        p.appendChild(r);
+      });
+    }
     if (pd.checkboxes?.length){
       const r = makeRow();
       pd.checkboxes.forEach(c=> r.appendChild(cb(c.id,c.label,!!getSec().checkboxes?.[c.id], v=>{ setCB(c.id,v); renderOutput(); })));
@@ -399,6 +410,15 @@ function renderOutput(){
 
     const cbIds  = _cbs.map(c => c.id);
     const chipDs = _chips;
+
+     // HPI panels: emit one sentence per filled field and skip chip/checkbox logic
+    if (state.mode === "HPI" && pd.fields?.length){
+      pd.fields.forEach(f => {
+        const v = (getSec().fields?.[f.id] || "").trim();
+        if (v) lines.push(`${f.label}: ${v}.`);
+      });
+      return; // continue to next panel
+    }
 
     const cbParts = cbIds
       .filter(id => !!sec.checkboxes?.[id])
@@ -484,6 +504,26 @@ function cb(id,label,checked,on){
   w.appendChild(document.createTextNode(label)); 
   return w;
 }
+
+function setField(id, val){ getSec().fields[id] = val; }
+function getField(id){ return getSec().fields?.[id] ?? ""; }
+
+// Single-line input (text) with label
+function fieldText(id, label, value, onChange){
+  const wrap = document.createElement("label");
+  wrap.className = "field";
+  const span = document.createElement("span");
+  span.className = "field-label";
+  span.textContent = label;
+  const input = document.createElement("input");
+  input.type = "text";
+  input.value = value || "";
+  input.placeholder = label;
+  input.oninput = (e) => onChange(e.target.value);
+  wrap.append(span, input);
+  return wrap;
+}
+
 // Helper to apply chip visual state classes and a debug data attribute
 function applyChipVisualState(el, pos, neg){
   const classes = ["chip"];
@@ -611,10 +651,15 @@ function handleChipMouse(e, id){
 
 function ensureSectionState(){
   (Templates.sectionsByMode[state.mode]||[]).forEach(sec=>{
-    const k=`${state.mode}:${sec}`; state.sections[k] ??= {checkboxes:{}, chips:{}};
+    const k = `${state.mode}:${sec}`;
+    state.sections[k] ??= { checkboxes:{}, chips:{}, fields:{} };
   });
 }
-function getSec(){ const k=`${state.mode}:${state.activeSection}`; state.sections[k] ??= {checkboxes:{}, chips:{}}; return state.sections[k]; }
+function getSec(){
+  const k = `${state.mode}:${state.activeSection}`;
+  state.sections[k] ??= { checkboxes:{}, chips:{}, fields:{} };
+  return state.sections[k];
+}
 function setCB(id,val){ getSec().checkboxes[id]=val; }
 function toggleChip(id){ const s=getSec(); s.chips[id]=!s.chips[id]; }
 

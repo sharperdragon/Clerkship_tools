@@ -1,27 +1,31 @@
-
-
 {
-  "title": "HPI",
-  "id": "hpi",
-  "panels": [
-    {
-      "title": "History of Present Illness",
-      "id": "HPI",
-      "fields": [
-        { "id": "hpi_onset", "label": "Onset", "type": "text" },
-        { "id": "hpi_prior", "label": "Prior", "type": "text" },
-        { "id": "hpi_progression", "label": "Progression", "type": "text" },
-        { "id": "hpi_pallate", "label": "Pallate", "type": "text" },
-        { "id": "hpi_provoke", "label": "Provoke", "type": "text" },
-        { "id": "hpi_quality", "label": "Quality", "type": "text" },
-        { "id": "hpi_quantity", "label": "Quantity", "type": "text" },
-        { "id": "hpi_region", "label": "Region", "type": "text" },
-        { "id": "hpi_radiate", "label": "Radiate", "type": "text" },
-        { "id": "hpi_scale", "label": "Scale (0/10)", "type": "text" },
-        { "id": "hpi_timing", "label": "Timing", "type": "text" },
-        { "id": "hpi_treatment", "label": "Treatment", "type": "text" },
-        { "id": "hpi_assoc_symptoms", "label": "Associated Symptoms", "type": "text" }
+  "modes": ["HPI"],
+  "sectionsByMode": {
+    "HPI": ["General"]
+  },
+  "sectionDefs": {
+    "HPI:General": {
+      "panels": [
+        {
+          "title": "History of Present Illness",
+          "id": "hpi_main",
+          "fields": [
+            { "id": "hpi_onset", "label": "Onset", "type": "text" },
+            { "id": "hpi_prior", "label": "Prior", "type": "text" },
+            { "id": "hpi_progression", "label": "Progression", "type": "text" },
+            { "id": "hpi_pallate", "label": "Pallate", "type": "text" },
+            { "id": "hpi_provoke", "label": "Provoke", "type": "text" },
+            { "id": "hpi_quality", "label": "Quality", "type": "text" },
+            { "id": "hpi_quantity", "label": "Quantity", "type": "text" },
+            { "id": "hpi_region", "label": "Region", "type": "text" },
+            { "id": "hpi_radiate", "label": "Radiate", "type": "text" },
+            { "id": "hpi_scale", "label": "Scale (0/10)", "type": "text" },
+            { "id": "hpi_timing", "label": "Timing", "type": "text" },
+            { "id": "hpi_treatment", "label": "Treatment", "type": "text" },
+            { "id": "hpi_assoc_symptoms", "label": "Associated Symptoms", "type": "text" }
+          ]
+        }
       ]
     }
-  ]
+  }
 }

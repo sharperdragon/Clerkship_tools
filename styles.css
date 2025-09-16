@@ -467,3 +467,6 @@
 .cb.selected {
   background-color: color-mix(in srgb, var(--cb-bg) 70%, var(--chip) 30%);
 }
+.field { display:flex; align-items:center; gap:8px; width:100%; }
+.field-label { min-width:160px; color: var(--muted, #44546a); }
+.field input[type="text"] { flex:1; padding:6px 8px; border:1px solid var(--line, #d9dee3); border-radius:4px; }
