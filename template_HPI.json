@@ -6,7 +6,7 @@
   "panels": [
     {
       "title": "History of Present Illness",
-      "id": "hpi_main",
+      "id": "HPI",
       "fields": [
         { "id": "hpi_onset", "label": "Onset", "type": "text" },
         { "id": "hpi_prior", "label": "Prior", "type": "text" },
