@@ -1,4 +1,3 @@
-import { loadModeAssets, capFirst, lcFirst, joinWithOxford, escapeHTML } from "./utils.js";
 
 const DEFAULT_MODE = "ROS";
 const DEFAULT_COLUMNS = 3;
@@ -11,24 +10,22 @@ const CLASS_NORMAL   = "normal";   // applied when good/absent (left-click)
 // Map each mode to its own template file
 const MODE_FILES = {
   HPI: "template_HPI.json",
-  OBJ: "template_OBJ.json",  
-  ROS: "templates_ROS.json",
-  PE:  "templates_pe.json",
-  MSE: "templates_MSE.json",
+  ROS: "template_ROS.json",
+  PE:  "template_pe.json",
+  MSE: "template_MSE.json",
 
 };
 // Explicit order for tabs (so ROS appears first regardless of key enumeration)
-const MODE_LIST = ["HPI", "OBJ", "ROS", "PE", "MSE"];
-const MODE_LABELS = { HPI: "HPI", OBJ: "OBJ", ROS: "ROS", PE: "Physical Exam", MSE: "MSE" };
+const MODE_LIST = ["HPI", "ROS", "PE", "MSE"];
+const MODE_LABELS = { HPI: "HPI", ROS: "ROS", PE: "Physical Exam", MSE: "MSE" };
 
-
-// Per-tab assets (add files only where you need them)
-const MODE_ASSETS = {
-  HPI: { css: "hpi.css", js: "hpi.js" },
-  ROS: { css: "ros.css", js: "ros.js" },
-  PE:  { css: "pe.css",  js: "pe.js"  },
-  MSE: { css: "mse.css", js: "mse.js" }
-};
+async function loadTemplatesForMode(mode){
+  const file = MODE_FILES[mode];
+  if (!file) throw new Error(`No template file for mode ${mode}`);
+  const r = await fetch(file, { cache: "no-store" });
+  if (!r.ok) throw new Error(`HTTP ${r.status}`);
+  return await r.json();
+}
 
 async function switchMode(mode){
   state.mode = mode;
