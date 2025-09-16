@@ -28,6 +28,9 @@
         },
         {
           "title": "HENT",
+          "layout": {
+            "groups": [ { "from": 1, "to": 2, "cols": 2, "label": "Ears" } ]
+          },
           "subsections": [
             {
               "title": "Head",
@@ -38,7 +41,7 @@
               "chips": []
             },
             {
-              "title": "Ears (Right)",
+              "title": "Right",
               "checkboxes": [
                 {"id":"pe_ear_r_tm_nl","label":"TM nl"},
                 {"id":"pe_ear_r_canal_nl","label":"canal nl"},
@@ -49,7 +52,7 @@
               ]
             },
             {
-              "title": "Ears (Left)",
+              "title": "Left",
               "checkboxes": [
                 {"id":"pe_ear_l_tm_nl","label":"TM nl"},
                 {"id":"pe_ear_l_canal_nl","label":"canal nl"},
@@ -61,6 +64,7 @@
             },
             {
               "title": "Nose",
+              "layout": { "chipCols": 2 },
               "checkboxes": [
                 {"id":"pe_nose_nl","label":"nose nl"}
               ],
@@ -71,6 +75,7 @@
             },
             {
               "title": "Mouth/Throat",
+              "layout": { "chipCols": 2 },
               "checkboxes": [
                 {"id":"pe_mouth_moist","label":"moist"},
                 {"id":"pe_mouth_dry","label":"dry"},
@@ -179,7 +184,7 @@
           "checkboxes": [
             {"id":"pe_abd_flat","label":"flat"},
             {"id":"pe_abd_soft","label":"soft"},
-            {"id":"pe_abd_bs_nl","label":"bowel sounds nl"}
+            {"id":"pe_abd_bs_nl","label":"bowel sounds nl", "Text": "normoactive bowel sounds"}
           ],
           "chips": [
             {"id":"pe_abd_distension","label":"distension","type":"toggle","abnText":"abdominal distension","negText":"no abdominal distension"},
