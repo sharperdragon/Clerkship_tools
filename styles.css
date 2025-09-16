@@ -23,6 +23,11 @@
   --cb-text: #334;
   --cb-bg: rgb(246, 250, 255, 0.2);
   --subhead: #39639c;
+
+  /* Sticky stack heights */
+  --appbar-h: 38px;   /* app bar height */
+  --tier1-h: 36px;    /* top tabs row */
+  --tier2-h: 36px;    /* second tabs row */
 }
 
 * {
@@ -202,14 +207,22 @@
   border-bottom: 1px solid #dbe3ef;
 }
 .tabs.tier1 {
+  /* Stick Tier 1 directly under the app bar */
+  position: sticky;
+  top: var(--appbar-h);
+  z-index: 5;
+  min-height: var(--tier1-h);
   background: #eef2f7;
 }
 .tabs.tier2 {
+  /* Stick Tier 2 under Tier 1 */
+  position: sticky;
+  top: calc(var(--appbar-h) + var(--tier1-h));
+  z-index: 4;
+  min-height: var(--tier2-h);
   background: #f6f8fb;
   overflow: auto;
   white-space: nowrap;
-  top: 42px;
-  z-index: 3;
   mask-image: linear-gradient(90deg, transparent 0, #000 24px, #000 calc(100% - 24px), transparent 100%);
 }
 .tabs .tab {
@@ -388,10 +401,15 @@
 }
 /* Full-width header checks bar above the grid */
 .header-checks-bar {
+  /* Stick header checks under Tier 2 */
+  position: sticky;
+  top: calc(var(--appbar-h) + var(--tier1-h) + var(--tier2-h));
+  z-index: 3;
   display: block;
   background: #fff;
   padding: 3px 1px 3px 10px;
   margin-bottom: 2px;
+  border-bottom: 1px solid var(--divider);
 }
 
 /* Reuse the row layout but ensure it spans the full content width */

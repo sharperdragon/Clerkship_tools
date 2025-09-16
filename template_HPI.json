@@ -45,7 +45,7 @@
             { "id": "hpi_timing", "label": "Timing", "type": "text" },
             {
               "id": "hpi_treatment_flag",
-              "label": "Treatment tried?",
+              "label": "Treatment",
               "type": "boolean",
               "ui": { "trueLabel": "Yes", "falseLabel": "No" }
             },

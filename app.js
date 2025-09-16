@@ -8,7 +8,9 @@ const STATE_AUTOSAVE_MS = 500;               // debounce for state saves
 // Cache keys
 const CK = {
   TEMPLATES: `ct.templates.${APP_VERSION}`,
-  STATE:     `ct.state.${APP_VERSION}`,
+  STATE:     `ct.state.${APP_VERSION}`,        // legacy (unused after multi-patient)
+  PATLIST:   `ct.patients.${APP_VERSION}`,     // array of {id, createdAt}
+  CURRENT:   `ct.patient.current.${APP_VERSION}`, // active patient id
 };
 
 const DEFAULT_MODE = "ROS";
@@ -124,14 +126,15 @@ async function switchMode(mode){
   renderAll();
 }
 
-/***** STATE *****/
+/*** STATE ***/
 let Templates = null;
 let state = {
   mode: DEFAULT_MODE,
   activeSection: null,
   columns: DEFAULT_COLUMNS,
   sections: {},
-  globals: {}
+  globals: {},
+  patientId: null,
 };
 document.addEventListener("DOMContentLoaded", init);
 
@@ -147,10 +150,11 @@ const asObj = (v)=> (typeof v === "object" ? v : null);
 
 
 async function init(){
-  await switchMode(DEFAULT_MODE);
   const restored = maybeRestoreState();
+  // Load templates and set activeSection for the (possibly restored) mode
+  await switchMode(state.mode || DEFAULT_MODE);
   wireHeader();
-  if (restored) renderAll();
+  renderPatientControls();
 }
 
 function showFatal(msg){
@@ -572,29 +576,186 @@ function renderOutput(){
   if (ta) ta.value = lines.join("\n");
 }
 
+// ====== Patient history (multi-patient cache) ======
+function _getPatientList(){
+  try { return JSON.parse(localStorage.getItem(CK.PATLIST) || "[]"); } catch { return []; }
+}
+function _setPatientList(list){
+  try { localStorage.setItem(CK.PATLIST, JSON.stringify(list)); } catch {}
+}
+function _patientKey(id){ return `${CK.STATE}:${id}`; }
+function _setCurrentPatient(id){ try { localStorage.setItem(CK.CURRENT, id); } catch {} }
+function _getCurrentPatient(){ try { return localStorage.getItem(CK.CURRENT) || null; } catch { return null; } }
+function _fmtTime(ts){ try { return new Date(ts).toLocaleString(); } catch { return String(ts); } }
+
+function createNewPatient(){
+  const id = Math.random().toString(36).slice(2) + Date.now().toString(36);
+  const createdAt = Date.now();
+
+  const list = _getPatientList();
+  list.push({ id, createdAt });
+  _setPatientList(list);
+  _setCurrentPatient(id);
+
+  state = {
+    mode: DEFAULT_MODE,
+    activeSection: null,
+    columns: DEFAULT_COLUMNS,
+    sections: {},
+    globals: {},
+    patientId: id,
+  };
+
+  switchMode(DEFAULT_MODE);
+}
+
+async function loadPatientById(id){
+  if (!id) return;
+  _setCurrentPatient(id);
+  try {
+    const raw = localStorage.getItem(_patientKey(id));
+    if (!raw){
+      state = {
+        mode: DEFAULT_MODE,
+        activeSection: null,
+        columns: DEFAULT_COLUMNS,
+        sections: {},
+        globals: {},
+        patientId: id,
+      };
+      await switchMode(DEFAULT_MODE);
+      renderAll();
+      return;
+    }
+    const saved = JSON.parse(raw);
+    state = {
+      mode: saved.mode || DEFAULT_MODE,
+      activeSection: saved.activeSection || null,
+      columns: saved.columns || DEFAULT_COLUMNS,
+      sections: saved.sections || {},
+      globals: saved.globals || {},
+      patientId: id,
+    };
+    await switchMode(state.mode || DEFAULT_MODE);
+    renderAll();
+  } catch (e) {
+    console.error("[NoteWriter] Failed to load patient", id, e);
+  }
+}
+
+function renderPatientControls(){
+  const bar = document.querySelector(".tools");
+  if (!bar) return;
+
+  let host = bar.querySelector('[data-role="patient-controls"]');
+  if (!host){
+    host = document.createElement("div");
+    host.dataset.role = "patient-controls";
+    host.style.display = "inline-flex";
+    host.style.gap = "8px";
+    host.style.marginLeft = "8px";
+    bar.appendChild(host);
+  } else {
+    host.innerHTML = "";
+  }
+
+  const btn = document.createElement("button");
+  btn.textContent = "New Patient";
+  btn.title = "Start a new patient session";
+  btn.onclick = ()=>{ createNewPatient(); };
+  host.appendChild(btn);
+
+  const sel = document.createElement("select");
+  const list = _getPatientList().slice().sort((a,b)=>b.createdAt - a.createdAt);
+  const cur = _getCurrentPatient();
+
+  const opt0 = document.createElement("option");
+  opt0.value = "";
+  opt0.textContent = "Select previous…";
+  sel.appendChild(opt0);
+
+  list.forEach(p=>{
+    const o = document.createElement("option");
+    o.value = p.id;
+    o.textContent = _fmtTime(p.createdAt);
+    if (p.id === cur) o.selected = true;
+    sel.appendChild(o);
+  });
+
+  sel.onchange = async (e)=>{
+    const id = e.target.value || cur;
+    if (id) await loadPatientById(id);
+  };
+  host.appendChild(sel);
+}
+
+// Completely clear patient history (does NOT touch template cache)
+function clearAllPatients(){
+  try {
+    // delete all per-patient state blobs
+    Object.keys(localStorage).forEach(k=>{
+      if (k.startsWith(`${CK.STATE}:`)) localStorage.removeItem(k);
+    });
+    // remove patient list + current pointer
+    localStorage.removeItem(CK.PATLIST);
+    localStorage.removeItem(CK.CURRENT);
+  } catch {}
+
+  // Reset in-memory state & start fresh with a new patient
+  state = {
+    mode: DEFAULT_MODE,
+    activeSection: null,
+    columns: DEFAULT_COLUMNS,
+    sections: {},
+    globals: {},
+    patientId: null,
+  };
+  createNewPatient();   // sets new id + switches mode + renders
+}
+
 // ====== State persistence (autosave + restore) ======
 let _saveTimer = null;
 function saveStateSoon(){
   if (!CACHE_ENABLED) return;
   clearTimeout(_saveTimer);
   _saveTimer = setTimeout(()=>{
-    try { localStorage.setItem(CK.STATE, JSON.stringify(state)); } catch {}
+    try {
+      const id = state.patientId || _getCurrentPatient();
+      if (id) {
+        localStorage.setItem(_patientKey(id), JSON.stringify({
+          mode: state.mode,
+          activeSection: state.activeSection,
+          columns: state.columns,
+          sections: state.sections,
+          globals: state.globals,
+        }));
+        _setCurrentPatient(id);
+      }
+    } catch {}
   }, STATE_AUTOSAVE_MS);
 }
 
 function maybeRestoreState(){
   if (!CACHE_ENABLED) return false;
-  try {
-    const raw = localStorage.getItem(CK.STATE);
-    if (!raw) return false;
-    const restored = JSON.parse(raw);
-    if (!restored || typeof restored !== 'object') return false;
-    // shallow merge to keep current schema defaults
-    state = { ...state, ...restored };
-    return true;
-  } catch {
-    return false;
+  const cur = _getCurrentPatient();
+  if (cur){
+    try {
+      const raw = localStorage.getItem(_patientKey(cur));
+      if (!raw) { state.patientId = cur; return true; }
+      const saved = JSON.parse(raw);
+      state = {
+        mode: saved.mode || DEFAULT_MODE,
+        activeSection: saved.activeSection || null,
+        columns: saved.columns || DEFAULT_COLUMNS,
+        sections: saved.sections || {},
+        globals: saved.globals || {},
+        patientId: cur,
+      };
+      return true;
+    } catch {}
   }
+  createNewPatient();
+  return true;
 }
 
 // helpers you also need:
@@ -632,6 +793,13 @@ function setField(id, val){
 function setCB(id,val){
   getSec().checkboxes[id]=val;
   saveStateSoon();
+}
+
+function getField(id){
+  const sec = getSec();
+  return (sec.fields && Object.prototype.hasOwnProperty.call(sec.fields, id))
+    ? sec.fields[id]
+    : undefined;
 }
 
 // Single-line input (text) with label
@@ -966,21 +1134,25 @@ function wireHeader(){
     saveStateSoon();
     renderGrid(); renderOutput();
   };
-  // Add a Clear cache button
+  // Add a Clear patients button
   const toolsBar = document.querySelector(".tools");
-  if (toolsBar && !toolsBar.querySelector('[data-role="clear-cache"]')) {
+  if (toolsBar && !toolsBar.querySelector('[data-role="clear-patients"]')) {
     const btn = document.createElement("button");
-    btn.dataset.role = "clear-cache";
-    btn.textContent = "Clear cache";
-    btn.title = "Clear cached templates & state";
+    btn.dataset.role = "clear-patients";
+    btn.textContent = "Clear patients";
+    btn.title = "Delete all saved patients and start fresh";
     btn.onclick = () => {
-      cacheClearAllForVersion();
-      try { localStorage.removeItem(CK.STATE); } catch {}
-      alert("Cache cleared. Reloading…");
-      location.reload();
+      if (confirm("Delete all saved patients? This cannot be undone.")) {
+        clearAllPatients();
+        // Rebuild toolbar controls after reset
+        renderPatientControls();
+        renderGrid();
+        renderOutput();
+      }
     };
     toolsBar.appendChild(btn);
   }
+  renderPatientControls();
 }
 
 function capFirst(s){ return s ? s.charAt(0).toUpperCase() + s.slice(1) : s; }
