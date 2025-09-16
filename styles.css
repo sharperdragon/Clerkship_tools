@@ -540,7 +540,7 @@
 #out,
 #completeOut {
   width: 100%;
-  min-height: 160px;
+  min-height: 80px;
   resize: vertical;
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
   font-size: 12px;
