@@ -19,6 +19,15 @@ const MODE_FILES = {
 const MODE_LIST = ["HPI", "ROS", "PE", "MSE"];
 const MODE_LABELS = { HPI: "HPI", ROS: "ROS", PE: "Physical Exam", MSE: "MSE" };
 
+
+// Per-tab assets (create files you actually want to use)
+const MODE_ASSETS = {
+  HPI: { css: "hpi.css", js: "hpi.js" },
+  ROS: { css: "ros.css", js: "ros.js" },
+  PE:  { css: "pe.css",  js: "pe.js"  },
+  MSE: { css: "mse.css", js: "mse.js" }
+};
+
 async function loadTemplatesForMode(mode){
   const file = MODE_FILES[mode];
   if (!file) throw new Error(`No template file for mode ${mode}`);
