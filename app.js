@@ -31,7 +31,9 @@ const MODE_FILES = {
 const MODE_LIST = ["HPI", "ROS", "PE", "MSE"];
 const MODE_LABELS = { HPI: "HPI",  ROS: "ROS", PE: "Physical Exam", MSE: "MSE" };
 
-
+function templatesLookValid(tpl) {
+  return !!(tpl && typeof tpl === "object" && tpl.sectionsByMode && tpl.sectionDefs);
+}
 
 // ===== Tiny cache helper (localStorage + TTL) =====
 function cacheSet(key, value, ttlMs = 0) {
@@ -68,16 +70,25 @@ async function loadTemplatesForMode(mode){
   const file = MODE_FILES[mode];
   if (!file) throw new Error(`No template file for mode ${mode}`);
 
-  // Try cache bucket (object keyed by mode)
-  const bucket = cacheGet(CK.TEMPLATES) || {};
-  if (bucket && bucket[mode]) {
+  // 1) Try cached bucket
+  let bucket = cacheGet(CK.TEMPLATES) || {};
+  if (bucket && bucket[mode] && templatesLookValid(bucket[mode])) {
+    console.debug("[NoteWriter] Using cached templates for", mode);
     return bucket[mode];
   }
 
-  // Fetch fresh and store in cache bucket with TTL
+  // 2) Fetch fresh
   const r = await fetch(file, { cache: "no-store" });
-  if (!r.ok) throw new Error(`HTTP ${r.status}`);
+  if (!r.ok) throw new Error(`HTTP ${r.status} fetching ${file}`);
   const tpl = await r.json();
+
+  // 3) Validate fetched; if bad, clear and throw
+  if (!templatesLookValid(tpl)) {
+    cacheDel(CK.TEMPLATES);
+    throw new Error(`Template schema invalid for ${mode}`);
+  }
+
+  // 4) Save back to bucket
   bucket[mode] = tpl;
   cacheSet(CK.TEMPLATES, bucket, CACHE_TTL_MS);
   return tpl;
@@ -821,7 +832,6 @@ function getSec(){
   state.sections[k] ??= { checkboxes:{}, chips:{}, fields:{} };
   return state.sections[k];
 }
-function setCB(id,val){ getSec().checkboxes[id]=val; }
 function toggleChip(id){ const s=getSec(); s.chips[id]=!s.chips[id]; }
 
 function findDef(secKey, id){
@@ -956,6 +966,21 @@ function wireHeader(){
     saveStateSoon();
     renderGrid(); renderOutput();
   };
+  // Add a Clear cache button
+  const toolsBar = document.querySelector(".tools");
+  if (toolsBar && !toolsBar.querySelector('[data-role="clear-cache"]')) {
+    const btn = document.createElement("button");
+    btn.dataset.role = "clear-cache";
+    btn.textContent = "Clear cache";
+    btn.title = "Clear cached templates & state";
+    btn.onclick = () => {
+      cacheClearAllForVersion();
+      try { localStorage.removeItem(CK.STATE); } catch {}
+      alert("Cache cleared. Reloading…");
+      location.reload();
+    };
+    toolsBar.appendChild(btn);
+  }
 }
 
 function capFirst(s){ return s ? s.charAt(0).toUpperCase() + s.slice(1) : s; }
