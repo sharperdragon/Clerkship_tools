@@ -7,6 +7,14 @@
     "SUBJECTIVE:General": {
       "panels": [
         {
+          "title": "",
+          "id": "subj_header",
+          "fields": [
+            { "id": "subj_visit_note",   "label": "Visit Note",       "type": "text", "placeholder": "Visit Note" },
+            { "id": "subj_chief_complaint", "label": "Chief Complaint", "type": "text", "placeholder": "Chief Complaint" }
+          ]
+        },
+        {
           "title": "History of Present Illness",
           "id": "subj_hpi",
           "fields": [
@@ -25,12 +33,12 @@
               "showIf": { "field": "hpi_prior_flag", "equals": true },
               "placeholder": "Prior"
             },
-            { "id": "hpi_progression", "label": "Progression", "type": "text", "placeholder": "Progression" },
-            { "id": "hpi_palliate", "label": "palliate", "type": "text", "placeholder": "palliate" },
-            { "id": "hpi_provoke", "label": "Provoke", "type": "text", "placeholder": "Provoke" },
-            { "id": "hpi_quality", "label": "Quality", "type": "text", "placeholder": "Quality" },
-            { "id": "hpi_quantity", "label": "Quantity", "type": "text", "placeholder": "Quantity" },
-            { "id": "hpi_region", "label": "Region", "type": "text", "placeholder": "Region" },
+            { "id": "hpi_progression", "label": "Progression", "type": "text", "placeholder": "Progrssion" },
+            { "id": "hpi_palliate", "label": "Palliate", "type": "text", "placeholder": "" },
+            { "id": "hpi_provoke", "label": "Provoke", "type": "text", "placeholder": "" },
+            { "id": "hpi_quality", "label": "Quality", "type": "text", "placeholder": "" },
+            { "id": "hpi_quantity", "label": "Quantity", "type": "text", "placeholder": "" },
+            { "id": "hpi_region", "label": "Region", "type": "text", "placeholder": "" },
             {
               "id": "hpi_radiate_flag",
               "label": "Radiation",
@@ -45,7 +53,14 @@
               "showIf": { "field": "hpi_radiate_flag", "equals": true },
               "placeholder": "Radiation"
             },
-            { "id": "hpi_scale", "label": "Scale (0/10)", "type": "text", "placeholder": "Scale (0/10)" },
+            {
+              "id": "hpi_scale",
+              "label": "Scale",
+              "type": "range",
+              "min": 0,
+              "max": 10,
+              "step": 1
+            },
             { "id": "hpi_timing", "label": "Timing", "type": "text", "placeholder": "Timing" },
             {
               "id": "hpi_treatment_flag",

@@ -1,6 +1,6 @@
 
 // ===== Cache config =====
-const APP_VERSION = "2025-09-16-a";          // bump to invalidate everything
+const APP_VERSION = "2025-09-18-a";          // bump to invalidate everything
 const CACHE_ENABLED = true;                   // master switch
 const CACHE_TTL_MS = 1000 * 60 * 60 * 24;     // 24h for templates
 const STATE_AUTOSAVE_MS = 500;               // debounce for state saves
@@ -197,8 +197,31 @@ function renderTier1(){
 }
 
 function renderTier2(){
-  const wrap = document.getElementById("tier2"); wrap.innerHTML="";
-  (Templates.sectionsByMode[state.mode]||[]).forEach(sec=>{
+  const wrap = document.getElementById("tier2");
+  wrap.innerHTML = "";
+  const secs = (Templates.sectionsByMode[state.mode] || []);
+
+  // Hide the Tier 2 nav entirely when there's 0 or 1 section
+  if (secs.length <= 1) {
+    // Ensure activeSection is set to the only section (if any)
+    if (secs.length === 1) {
+      const only = secs[0];
+      if (state.activeSection !== only) {
+        state.activeSection = only;
+        ensureSectionState();
+        renderGrid();
+        renderOutput();
+        renderCompleteSoon();
+      }
+    }
+    wrap.style.display = "none";
+    applySticky();
+    return;
+  }
+
+  // Otherwise, render the tab bar as usual
+  wrap.style.display = "";
+  secs.forEach(sec=>{
     const btn = document.createElement("button");
     btn.className = "tab" + (sec===state.activeSection ? " active" : "");
     btn.textContent = sec;
@@ -256,23 +279,55 @@ function renderHeaderChecks(){
   const host = document.getElementById("headerChecks");
   host.innerHTML = "";
   const def = Templates.sectionDefs[`${state.mode}:${state.activeSection}`];
-  if (!def?.headerChecks?.length) {
+  if (!def) { host.style.display = "none"; return; }
+
+  const headerPanel = (def.panels || []).find(p => p.id === 'subj_header');
+  const hasChecks = !!(def.headerChecks && def.headerChecks.length);
+  const hasHeaderFields = !!(headerPanel && headerPanel.fields && headerPanel.fields.length);
+
+  // Hide only if we truly have nothing to show
+  if (!hasChecks && !hasHeaderFields) {
     host.style.display = "none";
     return;
   }
+
   host.style.display = "";
-  const wrap = makeRow("header-checks");
-  def.headerChecks.forEach(t=>{
-    wrap.appendChild(
-      cb(
-        t.id,
-        t.label,
-        !!getSec().checkboxes?.[t.id],
-        v=>{ setCB(t.id, v); renderOutput(); renderCompleteSoon(); }
-      )
-    );
-  });
-  host.appendChild(wrap);
+
+  // Render admin-style header checks, if any
+  if (hasChecks){
+    const wrapChecks = makeRow("header-checks");
+    def.headerChecks.forEach(t=>{
+      wrapChecks.appendChild(
+        cb(
+          t.id,
+          t.label,
+          !!getSec().checkboxes?.[t.id],
+          v=>{ setCB(t.id, v); renderOutput(); renderCompleteSoon(); }
+        )
+      );
+    });
+    host.appendChild(wrapChecks);
+  }
+
+  // Render Subjective header fields (Visit Note, Chief Complaint) stacked
+  if (hasHeaderFields){
+    const wrapFields = makeRow("header-fields");
+    headerPanel.fields.forEach(f => {
+      const val = getSec().fields?.[f.id];
+      wrapFields.appendChild(
+        fieldText(
+          f.id,
+          f.label,
+          val,
+          (v) => { setField(f.id, v); renderOutput(); renderCompleteSoon(); },
+          f.placeholder,
+          /*stacked*/ true
+        )
+      );
+    });
+    host.appendChild(wrapFields);
+  }
+
   applySticky();
 }
 
@@ -313,6 +368,8 @@ function renderGrid(){
   }
   // panels
   (def.panels||[]).forEach(pd=>{
+    // Skip Subjective header fields panel; rendered up top in headerChecks area
+    if (pd.id === 'subj_header') { return; }
     const p = panel(pd.title);
     if (pd.groupLabel){
       const h = document.createElement("div");
@@ -508,21 +565,35 @@ function renderGrid(){
             fieldBoolean(
               f.id,
               f.label,
-              typeof val === "boolean" ? val : false, // default false
-              (v) => { setField(f.id, v); renderGrid(); renderOutput(); renderCompleteSoon(); }, // re-render to show/hide dependents
+              typeof val === "boolean" ? val : false,
+              (v) => { setField(f.id, v); renderGrid(); renderOutput(); renderCompleteSoon(); },
               f.ui || {}
             )
           );
+        } else if (f.type === "range") {
+          const stacked = (state.mode === "SUBJECTIVE");
+          r.appendChild(
+            fieldRange(
+              f.id,
+              f.label,
+              val,
+              (v) => { setField(f.id, v); renderOutput(); renderCompleteSoon(); },
+              f.min, f.max, f.step,
+              stacked
+            )
+          );
         } else {
+          const stacked = (state.mode === "SUBJECTIVE");
           r.appendChild(
             fieldText(
               f.id,
               f.label,
               val,
               (v) => { setField(f.id, v); renderOutput(); renderCompleteSoon(); },
-              f.placeholder
+              f.placeholder,
+              stacked
             )
-);
+          );
         }
 
         p.appendChild(r);
@@ -583,6 +654,13 @@ function renderOutput(){
 
     const cbIds  = _cbs.map(c => c.id);
     const chipDs = _chips;
+
+    // Always show an HPI header line for the HPI panel in Subjective
+    if (state.mode === "SUBJECTIVE" && pd.title === "History of Present Illness") {
+      if (lines.length === 0 || lines[lines.length - 1] !== "HPI:") {
+        lines.push("HPI:");
+      }
+    }
 
     // Subjective panels: only emit visible text fields with content.
     // Skip boolean flag fields entirely (they just gate visibility).
@@ -650,6 +728,24 @@ function renderOutput(){
       lines.push(linePlain);
     }
   });
+
+  // Fallback: if Subjective produced no lines, sweep all visible text fields
+  if (state.mode === "SUBJECTIVE" && lines.length === 0) {
+    const def2 = Templates.sectionDefs[`${state.mode}:${state.activeSection}`];
+    (def2?.panels || []).forEach(pd => {
+      (pd.fields || []).forEach(f => {
+        if (!shouldShowField(f)) return;
+        if (f.type === "boolean") return;
+        const raw = getSec().fields?.[f.id];
+        const v = (typeof raw === "string" ? raw : "").trim();
+        if (v) lines.push(`${f.label}: ${v}.`);
+      });
+    });
+  }
+
+  if (state.mode === "SUBJECTIVE") {
+    console.debug('[Subjective][renderOutput] lines:', lines.length, lines);
+  }
 
   if (ta) ta.value = lines.join("\n");
 }
@@ -947,17 +1043,24 @@ function buildSectionLines(secKey, mode, tpl){
       _chips.push(...(ss.chips || []));
     });
 
-  // Subjective: include visible text fields (skip booleans)
-  if (mode === "SUBJECTIVE" && pd.fields?.length){
-    pd.fields.forEach(f=>{
-      if (!shouldShowFieldFor(f, mode, secKey)) return;
-      if (f.type === "boolean") return;
-      const raw = (sec.fields && sec.fields[f.id]);
-      const v = (typeof raw === "string" ? raw.trim() : "");
-      if (v) lines.push(`${f.label}: ${v}.`);
-    });
-    return; // next panel
-  }
+    // Always show an HPI header line for the HPI panel in Subjective (Complete Note builder)
+    if (mode === "SUBJECTIVE" && pd.title === "History of Present Illness") {
+      if (lines.length === 0 || lines[lines.length - 1] !== "HPI:") {
+        lines.push("HPI:");
+      }
+    }
+
+    // Subjective: include visible text fields (skip booleans)
+    if (mode === "SUBJECTIVE" && pd.fields?.length){
+      pd.fields.forEach(f=>{
+        if (!shouldShowFieldFor(f, mode, secKey)) return;
+        if (f.type === "boolean") return;
+        const raw = (sec.fields && sec.fields[f.id]);
+        const v = (typeof raw === "string" ? raw.trim() : "");
+        if (v) lines.push(`${f.label}: ${v}.`);
+      });
+      return; // next panel
+    }
 
     const cbParts = _cbs
       .filter(c => !!sec.checkboxes?.[c.id])
@@ -999,6 +1102,19 @@ function buildSectionLines(secKey, mode, tpl){
     }
   });
 
+  // Fallback: if Subjective produced no lines, sweep all visible text fields
+  if (mode === "SUBJECTIVE" && lines.length === 0) {
+    (def.panels || []).forEach(pd => {
+      (pd.fields || []).forEach(f => {
+        if (!shouldShowFieldFor(f, mode, secKey)) return;
+        if (f.type === "boolean") return;
+        const raw = (sec.fields && sec.fields[f.id]);
+        const v = (typeof raw === "string" ? raw.trim() : "");
+        if (v) lines.push(`${f.label}: ${v}.`);
+      });
+    });
+  }
+
   return lines;
 }
 
@@ -1014,6 +1130,9 @@ function collectTextFromTemplates(mode, tpl){
     orderedSections.forEach(sectionName => {
       const secKey = `${mode}:${sectionName}`;
       const lines = buildSectionLines(secKey, mode, tpl);
+      if (mode === "SUBJECTIVE") {
+        console.debug('[Subjective][collect] sec=', sectionName, 'lines=', lines.length);
+      }
       if (lines.length) out.push(...lines);
     });
   } finally {
@@ -1035,7 +1154,7 @@ function renderCompleteSoon(){
   _completeTimer = setTimeout(() => { renderCompleteNote(); }, COMPLETE_NOTE_MS);
 }
 
-const SECTION_HEADS = { SUBJECTIVE: "Subjective", ROS: "ROS", PE: "PE", MSE: "MSE" };
+const SECTION_HEADS = { SUBJECTIVE: "Subjective", ROS: "ROS", PE: "Physical Exam", MSE: "MSE" };
 
 async function renderCompleteNote(){
   const box = document.getElementById('completeOut');
@@ -1048,6 +1167,10 @@ async function renderCompleteNote(){
       if (txt && txt.trim()) {
         const sep = (m === "SUBJECTIVE") ? "\n\n" : "\n";   // extra blank line after Subjective
         const heading = SECTION_HEADS[m] || m;
+        if (m === "PE") {
+          // Insert Objective heading before the Physical Exam section
+          parts.push(`Objective:\n`);
+        }
         parts.push(`${heading}:\n${txt.trim()}${sep}`);
       }
     } catch (e) {
@@ -1113,24 +1236,43 @@ function enhanceCompleteNoteUI(){
 }
 
 function _completeTextToHTML(txt){
+  const breakLabels = [
+    "Past Medical", "Surgical Hx", "Meds", "Allergies", "Social", "LMP", "Family Hx"
+  ];
   const lines = String(txt || '').split(/\r?\n/);
   const html = lines.map(rawLine => {
     const line = String(rawLine);
     const t = line.trim();
     if (!t) return '<div class="cn-line cn-blank">&nbsp;</div>';
 
-    // If the line is an exact section header (e.g., "Subjective:", "HPI:", "PE:", "MSE:"), style as section-head
+    // If the line is an exact section header (e.g., "Subjective:", "Objective:", "Physical Exam:", "HPI:", "PE:", "MSE:"), style as section-head
     const sec = t.match(/^([A-Za-z ]{2,30}):$/);
     if (sec) {
       const label = sec[1];
-      if (label === 'Subjective' || label === 'HPI' || label === 'PE' || label === 'MSE') {
-        return `<div class="cn-line"><span class="section-head">${label}:</span></div>`;
+      // Map legacy short labels to display equivalents in view only
+      const isH1 = (label === 'Subjective' || label === 'Objective');
+      if (label === 'Subjective' || label === 'Objective' || label === 'Physical Exam' || label === 'MSE' || label === 'HPI' || label === 'PE') {
+        // Normalize PE/HPI labels to display text already emitted by renderer
+        const shown = (label === 'PE') ? 'Physical Exam' : label;
+        const cls = isH1 ? 'section-head head-h1' : 'section-head';
+        return `<div class="cn-line"><span class="${cls}">${shown}</span></div>`;
       }
+    }
+
+    // Special case: force break before certain item-labels
+    if (
+      breakLabels.some(lbl => t.startsWith(lbl + ":"))
+    ) {
+      const replaced = t.replace(/^([^:\n]{1,80}):\s*/, (m, label)=>{
+        return `<span class="item-label">${label}</span>: `;
+      });
+      // Add section-head and PMH classes
+      return `<br><div class="cn-line section-head PMH">${replaced}</div>`;
     }
 
     // Otherwise, underline leading "Label:" spans as item-label
     const replaced = t.replace(/^([^:\n]{1,80}):\s*/, (m, label)=>{
-      return `<span class="item-label">${label}:</span> `;
+      return `<span class="item-label">${label}</span>: `;
     });
     return `<div class="cn-line">${replaced}</div>`;
   }).join('');
@@ -1163,8 +1305,8 @@ function _toggleCnFullscreen(){
   _autosizeCnTextarea();
 }
 
-// Single-line input (text) with label
-function fieldText(id, label, value, onChange, placeholder){
+// Single-line input (text) with label; supports stacked label above input if stacked=true
+function fieldText(id, label, value, onChange, placeholder, stacked=false){
   const wrap = document.createElement("label");
   wrap.className = "field";
   const span = document.createElement("span");
@@ -1175,6 +1317,21 @@ function fieldText(id, label, value, onChange, placeholder){
   input.value = value || "";
   input.placeholder = (placeholder ?? label);
   input.oninput = (e) => onChange(e.target.value);
+
+  if (stacked && state.mode === "SUBJECTIVE") {
+    // Force vertical stack even if .field is flex-row in CSS
+    wrap.style.display = 'flex';
+    wrap.style.flexDirection = 'column';
+    wrap.style.alignItems = 'stretch';
+    wrap.style.gap = '4px';
+
+    // Put the label above the input and make input fill the row
+    span.style.display = 'block';
+    span.style.marginBottom = '0';
+    input.style.display = 'block';
+    input.style.width = '100%';
+  }
+
   wrap.append(span, input);
   return wrap;
 }
@@ -1217,6 +1374,76 @@ function fieldBoolean(id, label, value, onChange, ui = {}) {
 
   wrap.appendChild(mkOpt(yesLabel, true));
   wrap.appendChild(mkOpt(noLabel, false));
+  return wrap;
+}
+
+function fieldRange(id, label, value, onChange, min = 0, max = 10, step = 1, stacked = false) {
+  const wrap = document.createElement("label");
+  wrap.className = "field field-range";
+
+  const span = document.createElement("span");
+  span.className = "field-label";
+  span.textContent = label;
+
+  const input = document.createElement("input");
+  input.type = "range";
+  input.min = min;
+  input.max = max;
+  input.step = step;
+  input.value = value || 0;
+  input.style.gridArea = '1 / 1 / auto / span 1';
+  input.style.zIndex = '99';
+
+  input.onchange = (e) => { onChange(e.target.value); };
+
+  // Right side: slider on row 1; ticks row under it
+  const right = document.createElement("div");
+  right.className = "field-range-right";
+  // Inline layout to prevent ticks overlapping
+  right.style.display = 'grid';
+  right.style.gridTemplateRows = 'auto auto';
+  right.style.gridTemplateColumns = '1fr auto';
+  right.style.alignItems = 'center';
+  right.style.gap = '6px 8px';
+  right.style.maxWidth = '275px';
+
+  if (stacked && state.mode === "SUBJECTIVE") {
+    // Force vertical stack even if .field is flex-row in CSS
+    wrap.style.display = 'flex';
+    wrap.style.flexDirection = 'column';
+    wrap.style.alignItems = 'stretch';
+    wrap.style.gap = '4px';
+
+    span.style.display = 'block';
+    span.style.marginBottom = '0';
+    right.style.width = '100%';
+  }
+
+  // --- ticks + labels (0..10) ---
+  const ticksWrap = document.createElement("div");
+  ticksWrap.className = "range-ticks";
+  // Ticks row spans beneath both columns with precise offsets
+  ticksWrap.style.marginLeft = '-1px';
+  ticksWrap.style.marginRight = '2px';
+  ticksWrap.style.gridArea = '2 / 1 / auto / span 2';
+  ticksWrap.style.display = 'grid';
+  ticksWrap.style.gridTemplateColumns = 'repeat(11, 1fr)';
+  ticksWrap.style.marginTop = '-15px';
+  const nMin = Number(min), nMax = Number(max), nStep = Number(step) || 1;
+  for (let i = nMin; i <= nMax; i += nStep) {
+    const cell = document.createElement("div");
+    cell.className = "tick-cell";
+    const tick = document.createElement("div");
+    tick.className = "tick";
+    const lab  = document.createElement("div");
+    lab.className = "tick-label";
+    lab.textContent = String(i);
+    cell.append(tick, lab);
+    ticksWrap.appendChild(cell);
+  }
+
+  right.append(input, ticksWrap);
+  wrap.append(span, right);
   return wrap;
 }
 
