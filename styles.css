@@ -725,7 +725,7 @@
 }
 
 
-.section-head {
+.section-head.item-label {
   font-weight:600;
   text-decoration:underline;
   text-decoration-thickness: 0.5px;
