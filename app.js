@@ -13,7 +13,7 @@ const CK = {
   CURRENT:   `ct.patient.current.${APP_VERSION}`, // active patient id
 };
 
-const DEFAULT_MODE = "HPI";
+const DEFAULT_MODE = "SUBJECTIVE";
 const DEFAULT_COLUMNS = 3;
 
 // Sticky layout heights (JS-only; no CSS edits)
@@ -38,15 +38,15 @@ const CLASS_NORMAL   = "normal";   // applied when good/absent (left-click)
 
 // Map each mode to its own template file
 const MODE_FILES = {
-  HPI: "template_HPI.json",
+  SUBJECTIVE: "template_subjective.json",
   ROS: "template_ROS.json",
   PE:  "template_pe.json",
   MSE: "template_MSE.json",
 
 };
 // Explicit order for tabs (so ROS appears first regardless of key enumeration)
-const MODE_LIST = ["HPI", "ROS", "PE", "MSE"];
-const MODE_LABELS = { HPI: "HPI",  ROS: "ROS", PE: "Physical Exam", MSE: "MSE" };
+const MODE_LIST = ["SUBJECTIVE", "ROS", "PE", "MSE"];
+const MODE_LABELS = { SUBJECTIVE: "Subjective", ROS: "ROS", PE: "Physical Exam", MSE: "MSE" };
 
 function templatesLookValid(tpl) {
   return !!(tpl && typeof tpl === "object" && tpl.sectionsByMode && tpl.sectionDefs);
@@ -284,8 +284,8 @@ function renderGrid(){
   const def = Templates.sectionDefs[`${state.mode}:${state.activeSection}`];
   if(!def){ grid.textContent = "No schema yet."; return; }
   
-  // Dynamic two-column layout for HPI when multiple panels exist
-  if (state.mode === "HPI") {
+  // Dynamic two-column layout for Subjective when multiple panels exist
+  if (state.mode === "SUBJECTIVE") {
     const panels = (def.panels || []);
     if (panels.length > 1) {
       grid.style.display = "grid";
@@ -584,9 +584,9 @@ function renderOutput(){
     const cbIds  = _cbs.map(c => c.id);
     const chipDs = _chips;
 
-    // HPI panels: only emit visible text fields with content.
+    // Subjective panels: only emit visible text fields with content.
     // Skip boolean flag fields entirely (they just gate visibility).
-    if (state.mode === "HPI" && pd.fields?.length){
+    if (state.mode === "SUBJECTIVE" && pd.fields?.length){
       pd.fields.forEach(f => {
         if (!shouldShowField(f)) return;
         if (f.type === "boolean") return; // don't output Yes/No line
@@ -685,7 +685,19 @@ function createNewPatient(){
   };
 
   switchMode(DEFAULT_MODE);
+  clearCompleteNoteBox();
 }
+// Clear the Complete Note box immediately
+function clearCompleteNoteBox(){
+  const box = document.getElementById('completeOut');
+  if (!box) return;
+  box.value = '';
+  const view = document.getElementById('completeOutView');
+  if (view) view.innerHTML = '';
+  _updateCnMetrics();
+  _autosizeCnTextarea();
+}
+
 
 async function loadPatientById(id){
   if (!id) return;
@@ -894,29 +906,120 @@ async function buildNoteForMode(mode){
   }
 }
 
-// Walk the templates for a mode and assemble text from state
+// Safe field accessor for another mode/section (no UI switch)
+function getFieldFor(mode, secKey, id){
+  const key = `${mode}:${secKey.split(":")[1] || ""}`; // ensure exact key
+  const sec = state.sections[key] || {};
+  return sec.fields ? sec.fields[id] : undefined;
+}
+
+// Conditional visibility for cross-mode build
+function shouldShowFieldFor(f, mode, secKey){
+  if (!f || !f.showIf) return true;
+  const dep = getFieldFor(mode, secKey, f.showIf.field);
+  return dep === f.showIf.equals;
+}
+
+// Build lines for a single section (pure; no DOM)
+function buildSectionLines(secKey, mode, tpl){
+  const def = tpl.sectionDefs[secKey];
+  const sec = state.sections[secKey] || { checkboxes:{}, chips:{}, fields:{} };
+  if (!def) return [];
+  const lines = [];
+
+  // Header checks
+  if (def.headerChecks?.length){
+    const checks = def.headerChecks
+      .filter(h => !!sec.checkboxes?.[h.id])
+      .map(h => formatPECheckLabel(h.label));
+    if (checks.length){
+      const sectionName = secKey.split(":")[1] || "";
+      lines.push(`${sectionName}: ${checks.join(". ")}.`);
+    }
+  }
+
+  (def.panels || []).forEach(pd => {
+    // Collect all ids across panel and subsections
+    const _cbs   = [...(pd.checkboxes || [])];
+    const _chips = [...(pd.chips || [])];
+    (pd.subsections || []).forEach(ss=>{
+      _cbs.push(...(ss.checkboxes || []));
+      _chips.push(...(ss.chips || []));
+    });
+
+  // Subjective: include visible text fields (skip booleans)
+  if (mode === "SUBJECTIVE" && pd.fields?.length){
+    pd.fields.forEach(f=>{
+      if (!shouldShowFieldFor(f, mode, secKey)) return;
+      if (f.type === "boolean") return;
+      const raw = (sec.fields && sec.fields[f.id]);
+      const v = (typeof raw === "string" ? raw.trim() : "");
+      if (v) lines.push(`${f.label}: ${v}.`);
+    });
+    return; // next panel
+  }
+
+    const cbParts = _cbs
+      .filter(c => !!sec.checkboxes?.[c.id])
+      .map(c => formatPECheckLabel(labelFor(secKey, c.id)));
+
+    const negParts = _chips
+      .filter(d => isNeg(sec.chips?.[d.id]))
+      .map(d => formatChipNegForOutput(secKey, d.id));
+
+    const posParts = _chips
+      .filter(d => isPos(sec.chips?.[d.id]))
+      .map(d => formatChipForOutput(secKey, d.id, sec.chips[d.id]));
+
+    if (posParts.length || negParts.length || cbParts.length){
+      let linePlain = `${pd.title}: `;
+
+      if (posParts.length){
+        const posPlainList = posParts.map((t,i)=> i===0 ? capFirst(t) : t);
+        const posPlainSent = `${posPlainList.join("; ")}.`;
+        linePlain += posPlainSent + (negParts.length || cbParts.length ? " " : "");
+      }
+
+      if (negParts.length || cbParts.length){
+        const deniesItems = [];
+        const noItems = [];
+        negParts.forEach(raw => {
+          const t = String(raw).trim();
+          if (/^denies\b/i.test(t))      deniesItems.push(lcFirst(t.replace(/^denies\s+/i, "")));
+          else if (/^no\b/i.test(t))     noItems.push(lcFirst(t.replace(/^no\s+/i, "")));
+          else                           noItems.push(lcFirst(t.replace(/^(denies|no)\s+/i, "")));
+        });
+        const negSentences = [];
+        if (deniesItems.length) negSentences.push(`Denies ${joinWithOxford(deniesItems, "and")}.`);
+        if (noItems.length)     negSentences.push(`No ${joinWithOxford(noItems, "or")}.`);
+        if (cbParts.length)     negSentences.push(`${cbParts.join("; ")}.`);
+        linePlain += negSentences.join(" ");
+      }
+      lines.push(linePlain);
+    }
+  });
+
+  return lines;
+}
+
+// Walk the templates for a mode and assemble text from state (all sections)
 function collectTextFromTemplates(mode, tpl){
   if (!tpl || typeof tpl !== 'object') return '';
   const out = [];
-  const secDefs = tpl.sectionDefs || {};
-  Object.keys(secDefs).forEach(groupKey => {
-    const group = secDefs[groupKey];
-    (group.panels || []).forEach(pd => {
-      // Fields (skip booleans; honor showIf like renderGrid/renderOutput)
-      if (Array.isArray(pd.fields)){
-        pd.fields.forEach(f => {
-          if (!shouldShowField(f)) return;
-          if (f.type === 'boolean') return;
-          const sec = getSecFor(mode, groupKey);
-          const raw = (sec.fields && sec.fields[f.id]);
-          const v = (typeof raw === 'string' ? raw.trim() : '');
-          if (v) out.push(`${f.label}: ${v}.`);
-        });
-      }
-      // If you want chips/grades/etc included, mirror their encoding here.
+  const orderedSections = tpl.sectionsByMode?.[mode] || [];
+  const oldTemplates = Templates;
+  try {
+    // Ensure helper lookups (findDef/labelFor/formatChip*) use the correct defs
+    Templates = tpl;
+    orderedSections.forEach(sectionName => {
+      const secKey = `${mode}:${sectionName}`;
+      const lines = buildSectionLines(secKey, mode, tpl);
+      if (lines.length) out.push(...lines);
     });
-  });
-  return out.join(' ');
+  } finally {
+    Templates = oldTemplates;
+  }
+  return out.join("\n");
 }
 
 // Safe accessor for another mode's section bucket (no UI switch)
@@ -932,6 +1035,8 @@ function renderCompleteSoon(){
   _completeTimer = setTimeout(() => { renderCompleteNote(); }, COMPLETE_NOTE_MS);
 }
 
+const SECTION_HEADS = { SUBJECTIVE: "Subjective", ROS: "ROS", PE: "PE", MSE: "MSE" };
+
 async function renderCompleteNote(){
   const box = document.getElementById('completeOut');
   if (!box) return;
@@ -940,12 +1045,18 @@ async function renderCompleteNote(){
   for (const m of modes){
     try {
       const txt = await buildNoteForMode(m);
-      if (txt && txt.trim()) parts.push(`${m}:\n${txt.trim()}\n`);
+      if (txt && txt.trim()) {
+        const sep = (m === "SUBJECTIVE") ? "\n\n" : "\n";   // extra blank line after Subjective
+        const heading = SECTION_HEADS[m] || m;
+        parts.push(`${heading}:\n${txt.trim()}${sep}`);
+      }
     } catch (e) {
       console.debug('[CompleteNote] skip', m, e?.message || e);
     }
   }
   box.value = parts.join('\n').trim();
+  const view = document.getElementById('completeOutView');
+  if (view) view.innerHTML = _completeTextToHTML(box.value);
   _updateCnMetrics();
   _autosizeCnTextarea();
 }
@@ -964,6 +1075,28 @@ function enhanceCompleteNoteUI(){
   body.className = 'complete-note__body';
   wrap.appendChild(body);
   body.appendChild(ta);
+    // Create formatted view
+  const view = document.createElement('div');
+  view.id = 'completeOutView';
+  view.className = 'complete-note__view';
+
+  // Make view focusable and confine Cmd/Ctrl+A to just this block
+  view.setAttribute('tabindex', '0');
+  view.addEventListener('keydown', (e) => {
+    const isSelectAll = (e.metaKey || e.ctrlKey) && (e.key === 'a' || e.key === 'A');
+    if (isSelectAll) {
+      const sel = window.getSelection();
+      const range = document.createRange();
+      range.selectNodeContents(view);
+      sel.removeAllRanges();
+      sel.addRange(range);
+      e.preventDefault();
+      e.stopPropagation();
+    }
+  });
+
+  body.insertBefore(view, ta);
+  ta.style.display = 'none'; // hide the raw textarea
 
   ta.dataset.enhanced = "1";
   ta.classList.add('complete-note__textarea');
@@ -977,6 +1110,31 @@ function enhanceCompleteNoteUI(){
 
   // Refit on window resizes
   window.addEventListener('resize', debounce(_autosizeCnTextarea, 120));
+}
+
+function _completeTextToHTML(txt){
+  const lines = String(txt || '').split(/\r?\n/);
+  const html = lines.map(rawLine => {
+    const line = String(rawLine);
+    const t = line.trim();
+    if (!t) return '<div class="cn-line cn-blank">&nbsp;</div>';
+
+    // If the line is an exact section header (e.g., "Subjective:", "HPI:", "PE:", "MSE:"), style as section-head
+    const sec = t.match(/^([A-Za-z ]{2,30}):$/);
+    if (sec) {
+      const label = sec[1];
+      if (label === 'Subjective' || label === 'HPI' || label === 'PE' || label === 'MSE') {
+        return `<div class="cn-line"><span class="section-head">${label}:</span></div>`;
+      }
+    }
+
+    // Otherwise, underline leading "Label:" spans as item-label
+    const replaced = t.replace(/^([^:\n]{1,80}):\s*/, (m, label)=>{
+      return `<span class="item-label">${label}:</span> `;
+    });
+    return `<div class="cn-line">${replaced}</div>`;
+  }).join('');
+  return html;
 }
 
 function _updateCnMetrics(){
@@ -1335,11 +1493,13 @@ function wireHeader(){
     state.sections[`${state.mode}:${state.activeSection}`] = {checkboxes:{}, chips:{}, fields:{}};
     saveStateSoon();
     renderGrid(); renderOutput();
+    clearCompleteNoteBox();
   };
   document.getElementById("clearAllBtn").onclick = ()=>{
     Object.keys(state.sections).forEach(k=> state.sections[k]={checkboxes:{},chips:{},fields:{}});
     saveStateSoon();
     renderGrid(); renderOutput();
+    clearCompleteNoteBox();
   };
   // Add a Clear patients button
   const toolsBar = document.querySelector(".tools");

@@ -1,14 +1,14 @@
 {
-  "modes": ["HPI"],
+  "modes": ["SUBJECTIVE"],
   "sectionsByMode": {
-    "HPI": ["General"]
+    "SUBJECTIVE": ["General"]
   },
   "sectionDefs": {
-    "HPI:General": {
+    "SUBJECTIVE:General": {
       "panels": [
         {
           "title": "History of Present Illness",
-          "id": "hpi_main",
+          "id": "subj_hpi",
           "fields": [
             { "id": "hpi_onset", "label": "Onset", "type": "text", "placeholder": "Onset" },
             {
@@ -26,7 +26,7 @@
               "placeholder": "Prior"
             },
             { "id": "hpi_progression", "label": "Progression", "type": "text", "placeholder": "Progression" },
-            { "id": "hpi_pallate", "label": "Pallate", "type": "text", "placeholder": "Pallate" },
+            { "id": "hpi_palliate", "label": "palliate", "type": "text", "placeholder": "palliate" },
             { "id": "hpi_provoke", "label": "Provoke", "type": "text", "placeholder": "Provoke" },
             { "id": "hpi_quality", "label": "Quality", "type": "text", "placeholder": "Quality" },
             { "id": "hpi_quantity", "label": "Quantity", "type": "text", "placeholder": "Quantity" },
@@ -65,16 +65,15 @@
           ]
         },
         {
-          "title": "Subjective",
-          "id": "hpi_background",
+          "id": "Subjective_main",
           "fields": [
-            { "id": "hpi_pmh",      "label": "Past Medical", "type": "text", "placeholder": "Past Medical" },
-            { "id": "hpi_surg_hx",  "label": "Surgical Hx",  "type": "text", "placeholder": "Surgical Hx" },
-            { "id": "hpi_meds",     "label": "Meds",         "type": "text", "placeholder": "Meds" },
-            { "id": "hpi_allergies", "label": "Allergies",    "type": "text", "placeholder": "Allergies" },
-            { "id": "hpi_social",   "label": "Social",       "type": "text", "placeholder": "Social" },
-            { "id": "hpi_lmp",      "label": "LMP",          "type": "text", "placeholder": "LMP" },
-            { "id": "hpi_fhx",      "label": "Family Hx",    "type": "text", "placeholder": "Family Hx" }
+            { "id": "subj_pmh",      "label": "Past Medical", "type": "text", "placeholder": "Past Medical" },
+            { "id": "subj_surg_hx",  "label": "Surgical Hx",  "type": "text", "placeholder": "Surgical Hx" },
+            { "id": "subj_meds",     "label": "Meds",         "type": "text", "placeholder": "Meds" },
+            { "id": "subj_allergies", "label": "Allergies",    "type": "text", "placeholder": "Allergies" },
+            { "id": "subj_social",   "label": "Social",       "type": "text", "placeholder": "Social" },
+            { "id": "subj_lmp",      "label": "LMP",          "type": "text", "placeholder": "LMP" },
+            { "id": "subj_fhx",      "label": "Family Hx",    "type": "text", "placeholder": "Family Hx" }
           ]
         }
       ]

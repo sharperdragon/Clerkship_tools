@@ -507,7 +507,7 @@
   gap: 6px;
 }
 
-/* HPI: Stack field label above text inputs */
+
 .section-grid.HPI .field:not(.field-boolean) {
   flex-direction: column;        /* label above input */
   align-items: stretch;          /* full-width input */
@@ -541,8 +541,6 @@
   width: 100%;
   min-height: 80px;
   resize: vertical;
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
-  font-size: 12px;
   line-height: 1.45;
   border: 1px solid var(--divider);
   border-radius: 6px;
@@ -550,5 +548,38 @@
   background: #fff;
 }
 #completeOut {
-  min-height: 220px; /* a little taller for the full note */
+  min-height: 20px; /* a little taller for the full note */
+  height: auto;
+  resize: none;
+  overflow: visible;
+}
+
+#out,
+#completeOut {
+  font-family: "SF Mono", "Menlo", monospace; 
+  font-size: 11px;       
+  color: #1f2937;       
+  font-weight: 500;      
+  line-height: 1.6;      
+}
+
+
+.complete-note__view {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 12px;
+  line-height: 1.6;
+  color: #1f2937;
+  background: #fff;
+  border: 1px solid var(--divider, #e5e9f2);
+  border-radius: 6px;
+  padding: 10px 12px;
+  overflow: visible;
+}
+
+.cn-line { white-space: pre-wrap; }
+.cn-line.cn-blank { height: 0.9em; }
+
+.item-label {
+  text-decoration: underline;
+  font-size: 105%;
 }
