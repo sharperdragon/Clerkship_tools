@@ -703,15 +703,41 @@ function renderOutput(){
 
   const lines = [];
 
-  // Header checks line (admin-style statements)
-  if (def.headerItems?.length) {
-    const checks = def.headerItems
-      .filter(h => !!sec.checkboxes?.[h.id])
-      .map(h => formatPECheckLabel(h.label));
-    if (checks.length) {
-      lines.push(`${state.activeSection}: ${checks.join(". ")}.`);
+  // Header items (text + checks) with robust fallback sourcing
+  (function(){
+    // collect items from active section, then SUBJECTIVE:General, then merge across mode
+    let items = Array.isArray(def.headerItems) ? def.headerItems.slice() : [];
+    if ((!items.length) && state.mode === "SUBJECTIVE") {
+      const generalDef = Templates.sectionDefs[`${state.mode}:General`];
+      if (generalDef?.headerItems?.length) items = generalDef.headerItems.slice();
     }
-  }
+    if (!items.length) {
+      const secsAll = Templates.sectionsByMode[state.mode] || [];
+      const merged = []; const seen = new Set();
+      secsAll.forEach(secName => {
+        const d = Templates.sectionDefs[`${state.mode}:${secName}`];
+        (d?.headerItems || []).forEach(h => { if (h && h.id && !seen.has(h.id)) { seen.add(h.id); merged.push(h); } });
+      });
+      items = merged;
+    }
+    if (!items.length) return; // nothing to emit
+
+    const textParts = [];
+    const checkParts = [];
+    items.forEach(h => {
+      if (!h || !h.id) return;
+      if (h.type === 'text') {
+        const v = (sec.fields?.[h.id] ?? '').toString().trim();
+        if (v) textParts.push(`${h.label || h.id}: ${v}.`);
+      } else {
+        if (sec.checkboxes?.[h.id]) checkParts.push(formatPECheckLabel(h.label || h.id));
+      }
+    });
+    // Emit text items as their own lines first
+    if (textParts.length) lines.push(...textParts);
+    // Then a single sentence for checked items, labeled by the section
+    if (checkParts.length) lines.push(`${state.activeSection}: ${checkParts.join('. ')}.`);
+  })();
 
   (def.panels || []).forEach(pd => {
     // collect items from panel + any subsections
@@ -1092,16 +1118,45 @@ function buildSectionLines(secKey, mode, tpl){
   if (!def) return [];
   const lines = [];
 
-  // Header checks
-  if (def.headerItems?.length){
-    const checks = def.headerItems
-      .filter(h => !!sec.checkboxes?.[h.id])
-      .map(h => formatPECheckLabel(h.label));
-    if (checks.length){
-      const sectionName = secKey.split(":")[1] || "";
-      lines.push(`${sectionName}: ${checks.join(". ")}.`);
+  // Header items (text + checks) with robust fallback sourcing
+  (function(){
+    // Skip Subjective:General headerItems if already emitted above Subjective
+    if (mode === "SUBJECTIVE" && /(^|:)General$/.test(secKey) && state.globals && state.globals._emittedSubjHeaderOnce) return;
+    let items = Array.isArray(def.headerItems) ? def.headerItems.slice() : [];
+    if ((!items.length) && mode === "SUBJECTIVE") {
+      const generalDef = tpl.sectionDefs[`${mode}:General`];
+      if (generalDef?.headerItems?.length) items = generalDef.headerItems.slice();
     }
-  }
+    if (!items.length) {
+      const secsAll = tpl.sectionsByMode[mode] || [];
+      const merged = []; const seen = new Set();
+      secsAll.forEach(secName => {
+        const d = tpl.sectionDefs[`${mode}:${secName}`];
+        (d?.headerItems || []).forEach(h => { if (h && h.id && !seen.has(h.id)) { seen.add(h.id); merged.push(h); } });
+      });
+      items = merged;
+    }
+    if (!items.length) return;
+
+    const textParts = [];
+    const checkParts = [];
+    items.forEach(h => {
+      if (!h || !h.id) return;
+      if (h.type === 'text') {
+        const raw = sec.fields && sec.fields[h.id];
+        const v = (typeof raw === 'string' ? raw.trim() : '');
+        if (v) textParts.push(`${h.label || h.id}: ${v}.`);
+      } else {
+        if (sec.checkboxes?.[h.id]) checkParts.push(formatPECheckLabel(h.label || h.id));
+      }
+    });
+
+    if (textParts.length) lines.push(...textParts);
+    if (checkParts.length) {
+      const sectionName = secKey.split(":")[1] || "";
+      lines.push(`${sectionName}: ${checkParts.join('. ')}.`);
+    }
+  })();
 
   (def.panels || []).forEach(pd => {
     // Collect all ids across panel and subsections
@@ -1230,6 +1285,33 @@ async function renderCompleteNote(){
   if (!box) return;
   const modes = Object.keys(MODE_FILES || {});
   const parts = [];
+  // Prepend headerItems from Subjective:General (Visit Note, Chief Complaint) above Subjective heading
+  try {
+    const subjTpl = await loadTemplatesForMode("SUBJECTIVE");
+    const genDef = subjTpl.sectionDefs["SUBJECTIVE:General"];
+    if (genDef && Array.isArray(genDef.headerItems) && genDef.headerItems.length) {
+      const sec = state.sections["SUBJECTIVE:General"] || { fields:{}, checkboxes:{} };
+      const headerLines = [];
+      genDef.headerItems.forEach(h => {
+        if (!h || !h.id) return;
+        if (h.type === 'text') {
+          const raw = sec.fields && sec.fields[h.id];
+          const v = (typeof raw === 'string' ? raw.trim() : '');
+          if (v) headerLines.push(`${h.label || h.id}: ${v}.`);
+        } else {
+          if (sec.checkboxes?.[h.id]) headerLines.push(formatPECheckLabel(h.label || h.id));
+        }
+      });
+      if (headerLines.length) {
+        parts.push(headerLines.join("\n"));
+        parts.push("<br>"); // explicit line break before Subjective heading
+        // Global guard so we don't re-emit during per-section build
+        state.globals._emittedSubjHeaderOnce = true;
+      }
+    }
+  } catch(e) {
+    console.warn("[CompleteNote] could not prepend headerItems", e);
+  }
   for (const m of modes){
     try {
       const txt = await buildNoteForMode(m);

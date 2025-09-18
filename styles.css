@@ -576,12 +576,16 @@
 
 .item-label {
   text-decoration: underline;
+  text-decoration-thickness: 0.2px;
+  text-decoration-color: #2f6db5;
   font-size: 105%;
 }
 
 .section-head.head-h1 { 
   font-weight: 700;
-  font-size: 110%;
+  font-size: 114%;
+  text-decoration-thickness: 0.01px;
+  color: var(--subhead)
 }
 
 
@@ -718,4 +722,12 @@
     text-align: right;
     min-width: 102px;
     font-size: 14px;
+}
+
+
+.section-head {
+  font-weight:600;
+  text-decoration:underline;
+  text-decoration-thickness: 0.5px;
+  text-decoration-color: #0d3c73;
 }
