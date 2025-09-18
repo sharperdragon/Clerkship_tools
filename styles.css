@@ -396,26 +396,25 @@
   }
 }
 /* Full-width header checks bar above the grid */
-.header-checks-bar {
+.header-items-bar {
   /* Stick header checks under Tier 2 */
   top: calc(var(--appbar-h) + var(--tier1-h) + var(--tier2-h));
   z-index: 3;
   display: block;
   background: #fff;
-  padding: 3px 1px 3px 10px;
   margin-bottom: 2px;
   border-bottom: 1px solid var(--divider);
 }
 
 /* Reuse the row layout but ensure it spans the full content width */
-.header-checks-bar .row.header-checks {
+.header-items-bar .row.header-checks {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
 }
 
 /* Compact look for header checkboxes */
-.header-checks-bar .cb {
+.header-items-bar .cb {
   background: transparent;
   border: 0;
   padding: 2px 6px;
@@ -481,7 +480,7 @@
   background-color: color-mix(in srgb, var(--cb-bg) 70%, var(--chip) 30%);
 }
 .field { display:flex; align-items:center; gap:8px; width:100%; }
-.field-label { min-width:160px; color: var(--muted, #44546a); }
+.field-label { min-width:150px; color:#44546a }
 .field input[type="text"] { flex:1; padding:6px 8px; border:1px solid var(--line, #d9dee3); border-radius:4px; }
 
 
@@ -713,4 +712,10 @@
 .field-range {
   padding-bottom:8px;
   padding-top:8px;
+}
+
+.heady .field-label {
+    text-align: right;
+    min-width: 102px;
+    font-size: 14px;
 }

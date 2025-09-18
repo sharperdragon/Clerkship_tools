@@ -5,15 +5,11 @@
   },
   "sectionDefs": {
     "SUBJECTIVE:General": {
+      "headerItems": [
+            { "id": "subj_visit_note",      "label": "Visit Note",       "type": "text", "placeholder": "Visit Note" },
+            { "id": "subj_chief_complaint", "label": "Chief Complaint",  "type": "text", "placeholder": "Chief Complaint" }
+      ],
       "panels": [
-        {
-          "title": "",
-          "id": "subj_header",
-          "fields": [
-            { "id": "subj_visit_note",   "label": "Visit Note",       "type": "text", "placeholder": "Visit Note" },
-            { "id": "subj_chief_complaint", "label": "Chief Complaint", "type": "text", "placeholder": "Chief Complaint" }
-          ]
-        },
         {
           "title": "History of Present Illness",
           "id": "subj_hpi",

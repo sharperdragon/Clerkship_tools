@@ -9,7 +9,7 @@ export function showFatal(msg) {
   const grid   = qs(CONFIG.IDS.grid) || document.getElementById('grid');
   const tier1  = qs(CONFIG.IDS.tier1) || document.getElementById('tier1');
   const tier2  = qs(CONFIG.IDS.tier2) || document.getElementById('tier2');
-  const checks = document.querySelector('#headerChecks');
+  const checks = document.querySelector('#headerItems');
   const opts   = document.querySelector('#optionsBar');
   const out    = qs(CONFIG.IDS.out) || document.getElementById('out');
   const comp   = qs(CONFIG.IDS.completeOut) || document.getElementById('completeOut');
@@ -148,9 +148,9 @@ export function renderTier2(mode, activeSection) {
   State.section(mode, current);
 }
 
-// Header checks tray (render into #headerChecks)
+// Header checks tray (render into #headerItems)
 export function renderHeaderChecks(mode) {
-  const host = document.querySelector('#headerChecks');
+  const host = document.querySelector('#headerItems');
   if (!host) return;
   host.innerHTML = '';
 
@@ -160,14 +160,14 @@ export function renderHeaderChecks(mode) {
   const section = State.section(mode) || '';
   const def = getSectionDef(tpl, mode, section);
 
-  if (!def || !Array.isArray(def.headerChecks) || def.headerChecks.length === 0) {
+  if (!def || !Array.isArray(def.headerItems) || def.headerItems.length === 0) {
     host.style.display = 'none';
     applyLayout(mode); // sticky heights change when tray hides
     return;
   }
 
-  const row = el('div', { class: 'headerChecks-row' });
-  for (const item of def.headerChecks) {
+  const row = el('div', { class: 'headerItems-row' });
+  for (const item of def.headerItems) {
     const cell = el('div', { class: 'header-cell' });
     const id = item.id;
     const cb = el('input', { type: 'checkbox', id, 'data-id': id, 'data-headercheck': '1' });
@@ -570,7 +570,7 @@ export function applyLayout(mode) {
   const appbar = document.querySelector('.appbar');
   const tier1  = qs(CONFIG.IDS.tier1);
   const tier2  = qs(CONFIG.IDS.tier2);
-  const checks = document.querySelector('#headerChecks');
+  const checks = document.querySelector('#headerItems');
   const grid   = qs(CONFIG.IDS.grid);
 
   if (!tier1 || !tier2 || !checks || !grid) return;
@@ -1045,8 +1045,8 @@ function renderOutput(){
   const lines = [];
 
   // Header checks line (admin-style statements)
-  if (def.headerChecks?.length) {
-    const checks = def.headerChecks
+  if (def.headerItems?.length) {
+    const checks = def.headerItems
       .filter(h => !!sec.checkboxes?.[h.id])
       .map(h => formatPECheckLabel(h.label));
     if (checks.length) {

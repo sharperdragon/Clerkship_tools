@@ -5,7 +5,7 @@
   },
   "sectionDefs": {
     "PE:General": {
-      "headerChecks": [
+      "headerItems": [
         { "id": "vs_reviewed", "label": "Vital signs reviewed", "type": "norm", "Text": "VS reviewed" },
         { "id": "nursing_note", "label": "Nursing note reviewed", "type": "norm", "Text": "nursing notes reviewed" },
         { "id": "chaperone", "label": "Chaperone present", "type": "norm", "Text": "chaperone present" }

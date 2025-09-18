@@ -15,7 +15,7 @@ function _clearRosNegChecksIfNeeded(mode) {
   if (!def) return;
   const sel = State.getSelections(mode);
   const negIds = [
-    ...(def.headerChecks || []).map(h => h.id),
+    ...(def.headerItems || []).map(h => h.id),
     ...(def.headerToggles || []).map(t => t.id)
   ].filter(id => /_neg$/i.test(id));
   negIds.forEach(id => { if (sel[id]) State.updateSelection(mode, id, () => null); });
@@ -168,7 +168,7 @@ export function bindEvents() {
   });
 
   // Header checks tray
-  document.querySelector('#headerChecks')?.addEventListener('change', (e) => {
+  document.querySelector('#headerItems')?.addEventListener('change', (e) => {
     const cb = e.target.closest('input[type="checkbox"][data-headercheck="1"][data-id]');
     if (!cb) return;
     const mode = State.mode() || 'HPI';

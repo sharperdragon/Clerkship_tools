@@ -213,7 +213,7 @@ function applySticky(){
   const appbar = document.querySelector('.appbar');
   const tier1  = document.getElementById('tier1');
   const tier2  = document.getElementById('tier2');
-  const checks = document.getElementById('headerChecks');
+  const checks = document.getElementById('headerItems');
 
   if (!tier1 || !tier2 || !checks) return;
 
@@ -252,16 +252,16 @@ function makeRow(extraClass){
 }
 
 function renderHeaderChecks(){
-  const host = document.getElementById("headerChecks");
+  const host = document.getElementById("headerItems");
   host.innerHTML = "";
   const def = Templates.sectionDefs[`${state.mode}:${state.activeSection}`];
-  if (!def?.headerChecks?.length) {
+  if (!def?.headerItems?.length) {
     host.style.display = "none";
     return;
   }
   host.style.display = "";
   const wrap = makeRow("header-checks");
-  def.headerChecks.forEach(t=>{
+  def.headerItems.forEach(t=>{
     wrap.appendChild(
       cb(
         t.id,
@@ -562,8 +562,8 @@ function renderOutput(){
   const lines = [];
 
   // Header checks line (admin-style statements)
-  if (def.headerChecks?.length) {
-    const checks = def.headerChecks
+  if (def.headerItems?.length) {
+    const checks = def.headerItems
       .filter(h => !!sec.checkboxes?.[h.id])
       .map(h => formatPECheckLabel(h.label));
     if (checks.length) {
@@ -1151,7 +1151,7 @@ function toggleChip(id){ const s=getSec(); s.chips[id]=!s.chips[id]; }
 function findDef(secKey, id){
   const def = Templates.sectionDefs[secKey];
   return [
-    ...(def?.headerChecks||[]), 
+    ...(def?.headerItems||[]), 
     ...(def?.headerToggles||[]),
     ...((def?.panels||[]).flatMap(p=>[
       ...(p.checkboxes||[]),

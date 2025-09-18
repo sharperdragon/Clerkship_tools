@@ -1,6 +1,6 @@
 
 // ===== Cache config =====
-const APP_VERSION = "2025-09-18-a";          // bump to invalidate everything
+const APP_VERSION = "2025-09-18-c";          // bump to invalidate everything
 const CACHE_ENABLED = true;                   // master switch
 const CACHE_TTL_MS = 1000 * 60 * 60 * 24;     // 24h for templates
 const STATE_AUTOSAVE_MS = 500;               // debounce for state saves
@@ -237,7 +237,7 @@ function applySticky(){
   const appbar = document.querySelector('.appbar');
   const tier1  = document.getElementById('tier1');
   const tier2  = document.getElementById('tier2');
-  const checks = document.getElementById('headerChecks');
+  const checks = document.getElementById('headerItems');
 
   if (!tier1 || !tier2 || !checks) return;
 
@@ -258,12 +258,6 @@ function applySticky(){
   tier2.style.zIndex   = String(STK.z.tier2);
   if (!tier2.style.background) tier2.style.background = '#f6f8fb';
 
-  // Header checks sticky under Tier 2
-  checks.style.position = 'sticky';
-  checks.style.top      = px(appbarH + tier1H + tier2H);
-  checks.style.zIndex   = String(STK.z.checks);
-  if (!checks.style.background)   checks.style.background   = '#fff';
-  if (!checks.style.borderBottom) checks.style.borderBottom = '1px solid var(--divider)';
 }
 
 // Re-apply sticky on window resize
@@ -276,14 +270,56 @@ function makeRow(extraClass){
 }
 
 function renderHeaderChecks(){
-  const host = document.getElementById("headerChecks");
+  const host = document.getElementById("headerItems");
   host.innerHTML = "";
   const def = Templates.sectionDefs[`${state.mode}:${state.activeSection}`];
   if (!def) { host.style.display = "none"; return; }
 
-  const headerPanel = (def.panels || []).find(p => p.id === 'subj_header');
-  const hasChecks = !!(def.headerChecks && def.headerChecks.length);
+  // Collect headerItems: prefer current section; otherwise fall back to General (Subjective)
+  // or merge headerItems across all sections for this mode.
+  let items = Array.isArray(def.headerItems) ? def.headerItems.slice() : [];
+
+  // Subjective: also allow items defined on General
+  if ((!items.length) && state.mode === "SUBJECTIVE") {
+    const generalDef = Templates.sectionDefs[`${state.mode}:General`];
+    if (generalDef?.headerItems?.length) items = generalDef.headerItems.slice();
+  }
+
+  // Final fallback: merge all sections' headerItems for this mode
+  if (!items.length) {
+    const secsAll = Templates.sectionsByMode[state.mode] || [];
+    const merged = [];
+    const seen = new Set();
+    secsAll.forEach(secName => {
+      const d = Templates.sectionDefs[`${state.mode}:${secName}`];
+      (d?.headerItems || []).forEach(h => {
+        if (!h || !h.id || seen.has(h.id)) return;
+        seen.add(h.id);
+        merged.push(h);
+      });
+    });
+    items = merged;
+  }
+
+  // Prefer the current section's def; for Subjective, allow subj_header to come from General
+  let headerDef = def;
+  if (state.mode === "SUBJECTIVE") {
+    const generalKey = `${state.mode}:General`;
+    if (Templates.sectionDefs[generalKey]) headerDef = Templates.sectionDefs[generalKey];
+  }
+  const headerPanel = (headerDef.panels || []).find(p => p.id === 'subj_header');
+  const hasChecks = items.length > 0;
   const hasHeaderFields = !!(headerPanel && headerPanel.fields && headerPanel.fields.length);
+
+  // Debug log for header items state
+  console.debug('[HeaderItems]', {
+    mode: state.mode,
+    activeSection: state.activeSection,
+    itemsCount: items.length,
+    hasHeaderFields,
+    headerPanelId: headerPanel && headerPanel.id,
+    headerPanelFields: headerPanel && headerPanel.fields && headerPanel.fields.length
+  });
 
   // Hide only if we truly have nothing to show
   if (!hasChecks && !hasHeaderFields) {
@@ -293,39 +329,73 @@ function renderHeaderChecks(){
 
   host.style.display = "";
 
-  // Render admin-style header checks, if any
+  // Render header items (supports text inputs and checkboxes)
   if (hasChecks){
-    const wrapChecks = makeRow("header-checks");
-    def.headerChecks.forEach(t=>{
-      wrapChecks.appendChild(
-        cb(
-          t.id,
-          t.label,
-          !!getSec().checkboxes?.[t.id],
-          v=>{ setCB(t.id, v); renderOutput(); renderCompleteSoon(); }
-        )
-      );
-    });
-    host.appendChild(wrapChecks);
+    try {
+      const wrapChecks = makeRow("heady");
+      items.forEach(t=>{
+        if (t && t.type === 'text') {
+          const val = getSec().fields?.[t.id];
+          const onChange = (v) => {
+            setField(t.id, v);
+            renderOutput();
+            renderCompleteSoon();
+          };
+          wrapChecks.appendChild(
+            fieldText(
+              t.id,
+              t.label || t.id,
+              val,
+              onChange,
+              t.placeholder || t.label || t.id,
+              /*stacked*/ false
+            )
+          );
+        } else if (t) {
+          wrapChecks.appendChild(
+            cb(
+              t.id,
+              t.label || t.id,
+              !!getSec().checkboxes?.[t.id],
+              v=>{ setCB(t.id, v); renderOutput(); renderCompleteSoon(); }
+            )
+          );
+        }
+      });
+      host.appendChild(wrapChecks);
+    } catch (e) {
+      console.error('[HeaderItems] render checks failed', e);
+    }
   }
 
   // Render Subjective header fields (Visit Note, Chief Complaint) stacked
   if (hasHeaderFields){
-    const wrapFields = makeRow("header-fields");
-    headerPanel.fields.forEach(f => {
-      const val = getSec().fields?.[f.id];
-      wrapFields.appendChild(
-        fieldText(
-          f.id,
-          f.label,
-          val,
-          (v) => { setField(f.id, v); renderOutput(); renderCompleteSoon(); },
-          f.placeholder,
-          /*stacked*/ true
-        )
-      );
-    });
-    host.appendChild(wrapFields);
+    try {
+      const wrapFields = makeRow("header-fields");
+      const headerSec = getSecFor('SUBJECTIVE', 'General');
+      (headerPanel.fields || []).forEach(f => {
+        const val = headerSec.fields?.[f.id];
+        const onChange = (v) => {
+          headerSec.fields[f.id] = v;
+          saveStateSoon();
+          renderOutput();
+          renderCompleteSoon();
+        };
+        wrapFields.appendChild(
+          fieldText(
+            f.id,
+            f.label || f.id,
+            val,
+            onChange,
+            f.placeholder || f.label || f.id,
+            /*stacked*/ true
+          )
+        );
+      });
+      host.appendChild(wrapFields);
+    } catch (e) {
+      console.error('[HeaderItems] render header fields failed', e);
+    }
   }
 
   applySticky();
@@ -368,7 +438,7 @@ function renderGrid(){
   }
   // panels
   (def.panels||[]).forEach(pd=>{
-    // Skip Subjective header fields panel; rendered up top in headerChecks area
+    // Skip Subjective header fields panel; rendered up top in headerItems area
     if (pd.id === 'subj_header') { return; }
     const p = panel(pd.title);
     if (pd.groupLabel){
@@ -634,8 +704,8 @@ function renderOutput(){
   const lines = [];
 
   // Header checks line (admin-style statements)
-  if (def.headerChecks?.length) {
-    const checks = def.headerChecks
+  if (def.headerItems?.length) {
+    const checks = def.headerItems
       .filter(h => !!sec.checkboxes?.[h.id])
       .map(h => formatPECheckLabel(h.label));
     if (checks.length) {
@@ -655,24 +725,23 @@ function renderOutput(){
     const cbIds  = _cbs.map(c => c.id);
     const chipDs = _chips;
 
-    // Always show an HPI header line for the HPI panel in Subjective
-    if (state.mode === "SUBJECTIVE" && pd.title === "History of Present Illness") {
-      if (lines.length === 0 || lines[lines.length - 1] !== "HPI:") {
-        lines.push("HPI:");
-      }
-    }
-
     // Subjective panels: only emit visible text fields with content.
     // Skip boolean flag fields entirely (they just gate visibility).
     if (state.mode === "SUBJECTIVE" && pd.fields?.length){
+      const panelLines = [];
       pd.fields.forEach(f => {
         if (!shouldShowField(f)) return;
         if (f.type === "boolean") return; // don't output Yes/No line
-
         const raw = getSec().fields?.[f.id];
         const v = (typeof raw === "string" ? raw : "").trim();
-        if (v) lines.push(`${f.label}: ${v}.`);
+        if (v) panelLines.push(`${f.label}: ${v}.`);
       });
+      if (panelLines.length){
+        if (pd.title === "History of Present Illness") {
+          lines.push("HPI:");
+        }
+        lines.push(...panelLines);
+      }
       return; // continue to next panel
     }
 
@@ -1024,8 +1093,8 @@ function buildSectionLines(secKey, mode, tpl){
   const lines = [];
 
   // Header checks
-  if (def.headerChecks?.length){
-    const checks = def.headerChecks
+  if (def.headerItems?.length){
+    const checks = def.headerItems
       .filter(h => !!sec.checkboxes?.[h.id])
       .map(h => formatPECheckLabel(h.label));
     if (checks.length){
@@ -1043,22 +1112,22 @@ function buildSectionLines(secKey, mode, tpl){
       _chips.push(...(ss.chips || []));
     });
 
-    // Always show an HPI header line for the HPI panel in Subjective (Complete Note builder)
-    if (mode === "SUBJECTIVE" && pd.title === "History of Present Illness") {
-      if (lines.length === 0 || lines[lines.length - 1] !== "HPI:") {
-        lines.push("HPI:");
-      }
-    }
-
     // Subjective: include visible text fields (skip booleans)
     if (mode === "SUBJECTIVE" && pd.fields?.length){
+      const panelLines = [];
       pd.fields.forEach(f=>{
         if (!shouldShowFieldFor(f, mode, secKey)) return;
         if (f.type === "boolean") return;
         const raw = (sec.fields && sec.fields[f.id]);
         const v = (typeof raw === "string" ? raw.trim() : "");
-        if (v) lines.push(`${f.label}: ${v}.`);
+        if (v) panelLines.push(`${f.label}: ${v}.`);
       });
+      if (panelLines.length){
+        if (pd.title === "History of Present Illness") {
+          lines.push("HPI:");
+        }
+        lines.push(...panelLines);
+      }
       return; // next panel
     }
 
@@ -1594,7 +1663,7 @@ function toggleChip(id){ const s=getSec(); s.chips[id]=!s.chips[id]; }
 function findDef(secKey, id){
   const def = Templates.sectionDefs[secKey];
   return [
-    ...(def?.headerChecks||[]), 
+    ...(def?.headerItems||[]), 
     ...(def?.headerToggles||[]),
     ...((def?.panels||[]).flatMap(p=>[
       ...(p.checkboxes||[]),
