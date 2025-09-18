@@ -172,7 +172,6 @@ async function init(){
   renderPatientControls();
   applySticky();
   renderCompleteSoon();
-  enhanceCompleteNoteUI();
 }
 
 function showFatal(msg){
@@ -946,63 +945,6 @@ async function renderCompleteNote(){
     }
   }
   box.value = parts.join('\n').trim();
-  _updateCnMetrics();
-  _autosizeCnTextarea();
-}
-
-// --- Complete Note UI Enhancements ---
-function enhanceCompleteNoteUI(){
-  const ta = document.getElementById('completeOut');
-  if (!ta || ta.dataset.enhanced === "1") return;
-
-  // Wrap in a panel (without header toolbar)
-  const wrap = document.createElement('section');
-  wrap.className = 'panel complete-note';
-  const parent = ta.parentElement;
-  parent.insertBefore(wrap, ta);
-  const body = document.createElement('div');
-  body.className = 'complete-note__body';
-  wrap.appendChild(body);
-  body.appendChild(ta);
-
-  ta.dataset.enhanced = "1";
-  ta.classList.add('complete-note__textarea');
-
-  // Live updates on input
-  ta.addEventListener('input', debounce(()=>{ _updateCnMetrics(); _autosizeCnTextarea(); }, 60));
-
-  // Initial metrics + fit
-  _updateCnMetrics();
-  _autosizeCnTextarea();
-
-  // Refit on window resizes
-  window.addEventListener('resize', debounce(_autosizeCnTextarea, 120));
-}
-
-function _updateCnMetrics(){
-  const ta = document.getElementById('completeOut');
-  const m  = document.querySelector('.cn-metrics[data-cn="metrics"]');
-  if (!ta || !m) return;
-  const txt = ta.value || "";
-  const chars = txt.length;
-  const words = (txt.trim().match(/\S+/g) || []).length;
-  const lines = txt ? txt.split(/\r\n|\n|\r/).length : 0;
-  m.textContent = `${chars} chars · ${words} words · ${lines} lines`;
-}
-
-function _autosizeCnTextarea(){
-  const ta = document.getElementById('completeOut');
-  if (!ta) return;
-  ta.style.height = 'auto';
-  ta.style.height = Math.min(ta.scrollHeight + 2, window.innerHeight * 0.6) + 'px';
-}
-
-function _toggleCnFullscreen(){
-  const wrap = document.querySelector('.panel.complete-note');
-  if (!wrap) return;
-  const on = wrap.classList.toggle('is-fullscreen');
-  document.body.classList.toggle('cn-modal-open', on);
-  _autosizeCnTextarea();
 }
 
 // Single-line input (text) with label

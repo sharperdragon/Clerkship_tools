@@ -402,7 +402,6 @@
 /* Full-width header checks bar above the grid */
 .header-checks-bar {
   /* Stick header checks under Tier 2 */
-  position: sticky;
   top: calc(var(--appbar-h) + var(--tier1-h) + var(--tier2-h));
   z-index: 3;
   display: block;
