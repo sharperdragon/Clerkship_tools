@@ -1,0 +1,26 @@
+{
+  "sectionsByMode": {
+    "MSE": ["General"]
+  },
+  "sectionDefs": {
+    "MSE:General": {
+      "headerChecks": [],
+      "panels": [
+        {
+          "title": "Appearance & Behavior",
+          "checkboxes": [
+            { "id": "mse_appearance_nl", "label": "nl appearance" },
+            { "id": "mse_cooperative", "label": "cooperative" }
+          ]
+        },
+        {
+          "title": "Mood/Affect",
+          "chips": [
+            { "id": "mse_depressed", "label": "depressed", "abnText": "depressed mood" },
+            { "id": "mse_anxious", "label": "anxious", "abnText": "anxious affect" }
+          ]
+        }
+      ]
+    }
+  }
+}

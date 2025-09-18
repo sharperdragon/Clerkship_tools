@@ -38,6 +38,9 @@ export const CONFIG = {
   TEMPLATE_VERSION: 'v1',               // bump to invalidate cached JSON
 };
 
+// Order for complete-note rebuilds (match app.js)
+const MODE_ORDER = ['HPI','ROS','PE','MSE'];
+
 // ----- UTILS -----
 export const qs  = (sel, root = document) => root.querySelector(sel);
 export const qsa = (sel, root = document) => Array.from(root.querySelectorAll(sel));
@@ -103,6 +106,7 @@ const TEMPLATES = { HPI: null, ROS: null, PE: null, MSE: null };
 function _tplStorageKey(mode) { return `tpl_${CONFIG.TEMPLATE_VERSION}_${mode}`; }
 function _tplMetaKey(mode)    { return `tpl_meta_${CONFIG.TEMPLATE_VERSION}_${mode}`; }
 
+
 async function _loadWithCache(mode, path) {
   const meta = storage.get(_tplMetaKey(mode), null);
   const now = Date.now();
@@ -116,12 +120,19 @@ async function _loadWithCache(mode, path) {
   return fresh;
 }
 
+// Inline <script type="application/json" id="..."> fallback reader (optional app.js parity)
+function _readInlineFallback(id) {
+  const el = document.getElementById(id);
+  if (!el) return null;
+  try { return JSON.parse(el.textContent || ''); } catch { return null; }
+}
+
 export async function loadTemplates() {
   // NOTE: served over http(s); local file:// won’t allow fetch.
-  TEMPLATES.HPI = await _loadWithCache('HPI', CONFIG.TEMPLATE_PATHS.HPI);
-  TEMPLATES.ROS = await _loadWithCache('ROS', CONFIG.TEMPLATE_PATHS.ROS);
-  TEMPLATES.PE  = await _loadWithCache('PE',  CONFIG.TEMPLATE_PATHS.PE);
-  TEMPLATES.MSE = await _loadWithCache('MSE', CONFIG.TEMPLATE_PATHS.MSE);
+  TEMPLATES.HPI = await _loadWithCache('HPI', CONFIG.TEMPLATE_PATHS.HPI) || _readInlineFallback('tpl-hpi');
+  TEMPLATES.ROS = await _loadWithCache('ROS', CONFIG.TEMPLATE_PATHS.ROS) || _readInlineFallback('tpl-ros');
+  TEMPLATES.PE  = await _loadWithCache('PE',  CONFIG.TEMPLATE_PATHS.PE)  || _readInlineFallback('tpl-pe');
+  TEMPLATES.MSE = await _loadWithCache('MSE', CONFIG.TEMPLATE_PATHS.MSE) || _readInlineFallback('tpl-mse');
 }
 
 export function getTemplate(mode) {
@@ -142,12 +153,37 @@ function getSectionsForMode(mode) {
   if (Array.isArray(tpl.sections)) return tpl.sections.map(s => s.title).filter(Boolean);
   return [];
 }
-function getSectionDef(mode, sectionTitle) {
-  const tpl = getTemplate(mode) || {};
-  if (tpl.sectionDefs && tpl.sectionDefs[sectionTitle]) return tpl.sectionDefs[sectionTitle];
-  if (Array.isArray(tpl.sections)) return tpl.sections.find(s => s.title === sectionTitle) || null;
-  return null;
+export function getSectionDef(arg1, arg2, arg3) {
+  // Overloads:
+  //  (mode, sectionTitle, tpl)
+  //  (sectionTitle, tpl)  // deprecated
+  let mode, sectionTitle, tpl;
+
+  if (arg3) {
+    mode = String(arg1 || '').trim();
+    sectionTitle = String(arg2 || '').trim();
+    tpl = arg3;
+  } else {
+    // legacy: (sectionTitle, tpl)
+    mode = State.mode?.() || 'HPI';
+    sectionTitle = String(arg1 || '').trim();
+    tpl = arg2;
+  }
+
+  if (!tpl || !tpl.sectionDefs) return null;
+
+  // 1) canonical key: `${mode}:${sectionTitle}`
+  const k = `${mode}:${sectionTitle}`;
+  if (Object.prototype.hasOwnProperty.call(tpl.sectionDefs, k)) return tpl.sectionDefs[k];
+
+  // 2) plain key: `sectionTitle`
+  if (Object.prototype.hasOwnProperty.call(tpl.sectionDefs, sectionTitle)) return tpl.sectionDefs[sectionTitle];
+
+  // 3) scan by def.title === sectionTitle
+  const scanned = Object.values(tpl.sectionDefs).find(d => d && d.title === sectionTitle) || null;
+  return scanned;
 }
+
 function buildItemIndex(def) {
   if (!def) return { byId: {}, allIds: [] };
   if (def.__index) return def.__index;
@@ -186,6 +222,26 @@ function collectItemIds(def) {
   return buildItemIndex(def).allIds;
 }
 
+// Exported: collect all selectable ids for a logical section, including nested subsections
+export function collectIdsForSection(mode, sectionTitle) {
+  const def = getSectionDef(mode, sectionTitle);
+  if (!def) return [];
+
+  const ids = [];
+  const add = (d) => {
+    if (!d) return;
+    if (Array.isArray(d.items)) ids.push(...d.items.map(i => i.id));
+    if (Array.isArray(d.groups)) ids.push(...d.groups.flatMap(g => (g.items || []).map(i => i.id)));
+    if (d.matrix?.rows) ids.push(...d.matrix.rows.map(r => r.id));
+  };
+
+  add(def);
+  if (def.kind === 'subsections' && Array.isArray(def.subsections)) {
+    for (const sub of def.subsections) add(sub);
+  }
+  return ids.filter(Boolean);
+}
+
 // ----- PHRASE HELPERS -----
 function joinList(arr) {
   const a = arr.filter(Boolean);
@@ -198,10 +254,61 @@ function modsText(mods) {
   if (!mods || !Object.keys(mods).length) return '';
   return ` (${Object.values(mods).join(', ')})`;
 }
-function phraseNeg(negLabels) {
+function phraseNeg(mode, negLabels) {
   if (!negLabels.length) return '';
-  return `Denies ${joinList(negLabels)}.`;
+  const lead = (mode === 'ROS') ? 'Denies' : 'No';
+  return `${lead} ${joinList(negLabels)}.`;
 }
+// Normalize PE check labels (e.g., strip "+", expand "nl" to "Normal", capitalize)
+function _formatPECheckLabel(raw){
+  if (!raw) return '';
+  let s = String(raw).trim().replace(/^\+\s*/, '');
+  s = s.replace(/(^|\s)nl(\s|$)/i, (m,p1,p2)=>`${p1}Normal${p2}`);
+  return s.charAt(0).toUpperCase() + s.slice(1);
+}
+function _formatPosWithMods(label, vObj, itemRef) {
+  // Merge top-level shape ({state, side, grade, tags}) with our vObj.mods
+  const parts = [];
+  const baseLabel = String(label || '').replace(/^\+\s*/, '');
+
+  const modsMerged = Object.assign(
+    {},
+    (vObj && vObj.mods) || {},
+    (vObj && typeof vObj === 'object'
+      ? {
+          side:  vObj.side,
+          grade: vObj.grade,
+          ...(vObj.tags && typeof vObj.tags === 'object' ? vObj.tags : {})
+        }
+      : {})
+  );
+
+  // Side first
+  if (modsMerged.side) parts.push(modsMerged.side);
+
+  // Base label
+  parts.push(baseLabel);
+
+  // Grade label from template item if available; otherwise raw number
+  if (typeof modsMerged.grade === 'number') {
+    const labels = itemRef?.mods?.gradesLabels || itemRef?.mods?.grades || null;
+    if (Array.isArray(labels)) {
+      const gl = labels[modsMerged.grade];
+      if (gl) parts.push(gl);
+    } else {
+      parts.push(String(modsMerged.grade));
+    }
+  }
+
+  // Any truthy tag-like flags become trailing words
+  const trailing = Object.entries(modsMerged)
+    .filter(([k, v]) => !['side', 'grade'].includes(k) && !!v)
+    .map(([k]) => k);
+  if (trailing.length) parts.push(...trailing);
+
+  return parts.join(' ');
+}
+
 function phrasePos(posPairs) {
   if (!posPairs.length) return '';
   // join positives with semicolons; ensure trailing period
@@ -212,6 +319,20 @@ function phraseChecks(checkLabels) {
   if (!checkLabels.length) return '';
   // Join with sentences; keep short, neutral statements
   return checkLabels.map(l => `${l}.`).join(' ');
+}
+
+// Debounced full rebuild of per-mode outputs, then complete note (match app.js)
+let _rebuildTimer = null;
+export function scheduleRebuildAllOutputs(cb) {
+  if (_rebuildTimer) clearTimeout(_rebuildTimer);
+  _rebuildTimer = setTimeout(() => {
+    // Recompute every mode’s output from current selections
+    for (const m of MODE_ORDER) {
+      State.setOutput(m, State.assembleTab(m));
+    }
+    // Allow caller to refresh the UI after recompute
+    if (typeof cb === 'function') cb();
+  }, 150); // short debounce similar to app.js
 }
 
 // ----- STATE -----
@@ -257,11 +378,29 @@ export const State = {
         _state.patientId = cur;
         _state.selections = Object.assign({ HPI: {}, ROS: {}, PE: {}, MSE: {} }, data.selections);
         _state.outputs    = Object.assign({ HPI: '', ROS: '', PE: '', MSE: '' }, data.outputs);
+
+        // --- restore/seed last-used mode + section like app.js ---
+        let mode = storage.get(CONFIG.STORAGE.lastMode, null) || 'HPI';
+        storage.set(CONFIG.STORAGE.lastMode, mode);
+
+        const secKey = CONFIG.STORAGE.lastSection + mode;
+        let section = storage.get(secKey, null);
+        if (!section) {
+          const first = (getSectionsForMode(mode) || [])[0] || null;
+          if (first) storage.set(secKey, first);
+        }
         return;
       }
     }
-    // create new
+
+    // Fresh patient
     this.setPatient(this._makeId());
+
+    // Seed last-used mode + section defaults (templates are already loaded by main.js)
+    const mode = storage.get(CONFIG.STORAGE.lastMode, null) || 'HPI';
+    storage.set(CONFIG.STORAGE.lastMode, mode);
+    const first = (getSectionsForMode(mode) || [])[0] || null;
+    if (first) storage.set(CONFIG.STORAGE.lastSection + mode, first);
   },
 
   _makeId() {
@@ -379,14 +518,13 @@ export const State = {
 };
 
 // ----- BUILDER (per-section) -----
-function buildSectionText(mode, sectionTitle) {
-  const def = getSectionDef(mode, sectionTitle);
+// NEW: Build text from a single definition (items/groups/matrix), with checks support
+function _buildTextFromDef(def, sel, mode) {
   if (!def) return '';
 
   const ids = collectItemIds(def);
   if (!ids.length) return '';
 
-  const sel = State.getSelections(mode);
   const posPairs = [];   // [label, extra]
   const negLabels = [];  // [label]
   const checkLabels = []; // simple neutral/affirmative statements (header/checks)
@@ -404,34 +542,95 @@ function buildSectionText(mode, sectionTitle) {
     const lbl = (itemRef?.label) || labelOf(id, def);
     if (!lbl) continue;
 
-    // Header/check semantics: if section kind is 'checks' or item.type === 'check'
     const isCheck = (def.kind === 'checks') || (itemType === 'check');
 
     if (isCheck) {
-      if (st === 'pos' || (st == null && text)) {
-        checkLabels.push(lbl);
-      }
-      // ignore negs for checks
-      continue;
+      if (st === 'pos' || (st == null && text)) checkLabels.push(_formatPECheckLabel(lbl));
+      continue; // ignore negs for checks
     }
 
     if (st === 'pos' || (st == null && text)) {
-      const extra = (text ? text : '') + (mods ? modsText(mods) : '');
-      posPairs.push([lbl, extra.trim()]);
+      const itemRef = itemRefOf(id, def);
+      const fullLbl = (typeof v === 'object') ? _formatPosWithMods(lbl, v, itemRef) : lbl;
+      const extra = (text ? text : ''); // modifiers already merged into fullLbl
+      posPairs.push([fullLbl, extra.trim()]);
     } else if (st === 'neg') {
       negLabels.push(lbl);
-    } else {
-      // neutral: ignore
     }
   }
 
   const parts = [];
   const posStr = phrasePos(posPairs);
   if (posStr) parts.push(posStr);
-  const negStr = phraseNeg(negLabels);
+  const negStr = phraseNeg(mode, negLabels);
   if (negStr) parts.push(negStr);
   const chkStr = phraseChecks(checkLabels);
   if (chkStr) parts.push(chkStr);
 
   return parts.join(' ');
 }
+
+function buildSectionText(mode, sectionTitle) {
+  const def = getSectionDef(mode, sectionTitle);
+  if (!def) return '';
+
+  const sel = State.getSelections(mode);
+
+  // HPI-style free text fields: emit "Label: value." lines, honoring optional showIf gates
+  if (Array.isArray(def.fields) && def.fields.length) {
+    const lines = [];
+    for (const f of def.fields) {
+      // f: { id, label, showIf? }
+      if (!f?.id) continue;
+      // Optional gate: show only if another item is POS
+      if (f.showIf) {
+        const gate = sel[f.showIf];
+        const gateState = (typeof gate === 'object') ? gate?.state : gate;
+        if (gateState !== 'pos') continue;
+      }
+      const v = sel[f.id];
+      // Accept either {state,text} or string as value carrier
+      const text = (typeof v === 'object') ? (v.text || '') : (typeof v === 'string' ? v : '');
+      const clean = (text || '').trim();
+      if (clean) {
+        const label = f.label || f.id;
+        lines.push(`${label}: ${clean}.`);
+      }
+    }
+    if (lines.length) return lines.join(' ');
+    // fall through if nothing rendered so the rest of the builder can run
+  }
+
+  // Traverse nested subsections if present
+  if (def.kind === 'subsections' && Array.isArray(def.subsections)) {
+    const pieces = [];
+    for (const sub of def.subsections) {
+      const subText = _buildTextFromDef(sub, sel, mode);
+      if (subText) pieces.push(subText);
+    }
+    return pieces.join(' ');
+  }
+
+  // Otherwise, build directly from the section definition
+return _buildTextFromDef(def, sel, mode);
+}
+
+// ---- Debug dump (parity with app.js): show sectionsByMode + sectionDefs counts per mode
+try {
+  window.__CT_DUMP__ = () => {
+    const modes = ['HPI','ROS','PE','MSE'];
+    const out = {};
+    for (const m of modes) {
+      const tpl = getTemplate(m) || {};
+      const byMode = (tpl.sectionsByMode && tpl.sectionsByMode[m]) ? tpl.sectionsByMode[m].slice() : [];
+      const defsCount = tpl.sectionDefs ? Object.keys(tpl.sectionDefs).length : 0;
+      out[m] = {
+        hasTpl: !!tpl && !!(tpl.sectionsByMode || tpl.sectionDefs),
+        sectionsByMode: byMode,
+        sectionDefsCount: defsCount,
+      };
+    }
+    console.log('[DUMP]', out);
+    return out;
+  };
+} catch {}
