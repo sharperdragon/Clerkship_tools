@@ -76,12 +76,34 @@
           ]
         },
         {
+          "title": "General History",
           "id": "Subjective_main",
           "fields": [
-            { "id": "subj_pmh",      "label": "Past Medical", "type": "text", "placeholder": "Past Medical" },
+            { 
+              "id": "subj_pmh",      
+              "label": "Past Medical",
+              "checkboxes": [
+                { "id": "pmh_htn", "label": "HTN" },
+                { "id": "pmh_t2dm", "label": "T2DM" },
+                { "id": "pmh_cancer", "label": "Cancer" },
+                { "id": "pmh_hld", "label": "HLD" },
+                { "id": "pmh_none", "label": "Not reported" }
+              ],
+              "type": "text", 
+              "placeholder": ""
+            },
             { "id": "subj_surg_hx",  "label": "Surgical Hx",  "type": "text", "placeholder": "Surgical Hx" },
             { "id": "subj_meds",     "label": "Meds",         "type": "text", "placeholder": "Meds" },
-            { "id": "subj_allergies", "label": "Allergies",    "type": "text", "placeholder": "Allergies" },
+            { 
+              "id": "subj_allergies", 
+              "label": "Allergies",
+              "checkboxes": [
+                { "id": "allergies_reviewed", "label": "Allergies reviewed & updated this visit" },
+                { "id": "allergies_nkda", "label": "NKDA" }
+              ],    
+              "type": "text", 
+              "placeholder": "Allergies"
+            },
             { "id": "subj_social",   "label": "Social",       "type": "text", "placeholder": "Social" },
             { "id": "subj_lmp",      "label": "LMP",          "type": "text", "placeholder": "LMP" },
             { "id": "subj_fhx",      "label": "Family Hx",    "type": "text", "placeholder": "Family Hx" }

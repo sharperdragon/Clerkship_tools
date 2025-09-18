@@ -303,11 +303,6 @@
   justify-content: flex-start;
 }
 
-.panel .row .cb {
-  flex: 1 1 0;
-  min-width: 140px;
-  justify-content: flex-start;
-}
 
 .panel .row:has(.cb:only-child) .cb {
   flex: 0 0 auto;
@@ -372,6 +367,13 @@
 }
 
 /* Make items fill their grid column (not 100% of row) */
+
+.panel .row .cb {
+  flex: 1 1 0;
+  min-width: 140px;
+  justify-content: flex-start;
+}
+
 .panel .row .chip,
 .panel .row .cb{
   width: 100%;
@@ -386,7 +388,7 @@
 }
 
 /* Uniform checkbox sizing within a row */
-.panel .row .cb{
+.panel .row .cb :not(.SUBJECTIVE){
   flex: initial !important;
 }
 
@@ -730,4 +732,23 @@
   text-decoration:underline;
   text-decoration-thickness: 0.5px;
   text-decoration-color: #0d3c73;
+}
+.panel .row .cb {
+    display: inline-flex;
+    align-items: center;
+    margin: 2px 6px 2px 0;
+    font-size: 0.9em;
+  }
+  .cb.subjective input[type="checkbox"] {
+    margin-right: 4px;
+    transform: scale(0.9); /* make them small/compact */
+  }
+.mini-checks {
+  display: flex;
+    flex-wrap: nowrap;
+    gap: 4px;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
 }

@@ -1,6 +1,6 @@
 
 // ===== Cache config =====
-const APP_VERSION = "2025-09-18-c";          // bump to invalidate everything
+const APP_VERSION = "2025-09-18-l";          // bump to invalidate everything
 const CACHE_ENABLED = true;                   // master switch
 const CACHE_TTL_MS = 1000 * 60 * 60 * 24;     // 24h for templates
 const STATE_AUTOSAVE_MS = 500;               // debounce for state saves
@@ -47,7 +47,47 @@ const MODE_FILES = {
 // Explicit order for tabs (so ROS appears first regardless of key enumeration)
 const MODE_LIST = ["SUBJECTIVE", "ROS", "PE", "MSE"];
 const MODE_LABELS = { SUBJECTIVE: "Subjective", ROS: "ROS", PE: "Physical Exam", MSE: "MSE" };
+// Subjective acuity toggle (defaults to Acute=true when undefined)
+function isAcute(){ return state?.globals?.subjAcute !== false; }
+function setAcute(on){ state.globals.subjAcute = !!on; saveStateSoon(); }
 
+// --- Subjective split (HPI | splitter | General) ---
+function getSubjSplit(){
+  const f = Number(state?.globals?.subjSplit);
+  if (Number.isFinite(f)) return Math.min(0.75, Math.max(0.25, f)); // clamp 25–75%
+  return 0.50; // default
+}
+function setSubjSplit(f){
+  const v = Math.min(0.75, Math.max(0.25, Number(f) || 0.50));
+  state.globals.subjSplit = v;
+  saveStateSoon();
+}
+function _subjGridTemplateFromSplit(split){
+  const leftPct  = Math.round(split * 100);
+  const rightPct = 100 - leftPct;
+  // 6px splitter in the middle
+  return `${leftPct}% 6px ${rightPct}%`;
+}
+// Fields that should accept multi-line input and render as multi-line in output
+const MULTILINE_FIELDS = new Set([
+  "pastMedical", "surgicalHx", "meds", "allergies",
+  "social", "lmp", "familyHx"
+]);
+// Helper: treat as multiline if id is in set OR label matches known headings
+function isMultilineField(id, label){
+  if (MULTILINE_FIELDS.has(id)) return true;
+  const name = String(label || "").toLowerCase();
+  return [
+    "past medical",
+    "surgical hx",
+    "meds",
+    "allergies",
+    "social",
+    "lmp",
+    "family hx",
+    "family history"
+  ].some(k => name.startsWith(k));
+}
 function templatesLookValid(tpl) {
   return !!(tpl && typeof tpl === "object" && tpl.sectionsByMode && tpl.sectionDefs);
 }
@@ -272,6 +312,27 @@ function makeRow(extraClass){
 function renderHeaderChecks(){
   const host = document.getElementById("headerItems");
   host.innerHTML = "";
+  // Add an Acute / Non-acute toggle at the very top for Subjective
+if (state.mode === "SUBJECTIVE") {
+  const acuteWrap = document.createElement("div");
+  acuteWrap.className = "acute-toggle";
+  acuteWrap.style.display = "inline-flex";
+  acuteWrap.style.gap = "6px";
+  acuteWrap.style.marginRight = "8px";
+
+  const mk = (label, on) => {
+    const b = document.createElement("button");
+    b.type = "button";
+    b.textContent = label;
+    b.className = "btn-mini" + ((on && isAcute()) || (!on && !isAcute()) ? " active" : "");
+    b.onclick = () => { setAcute(on); renderGrid(); renderOutput(); renderCompleteSoon(); renderHeaderChecks(); };
+    return b;
+  };
+
+  acuteWrap.appendChild(mk("Acute", true));
+  acuteWrap.appendChild(mk("Non-acute", false));
+  host.appendChild(acuteWrap);
+}
   const def = Templates.sectionDefs[`${state.mode}:${state.activeSection}`];
   if (!def) { host.style.display = "none"; return; }
 
@@ -408,23 +469,204 @@ function renderGrid(){
   grid.className = "section-grid " + state.mode;
   const def = Templates.sectionDefs[`${state.mode}:${state.activeSection}`];
   if(!def){ grid.textContent = "No schema yet."; return; }
-  
-  // Dynamic two-column layout for Subjective when multiple panels exist
+
+  // Dynamic resizable layout for Subjective (HPI | splitter | General)
   if (state.mode === "SUBJECTIVE") {
-    const panels = (def.panels || []);
-    if (panels.length > 1) {
+    const panels = (def.panels || []).filter(p => p && p.id !== 'subj_header');
+
+    // Identify HPI (by title) and a "General History" partner (fallback to first non-HPI)
+    const hpi = panels.find(p => p.title === "History of Present Illness");
+    let gen = panels.find(p => p.title === "General History") || panels.find(p => p !== hpi);
+
+    // If Non-acute, HPI is hidden elsewhere; do not build split UI
+    const canSplit = !!(isAcute() && hpi && gen);
+
+    if (canSplit) {
       grid.style.display = "grid";
-      grid.style.gridTemplateColumns = "1fr 1fr";
+      grid.style.gridTemplateColumns = _subjGridTemplateFromSplit(getSubjSplit());
       grid.style.gap = "8px";
+      // flag so we know to inject splitter and short-circuit normal panel loop
+      grid.dataset.subjSplit = "1";
     } else {
       grid.style.display = "";
       grid.style.gridTemplateColumns = "";
       grid.style.gap = "";
+      grid.dataset.subjSplit = "";
     }
   } else {
     grid.style.display = "";
     grid.style.gridTemplateColumns = "";
     grid.style.gap = "";
+    grid.dataset.subjSplit = "";
+  }
+
+  // --- Special Subjective splitter row (HPI | splitter | General) ---
+  if (state.mode === "SUBJECTIVE" && grid.dataset.subjSplit === "1") {
+    const panels = (def.panels || []).filter(p => p && p.id !== 'subj_header');
+    const hpi = panels.find(p => p.title === "History of Present Illness");
+    const gen = panels.find(p => p.title === "General History") || panels.find(p => p !== hpi);
+
+    // Helper to render a single panel's content into a given host element
+    const renderOne = (pd, host) => {
+      if (pd.groupLabel){
+        const h = document.createElement("div");
+        h.className = "subhead";
+        h.textContent = pd.groupLabel;
+        host.appendChild(h);
+      }
+      if (pd.type === "matrix") {
+        host.appendChild(renderMatrixPanel(pd));
+        return;
+      }
+      if (pd.subsections && pd.subsections.length){
+        pd.subsections.forEach(ss=>{
+          const sh = document.createElement("div");
+          sh.className = "subhead";
+          sh.textContent = ss.title;
+          host.appendChild(sh);
+          if (ss.checkboxes?.length){
+            const rr = makeRow();
+            ss.checkboxes.forEach(c=>{
+              rr.appendChild(cb(c.id, c.label, !!getSec().checkboxes?.[c.id], v=>{ setCB(c.id, v); renderOutput(); }));
+            });
+            host.appendChild(rr);
+          }
+          if (ss.chips?.length){
+            const rr = makeRow();
+            if (ss.layout?.chipCols) rr.classList.add(`cols-${ss.layout.chipCols}`);
+            ss.chips.forEach(ch=>{
+              const value = getSec().chips?.[ch.id] || 0;
+              rr.appendChild(chip(ch, value, (evt)=>handleChipMouse(evt, ch.id)));
+            });
+            host.appendChild(rr);
+          }
+        });
+      }
+      if (pd.fields?.length){
+        pd.fields.forEach(f => {
+          if (!shouldShowField(f)) return;
+          const r = makeRow();
+          const val = getField(f.id);
+          if (f.type === "boolean") {
+            r.appendChild(
+              fieldBoolean(
+                f.id,
+                f.label,
+                typeof val === "boolean" ? val : false,
+                (v) => { setField(f.id, v); renderGrid(); renderOutput(); renderCompleteSoon(); },
+                f.ui || {}
+              )
+            );
+          } else if (f.type === "range") {
+            r.appendChild(
+              fieldRange(
+                f.id,
+                f.label,
+                val,
+                (v) => { setField(f.id, v); renderOutput(); renderCompleteSoon(); },
+                f.min,
+                f.max,
+                f.step,
+                /*stacked*/ state.mode === "SUBJECTIVE"
+              )
+            );
+          } else {
+            const elem = fieldText(
+              f.id,
+              f.label,
+              val,
+              (v) => { setField(f.id, v); renderOutput(); renderCompleteSoon(); },
+              f.placeholder,
+              /*stacked*/ state.mode === "SUBJECTIVE"
+            );
+
+            // Insert small checkboxes under the label, before the input
+            if (Array.isArray(f.checkboxes) && f.checkboxes.length){
+              const checkRow = document.createElement("div");
+              checkRow.className = "mini-checks";
+              f.checkboxes.forEach(c => {
+                checkRow.appendChild(
+                  cb(c.id, c.label, !!getSec().checkboxes?.[c.id], v => { setCB(c.id, v); renderOutput(); })
+                );
+              });
+              // fieldText returns <label.field>[<span.field-label>, <input/textarea>]
+              const last = elem.lastChild; // the input/textarea
+              elem.insertBefore(checkRow, last);
+            }
+
+            r.appendChild(elem);
+          }
+          host.appendChild(r);
+        });
+      }
+      if (pd.checkboxes?.length){
+        const r = makeRow();
+        pd.checkboxes.forEach(c=> r.appendChild(cb(c.id,c.label,!!getSec().checkboxes?.[c.id], v=>{ setCB(c.id,v); renderOutput(); })));
+        host.appendChild(r);
+      }
+      if (pd.chips?.length){
+        const r = makeRow();
+        pd.chips.forEach(ch=>{
+          const value = getSec().chips?.[ch.id] || 0;
+          r.appendChild(chip(ch, value, (evt)=>handleChipMouse(evt, ch.id)));
+        });
+        host.appendChild(r);
+      }
+    };
+
+    // Build left panel (HPI)
+    const leftPanelEl = panel(hpi.title);
+    leftPanelEl.style.gridColumn = "1 / 2";
+    renderOne(hpi, leftPanelEl);
+
+    // Build right panel (General)
+    const rightPanelEl = panel(gen.title);
+    rightPanelEl.style.gridColumn = "3 / 4";
+    renderOne(gen, rightPanelEl);
+
+    // Build the vertical splitter (horizontal width resize)
+    const splitter = document.createElement("div");
+    splitter.className = "subj-splitter";
+    splitter.style.gridColumn = "2 / 3";
+    splitter.style.cursor = "col-resize";
+    splitter.style.background = "var(--divider, rgba(0,0,0,0.06))";
+    splitter.style.width = "6px";
+    splitter.style.userSelect = "none";
+
+    grid.append(leftPanelEl, splitter, rightPanelEl);
+
+    // Wire drag for horizontal width only
+    (function(){
+      let dragging = false;
+      let gridRect = null;
+
+      const onDown = (e)=>{
+        dragging = true;
+        gridRect = grid.getBoundingClientRect();
+        document.body.style.cursor = "col-resize";
+        e.preventDefault();
+      };
+      const onMove = (e)=>{
+        if (!dragging || !gridRect) return;
+        const x = e.clientX;
+        const rel = (x - gridRect.left) / gridRect.width; // 0..1
+        setSubjSplit(rel);
+        grid.style.gridTemplateColumns = _subjGridTemplateFromSplit(getSubjSplit());
+      };
+      const onUp = ()=>{
+        if (!dragging) return;
+        dragging = false;
+        gridRect = null;
+        document.body.style.cursor = "";
+      };
+
+      splitter.addEventListener("mousedown", onDown);
+      window.addEventListener("mousemove", onMove);
+      window.addEventListener("mouseup", onUp);
+    })();
+
+    // Since we fully rendered the split layout, skip the normal panels loop
+    return;
   }
 
   if (def.headerToggles?.length){
@@ -440,6 +682,10 @@ function renderGrid(){
   (def.panels||[]).forEach(pd=>{
     // Skip Subjective header fields panel; rendered up top in headerItems area
     if (pd.id === 'subj_header') { return; }
+    // Hide the HPI panel in Non-acute Subjective mode
+    if (state.mode === "SUBJECTIVE" && !isAcute() && pd.title === "History of Present Illness") {
+      return; // skip rendering this panel entirely
+    }
     const p = panel(pd.title);
     if (pd.groupLabel){
       const h = document.createElement("div");
@@ -654,16 +900,32 @@ function renderGrid(){
           );
         } else {
           const stacked = (state.mode === "SUBJECTIVE");
-          r.appendChild(
-            fieldText(
-              f.id,
-              f.label,
-              val,
-              (v) => { setField(f.id, v); renderOutput(); renderCompleteSoon(); },
-              f.placeholder,
-              stacked
-            )
+          const elem = fieldText(
+            f.id,
+            f.label,
+            val,
+            (v) => { setField(f.id, v); renderOutput(); renderCompleteSoon(); },
+            f.placeholder,
+            stacked
           );
+
+          // Insert small checkboxes under the label, before the input
+          if (Array.isArray(f.checkboxes) && f.checkboxes.length){
+            const checkRow = document.createElement("div");
+            checkRow.className = "mini-checks";
+            checkRow.style.display = "flex";
+            checkRow.style.flexWrap = "wrap";
+            checkRow.style.gap = "8px";
+            f.checkboxes.forEach(c => {
+              checkRow.appendChild(
+                cb(c.id, c.label, !!getSec().checkboxes?.[c.id], v => { setCB(c.id, v); renderOutput(); })
+              );
+            });
+            const last = elem.lastChild; // input/textarea
+            elem.insertBefore(checkRow, last);
+          }
+
+          r.appendChild(elem);
         }
 
         p.appendChild(r);
@@ -754,13 +1016,32 @@ function renderOutput(){
     // Subjective panels: only emit visible text fields with content.
     // Skip boolean flag fields entirely (they just gate visibility).
     if (state.mode === "SUBJECTIVE" && pd.fields?.length){
+      // Skip HPI emission when Non-acute
+      if (!isAcute() && pd.title === "History of Present Illness") {
+        return; // continue to next panel
+      }
       const panelLines = [];
       pd.fields.forEach(f => {
         if (!shouldShowField(f)) return;
         if (f.type === "boolean") return; // don't output Yes/No line
         const raw = getSec().fields?.[f.id];
-        const v = (typeof raw === "string" ? raw : "").trim();
-        if (v) panelLines.push(`${f.label}: ${v}.`);
+        const v0 = (typeof raw === "string" ? raw : "");
+        const v = v0.trim();
+        if (!v) return;
+
+        if (isMultilineField(f.id, f.label) && /[\r\n]/.test(v)) {
+          const parts = v.split(/\r?\n/).map(s => s.trim()).filter(Boolean);
+          if (parts.length) {
+            // First line keeps the label
+            panelLines.push(`${f.label}: ${parts[0]}.`);
+            // Subsequent lines emit as bare lines (no label); Complete Note viewer will bullet them
+            for (let i = 1; i < parts.length; i++){
+              panelLines.push(parts[i] + ".");
+            }
+          }
+        } else {
+          panelLines.push(`${f.label}: ${v}.`);
+        }
       });
       if (panelLines.length){
         if (pd.title === "History of Present Illness") {
@@ -768,9 +1049,22 @@ function renderOutput(){
         }
         lines.push(...panelLines);
       }
+      // Also include any checked panel checkboxes (PMH, Allergies, etc.)
+      const cbParts = (pd.checkboxes || []).filter(c => !!sec.checkboxes?.[c.id])
+                        .map(c => formatPECheckLabel(c.label || c.id));
+      if (cbParts.length) {
+        lines.push(`${pd.title}: ${cbParts.join('. ')}.`);
+      }
+      // Emit field-level checkboxes (e.g., PMH, Allergies)
+      pd.fields.forEach(f => {
+        if (!Array.isArray(f.checkboxes) || !f.checkboxes.length) return;
+        const picked = f.checkboxes
+          .filter(c => !!sec.checkboxes?.[c.id])
+          .map(c => formatPECheckLabel(c.label || c.id));
+        if (picked.length) lines.push(`${f.label}: ${picked.join('. ')}.`);
+      });
       return; // continue to next panel
     }
-
     const cbParts = cbIds
       .filter(id => !!sec.checkboxes?.[id])
       .map(id => formatPECheckLabel(labelFor(secKey, id)));
@@ -1048,8 +1342,8 @@ function applyCbSelectedClass(wrapperLabel, inputEl){
 }
 
 function cb(id,label,checked,on){
-  const w=document.createElement("label"); 
-  w.className="cb";
+  const w = document.createElement("label");
+  w.className = "cb" + (state && state.mode === "SUBJECTIVE" ? " subjective" : "");
   const i=document.createElement("input"); 
   i.type="checkbox"; 
   i.checked=checked;
@@ -1169,13 +1463,30 @@ function buildSectionLines(secKey, mode, tpl){
 
     // Subjective: include visible text fields (skip booleans)
     if (mode === "SUBJECTIVE" && pd.fields?.length){
+      // Skip HPI emission when Non-acute
+      if (!isAcute() && pd.title === "History of Present Illness") {
+        return; // next panel
+      }
       const panelLines = [];
       pd.fields.forEach(f=>{
         if (!shouldShowFieldFor(f, mode, secKey)) return;
         if (f.type === "boolean") return;
         const raw = (sec.fields && sec.fields[f.id]);
-        const v = (typeof raw === "string" ? raw.trim() : "");
-        if (v) panelLines.push(`${f.label}: ${v}.`);
+        const v0 = (typeof raw === "string" ? raw : "");
+        const v = v0.trim();
+        if (!v) return;
+
+        if (isMultilineField(f.id, f.label) && /[\r\n]/.test(v)) {
+          const parts = v.split(/\r?\n/).map(s => s.trim()).filter(Boolean);
+          if (parts.length) {
+            panelLines.push(`${f.label}: ${parts[0]}.`);
+            for (let i = 1; i < parts.length; i++){
+              panelLines.push(parts[i] + ".");
+            }
+          }
+        } else {
+          panelLines.push(`${f.label}: ${v}.`);
+        }
       });
       if (panelLines.length){
         if (pd.title === "History of Present Illness") {
@@ -1183,6 +1494,20 @@ function buildSectionLines(secKey, mode, tpl){
         }
         lines.push(...panelLines);
       }
+      // Also include any checked panel checkboxes (PMH, Allergies, etc.)
+      const cbParts = (pd.checkboxes || []).filter(c => !!sec.checkboxes?.[c.id])
+                        .map(c => formatPECheckLabel(c.label || c.id));
+      if (cbParts.length) {
+        lines.push(`${pd.title}: ${cbParts.join('. ')}.`);
+      }
+      // Emit field-level checkboxes (e.g., PMH, Allergies)
+      pd.fields.forEach(f => {
+        if (!Array.isArray(f.checkboxes) || !f.checkboxes.length) return;
+        const picked = f.checkboxes
+          .filter(c => !!sec.checkboxes?.[c.id])
+          .map(c => formatPECheckLabel(c.label || c.id));
+        if (picked.length) lines.push(`${f.label}: ${picked.join('. ')}.`);
+      });
       return; // next panel
     }
 
@@ -1391,43 +1716,71 @@ function _completeTextToHTML(txt){
     "Past Medical", "Surgical Hx", "Meds", "Allergies", "Social", "LMP", "Family Hx"
   ];
   const lines = String(txt || '').split(/\r?\n/);
-  const html = lines.map(rawLine => {
+
+  // Stateful render so we can detect sub-lines following PMH labels
+  const out = [];
+  let inPMHBlock = false;
+
+  for (const rawLine of lines) {
     const line = String(rawLine);
     const t = line.trim();
-    if (!t) return '<div class="cn-line cn-blank">&nbsp;</div>';
 
-    // If the line is an exact section header (e.g., "Subjective:", "Objective:", "Physical Exam:", "HPI:", "PE:", "MSE:"), style as section-head
+    // Blank line handling
+    if (!t) {
+      out.push('<div class="cn-line cn-blank">&nbsp;</div>');
+      // A blank line ends a PMH sub-block
+      inPMHBlock = false;
+      continue;
+    }
+
+    // Section headers like "Subjective:", "Objective:", "Physical Exam:", "HPI:", "PE:", "MSE:"
     const sec = t.match(/^([A-Za-z ]{2,30}):$/);
     if (sec) {
       const label = sec[1];
-      // Map legacy short labels to display equivalents in view only
       const isH1 = (label === 'Subjective' || label === 'Objective');
       if (label === 'Subjective' || label === 'Objective' || label === 'Physical Exam' || label === 'MSE' || label === 'HPI' || label === 'PE') {
-        // Normalize PE/HPI labels to display text already emitted by renderer
         const shown = (label === 'PE') ? 'Physical Exam' : label;
         const cls = isH1 ? 'section-head head-h1' : 'section-head';
-        return `<div class="cn-line"><span class="${cls}">${shown}</span></div>`;
+        out.push(`<div class="cn-line"><span class="${cls}">${shown}</span></div>`);
+        // entering a section header ends any PMH block
+        inPMHBlock = false;
+        continue;
       }
     }
 
-    // Special case: force break before certain item-labels
-    if (
-      breakLabels.some(lbl => t.startsWith(lbl + ":"))
-    ) {
+    // Explicit PMH label lines (we break and style them as a mini header)
+    const isPMHLabelLine = breakLabels.some(lbl => t.startsWith(lbl + ":"));
+    if (isPMHLabelLine) {
       const replaced = t.replace(/^([^:\n]{1,80}):\s*/, (m, label)=>{
         return `<span class="item-label">${label}</span>: `;
       });
-      // Add section-head and PMH classes
-      return `<br><div class="cn-line section-head PMH">${replaced}</div>`;
+      out.push(`<br><div class="cn-line section-head PMH">${replaced}</div>`);
+      // Next non-labeled lines belong to this PMH block
+      inPMHBlock = true;
+      continue;
     }
 
-    // Otherwise, underline leading "Label:" spans as item-label
+    // If we are inside a PMH block and the current line is not a "Label: value" line,
+    // render as a sub-line (bullet style). A new "Label:" line will end the PMH block below.
+    const looksLikeLabeled = /^([^:\n]{1,80}):\s+/.test(t);
+    if (inPMHBlock && !looksLikeLabeled) {
+      out.push(`<div class="cn-line cn-subline">&bull; ${escapeHTML(t)}</div>`);
+      continue;
+    }
+
+    // Any other new labeled line ends the PMH block and renders normally
+    if (looksLikeLabeled) {
+      inPMHBlock = false;
+    }
+
+    // Default: underline leading "Label:" spans as item-label
     const replaced = t.replace(/^([^:\n]{1,80}):\s*/, (m, label)=>{
       return `<span class="item-label">${label}</span>: `;
     });
-    return `<div class="cn-line">${replaced}</div>`;
-  }).join('');
-  return html;
+    out.push(`<div class="cn-line">${replaced}</div>`);
+  }
+
+  return out.join('');
 }
 
 function _updateCnMetrics(){
@@ -1458,16 +1811,38 @@ function _toggleCnFullscreen(){
 
 // Single-line input (text) with label; supports stacked label above input if stacked=true
 function fieldText(id, label, value, onChange, placeholder, stacked=false){
+  // Wrapper + label
   const wrap = document.createElement("label");
   wrap.className = "field";
   const span = document.createElement("span");
   span.className = "field-label";
   span.textContent = label;
-  const input = document.createElement("input");
-  input.type = "text";
-  input.value = value || "";
-  input.placeholder = (placeholder ?? label);
-  input.oninput = (e) => onChange(e.target.value);
+
+  // Choose input type based on isMultilineField
+  const isMultiline = isMultilineField(id, label);
+  const input = isMultiline ? document.createElement("textarea") : document.createElement("input");
+  input.setAttribute('data-field-id', id);
+
+  if (isMultiline) {
+    // ----- Textarea behavior -----
+    input.rows = 3; // user can resize; good default height
+    input.value = value || "";
+    input.placeholder = (placeholder ?? label);
+    input.oninput = (e) => onChange(e.target.value);
+    // keep it full-width for readability
+    input.style.width = "100%";
+    input.style.resize = "vertical";
+    const autoresize = () => { input.style.height = 'auto'; input.style.height = (input.scrollHeight + 2) + 'px'; };
+    input.addEventListener('input', autoresize);
+    // Trigger once to size to existing content
+    setTimeout(autoresize, 0);
+  } else {
+    // ----- Single-line input -----
+    input.type = "text";
+    input.value = value || "";
+    input.placeholder = (placeholder ?? label);
+    input.oninput = (e) => onChange(e.target.value);
+  }
 
   if (stacked && state.mode === "SUBJECTIVE") {
     // Force vertical stack even if .field is flex-row in CSS
