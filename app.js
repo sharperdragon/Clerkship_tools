@@ -1735,7 +1735,7 @@ function _completeTextToHTML(txt){
     if (sec) {
       const label = sec[1];
       const isH1 = (label === 'Subjective' || label === 'Objective');
-      if (label === 'Subjective' || label === 'Objective' || label === 'Physical Exam' || label === 'MSE' || label === 'HPI' || label === 'PE') {
+      if (label === 'Subjective' || label === 'Objective' || label === 'Physical Exam' || label === 'MSE' || label === 'HPI' || label === 'PE' || label === 'ROS') {
         const shown = (label === 'PE') ? 'Physical Exam' : label;
         const cls = isH1 ? 'section-head head-h1' : 'section-head';
         out.push(`<div class="cn-line"><span class="${cls}">${shown}</span></div>`);
