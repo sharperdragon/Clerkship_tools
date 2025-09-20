@@ -847,3 +847,8 @@ button.btn-mini {
   height: 53px;
   border: 01px solid lightgray;
 }
+
+span.section-head {
+    font-size: 110%;
+    font-weight: 600;
+}
