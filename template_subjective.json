@@ -98,8 +98,8 @@
               "id": "subj_allergies", 
               "label": "Allergies",
               "checkboxes": [
-                { "id": "allergies_reviewed", "label": "Allergies reviewed & updated this visit" },
-                { "id": "allergies_nkda", "label": "NKDA" }
+                { "id": "allergies_nkda", "label": "NKDA" },
+                { "id": "allergies_food_ENV", "label": "No food or environmental allergies" }
               ],    
               "type": "text", 
               "placeholder": "Allergies"

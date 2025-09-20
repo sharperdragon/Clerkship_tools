@@ -1,6 +1,6 @@
 
 // ===== Cache config =====
-const APP_VERSION = "2025-09-18-l";          // bump to invalidate everything
+const APP_VERSION = "2025-09-20-a";          // bump to invalidate everything
 const CACHE_ENABLED = true;                   // master switch
 const CACHE_TTL_MS = 1000 * 60 * 60 * 24;     // 24h for templates
 const STATE_AUTOSAVE_MS = 500;               // debounce for state saves
@@ -913,9 +913,6 @@ function renderGrid(){
           if (Array.isArray(f.checkboxes) && f.checkboxes.length){
             const checkRow = document.createElement("div");
             checkRow.className = "mini-checks";
-            checkRow.style.display = "flex";
-            checkRow.style.flexWrap = "wrap";
-            checkRow.style.gap = "8px";
             f.checkboxes.forEach(c => {
               checkRow.appendChild(
                 cb(c.id, c.label, !!getSec().checkboxes?.[c.id], v => { setCB(c.id, v); renderOutput(); })
