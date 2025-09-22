@@ -6,15 +6,30 @@
   "sectionDefs": {
     "SUBJECTIVE:General": {
       "headerItems": [
-            { "id": "subj_visit_note",      "label": "Visit Note",       "type": "text", "placeholder": "Visit Note" },
-            { "id": "subj_chief_complaint", "label": "Chief Complaint",  "type": "text", "placeholder": "Chief Complaint" }
+        {
+          "id": "subj_visit_note",
+          "label": "Visit Note",
+          "type": "text",
+          "placeholder": "Visit Note"
+        },
+        {
+          "id": "subj_chief_complaint",
+          "label": "Chief Complaint",
+          "type": "text",
+          "placeholder": "Chief Complaint"
+        }
       ],
       "panels": [
         {
           "title": "History of Present Illness",
           "id": "subj_hpi",
           "fields": [
-            { "id": "hpi_onset", "label": "Onset", "type": "text", "placeholder": "Onset" },
+            {
+              "id": "hpi_onset",
+              "label": "Onset",
+              "type": "text",
+              "placeholder": "Onset"
+            },
             {
               "id": "hpi_prior_flag",
               "label": "Prior?",
@@ -29,12 +44,42 @@
               "showIf": { "field": "hpi_prior_flag", "equals": true },
               "placeholder": "Prior"
             },
-            { "id": "hpi_progression", "label": "Progression", "type": "text", "placeholder": "Progrssion" },
-            { "id": "hpi_palliate", "label": "Palliate", "type": "text", "placeholder": "" },
-            { "id": "hpi_provoke", "label": "Provoke", "type": "text", "placeholder": "" },
-            { "id": "hpi_quality", "label": "Quality", "type": "text", "placeholder": "" },
-            { "id": "hpi_quantity", "label": "Quantity", "type": "text", "placeholder": "" },
-            { "id": "hpi_region", "label": "Region", "type": "text", "placeholder": "" },
+            {
+              "id": "hpi_progression",
+              "label": "Progression",
+              "type": "text",
+              "placeholder": "Progrssion"
+            },
+            {
+              "id": "hpi_palliate",
+              "label": "Palliate",
+              "type": "text",
+              "placeholder": ""
+            },
+            {
+              "id": "hpi_provoke",
+              "label": "Provoke",
+              "type": "text",
+              "placeholder": ""
+            },
+            {
+              "id": "hpi_quality",
+              "label": "Quality",
+              "type": "text",
+              "placeholder": ""
+            },
+            {
+              "id": "hpi_quantity",
+              "label": "Quantity",
+              "type": "text",
+              "placeholder": ""
+            },
+            {
+              "id": "hpi_region",
+              "label": "Region",
+              "type": "text",
+              "placeholder": ""
+            },
             {
               "id": "hpi_radiate_flag",
               "label": "Radiation",
@@ -57,7 +102,12 @@
               "max": 10,
               "step": 1
             },
-            { "id": "hpi_timing", "label": "Timing", "type": "text", "placeholder": "Timing" },
+            {
+              "id": "hpi_timing",
+              "label": "Timing",
+              "type": "text",
+              "placeholder": "Timing"
+            },
             {
               "id": "hpi_treatment_flag",
               "label": "Treatment",
@@ -72,15 +122,23 @@
               "showIf": { "field": "hpi_treatment_flag", "equals": true },
               "placeholder": "Treatment"
             },
-            { "id": "hpi_assoc_symptoms", "label": "Associated Symptoms", "type": "text", "placeholder": "Associated Symptoms" }
+            {
+              "id": "hpi_assoc_symptoms",
+              "label": "Associated Symptoms",
+              "checkboxes": [
+                { "id": "Assoc_Fever", "label": "Fever" }
+              ],
+              "type": "text",
+              "placeholder": ""
+            }
           ]
         },
         {
           "title": "General History",
           "id": "Subjective_main",
           "fields": [
-            { 
-              "id": "subj_pmh",      
+            {
+              "id": "subj_pmh",
               "label": "Past Medical",
               "checkboxes": [
                 { "id": "pmh_htn", "label": "HTN" },
@@ -89,24 +147,52 @@
                 { "id": "pmh_hld", "label": "HLD" },
                 { "id": "pmh_none", "label": "Not reported" }
               ],
-              "type": "text", 
+              "type": "text",
               "placeholder": ""
             },
-            { "id": "subj_surg_hx",  "label": "Surgical Hx",  "type": "text", "placeholder": "Surgical Hx" },
-            { "id": "subj_meds",     "label": "Meds",         "type": "text", "placeholder": "Meds" },
-            { 
-              "id": "subj_allergies", 
+            {
+              "id": "subj_surg_hx",
+              "label": "Surgical Hx",
+              "type": "text",
+              "placeholder": "Surgical Hx"
+            },
+            {
+              "id": "subj_meds",
+              "label": "Meds",
+              "type": "text",
+              "placeholder": "Meds"
+            },
+            {
+              "id": "subj_allergies",
               "label": "Allergies",
               "checkboxes": [
                 { "id": "allergies_nkda", "label": "NKDA" },
-                { "id": "allergies_food_ENV", "label": "No food or environmental allergies" }
-              ],    
-              "type": "text", 
+                {
+                  "id": "allergies_food_ENV",
+                  "label": "No food or environmental allergies"
+                }
+              ],
+              "type": "text",
               "placeholder": "Allergies"
             },
-            { "id": "subj_social",   "label": "Social",       "type": "text", "placeholder": "Social" },
-            { "id": "subj_lmp",      "label": "LMP",          "type": "text", "placeholder": "LMP" },
-            { "id": "subj_fhx",      "label": "Family Hx",    "type": "text", "placeholder": "Family Hx" }
+            {
+              "id": "subj_social",
+              "label": "Social",
+              "type": "text",
+              "placeholder": "Social"
+            },
+            {
+              "id": "subj_lmp",
+              "label": "LMP",
+              "type": "text",
+              "placeholder": "LMP"
+            },
+            {
+              "id": "subj_fhx",
+              "label": "Family Hx",
+              "type": "text",
+              "placeholder": "Family Hx"
+            }
           ]
         }
       ]
