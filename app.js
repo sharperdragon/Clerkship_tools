@@ -1,6 +1,6 @@
 
 // ===== Cache config =====
-const APP_VERSION = "2025-09-24-o";          // bump to invalidate everything
+const APP_VERSION = "2025-09-24-q";          // bump to invalidate everything
 const CACHE_ENABLED = true;                   // master switch
 const CACHE_TTL_MS = 1000 * 60 * 60 * 24;     // 24h for templates
 const STATE_AUTOSAVE_MS = 500;               // debounce for state saves
@@ -2638,3 +2638,189 @@ function formatChipNegForOutput(secKey, id){
   const isROS = secKey.startsWith("ROS:");
   return isROS ? `Denies ${label}` : `No ${label}`;
 }
+
+
+
+/* ----------------------------------------------
+ * ROS: Inline "Neg Defaults" button per panel
+ * Inserts a small button next to each panel header.
+ * Clicking it marks the panel's chips that match
+ * template.defaults.negChips as negative.
+ * ---------------------------------------------- */
+(function () {
+  // --- run after DOM ready ---
+  function onReady(fn){
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", fn, { once: true });
+    } else { fn(); }
+  }
+
+  // --- pull default negative chip ids from loaded template ---
+  function getDefaultNegs(){
+    try {
+      const t = (window.template || window.currentTemplate || window.ROS_TEMPLATE || {});
+      const defs = t.defaults || (t.sectionDefs && t.sectionDefs.defaults) || {};
+      const arr = defs.negChips || [];
+      return Array.isArray(arr) ? arr.slice() : [];
+    } catch(e){
+      return [];
+    }
+  }
+
+  // Try to toggle a single chip to the NEGATIVE option inside a scope element.
+  // NOTE: we support multiple markup patterns to avoid coupling to one renderer.
+  function setChipNegative(scopeEl, chipId){
+    if (!scopeEl || !chipId) return false;
+
+    // Prefer a container that declares the chip id.
+    let chipRoot = scopeEl.querySelector(`[data-chip-id="${chipId}"]`);
+
+    // Fallbacks: id/name/data-id
+    if (!chipRoot) {
+      chipRoot = scopeEl.querySelector(`#${CSS.escape(chipId)}`) ||
+                 scopeEl.querySelector(`[name="${CSS.escape(chipId)}"]`) ||
+                 scopeEl.querySelector(`[data-id="${chipId}"]`);
+    }
+    if (!chipRoot) return false;
+
+    // Common selectors for a "negative" control
+    const negCandidates = [
+      '[data-action="neg"]',
+      '.opt.neg',
+      '.bool-opt.neg',
+      'input[type="radio"][value="no"]',
+      'input[type="checkbox"][data-neg="1"]',
+      '[data-neg="1"]'
+    ];
+
+    for (const sel of negCandidates){
+      const el = chipRoot.querySelector(sel);
+      if (el) {
+        // Use click to trigger existing handlers
+        if (typeof el.click === 'function') el.click();
+        else {
+          el.dispatchEvent(new MouseEvent('click', { bubbles: true }));
+          el.dispatchEvent(new Event('change', { bubbles: true }));
+        }
+        return true;
+      }
+    }
+
+    // Last resort: two radios [yes, no] → pick the last
+    const radios = chipRoot.querySelectorAll('input[type="radio"]');
+    if (radios && radios.length >= 2) {
+      const last = radios[radios.length - 1];
+      last.checked = true;
+      last.dispatchEvent(new Event('change', { bubbles: true }));
+      return true;
+    }
+
+    return false;
+  }
+
+  // Apply defaults ONLY within the provided panel element
+  function applyDefaultNegativesInPanel(panelEl){
+    const defaults = getDefaultNegs();
+    if (!defaults.length) return;
+    defaults.forEach(id => setChipNegative(panelEl, id));
+  }
+
+  // Build the inline button
+  function makeNegBtn(){
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'neg-fill-btn';
+    btn.textContent = 'Neg Defaults';
+    btn.title = 'Mark common ROS negatives for this panel';
+    btn.addEventListener('click', function(e){
+      e.stopPropagation();
+      const panel = btn.closest('.panel, .ros-panel, .cn-panel, .section');
+      if (panel) applyDefaultNegativesInPanel(panel);
+    });
+
+    // inline styles to avoid CSS file edits
+    btn.style.marginLeft = '8px';
+    btn.style.fontSize = '11px';
+    btn.style.lineHeight = '1.4';
+    btn.style.padding = '2px 6px';
+    btn.style.border = '1px solid var(--muted, #ccc)';
+    btn.style.borderRadius = '4px';
+    btn.style.background = 'var(--panel-btn-bg, #f5f5f5)';
+    btn.style.cursor = 'pointer';
+    return btn;
+  }
+
+  // Insert a button inline with a header element if not already present
+  function injectButtonNextToHeader(headerEl){
+    if (!headerEl || headerEl.dataset.negBtnInjected === '1') return;
+    if (headerEl.querySelector('.neg-fill-btn')) {
+      headerEl.dataset.negBtnInjected = '1';
+      return;
+    }
+    const btn = makeNegBtn();
+    const titleSpan = headerEl.querySelector('.panel-title, .section-head, .item-label, span');
+    if (titleSpan && titleSpan.parentElement === headerEl) {
+      titleSpan.insertAdjacentElement('afterend', btn);
+    } else {
+      headerEl.appendChild(btn);
+    }
+    headerEl.dataset.negBtnInjected = '1';
+  }
+
+  // Find a likely header element inside a panel container
+  function findHeaderCandidates(panelEl){
+    if (!panelEl) return [];
+    // Common header patterns used in prior patches
+    const sels = [
+      ':scope > .panel-header',
+      ':scope > .panel-head',
+      ':scope > .cn-line',
+      ':scope > .section-head-wrap',
+      ':scope > .section-header',
+      ':scope > .section-title',
+      ':scope > .section-head'
+    ];
+    for (const s of sels){
+      const el = panelEl.querySelector(s);
+      if (el) return [el];
+    }
+    // Fallback: first element that contains a head label
+    const alt = panelEl.querySelector('.section-head, .panel-title, .item-label');
+    return alt ? [alt.closest('.panel-header') || alt.parentElement || alt] : [];
+  }
+
+  // Scan the page and inject a button into each ROS panel header
+  function injectAllPanelButtons(root){
+    const scope = root || document;
+    const panels = scope.querySelectorAll('.panel.ROS, .ros-panel, .ROS .panel, .section.ROS, .panel');
+    panels.forEach(panel => {
+      const headers = findHeaderCandidates(panel);
+      headers.forEach(h => injectButtonNextToHeader(h));
+    });
+  }
+
+  // Observe for dynamically-rendered panels
+  function enableObserver(){
+    const obs = new MutationObserver(muts => {
+      for (const m of muts){
+        if (m.addedNodes && m.addedNodes.length){
+          m.addedNodes.forEach(node => {
+            if (!(node instanceof HTMLElement)) return;
+            if (node.matches('.panel, .ros-panel, .section')){
+              injectAllPanelButtons(node);
+            } else if (node.querySelector) {
+              const p = node.querySelector('.panel, .ros-panel, .section');
+              if (p) injectAllPanelButtons(node);
+            }
+          });
+        }
+      }
+    });
+    obs.observe(document.body, { childList: true, subtree: true });
+  }
+
+  onReady(function(){
+    injectAllPanelButtons(document);
+    enableObserver();
+  });
+})();

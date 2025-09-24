@@ -80,7 +80,8 @@
             { "id": "ros_gi_constipation", "label": "Constipation", "type": "toggle", "abnText": "constipation", "negText": "denies constipation" },
             { "id": "ros_gi_diarrhea", "label": "Diarrhea", "type": "toggle", "abnText": "diarrhea", "negText": "denies diarrhea" },
             { "id": "ros_gi_nausea", "label": "Nausea", "type": "toggle", "abnText": "nausea", "negText": "denies nausea" },
-            { "id": "ros_gi_rectal_pain", "label": "Rectal pain", "type": "toggle", "abnText": "rectal pain", "negText": "denies rectal pain" }
+            { "id": "ros_gi_rectal_pain", "label": "Rectal pain", "type": "toggle", "abnText": "rectal pain", "negText": "denies rectal pain" },
+            { "id": "ros_gi_vomiting", "label": "Vomiting", "type": "toggle", "abnText": "vomiting", "negText": "denies vomiting" }
           ]
         },
         {
@@ -153,7 +154,10 @@
             { "id": "ros_psych_dysphoric_mood", "label": "Dysphoric mood", "type": "toggle", "abnText": "dysphoric mood", "negText": "denies dysphoric mood" },
             { "id": "ros_psych_hallucinations", "label": "Hallucinations", "type": "toggle", "abnText": "hallucinations", "negText": "denies hallucinations" },
             { "id": "ros_psych_hyperactive", "label": "Hyperactive", "type": "toggle", "abnText": "hyperactive", "negText": "denies hyperactive" },
-            { "id": "ros_psych_nervous", "label": "Nervous/anxious", "type": "toggle", "abnText": "nervous/anxious", "negText": "denies nervous/anxious" }
+            { "id": "ros_psych_nervous", "label": "Nervous/anxious", "type": "toggle", "abnText": "nervous/anxious", "negText": "denies nervous/anxious" },
+            { "id": "ros_psych_self_injury", "label": "Self-injury", "type": "toggle", "abnText": "self-injury", "negText": "denies self-injury" },
+            { "id": "ros_psych_sleep_disturbance", "label": "Sleep disturbance", "type": "toggle", "abnText": "sleep disturbance", "negText": "denies sleep disturbance" },
+            { "id": "ros_psych_suicidal_ideas", "label": "Suicidal ideas", "type": "toggle", "abnText": "suicidal ideation", "negText": "denies suicidal ideas" }
           ]
         },
         {
