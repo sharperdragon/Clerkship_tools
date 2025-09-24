@@ -1,6 +1,6 @@
 
 // ===== Cache config =====
-const APP_VERSION = "2025-09-24-q";          // bump to invalidate everything
+const APP_VERSION = "2025-09-24-r";          // bump to invalidate everything
 const CACHE_ENABLED = true;                   // master switch
 const CACHE_TTL_MS = 1000 * 60 * 60 * 24;     // 24h for templates
 const STATE_AUTOSAVE_MS = 500;               // debounce for state saves
@@ -2642,7 +2642,7 @@ function formatChipNegForOutput(secKey, id){
 
 
 /* ----------------------------------------------
- * ROS: Inline "Neg Defaults" button per panel
+ * ROS: Inline "Default" button per panel
  * Inserts a small button next to each panel header.
  * Clicking it marks the panel's chips that match
  * template.defaults.negChips as negative.
@@ -2729,8 +2729,8 @@ function formatChipNegForOutput(secKey, id){
   function makeNegBtn(){
     const btn = document.createElement('button');
     btn.type = 'button';
-    btn.className = 'neg-fill-btn';
-    btn.textContent = 'Neg Defaults';
+    btn.className = 'neg-df-btn';
+    btn.textContent = 'Default';
     btn.title = 'Mark common ROS negatives for this panel';
     btn.addEventListener('click', function(e){
       e.stopPropagation();
@@ -2739,9 +2739,9 @@ function formatChipNegForOutput(secKey, id){
     });
 
     // inline styles to avoid CSS file edits
-    btn.style.marginLeft = '8px';
-    btn.style.fontSize = '11px';
-    btn.style.lineHeight = '1.4';
+    btn.style.marginLeft = '60%';
+    btn.style.fontSize = '9px';
+    btn.style.lineHeight = '1.2';
     btn.style.padding = '2px 6px';
     btn.style.border = '1px solid var(--muted, #ccc)';
     btn.style.borderRadius = '4px';
@@ -2821,6 +2821,143 @@ function formatChipNegForOutput(secKey, id){
 
   onReady(function(){
     injectAllPanelButtons(document);
+    enableObserver();
+  });
+})();
+/* ----------------------------------------------------
+ * ROS: Inline "Default" button that actually works
+ * with current DOM (chips rendered without IDs).
+ * Strategy:
+ *  - Build a map from panel title -> Set(label) for chips
+ *    whose IDs are in template.defaults.negChips.
+ *  - For a given panel, find its chips by label text and
+ *    click the minus button to mark them negative.
+ * ---------------------------------------------------- */
+(function(){
+  function onReady(fn){
+    if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', fn, {once:true});
+    else fn();
+  }
+
+  // Build a lookup of default-negative chip labels per panel title
+  function buildRosNegLabelMap(){
+    const out = new Map();
+    try {
+      if (!Templates || !Templates.sectionDefs) return out;
+      const key = 'ROS:General';
+      const def = Templates.sectionDefs[key];
+      if (!def || !def.defaults || !Array.isArray(def.defaults.negChips)) return out;
+      const want = new Set(def.defaults.negChips);
+
+      // Walk panels + subsections to collect chip defs
+      const panels = Array.isArray(def.panels) ? def.panels : [];
+      panels.forEach(pd => {
+        const title = (pd && pd.title) ? String(pd.title).trim() : '';
+        if (!title) return;
+        const ensure = () => {
+          if (!out.has(title)) out.set(title, new Set());
+          return out.get(title);
+        };
+
+        // Chips directly under panel
+        (pd.chips || []).forEach(ch => {
+          if (ch && want.has(ch.id)) ensure().add(String(ch.label).trim());
+        });
+        // Chips inside subsections
+        (pd.subsections || []).forEach(ss => {
+          (ss && ss.chips || []).forEach(ch => {
+            if (ch && want.has(ch.id)) ensure().add(String(ch.label).trim());
+          });
+        });
+      });
+    } catch(e) {
+      console.debug('[ROS NegBtn] map build failed:', e?.message || e);
+    }
+    return out;
+  }
+
+  function makeNegBtn(){
+    const b = document.createElement('button');
+    b.type = 'button';
+    b.className = 'neg-df-btn';
+    b.textContent = 'Default';
+    b.title = 'Mark common negatives for this panel';
+    // Minimal inline styles so you don’t need CSS edits
+    b.style.marginLeft = '8px';
+    b.style.fontSize = '11px';
+    b.style.lineHeight = '1.4';
+    b.style.padding = '2px 6px';
+    b.style.border = '1px solid var(--muted, #ccc)';
+    b.style.borderRadius = '4px';
+    b.style.background = 'var(--panel-btn-bg, #f5f5f5)';
+    b.style.cursor = 'pointer';
+    return b;
+  }
+
+  function injectBtnInto(panelEl){
+    if (!panelEl || panelEl.dataset.negBtnInjected === '1') return;
+    const header = panelEl.querySelector(':scope > .panel-header');
+    if (!header) return;
+    if (header.querySelector('.neg-fill-btn')) { panelEl.dataset.negBtnInjected = '1'; return; }
+    const btn = makeNegBtn();
+    btn.addEventListener('click', function(e){
+      e.stopPropagation();
+      try {
+        const title = (header.textContent || '').trim();
+        if (!title) return;
+        const map = buildRosNegLabelMap();
+        const wanted = map.get(title);
+        if (!wanted || !wanted.size) return;
+        // Find every chip in this panel whose label matches a wanted label
+        panelEl.querySelectorAll(':scope .chip').forEach(ch => {
+          const lab = ch.querySelector('.label');
+          const minus = ch.querySelector('.aff.minus');
+          const txt = (lab && lab.textContent || '').trim();
+          if (txt && wanted.has(txt) && minus) {
+            // Click minus to set negative using existing handlers
+            if (typeof minus.click === 'function') minus.click();
+            else {
+              minus.dispatchEvent(new MouseEvent('click', {bubbles:true}));
+              minus.dispatchEvent(new Event('change', {bubbles:true}));
+            }
+          }
+        });
+      } catch(err){
+        console.debug('[ROS NegBtn] apply failed:', err?.message || err);
+      }
+    });
+    header.appendChild(btn);
+    panelEl.dataset.negBtnInjected = '1';
+  }
+
+  function scanAndInject(root){
+    if (state.mode !== 'ROS') return; // only add in ROS mode
+    const scope = root || document;
+    scope.querySelectorAll('main.section-grid.ROS > section.panel').forEach(injectBtnInto);
+  }
+
+  function enableObserver(){
+    const obs = new MutationObserver(muts => {
+      for (const m of muts){
+        if (m.addedNodes && m.addedNodes.length){
+          m.addedNodes.forEach(node => {
+            if (!(node instanceof HTMLElement)) return;
+            if (node.matches && node.matches('main.section-grid.ROS, section.panel')) {
+              scanAndInject(node);
+            } else if (node.querySelector) {
+              const any = node.querySelector('main.section-grid.ROS, section.panel');
+              if (any) scanAndInject(node);
+            }
+          });
+        }
+      }
+    });
+    obs.observe(document.body, { childList: true, subtree: true });
+  }
+
+  onReady(function(){
+    // Initial pass after first render
+    setTimeout(()=>scanAndInject(document), 0);
     enableObserver();
   });
 })();
