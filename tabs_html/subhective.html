@@ -1,0 +1,234 @@
+<!-- SUBJECTIVE -->
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NoteWriter</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<section class="tab-page SUBJECTIVE" data-mode="SUBJECTIVE" aria-labelledby="tab-subjective">
+  <!-- Header items (Visit Note, Chief Complaint) -->
+  <div id="headerItems" class="header-items-bar">
+    <div class="row SUBJECTIVE header-fields">
+      <label class="field" data-field-id="subj_visit_note">
+        <span class="field-label">Visit Note</span>
+        <input type="text" placeholder="Visit Note" />
+      </label>
+      <label class="field" data-field-id="subj_chief_complaint">
+        <span class="field-label">Chief Complaint</span>
+        <input type="text" placeholder="Chief Complaint" />
+      </label>
+    </div>
+
+    <!-- Acute / Non-acute toggle (optional, keep your styling) -->
+    <div class="row SUBJECTIVE heady">
+      <div class="acute-toggle">
+        <button type="button" data-acute="true"  class="btn-mini">Acute</button>
+        <button type="button" data-acute="false" class="btn-mini">Non-acute</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Split layout: HPI | splitter | General History -->
+  <div class="subj-grid" style="display:grid; grid-template-columns: 50% 6px 50%; gap:8px;">
+    <!-- HPI -->
+    <article class="panel" style="grid-column:1/2">
+      <div class="panel-title">History of Present Illness</div>
+
+      <div class="row SUBJECTIVE">
+        <label class="field" data-field-id="hpi_onset">
+          <span class="field-label">Onset</span>
+          <input type="text" />
+        </label>
+      </div>
+
+      <div class="row SUBJECTIVE">
+        <fieldset class="field field-boolean" data-field-id="hpi_prior_flag">
+          <legend class="field-label">Prior:</legend>
+          <label class="bool-opt"><input type="radio" name="hpi_prior_flag" value="true"><span>Yes</span></label>
+          <label class="bool-opt"><input type="radio" name="hpi_prior_flag" value="false"><span>No</span></label>
+        </fieldset>
+
+        <!-- showIf: hpi_prior_flag == true -->
+        <label class="field" data-field-id="hpi_prior"
+               data-showif='{"field":"hpi_prior_flag","equals":true}'>
+          <span class="field-label">Prior</span>
+          <input type="text" />
+        </label>
+      </div>
+
+      <div class="row SUBJECTIVE">
+        <label class="field" data-field-id="hpi_progression">
+          <span class="field-label">Progression</span>
+          <input type="text" />
+        </label>
+        <label class="field" data-field-id="hpi_palliate">
+          <span class="field-label">Palliate</span>
+          <input type="text" />
+        </label>
+        <label class="field" data-field-id="hpi_provoke">
+          <span class="field-label">Provoke</span>
+          <input type="text" />
+        </label>
+      </div>
+
+      <div class="row SUBJECTIVE">
+        <label class="field" data-field-id="hpi_quality">
+          <span class="field-label">Quality</span>
+          <input type="text" />
+        </label>
+        <label class="field" data-field-id="hpi_quantity">
+          <span class="field-label">Quantity</span>
+          <input type="text" />
+        </label>
+        <label class="field" data-field-id="hpi_region">
+          <span class="field-label">Region</span>
+          <input type="text" />
+        </label>
+      </div>
+
+      <div class="row SUBJECTIVE">
+        <fieldset class="field field-boolean" data-field-id="hpi_radiate_flag">
+          <legend class="field-label">Radiation</legend>
+          <label class="bool-opt"><input type="radio" name="hpi_radiate_flag" value="true"><span>Yes</span></label>
+          <label class="bool-opt"><input type="radio" name="hpi_radiate_flag" value="false"><span>No</span></label>
+        </fieldset>
+
+        <label class="field" data-field-id="hpi_radiate"
+               data-showif='{"field":"hpi_radiate_flag","equals":true}'>
+          <span class="field-label">Radiation</span>
+          <input type="text" />
+        </label>
+      </div>
+
+      <div class="row SUBJECTIVE">
+        <label class="field" data-field-id="hpi_scale">
+          <span class="field-label">Scale</span>
+          <input type="range" min="0" max="10" step="1" />
+        </label>
+        <label class="field" data-field-id="hpi_timing">
+          <span class="field-label">Timing</span>
+          <input type="text" />
+        </label>
+      </div>
+
+      <div class="row SUBJECTIVE">
+        <fieldset class="field field-boolean" data-field-id="hpi_treatment_flag">
+          <legend class="field-label">Treatment</legend>
+          <label class="bool-opt"><input type="radio" name="hpi_treatment_flag" value="true"><span>Yes</span></label>
+          <label class="bool-opt"><input type="radio" name="hpi_treatment_flag" value="false"><span>No</span></label>
+        </fieldset>
+
+        <label class="field" data-field-id="hpi_treatment"
+               data-showif='{"field":"hpi_treatment_flag","equals":true}'>
+          <span class="field-label">Treatment</span>
+          <input type="text" />
+        </label>
+      </div>
+
+      <div class="row SUBJECTIVE">
+        <label class="field" data-field-id="hpi_assoc_symptoms">
+          <span class="field-label">Associated Symptoms</span>
+          <div class="mini-checks">
+            <label class="cb subjective"><input type="checkbox" data-cb-id="Assoc_Fever">Fever</label>
+          </div>
+          <textarea rows="2"></textarea>
+        </label>
+      </div>
+    </article>
+
+    <!-- Splitter (static) -->
+    <div class="subj-splitter" style="grid-column:2/3; width:6px;"></div>
+
+    <!-- General History -->
+    <article class="panel" style="grid-column:3/4">
+      <div class="panel-title">General History</div>
+
+      <div class="row SUBJECTIVE">
+        <label class="field" data-field-id="subj_pmh">
+          <span class="field-label">Past Medical</span>
+          <div class="mini-checks">
+            <label class="cb subjective"><input type="checkbox" data-cb-id="pmh_htn">HTN</label>
+            <label class="cb subjective"><input type="checkbox" data-cb-id="pmh_t2dm">T2DM</label>
+            <label class="cb subjective"><input type="checkbox" data-cb-id="pmh_cancer">Cancer</label>
+            <label class="cb subjective"><input type="checkbox" data-cb-id="pmh_hld">HLD</label>
+            <label class="cb subjective"><input type="checkbox" data-cb-id="pmh_none">Not reported</label>
+          </div>
+          <textarea rows="3"></textarea>
+        </label>
+      </div>
+
+      <div class="row SUBJECTIVE">
+        <label class="field" data-field-id="subj_surg_hx"><span class="field-label">Surgical Hx</span><textarea rows="2"></textarea></label>
+      </div>
+      <div class="row SUBJECTIVE">
+        <label class="field" data-field-id="subj_meds"><span class="field-label">Meds</span><textarea rows="2"></textarea></label>
+      </div>
+
+      <div class="row SUBJECTIVE">
+        <label class="field" data-field-id="subj_allergies">
+          <span class="field-label">Allergies</span>
+          <div class="mini-checks">
+            <label class="cb subjective"><input type="checkbox" data-cb-id="allergies_nkda">NKDA</label>
+            <label class="cb subjective"><input type="checkbox" data-cb-id="allergies_food_ENV">No food or environmental allergies</label>
+          </div>
+          <textarea rows="2"></textarea>
+        </label>
+      </div>
+
+      <!-- Social group inline -->
+      <div class="row SUBJECTIVE">
+        <span class="field-label" style="display:block;margin-bottom:0">Social history</span>
+        <div class="field-group" style="display:inline-flex;flex-wrap:wrap;align-items:center;gap:8px 12px;">
+          <!-- Tobacco flag + children -->
+          <fieldset class="field field-boolean" data-field-id="soc_tobacco_flag">
+            <legend class="field-label">Tobacco</legend>
+            <label class="bool-opt"><input type="radio" name="soc_tobacco_flag" value="true"><span>Yes</span></label>
+            <label class="bool-opt"><input type="radio" name="soc_tobacco_flag" value="false"><span>No</span></label>
+          </fieldset>
+
+          <fieldset class="field field-boolean"
+                    data-field-id="soc_tob_status"
+                    data-showif='{"field":"soc_tobacco_flag","equals":true}'>
+            <legend class="field-label">Tobacco status</legend>
+            <label class="bool-opt"><input type="radio" name="soc_tob_status" value="true"><span>Current</span></label>
+            <label class="bool-opt"><input type="radio" name="soc_tob_status" value="false"><span>Former</span></label>
+          </fieldset>
+
+          <label class="field"
+                 data-field-id="soc_tob_pk_years"
+                 data-showif='{"field":"soc_tobacco_flag","equals":true}'>
+            <span class="field-label">Pack years</span>
+            <input type="text" />
+          </label>
+
+          <!-- Alcohol -->
+          <fieldset class="field field-boolean" data-field-id="soc_alcohol_flag">
+            <legend class="field-label">Alcohol</legend>
+            <label class="bool-opt"><input type="radio" name="soc_alcohol_flag" value="true"><span>Yes</span></label>
+            <label class="bool-opt"><input type="radio" name="soc_alcohol_flag" value="false"><span>No</span></label>
+          </fieldset>
+
+          <label class="field"
+                 data-field-id="soc_alcohol_drinks_week"
+                 data-showif='{"field":"soc_alcohol_flag","equals":true}'>
+            <span class="field-label">Drinks/week</span>
+            <input type="text" />
+          </label>
+
+          <!-- Social note -->
+          <label class="field" data-field-id="subj_social">
+            <span class="field-label">Social (notes)</span>
+            <input type="text" placeholder="Any additional social history details" />
+          </label>
+        </div>
+      </div>
+
+      <div class="row SUBJECTIVE">
+        <label class="field" data-field-id="subj_lmp"><span class="field-label">LMP</span><input type="text" /></label>
+        <label class="field" data-field-id="subj_fhx"><span class="field-label">Family Hx</span><input type="text" placeholder="Family Hx" /></label>
+      </div>
+    </article>
+  </div>
+</section>
+  <script type="module" src="app.js"></script>

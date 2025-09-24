@@ -1,6 +1,6 @@
 
 // ===== Cache config =====
-const APP_VERSION = "2025-09-22-f";          // bump to invalidate everything
+const APP_VERSION = "2025-09-24-b";          // bump to invalidate everything
 const CACHE_ENABLED = true;                   // master switch
 const CACHE_TTL_MS = 1000 * 60 * 60 * 24;     // 24h for templates
 const STATE_AUTOSAVE_MS = 500;               // debounce for state saves
@@ -206,8 +206,8 @@ const asObj = (v)=> (typeof v === "object" ? v : null);
 // --- Vital signs parser/scrubber ---
 // Input example (pasted):
 // BP (!) 142/91 (BP Location: Right upper arm, Patient Position: Sitting, BP Cuff Size: Adult)  | Pulse 73  | Temp 98 °F (Oral)  | Resp 16  | Ht 4' 11"  | Wt 115 lb 12.8 oz  | LMP 09/06/2025 (Exact Date)  | SpO2 98%  | BMI 23.39 kg/m²  | Smoking Status Never  | BSA 1.48 m²
-// Output (exact format requested):
-// Temp 98 °F (Oral), BP (!) 142/91,  HR 73, RR 16, Oxygen sat (O2)
+// Output (target format):
+// Temp 98 °F (Oral), BP (!) 142/91,  HR 73, RR 16, SpO2 98%
 // BMI: 23.39
 function scrubVitalSigns(raw) {
   if (!raw) return null;
@@ -221,7 +221,7 @@ function scrubVitalSigns(raw) {
     if (m) { bpBang = m[1] ? "(!) " : ""; bpSys = m[2]; bpDia = m[3]; }
   }
 
-  // Pulse
+  // Pulse (HR)
   let pulse = "";
   { const m = s.match(/Pulse\s*([0-9]{1,3})/i); if (m) pulse = m[1]; }
 
@@ -232,19 +232,21 @@ function scrubVitalSigns(raw) {
     if (m) { temp = m[1]; site = m[2] || ""; }
   }
 
-  // Resp
+  // Resp (RR)
   let resp = "";
   { const m = s.match(/Resp\s*([0-9]{1,3})/i); if (m) resp = m[1]; }
 
-  // SpO2 present? (emit fixed phrase)
-  let hasO2 = false;
-  { const m = s.match(/(?:SpO2|O2\s*Sat|Oxygen\s*Sat)\s*([0-9]{1,3})\s*%/i); if (m) hasO2 = true; }
+  // SpO2 numeric value (emit as "SpO2 98%")
+  let spo2 = "";
+  { 
+    const m = s.match(/(?:SpO2|O2\s*Sat|Oxygen\s*Sat)\s*([0-9]{1,3})\s*%/i);
+    if (m) spo2 = m[1];
+  }
 
-  // BMI value
+  // BMI value (keep as second line). Accept kg/m² or kg/m2, or just number.
   let bmi = "";
   { 
-    // Try with units, then fallback
-    let m = s.match(/BMI\s*([\d.]+)\s*kg\/m²/i);
+    let m = s.match(/BMI\s*([\d.]+)\s*kg\/m(?:2|²)/i);
     if (!m) m = s.match(/BMI\s*([\d.]+)/i);
     if (m) bmi = m[1];
   }
@@ -255,12 +257,13 @@ function scrubVitalSigns(raw) {
   if (bpSys && bpDia) parts.push(`BP ${bpBang}${bpSys}/${bpDia}`);
   if (pulse) parts.push(`HR ${pulse}`);
   if (resp) parts.push(`RR ${resp}`);
-  if (hasO2) parts.push(`Oxygen sat (O2)`);
+  if (spo2) parts.push(`SpO2 ${spo2}%`);
 
   // Match example’s double-space before HR
   let line1 = parts.join(", ");
   line1 = line1.replace(", HR", ",  HR");
 
+  // Keep BMI on second line if present
   const line2 = bmi ? `BMI: ${bmi}` : "";
 
   if (!line1 && !line2) return null;
@@ -1221,6 +1224,8 @@ function renderOutput(){
 
     const textParts = [];
     const checkParts = [];
+    let _emittedVitals = false;
+
     items.forEach(h => {
       if (!h || !h.id) return;
       if (h.type === 'text') {
@@ -1230,10 +1235,10 @@ function renderOutput(){
         if (h.id === 'vital_signs_text' && v) {
           const fmt = scrubVitalSigns(v);
           if (fmt) {
-            if (fmt.line1) lines.push(fmt.line1);
-            if (fmt.line2) lines.push(fmt.line2);
+            if (fmt.line1) { lines.push(fmt.line1); _emittedVitals = true; }
+            if (fmt.line2) { lines.push(fmt.line2); }
           }
-          return; // do not add a default "Label: value." line
+          return; // do not also emit "Label: value."
         }
 
         if (v) textParts.push(`${h.label || h.id}: ${v}.`);
@@ -1241,10 +1246,12 @@ function renderOutput(){
         if (sec.checkboxes?.[h.id]) checkParts.push(formatPECheckLabel(h.label || h.id));
       }
     });
-    // Emit remaining text items as their own lines first
+    // Emit any remaining text items as their own lines
     if (textParts.length) lines.push(...textParts);
-    // Then a single sentence for checked items, labeled by the section
-    if (checkParts.length) lines.push(`${state.activeSection}: ${checkParts.join('. ')}.`);
+    // Only emit checks if vitals weren't emitted
+    if (!_emittedVitals && checkParts.length) {
+      lines.push(`${state.activeSection}: ${checkParts.join('. ')}.`);
+    }
   })();
 
   (def.panels || []).forEach(pd => {
@@ -1690,6 +1697,8 @@ function buildSectionLines(secKey, mode, tpl){
 
     const textParts = [];
     const checkParts = [];
+    let _emittedVitals = false;
+
     items.forEach(h => {
       if (!h || !h.id) return;
       if (h.type === 'text') {
@@ -1700,8 +1709,8 @@ function buildSectionLines(secKey, mode, tpl){
         if (h.id === 'vital_signs_text' && v) {
           const fmt = scrubVitalSigns(v);
           if (fmt) {
-            if (fmt.line1) lines.push(fmt.line1);
-            if (fmt.line2) lines.push(fmt.line2);
+            if (fmt.line1) { lines.push(fmt.line1); _emittedVitals = true; }
+            if (fmt.line2) { lines.push(fmt.line2); }
           }
           return; // skip default label:value
         }
@@ -1711,8 +1720,9 @@ function buildSectionLines(secKey, mode, tpl){
         if (sec.checkboxes?.[h.id]) checkParts.push(formatPECheckLabel(h.label || h.id));
       }
     });
+
     if (textParts.length) lines.push(...textParts);
-    if (checkParts.length) {
+    if (!_emittedVitals && checkParts.length) {
       const sectionName = secKey.split(":")[1] || "";
       lines.push(`${sectionName}: ${checkParts.join('. ')}.`);
     }
