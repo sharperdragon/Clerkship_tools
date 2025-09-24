@@ -1,6 +1,6 @@
 
 // ===== Cache config =====
-const APP_VERSION = "2025-09-24-d";          // bump to invalidate everything
+const APP_VERSION = "2025-09-24-h";          // bump to invalidate everything
 const CACHE_ENABLED = true;                   // master switch
 const CACHE_TTL_MS = 1000 * 60 * 60 * 24;     // 24h for templates
 const STATE_AUTOSAVE_MS = 500;               // debounce for state saves
@@ -204,16 +204,14 @@ const isNeg = (v)=> v === 'neg';
 const asObj = (v)=> (typeof v === "object" ? v : null);
 
 // --- Vital signs parser/scrubber ---
-// Input example (pasted):
-// BP (!) 142/91 (BP Location: Right upper arm, Patient Position: Sitting, BP Cuff Size: Adult)  | Pulse 73  | Temp 98 °F (Oral)  | Resp 16  | Ht 4' 11"  | Wt 115 lb 12.8 oz  | LMP 09/06/2025 (Exact Date)  | SpO2 98%  | BMI 23.39 kg/m²  | Smoking Status Never  | BSA 1.48 m²
-// Output (target format):
-// Temp 98 °F (Oral), BP (!) 142/91,  HR 73, RR 16, SpO2 98%
-// BMI: 23.39
+// Turns a pasted blob into two lines:
+//   Temp 98 °F (Oral), BP (!) 142/91,  HR 73, RR 16, SpO2 98%
+//   BMI: 23.39
 function scrubVitalSigns(raw) {
   if (!raw) return null;
   const s = String(raw);
 
-  // BP with optional "(!)"
+  // BP (optionally with "(!)")
   let bpBang = "";
   let bpSys = "", bpDia = "";
   {
@@ -221,37 +219,39 @@ function scrubVitalSigns(raw) {
     if (m) { bpBang = m[1] ? "(!) " : ""; bpSys = m[2]; bpDia = m[3]; }
   }
 
-  // Pulse (HR)
+  // Pulse
   let pulse = "";
   { const m = s.match(/Pulse\s*([0-9]{1,3})/i); if (m) pulse = m[1]; }
 
-  // Temp + site (if present)
+  // Temp + site
   let temp = "", site = "";
   {
     const m = s.match(/Temp\s*([\d.]+)\s*°?\s*F(?:\s*\(([^)]+)\))?/i);
     if (m) { temp = m[1]; site = m[2] || ""; }
   }
 
-  // Resp (RR)
+  // Resp
   let resp = "";
   { const m = s.match(/Resp\s*([0-9]{1,3})/i); if (m) resp = m[1]; }
 
-  // SpO2 numeric value (emit as "SpO2 98%")
+  // SpO2 numeric value
   let spo2 = "";
-  { 
-    const m = s.match(/(?:SpO2|O2\s*Sat|Oxygen\s*Sat)\s*([0-9]{1,3})\s*%/i);
-    if (m) spo2 = m[1];
-  }
+  { const m = s.match(/(?:SpO2|O2\s*Sat|Oxygen\s*Sat)\s*([0-9]{1,3})\s*%/i); if (m) spo2 = m[1]; }
 
-  // BMI value (keep as second line). Accept kg/m² or kg/m2, or just number.
+  // BMI (accept kg/m² or kg/m2, or number only)
   let bmi = "";
-  { 
+  {
     let m = s.match(/BMI\s*([\d.]+)\s*kg\/m(?:2|²)/i);
     if (!m) m = s.match(/BMI\s*([\d.]+)/i);
     if (m) bmi = m[1];
   }
 
-  // Build first line exactly as requested
+  // Debug: confirm parser path and captures at runtime
+  try {
+    console.debug('[VitalsScrub]', { spo2, bmi, temp, site, pulse, resp, bp: `${bpBang}${bpSys}/${bpDia}` });
+  } catch {}
+
+  // Build first line in the exact order; keep the double-space before HR
   const parts = [];
   if (temp) parts.push(`Temp ${temp} °F${site ? ` (${site})` : ""}`);
   if (bpSys && bpDia) parts.push(`BP ${bpBang}${bpSys}/${bpDia}`);
@@ -259,19 +259,17 @@ function scrubVitalSigns(raw) {
   if (resp) parts.push(`RR ${resp}`);
   if (spo2) parts.push(`SpO2 ${spo2}%`);
 
-  // Match example’s double-space before HR
   let line1 = parts.join(", ");
   line1 = line1.replace(", HR", ",  HR");
 
-  // Keep BMI on second line if present
   const line2 = bmi ? `BMI: ${bmi}` : "";
-
   if (!line1 && !line2) return null;
   return { line1, line2 };
 }
 
 
 async function init(){
+  console.log(`[NoteWriter] Loaded APP_VERSION ${APP_VERSION} from tabs_html/app.js`);
   const restored = maybeRestoreState();
   // Load templates and set activeSection for the (possibly restored) mode
   await switchMode(state.mode || DEFAULT_MODE);
@@ -1225,7 +1223,6 @@ function renderOutput(){
     const textParts = [];
     const checkParts = [];
     let _emittedVitals = false;
-
     items.forEach(h => {
       if (!h || !h.id) return;
       if (h.type === 'text') {
@@ -1238,7 +1235,7 @@ function renderOutput(){
             if (fmt.line1) { lines.push(fmt.line1); _emittedVitals = true; }
             if (fmt.line2) { lines.push(fmt.line2); }
           }
-          return; // do not also emit "Label: value."
+          return; // skip default "Label: value."
         }
 
         if (v) textParts.push(`${h.label || h.id}: ${v}.`);
@@ -1248,7 +1245,7 @@ function renderOutput(){
     });
     // Emit any remaining text items as their own lines
     if (textParts.length) lines.push(...textParts);
-    // Only emit checks if vitals weren't emitted
+    // Only emit checks sentence if we did NOT emit vitals
     if (!_emittedVitals && checkParts.length) {
       lines.push(`${state.activeSection}: ${checkParts.join('. ')}.`);
     }
@@ -1698,7 +1695,6 @@ function buildSectionLines(secKey, mode, tpl){
     const textParts = [];
     const checkParts = [];
     let _emittedVitals = false;
-
     items.forEach(h => {
       if (!h || !h.id) return;
       if (h.type === 'text') {
