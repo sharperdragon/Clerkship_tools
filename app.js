@@ -1,6 +1,6 @@
 
 // ===== Cache config =====
-const APP_VERSION = "2025-09-22-f";          // bump to invalidate everything
+const APP_VERSION = "2025-09-24-o";          // bump to invalidate everything
 const CACHE_ENABLED = true;                   // master switch
 const CACHE_TTL_MS = 1000 * 60 * 60 * 24;     // 24h for templates
 const STATE_AUTOSAVE_MS = 500;               // debounce for state saves
@@ -178,6 +178,7 @@ async function switchMode(mode){
   if (!first) return showFatal(`No sections for mode "${mode}".`);
   state.activeSection = first;
   ensureSectionState();
+  applyRosDefaultsIfAny();   // pre-set default normal ROS chips from template
   renderAll();
 }
 
@@ -202,6 +203,28 @@ const SIDE_LABELS = { R:"R", L:"L", B:"bilateral" };
 const isPos = (v)=> typeof v === "object" && v?.state === "pos";
 const isNeg = (v)=> v === 'neg';
 const asObj = (v)=> (typeof v === "object" ? v : null);
+
+// Apply default-negative ROS chips declared in the template (ROS:General.defaults.negChips)
+function applyRosDefaultsIfAny() {
+  try {
+    if (state.mode !== "ROS") return;
+    const def = Templates && Templates.sectionDefs && Templates.sectionDefs["ROS:General"];
+    const negList = (def && def.defaults && Array.isArray(def.defaults.negChips)) ? def.defaults.negChips : [];
+    if (!negList.length) return;
+
+    const sec = getSecFor("ROS", "General");
+    sec.chips = sec.chips || {};
+
+    // Only set defaults for chips that are still unset
+    negList.forEach(id => {
+      if (sec.chips[id] === undefined) sec.chips[id] = 'neg';
+    });
+
+    saveStateSoon();
+  } catch (e) {
+    console.debug("[ROS defaults] skipped:", e?.message || e);
+  }
+}
 
 // --- Vital signs parser/scrubber ---
 // Input example (pasted):
@@ -236,15 +259,18 @@ function scrubVitalSigns(raw) {
   let resp = "";
   { const m = s.match(/Resp\s*([0-9]{1,3})/i); if (m) resp = m[1]; }
 
-  // SpO2 present? (emit fixed phrase)
-  let hasO2 = false;
-  { const m = s.match(/(?:SpO2|O2\s*Sat|Oxygen\s*Sat)\s*([0-9]{1,3})\s*%/i); if (m) hasO2 = true; }
+  // SpO2 numeric value (emit as "SpO2 98%")
+  let spo2 = "";
+  {
+    let m = s.match(/(?:SpO2|O2\s*Sat|Oxygen\s*Sat)\s*([0-9]{1,3})\s*%/i);
+    if (!m) m = s.match(/\bO2\b\s*([0-9]{1,3})\s*%/i); // fallback for "O2 98%"
+    if (m) spo2 = m[1];
+  }
 
-  // BMI value
+  // BMI value (accept kg/m² or kg/m2, or bare number)
   let bmi = "";
-  { 
-    // Try with units, then fallback
-    let m = s.match(/BMI\s*([\d.]+)\s*kg\/m²/i);
+  {
+    let m = s.match(/BMI\s*([\d.]+)\s*kg\/m(?:2|²)/i);
     if (!m) m = s.match(/BMI\s*([\d.]+)/i);
     if (m) bmi = m[1];
   }
@@ -255,11 +281,19 @@ function scrubVitalSigns(raw) {
   if (bpSys && bpDia) parts.push(`BP ${bpBang}${bpSys}/${bpDia}`);
   if (pulse) parts.push(`HR ${pulse}`);
   if (resp) parts.push(`RR ${resp}`);
-  if (hasO2) parts.push(`Oxygen sat (O2)`);
+  if (spo2) parts.push(`SpO2 ${spo2}%`);
 
   // Match example’s double-space before HR
   let line1 = parts.join(", ");
   line1 = line1.replace(", HR", ",  HR");
+  // Defensive: if any legacy literal slipped in from older state, normalize it
+  if (/\bOxygen sat \(O2\)\b/i.test(line1)) {
+    if (spo2) {
+      line1 = line1.replace(/\bOxygen sat \(O2\)\b/gi, `SpO2 ${spo2}%`);
+    } else {
+      line1 = line1.replace(/\s*,?\s*\bOxygen sat \(O2\)\b/gi, "").replace(/,\s*,/g, ", ").replace(/,\s*$/, "");
+    }
+  }
 
   const line2 = bmi ? `BMI: ${bmi}` : "";
 
@@ -277,6 +311,11 @@ async function init(){
   applySticky();
   renderCompleteSoon();
   enhanceCompleteNoteUI();
+  // Populate footer version placeholder if present
+  try {
+    const ph = document.getElementById('app-version-placeholder');
+    if (ph) ph.textContent = APP_VERSION;
+  } catch {}
 }
 
 function showFatal(msg){
@@ -1219,32 +1258,36 @@ function renderOutput(){
     }
     if (!items.length) return; // nothing to emit
 
-    const textParts = [];
-    const checkParts = [];
-    items.forEach(h => {
-      if (!h || !h.id) return;
-      if (h.type === 'text') {
-        const v = (sec.fields?.[h.id] ?? '').toString().trim();
+  const textParts = [];
+  const checkParts = [];
+  let _emittedVitals = false;
 
-        // Special handling for the PE vitals paste box
-        if (h.id === 'vital_signs_text' && v) {
-          const fmt = scrubVitalSigns(v);
-          if (fmt) {
-            if (fmt.line1) lines.push(fmt.line1);
-            if (fmt.line2) lines.push(fmt.line2);
-          }
-          return; // do not add a default "Label: value." line
+  items.forEach(h => {
+    if (!h || !h.id) return;
+    if (h.type === 'text') {
+      const v = (sec.fields?.[h.id] ?? '').toString().trim();
+
+      // Special handling for the PE vitals paste box
+      if (h.id === 'vital_signs_text' && v) {
+        const fmt = scrubVitalSigns(v);
+        if (fmt) {
+          if (fmt.line1) { lines.push(fmt.line1); _emittedVitals = true; }
+          if (fmt.line2) { lines.push(fmt.line2); }
         }
-
-        if (v) textParts.push(`${h.label || h.id}: ${v}.`);
-      } else {
-        if (sec.checkboxes?.[h.id]) checkParts.push(formatPECheckLabel(h.label || h.id));
+        return; // do not add a default "Label: value." line
       }
-    });
-    // Emit remaining text items as their own lines first
-    if (textParts.length) lines.push(...textParts);
-    // Then a single sentence for checked items, labeled by the section
-    if (checkParts.length) lines.push(`${state.activeSection}: ${checkParts.join('. ')}.`);
+
+      if (v) textParts.push(`${h.label || h.id}: ${v}.`);
+    } else {
+      if (sec.checkboxes?.[h.id]) checkParts.push(formatPECheckLabel(h.label || h.id));
+    }
+  });
+  // Emit remaining text items as their own lines first
+  if (textParts.length) lines.push(...textParts);
+  // Only emit checks sentence if we did NOT emit vitals
+  if (!_emittedVitals && checkParts.length) {
+    lines.push(`${state.activeSection}: ${checkParts.join('. ')}.`);
+  }
   })();
 
   (def.panels || []).forEach(pd => {
@@ -1688,34 +1731,36 @@ function buildSectionLines(secKey, mode, tpl){
     }
     if (!items.length) return;
 
-    const textParts = [];
-    const checkParts = [];
-    items.forEach(h => {
-      if (!h || !h.id) return;
-      if (h.type === 'text') {
-        const raw = sec.fields && sec.fields[h.id];
-        const v = (typeof raw === 'string' ? raw.trim() : '');
+  const textParts = [];
+  const checkParts = [];
+  let _emittedVitals = false;
 
-        // Special handling for the PE vitals paste box
-        if (h.id === 'vital_signs_text' && v) {
-          const fmt = scrubVitalSigns(v);
-          if (fmt) {
-            if (fmt.line1) lines.push(fmt.line1);
-            if (fmt.line2) lines.push(fmt.line2);
-          }
-          return; // skip default label:value
+  items.forEach(h => {
+    if (!h || !h.id) return;
+    if (h.type === 'text') {
+      const raw = sec.fields && sec.fields[h.id];
+      const v = (typeof raw === 'string' ? raw.trim() : '');
+
+      // Special handling for the PE vitals paste box
+      if (h.id === 'vital_signs_text' && v) {
+        const fmt = scrubVitalSigns(v);
+        if (fmt) {
+          if (fmt.line1) { lines.push(fmt.line1); _emittedVitals = true; }
+          if (fmt.line2) { lines.push(fmt.line2); }
         }
-
-        if (v) textParts.push(`${h.label || h.id}: ${v}.`);
-      } else {
-        if (sec.checkboxes?.[h.id]) checkParts.push(formatPECheckLabel(h.label || h.id));
+        return; // skip default label:value
       }
-    });
-    if (textParts.length) lines.push(...textParts);
-    if (checkParts.length) {
-      const sectionName = secKey.split(":")[1] || "";
-      lines.push(`${sectionName}: ${checkParts.join('. ')}.`);
+
+      if (v) textParts.push(`${h.label || h.id}: ${v}.`);
+    } else {
+      if (sec.checkboxes?.[h.id]) checkParts.push(formatPECheckLabel(h.label || h.id));
     }
+  });
+  if (textParts.length) lines.push(...textParts);
+  if (!_emittedVitals && checkParts.length) {
+    const sectionName = secKey.split(":")[1] || "";
+    lines.push(`${sectionName}: ${checkParts.join('. ')}.`);
+  }
   })();
 
   (def.panels || []).forEach(pd => {

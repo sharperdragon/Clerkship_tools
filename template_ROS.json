@@ -167,11 +167,24 @@
           ]
         }
       ]
-    }
-  },
+    ,
+    "defaults": {
+      "negChips": [
+        "ros_const_fever",
+        "ros_const_chills",
+        "ros_resp_cough",
+        "ros_resp_sob",
+        "ros_cardio_chest_pain",
+        "ros_gi_nausea",
+        "ros_gi_diarrhea",
+        "ros_neuro_headaches"
+      ]
+      }
+    },
   "globals": {
     "ROS": [
       { "id": "ros_aosn", "label": "All other systems negative" }
     ]
+    }
   }
 }
