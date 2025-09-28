@@ -1,0 +1,13 @@
+.env
+.history/
+*.env*
+**/.DS_Store
+**/__pycache__
+
+other:bad
+
+# Python cache folders
+*/__pycache__/
+utils/**/*.py[cod]
+utils/**/**/__pycache__/
+utils/**/__pycache__/
