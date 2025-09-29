@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NoteWriter</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  
+<header class="appbar">
+  <h1>NoteWriter</h1>
+  <div class="tools">
+    <a href="index.html" title="Back to Home" style="margin-right:8px; text-decoration:none; border:1px solid rgba(0,0,0,0.1); padding:6px 10px; border-radius:8px; display:inline-flex; align-items:center;">Home</a>
+    <button id="copyBtn" title="Copy output">Copy</button>
+    <button id="clearSectionBtn" title="Clear section">Clear Section</button>
+    <button id="clearAllBtn" title="Clear all">Clear All</button>
+  </div>
+</header>
+
+  <nav id="tier1" class="tabs tier1"></nav>
+  <nav id="tier2" class="tabs tier2"></nav>
+  <div id="headerItems" class="header-items-bar" aria-live="polite"></div>
+  <main id="grid" class="section-grid" aria-live="polite"></main>
+
+  <aside class="output">
+    <div class="output-header">Output</div>
+    <textarea id="out" rows="10" spellcheck="false"></textarea>
+  </aside>
+  <div class="out-wrap">
+  <div class="out-head">Complete Note</div>
+  <textarea id="completeOut" rows="12" readonly></textarea>
+  </div>
+
+  <script type="module" src="app.js"></script>
+  <footer style="text-align:center; font-size:0.8em; color:rgba(0,0,0,0.4); margin-top:20px;">
+    NoteWriter – App Version: <span id="app-version-placeholder">loading...</span>
+  </footer>
+</body>
+</html>
