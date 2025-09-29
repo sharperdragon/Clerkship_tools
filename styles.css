@@ -407,7 +407,7 @@
 }
 
 /* Uniform checkbox sizing within a row */
-.panel .row .cb :not(.SUBJECTIVE) {
+.panel .row .cb :not(.subjective) {
   flex: initial !important;
 }
 
@@ -840,7 +840,7 @@ button.btn-mini {
   transform: translateY(1px);
 }
 
-.SUBJECTIVE textarea {
+.subjective textarea {
   width: 100%;
   resize: vertical;
   display: block;

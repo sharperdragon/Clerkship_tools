@@ -3,8 +3,10 @@
 *.env*
 **/.DS_Store
 **/__pycache__
-
-other:bad
+*/.DS_Store
+/other:bad
+backups/
+backups
 
 # Python cache folders
 */__pycache__/

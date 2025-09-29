@@ -7,13 +7,13 @@
       "default": true
     },
     {
-      "key": "PE",
-      "label": "PE",
+      "key": "Physical",
+      "label": "Physcial Exam",
       "file": "template_pe.json"
     },
     {
-      "key": "SUBJECTIVE",
-      "label": "SUBJECTIVE",
+      "key": "subjective",
+      "label": "subjective",
       "file": "template_subjective.json"
     }
   ],
