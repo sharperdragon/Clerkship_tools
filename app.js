@@ -1,6 +1,6 @@
 
 // ===== Cache config =====
-const APP_VERSION = "2025-09-29-k";          // bump to invalidate everything
+const APP_VERSION = "2025-09-29-m";          // bump to invalidate everything
 const CACHE_ENABLED = true;                   // master switch
 const CACHE_TTL_MS = 1000 * 60 * 60 * 24;     // 24h for templates
 const STATE_AUTOSAVE_MS = 500;               // debounce for state saves
@@ -1433,7 +1433,10 @@ function renderOutput(){
 
     const posParts = chipDs
       .filter(d => isPos(sec.chips?.[d.id]))
-      .map(d => formatChipForOutput(secKey, d.id, sec.chips[d.id]));
+      .map(d => {
+        const txt = formatChipForOutput(secKey, d.id, sec.chips[d.id]);
+        return state.mode === "ROS" ? `<span class="abn_out">${txt}</span>` : txt;
+      });
 
     // When there are positives, emit two sentences:
     //   1) Positives first (capitalize the first positive), ending with a period.
@@ -1903,7 +1906,10 @@ function buildSectionLines(secKey, mode, tpl){
 
     const posParts = _chips
       .filter(d => isPos(sec.chips?.[d.id]))
-      .map(d => formatChipForOutput(secKey, d.id, sec.chips[d.id]));
+      .map(d => {
+        const txt = formatChipForOutput(secKey, d.id, sec.chips[d.id]);
+        return mode === "ROS" ? `<span class="abn_out">${txt}</span>` : txt;
+      });
 
     if (posParts.length || negParts.length || cbParts.length){
       let linePlain = `${pd.title}: `;
@@ -2752,30 +2758,34 @@ function formatChipNegForOutput(secKey, id){
       '[data-neg="1"]'
     ];
 
-    for (const sel of negCandidates){
+    // Try each selector in order and activate the negative option if found
+    let acted = false;
+    for (const sel of negCandidates) {
       const el = chipRoot.querySelector(sel);
-      if (el) {
-        // Use click to trigger existing handlers
-        if (typeof el.click === 'function') el.click();
-        else {
-          el.dispatchEvent(new MouseEvent('click', { bubbles: true }));
-          el.dispatchEvent(new Event('change', { bubbles: true }));
-        }
-        return true;
+      if (!el) continue;
+      // Prefer native click() if available (covers buttons)
+      if (typeof el.click === 'function') {
+        el.click();
+        acted = true;
+        break;
       }
+      // Handle inputs directly by setting checked and dispatching change
+      if (el instanceof HTMLInputElement) {
+        if (el.type === 'checkbox' || el.type === 'radio') {
+          el.checked = true;
+          el.dispatchEvent(new Event('change', { bubbles: true }));
+          acted = true;
+          break;
+        }
+      }
+      // Fallback: synthesize a click via events
+      el.dispatchEvent(new MouseEvent('click', { bubbles: true }));
+      el.dispatchEvent(new Event('change', { bubbles: true }));
+      acted = true;
+      break;
     }
-
-    // Last resort: two radios [yes, no] → pick the last
-    const radios = chipRoot.querySelectorAll('input[type="radio"]');
-    if (radios && radios.length >= 2) {
-      const last = radios[radios.length - 1];
-      last.checked = true;
-      last.dispatchEvent(new Event('change', { bubbles: true }));
-      return true;
-    }
-
-    return false;
-  }
+    return acted;
+}
 
   // Apply defaults ONLY within the provided panel element
   function applyDefaultNegativesInPanel(panelEl){
@@ -2784,30 +2794,6 @@ function formatChipNegForOutput(secKey, id){
     defaults.forEach(id => setChipNegative(panelEl, id));
   }
 
-  // Build the inline button
-  function makeNegBtn(){
-    const btn = document.createElement('button');
-    btn.type = 'button';
-    btn.className = 'neg-df-btn';
-    btn.textContent = 'Default';
-    btn.title = 'Mark common ROS negatives for this panel';
-    btn.addEventListener('click', function(e){
-      e.stopPropagation();
-      const panel = btn.closest('.panel, .ros-panel, .cn-panel, .section');
-      if (panel) applyDefaultNegativesInPanel(panel);
-    });
-
-    // inline styles to avoid CSS file edits
-    btn.style.marginLeft = '60%';
-    btn.style.fontSize = '9px';
-    btn.style.lineHeight = '1.2';
-    btn.style.padding = '2px 6px';
-    btn.style.border = '1px solid var(--muted, #ccc)';
-    btn.style.borderRadius = '4px';
-    btn.style.background = 'var(--panel-btn-bg, #f5f5f5)';
-    btn.style.cursor = 'pointer';
-    return btn;
-  }
 
   // Insert a button inline with a header element if not already present
   function injectButtonNextToHeader(headerEl){
@@ -2883,6 +2869,7 @@ function formatChipNegForOutput(secKey, id){
     enableObserver();
   });
 })();
+
 /* ----------------------------------------------------
  * ROS: Inline "Default" button that actually works
  * with current DOM (chips rendered without IDs).
@@ -2933,24 +2920,6 @@ function formatChipNegForOutput(secKey, id){
       console.debug('[ROS NegBtn] map build failed:', e?.message || e);
     }
     return out;
-  }
-
-  function makeNegBtn(){
-    const b = document.createElement('button');
-    b.type = 'button';
-    b.className = 'neg-df-btn';
-    b.textContent = 'Default';
-    b.title = 'Mark common negatives for this panel';
-    // Minimal inline styles so you don’t need CSS edits
-    b.style.marginLeft = '8px';
-    b.style.fontSize = '11px';
-    b.style.lineHeight = '1.4';
-    b.style.padding = '2px 6px';
-    b.style.border = '1px solid var(--muted, #ccc)';
-    b.style.borderRadius = '4px';
-    b.style.background = 'var(--panel-btn-bg, #f5f5f5)';
-    b.style.cursor = 'pointer';
-    return b;
   }
 
   function injectBtnInto(panelEl){
@@ -3019,4 +2988,4 @@ function formatChipNegForOutput(secKey, id){
     setTimeout(()=>scanAndInject(document), 0);
     enableObserver();
   });
-})();
+})

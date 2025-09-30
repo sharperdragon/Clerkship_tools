@@ -200,7 +200,10 @@
   margin-bottom: 10px;
   background-color: var(--canvas);
 }
-
+.abn_out {
+    font-weight: 700;
+    color: darkred;
+}
 .appbar {
   background: #fff;
   border-bottom: 1px solid #dbe3ef;
