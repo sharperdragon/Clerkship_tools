@@ -208,17 +208,11 @@
 .tabs.tier1 {
   /* Stick Tier 1 directly under the app bar */
   position: sticky;
-  top: var(--appbar-h);
-  z-index: 5;
   min-height: var(--tier1-h);
   background: #eef2f7;
 }
 
 .tabs.tier2 {
-  /* Stick Tier 2 under Tier 1 */
-  position: sticky;
-  top: calc(var(--appbar-h) + var(--tier1-h));
-  z-index: 4;
   min-height: var(--tier2-h);
   background: #f6f8fb;
   overflow: auto;
@@ -855,3 +849,11 @@ span.section-head {
 
 .field-group { padding: 4px 0 8px; }
 .field-group + .field-group { margin-top: 8px; }
+
+
+.tab_bar {
+  background-color: var(--canvas);
+  position: sticky; 
+  top: 33px;
+  z-index:5;
+}

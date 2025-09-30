@@ -196,8 +196,9 @@
   color: var(--chip-critical-text);
 }
 
-.tabs.tier1 {
+.tabs.tier2 {
   margin-bottom: 10px;
+  background-color: var(--canvas);
 }
 
 .appbar {

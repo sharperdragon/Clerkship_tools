@@ -1,100 +1,110 @@
 /* tabs_runtime.js
-   - Swaps HTML partials per tab
+   - Swaps HTML partials per tab (with #headerItems and #grid support)
    - Injects/removes tab-specific CSS + JS
-   - Binds inputs with [data-bind] to global App state (per-tab, per-patient)
-   - Preserves cached data and output generation via App.*
+   - Binds inputs ([data-bind]) in BOTH header bar and grid to global App state
+   - Case-insensitive tab keys with alias resolution
 */
 
 /* ===========================
    $ Config (edit these)
    =========================== */
-const CONTENT_SELECTOR = '#content';            // Where tab HTML is injected
-const TAB_BUTTONS_SELECTOR = '[data-tab]';      // Buttons: <button data-tab="ROS">ROS</button>
-const TAB_CSS_SLOT_ID = 'tab-css-slot';         // Optional debug slot for <link> (fallback: <head>)
-const TAB_JS_SLOT_ID  = 'tab-js-slot';          // Optional debug slot for <script> (fallback: <body>)
+// ! Hosts in the base shell (Writer_Base.html)
+const CONTENT_SELECTOR = '#content';        // where the tab's <main id="grid"> goes
+const HEADER_BAR_SELECTOR = '#headerItems'; // fixed header strip host (children only)
+
+// ! Tier-1 buttons (e.g., <button data-tab="PE">)
+const TAB_BUTTONS_SELECTOR = '[data-tab]';
+
+// ? Optional slots (just for organizing injected assets in DevTools)
+const TAB_CSS_SLOT_ID = 'tab-css-slot';
+const TAB_JS_SLOT_ID  = 'tab-js-slot';
+
+// ? Start tab + routing/cache knobs
 const DEFAULT_TAB = 'subjective';
 const ENABLE_HTML_CACHE = true;
 const ENABLE_HASH_ROUTING = true;
 
-// Define your tabs here (or load them from a manifest if you prefer)
+
 const TAB_DEFS = {
-  subjective: {
-    html: 'writer_tabs/subjective.html',
-    css:  ['writer_tabs/subjective.css'],
-    js:   ['writer_tabs/subjective.js']
-  },
-  ROS: {
-    html: 'writer_tabs/ROS.html',
-    css:  ['writer_tabs/ROS.css'],
-    js:   ['writer_tabs/ROS.js']
-  },
-  PE: {
-    html: 'writer_tabs/PE.html',
-    css:  ['writer_tabs/PE.css'],
-    js:   ['writer_tabs/PE.js']
-  },
-  MSE: {
-    html: 'writer_tabs/MSE.html',
-    css:  ['writer_tabs/MSE.css'],
-    js:   ['writer_tabs/MSE.js']
-  }
+  subjective: { html: 'writer_tabs/subjective.html', css: [], js: [] },
+  ROS:        { html: 'writer_tabs/ROS.html',        css: [], js: [] },
+  PE:         { html: 'writer_tabs/PE.html',   css: [], js: [] },
+  MSE:        { html: 'writer_tabs/MSE.html',        css: [], js: [] }
+};
+
+
+// Friendly labels (optional; used only for error messages)
+const TAB_LABELS = {
+  subjective: 'Subjective',
+  ros: 'ROS',
+  pe: 'Physical Exam',
+  mse: 'MSE'
+};
+
+// Allow button labels/keys to map to canonical keys (lowercase)
+const ALIASES = {
+  subjective: ['SUBJECTIVE', 'Subjective'],
+  ros:        ['ROS', 'Ros'],
+  pe:         ['PE', 'Pe', 'Physical', 'Physical Exam', 'Physcial'],
+  mse:        ['MSE', 'Mse']
 };
 
 /* ===========================
-   ? Integration contract
+   ? Integration contract (global core)
    ===========================
-
    We expect a global `window.App` with:
-     - App.currentPatientId (string)   // required for per-patient cache keys
-     - App.currentTab (string)         // managed by this file, but visible globally
-     - App.state : { [tabKey]: {...} } // in-memory state
-     - App.getTabState(tabKey)
-     - App.setTabState(tabKey, partialObj)  -> persists + calls App.rebuildOutput()
-     - App.loadTabState(tabKey)             -> loads from localStorage to App.state[tabKey]
-     - App.rebuildOutput()                  -> updates Output + Complete Note
-
-   If not present, we create a minimal shim so the UI works; override with your real core.
+     - App.currentPatientId, App.currentTab
+     - App.state, App.getTabState(tab), App.setTabState(tab, partial)
+     - App.loadTabState(tab), App.rebuildOutput()
+   If absent, we provide a minimal shim so the UI still functions.
 */
 (function ensureAppShim(){
   if (window.App) return;
-  // ! Minimal shim (replace with your existing core.js)
   const App = {
     currentPatientId: 'default',
     currentTab: null,
     state: Object.create(null),
-
     getTabState(tab){ return this.state[tab] || {}; },
     setTabState(tab, partial){
       const next = { ...(this.state[tab] || {}), ...partial };
       this.state[tab] = next;
       this._saveTab(tab);
-      try { this.rebuildOutput(); } catch(e){ /* no-op in shim */ }
+      try { this.rebuildOutput(); } catch(_) {}
     },
     loadTabState(tab){
-      const key = `nw.v2.tabState.${this.currentPatientId}.${tab}`;
-      try { this.state[tab] = JSON.parse(localStorage.getItem(key) || '{}'); }
+      const k = `nw.v2.tabState.${this.currentPatientId}.${tab}`;
+      try { this.state[tab] = JSON.parse(localStorage.getItem(k) || '{}'); }
       catch { this.state[tab] = {}; }
       return this.state[tab];
     },
     _saveTab(tab){
-      const key = `nw.v2.tabState.${this.currentPatientId}.${tab}`;
-      localStorage.setItem(key, JSON.stringify(this.state[tab] || {}));
+      const k = `nw.v2.tabState.${this.currentPatientId}.${tab}`;
+      localStorage.setItem(k, JSON.stringify(this.state[tab] || {}));
     },
-    rebuildOutput(){
-      // ! Implement in your real core: read App.state and update #out / #completeOutView
-      // console.warn('[tabs_runtime] App.rebuildOutput() shim – override in your core.');
-    }
+    rebuildOutput(){ /* override with your real builder */ }
   };
   window.App = App;
 })();
 
 /* ===========================
-   # Internals (no edits needed)
+   # Internals
    =========================== */
 let _currentAssets = { css: [], js: [] };
 let _currentTabKey = null;
 let _switchToken = 0;
 const _htmlCache = new Map();
+
+// Build a resolver map for aliases and case-insensitive keys
+const TAB_KEYS = new Map(); // lower -> canonical key in TAB_DEFS
+Object.keys(TAB_DEFS).forEach(k => TAB_KEYS.set(k.toLowerCase(), k));
+for (const [canon, list] of Object.entries(ALIASES)) {
+  const canonical = TAB_KEYS.get(canon.toLowerCase()) || canon.toLowerCase();
+  (list || []).forEach(alias => TAB_KEYS.set(String(alias).toLowerCase(), canonical));
+}
+function resolveTabKey(raw){
+  const key = String(raw || '').toLowerCase();
+  return TAB_KEYS.get(key) || null;
+}
 
 function $(sel){ return document.querySelector(sel); }
 function byId(id){ return document.getElementById(id); }
@@ -104,16 +114,24 @@ async function fetchText(url){
   if (!res.ok) throw new Error(`Failed to fetch ${url}: ${res.status}`);
   return res.text();
 }
-
-async function loadHTML(url){
-  if (ENABLE_HTML_CACHE && _htmlCache.has(url)) return _htmlCache.get(url);
-  const html = await fetchText(url);
-  if (ENABLE_HTML_CACHE) _htmlCache.set(url, html);
-  return html;
+async function loadHTMLWithFallback(htmlPath){
+  const paths = Array.isArray(htmlPath) ? htmlPath : [htmlPath];
+  const tried = [];
+  for (const p of paths){
+    try {
+      if (ENABLE_HTML_CACHE && _htmlCache.has(p)) return { html: _htmlCache.get(p), used: p };
+      const txt = await fetchText(p);
+      if (ENABLE_HTML_CACHE) _htmlCache.set(p, txt);
+      return { html: txt, used: p };
+    } catch (e) {
+      tried.push(`${p} (${e.message})`);
+    }
+  }
+  throw new Error(`Tried:\n- ${tried.join('\n- ')}`);
 }
 
 function unloadTabAssets(prevKey){
-  // Call optional per-tab cleanup
+  // Optional per-tab cleanup hook
   try {
     if (prevKey && window.__tabCleanup && typeof window.__tabCleanup[prevKey] === 'function') {
       window.__tabCleanup[prevKey]();
@@ -142,6 +160,7 @@ async function injectTabJS(tabKey, urls){
   if (!Array.isArray(urls) || !urls.length) return;
   const slot = byId(TAB_JS_SLOT_ID) || document.body;
   for (const src of urls){
+    /* eslint no-await-in-loop: "off" */
     await new Promise((resolve, reject) => {
       const s = document.createElement('script');
       s.src = src;
@@ -156,56 +175,59 @@ async function injectTabJS(tabKey, urls){
 }
 
 function markActiveButton(tabKey){
+  // Accept buttons with any case/alias
   document.querySelectorAll(TAB_BUTTONS_SELECTOR).forEach(btn => {
-    const on = btn.dataset.tab === tabKey;
+    const resolved = resolveTabKey(btn.dataset.tab);
+    const on = resolved === tabKey;
     btn.classList.toggle('active', on);
     btn.setAttribute('aria-current', on ? 'page' : 'false');
+    btn.setAttribute('aria-selected', on ? 'true' : 'false');
   });
 }
 
 /* ===================================
-   # Data-binding for tab HTML partials
-   ===================================
+   # Data-binding (header + grid)
+   =================================== */
+// Compat: allow data-field-id or name to act as data-bind
+function normalizeBindAttr(container) {
+  if (!container) return;
+  const els = container.querySelectorAll('input,select,textarea');
+  els.forEach(el => {
+    if (!el.dataset.bind) {
+      if (el.dataset.fieldId) el.dataset.bind = el.dataset.fieldId;
+      else if (el.name)       el.dataset.bind = el.name;
+    }
+  });
+}
 
-   Conventions in your tab partials:
-     - Use [data-bind="fieldId"] on <input>, <select>, <textarea>, etc.
-     - For checkboxes in a group, use the same data-bind and distinct values.
-     - For radios, use type="radio" with same name and data-bind=fieldId.
-
-   Behavior:
-     - On load, we read App.loadTabState(tabKey) and prefill elements.
-     - On user edits, we call App.setTabState(tabKey, { fieldId: value|array|boolean }).
-*/
-function bindInputsForTab(tabKey, container){
+function bindInputsIn(container, tabKey){
+  normalizeBindAttr(container);
+  if (!container) return;
   const state = App.loadTabState(tabKey);
 
-  // Prefill helpers
   const setValue = (el, val) => {
     if (el.type === 'checkbox'){
-      if (Array.isArray(val)) el.checked = val.includes(el.value);
+      const group = container.querySelectorAll(`[data-bind="${el.dataset.bind}"][type="checkbox"]`);
+      if (group.length > 1) el.checked = Array.isArray(val) && val.includes(el.value);
       else el.checked = !!val;
     } else if (el.type === 'radio'){
       el.checked = (el.value == val);
-    } else if (el.tagName === 'SELECT' && el.multiple && Array.isArray(val)){
-      Array.from(el.options).forEach(opt => { opt.selected = val.includes(opt.value); });
+    } else if (el.tagName === 'SELECT' && el.multiple){
+      if (Array.isArray(val)) Array.from(el.options).forEach(o => o.selected = val.includes(o.value));
     } else {
       el.value = (val ?? '');
     }
   };
-
   const getValue = (el) => {
     if (el.type === 'checkbox'){
-      // If other checkboxes share this data-bind, collect as array
       const group = container.querySelectorAll(`[data-bind="${el.dataset.bind}"][type="checkbox"]`);
-      if (group.length > 1){
-        return Array.from(group).filter(x => x.checked).map(x => x.value);
-      }
+      if (group.length > 1) return Array.from(group).filter(x=>x.checked).map(x=> x.value || '1');
       return !!el.checked;
     }
     if (el.type === 'radio'){
       const group = container.querySelectorAll(`[data-bind="${el.dataset.bind}"][type="radio"]`);
-      const checked = Array.from(group).find(x => x.checked);
-      return checked ? checked.value : null;
+      const checked = Array.from(group).find(x=>x.checked);
+      return checked ? (checked.value || '1') : null;
     }
     if (el.tagName === 'SELECT' && el.multiple){
       return Array.from(el.selectedOptions).map(o => o.value);
@@ -213,37 +235,80 @@ function bindInputsForTab(tabKey, container){
     return el.value;
   };
 
-  // Prefill from state
   const bindables = container.querySelectorAll('[data-bind]');
   bindables.forEach(el => {
-    // Tag the element (avoid repeated listeners)
     if (el.__nwBound) return;
     el.__nwBound = true;
 
-    // Prefill
     const key = el.dataset.bind;
     const val = state[key];
     if (val !== undefined) setValue(el, val);
 
-    // Listen for changes
-    const onEvt = (el.tagName === 'SELECT' || el.type === 'checkbox' || el.type === 'radio') ? 'change' : 'input';
-    el.addEventListener(onEvt, () => {
+    const evt = (el.tagName === 'SELECT' || el.type === 'checkbox' || el.type === 'radio') ? 'change' : 'input';
+    el.addEventListener(evt, () => {
       const updated = {};
       updated[key] = getValue(el);
       App.setTabState(tabKey, updated);
     });
   });
+}
 
-  // Initial rebuild so output reflects loaded state
-  try { App.rebuildOutput(); } catch(e){}
+/* ===================================
+   # Extract & mount headerItems + grid
+   =================================== */
+function extractFromHTML(html){
+  const tpl = document.createElement('template');
+  tpl.innerHTML = html;
+  const frag = tpl.content;
+
+  // Support either data-mount markers or IDs
+  const tabHeader = frag.querySelector('[data-mount="headerItems"]') || frag.querySelector('#headerItems') || null;
+  const tabGrid   = frag.querySelector('[data-mount="grid"]')        || frag.querySelector('#grid')        || null;
+
+  return { tabHeader, tabGrid };
+}
+
+function applyHeaderItems(tabHeaderEl){
+  const host = $(HEADER_BAR_SELECTOR);
+  if (!host) return;
+
+  if (tabHeaderEl){
+    host.innerHTML = '';
+    host.append(...Array.from(tabHeaderEl.childNodes)); // move children only
+    host.style.display = '';
+  } else {
+    host.innerHTML = '';
+    host.style.display = 'none';
+  }
+}
+
+function applyGrid(tabGridEl){
+  const contentHost = $(CONTENT_SELECTOR);
+  if (!contentHost){
+    console.error(`Missing content container: ${CONTENT_SELECTOR}`);
+    return;
+  }
+  contentHost.innerHTML = '';
+
+  if (tabGridEl){
+    contentHost.appendChild(tabGridEl); // mount the provided <main id="grid">
+  } else {
+    // Fallback to keep downstream code stable
+    const grid = document.createElement('main');
+    grid.id = 'grid';
+    grid.className = 'section-grid';
+    grid.setAttribute('aria-live','polite');
+    contentHost.appendChild(grid);
+  }
 }
 
 /* ===========================
    # Core: switch tab
    =========================== */
-async function switchTab(tabKey){
-  if (!TAB_DEFS[tabKey]) {
-    console.warn(`Unknown tab "${tabKey}"`);
+async function switchTab(rawKey){
+  const tabKey = resolveTabKey(rawKey);
+  if (!tabKey || !TAB_DEFS[tabKey]) {
+    console.warn(`Unknown tab "${rawKey}"`);
     return;
   }
   if (tabKey === _currentTabKey) return;
@@ -253,39 +318,54 @@ async function switchTab(tabKey){
   _currentTabKey = tabKey;
   App.currentTab = tabKey;
 
-  // Visual state quickly
+  // Update active button state early for responsiveness
   markActiveButton(tabKey);
 
-  // 1) Unload previous assets
+  // 1) Unload previous assets / run cleanup
   unloadTabAssets(prevKey);
 
-  // 2) Inject CSS for new tab
+  // 2) Inject CSS for new tab (reduce FOUC)
   try { injectTabCSS(tabKey, TAB_DEFS[tabKey].css); } catch(e){ console.warn(e); }
 
-  // 3) Load HTML partial
-  let html = '';
-  try { html = await loadHTML(TAB_DEFS[tabKey].html); }
-  catch(e){ html = `<section class="panel error"><h2>Load Error</h2><p>${e.message}</p></section>`; }
-
+  // 3) Load HTML partial with fallbacks and parse it
+  let html = '', usedPath = '';
+  try {
+    const res = await loadHTMLWithFallback(TAB_DEFS[tabKey].html);
+    html = res.html; usedPath = res.used;
+  } catch (e) {
+    const lbl = TAB_LABELS[tabKey] || tabKey;
+    const errPanel = `<section class="panel error"><h2>Couldn’t load ${lbl}</h2><p>${e.message}</p></section>`;
+    $(CONTENT_SELECTOR).innerHTML = errPanel;
+    console.warn(`[tabs_runtime] ${lbl} load failed: ${e.message}`);
+    return;
+  }
   if (token !== _switchToken) return; // stale
 
-  const container = $(CONTENT_SELECTOR);
-  if (!container){ console.error(`Missing content container: ${CONTENT_SELECTOR}`); return; }
+  const { tabHeader, tabGrid } = extractFromHTML(html);
 
-  container.innerHTML = html;
+  // 4) Mount header+grid into the base shell
+  applyHeaderItems(tabHeader);
+  applyGrid(tabGrid);
 
-  // 4) Bind inputs in the new content to App state
-  bindInputsForTab(tabKey, container);
-
-  // 5) Inject JS for new tab (sequential)
+  // 5) Inject per-tab JS (sequential)
   try { await injectTabJS(tabKey, TAB_DEFS[tabKey].js); }
   catch(e){ console.warn(e); }
 
-  // 6) Update URL hash (optional)
+  // 6) Bind inputs in BOTH header bar and grid to App state
+  bindInputsIn($(HEADER_BAR_SELECTOR), tabKey);
+  bindInputsIn($('#grid') || $(CONTENT_SELECTOR), tabKey);
+
+  // 7) Trigger output rebuild (global)
+  try { App.rebuildOutput(); } catch(_) {}
+
+  // 8) Update URL hash (optional)
   if (ENABLE_HASH_ROUTING){
     const nextHash = `#tab=${encodeURIComponent(tabKey)}`;
     if (location.hash !== nextHash) history.replaceState(null, '', nextHash);
   }
+
+  // Log which file was used (handy diagnostics)
+  // console.debug(`[tabs_runtime] Mounted "${tabKey}" from: ${usedPath}`);
 }
 
 /* ===========================
@@ -296,17 +376,20 @@ function initTabsRuntime(){
   document.addEventListener('click', (ev) => {
     const btn = ev.target.closest(TAB_BUTTONS_SELECTOR);
     if (!btn) return;
-    const key = btn.dataset.tab;
+    const key = resolveTabKey(btn.dataset.tab);
     if (key) switchTab(key);
   });
 
-  // Decide starting tab
-  let start = DEFAULT_TAB;
+  // Choose starting tab
+  let start = resolveTabKey(DEFAULT_TAB);
   if (ENABLE_HASH_ROUTING && /^#tab=/.test(location.hash)){
-    const key = decodeURIComponent(location.hash.slice(5));
-    if (TAB_DEFS[key]) start = key;
+    const keyFromHash = resolveTabKey(decodeURIComponent(location.hash.slice(5)));
+    if (keyFromHash) start = keyFromHash;
   }
-  if (!TAB_DEFS[start]) start = Object.keys(TAB_DEFS)[0] || null;
+  if (!start) {
+    const first = Object.keys(TAB_DEFS)[0] || null;
+    start = resolveTabKey(first);
+  }
 
   if (start) switchTab(start);
   else console.error('No tabs defined in TAB_DEFS.');
@@ -321,7 +404,7 @@ if (document.readyState === 'loading'){
 /* ===========================
    $ Per-tab optional hooks
    ===========================
-   In a tab JS file (e.g., tabs/ROS.js):
+   In a tab JS file (e.g., physical.js):
 
    (function(){
      // Set up listeners/observers unique to this tab
@@ -330,7 +413,7 @@ if (document.readyState === 'loading'){
 
      // Optional cleanup (called automatically on tab switch away)
      window.__tabCleanup = window.__tabCleanup || {};
-     window.__tabCleanup.ROS = () => {
+     window.__tabCleanup.pe = () => {
        document.removeEventListener('click', onClick);
        // disconnect observers, clear intervals, etc.
      };

@@ -1,7 +1,7 @@
 {
   "modes": ["PE"],
   "sectionsByMode": {
-    "PE": ["General"]
+    "PE": ["General", "MSK"]
   },
   "sectionDefs": {
     "PE:General": {
@@ -264,7 +264,55 @@
           "chips": []
         }
       ]
-    }
-  },
+    },
+    "PE:MSK": {
+      "headerItems": [
+        { "id": "vital_signs_text", "label": "Vital Signs", "type": "text", "placeholder": "BP/HR/RR/Temp/SpO2" },
+        { "id": "vs_reviewed", "label": "Vital signs reviewed", "type": "norm", "Text": "VS reviewed" },
+        { "id": "nursing_note", "label": "Nursing note reviewed", "type": "norm", "Text": "nursing notes reviewed" },
+        { "id": "chaperone", "label": "Chaperone present", "type": "norm", "Text": "chaperone present" }
+      ],
+      "panels": [
+        {
+          "title": "Upper",
+          "checkboxes": [
+            {"id":"pe_MSK_UE_ROM","label":"ROM", "type":"norm", "Text":"Full ROM in the UE"}
+          ],
+          "chips": [
+            {"id":"pe_const_acute_distress","label":"acute distress","type":"toggle","abnText":"acute distress","negText":"in no acute distress"}
+          ]
+        },
+        {
+          "title": "Upper Extremity",
+          "layout": {
+            "groups": [ { "from": 1, "to": 2, "cols": 2, "label": "Shoulder" } ]
+          },
+          "subsections": [
+            {
+              "title": "Head",
+              "checkboxes": [
+                {"id":"pe_head_normocephalic","label":"normocephalic", "type":"norm", "Text":"head is normocephalic"},
+                {"id":"pe_head_atraumatic","label":"atraumatic", "type":"norm", "Text":"head is atraumatic"}
+              ],
+              "chips": []
+            },
+            {
+              "title": "Right",
+              "checkboxes": [
+              ],
+              "chips": [
+              ]
+            },
+            {
+              "title": "Left",
+              "checkboxes": [
+              ],
+              "chips": [
+              ]
+            }
+          ]
+        }
+      ]
+    },
   "globals": {}
-}
+}}

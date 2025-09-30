@@ -1,6 +1,6 @@
 
 // ===== Cache config =====
-const APP_VERSION = "2025-09-29-k";          // bump to invalidate everything
+const APP_VERSION = "2025-09-24-r";          // bump to invalidate everything
 const CACHE_ENABLED = true;                   // master switch
 const CACHE_TTL_MS = 1000 * 60 * 60 * 24;     // 24h for templates
 const STATE_AUTOSAVE_MS = 500;               // debounce for state saves
@@ -13,7 +13,7 @@ const CK = {
   CURRENT:   `ct.patient.current.${APP_VERSION}`, // active patient id
 };
 
-const DEFAULT_MODE = "subjective";
+const DEFAULT_MODE = "SUBJECTIVE";
 const DEFAULT_COLUMNS = 3;
 
 // Sticky layout heights (JS-only; no CSS edits)
@@ -38,20 +38,20 @@ const CLASS_NORMAL   = "normal";   // applied when good/absent (left-click)
 
 // Map each mode to its own template file
 const MODE_FILES = {
-  subjective: "template_subjective.json",
+  SUBJECTIVE: "template_subjective.json",
   ROS: "template_ROS.json",
   PE:  "template_pe.json",
   MSE: "template_MSE.json",
 
 };
 // Explicit order for tabs (so ROS appears first regardless of key enumeration)
-const MODE_LIST = ["subjective", "ROS", "PE", "MSE"];
-const MODE_LABELS = { subjective: "Subjective", ROS: "ROS", PE: "Physical Exam", MSE: "MSE" };
-// subjective acuity toggle (defaults to Acute=true when undefined)
+const MODE_LIST = ["SUBJECTIVE", "ROS", "PE", "MSE"];
+const MODE_LABELS = { SUBJECTIVE: "Subjective", ROS: "ROS", PE: "Physical Exam", MSE: "MSE" };
+// Subjective acuity toggle (defaults to Acute=true when undefined)
 function isAcute(){ return state?.globals?.subjAcute !== false; }
 function setAcute(on){ state.globals.subjAcute = !!on; saveStateSoon(); }
 
-// --- subjective split (HPI | splitter | General) ---
+// --- Subjective split (HPI | splitter | General) ---
 function getSubjSplit(){
   const f = Number(state?.globals?.subjSplit);
   if (Number.isFinite(f)) return Math.min(0.75, Math.max(0.25, f)); // clamp 25–75%
@@ -324,7 +324,7 @@ function showFatal(msg){
   grid.appendChild(document.createTextNode("ERROR: " + msg));
   console.error("[NoteWriter]", msg);
 }
-function renderAll(){ renderTier1(); renderTier2(); renderHeaderChecks(); renderGrid(); renderOutput(); wireHeader(); applySticky(); }
+
 
 function renderTier1(){
   const wrap = document.getElementById("tier1");
@@ -368,7 +368,7 @@ function renderTier2(){
     const btn = document.createElement("button");
     btn.className = "tab" + (sec===state.activeSection ? " active" : "");
     btn.textContent = sec;
-    btn.onclick = ()=>{ state.activeSection = sec; ensureSectionState(); renderTier2(); renderHeaderChecks(); renderGrid(); renderOutput(); renderCompleteSoon(); applySticky();};
+    btn.onclick = ()=>{ state.activeSection = sec; ensureSectionState(); renderGrid(); renderOutput(); renderCompleteSoon(); };
     wrap.appendChild(btn);
   });
   applySticky();
@@ -415,8 +415,8 @@ function makeRow(extraClass){
 function renderHeaderChecks(){
   const host = document.getElementById("headerItems");
   host.innerHTML = "";
-  // Add an Acute / Non-acute toggle at the very top for subjective
-if (state.mode === "subjective") {
+  // Add an Acute / Non-acute toggle at the very top for Subjective
+if (state.mode === "SUBJECTIVE") {
   const acuteWrap = document.createElement("div");
   acuteWrap.className = "acute-toggle";
   acuteWrap.style.display = "inline-flex";
@@ -439,12 +439,12 @@ if (state.mode === "subjective") {
   const def = Templates.sectionDefs[`${state.mode}:${state.activeSection}`];
   if (!def) { host.style.display = "none"; return; }
 
-  // Collect headerItems: prefer current section; otherwise fall back to General (subjective)
+  // Collect headerItems: prefer current section; otherwise fall back to General (Subjective)
   // or merge headerItems across all sections for this mode.
   let items = Array.isArray(def.headerItems) ? def.headerItems.slice() : [];
 
-  // subjective: also allow items defined on General
-  if ((!items.length) && state.mode === "subjective") {
+  // Subjective: also allow items defined on General
+  if ((!items.length) && state.mode === "SUBJECTIVE") {
     const generalDef = Templates.sectionDefs[`${state.mode}:General`];
     if (generalDef?.headerItems?.length) items = generalDef.headerItems.slice();
   }
@@ -465,9 +465,9 @@ if (state.mode === "subjective") {
     items = merged;
   }
 
-  // Prefer the current section's def; for subjective, allow subj_header to come from General
+  // Prefer the current section's def; for Subjective, allow subj_header to come from General
   let headerDef = def;
-  if (state.mode === "subjective") {
+  if (state.mode === "SUBJECTIVE") {
     const generalKey = `${state.mode}:General`;
     if (Templates.sectionDefs[generalKey]) headerDef = Templates.sectionDefs[generalKey];
   }
@@ -532,11 +532,11 @@ if (state.mode === "subjective") {
     }
   }
 
-  // Render subjective header fields (Visit Note, Chief Complaint) stacked
+  // Render Subjective header fields (Visit Note, Chief Complaint) stacked
   if (hasHeaderFields){
     try {
       const wrapFields = makeRow("header-fields");
-      const headerSec = getSecFor('subjective', 'General');
+      const headerSec = getSecFor('SUBJECTIVE', 'General');
       (headerPanel.fields || []).forEach(f => {
         const val = headerSec.fields?.[f.id];
         const onChange = (v) => {
@@ -562,726 +562,9 @@ if (state.mode === "subjective") {
     }
   }
 
-  // --- Insert ROS Defaults controls: Fill and Clear ---
-  // Always show in ROS mode, after header items/fields, before applySticky.
-  if (state.mode === "ROS") {
-    // ROS Defaults controls: Fill and Clear
-    const btnWrap = document.createElement("div");
-    btnWrap.className = "ros-defaults-controls";
-    btnWrap.style.display = "inline-flex";
-    btnWrap.style.gap = "6px";
-    btnWrap.style.marginLeft = "8px";
-
-    const fillBtn = document.createElement("button");
-    fillBtn.type = "button";
-    fillBtn.textContent = "Fill Defaults";
-    fillBtn.className = "btn-mini";
-    fillBtn.onclick = () => {
-      try {
-        const def = Templates.sectionDefs["ROS:General"];
-        const negList = (def && def.defaults && Array.isArray(def.defaults.negChips)) ? def.defaults.negChips : [];
-        if (negList.length) {
-          const sec = getSecFor("ROS", state.activeSection);
-          sec.chips = sec.chips || {};
-          negList.forEach(id => { sec.chips[id] = "neg"; });
-          saveStateSoon();
-          renderGrid();
-          renderOutput();
-          renderCompleteSoon();
-        }
-      } catch(e) { console.warn("[ROS Fill Defaults] failed", e); }
-    };
-    btnWrap.appendChild(fillBtn);
-
-    const clearBtn = document.createElement("button");
-    clearBtn.type = "button";
-    clearBtn.textContent = "Clear Defaults";
-    clearBtn.className = "btn-mini";
-    clearBtn.onclick = () => {
-      try {
-        const def = Templates.sectionDefs["ROS:General"];
-        const negList = (def && def.defaults && Array.isArray(def.defaults.negChips)) ? def.defaults.negChips : [];
-        if (negList.length) {
-          const sec = getSecFor("ROS", state.activeSection);
-          sec.chips = sec.chips || {};
-          negList.forEach(id => {
-            if (sec.chips[id] === "neg") delete sec.chips[id];
-          });
-          saveStateSoon();
-          renderGrid();
-          renderOutput();
-          renderCompleteSoon();
-        }
-      } catch(e) { console.warn("[ROS Clear Defaults] failed", e); }
-    };
-    btnWrap.appendChild(clearBtn);
-
-    host.appendChild(btnWrap);
-  }
-
   applySticky();
 }
 
-
-function renderGrid(){
-  const grid = document.getElementById("grid");
-  grid.innerHTML = "";
-  // Update grid class to include current mode
-  grid.className = "section-grid " + state.mode;
-  const def = Templates.sectionDefs[`${state.mode}:${state.activeSection}`];
-  if(!def){ grid.textContent = "No schema yet."; return; }
-
-  // Dynamic resizable layout for subjective (HPI | splitter | General)
-  if (state.mode === "subjective") {
-    const panels = (def.panels || []).filter(p => p && p.id !== 'subj_header');
-
-    // Identify HPI (by title) and a "General History" partner (fallback to first non-HPI)
-    const hpi = panels.find(p => p.title === "History of Present Illness");
-    let gen = panels.find(p => p.title === "General History") || panels.find(p => p !== hpi);
-
-    // If Non-acute, HPI is hidden elsewhere; do not build split UI
-    const canSplit = !!(isAcute() && hpi && gen);
-
-    if (canSplit) {
-      grid.style.display = "grid";
-      grid.style.gridTemplateColumns = _subjGridTemplateFromSplit(getSubjSplit());
-      grid.style.gap = "8px";
-      // flag so we know to inject splitter and short-circuit normal panel loop
-      grid.dataset.subjSplit = "1";
-    } else {
-      grid.style.display = "";
-      grid.style.gridTemplateColumns = "";
-      grid.style.gap = "";
-      grid.dataset.subjSplit = "";
-    }
-  } else {
-    grid.style.display = "";
-    grid.style.gridTemplateColumns = "";
-    grid.style.gap = "";
-    grid.dataset.subjSplit = "";
-  }
-
-  // --- Special subjective splitter row (HPI | splitter | General) ---
-  if (state.mode === "subjective" && grid.dataset.subjSplit === "1") {
-    const panels = (def.panels || []).filter(p => p && p.id !== 'subj_header');
-    const hpi = panels.find(p => p.title === "History of Present Illness");
-    const gen = panels.find(p => p.title === "General History") || panels.find(p => p !== hpi);
-
-    // Helper to render a single panel's content into a given host element
-    const renderOne = (pd, host) => {
-      if (pd.groupLabel){
-        const h = document.createElement("div");
-        h.className = "subhead";
-        h.textContent = pd.groupLabel;
-        host.appendChild(h);
-      }
-      if (pd.type === "matrix") {
-        host.appendChild(renderMatrixPanel(pd));
-        return;
-      }
-      if (pd.subsections && pd.subsections.length){
-        pd.subsections.forEach(ss=>{
-          const sh = document.createElement("div");
-          sh.className = "subhead";
-          sh.textContent = ss.title;
-          host.appendChild(sh);
-          if (ss.checkboxes?.length){
-            const rr = makeRow();
-            ss.checkboxes.forEach(c=>{
-              rr.appendChild(cb(c.id, c.label, !!getSec().checkboxes?.[c.id], v=>{ setCB(c.id, v); renderOutput(); }));
-            });
-            host.appendChild(rr);
-          }
-          if (ss.chips?.length){
-            const rr = makeRow();
-            if (ss.layout?.chipCols) rr.classList.add(`cols-${ss.layout.chipCols}`);
-            ss.chips.forEach(ch=>{
-              const value = getSec().chips?.[ch.id] || 0;
-              rr.appendChild(chip(ch, value, (evt)=>handleChipMouse(evt, ch.id)));
-            });
-            host.appendChild(rr);
-          }
-        });
-      }
-      if (pd.fields?.length){
-        pd.fields.forEach(f => {
-          if (!shouldShowField(f)) return;
-
-          // NEW: grouped subsection field (type: "group")
-          if (f.type === "group") {
-            // One row that contains: [label] [group body]
-            const rowGroup = makeRow();
-            if (f.label) {
-              const span = document.createElement("span");
-              span.className = "field-label";
-              span.style.display = "block";
-              span.style.marginBottom = "0px";
-              span.textContent = f.label;
-              rowGroup.appendChild(span);
-            }
-
-            // Group body that holds all child fields
-            const body = document.createElement("div");
-            body.className = "field-group";
-
-            const inlineFlow = !!(f.layout && f.layout.flow === "inline");
-            if (inlineFlow) {
-              body.style.display = "inline-flex";
-              body.style.flexWrap = "wrap";
-              body.style.alignItems = "center";
-              body.style.gap = "8px 12px";
-            }
-
-            // Helper to render one field (boolean/range/text) honoring ui.inline
-            const renderFieldEl = (def) => {
-              const val = getField(def.id);
-              if (def.type === "boolean") {
-                return fieldBoolean(
-                  def.id,
-                  def.label,
-                  typeof val === "boolean" ? val : false,
-                  (v) => { setField(def.id, v); renderGrid(); renderOutput(); renderCompleteSoon(); },
-                  def.ui || {}
-                );
-              } else if (def.type === "range") {
-                const stacked = (state.mode === "subjective") && !(def.ui && def.ui.inline === true);
-                return fieldRange(
-                  def.id, def.label, val,
-                  (v) => { setField(def.id, v); renderOutput(); renderCompleteSoon(); },
-                  def.min, def.max, def.step,
-                  /*stacked*/ stacked
-                );
-              } else {
-                const stacked = (state.mode === "subjective") && !(def.ui && def.ui.inline === true);
-                const el = fieldText(
-                  def.id, def.label, val,
-                  (v) => { setField(def.id, v); renderOutput(); renderCompleteSoon(); },
-                  def.placeholder,
-                  /*stacked*/ stacked
-                );
-                if (Array.isArray(def.checkboxes) && def.checkboxes.length){
-                  const checkRow = document.createElement("div");
-                  checkRow.className = "mini-checks";
-                  def.checkboxes.forEach(c => {
-                    checkRow.appendChild(
-                      cb(c.id, c.label, !!getSec().checkboxes?.[c.id], v => { setCB(c.id, v); renderOutput(); })
-                    );
-                  });
-                  const last = el.lastChild; // input/textarea
-                  el.insertBefore(checkRow, last);
-                }
-                return el;
-              }
-            };
-
-            // Render immediate fields and their children (children default showIf to the parent)
-            (f.fields || []).forEach(cf => {
-              if (!shouldShowField(cf)) return;
-
-              const parentEl = renderFieldEl(cf);
-              body.appendChild(parentEl);
-
-              const kids = Array.isArray(cf.children) ? cf.children : [];
-              kids.forEach(k => {
-                const childDef = { ...k };
-                if (!childDef.showIf) childDef.showIf = { field: cf.id, equals: true };
-                if (!shouldShowField(childDef)) return;
-                body.appendChild(renderFieldEl(childDef));
-              });
-            });
-
-            rowGroup.appendChild(body);
-            host.appendChild(rowGroup);
-            return; // handled group
-          }
-
-          // Normal (non-group) fields
-          const r = makeRow();
-          const val = getField(f.id);
-
-          if (f.type === "boolean") {
-            r.appendChild(
-              fieldBoolean(
-                f.id,
-                f.label,
-                typeof val === "boolean" ? val : false,
-                (v) => { setField(f.id, v); renderGrid(); renderOutput(); renderCompleteSoon(); },
-                f.ui || {}
-              )
-            );
-          } else if (f.type === "range") {
-            const stacked = (state.mode === "subjective") && !(f.ui && f.ui.inline === true);
-            r.appendChild(
-              fieldRange(
-                f.id,
-                f.label,
-                val,
-                (v) => { setField(f.id, v); renderOutput(); renderCompleteSoon(); },
-                f.min,
-                f.max,
-                f.step,
-                /*stacked*/ stacked
-              )
-            );
-          } else {
-            const stacked = (state.mode === "subjective") && !(f.ui && f.ui.inline === true);
-            const elem = fieldText(
-              f.id,
-              f.label,
-              val,
-              (v) => { setField(f.id, v); renderOutput(); renderCompleteSoon(); },
-              f.placeholder,
-              /*stacked*/ stacked
-            );
-
-            // Insert small checkboxes under the label, before the input
-            if (Array.isArray(f.checkboxes) && f.checkboxes.length){
-              const checkRow = document.createElement("div");
-              checkRow.className = "mini-checks";
-              f.checkboxes.forEach(c => {
-                checkRow.appendChild(
-                  cb(c.id, c.label, !!getSec().checkboxes?.[c.id], v => { setCB(c.id, v); renderOutput(); })
-                );
-              });
-              const last = elem.lastChild; // the input/textarea
-              elem.insertBefore(checkRow, last);
-            }
-
-            r.appendChild(elem);
-          }
-          host.appendChild(r);
-        });
-      }
-      if (pd.checkboxes?.length){
-        const r = makeRow();
-        pd.checkboxes.forEach(c=> r.appendChild(cb(c.id,c.label,!!getSec().checkboxes?.[c.id], v=>{ setCB(c.id,v); renderOutput(); })));
-        host.appendChild(r);
-      }
-      if (pd.chips?.length){
-        const r = makeRow();
-        pd.chips.forEach(ch=>{
-          const value = getSec().chips?.[ch.id] || 0;
-          r.appendChild(chip(ch, value, (evt)=>handleChipMouse(evt, ch.id)));
-        });
-        host.appendChild(r);
-      }
-    };
-
-    // Build left panel (HPI)
-    const leftPanelEl = panel(hpi.title);
-    leftPanelEl.style.gridColumn = "1 / 2";
-    renderOne(hpi, leftPanelEl);
-
-    // Build right panel (General)
-    const rightPanelEl = panel(gen.title);
-    rightPanelEl.style.gridColumn = "3 / 4";
-    renderOne(gen, rightPanelEl);
-
-    // Build the vertical splitter (horizontal width resize)
-    const splitter = document.createElement("div");
-    splitter.className = "subj-splitter";
-    splitter.style.gridColumn = "2 / 3";
-    splitter.style.cursor = "col-resize";
-    splitter.style.background = "var(--divider, rgba(0,0,0,0.06))";
-    splitter.style.width = "6px";
-    splitter.style.userSelect = "none";
-
-    grid.append(leftPanelEl, splitter, rightPanelEl);
-
-    // Wire drag for horizontal width only
-    (function(){
-      let dragging = false;
-      let gridRect = null;
-
-      const onDown = (e)=>{
-        dragging = true;
-        gridRect = grid.getBoundingClientRect();
-        document.body.style.cursor = "col-resize";
-        e.preventDefault();
-      };
-      const onMove = (e)=>{
-        if (!dragging || !gridRect) return;
-        const x = e.clientX;
-        const rel = (x - gridRect.left) / gridRect.width; // 0..1
-        setSubjSplit(rel);
-        grid.style.gridTemplateColumns = _subjGridTemplateFromSplit(getSubjSplit());
-      };
-      const onUp = ()=>{
-        if (!dragging) return;
-        dragging = false;
-        gridRect = null;
-        document.body.style.cursor = "";
-      };
-
-      splitter.addEventListener("mousedown", onDown);
-      window.addEventListener("mousemove", onMove);
-      window.addEventListener("mouseup", onUp);
-    })();
-
-    // Since we fully rendered the split layout, skip the normal panels loop
-    return;
-  }
-
-  if (def.headerToggles?.length){
-    const p = panel("Options");
-    p.classList.add("options"); // style Options panel like Epic header tray
-    const row = makeRow();
-    def.headerToggles.forEach(t=>{
-      row.appendChild(cb(t.id, t.label, !!getSec().checkboxes?.[t.id], v=>{ setCB(t.id,v); renderOutput(); }));
-    });
-    p.appendChild(row); grid.appendChild(p);
-  }
-  // panels
-  (def.panels||[]).forEach(pd=>{
-    // Skip subjective header fields panel; rendered up top in headerItems area
-    if (pd.id === 'subj_header') { return; }
-    // Hide the HPI panel in Non-acute subjective mode
-    if (state.mode === "subjective" && !isAcute() && pd.title === "History of Present Illness") {
-      return; // skip rendering this panel entirely
-    }
-    const p = panel(pd.title);
-    if (pd.groupLabel){
-      const h = document.createElement("div");
-      h.className = "subhead";
-      h.textContent = pd.groupLabel;
-      p.appendChild(h);
-    }
-    // matrix panel support
-    if (pd.type === "matrix") { 
-      grid.appendChild(renderMatrixPanel(pd)); 
-      return; 
-    }
-    // subsections support (e.g., HENT with Head / Ears / Nose / Mouth/Throat)
-    if (pd.subsections && pd.subsections.length){
-      // 1) Grouped rendering (e.g., HENT Ears: Right | Left)
-      if (pd.layout?.groups?.length){
-        const rendered = new Set();
-
-        pd.layout.groups.forEach(g => {
-          if (g.label){
-            const gh = document.createElement("div");
-            gh.className = "subhead group-head";
-            gh.textContent = g.label;
-            p.appendChild(gh);
-          }
-          const sg = document.createElement("div");
-          sg.className = `subgrid cols-${g.cols || 2}`;
-
-          for (let i = g.from; i <= g.to && i < pd.subsections.length; i++){
-            rendered.add(i);
-            const ss = pd.subsections[i];
-
-            const box = document.createElement("div");
-            box.className = "subpanel";
-
-            const sh = document.createElement("div");
-            sh.className = "subhead";
-            sh.textContent = ss.title;
-            box.appendChild(sh);
-
-            if (ss.checkboxes?.length){
-              const rr = makeRow();
-              ss.checkboxes.forEach(c=>{
-                rr.appendChild(cb(c.id, c.label, !!getSec().checkboxes?.[c.id], v=>{ setCB(c.id, v); renderOutput(); }));
-              });
-              box.appendChild(rr);
-            }
-            if (ss.chips?.length){
-              const rr = makeRow();
-              if (ss.layout?.chipCols) rr.classList.add(`cols-${ss.layout.chipCols}`);
-              ss.chips.forEach(ch=>{
-                const value = getSec().chips?.[ch.id] || 0;
-                rr.appendChild(chip(ch, value, (evt)=>handleChipMouse(evt, ch.id)));
-              });
-              box.appendChild(rr);
-            }
-
-            sg.appendChild(box);
-          }
-          p.appendChild(sg);
-        });
-
-        // Render remaining subsections (not in any group)
-        pd.subsections.forEach((ss, idx)=>{
-          if (rendered.has(idx)) return;
-          const sh = document.createElement("div");
-          sh.className = "subhead";
-          sh.textContent = ss.title;
-          p.appendChild(sh);
-
-          if (ss.checkboxes?.length){
-            const rr = makeRow();
-            ss.checkboxes.forEach(c=>{
-              rr.appendChild(cb(c.id, c.label, !!getSec().checkboxes?.[c.id], v=>{ setCB(c.id, v); renderOutput(); }));
-            });
-            p.appendChild(rr);
-          }
-          if (ss.chips?.length){
-            const rr = makeRow();
-            if (ss.layout?.chipCols) rr.classList.add(`cols-${ss.layout.chipCols}`);
-            ss.chips.forEach(ch=>{
-              const value = getSec().chips?.[ch.id] || 0;
-              rr.appendChild(chip(ch, value, (evt)=>handleChipMouse(evt, ch.id)));
-            });
-            p.appendChild(rr);
-          }
-        });
-
-        grid.appendChild(p);
-        return; // handled this panel via groups
-      }
-
-      // 2) Legacy subgrid hint (Cardio: Rate | Rhythm)
-      const useGrid = pd.layout && pd.layout.gridCols;
-      const cut = typeof pd.layout?.gridUntilIndex === "number" ? pd.layout.gridUntilIndex : -1;
-
-      if (useGrid && cut >= 0) {
-        const subgrid = document.createElement("div");
-        subgrid.className = `subgrid cols-${pd.layout.gridCols}`;
-
-        for (let i = 0; i <= cut && i < pd.subsections.length; i++){
-          const ss = pd.subsections[i];
-          const box = document.createElement("div");
-          box.className = "subpanel";
-
-          const sh = document.createElement("div");
-          sh.className = "subhead";
-          sh.textContent = ss.title;
-          box.appendChild(sh);
-
-          if (ss.checkboxes?.length){
-            const rr = makeRow();
-            ss.checkboxes.forEach(c=>{
-              rr.appendChild(cb(c.id, c.label, !!getSec().checkboxes?.[c.id], v=>{ setCB(c.id, v); renderOutput(); }));
-            });
-            box.appendChild(rr);
-          }
-          if (ss.chips?.length){
-            const rr = makeRow();
-            ss.chips.forEach(ch=>{
-              const value = getSec().chips?.[ch.id] || 0;
-              rr.appendChild(chip(ch, value, (evt)=>handleChipMouse(evt, ch.id)));
-            });
-            box.appendChild(rr);
-          }
-          subgrid.appendChild(box);
-        }
-        p.appendChild(subgrid);
-
-        for (let i = cut + 1; i < pd.subsections.length; i++){
-          const ss = pd.subsections[i];
-          const sh = document.createElement("div");
-          sh.className = "subhead";
-          sh.textContent = ss.title;
-          p.appendChild(sh);
-
-          if (ss.checkboxes?.length){
-            const rr = makeRow();
-            ss.checkboxes.forEach(c=>{
-              rr.appendChild(cb(c.id, c.label, !!getSec().checkboxes?.[c.id], v=>{ setCB(c.id, v); renderOutput(); }));
-            });
-            p.appendChild(rr);
-          }
-          if (ss.chips?.length){
-            const rr = makeRow();
-            ss.chips.forEach(ch=>{
-              const value = getSec().chips?.[ch.id] || 0;
-              rr.appendChild(chip(ch, value, (evt)=>handleChipMouse(evt, ch.id)));
-            });
-            p.appendChild(rr);
-          }
-        }
-        grid.appendChild(p);
-        return; // done with this panel
-      }
-
-      // 3) Fallback: stacked subsections
-      pd.subsections.forEach(ss=>{
-        const sh = document.createElement("div");
-        sh.className = "subhead";
-        sh.textContent = ss.title;
-        p.appendChild(sh);
-        if (ss.checkboxes?.length){
-          const rr = makeRow();
-          ss.checkboxes.forEach(c=>{
-            rr.appendChild(cb(c.id, c.label, !!getSec().checkboxes?.[c.id], v=>{ setCB(c.id, v); renderOutput(); }));
-          });
-          p.appendChild(rr);
-        }
-        if (ss.chips?.length){
-          const rr = makeRow();
-          if (ss.layout?.chipCols) rr.classList.add(`cols-${ss.layout.chipCols}`);
-          ss.chips.forEach(ch=>{
-            const value = getSec().chips?.[ch.id] || 0;
-            rr.appendChild(chip(ch, value, (evt)=>handleChipMouse(evt, ch.id)));
-          });
-          p.appendChild(rr);
-        }
-      });
-      grid.appendChild(p);
-      return; // skip the normal checkboxes/chips path for this panel
-    }
-    if (pd.fields?.length){
-      pd.fields.forEach(f => {
-        if (!shouldShowField(f)) return;
-
-        // NEW: grouped subsection field (type: "group")
-        if (f.type === "group") {
-          // One row that contains: [label] [group body]
-          const rowGroup = makeRow();
-          if (f.label) {
-            const span = document.createElement("span");
-            span.className = "field-label";
-            span.style.display = "block";
-            span.style.marginBottom = "0px";
-            span.textContent = f.label;
-            rowGroup.appendChild(span);
-          }
-
-          const body = document.createElement("div");
-          body.className = "field-group";
-
-          const inlineFlow = !!(f.layout && f.layout.flow === "inline");
-          if (inlineFlow) {
-            body.style.display = "inline-flex";
-            body.style.flexWrap = "wrap";
-            body.style.alignItems = "center";
-            body.style.gap = "8px 12px";
-          }
-
-          const renderFieldEl = (def) => {
-            const val = getField(def.id);
-            if (def.type === "boolean") {
-              return fieldBoolean(
-                def.id, def.label,
-                typeof val === "boolean" ? val : false,
-                (v) => { setField(def.id, v); renderGrid(); renderOutput(); renderCompleteSoon(); },
-                def.ui || {}
-              );
-            } else if (def.type === "range") {
-              const stacked = (state.mode === "subjective") && !(def.ui && def.ui.inline === true);
-              return fieldRange(
-                def.id, def.label, val,
-                (v) => { setField(def.id, v); renderOutput(); renderCompleteSoon(); },
-                def.min, def.max, def.step,
-                /*stacked*/ stacked
-              );
-            } else {
-              const stacked = (state.mode === "subjective") && !(def.ui && def.ui.inline === true);
-              const el = fieldText(
-                def.id, def.label, val,
-                (v) => { setField(def.id, v); renderOutput(); renderCompleteSoon(); },
-                def.placeholder,
-                /*stacked*/ stacked
-              );
-              if (Array.isArray(def.checkboxes) && def.checkboxes.length){
-                const checkRow = document.createElement("div");
-                checkRow.className = "mini-checks";
-                def.checkboxes.forEach(c => {
-                  checkRow.appendChild(
-                    cb(c.id, c.label, !!getSec().checkboxes?.[c.id], v => { setCB(c.id, v); renderOutput(); })
-                  );
-                });
-                const last = el.lastChild;
-                el.insertBefore(checkRow, last);
-              }
-              return el;
-            }
-          };
-
-          (f.fields || []).forEach(cf => {
-            if (!shouldShowField(cf)) return;
-            const parentEl = renderFieldEl(cf);
-            body.appendChild(parentEl);
-
-            const kids = Array.isArray(cf.children) ? cf.children : [];
-            kids.forEach(k => {
-              const childDef = { ...k };
-              if (!childDef.showIf) childDef.showIf = { field: cf.id, equals: true };
-              if (!shouldShowField(childDef)) return;
-              body.appendChild(renderFieldEl(childDef));
-            });
-          });
-
-          rowGroup.appendChild(body);
-          p.appendChild(rowGroup);
-          return; // handled group
-        }
-
-        // Normal (non-group) fields
-        const r = makeRow();
-        const val = getField(f.id);
-
-        if (f.type === "boolean") {
-          r.appendChild(
-            fieldBoolean(
-              f.id,
-              f.label,
-              typeof val === "boolean" ? val : false,
-              (v) => { setField(f.id, v); renderGrid(); renderOutput(); renderCompleteSoon(); },
-              f.ui || {}
-            )
-          );
-        } else if (f.type === "range") {
-          const stacked = (state.mode === "subjective") && !(f.ui && f.ui.inline === true);
-          r.appendChild(
-            fieldRange(
-              f.id,
-              f.label,
-              val,
-              (v) => { setField(f.id, v); renderOutput(); renderCompleteSoon(); },
-              f.min, f.max, f.step,
-              /*stacked*/ stacked
-            )
-          );
-        } else {
-          const stacked = (state.mode === "subjective") && !(f.ui && f.ui.inline === true);
-          const elem = fieldText(
-            f.id,
-            f.label,
-            val,
-            (v) => { setField(f.id, v); renderOutput(); renderCompleteSoon(); },
-            f.placeholder,
-            /*stacked*/ stacked
-          );
-
-          if (Array.isArray(f.checkboxes) && f.checkboxes.length){
-            const checkRow = document.createElement("div");
-            checkRow.className = "mini-checks";
-            f.checkboxes.forEach(c => {
-              checkRow.appendChild(
-                cb(c.id, c.label, !!getSec().checkboxes?.[c.id], v => { setCB(c.id, v); renderOutput(); })
-              );
-            });
-            const last = elem.lastChild;
-            elem.insertBefore(checkRow, last);
-          }
-
-          r.appendChild(elem);
-        }
-
-        p.appendChild(r);
-      });
-    }
-    if (pd.checkboxes?.length){
-      const r = makeRow();
-      pd.checkboxes.forEach(c=> r.appendChild(cb(c.id,c.label,!!getSec().checkboxes?.[c.id], v=>{ setCB(c.id,v); renderOutput(); })));
-      p.appendChild(r);
-    }
-    if (pd.chips?.length){
-      const r = makeRow();
-      pd.chips.forEach(ch=>{
-        const value = getSec().chips?.[ch.id] || 0; // 0 | 'neg' | {state:'pos', ...}
-        r.appendChild(
-          chip(ch, value, (evt)=>handleChipMouse(evt, ch.id))
-        );
-      });
-      p.appendChild(r);
-    }
-    grid.appendChild(p);
-  });
-  
-}
 
 
 
@@ -1300,9 +583,9 @@ function renderOutput(){
 
   // Header items (text + checks) with robust fallback sourcing
   (function(){
-    // collect items from active section, then subjective:General, then merge across mode
+    // collect items from active section, then SUBJECTIVE:General, then merge across mode
     let items = Array.isArray(def.headerItems) ? def.headerItems.slice() : [];
-    if ((!items.length) && state.mode === "subjective") {
+    if ((!items.length) && state.mode === "SUBJECTIVE") {
       const generalDef = Templates.sectionDefs[`${state.mode}:General`];
       if (generalDef?.headerItems?.length) items = generalDef.headerItems.slice();
     }
@@ -1361,9 +644,9 @@ function renderOutput(){
     const cbIds  = _cbs.map(c => c.id);
     const chipDs = _chips;
 
-    // subjective panels: only emit visible text fields with content.
+    // Subjective panels: only emit visible text fields with content.
     // Skip boolean flag fields entirely (they just gate visibility).
-    if (state.mode === "subjective" && pd.fields?.length){
+    if (state.mode === "SUBJECTIVE" && pd.fields?.length){
       // Skip HPI emission when Non-acute
       if (!isAcute() && pd.title === "History of Present Illness") {
         return; // continue to next panel
@@ -1476,8 +759,8 @@ function renderOutput(){
     }
   });
 
-  // Fallback: if subjective produced no lines, sweep all visible text fields
-  if (state.mode === "subjective" && lines.length === 0) {
+  // Fallback: if Subjective produced no lines, sweep all visible text fields
+  if (state.mode === "SUBJECTIVE" && lines.length === 0) {
     const def2 = Templates.sectionDefs[`${state.mode}:${state.activeSection}`];
     (def2?.panels || []).forEach(pd => {
       (pd.fields || []).forEach(f => {
@@ -1490,8 +773,8 @@ function renderOutput(){
     });
   }
 
-  if (state.mode === "subjective") {
-    console.debug('[subjective][renderOutput] lines:', lines.length, lines);
+  if (state.mode === "SUBJECTIVE") {
+    console.debug('[Subjective][renderOutput] lines:', lines.length, lines);
   }
 
   if (ta) ta.value = lines.join("\n");
@@ -1701,7 +984,7 @@ function applyCbSelectedClass(wrapperLabel, inputEl){
 
 function cb(id,label,checked,on){
   const w = document.createElement("label");
-  w.className = "cb" + (state && state.mode === "subjective" ? " subjective" : "");
+  w.className = "cb" + (state && state.mode === "SUBJECTIVE" ? " subjective" : "");
   const i=document.createElement("input"); 
   i.type="checkbox"; 
   i.checked=checked;
@@ -1772,10 +1055,10 @@ function buildSectionLines(secKey, mode, tpl){
 
   // Header items (text + checks) with robust fallback sourcing
   (function(){
-    // Skip subjective:General headerItems if already emitted above subjective
-    if (mode === "subjective" && /(^|:)General$/.test(secKey) && state.globals && state.globals._emittedSubjHeaderOnce) return;
+    // Skip Subjective:General headerItems if already emitted above Subjective
+    if (mode === "SUBJECTIVE" && /(^|:)General$/.test(secKey) && state.globals && state.globals._emittedSubjHeaderOnce) return;
     let items = Array.isArray(def.headerItems) ? def.headerItems.slice() : [];
-    if ((!items.length) && mode === "subjective") {
+    if ((!items.length) && mode === "SUBJECTIVE") {
       const generalDef = tpl.sectionDefs[`${mode}:General`];
       if (generalDef?.headerItems?.length) items = generalDef.headerItems.slice();
     }
@@ -1831,8 +1114,8 @@ function buildSectionLines(secKey, mode, tpl){
       _chips.push(...(ss.chips || []));
     });
 
-    // subjective: include visible text fields (skip booleans)
-    if (mode === "subjective" && pd.fields?.length){
+    // Subjective: include visible text fields (skip booleans)
+    if (mode === "SUBJECTIVE" && pd.fields?.length){
       // Skip HPI emission when Non-acute
       if (!isAcute() && pd.title === "History of Present Illness") {
         return; // next panel
@@ -1933,8 +1216,8 @@ function buildSectionLines(secKey, mode, tpl){
     }
   });
 
-  // Fallback: if subjective produced no lines, sweep all visible text fields
-  if (mode === "subjective" && lines.length === 0) {
+  // Fallback: if Subjective produced no lines, sweep all visible text fields
+  if (mode === "SUBJECTIVE" && lines.length === 0) {
     (def.panels || []).forEach(pd => {
       (pd.fields || []).forEach(f => {
         if (!shouldShowFieldFor(f, mode, secKey)) return;
@@ -1961,8 +1244,8 @@ function collectTextFromTemplates(mode, tpl){
     orderedSections.forEach(sectionName => {
       const secKey = `${mode}:${sectionName}`;
       const lines = buildSectionLines(secKey, mode, tpl);
-      if (mode === "subjective") {
-        console.debug('[subjective][collect] sec=', sectionName, 'lines=', lines.length);
+      if (mode === "SUBJECTIVE") {
+        console.debug('[Subjective][collect] sec=', sectionName, 'lines=', lines.length);
       }
       if (lines.length) out.push(...lines);
     });
@@ -1985,19 +1268,19 @@ function renderCompleteSoon(){
   _completeTimer = setTimeout(() => { renderCompleteNote(); }, COMPLETE_NOTE_MS);
 }
 
-const SECTION_HEADS = { subjective: "subjective", ROS: "ROS", PE: "Physical Exam", MSE: "MSE" };
+const SECTION_HEADS = { SUBJECTIVE: "Subjective", ROS: "ROS", PE: "Physical Exam", MSE: "MSE" };
 
 async function renderCompleteNote(){
   const box = document.getElementById('completeOut');
   if (!box) return;
   const modes = Object.keys(MODE_FILES || {});
   const parts = [];
-  // Prepend headerItems from subjective:General (Visit Note, Chief Complaint) above subjective heading
+  // Prepend headerItems from Subjective:General (Visit Note, Chief Complaint) above Subjective heading
   try {
-    const subjTpl = await loadTemplatesForMode("subjective");
-    const genDef = subjTpl.sectionDefs["subjective:General"];
+    const subjTpl = await loadTemplatesForMode("SUBJECTIVE");
+    const genDef = subjTpl.sectionDefs["SUBJECTIVE:General"];
     if (genDef && Array.isArray(genDef.headerItems) && genDef.headerItems.length) {
-      const sec = state.sections["subjective:General"] || { fields:{}, checkboxes:{} };
+      const sec = state.sections["SUBJECTIVE:General"] || { fields:{}, checkboxes:{} };
       const headerLines = [];
       genDef.headerItems.forEach(h => {
         if (!h || !h.id) return;
@@ -2011,7 +1294,7 @@ async function renderCompleteNote(){
       });
       if (headerLines.length) {
         parts.push(headerLines.join("\n"));
-        parts.push("<br>"); // explicit line break before subjective heading
+        parts.push("<br>"); // explicit line break before Subjective heading
         // Global guard so we don't re-emit during per-section build
         state.globals._emittedSubjHeaderOnce = true;
       }
@@ -2023,7 +1306,7 @@ async function renderCompleteNote(){
     try {
       const txt = await buildNoteForMode(m);
       if (txt && txt.trim()) {
-        const sep = (m === "subjective") ? "\n\n" : "\n";   // extra blank line after subjective
+        const sep = (m === "SUBJECTIVE") ? "\n\n" : "\n";   // extra blank line after Subjective
         const heading = SECTION_HEADS[m] || m;
         if (m === "PE") {
           // Insert Objective heading before the Physical Exam section
@@ -2115,12 +1398,12 @@ function _completeTextToHTML(txt){
       continue;
     }
 
-    // Section headers like "subjective:", "Objective:", "Physical Exam:", "HPI:", "PE:", "MSE:"
+    // Section headers like "Subjective:", "Objective:", "Physical Exam:", "HPI:", "PE:", "MSE:"
     const sec = t.match(/^([A-Za-z ]{2,30}):$/);
     if (sec) {
       const label = sec[1];
-      const isH1 = (label === 'subjective' || label === 'Objective');
-      if (label === 'subjective' || label === 'Objective' || label === 'Physical Exam' || label === 'MSE' || label === 'HPI' || label === 'PE' || label === 'ROS') {
+      const isH1 = (label === 'Subjective' || label === 'Objective');
+      if (label === 'Subjective' || label === 'Objective' || label === 'Physical Exam' || label === 'MSE' || label === 'HPI' || label === 'PE' || label === 'ROS') {
         const shown = (label === 'PE') ? 'Physical Exam' : label;
         const cls = isH1 ? 'section-head head-h1' : 'section-head';
         out.push(`<div class="cn-line"><span class="${cls}">${shown}</span></div>`);
@@ -2226,7 +1509,7 @@ function fieldText(id, label, value, onChange, placeholder, stacked=false){
     input.oninput = (e) => onChange(e.target.value);
   }
 
-  if (stacked && state.mode === "subjective") {
+  if (stacked && state.mode === "SUBJECTIVE") {
     // Force vertical stack even if .field is flex-row in CSS
     wrap.style.display = 'flex';
     wrap.style.flexDirection = 'column';
@@ -2315,7 +1598,7 @@ function fieldRange(id, label, value, onChange, min = 0, max = 10, step = 1, sta
   right.style.gap = '6px 8px';
   right.style.maxWidth = '275px';
 
-  if (stacked && state.mode === "subjective") {
+  if (stacked && state.mode === "SUBJECTIVE") {
     // Force vertical stack even if .field is flex-row in CSS
     wrap.style.display = 'flex';
     wrap.style.flexDirection = 'column';
@@ -2699,324 +1982,3 @@ function formatChipNegForOutput(secKey, id){
 }
 
 
-
-/* ----------------------------------------------
- * ROS: Inline "Default" button per panel
- * Inserts a small button next to each panel header.
- * Clicking it marks the panel's chips that match
- * template.defaults.negChips as negative.
- * ---------------------------------------------- */
-(function () {
-  // --- run after DOM ready ---
-  function onReady(fn){
-    if (document.readyState === "loading") {
-      document.addEventListener("DOMContentLoaded", fn, { once: true });
-    } else { fn(); }
-  }
-
-  // --- pull default negative chip ids from loaded template ---
-  function getDefaultNegs(){
-    try {
-      const t = (window.template || window.currentTemplate || window.ROS_TEMPLATE || {});
-      const defs = t.defaults || (t.sectionDefs && t.sectionDefs.defaults) || {};
-      const arr = defs.negChips || [];
-      return Array.isArray(arr) ? arr.slice() : [];
-    } catch(e){
-      return [];
-    }
-  }
-
-  // Try to toggle a single chip to the NEGATIVE option inside a scope element.
-  // NOTE: we support multiple markup patterns to avoid coupling to one renderer.
-  function setChipNegative(scopeEl, chipId){
-    if (!scopeEl || !chipId) return false;
-
-    // Prefer a container that declares the chip id.
-    let chipRoot = scopeEl.querySelector(`[data-chip-id="${chipId}"]`);
-
-    // Fallbacks: id/name/data-id
-    if (!chipRoot) {
-      chipRoot = scopeEl.querySelector(`#${CSS.escape(chipId)}`) ||
-                 scopeEl.querySelector(`[name="${CSS.escape(chipId)}"]`) ||
-                 scopeEl.querySelector(`[data-id="${chipId}"]`);
-    }
-    if (!chipRoot) return false;
-
-    // Common selectors for a "negative" control
-    const negCandidates = [
-      '[data-action="neg"]',
-      '.opt.neg',
-      '.bool-opt.neg',
-      'input[type="radio"][value="no"]',
-      'input[type="checkbox"][data-neg="1"]',
-      '[data-neg="1"]'
-    ];
-
-    for (const sel of negCandidates){
-      const el = chipRoot.querySelector(sel);
-      if (el) {
-        // Use click to trigger existing handlers
-        if (typeof el.click === 'function') el.click();
-        else {
-          el.dispatchEvent(new MouseEvent('click', { bubbles: true }));
-          el.dispatchEvent(new Event('change', { bubbles: true }));
-        }
-        return true;
-      }
-    }
-
-    // Last resort: two radios [yes, no] → pick the last
-    const radios = chipRoot.querySelectorAll('input[type="radio"]');
-    if (radios && radios.length >= 2) {
-      const last = radios[radios.length - 1];
-      last.checked = true;
-      last.dispatchEvent(new Event('change', { bubbles: true }));
-      return true;
-    }
-
-    return false;
-  }
-
-  // Apply defaults ONLY within the provided panel element
-  function applyDefaultNegativesInPanel(panelEl){
-    const defaults = getDefaultNegs();
-    if (!defaults.length) return;
-    defaults.forEach(id => setChipNegative(panelEl, id));
-  }
-
-  // Build the inline button
-  function makeNegBtn(){
-    const btn = document.createElement('button');
-    btn.type = 'button';
-    btn.className = 'neg-df-btn';
-    btn.textContent = 'Default';
-    btn.title = 'Mark common ROS negatives for this panel';
-    btn.addEventListener('click', function(e){
-      e.stopPropagation();
-      const panel = btn.closest('.panel, .ros-panel, .cn-panel, .section');
-      if (panel) applyDefaultNegativesInPanel(panel);
-    });
-
-    // inline styles to avoid CSS file edits
-    btn.style.marginLeft = '60%';
-    btn.style.fontSize = '9px';
-    btn.style.lineHeight = '1.2';
-    btn.style.padding = '2px 6px';
-    btn.style.border = '1px solid var(--muted, #ccc)';
-    btn.style.borderRadius = '4px';
-    btn.style.background = 'var(--panel-btn-bg, #f5f5f5)';
-    btn.style.cursor = 'pointer';
-    return btn;
-  }
-
-  // Insert a button inline with a header element if not already present
-  function injectButtonNextToHeader(headerEl){
-    if (!headerEl || headerEl.dataset.negBtnInjected === '1') return;
-    if (headerEl.querySelector('.neg-fill-btn')) {
-      headerEl.dataset.negBtnInjected = '1';
-      return;
-    }
-    const btn = makeNegBtn();
-    const titleSpan = headerEl.querySelector('.panel-title, .section-head, .item-label, span');
-    if (titleSpan && titleSpan.parentElement === headerEl) {
-      titleSpan.insertAdjacentElement('afterend', btn);
-    } else {
-      headerEl.appendChild(btn);
-    }
-    headerEl.dataset.negBtnInjected = '1';
-  }
-
-  // Find a likely header element inside a panel container
-  function findHeaderCandidates(panelEl){
-    if (!panelEl) return [];
-    // Common header patterns used in prior patches
-    const sels = [
-      ':scope > .panel-header',
-      ':scope > .panel-head',
-      ':scope > .cn-line',
-      ':scope > .section-head-wrap',
-      ':scope > .section-header',
-      ':scope > .section-title',
-      ':scope > .section-head'
-    ];
-    for (const s of sels){
-      const el = panelEl.querySelector(s);
-      if (el) return [el];
-    }
-    // Fallback: first element that contains a head label
-    const alt = panelEl.querySelector('.section-head, .panel-title, .item-label');
-    return alt ? [alt.closest('.panel-header') || alt.parentElement || alt] : [];
-  }
-
-  // Scan the page and inject a button into each ROS panel header
-  function injectAllPanelButtons(root){
-    const scope = root || document;
-    const panels = scope.querySelectorAll('.panel.ROS, .ros-panel, .ROS .panel, .section.ROS, .panel');
-    panels.forEach(panel => {
-      const headers = findHeaderCandidates(panel);
-      headers.forEach(h => injectButtonNextToHeader(h));
-    });
-  }
-
-  // Observe for dynamically-rendered panels
-  function enableObserver(){
-    const obs = new MutationObserver(muts => {
-      for (const m of muts){
-        if (m.addedNodes && m.addedNodes.length){
-          m.addedNodes.forEach(node => {
-            if (!(node instanceof HTMLElement)) return;
-            if (node.matches('.panel, .ros-panel, .section')){
-              injectAllPanelButtons(node);
-            } else if (node.querySelector) {
-              const p = node.querySelector('.panel, .ros-panel, .section');
-              if (p) injectAllPanelButtons(node);
-            }
-          });
-        }
-      }
-    });
-    obs.observe(document.body, { childList: true, subtree: true });
-  }
-
-  onReady(function(){
-    injectAllPanelButtons(document);
-    enableObserver();
-  });
-})();
-/* ----------------------------------------------------
- * ROS: Inline "Default" button that actually works
- * with current DOM (chips rendered without IDs).
- * Strategy:
- *  - Build a map from panel title -> Set(label) for chips
- *    whose IDs are in template.defaults.negChips.
- *  - For a given panel, find its chips by label text and
- *    click the minus button to mark them negative.
- * ---------------------------------------------------- */
-(function(){
-  function onReady(fn){
-    if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', fn, {once:true});
-    else fn();
-  }
-
-  // Build a lookup of default-negative chip labels per panel title
-  function buildRosNegLabelMap(){
-    const out = new Map();
-    try {
-      if (!Templates || !Templates.sectionDefs) return out;
-      const key = 'ROS:General';
-      const def = Templates.sectionDefs[key];
-      if (!def || !def.defaults || !Array.isArray(def.defaults.negChips)) return out;
-      const want = new Set(def.defaults.negChips);
-
-      // Walk panels + subsections to collect chip defs
-      const panels = Array.isArray(def.panels) ? def.panels : [];
-      panels.forEach(pd => {
-        const title = (pd && pd.title) ? String(pd.title).trim() : '';
-        if (!title) return;
-        const ensure = () => {
-          if (!out.has(title)) out.set(title, new Set());
-          return out.get(title);
-        };
-
-        // Chips directly under panel
-        (pd.chips || []).forEach(ch => {
-          if (ch && want.has(ch.id)) ensure().add(String(ch.label).trim());
-        });
-        // Chips inside subsections
-        (pd.subsections || []).forEach(ss => {
-          (ss && ss.chips || []).forEach(ch => {
-            if (ch && want.has(ch.id)) ensure().add(String(ch.label).trim());
-          });
-        });
-      });
-    } catch(e) {
-      console.debug('[ROS NegBtn] map build failed:', e?.message || e);
-    }
-    return out;
-  }
-
-  function makeNegBtn(){
-    const b = document.createElement('button');
-    b.type = 'button';
-    b.className = 'neg-df-btn';
-    b.textContent = 'Default';
-    b.title = 'Mark common negatives for this panel';
-    // Minimal inline styles so you don’t need CSS edits
-    b.style.marginLeft = '8px';
-    b.style.fontSize = '11px';
-    b.style.lineHeight = '1.4';
-    b.style.padding = '2px 6px';
-    b.style.border = '1px solid var(--muted, #ccc)';
-    b.style.borderRadius = '4px';
-    b.style.background = 'var(--panel-btn-bg, #f5f5f5)';
-    b.style.cursor = 'pointer';
-    return b;
-  }
-
-  function injectBtnInto(panelEl){
-    if (!panelEl || panelEl.dataset.negBtnInjected === '1') return;
-    const header = panelEl.querySelector(':scope > .panel-header');
-    if (!header) return;
-    if (header.querySelector('.neg-fill-btn')) { panelEl.dataset.negBtnInjected = '1'; return; }
-    const btn = makeNegBtn();
-    btn.addEventListener('click', function(e){
-      e.stopPropagation();
-      try {
-        const title = (header.textContent || '').trim();
-        if (!title) return;
-        const map = buildRosNegLabelMap();
-        const wanted = map.get(title);
-        if (!wanted || !wanted.size) return;
-        // Find every chip in this panel whose label matches a wanted label
-        panelEl.querySelectorAll(':scope .chip').forEach(ch => {
-          const lab = ch.querySelector('.label');
-          const minus = ch.querySelector('.aff.minus');
-          const txt = (lab && lab.textContent || '').trim();
-          if (txt && wanted.has(txt) && minus) {
-            // Click minus to set negative using existing handlers
-            if (typeof minus.click === 'function') minus.click();
-            else {
-              minus.dispatchEvent(new MouseEvent('click', {bubbles:true}));
-              minus.dispatchEvent(new Event('change', {bubbles:true}));
-            }
-          }
-        });
-      } catch(err){
-        console.debug('[ROS NegBtn] apply failed:', err?.message || err);
-      }
-    });
-    header.appendChild(btn);
-    panelEl.dataset.negBtnInjected = '1';
-  }
-
-  function scanAndInject(root){
-    if (state.mode !== 'ROS') return; // only add in ROS mode
-    const scope = root || document;
-    scope.querySelectorAll('main.section-grid.ROS > section.panel').forEach(injectBtnInto);
-  }
-
-  function enableObserver(){
-    const obs = new MutationObserver(muts => {
-      for (const m of muts){
-        if (m.addedNodes && m.addedNodes.length){
-          m.addedNodes.forEach(node => {
-            if (!(node instanceof HTMLElement)) return;
-            if (node.matches && node.matches('main.section-grid.ROS, section.panel')) {
-              scanAndInject(node);
-            } else if (node.querySelector) {
-              const any = node.querySelector('main.section-grid.ROS, section.panel');
-              if (any) scanAndInject(node);
-            }
-          });
-        }
-      }
-    });
-    obs.observe(document.body, { childList: true, subtree: true });
-  }
-
-  onReady(function(){
-    // Initial pass after first render
-    setTimeout(()=>scanAndInject(document), 0);
-    enableObserver();
-  });
-})();
