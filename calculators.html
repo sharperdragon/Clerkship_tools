@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Clinical Calculator – Single File</title>
+  <style>
+
+    :root {
+    --bg: #f6f8fa;
+    --panel: #ffffff;
+    --text: #0f1419;
+    --muted: #51606f;
+    --accent: #0b6bcb;
+    --accent-2: #2e8b57;
+    --danger: #b00020;
+    --border: #e6e9ee;
+    --shadow: 0 6px 22px rgba(10, 30, 60, .10);
+    }
+
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      font: 16px/1.45 system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      color: var(--text);
+      background: radial-gradient(1200px 800px at 20% -10%, rgba(74,163,255,.08), transparent 40%),
+                  radial-gradient(1000px 600px at 90% 10%, rgba(123,211,137,.08), transparent 40%),
+                  var(--bg);
+    }
+
+    .app { display: grid; grid-template-columns: 260px 1fr; gap: 20px; max-width: 1200px; margin: 28px auto; padding: 0 16px; }
+    .card { background: var(--panel); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow); }
+
+    .sidebar { padding: 14px; position: sticky; top: 20px; height: calc(100dvh - 40px); overflow: auto; }
+    .brand { display:flex; align-items:center; gap:10px; padding: 8px 10px 14px; border-bottom: 1px dashed var(--border); margin-bottom: 8px; }
+    .brand .logo { width: 28px; height: 28px; border-radius: 8px; background: linear-gradient(135deg, var(--accent), var(--accent-2)); box-shadow: inset 0 0 0 2px rgba(255,255,255,.12); }
+    .brand h1 { font-size: 18px; margin: 0; letter-spacing: .2px; }
+    .search { position: relative; margin: 12px 8px; }
+    .search input { width: 100%; padding: 10px 12px 10px 36px; border-radius: 10px; border: 1px solid var(--border); background: transparent; color: var(--text); outline: none; }
+    .search svg { position: absolute; left: 10px; top: 9px; opacity: .65; }
+    .list { margin: 8px 4px; display: grid; gap: 6px; }
+    .item { padding: 10px 12px; border: 1px solid var(--border); border-radius: 10px; cursor: pointer; user-select: none; }
+    .item:hover { border-color: color-mix(in oklab, var(--accent) 50%, var(--border)); }
+    .item.active { border-color: var(--accent); outline: 2px solid color-mix(in oklab, var(--accent) 35%, transparent); background: color-mix(in oklab, var(--accent) 8%, transparent); }
+
+    .content { padding: 18px; display: grid; gap: 16px; }
+    .header { display:flex; align-items:center; justify-content: space-between; gap: 12px; padding: 12px 16px; border-bottom: 1px dashed var(--border); }
+    .title { font-size: 20px; font-weight: 700; }
+    .muted { color: var(--muted); font-size: 13px; }
+
+    form { display: grid; gap: 10px; padding: 12px 16px; }
+    .grid { display: grid; gap: 10px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+    .field { display: grid; gap: 6px; }
+    label { font-weight: 600; font-size: 14px; }
+    .units { color: var(--muted); font-size: 12px; margin-left: 6px; font-weight: 500; }
+    input[type="number"], select { padding: 10px 12px; border-radius: 10px; border: 1px solid var(--border); background: transparent; color: var(--text); }
+
+    .actions { display:flex; gap: 8px; align-items:center; padding: 6px 16px 16px; }
+    .btn { padding: 10px 12px; border-radius: 10px; border: 1px solid var(--border); background: transparent; color: var(--text); cursor: pointer; }
+    .btn.primary { background: linear-gradient(135deg, color-mix(in oklab, var(--accent) 85%, transparent), color-mix(in oklab, var(--accent-2) 65%, transparent)); border: none; color: white; }
+    .btn:disabled { opacity: .6; cursor: not-allowed; }
+
+    .result { margin: 0 16px 16px; padding: 14px; border: 1px solid var(--border); border-radius: 12px; background: color-mix(in oklab, var(--accent) 6%, transparent); display: grid; gap: 4px; }
+    .result .value { font-size: 22px; font-weight: 800; }
+    .warnings { color: var(--danger); font-weight: 600; }
+
+    details.notes { margin: 0 16px 18px; padding: 12px 14px; border: 1px dashed var(--border); border-radius: 12px; }
+    details.notes summary { cursor: pointer; font-weight: 600; }
+
+    .footer { display:flex; justify-content: space-between; align-items:center; padding: 10px 14px; border-top: 1px dashed var(--border); font-size: 12px; color: var(--muted); }
+
+    .kbd { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; font-size: 12px; padding: 1px 6px; border-radius: 6px; border: 1px solid var(--border); background: color-mix(in oklab, var(--panel) 90%, white 10%); }
+
+    @media (max-width: 860px) {
+      .app { grid-template-columns: 1fr; }
+      .sidebar { position: static; height: auto; }
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar card">
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <h1>Clinical Calculator</h1>
+      </div>
+      <div class="search">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 21l-4.2-4.2M10.5 18A7.5 7.5 0 1010.5 3a7.5 7.5 0 000 15z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        <input id="filter" type="search" placeholder="Filter calculators… (⌘/Ctrl+K)" />
+      </div>
+      <div id="calc-list" class="list" role="tablist" aria-label="Calculators"></div>
+    </aside>
+
+    <main class="card">
+      <div class="header">
+        <div>
+          <div class="title" id="calc-title">—</div>
+          <div class="muted" id="calc-sub">Enter values to compute. Values update live.</div>
+        </div>
+        <div class="muted">Tip: press <span class="kbd">Tab</span> to hop fields</div>
+      </div>
+
+      <form id="calc-form" novalidate>
+        <div id="fields" class="grid"></div>
+      </form>
+
+      <div class="actions">
+        <button id="btn-clear" class="btn" type="button">Clear</button>
+        <button id="btn-copy" class="btn" type="button" disabled>Copy result</button>
+        <span id="msg" class="muted"></span>
+      </div>
+
+      <section class="result" aria-live="polite" aria-atomic="true">
+        <div class="muted">Result</div>
+        <div id="result-value" class="value">—</div>
+        <div id="result-extra" class="muted"></div>
+        <div id="warnings" class="warnings"></div>
+      </section>
+
+      <details class="notes">
+        <summary>Notes & assumptions</summary>
+        <div id="notes-html" class="muted"></div>
+      </details>
+
+      <div class="footer">
+        <div>Single‑file · client‑side only · no tracking</div>
+        <div>Built for quick bedside math</div>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    // ================================================================
+    //  Config & Utilities
+    // ================================================================
+    // $ Configurable display precision per calculator (default fallback)
+    const DEFAULT_PRECISION = 2;
+
+    // $ Unit constants (extend as needed)
+    const KG_PER_LB = 0.45359237;
+    const CM_PER_IN = 2.54;
+
+    // ? Safe numeric parse: returns number or null if invalid/empty
+    const parseNum = (v) => {
+      if (v === undefined || v === null) return null;
+      const n = Number(String(v).replace(/[,\s]+/g, ''));
+      return Number.isFinite(n) ? n : null;
+    };
+
+    // ? Clamp helper
+    const clamp = (n, min, max) => Math.min(Math.max(n, min), max);
+
+    // ? Round to fixed decimals without floating point surprises
+    const round = (n, d = DEFAULT_PRECISION) => {
+      const p = Math.pow(10, d);
+      return Math.round((n + Number.EPSILON) * p) / p;
+    };
+
+    // ? Debounce for input events
+    function debounce(fn, ms = 120) {
+      let t; return (...args) => { clearTimeout(t); t = setTimeout(() => fn.apply(null, args), ms); };
+    }
+
+    // ! Simple clipboard helper
+    async function copy(text) {
+      try { await navigator.clipboard.writeText(text); return true; } catch { return false; }
+    }
+
+    // ================================================================
+    //  Calculator Registry
+    // ================================================================
+    /**
+     * Each calculator:
+     * id: string key
+     * title: string
+     * subtitle?: string
+     * fields: array of { key, label, type: 'number'|'select', step?, min?, max?, placeholder?, unit?, options? }
+     * compute: (vals:Object) => { value:number|string, extra?:string, warnings?:string[], precision?:number }
+     * resultUnit?: string
+     * notesHTML?: string (sanitized by author; static content only)
+     */
+
+    const CALCS = [
+      {
+        id: 'bmi',
+        title: 'Body Mass Index (BMI)',
+        subtitle: 'kg/m² using height (cm) and weight (kg)',
+        fields: [
+          { key: 'height_cm', label: 'Height', type: 'number', min: 50, max: 250, step: 0.1, placeholder: 'e.g., 175', unit: 'cm' },
+          { key: 'weight_kg', label: 'Weight', type: 'number', min: 10, max: 400, step: 0.1, placeholder: 'e.g., 70', unit: 'kg' },
+        ],
+        resultUnit: 'kg/m²',
+        compute: ({ height_cm, weight_kg }) => {
+          const h = parseNum(height_cm);
+          const w = parseNum(weight_kg);
+          if (h == null || w == null || h <= 0) return { value: '—' };
+          const m = h / 100;
+          const bmi = w / (m * m);
+          let cat = '';
+          if (bmi < 18.5) cat = 'Underweight';
+          else if (bmi < 25) cat = 'Normal';
+          else if (bmi < 30) cat = 'Overweight';
+          else cat = 'Obese';
+          return { value: round(bmi, 1), extra: cat, precision: 1 };
+        },
+        notesHTML: 'Standard WHO categories. Inputs assumed metric.'
+      },
+      {
+        id: 'bsa',
+        title: 'Body Surface Area (Mosteller)',
+        subtitle: 'sqrt((cm × kg)/3600)',
+        fields: [
+          { key: 'height_cm', label: 'Height', type: 'number', min: 30, max: 250, step: 0.1, unit: 'cm' },
+          { key: 'weight_kg', label: 'Weight', type: 'number', min: 1, max: 400, step: 0.1, unit: 'kg' },
+        ],
+        resultUnit: 'm²',
+        compute: ({ height_cm, weight_kg }) => {
+          const h = parseNum(height_cm), w = parseNum(weight_kg);
+          if (h == null || w == null || h <= 0 || w <= 0) return { value: '—' };
+          const bsa = Math.sqrt((h * w) / 3600);
+          return { value: round(bsa, 2), precision: 2 };
+        },
+        notesHTML: 'Mosteller formula. Use metric inputs.'
+      },
+      {
+        id: 'anion_gap',
+        title: 'Anion Gap',
+        subtitle: '([Na] + [K]) − ([Cl] + [HCO₃]) (K optional)',
+        fields: [
+          { key: 'na', label: 'Sodium', type: 'number', min: 80, max: 200, step: 0.1, unit: 'mmol/L' },
+          { key: 'k', label: 'Potassium (optional)', type: 'number', min: 0, max: 10, step: 0.1, unit: 'mmol/L' },
+          { key: 'cl', label: 'Chloride', type: 'number', min: 50, max: 200, step: 0.1, unit: 'mmol/L' },
+          { key: 'hco3', label: 'Bicarbonate', type: 'number', min: 0, max: 60, step: 0.1, unit: 'mmol/L' },
+        ],
+        resultUnit: 'mmol/L',
+        compute: ({ na, k, cl, hco3 }) => {
+          const Na = parseNum(na), K = parseNum(k), Cl = parseNum(cl), HCO3 = parseNum(hco3);
+          if (Na == null || Cl == null || HCO3 == null) return { value: '—' };
+          const gap = (Na + (K ?? 0)) - (Cl + HCO3);
+          const extra = (gap >= 12 && gap <= 16) ? 'Normal-ish (lab dependent)' : (gap > 16 ? 'High anion gap' : 'Low anion gap');
+          return { value: round(gap, 1), extra, precision: 1 };
+        },
+        notesHTML: 'Reference ranges vary by lab; albumin affects expected gap.'
+      },
+      {
+        id: 'corrected_ca',
+        title: 'Corrected Calcium',
+        subtitle: 'Corrected Ca = Measured Ca + 0.8 × (4 − Albumin)',
+        fields: [
+          { key: 'ca', label: 'Measured Ca', type: 'number', min: 0, max: 20, step: 0.01, unit: 'mg/dL' },
+          { key: 'alb', label: 'Albumin', type: 'number', min: 0, max: 10, step: 0.01, unit: 'g/dL' },
+        ],
+        resultUnit: 'mg/dL',
+        compute: ({ ca, alb }) => {
+          const Ca = parseNum(ca), Alb = parseNum(alb);
+          if (Ca == null || Alb == null) return { value: '—' };
+          const corrected = Ca + 0.8 * (4 - Alb);
+          return { value: round(corrected, 2), precision: 2 };
+        },
+        notesHTML: 'Linear correction; consider ionized Ca in critical illness.'
+      },
+      {
+        id: 'crcl_cg',
+        title: 'Creatinine Clearance (Cockcroft–Gault)',
+        subtitle: 'Est. CrCl using weight + age + sex',
+        fields: [
+          { key: 'age', label: 'Age', type: 'number', min: 14, max: 110, step: 1, unit: 'yr' },
+          { key: 'scr', label: 'Serum Creatinine', type: 'number', min: 0.2, max: 12, step: 0.01, unit: 'mg/dL' },
+          { key: 'weight_kg', label: 'Weight', type: 'number', min: 20, max: 400, step: 0.1, unit: 'kg' },
+          { key: 'sex', label: 'Sex', type: 'select', options: [ ['male','Male'], ['female','Female'] ] },
+        ],
+        resultUnit: 'mL/min',
+        compute: ({ age, scr, weight_kg, sex }) => {
+          const A = parseNum(age), SCr = parseNum(scr), W = parseNum(weight_kg);
+          if (A == null || SCr == null || W == null || !sex) return { value: '—' };
+          if (SCr <= 0) return { value: '—', warnings: ['Creatinine must be > 0'] };
+          let crcl = ((140 - A) * W) / (72 * SCr);
+          if (sex === 'female') crcl *= 0.85;
+          return { value: round(crcl, 0), precision: 0 };
+        },
+        notesHTML: 'Not indexed to BSA; use with caution in extremes of body size/age.'
+      },
+      {
+        id: 'serum_osm',
+        title: 'Serum Osmolality (calculated)',
+        subtitle: '2×Na + Glucose/18 + BUN/2.8',
+        fields: [
+          { key: 'na', label: 'Sodium', type: 'number', min: 80, max: 200, step: 0.1, unit: 'mmol/L' },
+          { key: 'gluc', label: 'Glucose', type: 'number', min: 0, max: 2000, step: 1, unit: 'mg/dL' },
+          { key: 'bun', label: 'BUN', type: 'number', min: 0, max: 300, step: 1, unit: 'mg/dL' },
+        ],
+        resultUnit: 'mOsm/kg',
+        compute: ({ na, gluc, bun }) => {
+          const Na = parseNum(na), G = parseNum(gluc), B = parseNum(bun);
+          if (Na == null || G == null || B == null) return { value: '—' };
+          const osm = 2 * Na + (G / 18) + (B / 2.8);
+          return { value: round(osm, 0), precision: 0 };
+        },
+        notesHTML: 'Calculated osmolality; for osmolar gap, compare to measured value.'
+      }
+    ];
+
+    // ================================================================
+    //  App State & Rendering
+    // ================================================================
+    const state = {
+      calcId: CALCS[0].id,
+      values: {},
+      lastResultText: '',
+    };
+
+    const $list = document.getElementById('calc-list');
+    const $filter = document.getElementById('filter');
+    const $title = document.getElementById('calc-title');
+    const $sub = document.getElementById('calc-sub');
+    const $fields = document.getElementById('fields');
+    const $btnClear = document.getElementById('btn-clear');
+    const $btnCopy = document.getElementById('btn-copy');
+    const $msg = document.getElementById('msg');
+    const $resVal = document.getElementById('result-value');
+    const $resExtra = document.getElementById('result-extra');
+    const $warn = document.getElementById('warnings');
+    const $notes = document.getElementById('notes-html');
+
+    function getCalc() { return CALCS.find(c => c.id === state.calcId); }
+
+    function renderList() {
+      const q = ($filter.value || '').toLowerCase().trim();
+      $list.innerHTML = '';
+      CALCS.filter(c => !q || c.title.toLowerCase().includes(q) || (c.subtitle||'').toLowerCase().includes(q))
+        .forEach(c => {
+          const div = document.createElement('div');
+          div.className = 'item' + (c.id === state.calcId ? ' active' : '');
+          div.setAttribute('role', 'tab');
+          div.setAttribute('aria-selected', c.id === state.calcId ? 'true' : 'false');
+          div.textContent = c.title;
+          div.onclick = () => { state.calcId = c.id; state.values = {}; renderCalc(); renderList(); };
+          $list.appendChild(div);
+        });
+    }
+
+    function renderCalc() {
+      const calc = getCalc();
+      $title.textContent = calc.title;
+      $sub.textContent = calc.subtitle || '';
+      $fields.innerHTML = '';
+      $notes.innerHTML = calc.notesHTML || '';
+      $warn.textContent = '';
+      $resVal.textContent = '—';
+      $resExtra.textContent = '';
+      $btnCopy.disabled = true;
+
+      for (const f of calc.fields) {
+        const wrap = document.createElement('div');
+        wrap.className = 'field';
+
+        const lab = document.createElement('label');
+        lab.setAttribute('for', `${calc.id}_${f.key}`);
+        lab.innerHTML = `${f.label}${f.unit ? `<span class="units">(${f.unit})</span>` : ''}`;
+        wrap.appendChild(lab);
+
+        let input;
+        if (f.type === 'select') {
+          input = document.createElement('select');
+          for (const [val, text] of f.options) {
+            const opt = document.createElement('option'); opt.value = val; opt.textContent = text; input.appendChild(opt);
+          }
+        } else {
+          input = document.createElement('input'); input.type = 'number';
+          if (f.step != null) input.step = String(f.step);
+          if (f.min != null) input.min = String(f.min);
+          if (f.max != null) input.max = String(f.max);
+          if (f.placeholder) input.placeholder = f.placeholder;
+        }
+        input.id = `${calc.id}_${f.key}`;
+        input.name = f.key;
+        input.addEventListener('input', onInput);
+        wrap.appendChild(input);
+        $fields.appendChild(wrap);
+      }
+
+      // Focus first field for quick entry
+      const first = $fields.querySelector('input,select');
+      if (first) first.focus();
+    }
+
+    const onInput = debounce(() => {
+      const calc = getCalc();
+      // Collect values
+      const vals = {};
+      for (const f of calc.fields) {
+        const el = document.getElementById(`${calc.id}_${f.key}`);
+        vals[f.key] = (f.type === 'select') ? el.value : el.value;
+      }
+      state.values = vals;
+      updateResult();
+    }, 80);
+
+    function updateResult() {
+      const calc = getCalc();
+      const out = calc.compute(state.values);
+      const unit = calc.resultUnit ? ` ${calc.resultUnit}` : '';
+      const valText = (out.value === '—') ? '—' : `${out.value}${unit}`;
+      $resVal.textContent = valText;
+      $resExtra.textContent = out.extra || '';
+      $warn.textContent = (out.warnings || []).join(' • ');
+      state.lastResultText = `${calc.title}: ${valText}${out.extra ? ` (${out.extra})` : ''}`;
+      $btnCopy.disabled = out.value === '—';
+      $msg.textContent = '';
+    }
+
+    $btnClear.addEventListener('click', () => {
+      state.values = {};
+      renderCalc();
+    });
+
+    $btnCopy.addEventListener('click', async () => {
+      const ok = await copy(state.lastResultText);
+      $msg.textContent = ok ? 'Copied to clipboard' : 'Copy failed';
+      setTimeout(() => { $msg.textContent = ''; }, 1500);
+    });
+
+    // Keyboard: focus search with Cmd/Ctrl+K
+    window.addEventListener('keydown', (e) => {
+      if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k') {
+        e.preventDefault(); $filter.focus(); $filter.select();
+      }
+    });
+
+    // Initialize
+    renderList();
+    renderCalc();
+  </script>
+</body>
+</html>

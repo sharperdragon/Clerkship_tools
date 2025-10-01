@@ -1,0 +1,23 @@
+{
+  "type": "object",
+  "properties": {
+    "symptoms": {
+      "type": "object",
+      "required": ["onset","progression","palliate","provoke","quality","timing","region","radiation","severity","clinical tests","other symptoms"],
+      "properties": {
+        "onset": { "type":"array", "items": { "enum": ["sudden","acute","subacute","chronic","insidious","n/a"] }, "minItems":1 },
+        "progression": { "type":"array", "items": { "enum": ["worsening","improving","stable","n/a"] }, "minItems":1 },
+        "palliate": { "type":"array", "items": { "enum": ["antacids","ppi","h2-blocker","analgesics","nitrates","antispasmodic","rest","leaning-forward","npo","heat","ice","alcohol-cessation","smoking-cessation","n/a"] }, "minItems":1 },
+        "provoke": { "type":"array", "items": { "enum": ["movement","coughing","deep-breathing","exercise","oral-intake","fatty-meals","alcohol","spicy-food","large-meals","caffeine","nsaids","menses","urination","defecation","n/a"] }, "minItems":1 },
+        "quality": { "type":"array", "items": { "enum": ["colicky","cramping","burning","gnawing","sharp","dull","aching","stabbing","pressure","tearing","n/a"] }, "minItems":1 },
+        "timing": { "type":"array", "items": { "enum": ["constant","intermittent","episodic","cyclical","nocturnal","morning","evening","postprandial","preprandial","post-exertional","post-traumatic","n/a"] }, "minItems":1 },
+        "region": { "type":"array", "items": { "enum": ["ruq","rlq","luq","llq","epigastrium","periumbilical","suprapubic","diffuse","right-flank","left-flank","flank","loin","lower-chest","n/a"] }, "minItems":1 },
+        "radiation": { "type":"array", "items": { "enum": ["back","right-scapula","left-scapula","shoulder-tip","right-shoulder","left-shoulder","groin","flank","chest","jaw","n/a"] }, "minItems":1 },
+        "severity": { "type":"array", "items": { "enum": ["mild","moderate","severe","catastrophic","n/a"] }, "minItems":1 },
+        "clinical tests": { "type":"array", "items": { "enum": ["murphys-sign","rovsings-sign","psoas-sign","obturator-sign","mcburneys-point-tenderness","rebound-tenderness","guarding","cullen-sign","grey-turner-sign","kehrs-sign","costovertebral-angle-tenderness","succussion-splash","pulsatile-abdominal-mass","n/a"] }, "minItems":1 },
+        "other symptoms": { "type":"array", "items": { "enum": ["fever","rigors","malaise","weight-loss","syncope","shock","hypotension","anorexia","nausea","vomiting","diarrhea","constipation","distension","jaundice","hematemesis","melena","steatorrhea","dysphagia","heartburn","dysuria","hematuria","pv-bleeding","vaginal-discharge","cough","pleuritic-pain","shortness-of-breath","migration-periumbilical-to-rlq","migration-ruq-to-diffuse","migration-epigastrium-to-back","n/a"] }, "minItems":1 }
+      },
+      "additionalProperties": false
+    }
+  }
+}
