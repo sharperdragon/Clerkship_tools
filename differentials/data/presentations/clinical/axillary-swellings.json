@@ -1,216 +1,183 @@
 {
-  "presentation": "axillary swellings",
+  "presentation": "Axillary swellings",
   "items": [
     {
-      "name": "Reactive lymphadenopathy",
-      "system": "Lymphatic",
-      "freq": "common",
+      "name": "Acute abscess",
+      "system": "SUPERFICIAL",
       "redFlag": false,
       "symptoms": {
-        "onset": [
-          "subacute"
-        ],
-        "progression": [
-          "improving"
-        ],
-        "palliate": [
-          "rest"
-        ],
-        "provoke": [
-          "n/a"
-        ],
-        "quality": [
-          "tender"
-        ],
-        "timing": [
-          "persistent"
-        ],
-        "region": [
-          "n/a"
-        ],
-        "radiation": [
-          "n/a"
-        ],
-        "severity": [
-          "mild"
-        ],
-        "clinical tests": [
-          "n/a"
-        ],
-        "other symptoms": [
-          "fever",
-          "malaise"
-        ]
-      }
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "common"
     },
     {
-      "name": "Metastatic breast carcinoma",
-      "system": "Oncology",
-      "freq": "occasional",
-      "redFlag": true,
-      "symptoms": {
-        "onset": [
-          "insidious"
-        ],
-        "progression": [
-          "worsening"
-        ],
-        "palliate": [
-          "n/a"
-        ],
-        "provoke": [
-          "n/a"
-        ],
-        "quality": [
-          "firm"
-        ],
-        "timing": [
-          "persistent"
-        ],
-        "region": [
-          "n/a"
-        ],
-        "radiation": [
-          "n/a"
-        ],
-        "severity": [
-          "moderate"
-        ],
-        "clinical tests": [
-          "n/a"
-        ],
-        "other symptoms": [
-          "weight-loss",
-          "breast-lump"
-        ]
-      }
-    },
-    {
-      "name": "Hidradenitis suppurativa / abscess",
-      "system": "Dermatologic",
-      "freq": "occasional",
+      "name": "Sebaceous cyst",
+      "system": "SUPERFICIAL",
       "redFlag": false,
       "symptoms": {
-        "onset": [
-          "subacute"
-        ],
-        "progression": [
-          "worsening"
-        ],
-        "palliate": [
-          "n/a"
-        ],
-        "provoke": [
-          "n/a"
-        ],
-        "quality": [
-          "throbbing"
-        ],
-        "timing": [
-          "constant"
-        ],
-        "region": [
-          "n/a"
-        ],
-        "radiation": [
-          "n/a"
-        ],
-        "severity": [
-          "moderate"
-        ],
-        "clinical tests": [
-          "n/a"
-        ],
-        "other symptoms": [
-          "discharge",
-          "fever"
-        ]
-      }
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "common"
     },
     {
-      "name": "Accessory breast tissue",
-      "system": "Breast",
-      "freq": "rare",
+      "name": "Lipoma",
+      "system": "SUPERFICIAL",
       "redFlag": false,
       "symptoms": {
-        "onset": [
-          "insidious"
-        ],
-        "progression": [
-          "stable"
-        ],
-        "palliate": [
-          "n/a"
-        ],
-        "provoke": [
-          "menses"
-        ],
-        "quality": [
-          "soft"
-        ],
-        "timing": [
-          "cyclical"
-        ],
-        "region": [
-          "n/a"
-        ],
-        "radiation": [
-          "n/a"
-        ],
-        "severity": [
-          "mild"
-        ],
-        "clinical tests": [
-          "n/a"
-        ],
-        "other symptoms": [
-          "mastalgia"
-        ]
-      }
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "uncommon"
     },
     {
-      "name": "Lymphoma",
-      "system": "Oncology",
-      "freq": "rare",
-      "redFlag": true,
+      "name": "Viral or bacterial infections",
+      "system": "SUPERFICIAL",
+      "redFlag": false,
       "symptoms": {
-        "onset": [
-          "insidious"
-        ],
-        "progression": [
-          "worsening"
-        ],
-        "palliate": [
-          "n/a"
-        ],
-        "provoke": [
-          "n/a"
-        ],
-        "quality": [
-          "firm"
-        ],
-        "timing": [
-          "persistent"
-        ],
-        "region": [
-          "n/a"
-        ],
-        "radiation": [
-          "n/a"
-        ],
-        "severity": [
-          "moderate"
-        ],
-        "clinical tests": [
-          "n/a"
-        ],
-        "other symptoms": [
-          "fever",
-          "weight-loss",
-          "night-sweats"
-        ]
-      }
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Hidradenitis suppurativa",
+      "system": "SUPERFICIAL",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Lymphadenopathy (, leukemia, lupus)",
+      "system": "SUPERFICIAL",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Benign or malignant breast lump (arising in the axillary tail)",
+      "system": "SUPERFICIAL",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Chronic abscess (",
+      "system": "SUPERFICIAL",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "Axillary artery aneurysm",
+      "system": "SUPERFICIAL",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "rare"
     }
   ],
+  "sources": {
+    "index_keys": [
+      "Axillary swellings"
+    ],
+    "index_type": "clinical"
+  },
   "symptoms": {}
 }

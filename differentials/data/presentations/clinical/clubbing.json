@@ -1,350 +1,145 @@
 {
-  "presentation": "clubbing",
+  "presentation": "Clubbing",
   "items": [
     {
-      "name": "Lung cancer",
-      "system": "Oncology",
-      "freq": "occasional",
-      "redFlag": true,
-      "symptoms": {
-        "onset": [
-          "insidious"
-        ],
-        "progression": [
-          "worsening"
-        ],
-        "palliate": [
-          "n/a"
-        ],
-        "provoke": [
-          "n/a"
-        ],
-        "quality": [
-          "n/a"
-        ],
-        "timing": [
-          "persistent"
-        ],
-        "region": [
-          "n/a"
-        ],
-        "radiation": [
-          "n/a"
-        ],
-        "severity": [
-          "moderate"
-        ],
-        "clinical tests": [
-          "n/a"
-        ],
-        "other symptoms": [
-          "cough",
-          "weight-loss",
-          "shortness-of-breath",
-          "hemoptysis"
-        ]
-      }
-    },
-    {
-      "name": "Bronchiectasis",
-      "system": "Respiratory",
-      "freq": "occasional",
+      "name": "Interstitial lung disease (\ufb01brosing alveolitis, pulmonary",
+      "system": "Cystic \ufb01brosis",
       "redFlag": false,
       "symptoms": {
-        "onset": [
-          "chronic"
-        ],
-        "progression": [
-          "worsening"
-        ],
-        "palliate": [
-          "n/a"
-        ],
-        "provoke": [
-          "infection"
-        ],
-        "quality": [
-          "n/a"
-        ],
-        "timing": [
-          "persistent"
-        ],
-        "region": [
-          "n/a"
-        ],
-        "radiation": [
-          "n/a"
-        ],
-        "severity": [
-          "moderate"
-        ],
-        "clinical tests": [
-          "n/a"
-        ],
-        "other symptoms": [
-          "cough",
-          "sputum",
-          "fever",
-          "shortness-of-breath"
-        ]
-      }
-    },
-    {
-      "name": "Cystic fibrosis",
-      "system": "Respiratory",
-      "freq": "rare",
-      "redFlag": true,
-      "symptoms": {
-        "onset": [
-          "chronic"
-        ],
-        "progression": [
-          "worsening"
-        ],
-        "palliate": [
-          "n/a"
-        ],
-        "provoke": [
-          "infection"
-        ],
-        "quality": [
-          "n/a"
-        ],
-        "timing": [
-          "persistent"
-        ],
-        "region": [
-          "n/a"
-        ],
-        "radiation": [
-          "n/a"
-        ],
-        "severity": [
-          "moderate"
-        ],
-        "clinical tests": [
-          "n/a"
-        ],
-        "other symptoms": [
-          "cough",
-          "shortness-of-breath",
-          "steatorrhea",
-          "weight-loss"
-        ]
-      }
-    },
-    {
-      "name": "Interstitial lung disease",
-      "system": "Respiratory",
-      "freq": "occasional",
-      "redFlag": true,
-      "symptoms": {
-        "onset": [
-          "insidious"
-        ],
-        "progression": [
-          "worsening"
-        ],
-        "palliate": [
-          "rest"
-        ],
-        "provoke": [
-          "exercise"
-        ],
-        "quality": [
-          "n/a"
-        ],
-        "timing": [
-          "persistent"
-        ],
-        "region": [
-          "n/a"
-        ],
-        "radiation": [
-          "n/a"
-        ],
-        "severity": [
-          "moderate"
-        ],
-        "clinical tests": [
-          "n/a"
-        ],
-        "other symptoms": [
-          "shortness-of-breath",
-          "cough"
-        ]
-      }
-    },
-    {
-      "name": "Cyanotic congenital heart disease",
-      "system": "Cardiac",
-      "freq": "rare",
-      "redFlag": true,
-      "symptoms": {
-        "onset": [
-          "chronic"
-        ],
-        "progression": [
-          "stable"
-        ],
-        "palliate": [
-          "rest"
-        ],
-        "provoke": [
-          "exercise"
-        ],
-        "quality": [
-          "n/a"
-        ],
-        "timing": [
-          "persistent"
-        ],
-        "region": [
-          "n/a"
-        ],
-        "radiation": [
-          "n/a"
-        ],
-        "severity": [
-          "moderate"
-        ],
-        "clinical tests": [
-          "n/a"
-        ],
-        "other symptoms": [
-          "cyanosis",
-          "shortness-of-breath"
-        ]
-      }
-    },
-    {
-      "name": "Inflammatory bowel disease",
-      "system": "Gastrointestinal",
-      "freq": "occasional",
-      "redFlag": false,
-      "symptoms": {
-        "onset": [
-          "chronic"
-        ],
-        "progression": [
-          "worsening"
-        ],
-        "palliate": [
-          "n/a"
-        ],
-        "provoke": [
-          "n/a"
-        ],
-        "quality": [
-          "n/a"
-        ],
-        "timing": [
-          "persistent"
-        ],
-        "region": [
-          "n/a"
-        ],
-        "radiation": [
-          "n/a"
-        ],
-        "severity": [
-          "mild"
-        ],
-        "clinical tests": [
-          "n/a"
-        ],
-        "other symptoms": [
-          "diarrhea",
-          "weight-loss",
-          "fever"
-        ]
-      }
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "uncommon"
     },
     {
       "name": "Cirrhosis",
-      "system": "Hepatic",
-      "freq": "occasional",
-      "redFlag": true,
-      "symptoms": {
-        "onset": [
-          "chronic"
-        ],
-        "progression": [
-          "worsening"
-        ],
-        "palliate": [
-          "alcohol-cessation"
-        ],
-        "provoke": [
-          "alcohol"
-        ],
-        "quality": [
-          "n/a"
-        ],
-        "timing": [
-          "persistent"
-        ],
-        "region": [
-          "n/a"
-        ],
-        "radiation": [
-          "n/a"
-        ],
-        "severity": [
-          "moderate"
-        ],
-        "clinical tests": [
-          "n/a"
-        ],
-        "other symptoms": [
-          "jaundice",
-          "ascites",
-          "weight-loss"
-        ]
-      }
-    },
-    {
-      "name": "Thyroid acropachy (Graves\u2019 disease)",
-      "system": "Endocrine",
-      "freq": "rare",
+      "system": "Gastrointestinal",
       "redFlag": false,
       "symptoms": {
-        "onset": [
-          "subacute"
-        ],
-        "progression": [
-          "stable"
-        ],
-        "palliate": [
-          "n/a"
-        ],
-        "provoke": [
-          "n/a"
-        ],
-        "quality": [
-          "n/a"
-        ],
-        "timing": [
-          "persistent"
-        ],
-        "region": [
-          "n/a"
-        ],
-        "radiation": [
-          "n/a"
-        ],
-        "severity": [
-          "mild"
-        ],
-        "clinical tests": [
-          "n/a"
-        ],
-        "other symptoms": [
-          "sweating-abnormalities",
-          "weight-loss"
-        ]
-      }
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Ulcerative colitis",
+      "system": "Gastrointestinal",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Crohn\u2019s disease",
+      "system": "Gastrointestinal",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Coeliac disease",
+      "system": "Gastrointestinal",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Graves\u2019 disease (hyperthyroidism)",
+      "system": "Gastrointestinal",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Familial",
+      "system": "Gastrointestinal",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "unknown"
     }
   ],
+  "sources": {
+    "index_keys": [
+      "Clubbing"
+    ],
+    "index_type": "clinical"
+  },
   "symptoms": {}
 }

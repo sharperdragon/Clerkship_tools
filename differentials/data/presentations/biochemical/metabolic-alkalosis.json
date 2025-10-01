@@ -1,0 +1,163 @@
+{
+  "presentation": "Metabolic alkalosis",
+  "items": [
+    {
+      "name": "Vomiting",
+      "system": "EXCESS LOSS OF H!",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Nasogastric aspiration",
+      "system": "EXCESS LOSS OF H!",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Gastric \ufb01stula",
+      "system": "EXCESS LOSS OF H!",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Diuretic therapy (thiazide or loop)",
+      "system": "EXCESS LOSS OF H!",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Cushing\u2019s syndrome (mineralocorticoid effect)",
+      "system": "EXCESS LOSS OF H!",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Conn\u2019s syndrome (mineralocorticoid excess)",
+      "system": "EXCESS LOSS OF H!",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Ingestion of HCO3",
+      "system": "EXCESSIVE INTAKE OF BASE",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Antacids",
+      "system": "EXCESSIVE INTAKE OF BASE",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "unknown"
+    }
+  ],
+  "sources": {
+    "index_keys": [
+      "Metabolic alkalosis"
+    ],
+    "index_type": "non-clinical"
+  }
+}

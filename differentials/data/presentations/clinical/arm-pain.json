@@ -1,264 +1,468 @@
 {
-  "presentation": "arm pain",
+  "presentation": "Arm pain",
   "items": [
     {
-      "name": "Cervical radiculopathy (C6\u2013C7)",
-      "system": "Neurologic",
-      "freq": "occasional",
-      "redFlag": true,
-      "symptoms": {
-        "onset": [
-          "subacute"
-        ],
-        "progression": [
-          "worsening"
-        ],
-        "palliate": [
-          "rest"
-        ],
-        "provoke": [
-          "movement"
-        ],
-        "quality": [
-          "shooting",
-          "sharp"
-        ],
-        "timing": [
-          "intermittent"
-        ],
-        "region": [
-          "n/a"
-        ],
-        "radiation": [
-          "n/a"
-        ],
-        "severity": [
-          "moderate"
-        ],
-        "clinical tests": [
-          "n/a"
-        ],
-        "other symptoms": [
-          "numbness",
-          "weakness"
-        ]
-      }
-    },
-    {
-      "name": "Lateral epicondylitis",
-      "system": "Musculoskeletal",
-      "freq": "common",
+      "name": "Disc lesion (Fig. 4)",
+      "system": "CERVICAL LESIONS",
       "redFlag": false,
       "symptoms": {
-        "onset": [
-          "subacute"
-        ],
-        "progression": [
-          "stable"
-        ],
-        "palliate": [
-          "rest",
-          "ice"
-        ],
-        "provoke": [
-          "exercise"
-        ],
-        "quality": [
-          "aching"
-        ],
-        "timing": [
-          "intermittent"
-        ],
-        "region": [
-          "n/a"
-        ],
-        "radiation": [
-          "n/a"
-        ],
-        "severity": [
-          "mild"
-        ],
-        "clinical tests": [
-          "n/a"
-        ],
-        "other symptoms": [
-          "decreased-grip"
-        ]
-      }
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "common"
     },
     {
-      "name": "Biceps tendonitis",
-      "system": "Musculoskeletal",
-      "freq": "common",
+      "name": "Cervical spondylosis",
+      "system": "CERVICAL LESIONS",
       "redFlag": false,
       "symptoms": {
-        "onset": [
-          "subacute"
-        ],
-        "progression": [
-          "worsening"
-        ],
-        "palliate": [
-          "rest",
-          "ice"
-        ],
-        "provoke": [
-          "movement"
-        ],
-        "quality": [
-          "aching"
-        ],
-        "timing": [
-          "intermittent"
-        ],
-        "region": [
-          "n/a"
-        ],
-        "radiation": [
-          "n/a"
-        ],
-        "severity": [
-          "mild"
-        ],
-        "clinical tests": [
-          "n/a"
-        ],
-        "other symptoms": [
-          "tender-groove"
-        ]
-      }
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "common"
     },
     {
-      "name": "Myocardial ischemia (referred)",
-      "system": "Cardiac",
-      "freq": "occasional",
-      "redFlag": true,
-      "symptoms": {
-        "onset": [
-          "acute"
-        ],
-        "progression": [
-          "worsening"
-        ],
-        "palliate": [
-          "nitrates",
-          "rest"
-        ],
-        "provoke": [
-          "exercise"
-        ],
-        "quality": [
-          "pressure"
-        ],
-        "timing": [
-          "episodic"
-        ],
-        "region": [
-          "lower-chest"
-        ],
-        "radiation": [
-          "left-shoulder",
-          "jaw"
-        ],
-        "severity": [
-          "severe"
-        ],
-        "clinical tests": [
-          "n/a"
-        ],
-        "other symptoms": [
-          "shortness-of-breath",
-          "diaphoresis",
-          "nausea"
-        ]
-      }
-    },
-    {
-      "name": "Axillary vein thrombosis",
-      "system": "Vascular",
-      "freq": "rare",
-      "redFlag": true,
-      "symptoms": {
-        "onset": [
-          "acute"
-        ],
-        "progression": [
-          "worsening"
-        ],
-        "palliate": [
-          "rest"
-        ],
-        "provoke": [
-          "exercise"
-        ],
-        "quality": [
-          "aching"
-        ],
-        "timing": [
-          "constant"
-        ],
-        "region": [
-          "n/a"
-        ],
-        "radiation": [
-          "n/a"
-        ],
-        "severity": [
-          "moderate"
-        ],
-        "clinical tests": [
-          "n/a"
-        ],
-        "other symptoms": [
-          "swelling",
-          "cyanosis",
-          "prominent-veins"
-        ]
-      }
-    },
-    {
-      "name": "Complex regional pain syndrome",
-      "system": "Neurologic",
-      "freq": "rare",
+      "name": "Syringomyelia",
+      "system": "CERVICAL LESIONS",
       "redFlag": false,
       "symptoms": {
-        "onset": [
-          "subacute"
-        ],
-        "progression": [
-          "worsening"
-        ],
-        "palliate": [
-          "n/a"
-        ],
-        "provoke": [
-          "n/a"
-        ],
-        "quality": [
-          "burning"
-        ],
-        "timing": [
-          "constant"
-        ],
-        "region": [
-          "n/a"
-        ],
-        "radiation": [
-          "n/a"
-        ],
-        "severity": [
-          "severe"
-        ],
-        "clinical tests": [
-          "n/a"
-        ],
-        "other symptoms": [
-          "allodynia",
-          "color-change",
-          "edema"
-        ]
-      }
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "Infection, , TB",
+      "system": "CERVICAL LESIONS",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "Tumours",
+      "system": "CERVICAL LESIONS",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "Spinal cord",
+      "system": "CERVICAL LESIONS",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "Meninges",
+      "system": "CERVICAL LESIONS",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "Cervical rib",
+      "system": "BRACHIAL PLEXUS",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Malignant in\ufb01ltration",
+      "system": "BRACHIAL PLEXUS",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "Thoracic inlet syndrome",
+      "system": "BRACHIAL PLEXUS",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "Myocardial ischemia (left arm)",
+      "system": "VASCULAR LESIONS",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Embolism",
+      "system": "VASCULAR LESIONS",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Arterial/venous thrombosis",
+      "system": "VASCULAR LESIONS",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "Subclavian artery stenosis",
+      "system": "VASCULAR LESIONS",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "Steal syndrome",
+      "system": "VASCULAR LESIONS",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "I.e. coronary-subclavian steal syndrome, arterio-venous",
+      "system": "VASCULAR LESIONS",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "Upper limb lymphadema",
+      "system": "VASCULAR LESIONS",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "Repetitive strain injury",
+      "system": "OTHERS",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Carpal tunnel syndrome",
+      "system": "OTHERS",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Peripheral neuropathy",
+      "system": "OTHERS",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Bone tumours",
+      "system": "OTHERS",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "Compartment syndrome",
+      "system": "OTHERS",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "Acute",
+      "system": "OTHERS",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "Chronic",
+      "system": "OTHERS",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "rare"
     }
   ],
+  "sources": {
+    "index_keys": [
+      "Arm pain"
+    ],
+    "index_type": "clinical"
+  },
   "symptoms": {}
 }

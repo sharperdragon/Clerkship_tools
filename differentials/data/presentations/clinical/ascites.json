@@ -1,318 +1,335 @@
 {
-  "presentation": "ascites",
+  "presentation": "Ascites",
   "items": [
     {
-      "name": "Cirrhosis (portal hypertension)",
-      "system": "Hepatic",
-      "freq": "common",
+      "name": "Cirrhosis",
+      "system": "HEPATIC",
       "redFlag": false,
       "symptoms": {
-        "onset": [
-          "subacute"
-        ],
-        "progression": [
-          "worsening"
-        ],
-        "palliate": [
-          "rest",
-          "npo"
-        ],
-        "provoke": [
-          "oral-intake",
-          "alcohol"
-        ],
-        "quality": [
-          "pressure"
-        ],
-        "timing": [
-          "persistent"
-        ],
-        "region": [
-          "diffuse"
-        ],
-        "radiation": [
-          "n/a"
-        ],
-        "severity": [
-          "moderate"
-        ],
-        "clinical tests": [
-          "shifting-dullness",
-          "fluid-wave"
-        ],
-        "other symptoms": [
-          "distension",
-          "jaundice",
-          "weight-loss",
-          "malaise"
-        ]
-      }
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "common"
     },
     {
-      "name": "Malignant ascites (peritoneal carcinomatosis)",
-      "system": "Oncology",
-      "freq": "occasional",
-      "redFlag": true,
-      "symptoms": {
-        "onset": [
-          "insidious"
-        ],
-        "progression": [
-          "worsening"
-        ],
-        "palliate": [
-          "n/a"
-        ],
-        "provoke": [
-          "n/a"
-        ],
-        "quality": [
-          "pressure",
-          "dull"
-        ],
-        "timing": [
-          "persistent"
-        ],
-        "region": [
-          "diffuse"
-        ],
-        "radiation": [
-          "n/a"
-        ],
-        "severity": [
-          "moderate"
-        ],
-        "clinical tests": [
-          "shifting-dullness",
-          "fluid-wave"
-        ],
-        "other symptoms": [
-          "weight-loss",
-          "anorexia",
-          "fever"
-        ]
-      }
-    },
-    {
-      "name": "Congestive heart failure",
-      "system": "Cardiac",
-      "freq": "occasional",
-      "redFlag": true,
-      "symptoms": {
-        "onset": [
-          "subacute"
-        ],
-        "progression": [
-          "worsening"
-        ],
-        "palliate": [
-          "rest"
-        ],
-        "provoke": [
-          "exercise"
-        ],
-        "quality": [
-          "pressure"
-        ],
-        "timing": [
-          "persistent"
-        ],
-        "region": [
-          "diffuse"
-        ],
-        "radiation": [
-          "n/a"
-        ],
-        "severity": [
-          "moderate"
-        ],
-        "clinical tests": [
-          "n/a"
-        ],
-        "other symptoms": [
-          "shortness-of-breath",
-          "edema",
-          "fatigue"
-        ]
-      }
-    },
-    {
-      "name": "Nephrotic syndrome (hypoalbuminemia)",
-      "system": "Renal",
-      "freq": "rare",
+      "name": "Hepatic tumours",
+      "system": "HEPATIC",
       "redFlag": false,
       "symptoms": {
-        "onset": [
-          "subacute"
-        ],
-        "progression": [
-          "worsening"
-        ],
-        "palliate": [
-          "rest"
-        ],
-        "provoke": [
-          "n/a"
-        ],
-        "quality": [
-          "pressure"
-        ],
-        "timing": [
-          "persistent"
-        ],
-        "region": [
-          "diffuse"
-        ],
-        "radiation": [
-          "n/a"
-        ],
-        "severity": [
-          "mild"
-        ],
-        "clinical tests": [
-          "n/a"
-        ],
-        "other symptoms": [
-          "edema",
-          "fatigue"
-        ]
-      }
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "uncommon"
     },
     {
-      "name": "Tuberculous peritonitis",
-      "system": "Infectious disease",
-      "freq": "rare",
-      "redFlag": true,
+      "name": "Peritoneal metastases",
+      "system": "MALIGNANT DISEASE",
+      "redFlag": false,
       "symptoms": {
-        "onset": [
-          "subacute"
-        ],
-        "progression": [
-          "worsening"
-        ],
-        "palliate": [
-          "n/a"
-        ],
-        "provoke": [
-          "n/a"
-        ],
-        "quality": [
-          "dull"
-        ],
-        "timing": [
-          "persistent"
-        ],
-        "region": [
-          "diffuse"
-        ],
-        "radiation": [
-          "n/a"
-        ],
-        "severity": [
-          "moderate"
-        ],
-        "clinical tests": [
-          "n/a"
-        ],
-        "other symptoms": [
-          "fever",
-          "weight-loss",
-          "night-sweats"
-        ]
-      }
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "common"
     },
     {
-      "name": "Pancreatitis-associated ascites",
-      "system": "Pancreas",
-      "freq": "rare",
-      "redFlag": true,
+      "name": "Abdominal/pelvic tumour (primary or secondary)",
+      "system": "MALIGNANT DISEASE",
+      "redFlag": false,
       "symptoms": {
-        "onset": [
-          "acute"
-        ],
-        "progression": [
-          "worsening"
-        ],
-        "palliate": [
-          "leaning-forward",
-          "npo"
-        ],
-        "provoke": [
-          "alcohol",
-          "fatty-meals"
-        ],
-        "quality": [
-          "pressure"
-        ],
-        "timing": [
-          "persistent"
-        ],
-        "region": [
-          "epigastrium",
-          "diffuse"
-        ],
-        "radiation": [
-          "back"
-        ],
-        "severity": [
-          "severe"
-        ],
-        "clinical tests": [
-          "cullen-sign",
-          "grey-turner-sign"
-        ],
-        "other symptoms": [
-          "nausea",
-          "vomiting",
-          "fever"
-        ]
-      }
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "common"
     },
     {
-      "name": "Budd\u2013Chiari syndrome (hepatic vein thrombosis)",
-      "system": "Hepatic/vascular",
-      "freq": "rare",
-      "redFlag": true,
+      "name": "Pseudomyxoma peritonei",
+      "system": "MALIGNANT DISEASE",
+      "redFlag": false,
       "symptoms": {
-        "onset": [
-          "acute"
-        ],
-        "progression": [
-          "worsening"
-        ],
-        "palliate": [
-          "n/a"
-        ],
-        "provoke": [
-          "n/a"
-        ],
-        "quality": [
-          "pressure",
-          "aching"
-        ],
-        "timing": [
-          "persistent"
-        ],
-        "region": [
-          "ruq",
-          "diffuse"
-        ],
-        "radiation": [
-          "n/a"
-        ],
-        "severity": [
-          "severe"
-        ],
-        "clinical tests": [
-          "n/a"
-        ],
-        "other symptoms": [
-          "jaundice",
-          "hepatomegaly",
-          "leg-swelling"
-        ]
-      }
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "Primary mesothelioma",
+      "system": "MALIGNANT DISEASE",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "Cardiac failure",
+      "system": "CARDIAC",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Nephrotic syndrome",
+      "system": "CARDIAC",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "common"
+    },
+    {
+      "name": "TB",
+      "system": "PERITONITIS",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Spontaneous bacterial",
+      "system": "PERITONITIS",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Budd\u2013Chiari syndrome",
+      "system": "VENOUS OBSTRUCTION",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "Veno-occlusive disease",
+      "system": "VENOUS OBSTRUCTION",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "Hepatic portal vein obstruction",
+      "system": "VENOUS OBSTRUCTION",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "Inferior vena cava obstruction",
+      "system": "VENOUS OBSTRUCTION",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "Pancreatitis",
+      "system": "Gastrointestinal",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Malabsorption",
+      "system": "Gastrointestinal",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Bile ascites",
+      "system": "Gastrointestinal",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "uncommon"
     }
   ],
+  "sources": {
+    "index_keys": [
+      "Ascites"
+    ],
+    "index_type": "clinical"
+  },
   "symptoms": {}
 }

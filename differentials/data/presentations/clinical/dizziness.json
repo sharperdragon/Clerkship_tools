@@ -1,430 +1,468 @@
 {
-  "presentation": "dizziness",
+  "presentation": "Dizziness",
   "items": [
     {
+      "name": "M\u00e9ni\u00e8re\u2019s disease*",
+      "system": "EPISODIC",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "common"
+    },
+    {
       "name": "Benign paroxysmal positional vertigo (BPPV)",
-      "system": "Neurologic",
-      "freq": "common",
+      "system": "EPISODIC",
       "redFlag": false,
       "symptoms": {
-        "onset": [
-          "acute"
-        ],
-        "progression": [
-          "intermittent"
-        ],
-        "palliate": [
-          "rest"
-        ],
-        "provoke": [
-          "position-change"
-        ],
-        "quality": [
-          "vertigo"
-        ],
-        "timing": [
-          "episodic"
-        ],
-        "region": [
-          "n/a"
-        ],
-        "radiation": [
-          "n/a"
-        ],
-        "severity": [
-          "mild"
-        ],
-        "clinical tests": [
-          "dix-hallpike"
-        ],
-        "other symptoms": [
-          "nausea"
-        ]
-      }
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "common"
     },
     {
-      "name": "Vestibular neuritis",
-      "system": "Neurologic",
-      "freq": "occasional",
+      "name": "Arrhythmia",
+      "system": "EPISODIC",
       "redFlag": false,
       "symptoms": {
-        "onset": [
-          "acute"
-        ],
-        "progression": [
-          "improving"
-        ],
-        "palliate": [
-          "rest"
-        ],
-        "provoke": [
-          "n/a"
-        ],
-        "quality": [
-          "vertigo"
-        ],
-        "timing": [
-          "persistent"
-        ],
-        "region": [
-          "n/a"
-        ],
-        "radiation": [
-          "n/a"
-        ],
-        "severity": [
-          "moderate"
-        ],
-        "clinical tests": [
-          "head-impulse-test"
-        ],
-        "other symptoms": [
-          "nausea",
-          "vomiting"
-        ]
-      }
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "common"
     },
     {
-      "name": "M\u00e9ni\u00e8re disease",
-      "system": "ENT",
-      "freq": "occasional",
+      "name": "Postural hypotension",
+      "system": "EPISODIC",
       "redFlag": false,
       "symptoms": {
-        "onset": [
-          "subacute"
-        ],
-        "progression": [
-          "intermittent"
-        ],
-        "palliate": [
-          "salt-restriction"
-        ],
-        "provoke": [
-          "salt-excess"
-        ],
-        "quality": [
-          "vertigo"
-        ],
-        "timing": [
-          "episodic"
-        ],
-        "region": [
-          "n/a"
-        ],
-        "radiation": [
-          "n/a"
-        ],
-        "severity": [
-          "moderate"
-        ],
-        "clinical tests": [
-          "n/a"
-        ],
-        "other symptoms": [
-          "tinnitus",
-          "ear-fullness",
-          "hearing-loss"
-        ]
-      }
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "common"
     },
     {
-      "name": "Orthostatic hypotension",
-      "system": "Cardiovascular",
-      "freq": "common",
+      "name": "Migraine/Vestibular migraine",
+      "system": "EPISODIC",
       "redFlag": false,
       "symptoms": {
-        "onset": [
-          "acute"
-        ],
-        "progression": [
-          "intermittent"
-        ],
-        "palliate": [
-          "rest"
-        ],
-        "provoke": [
-          "standing"
-        ],
-        "quality": [
-          "presyncope"
-        ],
-        "timing": [
-          "episodic"
-        ],
-        "region": [
-          "n/a"
-        ],
-        "radiation": [
-          "n/a"
-        ],
-        "severity": [
-          "mild"
-        ],
-        "clinical tests": [
-          "orthostatic-vitals"
-        ],
-        "other symptoms": [
-          "blurred-vision",
-          "weakness"
-        ]
-      }
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "common"
     },
     {
-      "name": "Cardiac arrhythmia",
-      "system": "Cardiac",
-      "freq": "occasional",
-      "redFlag": true,
-      "symptoms": {
-        "onset": [
-          "acute"
-        ],
-        "progression": [
-          "intermittent"
-        ],
-        "palliate": [
-          "rest"
-        ],
-        "provoke": [
-          "exercise",
-          "stress"
-        ],
-        "quality": [
-          "presyncope"
-        ],
-        "timing": [
-          "episodic"
-        ],
-        "region": [
-          "chest"
-        ],
-        "radiation": [
-          "n/a"
-        ],
-        "severity": [
-          "moderate"
-        ],
-        "clinical tests": [
-          "n/a"
-        ],
-        "other symptoms": [
-          "palpitations",
-          "syncope"
-        ]
-      }
-    },
-    {
-      "name": "Anemia",
-      "system": "Hematologic",
-      "freq": "occasional",
+      "name": "Hyperventilation",
+      "system": "EPISODIC",
       "redFlag": false,
       "symptoms": {
-        "onset": [
-          "insidious"
-        ],
-        "progression": [
-          "worsening"
-        ],
-        "palliate": [
-          "n/a"
-        ],
-        "provoke": [
-          "n/a"
-        ],
-        "quality": [
-          "lightheadedness"
-        ],
-        "timing": [
-          "persistent"
-        ],
-        "region": [
-          "n/a"
-        ],
-        "radiation": [
-          "n/a"
-        ],
-        "severity": [
-          "mild"
-        ],
-        "clinical tests": [
-          "n/a"
-        ],
-        "other symptoms": [
-          "fatigue",
-          "shortness-of-breath",
-          "palpitations"
-        ]
-      }
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "common"
     },
     {
-      "name": "Anxiety/panic",
-      "system": "Psychiatric",
-      "freq": "occasional",
+      "name": "Drugs (antihypertensives, antidepressants)",
+      "system": "EPISODIC",
       "redFlag": false,
       "symptoms": {
-        "onset": [
-          "acute"
-        ],
-        "progression": [
-          "intermittent"
-        ],
-        "palliate": [
-          "rest"
-        ],
-        "provoke": [
-          "stress"
-        ],
-        "quality": [
-          "lightheadedness"
-        ],
-        "timing": [
-          "episodic"
-        ],
-        "region": [
-          "n/a"
-        ],
-        "radiation": [
-          "n/a"
-        ],
-        "severity": [
-          "mild"
-        ],
-        "clinical tests": [
-          "n/a"
-        ],
-        "other symptoms": [
-          "diaphoresis",
-          "shortness-of-breath",
-          "chest-tightness"
-        ]
-      }
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "common"
     },
     {
-      "name": "Vestibular migraine",
-      "system": "Neurologic",
-      "freq": "occasional",
+      "name": "Hypoglycemia",
+      "system": "EPISODIC",
       "redFlag": false,
       "symptoms": {
-        "onset": [
-          "subacute"
-        ],
-        "progression": [
-          "intermittent"
-        ],
-        "palliate": [
-          "rest"
-        ],
-        "provoke": [
-          "stress"
-        ],
-        "quality": [
-          "vertigo"
-        ],
-        "timing": [
-          "episodic"
-        ],
-        "region": [
-          "n/a"
-        ],
-        "radiation": [
-          "n/a"
-        ],
-        "severity": [
-          "moderate"
-        ],
-        "clinical tests": [
-          "n/a"
-        ],
-        "other symptoms": [
-          "headache",
-          "photophobia",
-          "phonophobia"
-        ]
-      }
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "common"
     },
     {
-      "name": "Posterior circulation stroke/TIA",
-      "system": "Neurologic",
-      "freq": "rare",
-      "redFlag": true,
-      "symptoms": {
-        "onset": [
-          "sudden"
-        ],
-        "progression": [
-          "worsening"
-        ],
-        "palliate": [
-          "n/a"
-        ],
-        "provoke": [
-          "n/a"
-        ],
-        "quality": [
-          "vertigo"
-        ],
-        "timing": [
-          "constant"
-        ],
-        "region": [
-          "n/a"
-        ],
-        "radiation": [
-          "n/a"
-        ],
-        "severity": [
-          "severe"
-        ],
-        "clinical tests": [
-          "test-of-skew"
-        ],
-        "other symptoms": [
-          "ataxia",
-          "dysarthria",
-          "diplopia"
-        ]
-      }
-    },
-    {
-      "name": "Medication effect (antihypertensives, sedatives)",
-      "system": "Toxicologic",
-      "freq": "common",
+      "name": "Posterior circulation TIAs",
+      "system": "EPISODIC",
       "redFlag": false,
       "symptoms": {
-        "onset": [
-          "subacute"
-        ],
-        "progression": [
-          "intermittent"
-        ],
-        "palliate": [
-          "medication-change"
-        ],
-        "provoke": [
-          "medication"
-        ],
-        "quality": [
-          "lightheadedness"
-        ],
-        "timing": [
-          "episodic"
-        ],
-        "region": [
-          "n/a"
-        ],
-        "radiation": [
-          "n/a"
-        ],
-        "severity": [
-          "mild"
-        ],
-        "clinical tests": [
-          "orthostatic-vitals"
-        ],
-        "other symptoms": [
-          "fatigue"
-        ]
-      }
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Anxiety",
+      "system": "EPISODIC",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Seizures (partial)",
+      "system": "EPISODIC",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Carbon monoxide poisoning (",
+      "system": "EPISODIC",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "Persistent postural-perceptual dizziness (PPPD)",
+      "system": "EPISODIC",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "Labyrinthitis*",
+      "system": "ACUTE ONSET",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Vestibular neuronitis",
+      "system": "ACUTE ONSET",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Acute alcohol or recreational drug intoxication",
+      "system": "ACUTE ONSET",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Head injuries*",
+      "system": "ACUTE ONSET",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Posterior circulation CVA",
+      "system": "ACUTE ONSET",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Diabetes mellitus",
+      "system": "GRADUAL ONSET",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Hypothyroidism",
+      "system": "GRADUAL ONSET",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Multiple sclerosis",
+      "system": "GRADUAL ONSET",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Aortic stenosis",
+      "system": "GRADUAL ONSET",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Cerebellopontine angle tumour* (",
+      "system": "GRADUAL ONSET",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "Ototoxicity \u2013 aminoglycosides (i.e. gentamicin)",
+      "system": "GRADUAL ONSET",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "rare"
     }
   ],
+  "sources": {
+    "index_keys": [
+      "Dizziness"
+    ],
+    "index_type": "clinical"
+  },
   "symptoms": {}
 }

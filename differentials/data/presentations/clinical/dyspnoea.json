@@ -1,104 +1,373 @@
 {
   "presentation": "Dyspnoea",
-  "symptoms": {},
   "items": [
     {
       "name": "Pneumothorax (Fig. 15)",
-      "category": "SUDDEN (SECONDS TO MINUTES)",
+      "system": "SUDDEN (SECONDS TO MINUTES)",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
       "freq": "common"
     },
     {
       "name": "Chest trauma",
-      "category": "SUDDEN (SECONDS TO MINUTES)",
+      "system": "SUDDEN (SECONDS TO MINUTES)",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
       "freq": "common"
     },
     {
       "name": "Aspiration",
-      "category": "SUDDEN (SECONDS TO MINUTES)",
+      "system": "SUDDEN (SECONDS TO MINUTES)",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
       "freq": "common"
     },
     {
       "name": "Pulmonary oedema",
-      "category": "SUDDEN (SECONDS TO MINUTES)",
+      "system": "SUDDEN (SECONDS TO MINUTES)",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
       "freq": "common"
     },
     {
       "name": "Pulmonary embolism",
-      "category": "SUDDEN (SECONDS TO MINUTES)",
+      "system": "SUDDEN (SECONDS TO MINUTES)",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
       "freq": "common"
     },
     {
       "name": "Anaphylaxis",
-      "category": "SUDDEN (SECONDS TO MINUTES)",
+      "system": "SUDDEN (SECONDS TO MINUTES)",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
       "freq": "uncommon"
     },
     {
       "name": "Asthma",
-      "category": "ACUTE (HOURS TO DAYS)",
+      "system": "ACUTE (HOURS TO DAYS)",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
       "freq": "common"
     },
     {
       "name": "Respiratory tract infection",
-      "category": "ACUTE (HOURS TO DAYS)",
+      "system": "ACUTE (HOURS TO DAYS)",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
       "freq": "common"
     },
     {
       "name": "Pleural effusion",
-      "category": "ACUTE (HOURS TO DAYS)",
+      "system": "ACUTE (HOURS TO DAYS)",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
       "freq": "common"
     },
     {
       "name": "Chronic air\ufb02ow limitation (COPD)",
-      "category": "CHRONIC (MONTHS TO YEARS)",
+      "system": "CHRONIC (MONTHS TO YEARS)",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
       "freq": "common"
     },
     {
-      "name": "Anaemia",
-      "category": "CHRONIC (MONTHS TO YEARS)",
+      "name": "Anemia",
+      "system": "CHRONIC (MONTHS TO YEARS)",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
       "freq": "common"
     },
     {
       "name": "Arrhythmia",
-      "category": "CHRONIC (MONTHS TO YEARS)",
+      "system": "CHRONIC (MONTHS TO YEARS)",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
       "freq": "common"
     },
     {
       "name": "Valvular heart disease",
-      "category": "CHRONIC (MONTHS TO YEARS)",
+      "system": "CHRONIC (MONTHS TO YEARS)",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
       "freq": "common"
     },
     {
       "name": "Cardiac failure",
-      "category": "CHRONIC (MONTHS TO YEARS)",
+      "system": "CHRONIC (MONTHS TO YEARS)",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
       "freq": "common"
     },
     {
       "name": "Cystic \ufb01brosis",
-      "category": "CHRONIC (MONTHS TO YEARS)",
+      "system": "CHRONIC (MONTHS TO YEARS)",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
       "freq": "uncommon"
     },
     {
       "name": "Idiopathic pulmonary \ufb01brosis",
-      "category": "CHRONIC (MONTHS TO YEARS)",
+      "system": "CHRONIC (MONTHS TO YEARS)",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
       "freq": "uncommon"
     },
     {
       "name": "Chest wall deformities",
-      "category": "CHRONIC (MONTHS TO YEARS)",
+      "system": "CHRONIC (MONTHS TO YEARS)",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
       "freq": "rare"
     },
     {
       "name": "Neuromuscular disorders",
-      "category": "CHRONIC (MONTHS TO YEARS)",
+      "system": "CHRONIC (MONTHS TO YEARS)",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
       "freq": "rare"
     },
     {
       "name": "Pulmonary hypertension",
-      "category": "CHRONIC (MONTHS TO YEARS)",
+      "system": "CHRONIC (MONTHS TO YEARS)",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
       "freq": "rare"
     }
   ],
   "sources": {
-    "index_key": "Dyspnoea"
-  }
+    "index_keys": [
+      "Dyspnoea"
+    ],
+    "index_type": "clinical"
+  },
+  "symptoms": {}
 }

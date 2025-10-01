@@ -1,476 +1,392 @@
 {
-  "presentation": "constipation",
+  "presentation": "Constipation",
   "items": [
     {
-      "name": "Functional constipation",
-      "system": "Gastrointestinal",
-      "freq": "common",
+      "name": "Hirschsprung\u2019s disease",
+      "system": "CONGENITAL",
       "redFlag": false,
       "symptoms": {
-        "onset": [
-          "chronic"
-        ],
-        "progression": [
-          "stable"
-        ],
-        "palliate": [
-          "fiber",
-          "oral-intake"
-        ],
-        "provoke": [
-          "dehydration",
-          "low-fiber-diet"
-        ],
-        "quality": [
-          "n/a"
-        ],
-        "timing": [
-          "persistent"
-        ],
-        "region": [
-          "n/a"
-        ],
-        "radiation": [
-          "n/a"
-        ],
-        "severity": [
-          "mild"
-        ],
-        "clinical tests": [
-          "n/a"
-        ],
-        "other symptoms": [
-          "bloating",
-          "abdominal-discomfort"
-        ]
-      }
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "rare"
     },
     {
-      "name": "Medication-induced (opioids, anticholinergics, iron)",
-      "system": "Toxicologic",
-      "freq": "common",
+      "name": "Diverticular disease",
+      "system": "OBSTRUCTION",
       "redFlag": false,
       "symptoms": {
-        "onset": [
-          "subacute"
-        ],
-        "progression": [
-          "worsening"
-        ],
-        "palliate": [
-          "n/a"
-        ],
-        "provoke": [
-          "medication"
-        ],
-        "quality": [
-          "n/a"
-        ],
-        "timing": [
-          "persistent"
-        ],
-        "region": [
-          "n/a"
-        ],
-        "radiation": [
-          "n/a"
-        ],
-        "severity": [
-          "mild"
-        ],
-        "clinical tests": [
-          "n/a"
-        ],
-        "other symptoms": [
-          "dry-mouth",
-          "urinary-retention"
-        ]
-      }
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "common"
     },
     {
-      "name": "Hypothyroidism",
-      "system": "Endocrine",
-      "freq": "occasional",
+      "name": "Colonic carcinoma",
+      "system": "OBSTRUCTION",
       "redFlag": false,
       "symptoms": {
-        "onset": [
-          "insidious"
-        ],
-        "progression": [
-          "stable"
-        ],
-        "palliate": [
-          "n/a"
-        ],
-        "provoke": [
-          "n/a"
-        ],
-        "quality": [
-          "n/a"
-        ],
-        "timing": [
-          "persistent"
-        ],
-        "region": [
-          "n/a"
-        ],
-        "radiation": [
-          "n/a"
-        ],
-        "severity": [
-          "mild"
-        ],
-        "clinical tests": [
-          "n/a"
-        ],
-        "other symptoms": [
-          "fatigue",
-          "weight-gain",
-          "cold-intolerance"
-        ]
-      }
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "common"
     },
     {
-      "name": "Hypercalcemia",
-      "system": "Metabolic",
-      "freq": "occasional",
-      "redFlag": true,
-      "symptoms": {
-        "onset": [
-          "subacute"
-        ],
-        "progression": [
-          "worsening"
-        ],
-        "palliate": [
-          "hydration"
-        ],
-        "provoke": [
-          "n/a"
-        ],
-        "quality": [
-          "n/a"
-        ],
-        "timing": [
-          "persistent"
-        ],
-        "region": [
-          "n/a"
-        ],
-        "radiation": [
-          "n/a"
-        ],
-        "severity": [
-          "moderate"
-        ],
-        "clinical tests": [
-          "n/a"
-        ],
-        "other symptoms": [
-          "polyuria",
-          "abdominal-pain",
-          "nausea"
-        ]
-      }
-    },
-    {
-      "name": "Irritable bowel syndrome (constipation-predominant)",
-      "system": "Gastrointestinal",
-      "freq": "occasional",
+      "name": "Iatrogenic Ileus",
+      "system": "OBSTRUCTION",
       "redFlag": false,
       "symptoms": {
-        "onset": [
-          "chronic"
-        ],
-        "progression": [
-          "intermittent"
-        ],
-        "palliate": [
-          "fiber"
-        ],
-        "provoke": [
-          "stress",
-          "dietary-triggers"
-        ],
-        "quality": [
-          "cramping"
-        ],
-        "timing": [
-          "episodic"
-        ],
-        "region": [
-          "diffuse"
-        ],
-        "radiation": [
-          "n/a"
-        ],
-        "severity": [
-          "mild"
-        ],
-        "clinical tests": [
-          "n/a"
-        ],
-        "other symptoms": [
-          "bloating",
-          "abdominal-pain"
-        ]
-      }
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "common"
     },
     {
-      "name": "Colorectal cancer",
-      "system": "Oncology",
-      "freq": "occasional",
-      "redFlag": true,
-      "symptoms": {
-        "onset": [
-          "insidious"
-        ],
-        "progression": [
-          "worsening"
-        ],
-        "palliate": [
-          "n/a"
-        ],
-        "provoke": [
-          "n/a"
-        ],
-        "quality": [
-          "n/a"
-        ],
-        "timing": [
-          "persistent"
-        ],
-        "region": [
-          "lower-abdomen"
-        ],
-        "radiation": [
-          "n/a"
-        ],
-        "severity": [
-          "moderate"
-        ],
-        "clinical tests": [
-          "n/a"
-        ],
-        "other symptoms": [
-          "weight-loss",
-          "rectal-bleeding",
-          "iron-deficiency-anemia"
-        ]
-      }
-    },
-    {
-      "name": "Bowel obstruction",
-      "system": "Gastrointestinal",
-      "freq": "occasional",
-      "redFlag": true,
-      "symptoms": {
-        "onset": [
-          "acute"
-        ],
-        "progression": [
-          "worsening"
-        ],
-        "palliate": [
-          "npo"
-        ],
-        "provoke": [
-          "oral-intake"
-        ],
-        "quality": [
-          "colicky"
-        ],
-        "timing": [
-          "intermittent"
-        ],
-        "region": [
-          "diffuse"
-        ],
-        "radiation": [
-          "n/a"
-        ],
-        "severity": [
-          "moderate"
-        ],
-        "clinical tests": [
-          "succussion-splash"
-        ],
-        "other symptoms": [
-          "vomiting",
-          "distension",
-          "abdominal-pain"
-        ]
-      }
-    },
-    {
-      "name": "Neurogenic (Parkinson disease, spinal cord lesions)",
-      "system": "Neurologic",
-      "freq": "occasional",
+      "name": "Extrinsic compression, , ovarian tumours",
+      "system": "OBSTRUCTION",
       "redFlag": false,
       "symptoms": {
-        "onset": [
-          "chronic"
-        ],
-        "progression": [
-          "stable"
-        ],
-        "palliate": [
-          "n/a"
-        ],
-        "provoke": [
-          "medication"
-        ],
-        "quality": [
-          "n/a"
-        ],
-        "timing": [
-          "persistent"
-        ],
-        "region": [
-          "n/a"
-        ],
-        "radiation": [
-          "n/a"
-        ],
-        "severity": [
-          "mild"
-        ],
-        "clinical tests": [
-          "n/a"
-        ],
-        "other symptoms": [
-          "gait-abnormalities",
-          "urinary-retention"
-        ]
-      }
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "uncommon"
     },
     {
-      "name": "Diabetes (autonomic dysfunction)",
-      "system": "Endocrine",
-      "freq": "occasional",
+      "name": "Fissure-in-ano",
+      "system": "PAINFUL ANUS",
       "redFlag": false,
       "symptoms": {
-        "onset": [
-          "chronic"
-        ],
-        "progression": [
-          "stable"
-        ],
-        "palliate": [
-          "n/a"
-        ],
-        "provoke": [
-          "n/a"
-        ],
-        "quality": [
-          "n/a"
-        ],
-        "timing": [
-          "persistent"
-        ],
-        "region": [
-          "n/a"
-        ],
-        "radiation": [
-          "n/a"
-        ],
-        "severity": [
-          "mild"
-        ],
-        "clinical tests": [
-          "n/a"
-        ],
-        "other symptoms": [
-          "polyuria",
-          "polydipsia",
-          "weight-loss"
-        ]
-      }
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "common"
     },
     {
-      "name": "Pregnancy",
-      "system": "Gynaecology",
-      "freq": "occasional",
+      "name": "Perianal abscess",
+      "system": "PAINFUL ANUS",
       "redFlag": false,
       "symptoms": {
-        "onset": [
-          "subacute"
-        ],
-        "progression": [
-          "stable"
-        ],
-        "palliate": [
-          "fiber"
-        ],
-        "provoke": [
-          "n/a"
-        ],
-        "quality": [
-          "n/a"
-        ],
-        "timing": [
-          "persistent"
-        ],
-        "region": [
-          "lower-abdomen"
-        ],
-        "radiation": [
-          "n/a"
-        ],
-        "severity": [
-          "mild"
-        ],
-        "clinical tests": [
-          "n/a"
-        ],
-        "other symptoms": [
-          "nausea",
-          "vomiting"
-        ]
-      }
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "common"
     },
     {
-      "name": "Dehydration/low intake",
-      "system": "General",
-      "freq": "common",
+      "name": "Strangulated hemorrhoids",
+      "system": "PAINFUL ANUS",
       "redFlag": false,
       "symptoms": {
-        "onset": [
-          "subacute"
-        ],
-        "progression": [
-          "worsening"
-        ],
-        "palliate": [
-          "oral-intake"
-        ],
-        "provoke": [
-          "n/a"
-        ],
-        "quality": [
-          "n/a"
-        ],
-        "timing": [
-          "persistent"
-        ],
-        "region": [
-          "n/a"
-        ],
-        "radiation": [
-          "n/a"
-        ],
-        "severity": [
-          "mild"
-        ],
-        "clinical tests": [
-          "n/a"
-        ],
-        "other symptoms": [
-          "thirst",
-          "dizziness"
-        ]
-      }
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Post-hemorrhoidectomy",
+      "system": "PAINFUL ANUS",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Paralytic ileus",
+      "system": "ADYNAMIC BOWEL",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Neurological disorders (i.e. multiple sclerosis)",
+      "system": "ADYNAMIC BOWEL",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Spinal cord injury",
+      "system": "ADYNAMIC BOWEL",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "Diabetes (autonomic neuropathy)",
+      "system": "ENDOCRINE",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Hyperparathyroidism",
+      "system": "ENDOCRINE",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Codeine phosphate",
+      "system": "ENDOCRINE",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Morphine",
+      "system": "ENDOCRINE",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Tricyclic antidepressants",
+      "system": "ENDOCRINE",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Atropine",
+      "system": "ENDOCRINE",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Laxative abuse",
+      "system": "ENDOCRINE",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Dietary changes (i.e. low-\ufb01bre diet, dehydration)",
+      "system": "ENDOCRINE",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "common"
     }
   ],
+  "sources": {
+    "index_keys": [
+      "Constipation"
+    ],
+    "index_type": "clinical"
+  },
   "symptoms": {}
 }

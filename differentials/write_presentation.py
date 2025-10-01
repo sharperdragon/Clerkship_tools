@@ -1,73 +1,26 @@
 import os
 import json
 import re
-from typing import Dict, Any, Iterable, Tuple, Optional
-
+from typing import Dict, Any, Iterable, Tuple, Optional, List
 from pathlib import Path
 
-INDEX_FILENAME = "clinical_presentation_index.json"
-SCHEMA_FILENAME = "presentations_schema.json"
-
 # ! -----------------------------
-# ! Config: paths & behavior
+# ! Config: paths & behavior (explicit paths; no dry run)
 # ! -----------------------------
-# $ Base directory for all presentations
 BASE_DIR = "/Users/claytongoddard/Git dub/Clerkship_tools_v2/differentials/data/presentations"
-
-# $ Source resources
 PRESENTATION_LIST_PATH = "/Users/claytongoddard/Git dub/Clerkship_tools_v2/differentials/Presentation_list.json"
-# ? If you move these into the repo, just update these two variables.
-INDEX_PATH = "clinical_presentation_index.json"          # master etiologies by presentation
-SCHEMA_PATH = "presentations_schema.json"                 # required symptoms scaffold
+CLINICAL_INDEX_PATH = "/Users/claytongoddard/Git dub/Clerkship_tools_v2/differentials/clinical_presentation_index.json"
+NONCLINICAL_INDEX_PATH = "/Users/claytongoddard/Git dub/Clerkship_tools_v2/differentials/non-clinical_presentation_index.json"
+SCHEMA_PATH = "/Users/claytongoddard/Git dub/Clerkship_tools_v2/differentials/presentations_schema.json"
 
-# $ Behavior flags
-INCLUDE_FREQ = True                     # <- include frequency in each item
-BACKFILL_SCHEMA_ON_EXISTING = True      # add missing required symptom arrays on existing files
-LOW_PRIORITY_MODE = "subfolder"          # "subfolder" => route to clinical/other; "flag" => keep path, set priority=low
-DRY_RUN = False
+INCLUDE_FREQ = True                  # Include frequency in each etiology item
+LOW_PRIORITY_MODE = "subfolder"        # Route low-priority to clinical/other/
+REBUILD_EXISTING = True              # Rebuild items array from sources on existing files
 SUMMARY_PATH = "/Users/claytongoddard/Desktop/presentation_build_summary.md"
-
-# ? Resolve external resource paths with env overrides and local fallbacks
-#   Env vars (if set) take precedence: CLINICAL_INDEX_PATH, PRESENTATIONS_SCHEMA_PATH
-#   Otherwise we try a series of sensible locations.
-
-def _candidate_paths(primary: str, fname: str) -> Iterable[str]:
-    # 1) Primary (as configured)
-    yield primary
-
-    # 2) Env override
-    env_map = {
-        INDEX_FILENAME: os.environ.get("CLINICAL_INDEX_PATH"),
-        SCHEMA_FILENAME: os.environ.get("PRESENTATIONS_SCHEMA_PATH"),
-    }
-    env_val = env_map.get(fname)
-    if env_val:
-        yield env_val
-
-    # 3) Next to this script (repo-friendly)
-    here = Path(__file__).resolve().parent
-    yield str(here / fname)
-
-    # 4) ./data/<fname> next to this script
-    yield str(here / "data" / fname)
-
-    # 5) Under BASE_DIR
-    yield str(Path(BASE_DIR) / fname)
-
-    # 6) One level above BASE_DIR/data (common repo layout)
-    base_parent = Path(BASE_DIR).resolve().parent
-    yield str(base_parent / "data" / fname)
-
-
-def _resolve_first(primary: str, fname: str) -> str:
-    for cand in _candidate_paths(primary, fname):
-        if cand and os.path.exists(cand):
-            return cand
-    # If nothing exists, return the primary so the error clearly shows what we attempted first
-    return primary
+DRY_RUN = False                      # <= per user request
 
 # ! -----------------------------
-# ! Known section → folder mapping
+# ! Section → folder mapping
 # ! -----------------------------
 SECTION_FOLDERS: Dict[str, str] = {
     "Clinical Presentations": "clinical",
@@ -75,20 +28,9 @@ SECTION_FOLDERS: Dict[str, str] = {
     "Hematological Presentations": "hematological",
 }
 
-# ! Utility: slugify name -> filename
-_def_slug_cleanup = re.compile(r"[^a-z0-9\s-]")
-
-def slugify(name: str) -> str:
-    s = name.lower()
-    s = _def_slug_cleanup.sub("", s)
-    s = s.strip().replace(" ", "-")
-    s = re.sub(r"-+", "-", s)
-    return s
-
 # ! -----------------------------
-# ! Low-priority & already-written sets (derived from user-provided paths)
+# ! Already written & low-priority slugs (derived from user-provided paths)
 # ! -----------------------------
-# NOTE: We only need slugs; extract them from the terminal filename in each path.
 _WRITTEN_PATHS = [
     '/Users/claytongoddard/Git dub/Clerkship_tools_v2/differentials/data/presentations/clinical/abdominal.json',
     '/Users/claytongoddard/Git dub/Clerkship_tools_v2/differentials/data/presentations/clinical/anorectal-pain.json',
@@ -142,52 +84,44 @@ _LOW_PRIORITY_PATHS = [
     '/Users/claytongoddard/Git dub/Clerkship_tools_v2/differentials/data/presentations/clinical/other/toe-lesions.json',
     '/Users/claytongoddard/Git dub/Clerkship_tools_v2/differentials/data/presentations/clinical/other/tongue-disorders.json',
 ]
-
-# Convert to slug sets
 WRITTEN_SLUGS = {os.path.splitext(os.path.basename(p))[0] for p in _WRITTEN_PATHS}
 LOW_PRIORITY_SLUGS = {os.path.splitext(os.path.basename(p))[0] for p in _LOW_PRIORITY_PATHS}
 
 # ! -----------------------------
-# ! Helper utilities
+# ! Utilities
 # ! -----------------------------
-
-def load_json(path: str) -> Any:
-    try:
-        with open(path, "r") as f:
-            return json.load(f)
-    except FileNotFoundError as e:
-        raise FileNotFoundError(
-            f"JSON not found at: {path}\n"
-            f"Tip: Provide the file or set env vars CLINICAL_INDEX_PATH / PRESENTATIONS_SCHEMA_PATH,\n"
-            f"or place {INDEX_FILENAME}/{SCHEMA_FILENAME} adjacent to this script or in ./data/."
-        ) from e
-
-
-def load_index_json() -> Any:
-    resolved = _resolve_first(INDEX_PATH, INDEX_FILENAME)
-    return load_json(resolved)
-
-
-def load_schema_json() -> Any:
-    resolved = _resolve_first(SCHEMA_PATH, SCHEMA_FILENAME)
-    return load_json(resolved)
-
-# ? Required symptom keys (from schema)
-_REQUIRED_SYMPTOMS: Optional[Iterable[str]] = None
-
-def _init_required_symptoms(schema: Dict[str, Any]) -> Iterable[str]:
-    # schema keeps a list under "symptoms" which defines the required keys
-    # Example content: ["onset", "progression", ..., "clinical tests", "other symptoms"]
-    global _REQUIRED_SYMPTOMS
-    keys = schema.get("symptoms") or []
-    _REQUIRED_SYMPTOMS = list(keys)
-    return _REQUIRED_SYMPTOMS
-
-# Normalize labels: strip bullets, figure refs, trailing punctuation, e.g. tails
+_def_slug_cleanup = re.compile(r"[^a-z0-9\s-]")
 _bullet_pat = re.compile(r"^[\u2022\u2023\u25E6\u2043\u2219\-•\s]+")
 _fig_pat = re.compile(r"\((?:fig|figure|see)[:\s][^\)]*\)", re.IGNORECASE)
-_eg_tail_pat = re.compile(r"\be\.g\.[^;,.]*")
+_eg_tail_pat = re.compile(r"\be\.g\.[^;,.]*", re.IGNORECASE)
 _trailing_punct = re.compile(r"[\s,:;\-]+$")
+
+SYSTEM_FIX = {
+    "‘medical’ causes": "Medical",
+    "medical causes": "Medical",
+    "urinary tract": "Urinary tract",
+    "abdominal wall": "Abdominal wall",
+    "gastrointestinal": "Gastrointestinal",
+    "referred pain": "Referred",
+}
+
+ALIAS_MAP = {
+    ("Clinical Presentations", "Abdominal"): ["Abdominal pain", "Abdominal swellings"],
+}
+
+SECTION_INDEX_TYPE = {
+    "Clinical Presentations": "clinical",
+    "Biochemical Presentations": "non-clinical",
+    "Hematological Presentations": "non-clinical",
+}
+
+
+def slugify(name: str) -> str:
+    s = name.lower()
+    s = _def_slug_cleanup.sub("", s)
+    s = s.strip().replace(" ", "-")
+    s = re.sub(r"-+", "-", s)
+    return s
 
 
 def normalize_label(s: str) -> str:
@@ -198,16 +132,50 @@ def normalize_label(s: str) -> str:
     s = _trailing_punct.sub("", s)
     return s.strip()
 
-# Iterate nested index structures and yield (category, etiology, freq)
+
+def title_case_system(cat: str) -> str:
+    if not cat:
+        return ""
+    c = normalize_label(cat)
+    low = c.lower()
+    if low in SYSTEM_FIX:
+        return SYSTEM_FIX[low]
+    return c[:1].upper() + c[1:]
+
+
+def load_json(path: str) -> Any:
+    with open(path, "r") as f:
+        return json.load(f)
+
+
+def get_required_symptom_keys(schema_obj: Dict[str, Any]) -> List[str]:
+    # Prefer explicit list if present
+    if isinstance(schema_obj.get("symptoms"), dict):
+        sym = schema_obj["symptoms"]
+        # Try required list
+        if isinstance(sym.get("required"), list) and sym.get("required"):
+            return list(sym["required"])  # keep order
+        # Else use properties keys
+        if isinstance(sym.get("properties"), dict):
+            return list(sym["properties"].keys())
+    # Fallback to canonical list
+    return [
+        "onset","progression","palliate","provoke","quality","timing",
+        "region","radiation","severity","clinical tests","other symptoms"
+    ]
+
+
+def blank_symptoms(required_keys: Iterable[str]) -> Dict[str, list]:
+    return {k: [] for k in required_keys}
+
 
 def iter_etiologies(index_block: Any, parent_category: str = "") -> Iterable[Tuple[str, str, Optional[str]]]:
-    # The index may be: dict of categories → dict/list/str; lists of etiologies; or strings
+    """Yield (category, etiology, freq) recursively from index blocks."""
     if isinstance(index_block, dict):
         for k, v in index_block.items():
             cat = normalize_label(k) if k else parent_category
-            # If value is a dict with possible {name:{freq:..}} shapes or nested categories
             if isinstance(v, dict):
-                # Case A: leaf objects like {"Diverticulosis": {"freq": "common"}}
+                # Leaf case: {"Etiology": {"freq": "common"}}
                 if all(isinstance(x, dict) and ("freq" in x or not x) for x in v.values()):
                     for et, meta in v.items():
                         name = normalize_label(et)
@@ -221,7 +189,6 @@ def iter_etiologies(index_block: Any, parent_category: str = "") -> Iterable[Tup
                     if isinstance(item, str):
                         yield (cat, normalize_label(item), None)
                     elif isinstance(item, dict):
-                        # e.g., [{"name":"X", "freq":"common"}] variants
                         nm = item.get("name") if isinstance(item.get("name"), str) else None
                         if nm:
                             yield (cat, normalize_label(nm), item.get("freq"))
@@ -236,16 +203,38 @@ def iter_etiologies(index_block: Any, parent_category: str = "") -> Iterable[Tup
         yield (parent_category, normalize_label(index_block), None)
 
 
-def ensure_schema_symptoms(obj: Dict[str, Any], required_keys: Iterable[str]) -> Tuple[Dict[str, Any], bool]:
-    changed = False
-    if "symptoms" not in obj or not isinstance(obj.get("symptoms"), dict):
-        obj["symptoms"] = {}
-        changed = True
-    for key in required_keys:
-        if key not in obj["symptoms"] or not isinstance(obj["symptoms"].get(key), list) or len(obj["symptoms"][key]) == 0:
-            obj["symptoms"][key] = ["n/a"]
-            changed = True
-    return obj, changed
+def build_index_lookup(d: Dict[str, Any]) -> Dict[str, str]:
+    def norm(t: str) -> str:
+        return re.sub(r"[^a-z0-9]+", "", t.lower())
+    return {norm(k): k for k in d.keys()}
+
+
+def resolve_index_keys(pres_name: str, section: str, clinical_idx: Dict[str, Any], nonclinical_idx: Dict[str, Any]) -> List[str]:
+    # Manual alias first
+    if (section, pres_name) in ALIAS_MAP:
+        return ALIAS_MAP[(section, pres_name)]
+
+    # Choose index by section
+    idx = clinical_idx if SECTION_INDEX_TYPE.get(section) == "clinical" else nonclinical_idx
+
+    # Exact (case-insensitive)
+    for k in idx.keys():
+        if k.lower() == pres_name.lower():
+            return [k]
+
+    # Token-normalized
+    def norm(t: str) -> str:
+        return re.sub(r"[^a-z0-9]+", "", t.lower())
+    n_name = norm(pres_name)
+
+    # Exact normalized
+    for k in idx.keys():
+        if norm(k) == n_name:
+            return [k]
+
+    # Contains: if the list name is umbrella, gather children with substring match
+    matches = [k for k in idx.keys() if n_name and n_name in norm(k)]
+    return matches
 
 
 def write_json_atomically(dest_path: str, data: Dict[str, Any]) -> None:
@@ -256,21 +245,6 @@ def write_json_atomically(dest_path: str, data: Dict[str, Any]) -> None:
     os.replace(tmp, dest_path)
 
 
-def find_index_key(name: str, index_dict: Dict[str, Any]) -> Optional[str]:
-    # Try exact case-insensitive
-    for k in index_dict.keys():
-        if k.lower() == name.lower():
-            return k
-    # Try loose match: strip non-alnum
-    def norm(t: str) -> str:
-        return re.sub(r"[^a-z0-9]+", "", t.lower())
-    n_name = norm(name)
-    for k in index_dict.keys():
-        if norm(k) == n_name:
-            return k
-    return None
-
-
 # ! -----------------------------
 # ! Main build
 # ! -----------------------------
@@ -278,113 +252,127 @@ def find_index_key(name: str, index_dict: Dict[str, Any]) -> Optional[str]:
 def main() -> None:
     # Load resources
     presentation_data: Dict[str, Any] = load_json(PRESENTATION_LIST_PATH)
-    index_data: Dict[str, Any] = load_index_json()
-    schema_data: Dict[str, Any] = load_schema_json()
-    required_symptoms = list(_init_required_symptoms(schema_data))
+    clinical_idx: Dict[str, Any] = load_json(CLINICAL_INDEX_PATH)
+    nonclinical_idx: Dict[str, Any] = load_json(NONCLINICAL_INDEX_PATH)
+    schema_data: Dict[str, Any] = load_json(SCHEMA_PATH)
+    required_symptoms = get_required_symptom_keys(schema_data)
 
     created = 0
-    skipped_existing = 0
-    backfilled = 0
-    missing_index = 0
+    updated = 0
+    skipped = 0
+    no_index = 0
 
     summary_rows = []
 
-    for section, items in presentation_data.items():
+    for section, entries in presentation_data.items():
         folder_name = SECTION_FOLDERS.get(section, "misc")
+        index_type = SECTION_INDEX_TYPE.get(section, "clinical")
 
-        for entry in items:
+        for entry in entries:
             pres_name = entry["name"] if isinstance(entry, dict) else str(entry)
             slug = slugify(pres_name)
 
             # Low priority routing
             subfolder = folder_name
-            priority_val: Optional[str] = None
-            if slug in LOW_PRIORITY_SLUGS:
-                if LOW_PRIORITY_MODE == "subfolder":
-                    # Route to clinical/other regardless of section
-                    subfolder = "clinical/other"
-                elif LOW_PRIORITY_MODE == "flag":
-                    priority_val = "low"
+            if slug in LOW_PRIORITY_SLUGS and LOW_PRIORITY_MODE == "subfolder":
+                subfolder = "clinical/other"
 
             dest_path = os.path.join(BASE_DIR, subfolder, f"{slug}.json")
             os.makedirs(os.path.dirname(dest_path), exist_ok=True)
 
-            # Prepare template
-            data: Dict[str, Any] = {
+            # Resolve which index keys to use
+            matched_keys = resolve_index_keys(pres_name, section, clinical_idx, nonclinical_idx)
+            used_keys: List[str] = []
+
+            # Build items
+            items: List[Dict[str, Any]] = []
+            seen = set()
+            chosen_idx = clinical_idx if index_type == "clinical" else nonclinical_idx
+
+            for key in matched_keys:
+                block = chosen_idx.get(key)
+                if block is None:
+                    continue
+                used_keys.append(key)
+                for cat, et, fq in iter_etiologies(block):
+                    system = title_case_system(cat)
+                    name = et
+                    sig = (system.lower(), name.lower())
+                    if sig in seen:
+                        continue
+                    seen.add(sig)
+                    item: Dict[str, Any] = {
+                        "name": name,
+                        "system": system,
+                        "redFlag": False,
+                        "symptoms": blank_symptoms(required_symptoms),
+                    }
+                    if INCLUDE_FREQ:
+                        item["freq"] = fq if fq else "unknown"
+                    items.append(item)
+
+            # Build document
+            doc: Dict[str, Any] = {
                 "presentation": pres_name,
-                "symptoms": {},  # ensure later
-                "items": [],
-                "sources": {"index_key": None},
+                "items": items,
+                "sources": {
+                    "index_keys": used_keys,
+                    "index_type": index_type,
+                },
             }
-            if priority_val:
-                data["priority"] = priority_val
 
-            # Populate symptoms scaffold
-            data, _ = ensure_schema_symptoms(data, required_symptoms)
-
-            # Locate index content for this presentation
-            idx_key = find_index_key(pres_name, index_data)
-            if idx_key is None:
-                missing_index += 1
-            else:
-                data["sources"]["index_key"] = idx_key
-                block = index_data.get(idx_key)
-                if block is not None:
-                    for cat, et, fq in iter_etiologies(block):
-                        item = {"name": et, "category": cat or ""}
-                        if INCLUDE_FREQ and fq:
-                            item["freq"] = fq
-                        data["items"].append(item)
-
-            # If file exists, either skip or backfill schema
+            action = ""
             if os.path.exists(dest_path):
-                # Only backfill symptoms if configured
-                if BACKFILL_SCHEMA_ON_EXISTING:
-                    existing = load_json(dest_path)
-                    existing, changed = ensure_schema_symptoms(existing, required_symptoms)
-                    if changed and not DRY_RUN:
-                        write_json_atomically(dest_path, existing)
-                        backfilled += 1
-                        action = "backfilled"
-                    else:
-                        skipped_existing += 1
-                        action = "skipped"
+                if REBUILD_EXISTING:
+                    # Preserve extra top-level fields (if any) not managed by us
+                    try:
+                        existing = load_json(dest_path)
+                    except Exception:
+                        existing = {}
+                    for k in existing.keys():
+                        if k not in doc and k not in {"items", "sources"}:
+                            doc[k] = existing[k]
+                    if not DRY_RUN:
+                        write_json_atomically(dest_path, doc)
+                    updated += 1
+                    action = "updated"
                 else:
-                    skipped_existing += 1
+                    skipped += 1
                     action = "skipped"
             else:
-                # Write new file
-                action = "created"
                 if not DRY_RUN:
-                    write_json_atomically(dest_path, data)
+                    write_json_atomically(dest_path, doc)
                 created += 1
+                action = "created"
+
+            if not used_keys:
+                no_index += 1
 
             summary_rows.append({
                 "Presentation": pres_name,
                 "Section": section,
-                "Dest Path": dest_path,
                 "Action": action,
-                "Priority": (priority_val or ("low" if subfolder.endswith("/other") else "normal")),
-                "Index Match": "yes" if idx_key else "no",
+                "IndexType": index_type,
+                "#Etiologies": len(items),
+                "AliasesUsed": ", ".join(used_keys) if used_keys else "",
+                "Path": dest_path,
             })
-
-    # Report where resources were loaded from
-    index_resolved = _resolve_first(INDEX_PATH, INDEX_FILENAME)
-    schema_resolved = _resolve_first(SCHEMA_PATH, SCHEMA_FILENAME)
 
     # Write summary markdown
     lines = [
         "# Presentation Build Summary\n",
-        f"Created: {created}  |  Skipped: {skipped_existing}  |  Backfilled: {backfilled}  |  Missing index: {missing_index}\n",
-        f"Index source: {index_resolved}\n",
-        f"Schema source: {schema_resolved}\n",
+        f"Created: {created}  |  Updated: {updated}  |  Skipped: {skipped}  |  No index match: {no_index}\n",
+        f"List: {PRESENTATION_LIST_PATH}\n",
+        f"Clinical Index: {CLINICAL_INDEX_PATH}\n",
+        f"Non-Clinical Index: {NONCLINICAL_INDEX_PATH}\n",
+        f"Schema: {SCHEMA_PATH}\n",
         "\n",
-        "| Presentation | Section | Action | Priority | Index Match | Path |\n",
-        "|---|---|---|---|---|---|\n",
+        "| Presentation | Section | Action | IndexType | #Etiologies | Aliases Used | Path |\n",
+        "|---|---|---|---|---:|---|---|\n",
     ]
     for r in summary_rows:
         lines.append(
-            f"| {r['Presentation']} | {r['Section']} | {r['Action']} | {r['Priority']} | {r['Index Match']} | `{r['Dest Path']}` |\n"
+            f"| {r['Presentation']} | {r['Section']} | {r['Action']} | {r['IndexType']} | {r['#Etiologies']} | {r['AliasesUsed']} | `{r['Path']}` |\n"
         )
 
     try:
@@ -395,7 +383,7 @@ def main() -> None:
     except Exception as e:
         print(f"! Failed to write summary: {e}")
 
-    print(f"Created={created}, Skipped={skipped_existing}, Backfilled={backfilled}, MissingIndex={missing_index}")
+    print(f"Created={created}, Updated={updated}, Skipped={skipped}, NoIndex={no_index}")
 
 
 if __name__ == "__main__":

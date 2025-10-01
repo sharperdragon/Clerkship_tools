@@ -1,520 +1,335 @@
 {
-  "presentation": "breast lumps",
+  "presentation": "Breast lumps",
   "items": [
     {
+      "name": "Carcinoma (Fig. 7)",
+      "system": "MALIGNANT",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Phyllodes tumour (some behave in benign fashion)",
+      "system": "MALIGNANT",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "uncommon"
+    },
+    {
       "name": "Fibroadenoma",
-      "system": "Breast",
-      "freq": "common",
+      "system": "BENIGN",
       "redFlag": false,
       "symptoms": {
-        "onset": [
-          "insidious"
-        ],
-        "progression": [
-          "stable"
-        ],
-        "palliate": [
-          "n/a"
-        ],
-        "provoke": [
-          "n/a"
-        ],
-        "quality": [
-          "firm",
-          "mobile"
-        ],
-        "timing": [
-          "constant"
-        ],
-        "region": [
-          "breast"
-        ],
-        "radiation": [
-          "n/a"
-        ],
-        "severity": [
-          "mild"
-        ],
-        "clinical tests": [
-          "n/a"
-        ],
-        "other symptoms": [
-          "n/a"
-        ]
-      }
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "common"
     },
     {
-      "name": "Breast cyst",
-      "system": "Breast",
-      "freq": "common",
+      "name": "Cyst (in cystic mastitis)",
+      "system": "BENIGN",
       "redFlag": false,
       "symptoms": {
-        "onset": [
-          "subacute"
-        ],
-        "progression": [
-          "stable"
-        ],
-        "palliate": [
-          "n/a"
-        ],
-        "provoke": [
-          "menses"
-        ],
-        "quality": [
-          "fluctuant",
-          "tender"
-        ],
-        "timing": [
-          "cyclical"
-        ],
-        "region": [
-          "breast"
-        ],
-        "radiation": [
-          "n/a"
-        ],
-        "severity": [
-          "mild"
-        ],
-        "clinical tests": [
-          "n/a"
-        ],
-        "other symptoms": [
-          "nipple-discharge"
-        ]
-      }
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "common"
     },
     {
-      "name": "Fibrocystic change",
-      "system": "Breast",
-      "freq": "common",
+      "name": "Duct ectasia",
+      "system": "BENIGN",
       "redFlag": false,
       "symptoms": {
-        "onset": [
-          "insidious"
-        ],
-        "progression": [
-          "intermittent"
-        ],
-        "palliate": [
-          "n/a"
-        ],
-        "provoke": [
-          "menses",
-          "caffeine"
-        ],
-        "quality": [
-          "lumpy",
-          "tender"
-        ],
-        "timing": [
-          "cyclical"
-        ],
-        "region": [
-          "breast"
-        ],
-        "radiation": [
-          "n/a"
-        ],
-        "severity": [
-          "mild"
-        ],
-        "clinical tests": [
-          "n/a"
-        ],
-        "other symptoms": [
-          "nipple-discharge"
-        ]
-      }
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Sebaceous cyst",
+      "system": "BENIGN",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Galactocele",
+      "system": "BENIGN",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Fat necrosis",
+      "system": "BENIGN",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Lipoma",
+      "system": "BENIGN",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Pregnancy",
+      "system": "GENERALISED SWELLING",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Lactation",
+      "system": "GENERALISED SWELLING",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Puberty",
+      "system": "GENERALISED SWELLING",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "common"
     },
     {
       "name": "Mastitis",
-      "system": "Infectious",
-      "freq": "occasional",
-      "redFlag": true,
-      "symptoms": {
-        "onset": [
-          "acute"
-        ],
-        "progression": [
-          "worsening"
-        ],
-        "palliate": [
-          "n/a"
-        ],
-        "provoke": [
-          "breastfeeding"
-        ],
-        "quality": [
-          "tender",
-          "warm"
-        ],
-        "timing": [
-          "constant"
-        ],
-        "region": [
-          "breast"
-        ],
-        "radiation": [
-          "n/a"
-        ],
-        "severity": [
-          "moderate"
-        ],
-        "clinical tests": [
-          "n/a"
-        ],
-        "other symptoms": [
-          "fever",
-          "rigors",
-          "malaise"
-        ]
-      }
-    },
-    {
-      "name": "Breast abscess",
-      "system": "Infectious",
-      "freq": "occasional",
-      "redFlag": true,
-      "symptoms": {
-        "onset": [
-          "acute"
-        ],
-        "progression": [
-          "worsening"
-        ],
-        "palliate": [
-          "n/a"
-        ],
-        "provoke": [
-          "breastfeeding"
-        ],
-        "quality": [
-          "fluctuant",
-          "tender"
-        ],
-        "timing": [
-          "constant"
-        ],
-        "region": [
-          "breast"
-        ],
-        "radiation": [
-          "n/a"
-        ],
-        "severity": [
-          "moderate"
-        ],
-        "clinical tests": [
-          "n/a"
-        ],
-        "other symptoms": [
-          "fever",
-          "rigors"
-        ]
-      }
-    },
-    {
-      "name": "Fat necrosis (post-trauma)",
-      "system": "Breast",
-      "freq": "occasional",
+      "system": "GENERALISED SWELLING",
       "redFlag": false,
       "symptoms": {
-        "onset": [
-          "subacute"
-        ],
-        "progression": [
-          "stable"
-        ],
-        "palliate": [
-          "rest"
-        ],
-        "provoke": [
-          "post-traumatic"
-        ],
-        "quality": [
-          "firm"
-        ],
-        "timing": [
-          "constant"
-        ],
-        "region": [
-          "breast"
-        ],
-        "radiation": [
-          "n/a"
-        ],
-        "severity": [
-          "mild"
-        ],
-        "clinical tests": [
-          "n/a"
-        ],
-        "other symptoms": [
-          "skin-dimpling"
-        ]
-      }
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "common"
     },
     {
-      "name": "Intraductal papilloma",
-      "system": "Breast",
-      "freq": "occasional",
+      "name": "Retromammary abscess from chest disease",
+      "system": "SWELLINGS BEHIND THE BREAST",
       "redFlag": false,
       "symptoms": {
-        "onset": [
-          "insidious"
-        ],
-        "progression": [
-          "stable"
-        ],
-        "palliate": [
-          "n/a"
-        ],
-        "provoke": [
-          "n/a"
-        ],
-        "quality": [
-          "subareolar-nodule"
-        ],
-        "timing": [
-          "intermittent"
-        ],
-        "region": [
-          "areolar"
-        ],
-        "radiation": [
-          "n/a"
-        ],
-        "severity": [
-          "mild"
-        ],
-        "clinical tests": [
-          "n/a"
-        ],
-        "other symptoms": [
-          "nipple-discharge"
-        ]
-      }
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "rare"
     },
     {
-      "name": "Phyllodes tumor",
-      "system": "Breast",
-      "freq": "rare",
-      "redFlag": true,
-      "symptoms": {
-        "onset": [
-          "subacute"
-        ],
-        "progression": [
-          "worsening"
-        ],
-        "palliate": [
-          "n/a"
-        ],
-        "provoke": [
-          "n/a"
-        ],
-        "quality": [
-          "firm",
-          "lobulated"
-        ],
-        "timing": [
-          "constant"
-        ],
-        "region": [
-          "breast"
-        ],
-        "radiation": [
-          "n/a"
-        ],
-        "severity": [
-          "moderate"
-        ],
-        "clinical tests": [
-          "n/a"
-        ],
-        "other symptoms": [
-          "rapid-growth"
-        ]
-      }
-    },
-    {
-      "name": "Invasive ductal or lobular carcinoma",
-      "system": "Oncology",
-      "freq": "occasional",
-      "redFlag": true,
-      "symptoms": {
-        "onset": [
-          "insidious"
-        ],
-        "progression": [
-          "worsening"
-        ],
-        "palliate": [
-          "n/a"
-        ],
-        "provoke": [
-          "n/a"
-        ],
-        "quality": [
-          "hard",
-          "irregular",
-          "fixed"
-        ],
-        "timing": [
-          "constant"
-        ],
-        "region": [
-          "breast"
-        ],
-        "radiation": [
-          "axilla"
-        ],
-        "severity": [
-          "moderate"
-        ],
-        "clinical tests": [
-          "n/a"
-        ],
-        "other symptoms": [
-          "nipple-retraction",
-          "skin-dimpling",
-          "peau-d-orange",
-          "weight-loss"
-        ]
-      }
-    },
-    {
-      "name": "Inflammatory breast cancer",
-      "system": "Oncology",
-      "freq": "rare",
-      "redFlag": true,
-      "symptoms": {
-        "onset": [
-          "subacute"
-        ],
-        "progression": [
-          "worsening"
-        ],
-        "palliate": [
-          "n/a"
-        ],
-        "provoke": [
-          "n/a"
-        ],
-        "quality": [
-          "warm",
-          "tender"
-        ],
-        "timing": [
-          "constant"
-        ],
-        "region": [
-          "breast"
-        ],
-        "radiation": [
-          "n/a"
-        ],
-        "severity": [
-          "severe"
-        ],
-        "clinical tests": [
-          "n/a"
-        ],
-        "other symptoms": [
-          "peau-d-orange",
-          "axillary-lymphadenopathy",
-          "weight-loss"
-        ]
-      }
-    },
-    {
-      "name": "Mondor disease (superficial thrombophlebitis)",
-      "system": "Vascular",
-      "freq": "rare",
+      "name": "Tietze\u2019s disease",
+      "system": "SWELLINGS BEHIND THE BREAST",
       "redFlag": false,
       "symptoms": {
-        "onset": [
-          "acute"
-        ],
-        "progression": [
-          "improving"
-        ],
-        "palliate": [
-          "rest"
-        ],
-        "provoke": [
-          "movement"
-        ],
-        "quality": [
-          "cord-like",
-          "tender"
-        ],
-        "timing": [
-          "constant"
-        ],
-        "region": [
-          "breast"
-        ],
-        "radiation": [
-          "n/a"
-        ],
-        "severity": [
-          "mild"
-        ],
-        "clinical tests": [
-          "n/a"
-        ],
-        "other symptoms": [
-          "cord-like-thrombosed-vein"
-        ]
-      }
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "rare"
     },
     {
-      "name": "Axillary lymphadenopathy (malignant or reactive)",
-      "system": "Lymphatic",
-      "freq": "occasional",
-      "redFlag": true,
+      "name": "Rib deformities",
+      "system": "SWELLINGS BEHIND THE BREAST",
+      "redFlag": false,
       "symptoms": {
-        "onset": [
-          "subacute"
-        ],
-        "progression": [
-          "worsening"
-        ],
-        "palliate": [
-          "n/a"
-        ],
-        "provoke": [
-          "n/a"
-        ],
-        "quality": [
-          "firm",
-          "matted"
-        ],
-        "timing": [
-          "constant"
-        ],
-        "region": [
-          "axilla"
-        ],
-        "radiation": [
-          "n/a"
-        ],
-        "severity": [
-          "moderate"
-        ],
-        "clinical tests": [
-          "n/a"
-        ],
-        "other symptoms": [
-          "fever",
-          "weight-loss",
-          "malaise"
-        ]
-      }
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "Chondroma of the costal cartilages",
+      "system": "SWELLINGS BEHIND THE BREAST",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "rare"
     }
   ],
+  "sources": {
+    "index_keys": [
+      "Breast lumps"
+    ],
+    "index_type": "clinical"
+  },
   "symptoms": {}
 }

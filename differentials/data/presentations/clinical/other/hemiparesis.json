@@ -1,5 +1,9 @@
 {
   "presentation": "Hemiparesis",
   "items": [],
+  "sources": {
+    "index_keys": [],
+    "index_type": "clinical"
+  },
   "symptoms": {}
 }

@@ -1,394 +1,240 @@
 {
-  "presentation": "cyanosis",
+  "presentation": "Cyanosis",
   "items": [
     {
-      "name": "COPD exacerbation / advanced COPD",
-      "system": "Respiratory",
-      "freq": "common",
-      "redFlag": true,
+      "name": "Severe respiratory disease",
+      "system": "DECREASED OXYGEN SATURATION",
+      "redFlag": false,
       "symptoms": {
-        "onset": [
-          "chronic"
-        ],
-        "progression": [
-          "worsening"
-        ],
-        "palliate": [
-          "rest"
-        ],
-        "provoke": [
-          "infection",
-          "smoke-exposure"
-        ],
-        "quality": [
-          "n/a"
-        ],
-        "timing": [
-          "persistent"
-        ],
-        "region": [
-          "chest"
-        ],
-        "radiation": [
-          "n/a"
-        ],
-        "severity": [
-          "moderate"
-        ],
-        "clinical tests": [
-          "n/a"
-        ],
-        "other symptoms": [
-          "shortness-of-breath",
-          "cough",
-          "wheeze"
-        ]
-      }
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "common"
     },
     {
-      "name": "Severe pneumonia",
-      "system": "Infectious",
-      "freq": "occasional",
-      "redFlag": true,
+      "name": "Pulmonary oedema",
+      "system": "DECREASED OXYGEN SATURATION",
+      "redFlag": false,
       "symptoms": {
-        "onset": [
-          "subacute"
-        ],
-        "progression": [
-          "worsening"
-        ],
-        "palliate": [
-          "n/a"
-        ],
-        "provoke": [
-          "n/a"
-        ],
-        "quality": [
-          "n/a"
-        ],
-        "timing": [
-          "persistent"
-        ],
-        "region": [
-          "chest"
-        ],
-        "radiation": [
-          "n/a"
-        ],
-        "severity": [
-          "severe"
-        ],
-        "clinical tests": [
-          "n/a"
-        ],
-        "other symptoms": [
-          "fever",
-          "pleuritic-pain",
-          "shortness-of-breath"
-        ]
-      }
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "common"
     },
     {
       "name": "Pulmonary embolism",
-      "system": "Respiratory",
-      "freq": "occasional",
-      "redFlag": true,
+      "system": "DECREASED OXYGEN SATURATION",
+      "redFlag": false,
       "symptoms": {
-        "onset": [
-          "sudden"
-        ],
-        "progression": [
-          "worsening"
-        ],
-        "palliate": [
-          "n/a"
-        ],
-        "provoke": [
-          "immobility",
-          "recent-surgery"
-        ],
-        "quality": [
-          "n/a"
-        ],
-        "timing": [
-          "constant"
-        ],
-        "region": [
-          "chest"
-        ],
-        "radiation": [
-          "n/a"
-        ],
-        "severity": [
-          "severe"
-        ],
-        "clinical tests": [
-          "n/a"
-        ],
-        "other symptoms": [
-          "shortness-of-breath",
-          "pleuritic-pain",
-          "syncope"
-        ]
-      }
-    },
-    {
-      "name": "Pneumothorax",
-      "system": "Respiratory",
-      "freq": "occasional",
-      "redFlag": true,
-      "symptoms": {
-        "onset": [
-          "sudden"
-        ],
-        "progression": [
-          "worsening"
-        ],
-        "palliate": [
-          "n/a"
-        ],
-        "provoke": [
-          "post-traumatic"
-        ],
-        "quality": [
-          "pleuritic"
-        ],
-        "timing": [
-          "constant"
-        ],
-        "region": [
-          "chest"
-        ],
-        "radiation": [
-          "shoulder-tip"
-        ],
-        "severity": [
-          "severe"
-        ],
-        "clinical tests": [
-          "n/a"
-        ],
-        "other symptoms": [
-          "shortness-of-breath"
-        ]
-      }
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "common"
     },
     {
       "name": "Congenital cyanotic heart disease",
-      "system": "Cardiac",
-      "freq": "rare",
-      "redFlag": true,
+      "system": "DECREASED OXYGEN SATURATION",
+      "redFlag": false,
       "symptoms": {
-        "onset": [
-          "chronic"
-        ],
-        "progression": [
-          "stable"
-        ],
-        "palliate": [
-          "squatting"
-        ],
-        "provoke": [
-          "exercise"
-        ],
-        "quality": [
-          "n/a"
-        ],
-        "timing": [
-          "persistent"
-        ],
-        "region": [
-          "n/a"
-        ],
-        "radiation": [
-          "n/a"
-        ],
-        "severity": [
-          "moderate"
-        ],
-        "clinical tests": [
-          "clubbing"
-        ],
-        "other symptoms": [
-          "shortness-of-breath"
-        ]
-      }
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "common"
     },
     {
       "name": "Methemoglobinemia",
-      "system": "Hematologic",
-      "freq": "rare",
-      "redFlag": true,
-      "symptoms": {
-        "onset": [
-          "acute"
-        ],
-        "progression": [
-          "worsening"
-        ],
-        "palliate": [
-          "n/a"
-        ],
-        "provoke": [
-          "medication",
-          "toxin-exposure"
-        ],
-        "quality": [
-          "n/a"
-        ],
-        "timing": [
-          "constant"
-        ],
-        "region": [
-          "n/a"
-        ],
-        "radiation": [
-          "n/a"
-        ],
-        "severity": [
-          "severe"
-        ],
-        "clinical tests": [
-          "n/a"
-        ],
-        "other symptoms": [
-          "headache",
-          "shortness-of-breath",
-          "chocolate-brown-blood"
-        ]
-      }
-    },
-    {
-      "name": "Shock (circulatory failure)",
-      "system": "Cardiovascular",
-      "freq": "occasional",
-      "redFlag": true,
-      "symptoms": {
-        "onset": [
-          "acute"
-        ],
-        "progression": [
-          "worsening"
-        ],
-        "palliate": [
-          "n/a"
-        ],
-        "provoke": [
-          "sepsis",
-          "hemorrhage",
-          "cardiogenic"
-        ],
-        "quality": [
-          "n/a"
-        ],
-        "timing": [
-          "persistent"
-        ],
-        "region": [
-          "n/a"
-        ],
-        "radiation": [
-          "n/a"
-        ],
-        "severity": [
-          "catastrophic"
-        ],
-        "clinical tests": [
-          "n/a"
-        ],
-        "other symptoms": [
-          "hypotension",
-          "syncope",
-          "diaphoresis"
-        ]
-      }
-    },
-    {
-      "name": "Raynaud phenomenon (peripheral cyanosis)",
-      "system": "Vascular",
-      "freq": "occasional",
+      "system": "ABNORMAL HAEMOGLOBIN",
       "redFlag": false,
       "symptoms": {
-        "onset": [
-          "subacute"
-        ],
-        "progression": [
-          "intermittent"
-        ],
-        "palliate": [
-          "warmth"
-        ],
-        "provoke": [
-          "cold-exposure",
-          "stress"
-        ],
-        "quality": [
-          "n/a"
-        ],
-        "timing": [
-          "episodic"
-        ],
-        "region": [
-          "digits"
-        ],
-        "radiation": [
-          "n/a"
-        ],
-        "severity": [
-          "mild"
-        ],
-        "clinical tests": [
-          "n/a"
-        ],
-        "other symptoms": [
-          "pain",
-          "numbness"
-        ]
-      }
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "rare"
     },
     {
-      "name": "High altitude exposure",
-      "system": "Environmental",
-      "freq": "rare",
-      "redFlag": true,
+      "name": "Sulphemoglobinemia",
+      "system": "ABNORMAL HAEMOGLOBIN",
+      "redFlag": false,
       "symptoms": {
-        "onset": [
-          "subacute"
-        ],
-        "progression": [
-          "worsening"
-        ],
-        "palliate": [
-          "rest"
-        ],
-        "provoke": [
-          "exercise"
-        ],
-        "quality": [
-          "n/a"
-        ],
-        "timing": [
-          "persistent"
-        ],
-        "region": [
-          "n/a"
-        ],
-        "radiation": [
-          "n/a"
-        ],
-        "severity": [
-          "moderate"
-        ],
-        "clinical tests": [
-          "n/a"
-        ],
-        "other symptoms": [
-          "headache",
-          "shortness-of-breath",
-          "dizziness"
-        ]
-      }
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "All causes of central cyanosis",
+      "system": "PERIPHERAL CYANOSIS",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Cold exposure",
+      "system": "PERIPHERAL CYANOSIS",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Raynaud\u2019s phenomenon",
+      "system": "PERIPHERAL CYANOSIS",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Arterial occlusion",
+      "system": "PERIPHERAL CYANOSIS",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Venous occlusion",
+      "system": "PERIPHERAL CYANOSIS",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Acrocyanosis",
+      "system": "PERIPHERAL CYANOSIS",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "uncommon"
     }
   ],
+  "sources": {
+    "index_keys": [
+      "Cyanosis"
+    ],
+    "index_type": "clinical"
+  },
   "symptoms": {}
 }

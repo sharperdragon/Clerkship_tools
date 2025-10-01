@@ -1,487 +1,278 @@
 {
-  "presentation": "chest pain",
+  "presentation": "Chest pain",
   "items": [
     {
-      "name": "Acute coronary syndrome (MI/unstable angina)",
-      "system": "Cardiac",
-      "freq": "common",
-      "redFlag": true,
+      "name": "Angina",
+      "system": "CARDIOVASCULAR",
+      "redFlag": false,
       "symptoms": {
-        "onset": [
-          "acute"
-        ],
-        "progression": [
-          "worsening"
-        ],
-        "palliate": [
-          "nitrates",
-          "rest"
-        ],
-        "provoke": [
-          "exercise",
-          "stress"
-        ],
-        "quality": [
-          "pressure"
-        ],
-        "timing": [
-          "constant"
-        ],
-        "region": [
-          "chest"
-        ],
-        "radiation": [
-          "left-shoulder",
-          "jaw"
-        ],
-        "severity": [
-          "severe"
-        ],
-        "clinical tests": [
-          "n/a"
-        ],
-        "other symptoms": [
-          "shortness-of-breath",
-          "nausea",
-          "vomiting",
-          "diaphoresis"
-        ]
-      }
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "common"
     },
     {
-      "name": "Pericarditis",
-      "system": "Cardiac",
-      "freq": "occasional",
-      "redFlag": true,
+      "name": "Myocardial infarction",
+      "system": "CARDIOVASCULAR",
+      "redFlag": false,
       "symptoms": {
-        "onset": [
-          "acute"
-        ],
-        "progression": [
-          "worsening"
-        ],
-        "palliate": [
-          "leaning-forward"
-        ],
-        "provoke": [
-          "deep-breathing",
-          "supine-position"
-        ],
-        "quality": [
-          "sharp"
-        ],
-        "timing": [
-          "constant"
-        ],
-        "region": [
-          "chest"
-        ],
-        "radiation": [
-          "left-shoulder"
-        ],
-        "severity": [
-          "moderate"
-        ],
-        "clinical tests": [
-          "n/a"
-        ],
-        "other symptoms": [
-          "fever",
-          "pleuritic-pain"
-        ]
-      }
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "common"
     },
     {
-      "name": "Aortic dissection",
-      "system": "Vascular",
-      "freq": "rare",
-      "redFlag": true,
+      "name": "Pericarditis/myocarditis",
+      "system": "CARDIOVASCULAR",
+      "redFlag": false,
       "symptoms": {
-        "onset": [
-          "sudden"
-        ],
-        "progression": [
-          "worsening"
-        ],
-        "palliate": [
-          "n/a"
-        ],
-        "provoke": [
-          "n/a"
-        ],
-        "quality": [
-          "tearing"
-        ],
-        "timing": [
-          "constant"
-        ],
-        "region": [
-          "chest"
-        ],
-        "radiation": [
-          "back"
-        ],
-        "severity": [
-          "catastrophic"
-        ],
-        "clinical tests": [
-          "n/a"
-        ],
-        "other symptoms": [
-          "syncope",
-          "shock",
-          "hypotension"
-        ]
-      }
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "common"
     },
     {
-      "name": "Pulmonary embolism",
-      "system": "Respiratory",
-      "freq": "occasional",
-      "redFlag": true,
+      "name": "Acute aortic dissection",
+      "system": "CARDIOVASCULAR",
+      "redFlag": false,
       "symptoms": {
-        "onset": [
-          "sudden"
-        ],
-        "progression": [
-          "worsening"
-        ],
-        "palliate": [
-          "n/a"
-        ],
-        "provoke": [
-          "n/a"
-        ],
-        "quality": [
-          "pleuritic"
-        ],
-        "timing": [
-          "constant"
-        ],
-        "region": [
-          "chest"
-        ],
-        "radiation": [
-          "n/a"
-        ],
-        "severity": [
-          "severe"
-        ],
-        "clinical tests": [
-          "n/a"
-        ],
-        "other symptoms": [
-          "shortness-of-breath",
-          "cough",
-          "hemoptysis",
-          "syncope"
-        ]
-      }
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "Gastro-oesophageal re\ufb02ux disease",
+      "system": "Gastrointestinal",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Peptic ulcer disease",
+      "system": "Gastrointestinal",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Oesophageal spasm",
+      "system": "Gastrointestinal",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Pneumonia",
+      "system": "PULMONARY",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "common"
     },
     {
       "name": "Pneumothorax",
-      "system": "Respiratory",
-      "freq": "occasional",
-      "redFlag": true,
-      "symptoms": {
-        "onset": [
-          "sudden"
-        ],
-        "progression": [
-          "worsening"
-        ],
-        "palliate": [
-          "n/a"
-        ],
-        "provoke": [
-          "n/a"
-        ],
-        "quality": [
-          "pleuritic"
-        ],
-        "timing": [
-          "constant"
-        ],
-        "region": [
-          "chest"
-        ],
-        "radiation": [
-          "shoulder-tip"
-        ],
-        "severity": [
-          "severe"
-        ],
-        "clinical tests": [
-          "n/a"
-        ],
-        "other symptoms": [
-          "shortness-of-breath"
-        ]
-      }
-    },
-    {
-      "name": "Pneumonia/pleurisy",
-      "system": "Respiratory",
-      "freq": "common",
+      "system": "PULMONARY",
       "redFlag": false,
       "symptoms": {
-        "onset": [
-          "subacute"
-        ],
-        "progression": [
-          "worsening"
-        ],
-        "palliate": [
-          "n/a"
-        ],
-        "provoke": [
-          "deep-breathing",
-          "coughing"
-        ],
-        "quality": [
-          "pleuritic"
-        ],
-        "timing": [
-          "constant"
-        ],
-        "region": [
-          "chest"
-        ],
-        "radiation": [
-          "n/a"
-        ],
-        "severity": [
-          "moderate"
-        ],
-        "clinical tests": [
-          "n/a"
-        ],
-        "other symptoms": [
-          "fever",
-          "cough"
-        ]
-      }
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "uncommon"
     },
     {
-      "name": "GERD",
-      "system": "Gastrointestinal",
-      "freq": "common",
+      "name": "Pulmonary embolism",
+      "system": "PULMONARY",
       "redFlag": false,
       "symptoms": {
-        "onset": [
-          "insidious"
-        ],
-        "progression": [
-          "intermittent"
-        ],
-        "palliate": [
-          "antacids",
-          "ppi"
-        ],
-        "provoke": [
-          "large-meals",
-          "spicy-food",
-          "alcohol",
-          "caffeine"
-        ],
-        "quality": [
-          "burning"
-        ],
-        "timing": [
-          "nocturnal",
-          "postprandial"
-        ],
-        "region": [
-          "lower-chest",
-          "epigastrium"
-        ],
-        "radiation": [
-          "back"
-        ],
-        "severity": [
-          "mild"
-        ],
-        "clinical tests": [
-          "n/a"
-        ],
-        "other symptoms": [
-          "heartburn",
-          "dysphagia"
-        ]
-      }
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "common"
     },
     {
-      "name": "Esophageal spasm",
-      "system": "Gastrointestinal",
-      "freq": "occasional",
+      "name": "Chest wall trauma",
+      "system": "MUSCULOSKELETAL",
       "redFlag": false,
       "symptoms": {
-        "onset": [
-          "acute"
-        ],
-        "progression": [
-          "intermittent"
-        ],
-        "palliate": [
-          "nitrates"
-        ],
-        "provoke": [
-          "oral-intake"
-        ],
-        "quality": [
-          "cramping",
-          "pressure"
-        ],
-        "timing": [
-          "episodic"
-        ],
-        "region": [
-          "lower-chest"
-        ],
-        "radiation": [
-          "jaw",
-          "back"
-        ],
-        "severity": [
-          "moderate"
-        ],
-        "clinical tests": [
-          "n/a"
-        ],
-        "other symptoms": [
-          "dysphagia"
-        ]
-      }
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Herpes zoster",
+      "system": "MUSCULOSKELETAL",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "uncommon"
     },
     {
       "name": "Costochondritis",
-      "system": "Musculoskeletal",
-      "freq": "common",
+      "system": "MUSCULOSKELETAL",
       "redFlag": false,
       "symptoms": {
-        "onset": [
-          "acute"
-        ],
-        "progression": [
-          "improving"
-        ],
-        "palliate": [
-          "rest",
-          "heat"
-        ],
-        "provoke": [
-          "movement",
-          "deep-breathing",
-          "coughing"
-        ],
-        "quality": [
-          "sharp"
-        ],
-        "timing": [
-          "intermittent"
-        ],
-        "region": [
-          "chest-wall"
-        ],
-        "radiation": [
-          "n/a"
-        ],
-        "severity": [
-          "mild"
-        ],
-        "clinical tests": [
-          "n/a"
-        ],
-        "other symptoms": [
-          "n/a"
-        ]
-      }
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "common"
     },
     {
-      "name": "Anxiety/panic",
-      "system": "Psychiatric",
-      "freq": "occasional",
+      "name": "Secondary tumours of the rib",
+      "system": "MUSCULOSKELETAL",
       "redFlag": false,
       "symptoms": {
-        "onset": [
-          "acute"
-        ],
-        "progression": [
-          "intermittent"
-        ],
-        "palliate": [
-          "rest"
-        ],
-        "provoke": [
-          "stress"
-        ],
-        "quality": [
-          "aching",
-          "pressure"
-        ],
-        "timing": [
-          "episodic"
-        ],
-        "region": [
-          "chest"
-        ],
-        "radiation": [
-          "n/a"
-        ],
-        "severity": [
-          "mild"
-        ],
-        "clinical tests": [
-          "n/a"
-        ],
-        "other symptoms": [
-          "shortness-of-breath",
-          "diaphoresis"
-        ]
-      }
-    },
-    {
-      "name": "Herpes zoster (pre-eruption)",
-      "system": "Infectious",
-      "freq": "rare",
-      "redFlag": false,
-      "symptoms": {
-        "onset": [
-          "acute"
-        ],
-        "progression": [
-          "worsening"
-        ],
-        "palliate": [
-          "n/a"
-        ],
-        "provoke": [
-          "n/a"
-        ],
-        "quality": [
-          "burning",
-          "stabbing"
-        ],
-        "timing": [
-          "constant"
-        ],
-        "region": [
-          "chest-wall"
-        ],
-        "radiation": [
-          "n/a"
-        ],
-        "severity": [
-          "mild"
-        ],
-        "clinical tests": [
-          "n/a"
-        ],
-        "other symptoms": [
-          "n/a"
-        ]
-      }
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "rare"
     }
   ],
+  "sources": {
+    "index_keys": [
+      "Chest pain"
+    ],
+    "index_type": "clinical"
+  },
   "symptoms": {}
 }
