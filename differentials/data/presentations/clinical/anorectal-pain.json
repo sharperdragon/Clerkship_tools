@@ -1,4 +1,262 @@
 {
-  "presentation": "Anorectal pain",
-  "items": []
+  "presentation": "anorectal pain",
+  "items": [
+    {
+      "name": "Anal fissure",
+      "system": "Anorectal",
+      "freq": "common",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "stable"
+        ],
+        "palliate": [
+          "rest",
+          "analgesics"
+        ],
+        "provoke": [
+          "defecation"
+        ],
+        "quality": [
+          "sharp",
+          "stabbing"
+        ],
+        "timing": [
+          "episodic"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "constipation",
+          "hematemesis",
+          "n/a"
+        ]
+      }
+    },
+    {
+      "name": "Thrombosed external hemorrhoid",
+      "system": "Anorectal",
+      "freq": "common",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "ice"
+        ],
+        "provoke": [
+          "defecation"
+        ],
+        "quality": [
+          "aching",
+          "pressure"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "bleeding",
+          "pruritus"
+        ]
+      }
+    },
+    {
+      "name": "Perianal abscess",
+      "system": "Anorectal",
+      "freq": "occasional",
+      "redFlag": true,
+      "symptoms": {
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "throbbing"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "fever",
+          "swelling",
+          "discharge"
+        ]
+      }
+    },
+    {
+      "name": "Fistula-in-ano",
+      "system": "Anorectal",
+      "freq": "occasional",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [
+          "chronic"
+        ],
+        "progression": [
+          "intermittent"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "aching"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "discharge",
+          "recurrent-abscess"
+        ]
+      }
+    },
+    {
+      "name": "Proctalgia fugax / levator ani syndrome",
+      "system": "Functional",
+      "freq": "rare",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [
+          "sudden"
+        ],
+        "progression": [
+          "intermittent"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "spasm"
+        ],
+        "timing": [
+          "episodic"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "n/a"
+        ]
+      }
+    },
+    {
+      "name": "Infectious proctitis (STI)",
+      "system": "Infectious disease",
+      "freq": "rare",
+      "redFlag": true,
+      "symptoms": {
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "burning"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "discharge",
+          "fever"
+        ]
+      }
+    }
+  ],
+  "symptoms": {}
 }

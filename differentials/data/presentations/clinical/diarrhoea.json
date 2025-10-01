@@ -1,4 +1,189 @@
 {
   "presentation": "Diarrhoea",
-  "items": []
+  "symptoms": {},
+  "items": [
+    {
+      "name": "Escherichia coli",
+      "category": "Salmonella spp \u2022 (rare in tropical Africa)",
+      "freq": "common"
+    },
+    {
+      "name": "Clostridium dif\ufb01cile",
+      "category": "Salmonella spp \u2022 (rare in tropical Africa)",
+      "freq": "common"
+    },
+    {
+      "name": "Staphylococci",
+      "category": "Salmonella spp \u2022 (rare in tropical Africa)",
+      "freq": "uncommon"
+    },
+    {
+      "name": "Shigella spp",
+      "category": "Salmonella spp \u2022 (rare in tropical Africa)",
+      "freq": "uncommon"
+    },
+    {
+      "name": "Vibrio cholerae",
+      "category": "Salmonella spp \u2022 (rare in tropical Africa)",
+      "freq": "rare"
+    },
+    {
+      "name": "Entamoeba histolytica",
+      "category": "Giardia lamblia \u2022 (more common in children worldwide)",
+      "freq": "rare"
+    },
+    {
+      "name": "Ulcerative colitis",
+      "category": "INFLAMMATORY",
+      "freq": "uncommon"
+    },
+    {
+      "name": "Crohn\u2019s disease (Fig. 13)",
+      "category": "INFLAMMATORY",
+      "freq": "uncommon"
+    },
+    {
+      "name": "Coeliac disease",
+      "category": "MALABSORPTION",
+      "freq": "uncommon"
+    },
+    {
+      "name": "Blind loop syndrome",
+      "category": "MALABSORPTION",
+      "freq": "rare"
+    },
+    {
+      "name": "Short bowel syndrome",
+      "category": "MALABSORPTION",
+      "freq": "rare"
+    },
+    {
+      "name": "Radiation",
+      "category": "MALABSORPTION",
+      "freq": "rare"
+    },
+    {
+      "name": "Carcinoma",
+      "category": "NEOPLASTIC",
+      "freq": "common"
+    },
+    {
+      "name": "Villous adenoma",
+      "category": "NEOPLASTIC",
+      "freq": "rare"
+    },
+    {
+      "name": "Irritable bowel syndrome",
+      "category": "Diverticular disease \u2022 (rare in rural Africa and Asia)",
+      "freq": "common"
+    },
+    {
+      "name": "Faecal impaction \u2013 over\ufb02ow diarrhoea",
+      "category": "Diverticular disease \u2022 (rare in rural Africa and Asia)",
+      "freq": "common"
+    },
+    {
+      "name": "Ischemic colitis",
+      "category": "Diverticular disease \u2022 (rare in rural Africa and Asia)",
+      "freq": "uncommon"
+    },
+    {
+      "name": "Ileocolic \ufb01stula",
+      "category": "Diverticular disease \u2022 (rare in rural Africa and Asia)",
+      "freq": "rare"
+    },
+    {
+      "name": "Post-vagotomy (vagotomy rarely performed nowadays)",
+      "category": "GASTRIC",
+      "freq": "rare"
+    },
+    {
+      "name": "Chronic pancreatitis",
+      "category": "PANCREATIC",
+      "freq": "uncommon"
+    },
+    {
+      "name": "Cystic \ufb01brosis",
+      "category": "PANCREATIC",
+      "freq": "uncommon"
+    },
+    {
+      "name": "Carcinoma",
+      "category": "PANCREATIC",
+      "freq": "rare"
+    },
+    {
+      "name": "Pancreatic resection",
+      "category": "PANCREATIC",
+      "freq": "rare"
+    },
+    {
+      "name": "Diabetes",
+      "category": "ENDOCRINE",
+      "freq": "uncommon"
+    },
+    {
+      "name": "Thyrotoxicosis",
+      "category": "ENDOCRINE",
+      "freq": "uncommon"
+    },
+    {
+      "name": "Carcinoid syndrome",
+      "category": "ENDOCRINE",
+      "freq": "rare"
+    },
+    {
+      "name": "Zollinger\u2013Ellison syndrome",
+      "category": "ENDOCRINE",
+      "freq": "rare"
+    },
+    {
+      "name": "VIPoma",
+      "category": "ENDOCRINE",
+      "freq": "rare"
+    },
+    {
+      "name": "Medullary thyroid cancer",
+      "category": "ENDOCRINE",
+      "freq": "rare"
+    },
+    {
+      "name": "Antibiotics",
+      "category": "DRUG-INDUCED",
+      "freq": "common"
+    },
+    {
+      "name": "Proton pump inhibitors",
+      "category": "DRUG-INDUCED",
+      "freq": "common"
+    },
+    {
+      "name": "Sorbitol (in sugar-free foods)",
+      "category": "DRUG-INDUCED",
+      "freq": "uncommon"
+    },
+    {
+      "name": "Magnesium-containing antacids",
+      "category": "DRUG-INDUCED",
+      "freq": "uncommon"
+    },
+    {
+      "name": "Cytotoxic agents",
+      "category": "DRUG-INDUCED",
+      "freq": "rare"
+    },
+    {
+      "name": "Anxiety",
+      "category": "DRUG-INDUCED",
+      "freq": "uncommon"
+    },
+    {
+      "name": "Diet",
+      "category": "DRUG-INDUCED",
+      "freq": "uncommon"
+    }
+  ],
+  "sources": {
+    "index_key": "Diarrhoea"
+  }
 }

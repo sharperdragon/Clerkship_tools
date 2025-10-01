@@ -1,11 +1,6 @@
 {
   "schema": 1,
   "builtAt": "2025-10-01T12:00:00Z",
-  "sources": [
-    { "id": "pocketbook", "title": "Pocketbook of Differential Diagnosis (5e)", "type": "book" }
-  ],
   "license": [
-    { "id": "local-study", "notice": "Local study use; cite pages in personal notes if desired" },
-    { "id": "ddxplus", "notice": "If you later ingest ICD-10 labels/terms from DDXPlus, include CC-BY attribution in About" }
   ]
 }

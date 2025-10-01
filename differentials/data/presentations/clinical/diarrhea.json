@@ -1,0 +1,214 @@
+{
+  "presentation": "diarrhoea",
+  "items": [
+    {
+      "name": "Acute viral gastroenteritis",
+      "system": "Infectious",
+      "freq": "common",
+      "redFlag": false,
+      "symptoms": {
+        "onset": ["acute"],
+        "progression": ["improving"],
+        "palliate": ["oral-intake"],
+        "provoke": ["n/a"],
+        "quality": ["watery"],
+        "timing": ["intermittent"],
+        "region": ["diffuse"],
+        "radiation": ["n/a"],
+        "severity": ["mild"],
+        "clinical tests": ["n/a"],
+        "other symptoms": ["nausea", "vomiting", "abdominal-cramps", "fever"]
+      }
+    },
+    {
+      "name": "Bacterial infectious diarrhoea (campylobacter/salmonella/shigella)",
+      "system": "Infectious",
+      "freq": "occasional",
+      "redFlag": true,
+      "symptoms": {
+        "onset": ["acute"],
+        "progression": ["worsening"],
+        "palliate": ["n/a"],
+        "provoke": ["food-exposure", "travel"],
+        "quality": ["bloody", "mucoid"],
+        "timing": ["intermittent"],
+        "region": ["diffuse"],
+        "radiation": ["n/a"],
+        "severity": ["moderate"],
+        "clinical tests": ["n/a"],
+        "other symptoms": ["fever", "abdominal-pain"]
+      }
+    },
+    {
+      "name": "Clostridioides difficile infection",
+      "system": "Infectious",
+      "freq": "occasional",
+      "redFlag": true,
+      "symptoms": {
+        "onset": ["subacute"],
+        "progression": ["worsening"],
+        "palliate": ["n/a"],
+        "provoke": ["antibiotics", "hospitalization"],
+        "quality": ["watery"],
+        "timing": ["persistent"],
+        "region": ["diffuse"],
+        "radiation": ["n/a"],
+        "severity": ["moderate"],
+        "clinical tests": ["n/a"],
+        "other symptoms": ["fever", "abdominal-pain", "leukocytosis"]
+      }
+    },
+    {
+      "name": "Traveller’s diarrhoea",
+      "system": "Infectious",
+      "freq": "occasional",
+      "redFlag": false,
+      "symptoms": {
+        "onset": ["acute"],
+        "progression": ["improving"],
+        "palliate": ["oral-intake"],
+        "provoke": ["travel"],
+        "quality": ["watery"],
+        "timing": ["intermittent"],
+        "region": ["diffuse"],
+        "radiation": ["n/a"],
+        "severity": ["mild"],
+        "clinical tests": ["n/a"],
+        "other symptoms": ["abdominal-cramps", "nausea"]
+      }
+    },
+    {
+      "name": "Irritable bowel syndrome (diarrhoea-predominant)",
+      "system": "Gastrointestinal",
+      "freq": "common",
+      "redFlag": false,
+      "symptoms": {
+        "onset": ["chronic"],
+        "progression": ["intermittent"],
+        "palliate": ["dietary-modification"],
+        "provoke": ["stress", "dietary-triggers"],
+        "quality": ["loose"],
+        "timing": ["episodic"],
+        "region": ["diffuse"],
+        "radiation": ["n/a"],
+        "severity": ["mild"],
+        "clinical tests": ["n/a"],
+        "other symptoms": ["abdominal-pain", "bloating"]
+      }
+    },
+    {
+      "name": "Inflammatory bowel disease (UC/Crohn)",
+      "system": "Gastrointestinal",
+      "freq": "occasional",
+      "redFlag": true,
+      "symptoms": {
+        "onset": ["subacute"],
+        "progression": ["worsening"],
+        "palliate": ["n/a"],
+        "provoke": ["n/a"],
+        "quality": ["bloody"],
+        "timing": ["persistent"],
+        "region": ["diffuse"],
+        "radiation": ["n/a"],
+        "severity": ["moderate"],
+        "clinical tests": ["n/a"],
+        "other symptoms": ["weight-loss", "fever", "abdominal-pain"]
+      }
+    },
+    {
+      "name": "Celiac disease",
+      "system": "Gastrointestinal",
+      "freq": "occasional",
+      "redFlag": false,
+      "symptoms": {
+        "onset": ["insidious"],
+        "progression": ["worsening"],
+        "palliate": ["gluten-avoidance"],
+        "provoke": ["gluten-exposure"],
+        "quality": ["loose", "greasy"],
+        "timing": ["persistent"],
+        "region": ["diffuse"],
+        "radiation": ["n/a"],
+        "severity": ["mild"],
+        "clinical tests": ["n/a"],
+        "other symptoms": ["weight-loss", "bloating", "iron-deficiency-anemia"]
+      }
+    },
+    {
+      "name": "Lactose intolerance",
+      "system": "Gastrointestinal",
+      "freq": "common",
+      "redFlag": false,
+      "symptoms": {
+        "onset": ["subacute"],
+        "progression": ["intermittent"],
+        "palliate": ["lactose-avoidance"],
+        "provoke": ["dairy-intake"],
+        "quality": ["loose"],
+        "timing": ["postprandial"],
+        "region": ["diffuse"],
+        "radiation": ["n/a"],
+        "severity": ["mild"],
+        "clinical tests": ["n/a"],
+        "other symptoms": ["bloating", "abdominal-cramps"]
+      }
+    },
+    {
+      "name": "Microscopic colitis",
+      "system": "Gastrointestinal",
+      "freq": "occasional",
+      "redFlag": false,
+      "symptoms": {
+        "onset": ["insidious"],
+        "progression": ["persistent"],
+        "palliate": ["n/a"],
+        "provoke": ["medication"],
+        "quality": ["watery"],
+        "timing": ["persistent"],
+        "region": ["diffuse"],
+        "radiation": ["n/a"],
+        "severity": ["mild"],
+        "clinical tests": ["n/a"],
+        "other symptoms": ["n/a"]
+      }
+    },
+    {
+      "name": "Hyperthyroidism",
+      "system": "Endocrine",
+      "freq": "occasional",
+      "redFlag": false,
+      "symptoms": {
+        "onset": ["insidious"],
+        "progression": ["worsening"],
+        "palliate": ["n/a"],
+        "provoke": ["n/a"],
+        "quality": ["loose"],
+        "timing": ["persistent"],
+        "region": ["diffuse"],
+        "radiation": ["n/a"],
+        "severity": ["mild"],
+        "clinical tests": ["n/a"],
+        "other symptoms": ["weight-loss", "sweating-abnormalities", "palpitations"]
+      }
+    },
+    {
+      "name": "Pancreatic insufficiency / chronic pancreatitis",
+      "system": "Pancreas",
+      "freq": "occasional",
+      "redFlag": false,
+      "symptoms": {
+        "onset": ["insidious"],
+        "progression": ["persistent"],
+        "palliate": ["enzyme-replacement"],
+        "provoke": ["fatty-meals", "alcohol"],
+        "quality": ["greasy"],
+        "timing": ["postprandial"],
+        "region": ["diffuse"],
+        "radiation": ["back"],
+        "severity": ["mild"],
+        "clinical tests": ["n/a"],
+        "other symptoms": ["weight-loss", "abdominal-pain", "steatorrhea"]
+      }
+    }
+  ]
+}

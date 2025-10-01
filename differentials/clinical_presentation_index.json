@@ -1,0 +1,7342 @@
+{
+"Abdominal pain": {
+  "GASTROINTESTINAL": {
+    "Gastritis": {
+      "freq": "common"
+    },
+    "Gastric/peptic ulcer": {
+      "freq": "common"
+    },
+    "Oesophageal/gastric malignancy": {
+      "freq": "common"
+    },
+    "Gastric/duodenal perforation": {
+      "freq": "uncommon"
+    },
+    "Constipation": {
+      "freq": "common"
+    },
+    "Appendicitis": {
+      "freq": "common"
+    },
+    "Obstruction": {
+      "freq": "common"
+    },
+    "Diverticulitis (Fig. 1)": {
+      "freq": "common"
+    },
+    "Gastroenteritis": {
+      "freq": "common"
+    },
+    "TB • (common in parts of the world where TB is endemic)": {
+      "Strangulated hernia": {
+        "freq": "uncommon"
+      },
+      "Inﬂammatory bowel disease": {
+        "freq": "uncommon"
+      },
+      "Intussusception": {
+        "freq": "uncommon"
+      },
+      "Volvulus": {
+        "freq": "uncommon"
+      },
+      "Mesenteric adenitis": {
+        "freq": "rare"
+      },
+      "Merkel’s diverticular": {
+        "freq": "rare"
+      }
+    }
+  },
+  "HEPATOBILIARY": {
+    "Cholecystitis": {
+      "freq": "common"
+    },
+    "Biliary colic": {
+      "freq": "common"
+    },
+    "Cholangitis": {
+      "freq": "uncommon"
+    },
+    "Hepatitis": {
+      "freq": "uncommon"
+    }
+  },
+  "PANCREATIC": {
+    "Pancreatitis": {
+      "freq": "common"
+    },
+    "Malignancy": {
+      "freq": "uncommon"
+    },
+    "Pancreatic pseudocyst": {
+      "freq": "uncommon"
+    }
+  },
+  "SPLENIC": {
+    "Infarction": {
+      "freq": "rare"
+    },
+    "Spontaneous rupture": {
+      "freq": "rare"
+    }
+  },
+  "URINARY TRACT": {
+    "Acute retention of urine": {
+      "freq": "common"
+    },
+    "Urinary tract infection/acute pyelonephritis": {
+      "freq": "common"
+    },
+    "Ureteric colic": {
+      "freq": "common"
+    },
+    "Cystitis": {
+      "freq": "uncommon"
+    },
+    "Hydronephrosis": {
+      "freq": "uncommon"
+    },
+    "Tumour": {
+      "freq": "uncommon"
+    },
+    "Pyonephrosis": {
+      "freq": "rare"
+    },
+    "Polycystic kidney": {
+      "freq": "rare"
+    }
+  },
+  "GYNAECOLOGICAL": {
+    "Ectopic pregnancy": {
+      "freq": "common"
+    },
+    "Torsion of ovarian cyst": {
+      "freq": "common"
+    },
+    "Ovarian cyst": {
+      "freq": "common"
+    },
+    "Mittelschmerz": {
+      "freq": "common"
+    },
+    "Endometriosis": {
+      "freq": "uncommon"
+    },
+    "Uterine ﬁbroid": {
+      "freq": "uncommon"
+    },
+    "Salpingitis": {
+      "freq": "uncommon"
+    }
+  },
+  "VASCULAR": {
+    "Abdominal aortic aneurysm": {
+      "freq": "uncommon"
+    },
+    "Mesenteric embolus": {
+      "freq": "uncommon"
+    },
+    "Ischemic colitis": {
+      "freq": "uncommon"
+    },
+    "Acute aortic dissection (i.e. type B)": {
+      "freq": "uncommon"
+    },
+    "Mesenteric angina (claudication)": {
+      "freq": "rare"
+    },
+    "Mesenteric venous thrombosis": {
+      "freq": "rare"
+    }
+  },
+  "ABDOMINAL WALL": {
+    "Cellulitis": {
+      "freq": "common"
+    },
+    "Strangulated hernia": {
+      "freq": "uncommon"
+    },
+    "Rectus sheath hematoma": {
+      "freq": "rare"
+    }
+  },
+  "REFERRED PAIN": {
+    "Myocardial infarction": {
+      "freq": "common"
+    },
+    "Lobar pneumonia": {
+      "freq": "common"
+    },
+    "Testicular torsion": {
+      "freq": "uncommon"
+    },
+    "Pleurisy": {
+      "freq": "uncommon"
+    },
+    "Pericarditis": {
+      "freq": "rare"
+    },
+    "Herpes zoster": {
+      "freq": "rare"
+    },
+    "Thoracic spine disease, e.g. disc, tumour": {
+      "freq": "rare"
+    }
+  },
+  "‘MEDICAL’ CAUSES": {
+    "Diabetic ketoacidosis": {
+      "freq": "common"
+    },
+    "Hypercalcemia": {
+      "freq": "uncommon"
+    },
+    "Uremia": {
+      "freq": "rare"
+    },
+    "Sickle cell disease": {
+      "freq": "rare"
+    },
+    "Addison’s disease": {
+      "freq": "rare"
+    },
+    "Acute intermittent porphyria": {
+      "freq": "rare"
+    },
+    "Henoch–Schönlein purpura": {
+      "freq": "rare"
+    },
+    "Tabes dorsalis": {
+      "freq": "rare"
+    }
+  }
+},
+"Abdominal swellings": {
+  "ABDOMINAL WALL": {
+    "Lipoma": {
+      "freq": "common"
+    },
+    "Hernia (i.e. paraumbilical, umbilical, spigelian hernia)": {
+      "freq": "common"
+    },
+    "Metastatic deposits (i.e. Sister Joseph Mary nodule)": {
+      "freq": "uncommon"
+    },
+    "Other (i.e. urachal cyst)": {
+      "freq": "rare"
+    }
+  },
+  "GALL BLADDER": {
+    "Secondary to carcinoma of the head of the pancreas": {
+      "freq": "common"
+    },
+    "Mucocele": {
+      "freq": "uncommon"
+    },
+    "Empyema": {
+      "freq": "uncommon"
+    },
+    "Carcinoma": {
+      "freq": "rare"
+    }
+  },
+  "STOMACH": {
+    "Carcinoma": {
+      "freq": "common"
+    },
+    "Gastric distension (acute dilatation, pyloric stenosis)": {
+      "freq": "common"
+    },
+    "Acute gastric volvulus": {
+      "freq": "uncommon"
+    }
+  },
+  "PANCREAS": {
+    "Carcinoma": {
+      "freq": "common"
+    },
+    "Pseudocyst": {
+      "freq": "uncommon"
+    }
+  },
+  "KIDNEY": {
+    "Hydronephrosis": {
+      "freq": "common"
+    },
+    "Solitary cyst": {
+      "freq": "common"
+    },
+    "Carcinoma": {
+      "freq": "uncommon"
+    },
+    "Polycystic kidney (Fig. 2)": {
+      "freq": "uncommon"
+    },
+    "Pyonephrosis/perinephric abscess": {
+      "freq": "uncommon"
+    },
+    "Tuberculosis (TB)": {
+      "freq": "rare"
+    },
+    "Wilms’ tumour (nephroblastoma)": {
+      "freq": "rare"
+    }
+  },
+  "SPLEEN": {
+    "Appendix abscess": {
+      "freq": "common"
+    },
+    "Carcinoma (i.e. cecal mass)": {
+      "freq": "common"
+    },
+    "Feces": {
+      "freq": "common"
+    },
+    "Diverticular mass": {
+      "freq": "common"
+    },
+    "Volvulus (i.e. cecal, sigmoid)": {
+      "freq": "common"
+    },
+    "Intussusception": {
+      "freq": "uncommon"
+    }
+  },
+  "SMALL BOWEL": {
+    "Crohn’s disease": {
+      "freq": "common"
+    },
+    "Carcinoma": {
+      "freq": "uncommon"
+    },
+    "Mesenteric cysts": {
+      "freq": "uncommon"
+    },
+    "Lymphoma": {
+      "freq": "rare"
+    }
+  },
+  "BLADDER": {
+    "Acute retention": {
+      "freq": "common"
+    },
+    "Chronic retention": {
+      "freq": "common"
+    },
+    "Carcinoma": {
+      "freq": "common"
+    }
+  },
+  "OVARY/UTERUS/FALLOPIAN TUBE": {
+    "Ovarian cyst": {
+      "freq": "common"
+    },
+    "Ovarian neoplasm": {
+      "freq": "common"
+    },
+    "Pregnancy": {
+      "freq": "common"
+    },
+    "Ectopic pregnancy": {
+      "freq": "common"
+    },
+    "Tubo-ovarian abscess": {
+      "freq": "common"
+    },
+    "Uterine ﬁbroid": {
+      "freq": "common"
+    },
+    "Uterine carcinoma": {
+      "freq": "common"
+    }
+  },
+  "RETROPERITONEUM": {
+    "Arterial aneurysm (i.e. aortic, iliac)": {
+      "freq": "common"
+    },
+    "Lymphadenopathy (lymphoma, secondaries from testicular": {
+      "freq": "uncommon"
+    },
+    "Neoplasm of the iliac bone, e.g. osteogenic sarcoma, Ewing’s": {
+      "freq": "rare"
+    }
+  },
+  "OMENTUM": {
+    "Omental secondaries, e.g. stomach and ovary": {
+      "freq": "common"
+    }
+  }
+},
+"Anorectal pain": {
+  "General": {
+    "Fissure-in-ano": {
+      "freq": "common"
+    },
+    "Perianal hematoma": {
+      "freq": "common"
+    },
+    "Thrombosed hemorrhoids (Fig. 3)": {
+      "freq": "common"
+    },
+    "Anorectal abscess (i.e. perinal, interspincteric, ischiorectal)": {
+      "freq": "uncommon"
+    },
+    "Trauma": {
+      "freq": "uncommon"
+    },
+    "Anorectal gonorrhoea": {
+      "freq": "rare"
+    },
+    "Herpes": {
+      "freq": "rare"
+    }
+  },
+  "CHRONIC": {
+    "Fistula-in-ano": {
+      "freq": "common"
+    },
+    "Proctalgia fugax": {
+      "freq": "rare"
+    },
+    "Solitary rectal ulcer": {
+      "freq": "rare"
+    },
+    "Cauda equina lesions": {
+      "freq": "rare"
+    }
+  }
+},
+"Arm pain": {
+  "CERVICAL LESIONS": {
+    "Disc lesion (Fig. 4)": {
+      "freq": "common"
+    },
+    "Cervical spondylosis": {
+      "freq": "common"
+    },
+    "Syringomyelia": {
+      "freq": "rare"
+    },
+    "Infection, e.g. osteitis, TB": {
+      "freq": "rare"
+    },
+    "Tumours": {
+      "freq": "rare"
+    },
+    "Spinal cord": {
+      "freq": "rare"
+    },
+    "Meninges": {
+      "freq": "rare"
+    }
+  },
+  "BRACHIAL PLEXUS": {
+    "Cervical rib": {
+      "freq": "uncommon"
+    },
+    "Malignant inﬁltration, e.g. Pancoast’s tumour": {
+      "freq": "rare"
+    },
+    "Thoracic inlet syndrome": {
+      "freq": "rare"
+    }
+  },
+  "VASCULAR LESIONS": {
+    "Myocardial ischemia (left arm)": {
+      "freq": "common"
+    },
+    "Embolism": {
+      "freq": "uncommon"
+    },
+    "Arterial/venous thrombosis": {
+      "freq": "rare"
+    },
+    "Subclavian artery stenosis": {
+      "freq": "rare"
+    },
+    "Steal syndrome": {
+      "freq": "rare"
+    },
+    "I.e. coronary-subclavian steal syndrome, arterio-venous": {
+      "freq": "rare"
+    },
+    "Upper limb lymphadema": {
+      "freq": "rare"
+    }
+  },
+  "OTHERS": {
+    "Repetitive strain injury": {
+      "freq": "common"
+    },
+    "Carpal tunnel syndrome": {
+      "freq": "common"
+    },
+    "Peripheral neuropathy": {
+      "freq": "uncommon"
+    },
+    "Bone tumours": {
+      "freq": "rare"
+    },
+    "Compartment syndrome": {
+      "freq": "rare"
+    },
+    "Acute, e.g. crush injuries": {
+      "freq": "rare"
+    },
+    "Chronic, e.g. exertional": {
+      "freq": "rare"
+    }
+  }
+},
+"Arm swellings": {
+  "General": {
+    "Trauma": {
+      "freq": "common"
+    },
+    "Infection, e.g. cellulitis, lymphangitis, phlebitis": {
+      "freq": "common"
+    },
+    "Acquired lymphoedema": {
+      "freq": "common"
+    },
+    "Venous thoracic outlet syndrome": {
+      "freq": "uncommon"
+    },
+    "Venous thrombosis": {
+      "freq": "uncommon"
+    },
+    "Congenital lymphoedema": {
+      "freq": "rare"
+    },
+    "Congenital": {
+      "freq": "rare"
+    },
+    "Acquired, e.g. carcinoma, infection, lymph node removal,": {
+      "freq": "rare"
+    },
+    "Infection, e.g. filariasis": {
+      "freq": "rare"
+    },
+    "Lymph node removal": {
+      "freq": "rare"
+    },
+    "Radiotherapy": {
+      "freq": "rare"
+    },
+    "Compartment syndrome": {
+      "freq": "rare"
+    }
+  }
+},
+"Ascites": {
+  "HEPATIC": {
+    "Cirrhosis": {
+      "freq": "common"
+    },
+    "Hepatic tumours": {
+      "freq": "uncommon"
+    }
+  },
+  "MALIGNANT DISEASE": {
+    "Peritoneal metastases": {
+      "freq": "common"
+    },
+    "Abdominal/pelvic tumour (primary or secondary)": {
+      "freq": "common"
+    },
+    "Pseudomyxoma peritonei": {
+      "freq": "rare"
+    },
+    "Primary mesothelioma": {
+      "freq": "rare"
+    }
+  },
+  "CARDIAC": {
+    "Cardiac failure": {
+      "freq": "common"
+    },
+    "Nephrotic syndrome": {
+      "freq": "common"
+    }
+  },
+  "PERITONITIS": {
+    "TB": {
+      "freq": "uncommon"
+    },
+    "Spontaneous bacterial": {
+      "freq": "uncommon"
+    }
+  },
+  "VENOUS OBSTRUCTION": {
+    "Budd–Chiari syndrome": {
+      "freq": "rare"
+    },
+    "Veno-occlusive disease": {
+      "freq": "rare"
+    },
+    "Hepatic portal vein obstruction": {
+      "freq": "rare"
+    },
+    "Inferior vena cava obstruction": {
+      "freq": "rare"
+    }
+  },
+  "GASTROINTESTINAL": {
+    "Pancreatitis": {
+      "freq": "uncommon"
+    },
+    "Malabsorption": {
+      "freq": "uncommon"
+    },
+    "Bile ascites": {
+      "freq": "uncommon"
+    }
+  }
+},
+"Axillary swellings": {
+  "SUPERFICIAL": {
+    "Acute abscess": {
+      "freq": "common"
+    },
+    "Sebaceous cyst": {
+      "freq": "common"
+    },
+    "Lipoma": {
+      "freq": "uncommon"
+    },
+    "Viral or bacterial infections": {
+      "freq": "common"
+    },
+    "Hidradenitis suppurativa": {
+      "freq": "uncommon"
+    },
+    "Lymphadenopathy (e.g. lymphoma, leukemia, lupus)": {
+      "freq": "common"
+    },
+    "Benign or malignant breast lump (arising in the axillary tail)": {
+      "freq": "common"
+    },
+    "Chronic abscess (e.g. TB)": {
+      "freq": "rare"
+    },
+    "Axillary artery aneurysm": {
+      "freq": "rare"
+    }
+  }
+},
+"Backache": {
+  "CONGENITAL": {
+    "Kyphoscoliosis": {
+      "freq": "uncommon"
+    }
+  },
+  "TRAUMATIC": {
+    "Vertebral fractures": {
+      "freq": "common"
+    },
+    "Ligamentous injury": {
+      "freq": "common"
+    },
+    "Joint strain": {
+      "freq": "common"
+    },
+    "Muscle tears": {
+      "freq": "common"
+    }
+  },
+  "INFECTIVE": {
+    "Osteomyelitis – acute and chronic": {
+      "freq": "rare"
+    },
+    "TB • (common in parts of the world where TB is endemic)": {
+      "Discitis": {
+        "freq": "rare"
+      }
+    }
+  },
+  "INFLAMMATORY": {
+    "Ankylosing spondylitis (Fig. 6)": {
+      "freq": "common"
+    },
+    "Rheumatology disorders": {
+      "freq": "common"
+    }
+  },
+  "NEOPLASTIC": {
+    "Metastases – multiple myeloma": {
+      "freq": "uncommon"
+    },
+    "Primary sarcomas": {
+      "freq": "rare"
+    }
+  },
+  "DEGENERATIVE": {
+    "Osteoarthritis": {
+      "freq": "common"
+    },
+    "Intervertebral disc lesions": {
+      "freq": "common"
+    }
+  },
+  "METABOLIC": {
+    "Osteoporosis (associated vertebral fractures)": {
+      "freq": "common"
+    },
+    "Osteomalacia": {
+      "freq": "uncommon"
+    }
+  },
+  "ENDOCRINE": {
+    "Cushing’s disease (osteoporosis)": {
+      "freq": "uncommon"
+    }
+  },
+  "IDIOPATHIC": {
+    "Paget’s disease": {
+      "freq": "uncommon"
+    },
+    "Scheuermann’s disease": {
+      "freq": "rare"
+    }
+  },
+  "PSYCHOGENIC": {
+    "Psychosomatic backache": {
+      "freq": "common"
+    }
+  },
+  "VISCERAL": {
+    "Penetrating peptic ulcer": {
+      "freq": "uncommon"
+    },
+    "Carcinoma of the pancreas": {
+      "freq": "uncommon"
+    },
+    "Carcinoma of the rectum": {
+      "freq": "uncommon"
+    }
+  },
+  "VASCULAR": {
+    "Renal calculus": {
+      "freq": "common"
+    },
+    "Carcinoma of the kidney": {
+      "freq": "uncommon"
+    },
+    "Inﬂammatory disease": {
+      "freq": "uncommon"
+    }
+  },
+  "GYNAECOLOGICAL": {
+    "Pelvic inﬂammatory disease": {
+      "freq": "common"
+    },
+    "Endometriosis": {
+      "freq": "common"
+    },
+    "Uterine tumours": {
+      "freq": "uncommon"
+    }
+  }
+},
+"Breast lumps": {
+  "MALIGNANT": {
+    "Carcinoma (Fig. 7)": {
+      "freq": "common"
+    },
+    "Phyllodes tumour (some behave in benign fashion)": {
+      "freq": "uncommon"
+    }
+  },
+  "BENIGN": {
+    "Fibroadenoma": {
+      "freq": "common"
+    },
+    "Cyst (in cystic mastitis)": {
+      "freq": "common"
+    },
+    "Duct ectasia": {
+      "freq": "common"
+    },
+    "Sebaceous cyst": {
+      "freq": "common"
+    },
+    "Galactocele": {
+      "freq": "uncommon"
+    },
+    "Fat necrosis": {
+      "freq": "uncommon"
+    },
+    "Lipoma": {
+      "freq": "uncommon"
+    }
+  },
+  "GENERALISED SWELLING": {
+    "Pregnancy": {
+      "freq": "common"
+    },
+    "Lactation": {
+      "freq": "common"
+    },
+    "Puberty": {
+      "freq": "common"
+    },
+    "Mastitis": {
+      "freq": "common"
+    }
+  },
+  "SWELLINGS BEHIND THE BREAST": {
+    "Retromammary abscess from chest disease": {
+      "freq": "rare"
+    },
+    "Tietze’s disease": {
+      "freq": "rare"
+    },
+    "Rib deformities": {
+      "freq": "rare"
+    },
+    "Chondroma of the costal cartilages": {
+      "freq": "rare"
+    }
+  }
+},
+"Breast pain": {
+  "General": {
+    "Cyclical mastalgia (!broadenosis, cystic mastitis)": {
+      "freq": "common"
+    },
+    "Noncyclical mastalgia": {
+      "freq": "common"
+    },
+    "Duct ectasia": {
+      "freq": "common"
+    },
+    "Breast abscess (Fig. 8)": {
+      "freq": "common"
+    },
+    "Pregnancy": {
+      "freq": "common"
+    },
+    "Lactation": {
+      "freq": "common"
+    },
+    "Carcinoma (15% of lumps are painful)": {
+      "freq": "uncommon"
+    },
+    "Fat necrosis": {
+      "freq": "uncommon"
+    },
+    "Mastitis": {
+      "freq": "uncommon"
+    },
+    "Tietze’s disease": {
+      "freq": "rare"
+    },
+    "Mondor’s disease": {
+      "freq": "rare"
+    }
+  }
+},
+"Chest pain": {
+  "CARDIOVASCULAR": {
+    "Angina": {
+      "freq": "common"
+    },
+    "Myocardial infarction": {
+      "freq": "common"
+    },
+    "Pericarditis/myocarditis": {
+      "freq": "common"
+    },
+    "Acute aortic dissection": {
+      "freq": "rare"
+    }
+  },
+  "GASTROINTESTINAL": {
+    "Gastro-oesophageal reﬂux disease": {
+      "freq": "common"
+    },
+    "Peptic ulcer disease": {
+      "freq": "uncommon"
+    },
+    "Oesophageal spasm": {
+      "freq": "uncommon"
+    }
+  },
+  "PULMONARY": {
+    "Pneumonia": {
+      "freq": "common"
+    },
+    "Pneumothorax": {
+      "freq": "uncommon"
+    },
+    "Pulmonary embolism": {
+      "freq": "common"
+    }
+  },
+  "MUSCULOSKELETAL": {
+    "Chest wall trauma": {
+      "freq": "common"
+    },
+    "Herpes zoster": {
+      "freq": "uncommon"
+    },
+    "Costochondritis": {
+      "freq": "common"
+    },
+    "Secondary tumours of the rib": {
+      "freq": "rare"
+    }
+  }
+},
+"Clubbing": {
+  "RESPIRATORY": {
+    "• Bronchial carcinoma": {},
+    "• Chronic suppurative lung disease": {},
+    "• Bronchiectasis": {},
+    "• Lung abscess": {},
+    "• Empyema": {},
+    "• Cystic ﬁbrosis": {
+      "Interstitial lung disease (ﬁbrosing alveolitis, pulmonary": {
+        "freq": "uncommon"
+      }
+    }
+  },
+  "GASTROINTESTINAL": {
+    "• Cirrhosis": {},
+    "• Ulcerative colitis": {},
+    "• Crohn’s disease": {},
+    "• Coeliac disease": {},
+    "• Graves’ disease (hyperthyroidism)": {},
+    "• Familial": {}
+  }
+},
+"Coma": {
+  "TRAUMA": {
+    "Head injury (diffuse axonal injury)": {
+      "freq": "common"
+    },
+    "Extradural hemorrhage (Fig. 11)": {
+      "freq": "common"
+    },
+    "Subdural hemorrhage": {
+      "freq": "common"
+    }
+  },
+  "METABOLIC": {
+    "Diabetic ketoacidosis": {
+      "freq": "common"
+    },
+    "Hyperglycemia": {
+      "freq": "uncommon"
+    },
+    "Hyponatremia": {
+      "freq": "rare"
+    },
+    "Hypernatremia": {
+      "freq": "rare"
+    }
+  },
+  "ORGAN FAILURE": {
+    "Cardiac/circulatory failure": {
+      "freq": "uncommon"
+    },
+    "Respiratory failure": {
+      "freq": "uncommon"
+    },
+    "Liver failure (encephalopathy)": {
+      "freq": "uncommon"
+    },
+    "Renal failure (uremic coma)": {
+      "freq": "uncommon"
+    },
+    "Hypothyroidism": {
+      "freq": "rare"
+    }
+  },
+  "VASCULAR": {
+    "Ischemic stroke": {
+      "freq": "common"
+    },
+    "Subarachnoid hemorrhage": {
+      "freq": "common"
+    }
+  },
+  "INFECTIVE": {
+    "Meningitis": {
+      "freq": "uncommon"
+    },
+    "Encephalitis": {
+      "freq": "uncommon"
+    },
+    "Cerebral malaria in the developed world • (common in": {
+      "endemic areas)": {
+        "freq": "rare"
+      }
+    }
+  },
+  "TOXIN/DRUG-INDUCED": {
+    "Alcohol": {
+      "freq": "common"
+    },
+    "Overdose (opiates, tricyclics, benzodiazepines)": {
+      "freq": "common"
+    },
+    "Carbon monoxide poisoning": {
+      "freq": "uncommon"
+    }
+  },
+  "CEREBRAL": {
+    "Epilepsy": {
+      "freq": "common"
+    },
+    "Brain tumour": {
+      "freq": "rare"
+    },
+    "Brain abscess": {
+      "freq": "rare"
+    }
+  }
+},
+"Confusion": {
+  "TOXINS/DRUGS": {
+    "Alcohol intoxication/withdrawal": {
+      "freq": "common"
+    },
+    "Drug intoxication": {
+      "freq": "common"
+    }
+  },
+  "HYPOXIA": {
+    "Respiratory disorders": {
+      "freq": "common"
+    },
+    "Cardiac failure": {
+      "freq": "uncommon"
+    }
+  },
+  "METABOLIC DISORDER": {
+    "Hyperglycemia/hypoglycemia": {
+      "freq": "common"
+    },
+    "Electrolyte imbalance, e.g. sodium, calcium": {
+      "freq": "uncommon"
+    },
+    "Thiamine (vitamin B1) deﬁciency": {
+      "freq": "uncommon"
+    },
+    "Vitamin B12 deﬁciency": {
+      "freq": "uncommon"
+    },
+    "Folate deﬁciency": {
+      "freq": "rare"
+    }
+  },
+  "SYSTEMIC DISEASE": {
+    "Renal failure": {
+      "freq": "uncommon"
+    },
+    "Liver failure": {
+      "freq": "uncommon"
+    },
+    "Thyroid disorders": {
+      "freq": "rare"
+    }
+  },
+  "NEUROLOGICAL": {
+    "Head injuries": {
+      "freq": "common"
+    },
+    "Epilepsy (post-ictal)": {
+      "freq": "common"
+    },
+    "Stroke/TIA": {
+      "freq": "uncommon"
+    },
+    "Cerebral metastasis": {
+      "freq": "uncommon"
+    },
+    "Intracerebral hemorrhage": {
+      "freq": "uncommon"
+    }
+  },
+  "INFECTION": {
+    "Urinary tract infection": {
+      "freq": "common"
+    },
+    "Respiratory tract infections": {
+      "freq": "common"
+    },
+    "Sepsis": {
+      "freq": "common"
+    }
+  },
+  "MISCELLANEOUS": {
+    "Dementia": {
+      "freq": "common"
+    },
+    "Constipation": {
+      "freq": "common"
+    },
+    "Environmental changes (elderly)": {
+      "freq": "common"
+    }
+  }
+},
+"Constipation": {
+  "CONGENITAL": {
+    "Hirschsprung’s disease": {
+      "freq": "rare"
+    }
+  },
+  "OBSTRUCTION": {
+    "Diverticular disease": {
+      "freq": "common"
+    },
+    "Colonic carcinoma": {
+      "freq": "common"
+    },
+    "Iatrogenic Ileus": {
+      "freq": "common"
+    },
+    "Extrinsic compression, e.g. pregnancy, ovarian tumours": {
+      "freq": "uncommon"
+    }
+  },
+  "PAINFUL ANUS": {
+    "Fissure-in-ano": {
+      "freq": "common"
+    },
+    "Perianal abscess": {
+      "freq": "common"
+    },
+    "Strangulated hemorrhoids": {
+      "freq": "uncommon"
+    },
+    "Post-hemorrhoidectomy": {
+      "freq": "uncommon"
+    }
+  },
+  "ADYNAMIC BOWEL": {
+    "Paralytic ileus": {
+      "freq": "uncommon"
+    },
+    "Neurological disorders (i.e. multiple sclerosis)": {
+      "freq": "uncommon"
+    },
+    "Spinal cord injury": {
+      "freq": "rare"
+    }
+  },
+  "ENDOCRINE": {
+    "Diabetes (autonomic neuropathy)": {
+      "freq": "uncommon"
+    },
+    "Hyperparathyroidism": {
+      "freq": "uncommon"
+    },
+    "Codeine phosphate": {
+      "freq": "common"
+    },
+    "Morphine": {
+      "freq": "common"
+    },
+    "Tricyclic antidepressants": {
+      "freq": "common"
+    },
+    "Atropine": {
+      "freq": "uncommon"
+    },
+    "Laxative abuse": {
+      "freq": "uncommon"
+    },
+    "Dietary changes (i.e. low-ﬁbre diet, dehydration)": {
+      "freq": "common"
+    }
+  }
+},
+"Convulsions": {
+  "NEUROLOGICAL": {
+    "Epilepsy": {
+      "freq": "common"
+    },
+    "Febrile convulsions": {
+      "freq": "common"
+    }
+  },
+  "TRAUMATIC": {
+    "Head injuries": {
+      "freq": "common"
+    }
+  },
+  "METABOLIC": {
+    "Hypoxia": {
+      "freq": "uncommon"
+    },
+    "Hypo and hyperglycemia": {
+      "freq": "uncommon"
+    },
+    "Electrolyte abnormalities, e.g. calcium, sodium": {
+      "freq": "rare"
+    },
+    "Uremia": {
+      "freq": "rare"
+    }
+  },
+  "VASCULAR": {
+    "Ischemic stroke": {
+      "freq": "rare"
+    },
+    "Subarachnoid hemorrhage": {
+      "freq": "rare"
+    },
+    "Intracranial hemorrhage": {
+      "freq": "rare"
+    }
+  },
+  "INFECTIVE": {
+    "Meningitis": {
+      "freq": "rare"
+    },
+    "Encephalitis": {
+      "freq": "rare"
+    },
+    "Cerebral abscess": {
+      "freq": "rare"
+    }
+  },
+  "NEOPLASTIC": {
+    "Brain tumours": {
+      "freq": "uncommon"
+    }
+  },
+  "TOXIN/DRUG-INDUCED": {
+    "Alcoholism/withdrawal": {
+      "freq": "common"
+    },
+    "Amphetamines, cocaine, antipsychotics, ‘ecstasy’": {
+      "freq": "uncommon"
+    },
+    "Functional seizures": {
+      "freq": "common"
+    },
+    "Neurosurgery": {
+      "freq": "rare"
+    }
+  }
+},
+"Cough": {
+  "General": {
+    "Inhaled foreign body": {
+      "freq": "common"
+    },
+    "Respiratory tract infection": {
+      "freq": "common"
+    }
+  },
+  "PRODUCTIVE": {
+    "COPD (mucoid/purulent)": {
+      "freq": "common"
+    },
+    "TB (bloodstained) • (common where TB is endemic)": {
+      "Lung cancer (bloodstained) (Fig. 12)": {
+        "freq": "uncommon"
+      },
+      "Pulmonary embolism (bloodstained)": {
+        "freq": "uncommon"
+      }
+    }
+  },
+  "NON-PRODUCTIVE": {
+    "Asthma": {
+      "freq": "common"
+    },
+    "Post-nasal drip": {
+      "freq": "common"
+    },
+    "Gastro-oesophageal reﬂux": {
+      "freq": "common"
+    },
+    "Drugs (ACE inhibitors)": {
+      "freq": "common"
+    },
+    "Sarcoidosis": {
+      "freq": "uncommon"
+    },
+    "Pulmonary ﬁbrosis (idiopathic or acquired)": {
+      "freq": "uncommon"
+    }
+  }
+},
+"Cyanosis": {
+  "DECREASED OXYGEN SATURATION": {
+    "Severe respiratory disease": {
+      "freq": "common"
+    },
+    "Pulmonary oedema": {
+      "freq": "common"
+    },
+    "Pulmonary embolism": {
+      "freq": "common"
+    },
+    "Congenital cyanotic heart disease": {
+      "freq": "common"
+    }
+  },
+  "ABNORMAL HAEMOGLOBIN": {
+    "Methemoglobinemia": {
+      "freq": "rare"
+    },
+    "Sulphemoglobinemia": {
+      "freq": "rare"
+    }
+  },
+  "PERIPHERAL CYANOSIS": {
+    "All causes of central cyanosis": {
+      "freq": "common"
+    },
+    "Cold exposure": {
+      "freq": "common"
+    },
+    "Raynaud’s phenomenon": {
+      "freq": "common"
+    },
+    "Arterial occlusion": {
+      "freq": "common"
+    },
+    "Venous occlusion": {
+      "freq": "uncommon"
+    },
+    "Acrocyanosis": {
+      "freq": "uncommon"
+    }
+  }
+},
+"Deafness": {
+  "ACQUIRED": {
+    "Ear wax": {
+      "freq": "common"
+    },
+    "Otitis externa": {
+      "freq": "common"
+    },
+    "Otitis media (including glue ear)": {
+      "freq": "common"
+    },
+    "Labyrinthitis": {
+      "freq": "common"
+    },
+    "Otosclerosis": {
+      "freq": "common"
+    },
+    "Foreign body": {
+      "freq": "uncommon"
+    },
+    "Perforation of the tympanic membrane (TM)": {
+      "freq": "uncommon"
+    },
+    "Barotrauma": {
+      "freq": "uncommon"
+    },
+    "Cholesteatoma": {
+      "freq": "rare"
+    },
+    "Presbyacusis (age-related sensorineural hearing loss)": {
+      "freq": "common"
+    },
+    "Noise-induced trauma": {
+      "freq": "common"
+    },
+    "Meniere’s disease": {
+      "freq": "uncommon"
+    },
+    "Ototoxicity (e.g. aminoglycosides, aspirin, furosemide and": {
+      "freq": "uncommon"
+    },
+    "Stroke": {
+      "freq": "uncommon"
+    },
+    "Head injuries": {
+      "freq": "uncommon"
+    },
+    "Infection (e.g. mumps, herpes zoster, meningitis": {
+      "freq": "rare"
+    },
+    "Acoustic neuroma (vestibular schwannoma)": {
+      "freq": "rare"
+    },
+    "Brain tumours": {
+      "freq": "rare"
+    }
+  },
+  "CONGENITAL": {
+    "Atresia of the meatus": {
+      "freq": "rare"
+    },
+    "Infections (e.g. maternal rubella, toxoplasmosis and CMV)": {
+      "freq": "rare"
+    },
+    "Genetic (e.g. Alport syndrome)": {
+      "freq": "rare"
+    }
+  }
+},
+"Diarrhoea": {
+  "INFECTIVE ENTERITIS": {
+    "Campylobacter spp • (rare in tropical Africa)": {},
+    "Salmonella spp • (rare in tropical Africa)": {
+      "Escherichia coli": {
+        "freq": "common"
+      },
+      "Clostridium difﬁcile": {
+        "freq": "common"
+      },
+      "Staphylococci": {
+        "freq": "uncommon"
+      },
+      "Shigella spp": {
+        "freq": "uncommon"
+      },
+      "Vibrio cholerae": {
+        "freq": "rare"
+      }
+    },
+    "Yersinia enterocolitica • (common in the Indian sub-continent)": {},
+    "Giardia lamblia • (more common in children worldwide)": {
+      "Entamoeba histolytica": {
+        "freq": "rare"
+      }
+    }
+  },
+  "INFLAMMATORY": {
+    "Ulcerative colitis": {
+      "freq": "uncommon"
+    },
+    "Crohn’s disease (Fig. 13)": {
+      "freq": "uncommon"
+    }
+  },
+  "MALABSORPTION": {
+    "Coeliac disease": {
+      "freq": "uncommon"
+    },
+    "Blind loop syndrome": {
+      "freq": "rare"
+    },
+    "Short bowel syndrome": {
+      "freq": "rare"
+    },
+    "Radiation": {
+      "freq": "rare"
+    }
+  },
+  "NEOPLASTIC": {
+    "Carcinoma": {
+      "freq": "common"
+    },
+    "Villous adenoma": {
+      "freq": "rare"
+    }
+  },
+  "OTHER INTESTINAL": {
+    "Diverticular disease • (rare in rural Africa and Asia)": {
+      "Irritable bowel syndrome": {
+        "freq": "common"
+      },
+      "Fecal impaction – overﬂow diarrhoea": {
+        "freq": "common"
+      },
+      "Ischemic colitis": {
+        "freq": "uncommon"
+      },
+      "Ileocolic ﬁstula": {
+        "freq": "rare"
+      }
+    }
+  },
+  "GASTRIC": {
+    "Post-vagotomy (vagotomy rarely performed nowadays)": {
+      "freq": "rare"
+    }
+  },
+  "PANCREATIC": {
+    "Chronic pancreatitis": {
+      "freq": "uncommon"
+    },
+    "Cystic ﬁbrosis": {
+      "freq": "uncommon"
+    },
+    "Carcinoma": {
+      "freq": "rare"
+    },
+    "Pancreatic resection": {
+      "freq": "rare"
+    }
+  },
+  "ENDOCRINE": {
+    "Diabetes": {
+      "freq": "uncommon"
+    },
+    "Thyrotoxicosis": {
+      "freq": "uncommon"
+    },
+    "Carcinoid syndrome": {
+      "freq": "rare"
+    },
+    "Zollinger–Ellison syndrome": {
+      "freq": "rare"
+    },
+    "VIPoma": {
+      "freq": "rare"
+    },
+    "Medullary thyroid cancer": {
+      "freq": "rare"
+    }
+  },
+  "DRUG-INDUCED": {
+    "Antibiotics": {
+      "freq": "common"
+    },
+    "Proton pump inhibitors": {
+      "freq": "common"
+    },
+    "Sorbitol (in sugar-free foods)": {
+      "freq": "uncommon"
+    },
+    "Magnesium-containing antacids": {
+      "freq": "uncommon"
+    },
+    "Cytotoxic agents": {
+      "freq": "rare"
+    },
+    "Anxiety": {
+      "freq": "uncommon"
+    },
+    "Diet": {
+      "freq": "uncommon"
+    }
+  }
+},
+"Dizziness": {
+  "EPISODIC": {
+    "Ménière’s disease*": {
+      "freq": "common"
+    },
+    "Benign paroxysmal positional vertigo (BPPV)": {
+      "freq": "common"
+    },
+    "Arrhythmia": {
+      "freq": "common"
+    },
+    "Postural hypotension": {
+      "freq": "common"
+    },
+    "Migraine/Vestibular migraine": {
+      "freq": "common"
+    },
+    "Hyperventilation": {
+      "freq": "common"
+    },
+    "Drugs (antihypertensives, antidepressants)": {
+      "freq": "common"
+    },
+    "Hypoglycemia": {
+      "freq": "common"
+    },
+    "Posterior circulation TIAs": {
+      "freq": "uncommon"
+    },
+    "Anxiety": {
+      "freq": "uncommon"
+    },
+    "Seizures (partial)": {
+      "freq": "uncommon"
+    },
+    "Carbon monoxide poisoning (e.g. faulty heating)": {
+      "freq": "rare"
+    },
+    "Persistent postural-perceptual dizziness (PPPD)": {
+      "freq": "rare"
+    }
+  },
+  "ACUTE ONSET": {
+    "Labyrinthitis*": {
+      "freq": "common"
+    },
+    "Vestibular neuronitis": {
+      "freq": "common"
+    },
+    "Acute alcohol or recreational drug intoxication": {
+      "freq": "common"
+    },
+    "Head injuries*": {
+      "freq": "uncommon"
+    },
+    "Posterior circulation CVA": {
+      "freq": "uncommon"
+    }
+  },
+  "GRADUAL ONSET": {
+    "Diabetes mellitus": {
+      "freq": "common"
+    },
+    "Hypothyroidism": {
+      "freq": "common"
+    },
+    "Multiple sclerosis": {
+      "freq": "uncommon"
+    },
+    "Aortic stenosis": {
+      "freq": "uncommon"
+    },
+    "Cerebellopontine angle tumour* (e.g. acoustic neuroma,": {
+      "freq": "rare"
+    },
+    "Ototoxicity – aminoglycosides (i.e. gentamicin),": {
+      "freq": "rare"
+    }
+  }
+},
+"Dysphagia": {
+  "CONGENITAL": {
+    "Oesophageal atresia": {
+      "freq": "rare"
+    }
+  },
+  "IN THE WALL": {
+    "Gastro-oesophageal reﬂux": {
+      "freq": "common"
+    },
+    "Carcinoma (Fig. 14)": {
+      "freq": "common"
+    },
+    "Irradiation": {
+      "freq": "uncommon"
+    },
+    "Scleroderma": {
+      "freq": "uncommon"
+    },
+    "Caustic stricture": {
+      "freq": "rare"
+    },
+    "Candidiasis": {
+      "freq": "rare"
+    },
+    "Achalasia": {
+      "freq": "rare"
+    },
+    "Plummer–Vinson syndrome": {
+      "freq": "rare"
+    },
+    "Chagas’ disease • (South America)": {}
+  },
+  "OUTSIDE THE WALL": {
+    "Goitre": {
+      "freq": "common"
+    },
+    "Paraoesophageal (rolling) hiatus hernia": {
+      "freq": "common"
+    },
+    "Mediastinal tumours/lymphadenopathy": {
+      "freq": "common"
+    },
+    "Pharyngeal pouch": {
+      "freq": "uncommon"
+    },
+    "Enlarged left atrium (mitral stenosis)": {
+      "freq": "rare"
+    },
+    "Thoracic aortic aneurysm": {
+      "freq": "rare"
+    },
+    "Dysphagia lusoria": {
+      "freq": "rare"
+    }
+  },
+  "NEUROMUSCULAR DISORDERS": {
+    "CVA": {
+      "freq": "common"
+    },
+    "Bulbar palsy": {
+      "freq": "uncommon"
+    },
+    "Guillain–Barré syndrome": {
+      "freq": "uncommon"
+    },
+    "Motor neurone disease": {
+      "freq": "uncommon"
+    },
+    "Myasthenia gravis": {
+      "freq": "rare"
+    }
+  },
+  "OTHERS": {
+    "Globus": {
+      "freq": "uncommon"
+    }
+  }
+},
+"Dyspnoea": {
+  "SUDDEN (SECONDS TO MINUTES)": {
+    "Pneumothorax (Fig. 15)": {
+      "freq": "common"
+    },
+    "Chest trauma": {
+      "freq": "common"
+    },
+    "Aspiration": {
+      "freq": "common"
+    },
+    "Pulmonary oedema": {
+      "freq": "common"
+    },
+    "Pulmonary embolism": {
+      "freq": "common"
+    },
+    "Anaphylaxis": {
+      "freq": "uncommon"
+    }
+  },
+  "ACUTE (HOURS TO DAYS)": {
+    "Asthma": {
+      "freq": "common"
+    },
+    "Respiratory tract infection": {
+      "freq": "common"
+    },
+    "Pleural effusion": {
+      "freq": "common"
+    }
+  },
+  "CHRONIC (MONTHS TO YEARS)": {
+    "Chronic airﬂow limitation (COPD)": {
+      "freq": "common"
+    },
+    "Anemia": {
+      "freq": "common"
+    },
+    "Arrhythmia": {
+      "freq": "common"
+    },
+    "Valvular heart disease": {
+      "freq": "common"
+    },
+    "Cardiac failure": {
+      "freq": "common"
+    },
+    "Cystic ﬁbrosis": {
+      "freq": "uncommon"
+    },
+    "Idiopathic pulmonary ﬁbrosis": {
+      "freq": "uncommon"
+    },
+    "Chest wall deformities": {
+      "freq": "rare"
+    },
+    "Neuromuscular disorders": {
+      "freq": "rare"
+    },
+    "Pulmonary hypertension": {
+      "freq": "rare"
+    }
+  }
+},
+"Ear disorders": {
+  "EXTERNAL EAR": {
+    "Trauma": {
+      "freq": "common"
+    },
+    "Boils": {
+      "freq": "common"
+    },
+    "Dermoid/epidermoid cyst": {
+      "freq": "rare"
+    },
+    "Malignancy (e.g. basal cell carcinoma, squamous cell carcinoma)": {
+      "freq": "rare"
+    }
+  },
+  "EXTERNAL AUDITORY MEATUS": {
+    "Otitis externa": {
+      "freq": "common"
+    },
+    "Boils": {
+      "freq": "common"
+    },
+    "Malignancy": {
+      "freq": "rare"
+    }
+  },
+  "MIDDLE EAR": {
+    "Acute otitis media (AOM) (Fig. 16)": {
+      "freq": "common"
+    },
+    "Chronic otitis media": {
+      "freq": "common"
+    },
+    "Mastoiditis": {
+      "freq": "uncommon"
+    }
+  },
+  "REFERRED PAIN": {
+    "Dental problems (e.g. severe gum disease)": {
+      "freq": "common"
+    },
+    "Pharynx": {
+      "freq": "common"
+    },
+    "Tonsillitis": {
+      "freq": "common"
+    },
+    "Pharyngitis": {
+      "freq": "common"
+    },
+    "Foreign body": {
+      "freq": "common"
+    },
+    "Quinsy": {
+      "freq": "common"
+    },
+    "Carcinoma of the posterior third of the tongue": {
+      "freq": "rare"
+    },
+    "Laryngeal cancer": {
+      "freq": "rare"
+    }
+  },
+  "NEUROLOGICAL": {
+    "Herpes zoster": {
+      "freq": "uncommon"
+    },
+    "Glossopharyngeal neuralgia": {
+      "freq": "rare"
+    }
+  }
+},
+"Eye disorders": {
+  "EYELIDS": {
+    "Stye (hordeolum internum/externum) (Fig. 17)": {
+      "freq": "common"
+    },
+    "Xanthelasma": {
+      "freq": "common"
+    },
+    "Blepharitis": {
+      "freq": "uncommon"
+    },
+    "Meibomian cyst (chalazion)": {
+      "freq": "uncommon"
+    },
+    "Entropion (in-turning of the eyelid)": {
+      "freq": "uncommon"
+    },
+    "Ectropion (out-turning of the eyelid)": {
+      "freq": "uncommon"
+    }
+  },
+  "SURFACE": {
+    "Trauma": {
+      "freq": "common"
+    },
+    "Foreign body": {
+      "freq": "common"
+    }
+  },
+  "CONJUNCTIVA": {
+    "Subconjunctival hemorrhage": {
+      "freq": "common"
+    },
+    "Conjunctivitis": {
+      "freq": "common"
+    },
+    "Chlamydia": {
+      "freq": "uncommon"
+    }
+  },
+  "SCLERA": {
+    "Episcleritis": {
+      "freq": "uncommon"
+    },
+    "Scleritis": {
+      "freq": "uncommon"
+    }
+  },
+  "CORNEA": {
+    "Corneal abrasion": {
+      "freq": "common"
+    },
+    "Corneal ulceration (keratitis)": {
+      "freq": "uncommon"
+    },
+    "Viral (herpes simplex keratitis)": {
+      "freq": "common"
+    },
+    "Bacterial": {
+      "freq": "uncommon"
+    },
+    "Fungal": {
+      "freq": "rare"
+    },
+    "Amoebic": {
+      "freq": "rare"
+    },
+    "Parasitic": {
+      "freq": "rare"
+    }
+  },
+  "IRIS AND CILIARY BODY": {
+    "Anterior uveitis": {
+      "freq": "rare"
+    }
+  },
+  "INTRAOCULAR": {
+    "Acute angle-closure glaucoma": {
+      "freq": "uncommon"
+    },
+    "Endopthalmitis": {
+      "freq": "rare"
+    }
+  }
+},
+"Erectile dysfunction": {
+  "ENDOCRINE": {
+    "Diabetes mellitus": {
+      "freq": "common"
+    },
+    "Hyperlipidemia": {
+      "freq": "common"
+    },
+    "Hypogonadism": {
+      "freq": "uncommon"
+    },
+    "Hypothyroidism": {
+      "freq": "uncommon"
+    },
+    "Cushing’s syndrome": {
+      "freq": "uncommon"
+    },
+    "Metabolic syndrome": {
+      "freq": "uncommon"
+    },
+    "Addison’s disease": {
+      "freq": "rare"
+    }
+  },
+  "VASCULAR": {
+    "Diabetic vascular disease": {
+      "freq": "common"
+    },
+    "Aortoiliac disease (Leriche’s syndrome)": {
+      "freq": "rare"
+    }
+  },
+  "NEUROLOGICAL": {
+    "Spinal lesions": {
+      "freq": "common"
+    },
+    "Neuropathies (e.g. diabetes)": {
+      "freq": "common"
+    },
+    "Spina biﬁda": {
+      "freq": "uncommon"
+    },
+    "Pelvic surgery (damage to nervi erigentes)": {
+      "freq": "uncommon"
+    },
+    "Antihypertensives": {
+      "freq": "common"
+    },
+    "Antidepressants": {
+      "freq": "common"
+    },
+    "Alcohol": {
+      "freq": "common"
+    },
+    "Beta-blockers": {
+      "freq": "uncommon"
+    },
+    "Oestrogens": {
+      "freq": "uncommon"
+    },
+    "Cocaine": {
+      "freq": "uncommon"
+    },
+    "Smoking": {
+      "freq": "uncommon"
+    }
+  },
+  "LOCAL PAINFUL CONDITIONS": {
+    "Phimosis": {
+      "freq": "uncommon"
+    }
+  },
+  "SYSTEMIC DISEASE": {
+    "Malignancy": {
+      "freq": "common"
+    },
+    "Hypertension": {
+      "freq": "common"
+    },
+    "Cirrhosis": {
+      "freq": "common"
+    },
+    "Chronic renal failure": {
+      "freq": "uncommon"
+    },
+    "Parkinson’s disease": {
+      "freq": "rare"
+    }
+  },
+  "PSYCHOGENIC": {
+    "Depression": {
+      "freq": "common"
+    },
+    "Ageing": {
+      "freq": "common"
+    }
+  }
+},
+"Facial pain": {
+  "General": {
+    "Sinusitis": {
+      "freq": "common"
+    },
+    "Carcinoma": {
+      "freq": "rare"
+    },
+    "Otitis media": {
+      "freq": "common"
+    },
+    "Otitis externa": {
+      "freq": "common"
+    },
+    "Optic neuritis": {
+      "freq": "common"
+    }
+  },
+  "MASTOID": {
+    "Mastoiditis": {
+      "freq": "uncommon"
+    }
+  },
+  "TEETH AND SALIVARY GLAND": {
+    "Dental abscess": {
+      "freq": "common"
+    },
+    "Herpes zoster (Fig. 18)": {
+      "freq": "uncommon"
+    },
+    "Post-herpetic neuralgia": {
+      "freq": "uncommon"
+    },
+    "Cellulitis": {
+      "freq": "uncommon"
+    },
+    "Candidiasis": {
+      "freq": "uncommon"
+    }
+  },
+  "JOINTS": {
+    "Temporomandibular (TMJ) dysfunction": {
+      "freq": "uncommon"
+    }
+  },
+  "PAROTID GLAND": {
+    "Mumps": {
+      "freq": "common"
+    },
+    "Parotitis": {
+      "freq": "uncommon"
+    },
+    "Tumour (most common tumour type)": {
+      "freq": "rare"
+    }
+  },
+  "GENERAL": {
+    "Migraine": {
+      "freq": "common"
+    },
+    "Cluster headache": {
+      "freq": "common"
+    },
+    "Trauma": {
+      "freq": "common"
+    },
+    "Trigeminal neuralgia": {
+      "freq": "uncommon"
+    },
+    "Temporal arteritis": {
+      "freq": "uncommon"
+    },
+    "Tumour": {
+      "freq": "uncommon"
+    },
+    "Nasopharyngeal carcinoma (associated with EBV)": {
+      "freq": "uncommon"
+    },
+    "• (common in Chinese populations)": {
+      "Chronic paroxysmal hemicrania": {
+        "freq": "rare"
+      }
+    }
+  }
+},
+"Facial ulcers": {
+  "TRAUMATIC": {
+    "Physical": {
+      "freq": "common"
+    },
+    "Chemical": {
+      "freq": "common"
+    },
+    "Irradiation": {
+      "freq": "uncommon"
+    },
+    "Dermatitis artefacta": {
+      "freq": "uncommon"
+    },
+    "Bites": {
+      "freq": "uncommon"
+    }
+  },
+  "NEOPLASTIC": {
+    "Basal cell carcinoma (rodent ulcer) • (rare in tropical": {
+      "Africa)": {
+        "freq": "uncommon"
+      }
+    }
+  },
+  "INFECTIVE": {
+    "Herpes simplex": {
+      "freq": "common"
+    },
+    "Herpes zoster": {
+      "freq": "common"
+    },
+    "Keratoacanthoma": {
+      "freq": "uncommon"
+    },
+    "Syphilis (i.e. chancre, gumma)": {
+      "freq": "rare"
+    },
+    "Leishmaniasis • (common in tropical and subtropical areas)": {
+      "OTHER": {
+        "freq": "rare"
+      },
+      "Pyoderma gangrenosum": {
+        "freq": "rare"
+      }
+    }
+  }
+},
+"Fecal incontinence": {
+  "NORMAL SPHINCTERS AND PELVIC FLOOR": {
+    "Severe diarrhoea, e.g. infection, irritable bowel syndrome,": {
+      "freq": "common"
+    },
+    "Fecal impaction (‘overﬂow’ diarrhoea)": {
+      "freq": "common"
+    }
+  },
+  "CONGENITAL": {
+    "Anorectal anomalies, meningomyelocele": {
+      "freq": "rare"
+    }
+  },
+  "ACQUIRED": {
+    "Iatrogenic": {
+      "freq": "uncommon"
+    },
+    "Internal sphincter surgery, e.g. anal dilatation or": {
+      "freq": "uncommon"
+    },
+    "Fistula-in-ano surgery": {
+      "freq": "uncommon"
+    },
+    "Obstetric – traumatic childbirth": {
+      "freq": "uncommon"
+    },
+    "Pelvic fractures": {
+      "freq": "rare"
+    },
+    "Impalement": {
+      "freq": "rare"
+    },
+    "Multiple sclerosis": {
+      "freq": "uncommon"
+    },
+    "Spinal injuries (if acute onset)": {
+      "freq": "rare"
+    },
+    "Spinal tumours": {
+      "freq": "rare"
+    },
+    "Peripheral neuropathy": {
+      "freq": "rare"
+    },
+    "Stroke": {
+      "freq": "rare"
+    },
+    "Dementia": {
+      "freq": "rare"
+    },
+    "Rectal prolapse": {
+      "freq": "uncommon"
+    },
+    "Extensive anorectal carcinoma": {
+      "freq": "uncommon"
+    },
+    "Fistula-in-ano": {
+      "freq": "rare"
+    },
+    "Radiotherapy": {
+      "freq": "rare"
+    }
+  }
+},
+"Finger lesions": {
+  "TRAUMATIC/DEGENERATIVE": {
+    "Dupuytren’s contracture": {
+      "freq": "common"
+    },
+    "Trigger ﬁnger": {
+      "freq": "uncommon"
+    },
+    "Implantation dermoid": {
+      "freq": "uncommon"
+    },
+    "Pyogenic granuloma": {
+      "freq": "uncommon"
+    },
+    "Boutonnière deformity (Fig. 21)": {
+      "freq": "uncommon"
+    },
+    "Heberden’s/Bouchard’s nodes": {
+      "freq": "uncommon"
+    },
+    "Mucous cyst": {
+      "freq": "rare"
+    },
+    "Calluses over knuckles (bulimia)": {
+      "freq": "rare"
+    }
+  },
+  "METABOLIC": {
+    "Gouty tophi": {
+      "freq": "uncommon"
+    },
+    "Ectopic calciﬁcation": {
+      "freq": "rare"
+    }
+  },
+  "CONNECTIVE TISSUE DISEASE": {
+    "Calcinosis in CREST (Calcinosis, Raynaud’s phenomenon, oesoph-": {
+      "freq": "rare"
+    }
+  },
+  "NEOPLASTIC": {
+    "Subungual melanoma": {
+      "freq": "uncommon"
+    },
+    "Chondroma": {
+      "freq": "rare"
+    }
+  }
+},
+"Finger pain": {
+  "TRAUMATIC": {
+    "Subungual hematoma": {
+      "freq": "common"
+    },
+    "Fractures": {
+      "freq": "uncommon"
+    }
+  },
+  "INFLAMMATORY/INFECTIVE": {
+    "Paronychia": {
+      "freq": "common"
+    },
+    "Pulp space infection": {
+      "freq": "uncommon"
+    },
+    "Tendon sheath infection – especially if open": {
+      "freq": "uncommon"
+    }
+  },
+  "DEGENERATIVE": {
+    "Rheumatoid arthritis": {
+      "freq": "uncommon"
+    }
+  },
+  "VASCULAR": {
+    "Chilblains": {
+      "freq": "common"
+    },
+    "Small vessel disease": {
+      "freq": "uncommon"
+    },
+    "Raynaud’s phenomenon (Fig. 22)": {
+      "freq": "uncommon"
+    },
+    "Buerger’s disease": {
+      "freq": "uncommon"
+    },
+    "Emboli": {
+      "freq": "uncommon"
+    }
+  },
+  "METABOLIC": {
+    "Gout": {
+      "freq": "uncommon"
+    }
+  },
+  "AUTOIMMUNE": {
+    "Scleroderma": {
+      "freq": "rare"
+    }
+  },
+  "NEUROLOGICAL": {
+    "Carpal tunnel syndrome": {
+      "freq": "common"
+    },
+    "Cervical lesions": {
+      "freq": "common"
+    }
+  }
+},
+"Foot and ankle deformities": {
+  "CONGENITAL": {
+    "Talipes congenital talipes equinovarus (congenital clubfoot)": {
+      "freq": "uncommon"
+    },
+    "Metatarsus adductus (intoeing)": {
+      "freq": "uncommon"
+    },
+    "Pes planus (ﬂatfoot)": {
+      "freq": "uncommon"
+    },
+    "Pes cavus (high-arch foot)": {
+      "freq": "rare"
+    },
+    "Idiopathic": {
+      "freq": "rare"
+    },
+    "Neuropathic": {
+      "freq": "rare"
+    },
+    "Spastic dysplasia": {
+      "freq": "rare"
+    },
+    "Spina bifida (including spinda bifida occulta)": {
+      "freq": "rare"
+    },
+    "Cerebral palsy": {
+      "freq": "rare"
+    },
+    "Poliomyelitis": {
+      "freq": "rare"
+    },
+    "Charcot–Marie–Tooth disease (hereditary motor and sensory": {
+      "freq": "rare"
+    },
+    "Friedreich’s ataxia": {
+      "freq": "rare"
+    },
+    "Acquired talipes equinovarus (causes listed below)": {
+      "freq": "rare"
+    }
+  },
+  "UPPER MOTOR NEURONE LESION": {
+    "Cerebrovascular accident": {
+      "freq": "uncommon"
+    },
+    "Traumatic brain injury": {
+      "freq": "uncommon"
+    },
+    "Spastic paresis": {
+      "freq": "rare"
+    }
+  },
+  "LOWER MOTOR NEURONE LESION": {
+    "Spina biﬁda": {
+      "freq": "rare"
+    },
+    "Poliomyelitis": {
+      "freq": "rare"
+    },
+    "Meningitis": {
+      "freq": "rare"
+    },
+    "Amyotrophic lateral sclerosis": {
+      "freq": "rare"
+    },
+    "Cerebellar lesions": {
+      "freq": "rare"
+    },
+    "Friedreich’s ataxia": {
+      "freq": "rare"
+    }
+  },
+  "TRAUMA": {
+    "Fractures": {
+      "freq": "uncommon"
+    },
+    "Burns": {
+      "freq": "uncommon"
+    }
+  }
+},
+"Foot pain": {
+  "TRAUMATIC": {
+    "Fractures": {
+      "freq": "common"
+    },
+    "March fracture": {
+      "freq": "uncommon"
+    }
+  },
+  "INFECTIVE": {
+    "Cellulitis – esp if suspected necrotising fascitis": {
+      "freq": "common"
+    },
+    "Osteomyelitis": {
+      "freq": "rare"
+    },
+    "Pyogenic arthritis": {
+      "freq": "rare"
+    }
+  },
+  "INFLAMMATORY": {
+    "Rheumatoid arthritis": {
+      "freq": "common"
+    },
+    "Plantar fasciitis": {
+      "freq": "common"
+    },
+    "Reiter’s disease": {
+      "freq": "uncommon"
+    },
+    "Osteochondritis of the navicular bone (Köhler’s disease)": {
+      "freq": "rare"
+    },
+    "Osteochondritis of the metatarsal head (Freiberg’s disease)": {
+      "freq": "rare"
+    }
+  },
+  "VASCULAR": {
+    "Ischemia especially if acute": {
+      "freq": "common"
+    },
+    "Ulcers": {
+      "freq": "uncommon"
+    }
+  },
+  "DEGENERATIVE": {
+    "Osteoarthritis": {
+      "freq": "common"
+    },
+    "Flatfoot": {
+      "freq": "uncommon"
+    },
+    "Corns and callosities": {
+      "freq": "common"
+    },
+    "Referred pain, e.g. disc lesions, neuropathies": {
+      "freq": "common"
+    },
+    "Metatarsalgia": {
+      "freq": "uncommon"
+    },
+    "Morton’s metatarsalgia": {
+      "freq": "uncommon"
+    },
+    "Plantar warts": {
+      "freq": "uncommon"
+    }
+  }
+},
+"Foot ulcers": {
+  "LARGE VESSEL DISEASE": {
+    "Arteriosclerosis": {
+      "freq": "common"
+    },
+    "Embolism": {
+      "freq": "uncommon"
+    }
+  },
+  "SMALL VESSEL DISEASE": {
+    "Diabetes": {
+      "freq": "common"
+    },
+    "Raynaud’s disease": {
+      "freq": "uncommon"
+    },
+    "Embolism": {
+      "freq": "uncommon"
+    },
+    "Vasculitis, e.g. SLE, rheumatoid arthritis, scleroderma": {
+      "freq": "uncommon"
+    }
+  },
+  "PERIPHERAL NERVE LESIONS": {
+    "Diabetes (Fig. 24)": {
+      "freq": "common"
+    },
+    "Peripheral nerve injuries": {
+      "freq": "uncommon"
+    },
+    "Leprosy •JOFOEFNJDBSFBT": {
+      "freq": "rare"
+    },
+    "Alcoholism": {
+      "freq": "rare"
+    }
+  },
+  "SPINAL CORD LESIONS": {
+    "Spina biﬁda": {
+      "freq": "rare"
+    },
+    "Tabes dorsalis": {
+      "freq": "rare"
+    },
+    "Syringomyelia": {
+      "freq": "rare"
+    }
+  },
+  "NEOPLASTIC": {
+    "Squamous cell carcinoma": {
+      "freq": "uncommon"
+    },
+    "Malignant melanoma": {
+      "freq": "uncommon"
+    }
+  },
+  "TRAUMATIC": {
+    "Ill-ﬁtting footwear": {
+      "freq": "common"
+    }
+  },
+  "INFECTIVE": {
+    "Madura foot •FOEFNJDJO\"GSJDB*OEJB": {
+      "freq": "rare"
+    }
+  }
+},
+"Gait abnormalities": {
+  "STRUCTURAL": {
+    "Pain – antalgic gait": {
+      "freq": "common"
+    },
+    "Length discrepancies – short leg gait": {
+      "freq": "common"
+    },
+    "Weak hip abductors – Trendelenburg or waddling gait": {
+      "freq": "uncommon"
+    },
+    "Femoral anteversion – intoe gait": {
+      "freq": "uncommon"
+    }
+  },
+  "NEUROLOGICAL": {
+    "Stroke – hemiplegic gait": {
+      "freq": "common"
+    },
+    "Parkinson’s disease – festinant gait": {
+      "freq": "common"
+    },
+    "Multiple sclerosis – scissoring gait": {
+      "freq": "common"
+    },
+    "Peripheral neuropathy – sensory ataxia": {
+      "freq": "uncommon"
+    },
+    "Cerebellar disease – cerebellar ataxia": {
+      "freq": "uncommon"
+    },
+    "Peroneal nerve palsy – foot drop gait": {
+      "freq": "uncommon"
+    },
+    "Cerebral palsy – scissoring gait": {
+      "freq": "uncommon"
+    },
+    "Frontal lobe lesions – apraxic gait": {
+      "freq": "rare"
+    }
+  }
+},
+"Goitre": {
+  "SIMPLE (NON-TOXIC) GOITRE": {
+    "Simple hyperplastic goitre": {
+      "freq": "common"
+    },
+    "Multinodular goitre": {
+      "freq": "common"
+    }
+  },
+  "TOXIC GOITRE": {
+    "Diffuse goitre (Graves’ disease)": {
+      "freq": "common"
+    }
+  },
+  "AUTOIMMUNE": {
+    "Hashimoto’s thyroiditis": {
+      "freq": "common"
+    }
+  },
+  "BENIGN": {
+    "Adenoma": {
+      "freq": "uncommon"
+    }
+  },
+  "MALIGNANT": {
+    "Papillary": {
+      "freq": "uncommon"
+    },
+    "Follicular": {
+      "freq": "uncommon"
+    },
+    "Anaplastic": {
+      "freq": "uncommon"
+    },
+    "Medullary": {
+      "freq": "rare"
+    },
+    "Lymphoma": {
+      "freq": "rare"
+    }
+  },
+  "INFLAMMATORY": {
+    "de Quervain’s thyroiditis": {
+      "freq": "rare"
+    },
+    "Riedel’s thyroiditis": {
+      "freq": "rare"
+    }
+  }
+},
+"Groin swellings": {
+  "ABOVE THE INGUINAL LIGAMENT": {
+    "Sebaceous cyst/abscess": {
+      "freq": "common"
+    },
+    "Lipoma": {
+      "freq": "common"
+    },
+    "Direct inguinal hernia": {
+      "freq": "common"
+    },
+    "Indirect inguinal hernia (Fig. 26)": {
+      "freq": "common"
+    },
+    "Imperfectly descended testis": {
+      "freq": "uncommon"
+    },
+    "Hydrocele of the cord/canal of Nuck": {
+      "freq": "rare"
+    }
+  },
+  "BELOW THE INGUINAL LIGAMENT": {
+    "Sebaceous cyst/abscess": {
+      "freq": "common"
+    },
+    "Lipoma": {
+      "freq": "common"
+    },
+    "Femoral hernia": {
+      "freq": "common"
+    },
+    "Lymph nodes": {
+      "freq": "common"
+    },
+    "Saphena varix": {
+      "freq": "common"
+    },
+    "Neuroma of the femoral nerves": {
+      "freq": "rare"
+    },
+    "Synovioma of the hip joint": {
+      "freq": "rare"
+    },
+    "Obturator hernia": {
+      "freq": "rare"
+    },
+    "Psoas abscess": {
+      "freq": "rare"
+    }
+  }
+},
+"Gynecomastia": {
+  "PHYSIOLOGICAL": {
+    "Puberty": {
+      "freq": "uncommon"
+    },
+    "Old age": {
+      "freq": "uncommon"
+    },
+    "Neonates": {
+      "freq": "uncommon"
+    }
+  },
+  "PATHOLOGICAL": {
+    "Chronic liver disease (Fig. 27)": {
+      "freq": "common"
+    },
+    "Drugs": {
+      "freq": "uncommon"
+    },
+    "Chronic renal failure": {
+      "freq": "uncommon"
+    },
+    "Carcinoma of the male breast": {
+      "freq": "rare"
+    },
+    "Hyperthyroidism": {
+      "freq": "rare"
+    },
+    "Hypogonadism": {
+      "freq": "rare"
+    },
+    "Klinefelter’s syndrome": {
+      "freq": "rare"
+    },
+    "Agenesis": {
+      "freq": "rare"
+    },
+    "Testicular tumours": {
+      "freq": "rare"
+    },
+    "Bronchial carcinoma (inappropriate secretion of hormones)": {
+      "freq": "rare"
+    },
+    "Pituitary tumours (e.g. prolactinoma)": {
+      "freq": "rare"
+    },
+    "Malnutrition": {
+      "freq": "rare"
+    }
+  }
+},
+"Hematuria": {
+  "KIDNEY": {
+    "Glomerular disease": {
+      "freq": "common"
+    },
+    "Carcinoma": {
+      "freq": "common"
+    },
+    "Stone": {
+      "freq": "common"
+    },
+    "Infection – pyelonephritis": {
+      "freq": "common"
+    },
+    "Trauma (including renal biopsy)": {
+      "freq": "uncommon"
+    },
+    "Polycystic kidney": {
+      "freq": "rare"
+    },
+    "TB • (common in some parts of the world where TB is endemic)": {
+      "Embolism": {
+        "freq": "rare"
+      }
+    }
+  },
+  "URETER": {
+    "Stone": {
+      "freq": "uncommon"
+    },
+    "Neoplasm": {
+      "freq": "rare"
+    }
+  },
+  "BLADDER": {
+    "Carcinoma (Fig. 29)": {
+      "freq": "common"
+    },
+    "Inﬂammatory, e.g. cystitis, TB, schistosomiasis": {
+      "freq": "common"
+    },
+    "Catheter-associated": {
+      "freq": "common"
+    },
+    "Stone": {
+      "freq": "uncommon"
+    },
+    "Trauma": {
+      "freq": "rare"
+    }
+  },
+  "PROSTATE": {
+    "Benign prostatic hypertrophy": {
+      "freq": "common"
+    },
+    "Carcinoma": {
+      "freq": "common"
+    }
+  },
+  "URETHRA": {
+    "Trauma": {
+      "freq": "uncommon"
+    },
+    "Stone": {
+      "freq": "uncommon"
+    },
+    "Urethritis": {
+      "freq": "uncommon"
+    },
+    "Neoplasm": {
+      "freq": "rare"
+    }
+  },
+  "GENERAL": {
+    "Anticoagulant therapy": {
+      "freq": "uncommon"
+    },
+    "Thrombocytopenia": {
+      "freq": "uncommon"
+    },
+    "Strenuous exercise": {
+      "freq": "rare"
+    },
+    "Hemophilia": {
+      "freq": "rare"
+    },
+    "Sickle cell disease": {
+      "freq": "rare"
+    },
+    "Malaria • (common where malaria is endemic)": {}
+  },
+  "RED URINE": {
+    "Hemoglobinuria": {
+      "freq": "rare"
+    },
+    "Myoglobinuria": {
+      "freq": "rare"
+    },
+    "Acute intermittent porphyria": {
+      "freq": "rare"
+    },
+    "Beetroot": {
+      "freq": "rare"
+    },
+    "Senna": {
+      "freq": "rare"
+    },
+    "Rifampicin": {
+      "freq": "rare"
+    }
+  }
+},
+"Hemoptysis": {
+  "RESPIRATORY": {
+    "Bronchial carcinoma": {
+      "freq": "common"
+    },
+    "Pneumonia": {
+      "freq": "common"
+    },
+    "TB (worldwide) (Fig. 30)": {
+      "freq": "common"
+    },
+    "Chronic obstructive pulmonary disease (COPD)": {
+      "freq": "common"
+    },
+    "Bronchiectasis": {
+      "freq": "uncommon"
+    },
+    "Pulmonary oedema": {
+      "freq": "uncommon"
+    },
+    "Goodpasture’s syndrome": {
+      "freq": "rare"
+    }
+  },
+  "VASCULAR": {
+    "Pulmonary embolism": {
+      "freq": "uncommon"
+    },
+    "Pulmonary hypertension – mitral stenosis": {
+      "freq": "rare"
+    },
+    "Hereditary hemorrhagic telangiectasia": {
+      "freq": "rare"
+    }
+  },
+  "SYSTEMIC": {
+    "Coagulation disorders": {
+      "freq": "uncommon"
+    }
+  }
+},
+"Hallucinations": {
+  "General": {
+    "Fever (especially children and the elderly)": {
+      "freq": "common"
+    },
+    "Drugs (and drug withdrawal)": {
+      "freq": "common"
+    },
+    "Alcohol": {
+      "freq": "common"
+    },
+    "Alcoholic hallucinations": {
+      "freq": "common"
+    },
+    "Delirium tremens (alcohol withdrawal)": {
+      "freq": "common"
+    },
+    "Extreme fatigue": {
+      "freq": "common"
+    },
+    "Psychiatric disorders": {
+      "freq": "common"
+    },
+    "Schizophrenia": {
+      "freq": "common"
+    },
+    "Bipolar disorder": {
+      "freq": "rare"
+    },
+    "Schizoaffective disorder": {
+      "freq": "uncommon"
+    },
+    "Post-traumatic stress disorder": {
+      "freq": "uncommon"
+    },
+    "Sensory deprivation (e.g. blindness or deafness)": {
+      "freq": "uncommon"
+    },
+    "Hypoxia": {
+      "freq": "uncommon"
+    },
+    "Severe metabolic disturbances (e.g. diabetic ketoacidosis,": {
+      "freq": "uncommon"
+    },
+    "Severe medical illness": {
+      "freq": "uncommon"
+    },
+    "Liver failure": {
+      "freq": "common"
+    },
+    "Renal failure": {
+      "freq": "uncommon"
+    },
+    "Neurological disease": {
+      "freq": "uncommon"
+    },
+    "Temporal lobe epilepsy": {
+      "freq": "common"
+    },
+    "Cerebral tumour": {
+      "freq": "uncommon"
+    },
+    "Post-concussional state": {
+      "freq": "rare"
+    },
+    "Dementia": {
+      "freq": "uncommon"
+    },
+    "Narcolepsy": {
+      "freq": "rare"
+    }
+  }
+},
+"Hand deformities": {
+  "FAILURE OF FORMATION": {
+    "Absent digit": {
+      "freq": "rare"
+    },
+    "Finger and thumb hypoplasia": {
+      "freq": "rare"
+    },
+    "Radial club hand": {
+      "freq": "rare"
+    },
+    "Macrodactyly": {
+      "freq": "rare"
+    }
+  },
+  "DUPLICATION": {
+    "Polydactlyl": {
+      "freq": "rare"
+    }
+  },
+  "PRIMARY MUSCLE CONTRACTURES": {
+    "Arthrogryposis multiplex congenita": {
+      "freq": "rare"
+    }
+  },
+  "ACQUIRED": {
+    "Dupuytren’s contracture": {
+      "freq": "common"
+    },
+    "Rheumatoid arthritis (Fig. 32)": {
+      "freq": "common"
+    },
+    "Osteoarthritis": {
+      "freq": "common"
+    },
+    "Trauma": {
+      "freq": "uncommon"
+    },
+    "Burns": {
+      "freq": "uncommon"
+    },
+    "Volkmann’s ischemic contracture": {
+      "freq": "uncommon"
+    },
+    "Brachial plexus lesions": {
+      "freq": "uncommon"
+    },
+    "Peripheral nerve lesions": {
+      "freq": "uncommon"
+    },
+    "Spinal cord lesions": {
+      "freq": "rare"
+    },
+    "Poliomyelitis": {
+      "freq": "rare"
+    },
+    "Syringomyelia": {
+      "freq": "rare"
+    },
+    "Multiple chondromas (Ollier’s disease)": {
+      "freq": "rare"
+    }
+  }
+},
+"Headache": {
+  "ACUTE HEADACHE": {
+    "Trauma": {
+      "freq": "common"
+    },
+    "Cerebrovascular": {
+      "freq": "common"
+    },
+    "Subarachnoid hemorrhage (Fig. 33)": {
+      "freq": "common"
+    },
+    "Intracranial hemorrhage/infarction": {
+      "freq": "common"
+    },
+    "Systemic infection": {
+      "freq": "common"
+    },
+    "Meningitis": {
+      "freq": "uncommon"
+    },
+    "Acute angle-closure glaucoma": {
+      "freq": "uncommon"
+    }
+  },
+  "CHRONIC OR RECURRENT HEADACHE": {
+    "Tension headache": {
+      "freq": "common"
+    },
+    "Medication overuse headache": {
+      "freq": "common"
+    },
+    "Cluster headaches": {
+      "freq": "common"
+    },
+    "Drugs, e.g. glyceryl trinitrate, nifedipine, substance withdrawal": {
+      "freq": "common"
+    },
+    "Cervical spondylosis": {
+      "freq": "common"
+    },
+    "Psychological (including anxiety and depression)": {
+      "freq": "common"
+    },
+    "Raised intracranial pressure (other than IIH)": {
+      "freq": "uncommon"
+    },
+    "Tumour": {
+      "freq": "uncommon"
+    },
+    "Hydrocephalus": {
+      "freq": "uncommon"
+    },
+    "Cerebral abscess": {
+      "freq": "rare"
+    },
+    "Idiopathic intracranial hypertension": {
+      "freq": "uncommon"
+    },
+    "Temporal arteritis": {
+      "freq": "uncommon"
+    },
+    "Pre-eclampsia": {
+      "freq": "uncommon"
+    },
+    "Paget’s disease of bone": {
+      "freq": "uncommon"
+    },
+    "Severe hypertension": {
+      "freq": "uncommon"
+    },
+    "Carbon monoxide poisoning": {
+      "freq": "rare"
+    }
+  }
+},
+"Hepatomegaly": {
+  "HEPATITIS/INFECTION": {
+    "Alcohol": {
+      "freq": "common"
+    },
+    "Viruses (Hep A/B/C, EBV)": {
+      "freq": "common"
+    },
+    "Bacteria (Leptospirosis, actinomycosis, pyogenic abscess)": {
+      "freq": "rare"
+    },
+    "Protozoans (malaria, amoeba)": {
+      "freq": "rare"
+    },
+    "Parasites (hydatid cyst, liver ﬂuke)": {
+      "freq": "rare"
+    }
+  },
+  "CONGESTION": {
+    "Congestive cardiac failure": {
+      "freq": "uncommon"
+    },
+    "Constrictive pericarditis": {
+      "freq": "rare"
+    },
+    "Budd–Chiari syndrome": {
+      "freq": "rare"
+    }
+  },
+  "INFILTRATION": {
+    "Fatty liver": {
+      "freq": "common"
+    },
+    "Amyloid": {
+      "freq": "rare"
+    }
+  },
+  "BILIARY TRACT DISEASE": {
+    "Extrahepatic obstruction, e.g. carcinoma of the pancreas, bile": {
+      "freq": "common"
+    },
+    "Sclerosing cholangitis": {
+      "freq": "rare"
+    },
+    "Primary biliary cirrhosis": {
+      "freq": "rare"
+    }
+  },
+  "MALIGNANCY": {
+    "Metastases (Fig. 34)": {
+      "freq": "common"
+    },
+    "Hepatoma": {
+      "freq": "uncommon"
+    },
+    "Myeloproliferative disorders": {
+      "freq": "uncommon"
+    },
+    "Myeloﬁbrosis": {
+      "freq": "uncommon"
+    },
+    "Leukemia": {
+      "freq": "uncommon"
+    }
+  },
+  "METABOLIC": {
+    "Glycogen storage diseases": {
+      "freq": "rare"
+    },
+    "Hemochromatosis": {
+      "freq": "rare"
+    },
+    "Wilson’s disease (hepatolenticular degeneration)": {
+      "freq": "rare"
+    }
+  },
+  "OTHERS": {
+    "Cryptogenic cirrhosis": {
+      "freq": "uncommon"
+    },
+    "Riedel’s lobe": {
+      "freq": "rare"
+    }
+  }
+},
+"Hiccups": {
+  "PHRENIC NERVE IRRITATION": {
+    "Pharyngitis/laryngitis": {
+      "freq": "common"
+    },
+    "Foreign body": {
+      "freq": "uncommon"
+    },
+    "Goitre": {
+      "freq": "uncommon"
+    },
+    "Oesophageal carcinoma": {
+      "freq": "uncommon"
+    },
+    "Lung tumour": {
+      "freq": "uncommon"
+    },
+    "Thoracic surgery": {
+      "freq": "rare"
+    }
+  },
+  "DIAPHRAGMATIC IRRITATION": {
+    "Asthma": {
+      "freq": "common"
+    },
+    "Bronchitis": {
+      "freq": "common"
+    },
+    "Lower lobe pneumonia": {
+      "freq": "common"
+    },
+    "Empyema": {
+      "freq": "common"
+    },
+    "Subphrenic abscess": {
+      "freq": "common"
+    },
+    "Diaphragmatic hernia": {
+      "freq": "uncommon"
+    },
+    "Gastric distension": {
+      "freq": "uncommon"
+    }
+  },
+  "GI CONDITIONS": {
+    "Gastritis": {
+      "freq": "common"
+    },
+    "Irritable bowel disease": {
+      "freq": "uncommon"
+    },
+    "Pancreatitis": {
+      "freq": "rare"
+    }
+  },
+  "CNS CONDITIONS": {
+    "Meningitis": {
+      "freq": "common"
+    },
+    "Tumours": {
+      "freq": "common"
+    },
+    "Intracranial hemorrhage": {
+      "freq": "common"
+    },
+    "Brainstem stroke": {
+      "freq": "common"
+    },
+    "Encephalitis": {
+      "freq": "uncommon"
+    }
+  },
+  "OTHERS": {
+    "Electrolyte disturbance (hypocalcemia, hyponatremia)": {
+      "freq": "uncommon"
+    },
+    "Hysterical": {
+      "freq": "uncommon"
+    },
+    "Toxic": {
+      "freq": "rare"
+    },
+    "General anesthesia": {
+      "freq": "rare"
+    }
+  }
+},
+"Hirsutism": {
+  "PHYSIOLOGICAL": {
+    "Senility": {
+      "freq": "common"
+    },
+    "Familial (varies with ethnicity)": {
+      "freq": "uncommon"
+    }
+  },
+  "PATHOLOGICAL": {
+    "Ciclosporin": {
+      "freq": "common"
+    },
+    "Antiepileptic drugs, e.g. phenytoin": {
+      "freq": "common"
+    },
+    "Corticosteroids": {
+      "freq": "uncommon"
+    },
+    "Progestogens": {
+      "freq": "uncommon"
+    },
+    "Testosterone (including anabolic steroids)": {
+      "freq": "uncommon"
+    },
+    "Minoxidil": {
+      "freq": "uncommon"
+    }
+  },
+  "PITUITARY": {
+    "Prolactinoma": {
+      "freq": "uncommon"
+    },
+    "Cushing’s disease": {
+      "freq": "rare"
+    },
+    "Acromegaly": {
+      "freq": "rare"
+    }
+  },
+  "OVARIAN": {
+    "Polycystic ovarian syndrome": {
+      "freq": "common"
+    },
+    "Menopause": {
+      "freq": "uncommon"
+    },
+    "IN hyperthecosis": {
+      "freq": "uncommon"
+    },
+    "Androgen-producing ovarian tumour": {
+      "freq": "rare"
+    }
+  },
+  "ADRENAL": {
+    "Congenital adrenal hyperplasia": {
+      "freq": "rare"
+    },
+    "Cushing’s syndrome": {
+      "freq": "rare"
+    },
+    "Androgen-producing adrenal tumours": {
+      "freq": "rare"
+    },
+    "Anorexia nervosa": {
+      "freq": "common"
+    }
+  }
+},
+"Hypertension": {
+  "General": {
+    "Renal parenchymal diseases, e.g. glomerulonephritis": {
+      "freq": "common"
+    },
+    "Diabetic nephropathy": {
+      "freq": "common"
+    },
+    "Renal artery stenosis (Fig. 34)": {
+      "freq": "uncommon"
+    },
+    "Chronic pyelonephritis": {
+      "freq": "uncommon"
+    },
+    "Polycystic kidney disease": {
+      "freq": "uncommon"
+    }
+  },
+  "ENDOCRINE": {
+    "Adrenal": {
+      "freq": "uncommon"
+    },
+    "Cushing’s syndrome": {
+      "freq": "uncommon"
+    },
+    "Primary hyperaldosteronism (Conn’s Syndrome)": {
+      "freq": "rare"
+    },
+    "Pheochromocytoma": {
+      "freq": "rare"
+    },
+    "Acromegaly": {
+      "freq": "rare"
+    },
+    "Oestrogen-containing oral contraceptives": {
+      "freq": "common"
+    },
+    "Corticosteroids": {
+      "freq": "common"
+    },
+    "SNRIs – venlafaxine, sibutramine": {
+      "freq": "common"
+    },
+    "Non steroidal anti-inﬂammatories – Ibuprofen, diclofenac,": {
+      "freq": "common"
+    },
+    "Sympathomimetics – amphetamines, ephedrine": {
+      "freq": "uncommon"
+    }
+  },
+  "CARDIOVASCULAR": {
+    "Coarctation of the aorta": {
+      "freq": "rare"
+    },
+    "Pregnancy (pre-eclampsia and eclampsia)": {
+      "freq": "uncommon"
+    }
+  }
+},
+"Intestinal obstruction": {
+  "IN THE LUMEN": {
+    "Gallstone ileus": {
+      "freq": "rare"
+    },
+    "Food bolus (after pylorus-destroying or bypass surgery)": {
+      "freq": "rare"
+    },
+    "Feces": {
+      "freq": "common"
+    }
+  },
+  "IN THE WALL": {
+    "Crohn’s disease": {
+      "freq": "uncommon"
+    },
+    "Atresia": {
+      "freq": "rare"
+    },
+    "TB • (common in areas of the world where TB is endemic)": {
+      "Tumour, e.g. lymphoma, carcinoma": {
+        "freq": "rare"
+      }
+    },
+    "Carcinoma": {
+      "freq": "common"
+    },
+    "Diverticular disease": {
+      "freq": "uncommon"
+    },
+    "Hirschsprung’s disease": {
+      "freq": "rare"
+    }
+  },
+  "OUTSIDE THE WALL": {
+    "Hernia": {
+      "freq": "uncommon"
+    },
+    "Volvulus": {
+      "freq": "uncommon"
+    },
+    "Intussusception": {
+      "freq": "uncommon"
+    },
+    "Adhesions": {
+      "freq": "uncommon"
+    },
+    "Peritonitis": {
+      "freq": "common"
+    },
+    "Postoperative": {
+      "freq": "common"
+    },
+    "Hypokalemia": {
+      "freq": "uncommon"
+    },
+    "Spinal and pelvic fractures": {
+      "freq": "rare"
+    },
+    "Drugs, e.g. ganglion blockers, anticholinergics": {
+      "freq": "rare"
+    },
+    "Immobilisation": {
+      "freq": "rare"
+    }
+  }
+},
+"Jaundice": {
+  "CONGENITAL DEFECTS": {
+    "Gilbert’s disease": {
+      "freq": "uncommon"
+    },
+    "Crigler–Najjar syndrome": {
+      "freq": "rare"
+    }
+  },
+  "HAEMOLYSIS": {
+    "Hereditary spherocytosis": {
+      "freq": "uncommon"
+    },
+    "Sickle cell disease": {
+      "freq": "uncommon"
+    },
+    "Malaria • (common where malaria is endemic)": {
+      "Incompatible blood transfusion": {
+        "freq": "rare"
+      },
+      "Autoimmune": {
+        "freq": "rare"
+      },
+      "Hemolytic disease of the newborn": {
+        "freq": "rare"
+      },
+      "Absorbing large hematoma": {
+        "freq": "rare"
+      },
+      "Hypersplenism": {
+        "freq": "rare"
+      }
+    }
+  },
+  "ACUTE HEPATOCELLULAR DISEASE": {
+    "Viral hepatitis": {
+      "freq": "common"
+    },
+    "Hepatitis A, B, C": {
+      "freq": "common"
+    },
+    "EBV": {
+      "freq": "uncommon"
+    },
+    "CMV": {
+      "freq": "rare"
+    },
+    "Drugs, e.g. paracetamol, halothane": {
+      "freq": "uncommon"
+    },
+    "Other infections": {
+      "freq": "rare"
+    },
+    "Leptospirosis": {
+      "freq": "rare"
+    },
+    "Toxins, e.g. carbon tetrachloride": {
+      "freq": "rare"
+    },
+    "Autoimmune": {
+      "freq": "rare"
+    }
+  },
+  "CHRONIC HEPATOCELLULAR DISEASE": {
+    "Chronic viral hepatitis": {
+      "freq": "uncommon"
+    },
+    "Chronic autoimmune hepatitis": {
+      "freq": "uncommon"
+    },
+    "End-stage liver disease": {
+      "freq": "uncommon"
+    },
+    "Alcohol": {
+      "freq": "uncommon"
+    },
+    "Non-alcoholic steatohepatitis related cirrhosis": {
+      "freq": "uncommon"
+    },
+    "Hemochromatosis": {
+      "freq": "rare"
+    },
+    "Wilson’s disease": {
+      "freq": "rare"
+    }
+  },
+  "INTRAHEPATIC": {
+    "Drugs, e.g. chlorpromazine": {
+      "freq": "uncommon"
+    },
+    "Parenteral nutrition": {
+      "freq": "uncommon"
+    },
+    "Viral hepatitis": {
+      "freq": "uncommon"
+    },
+    "Primary biliary cirrhosis": {
+      "freq": "rare"
+    },
+    "Pregnancy": {
+      "freq": "rare"
+    }
+  },
+  "EXTRAHEPATIC (OBSTRUCTIVE)": {
+    "Gallstones": {
+      "freq": "common"
+    },
+    "Infestation": {
+      "freq": "rare"
+    },
+    "Stricture, e.g. inﬂammatory, postoperative": {
+      "freq": "uncommon"
+    },
+    "Cholangitis": {
+      "freq": "uncommon"
+    },
+    "Congenital biliary atresia": {
+      "freq": "rare"
+    },
+    "Cholangiocarcinoma": {
+      "freq": "rare"
+    },
+    "Sclerosing cholangitis": {
+      "freq": "rare"
+    },
+    "Choledochal cyst": {
+      "freq": "rare"
+    },
+    "Carcinoma of the head of the pancreas": {
+      "freq": "uncommon"
+    },
+    "Carcinoma of the ampulla of Vater": {
+      "freq": "uncommon"
+    },
+    "Malignant nodes in the porta hepatis": {
+      "freq": "uncommon"
+    },
+    "Chronic pancreatitis": {
+      "freq": "rare"
+    },
+    "Mirizzi syndrome": {
+      "freq": "rare"
+    }
+  }
+},
+"Jaw pain and swellings": {
+  "INFECTIVE": {
+    "Dental abscess": {
+      "freq": "common"
+    },
+    "Tonsilitis": {
+      "freq": "common"
+    },
+    "Mumps (increasing incidence in UK)": {
+      "freq": "uncommon"
+    },
+    "Pericoronitis": {
+      "freq": "uncommon"
+    },
+    "Acute osteomyelitis": {
+      "freq": "rare"
+    },
+    "Actinomycosis": {
+      "freq": "rare"
+    }
+  },
+  "TEMPOROMANDIBULAR JOINT": {
+    "Osteoarthritis": {
+      "freq": "rare"
+    },
+    "Dislocation": {
+      "freq": "rare"
+    }
+  },
+  "CYSTIC": {
+    "Dental cysts (Fig. 37)": {
+      "freq": "rare"
+    },
+    "Dentigerous cysts": {
+      "freq": "rare"
+    }
+  },
+  "BENIGN": {
+    "Giant cell granuloma": {
+      "freq": "rare"
+    }
+  },
+  "LOCALLY INVASIVE": {
+    "Ameloblastoma": {
+      "freq": "rare"
+    },
+    "Odontogenic tumours": {
+      "freq": "uncommon"
+    }
+  },
+  "MALIGNANT": {
+    "Osteogenic sarcoma": {
+      "freq": "rare"
+    },
+    "Burkitt’s lymphoma • (endemic in equatorial Africa)": {
+      "Secondary deposits": {
+        "freq": "rare"
+      },
+      "Paget’s disease": {
+        "freq": "rare"
+      },
+      "Referred pain (e.g. myocardial ischemia)": {
+        "freq": "common"
+      },
+      "Giant cell (temporal) arteritis": {
+        "freq": "uncommon"
+      },
+      "Post-herpetic neuralgia": {
+        "freq": "uncommon"
+      },
+      "Osteonecrosis of the mandible (steroid therapy,": {
+        "freq": "uncommon"
+      },
+      "Systemic conditions (RA, lupus, syphilis)": {
+        "freq": "uncommon"
+      }
+    }
+  }
+},
+"Joint disorders": {
+  "CONGENITAL": {
+    "Achondroplasia (dwarﬁsm)": {
+      "freq": "rare"
+    },
+    "Ehlers–Danlos syndrome": {
+      "freq": "rare"
+    },
+    "Klippel–Feil syndrome": {
+      "freq": "rare"
+    },
+    "Developmental dysplasia of the hip": {
+      "freq": "uncommon"
+    }
+  },
+  "INFECTIVE": {
+    "Septic arthritis": {
+      "freq": "rare"
+    },
+    "Viral": {
+      "freq": "common"
+    },
+    "TB • (very common in the developing world and on the": {
+      "increase in developed countries)": {
+        "freq": "uncommon"
+      }
+    },
+    "Rheumatic fever • (very common in developing countries)": {
+      "Endocarditis": {
+        "freq": "rare"
+      },
+      "Brucellosis": {
+        "freq": "rare"
+      }
+    },
+    "Typhoid • (very common in developing countries)": {},
+    "TB arthritis": {
+      "freq": "rare"
+    },
+    "Acute septic arthritis": {
+      "freq": "uncommon"
+    },
+    "TB • (common in developing countries)": {},
+    "TB": {
+      "freq": "rare"
+    }
+  },
+  "INFLAMMATORY": {
+    "Rheumatoid arthritis": {
+      "freq": "common"
+    },
+    "Polymyalgia rheumatica": {
+      "freq": "common"
+    },
+    "Psoriatic arthritis": {
+      "freq": "uncommon"
+    },
+    "Henoch–Schönlein disease": {
+      "freq": "uncommon"
+    },
+    "Reactive arthritis (Reiter’s disease)": {
+      "freq": "uncommon"
+    },
+    "Ankylosing spondylitis": {
+      "freq": "uncommon"
+    },
+    "Connective tissue disease": {
+      "freq": "uncommon"
+    },
+    "Crystal disease (gout, pseudogout)": {
+      "freq": "uncommon"
+    },
+    "Ganglion": {
+      "freq": "common"
+    },
+    "Tenosynovitis": {
+      "freq": "common"
+    },
+    "de Quervain’s": {
+      "freq": "common"
+    },
+    "Extensor tenosynovitis": {
+      "freq": "common"
+    },
+    "Carpal tunnel syndrome": {
+      "freq": "common"
+    },
+    "Avascular necrosis of the lunate (Kienböck’s disease)": {
+      "freq": "uncommon"
+    },
+    "Reactive/Reiter’s syndrome": {
+      "freq": "uncommon"
+    }
+  },
+  "DEGENERATIVE": {
+    "Osteoarthritis (Fig. 38)": {
+      "freq": "common"
+    },
+    "Supraspinatus tendinosis": {
+      "freq": "common"
+    },
+    "Impingement syndromes": {
+      "freq": "common"
+    },
+    "Rotator cuff tears": {
+      "freq": "common"
+    },
+    "Frozen shoulder (adhesive capsulitis)": {
+      "freq": "common"
+    },
+    "Osteoarthritis": {
+      "freq": "uncommon"
+    },
+    "Acromioclavicular": {
+      "freq": "common"
+    },
+    "Glenohumeral": {
+      "freq": "uncommon"
+    },
+    "Osteochondritis dissecans": {
+      "freq": "rare"
+    },
+    "Primary": {
+      "freq": "common"
+    },
+    "Secondary": {
+      "freq": "common"
+    },
+    "Avascular necrosis": {
+      "freq": "uncommon"
+    }
+  },
+  "ENTEROPATHIC": {
+    "Acute gastrointestinal infections (e.g. hepatitis B/C)": {
+      "freq": "uncommon"
+    },
+    "Inﬂammatory bowel disease": {
+      "freq": "uncommon"
+    }
+  },
+  "ENDOCRINE": {
+    "Acromegaly": {
+      "freq": "rare"
+    }
+  },
+  "METABOLIC": {
+    "Gout": {
+      "freq": "common"
+    },
+    "Pseudogout": {
+      "freq": "common"
+    },
+    "Hemochromatosis": {
+      "freq": "rare"
+    }
+  },
+  "NEUROPATHIC": {
+    "Charcot’s joints": {
+      "freq": "uncommon"
+    },
+    "Charcot’s joint": {
+      "freq": "uncommon"
+    }
+  },
+  "HAEMATOLOGICAL": {
+    "Hemophilia": {
+      "freq": "uncommon"
+    },
+    "Leukemia": {
+      "freq": "uncommon"
+    },
+    "Sickle cell disease": {
+      "freq": "uncommon"
+    }
+  },
+  "NEOPLASTIC": {
+    "Hypertrophic pulmonary osteoarthropathy": {
+      "freq": "uncommon"
+    },
+    "Avascular necrosis of bone": {
+      "freq": "uncommon"
+    },
+    "Sarcoidosis": {
+      "freq": "uncommon"
+    },
+    "Behçet’s disease • (more common in certain Mediterranean": {
+      "countries)": {
+        "freq": "rare"
+      }
+    },
+    "Metastases in the upper end of the humerus/ribs/neck": {
+      "freq": "uncommon"
+    },
+    "Metastases": {
+      "freq": "common"
+    },
+    "Leukemia (in childhood)": {
+      "freq": "uncommon"
+    },
+    "Transient synovitis": {
+      "freq": "uncommon"
+    },
+    "Perthes’ disease (childhood)": {
+      "freq": "uncommon"
+    },
+    "Slipped upper femoral epiphysis (childhood)": {
+      "freq": "uncommon"
+    },
+    "Osteogenic sarcoma": {
+      "freq": "rare"
+    },
+    "Bursitis": {
+      "freq": "common"
+    },
+    "Pre-patellar bursitis (housemaid’s knee)": {
+      "freq": "common"
+    },
+    "Baker’s cyst": {
+      "freq": "common"
+    },
+    "Disorders of alignment": {
+      "freq": "common"
+    },
+    "Genu varum (bow legs)": {
+      "freq": "common"
+    },
+    "Genu valgum (knock knee)": {
+      "freq": "common"
+    },
+    "Patellofemoral instability": {
+      "freq": "common"
+    },
+    "Referred pain from the hip/back": {
+      "freq": "common"
+    },
+    "Osteochondritis dissecans": {
+      "freq": "uncommon"
+    },
+    "Osgood–Schlatter’s disease (osteochondritis of the tibial": {
+      "freq": "uncommon"
+    },
+    "Chondromalacia patellae": {
+      "freq": "uncommon"
+    }
+  },
+  "TRAUMATIC": {
+    "Fracture of the clavicle": {
+      "freq": "common"
+    },
+    "Fracture of the scapula": {
+      "freq": "rare"
+    },
+    "Supracondylar fracture of the humerus": {
+      "freq": "common"
+    },
+    "Dislocation of the elbow": {
+      "freq": "uncommon"
+    },
+    "Pulled elbow": {
+      "freq": "rare"
+    },
+    "Fracture of the radial head": {
+      "freq": "rare"
+    },
+    "Fractured olecranon": {
+      "freq": "rare"
+    },
+    "Fractured epicondyle/condyle": {
+      "freq": "rare"
+    },
+    "Myositis ossiﬁcans": {
+      "freq": "rare"
+    },
+    "Distal radial fracture, e.g. Colles’, Smith’s": {
+      "freq": "common"
+    },
+    "Scaphoid fracture": {
+      "freq": "common"
+    },
+    "Dislocations": {
+      "freq": "rare"
+    },
+    "Carpal dislocations": {
+      "freq": "rare"
+    },
+    "Fractured neck of femur": {
+      "freq": "common"
+    },
+    "Fracture of the pubic ramus": {
+      "freq": "common"
+    },
+    "Dislocation of the hip": {
+      "freq": "rare"
+    },
+    "Acetabular fracture": {
+      "freq": "rare"
+    },
+    "Patellar fractures": {
+      "freq": "uncommon"
+    },
+    "Supracondylar fractures of the femur": {
+      "freq": "uncommon"
+    },
+    "Tibial fractures": {
+      "freq": "rare"
+    },
+    "Sprains (lateral ligaments)": {
+      "freq": "common"
+    },
+    "Fractures around the ankle": {
+      "freq": "common"
+    },
+    "Rupture of the Achilles tendon": {
+      "freq": "uncommon"
+    }
+  },
+  "REFERRED PAIN": {
+    "Cervical spondylosis": {
+      "freq": "common"
+    },
+    "Diaphragmatic irritation": {
+      "freq": "uncommon"
+    },
+    "Pancoast’s tumour": {
+      "freq": "uncommon"
+    }
+  },
+  "NEUROLOGICAL": {
+    "Winged scapula": {
+      "freq": "rare"
+    },
+    "Nerve entrapment, e.g. ulnar, posterior interosseous and median": {
+      "freq": "uncommon"
+    },
+    "Olecranon bursitis": {
+      "freq": "common"
+    },
+    "Tennis elbow": {
+      "freq": "common"
+    },
+    "Golfer’s elbow": {
+      "freq": "common"
+    },
+    "Cubitus varus/valgus": {
+      "freq": "rare"
+    }
+  },
+  "LIGAMENTS": {
+    "Medial and lateral collateral ligament damage": {
+      "freq": "common"
+    },
+    "Cruciate ligament damage": {
+      "freq": "common"
+    },
+    "Rupture of quadriceps tendon": {
+      "freq": "uncommon"
+    },
+    "Rupture of the patellar tendon": {
+      "freq": "rare"
+    }
+  },
+  "MENISCI": {
+    "Meniscal tears": {
+      "freq": "common"
+    }
+  },
+  "OTHERS": {
+    "Tenosynovitis": {
+      "freq": "common"
+    },
+    "Footballer’s ankle": {
+      "freq": "uncommon"
+    },
+    "Tarsal tunnel syndrome": {
+      "freq": "uncommon"
+    },
+    "Osteochondritis of the talus": {
+      "freq": "rare"
+    }
+  }
+},
+"Kidney swellings": {
+  "CONGENITAL": {
+    "Polycystic kidney": {
+      "freq": "common"
+    }
+  },
+  "INFECTIVE": {
+    "Perinephric abscess": {
+      "freq": "rare"
+    },
+    "TB • (common where TB is endemic)": {}
+  },
+  "OBSTRUCTIVE": {
+    "Hydronephrosis": {
+      "freq": "common"
+    },
+    "Pyonephrosis": {
+      "freq": "uncommon"
+    }
+  },
+  "DEGENERATIVE": {
+    "Solitary cyst": {
+      "freq": "common"
+    }
+  },
+  "NEOPLASTIC": {
+    "Hypernephroma (Fig. 39)": {
+      "freq": "uncommon"
+    }
+  }
+},
+"Leg pain": {
+  "TRAUMATIC": {
+    "Fractures": {
+      "freq": "common"
+    },
+    "Dislocations": {
+      "freq": "uncommon"
+    },
+    "Crush injuries": {
+      "freq": "uncommon"
+    }
+  },
+  "INFLAMMATORY": {
+    "Rheumatoid arthritis": {
+      "freq": "common"
+    },
+    "Reiter’s disease": {
+      "freq": "rare"
+    },
+    "Ankylosing spondylitis": {
+      "freq": "rare"
+    }
+  },
+  "INFECTIVE": {
+    "Osteomyelitis": {
+      "freq": "uncommon"
+    },
+    "Myositis": {
+      "freq": "rare"
+    }
+  },
+  "DEGENERATIVE": {
+    "Osteoarthritis": {
+      "freq": "common"
+    },
+    "Meniscal lesions": {
+      "freq": "common"
+    },
+    "Baker’s cyst": {
+      "freq": "uncommon"
+    }
+  },
+  "VASCULAR": {
+    "Intermittent claudication": {
+      "freq": "common"
+    },
+    "Varicose vein": {
+      "freq": "common"
+    },
+    "Deep vein thrombosis": {
+      "freq": "common"
+    },
+    "Acute arterial occlusion": {
+      "freq": "uncommon"
+    }
+  },
+  "NEUROLOGICAL": {
+    "Sciatica": {
+      "freq": "common"
+    },
+    "Peripheral neuropathy": {
+      "freq": "uncommon"
+    },
+    "Neurogenic claudication": {
+      "freq": "rare"
+    }
+  },
+  "METABOLIC": {
+    "Gout/pseudogout": {
+      "freq": "common"
+    }
+  },
+  "NEOPLASTIC": {
+    "Secondary deposits": {
+      "freq": "uncommon"
+    },
+    "Osteogenic sarcoma": {
+      "freq": "rare"
+    },
+    "Cramp": {
+      "freq": "common"
+    },
+    "Strenuous exercise": {
+      "freq": "common"
+    },
+    "Polymyalgia rheumatica": {
+      "freq": "uncommon"
+    }
+  }
+},
+"Leg swellings": {
+  "ACUTE SWELLING": {
+    "Cellulitis": {
+      "freq": "uncommon"
+    },
+    "Rheumatoid arthritis": {
+      "freq": "uncommon"
+    },
+    "Allergy": {
+      "freq": "rare"
+    }
+  },
+  "CHRONIC SWELLING": {
+    "Venous": {
+      "freq": "common"
+    },
+    "Varicose veins": {
+      "freq": "common"
+    },
+    "Obstruction to venous return, e.g. pregnancy, pelvic tumours,": {
+      "freq": "uncommon"
+    },
+    "Lymphoedema": {
+      "freq": "rare"
+    },
+    "Congenital malformations, e.g. arteriovenous ﬁstula": {
+      "freq": "rare"
+    },
+    "Paralysis (failure of muscle pump)": {
+      "freq": "rare"
+    }
+  },
+  "GENERAL": {
+    "Congestive cardiac failure": {
+      "freq": "common"
+    },
+    "Hypoproteinemia, e.g. liver failure, nephrotic syndrome,": {
+      "freq": "uncommon"
+    },
+    "Renal failure": {
+      "freq": "uncommon"
+    },
+    "Fluid overload": {
+      "freq": "uncommon"
+    },
+    "Myxoedema": {
+      "freq": "rare"
+    }
+  }
+},
+"Leg ulcers": {
+  "INFECTIVE": {
+    "Syphilis": {
+      "freq": "rare"
+    },
+    "TB • (common where TB is endemic)": {}
+  },
+  "NEOPLASTIC": {
+    "Squamous cell carcinoma": {
+      "freq": "uncommon"
+    },
+    "Malignant melanoma": {
+      "freq": "uncommon"
+    },
+    "Basal cell carcinoma": {
+      "freq": "rare"
+    }
+  },
+  "VASCULAR": {
+    "Venous ulcers (Fig. 42)": {
+      "freq": "common"
+    }
+  },
+  "NEUROPATHIC": {
+    "Diabetes": {
+      "freq": "common"
+    },
+    "Leprosy": {
+      "freq": "rare"
+    },
+    "Tabes dorsalis (syphilis)": {
+      "freq": "rare"
+    }
+  },
+  "AUTOIMMUNE/VASCULITIC": {
+    "Rheumatoid arthritis": {
+      "freq": "rare"
+    },
+    "SLE": {
+      "freq": "rare"
+    }
+  },
+  "HAEMATOLOGICAL": {
+    "Sickle cell anemia": {
+      "freq": "rare"
+    },
+    "Polycythemia rubra vera": {
+      "freq": "rare"
+    },
+    "Thrombotic thrombocytopenic purpura": {
+      "freq": "rare"
+    },
+    "Dermatitis artefacta (self-inﬂicted)": {
+      "freq": "uncommon"
+    },
+    "Pyoderma gangrenosum": {
+      "freq": "rare"
+    }
+  }
+},
+"Lip lesions": {
+  "CONGENITAL": {
+    "Cleft lip": {
+      "freq": "rare"
+    }
+  },
+  "FLAT LESIONS": {
+    "Junctional nevus": {
+      "freq": "uncommon"
+    },
+    "Telangiectasia (hereditary hemorrhagic telangiectasia)": {
+      "freq": "rare"
+    },
+    "Peutz–Jeghers syndrome": {
+      "freq": "rare"
+    }
+  },
+  "RAISED LESIONS": {
+    "Mucous retention cysts": {
+      "freq": "uncommon"
+    },
+    "Warts": {
+      "freq": "uncommon"
+    },
+    "Pyogenic granuloma": {
+      "freq": "uncommon"
+    },
+    "Squamous cell carcinoma (Fig. 43)": {
+      "freq": "uncommon"
+    },
+    "Malignant melanoma": {
+      "freq": "uncommon"
+    },
+    "Syphilitic chancre": {
+      "freq": "rare"
+    },
+    "Vascular malformations": {
+      "freq": "rare"
+    }
+  },
+  "EROSIONS": {
+    "Herpes simplex (Type 1 or Type 2)": {
+      "freq": "common"
+    },
+    "Impetigo": {
+      "freq": "rare"
+    },
+    "Pemphigus": {
+      "freq": "rare"
+    }
+  },
+  "SWELLING": {
+    "Trauma, e.g. burns, bites, assault": {
+      "freq": "common"
+    },
+    "Angioedema": {
+      "freq": "rare"
+    },
+    "Drug reactions": {
+      "freq": "rare"
+    },
+    "Crohn’s disease": {
+      "freq": "rare"
+    }
+  },
+  "CHEILITIS": {
+    "Infection (e.g. candidiasis)": {
+      "freq": "common"
+    },
+    "Contact dermatitis (e.g. lipstick, pen-sucking)": {
+      "freq": "uncommon"
+    },
+    "Lip biting (especially in children)": {
+      "freq": "uncommon"
+    }
+  }
+},
+"Lymphadenopathy": {
+  "PRIMARY INFECTION": {
+    "Infectious mononucleosis": {
+      "freq": "common"
+    },
+    "HIV": {
+      "freq": "rare"
+    },
+    "CMV": {
+      "freq": "rare"
+    },
+    "Rubella": {
+      "freq": "rare"
+    },
+    "Measles": {
+      "freq": "rare"
+    }
+  },
+  "BACTERIAL": {
+    "TB • (common in parts of the world where TB is endemic)": {
+      "Syphilis": {
+        "freq": "rare"
+      },
+      "Brucellosis": {
+        "freq": "rare"
+      },
+      "Cat scratch disease": {
+        "freq": "rare"
+      },
+      "Septicemia": {
+        "freq": "rare"
+      }
+    }
+  },
+  "PROTOZOAL": {
+    "Toxoplasmosis": {
+      "freq": "rare"
+    }
+  },
+  "PARASITIC": {
+    "Filariasis • (common in tropical regions of Asia, Africa)": {}
+  },
+  "SECONDARY INFECTION": {
+    "E.g. tonsillitis with cervical lymphadenitis, abscess with regional": {
+      "freq": "common"
+    }
+  },
+  "PRIMARY MALIGNANCY": {
+    "Acute lymphoblastic leukemia": {
+      "freq": "uncommon"
+    },
+    "Chronic lymphatic leukemia": {
+      "freq": "uncommon"
+    },
+    "Hodgkin’s disease": {
+      "freq": "uncommon"
+    },
+    "Non-Hodgkin’s lymphoma": {
+      "freq": "uncommon"
+    }
+  },
+  "SECONDARY MALIGNANCY": {
+    "Metastases from local malignancy": {
+      "freq": "common"
+    },
+    "Metastases from distant malignancy": {
+      "freq": "common"
+    }
+  },
+  "OTHERS": {
+    "Sarcoidosis": {
+      "freq": "rare"
+    },
+    "SLE": {
+      "freq": "rare"
+    },
+    "Rheumatoid arthritis": {
+      "freq": "rare"
+    }
+  }
+},
+"Melena": {
+  "SWALLOWED BLOOD": {
+    "Epistaxis": {
+      "freq": "uncommon"
+    },
+    "Hemoptysis": {
+      "freq": "rare"
+    }
+  },
+  "OESOPHAGUS": {
+    "Oesophageal varices": {
+      "freq": "rare"
+    },
+    "Oesophageal carcinoma": {
+      "freq": "uncommon"
+    }
+  },
+  "STOMACH": {
+    "Peptic ulceration": {
+      "freq": "common"
+    },
+    "Acute gastric erosions": {
+      "freq": "common"
+    },
+    "Mallory–Weiss syndrome": {
+      "freq": "uncommon"
+    },
+    "Carcinoma": {
+      "freq": "uncommon"
+    },
+    "Leiomyoma (gastrointestinal stromal tumour – GIST)": {
+      "freq": "rare"
+    },
+    "Hereditary hemorrhagic telangiectasia": {
+      "freq": "rare"
+    }
+  },
+  "DUODENUM": {
+    "Peptic ulceration": {
+      "freq": "common"
+    },
+    "Duodenal diverticula": {
+      "freq": "uncommon"
+    },
+    "Aortoduodenal ﬁstula": {
+      "freq": "rare"
+    },
+    "Invasive pancreatic tumours": {
+      "freq": "rare"
+    },
+    "Hemobilia": {
+      "freq": "rare"
+    }
+  },
+  "SMALL INTESTINE": {
+    "Leiomyoma (gastrointestinal stromal tumour – GIST)": {
+      "freq": "rare"
+    },
+    "Meckel’s diverticulum": {
+      "freq": "rare"
+    }
+  },
+  "BLEEDING DISORDERS": {
+    "Liver disease-associated": {
+      "freq": "common"
+    },
+    "Thrombocytopenia": {
+      "freq": "uncommon"
+    },
+    "Anticoagulants": {
+      "freq": "common"
+    },
+    "Aspirin": {
+      "freq": "common"
+    },
+    "NSAIDs": {
+      "freq": "common"
+    },
+    "Steroids": {
+      "freq": "common"
+    }
+  },
+  "OTHERS": {
+    "Uremia": {
+      "freq": "common"
+    },
+    "Connective tissue disorders": {
+      "freq": "common"
+    }
+  },
+  "OTHER CAUSES OF DARK STOOLS": {
+    "Iron therapy": {
+      "freq": "common"
+    },
+    "Bismuth preparations": {
+      "freq": "uncommon"
+    },
+    "Liquorice": {
+      "freq": "uncommon"
+    },
+    "Charcoal biscuits": {
+      "freq": "uncommon"
+    }
+  }
+},
+"Mouth ulcers": {
+  "General": {
+    "Traumatic": {
+      "freq": "common"
+    },
+    "Aphthous (Fig. 44)": {
+      "freq": "common"
+    }
+  },
+  "INFLAMMATORY": {
+    "Inﬂammatory bowel disease": {
+      "freq": "uncommon"
+    }
+  },
+  "BACTERIAL": {
+    "Acute ulcerative gingivitis (Vincent’s angina)": {
+      "freq": "rare"
+    },
+    "Syphilis": {
+      "freq": "rare"
+    },
+    "TB": {
+      "freq": "rare"
+    },
+    "Herpes simplex": {
+      "freq": "common"
+    },
+    "Hand, foot and mouth": {
+      "freq": "common"
+    },
+    "HIV": {
+      "freq": "rare"
+    }
+  },
+  "FUNGAL": {
+    "Candidiasis": {
+      "freq": "uncommon"
+    }
+  },
+  "NEOPLASTIC": {
+    "Squamous cell carcinoma": {
+      "freq": "uncommon"
+    },
+    "Hematological disorders": {
+      "freq": "rare"
+    },
+    "Agranulocytosis": {
+      "freq": "rare"
+    }
+  },
+  "HAEMATOLOGICAL DISORDERS": {
+    "Anemia": {
+      "freq": "uncommon"
+    },
+    "Leukemia": {
+      "freq": "rare"
+    },
+    "Agranulocytosis": {
+      "freq": "rare"
+    }
+  },
+  "SKIN DISEASE-ASSOCIATED": {
+    "Lichen planus": {
+      "freq": "uncommon"
+    },
+    "Pemphigus": {
+      "freq": "rare"
+    },
+    "Pemphigoid": {
+      "freq": "rare"
+    },
+    "Erythema multiforme": {
+      "freq": "rare"
+    }
+  },
+  "CONNECTIVE TISSUE DISEASE": {
+    "Folate/B12 deﬁciency": {
+      "freq": "common"
+    },
+    "SLE": {
+      "freq": "rare"
+    },
+    "Drugs": {
+      "freq": "common"
+    },
+    "Radiotherapy": {
+      "freq": "uncommon"
+    },
+    "Behçet’s syndrome": {
+      "freq": "rare"
+    },
+    "Reiter’s disease": {
+      "freq": "rare"
+    }
+  }
+},
+"Muscle weakness and wasting": {
+  "LOCALISED": {
+    "Peripheral nerve lesions": {
+      "freq": "common"
+    },
+    "Peripheral nerve compression": {
+      "freq": "common"
+    },
+    "Motor neuropathy": {
+      "freq": "common"
+    },
+    "Peripheral nerve transection": {
+      "freq": "uncommon"
+    },
+    "Disuse atrophy": {
+      "freq": "common"
+    },
+    "Anterior horn cell lesions": {
+      "freq": "uncommon"
+    },
+    "Previous poliomyelitis • (common in developing": {
+      "freq": "uncommon"
+    }
+  },
+  "NUTRITIONAL DEFICIENCY": {
+    "Vitamin D deﬁciency": {
+      "freq": "uncommon"
+    }
+  },
+  "SYSTEMIC DISEASE": {
+    "Malignancy": {
+      "freq": "common"
+    },
+    "Cardiac and/or respiratory cachexia": {
+      "freq": "common"
+    },
+    "Thyrotoxicosis": {
+      "freq": "uncommon"
+    },
+    "Sarcoidosis": {
+      "freq": "uncommon"
+    },
+    "Guillain–Barré syndrome": {
+      "freq": "uncommon"
+    },
+    "Cushing’s disease": {
+      "freq": "rare"
+    },
+    "Addison’s disease": {
+      "freq": "rare"
+    }
+  },
+  "MUSCLE AND MOTOR END PLATE DISORDERS": {
+    "Myasthenia gravis": {
+      "freq": "uncommon"
+    },
+    "Muscular dystrophies": {
+      "freq": "uncommon"
+    },
+    "Motor neurone disease": {
+      "freq": "uncommon"
+    },
+    "Myotonic dystrophy": {
+      "freq": "rare"
+    },
+    "Polymyositis/dermatomyositis/inclusion body myositis": {
+      "freq": "rare"
+    }
+  },
+  "DRUGS AND TOXINS": {
+    "Alcohol": {
+      "freq": "common"
+    },
+    "Statins": {
+      "freq": "common"
+    },
+    "Steroids": {
+      "freq": "common"
+    },
+    "Ciclosporin": {
+      "freq": "uncommon"
+    }
+  }
+},
+"Nail abnormalities": {
+  "CONGENITAL": {
+    "Epidermolysis bullosa": {
+      "freq": "rare"
+    },
+    "Anonychia congenita": {
+      "freq": "rare"
+    }
+  },
+  "INFECTIONS": {
+    "Fungal infection (onychomycosis)": {
+      "freq": "common"
+    },
+    "Paronychia": {
+      "freq": "uncommon"
+    }
+  },
+  "TRAUMATIC": {
+    "Nail biting": {
+      "freq": "common"
+    }
+  },
+  "SYSTEMIC ILLNESS": {
+    "Severe systemic illness (Beau’s lines)": {
+      "freq": "common"
+    },
+    "Iron deﬁciency anemia (koilonychia)": {
+      "freq": "common"
+    },
+    "Chronic liver disease (leuconychia)": {
+      "freq": "common"
+    },
+    "Diabetes mellitus (leuconychia)": {
+      "freq": "common"
+    },
+    "Psoriatic arthritis (onycholysis)": {
+      "freq": "uncommon"
+    },
+    "Plummer–Vinson syndrome (koilonychia)": {
+      "freq": "rare"
+    }
+  },
+  "DERMATOLOGICAL": {
+    "Psoriasis (Fig. 45)": {
+      "freq": "common"
+    },
+    "Eczema": {
+      "freq": "common"
+    },
+    "Onychogryphosis": {
+      "freq": "common"
+    },
+    "Raynaud’s syndrome": {
+      "freq": "common"
+    },
+    "Hypo/hyperthyroidism": {
+      "freq": "common"
+    },
+    "Autoimmune disease": {
+      "freq": "uncommon"
+    },
+    "Yellow nail syndrome": {
+      "freq": "rare"
+    },
+    "Malignancy (melanoma/SCC)": {
+      "freq": "rare"
+    }
+  }
+},
+"Nasal discharge": {
+  "CONGENITAL": {
+    "Choanal atresia": {
+      "freq": "rare"
+    },
+    "Cystic ﬁbrosis": {
+      "freq": "rare"
+    }
+  },
+  "INFECTIVE": {
+    "Common cold (coryza)": {
+      "freq": "common"
+    },
+    "Chronic rhinitis": {
+      "freq": "common"
+    },
+    "Sinusitis (acute or chronic)": {
+      "freq": "common"
+    },
+    "Adenoiditis (large adenoids)": {
+      "freq": "common"
+    },
+    "Viral infections": {
+      "freq": "common"
+    },
+    "Bacterial infections (e.g. whooping cough)": {
+      "freq": "uncommon"
+    },
+    "Fungal infections": {
+      "freq": "rare"
+    },
+    "Chronic infections (e.g. syphilis)": {
+      "freq": "rare"
+    },
+    "AIDS • (common in certain developing countries)": {}
+  },
+  "ALLERGIC": {
+    "Allergic rhinitis": {
+      "freq": "common"
+    }
+  },
+  "INFLAMMATORY": {
+    "Nasal polyps": {
+      "freq": "common"
+    },
+    "Decongestant spray overuse": {
+      "freq": "common"
+    },
+    "Non-eosinophilic vasomotor rhinitis": {
+      "freq": "uncommon"
+    },
+    "Eosinophilic vasomotor rhinitis": {
+      "freq": "rare"
+    }
+  },
+  "NEOPLASTIC": {
+    "Carcinoma": {
+      "freq": "uncommon"
+    },
+    "Nasopharynx • (common in South east Asia)": {
+      "freq": "uncommon"
+    },
+    "Sinuses": {
+      "freq": "rare"
+    },
+    "Lymphoma (malignant granuloma)": {
+      "freq": "rare"
+    }
+  },
+  "GRANULOMATOUS DISEASE": {
+    "Granulomatosis with Polyangiitis (GPA – formerly Wegener’s": {
+      "freq": "rare"
+    }
+  },
+  "TRAUMATIC": {
+    "Foreign body": {
+      "freq": "common"
+    },
+    "Crying": {
+      "freq": "common"
+    },
+    "Fracture of the anterior or middle fossa": {
+      "freq": "uncommon"
+    },
+    "Irritant gases, e.g. chlorine, tobacco smoke": {
+      "freq": "uncommon"
+    }
+  },
+  "DEGENERATIVE": {
+    "Senile rhinorrhoea": {
+      "freq": "rare"
+    }
+  },
+  "MISCELLANEOUS": {
+    "Pregnancy": {
+      "freq": "common"
+    },
+    "Cluster headache": {
+      "freq": "uncommon"
+    }
+  }
+},
+"Neck lumps": {
+  "SUPERFICIAL": {
+    "Sebaceous cyst": {
+      "freq": "common"
+    },
+    "Lipoma": {
+      "freq": "common"
+    },
+    "Lymph nodes": {
+      "freq": "common"
+    },
+    "Abscess": {
+      "freq": "uncommon"
+    },
+    "Dermoid cyst": {
+      "freq": "rare"
+    }
+  },
+  "ANTERIOR TRIANGLE": {
+    "Thyroid": {
+      "freq": "common"
+    },
+    "Thyroglossal cyst (Fig. 46)": {
+      "freq": "rare"
+    },
+    "Salivary glands": {
+      "freq": "common"
+    },
+    "Carotid aneurysm": {
+      "freq": "rare"
+    },
+    "Sternomastoid ‘tumour’": {
+      "freq": "rare"
+    }
+  },
+  "POSTERIOR TRIANGLE": {
+    "Cervical rib": {
+      "freq": "uncommon"
+    },
+    "Subclavian artery aneurysm": {
+      "freq": "rare"
+    },
+    "Pharyngeal pouch": {
+      "freq": "rare"
+    },
+    "Cystic hygroma": {
+      "freq": "rare"
+    }
+  }
+},
+"Neck pain": {
+  "CONGENITAL": {
+    "Torticollis": {
+      "freq": "uncommon"
+    },
+    "Klippel–Feil syndrome": {
+      "freq": "rare"
+    }
+  },
+  "TRAUMATIC": {
+    "Fractures": {
+      "freq": "common"
+    },
+    "Dislocations": {
+      "freq": "common"
+    },
+    "Whiplash injury": {
+      "freq": "common"
+    }
+  },
+  "INFLAMMATORY": {
+    "Rheumatoid arthritis": {
+      "freq": "common"
+    }
+  },
+  "INFECTIVE": {
+    "Herpes zoster": {
+      "freq": "uncommon"
+    },
+    "TB • (common where TB is endemic)": {}
+  },
+  "DEGENERATIVE": {
+    "Cervical spondylosis": {
+      "freq": "common"
+    },
+    "Cervical radiculopathy": {
+      "freq": "uncommon"
+    },
+    "Degenerative cervical myelopathy": {
+      "freq": "rare"
+    }
+  },
+  "NEOPLASTIC": {
+    "Secondary deposits": {
+      "freq": "uncommon"
+    },
+    "Postural": {
+      "freq": "common"
+    },
+    "Exposure to cold": {
+      "freq": "common"
+    },
+    "Meningitis": {
+      "freq": "uncommon"
+    },
+    "Subarachnoid hemorrhage": {
+      "freq": "uncommon"
+    },
+    "Osteomyelitis": {
+      "freq": "rare"
+    }
+  }
+},
+"Nipple discharge": {
+  "SEROUS": {
+    "Early pregnancy": {
+      "freq": "common"
+    },
+    "Fibroadenosis": {
+      "freq": "uncommon"
+    },
+    "Medication (e.g. antipsychotics, antidepressants)": {
+      "freq": "uncommon"
+    },
+    "Late pregnancy": {
+      "freq": "common"
+    },
+    "Lactation": {
+      "freq": "common"
+    },
+    "Lactorrhoea of the newborn (witch’s milk)": {
+      "freq": "uncommon"
+    },
+    "Puberty": {
+      "freq": "rare"
+    },
+    "Prolactinoma": {
+      "freq": "rare"
+    }
+  },
+  "YELLOW, BROWN, GREEN": {
+    "Fibroadenosis": {
+      "freq": "common"
+    }
+  },
+  "THICK AND CREAMY": {
+    "Mammary duct ectasia": {
+      "freq": "common"
+    }
+  },
+  "PURULENT": {
+    "Retroareolar abscess": {
+      "freq": "uncommon"
+    },
+    "Breast abscess": {
+      "freq": "rare"
+    },
+    "TB": {
+      "freq": "rare"
+    }
+  },
+  "BLOODSTAINED": {
+    "Intraduct carcinoma": {
+      "freq": "common"
+    },
+    "Intraduct papilloma": {
+      "freq": "common"
+    },
+    "Paget’s disease of the nipple": {
+      "freq": "uncommon"
+    },
+    "Jogger’s nipple": {
+      "freq": "uncommon"
+    }
+  }
+},
+"Oliguria": {
+  "RENAL CIRCULATORY INSUFFICIENCY": {
+    "Dehydration, e.g. vomiting, diarrhoea": {
+      "freq": "common"
+    },
+    "Shock, e.g. hemorrhage, burns": {
+      "freq": "common"
+    },
+    "Nephrotoxins": {
+      "freq": "common"
+    },
+    "Acute tubular necrosis": {
+      "freq": "uncommon"
+    },
+    "Acute cortical necrosis": {
+      "freq": "uncommon"
+    },
+    "Acute glomerulonephritis": {
+      "freq": "uncommon"
+    },
+    "Acute interstitial nephritis": {
+      "freq": "uncommon"
+    },
+    "Vascular lesions": {
+      "freq": "rare"
+    }
+  },
+  "POST-RENAL (OBSTRUCTIVE)": {
+    "Prostatic hypertrophy": {
+      "freq": "common"
+    },
+    "Post-renal calculi": {
+      "freq": "common"
+    },
+    "Pelvic tumours": {
+      "freq": "uncommon"
+    },
+    "Hematoma": {
+      "freq": "uncommon"
+    },
+    "Retroperitoneal ﬁbrosis": {
+      "freq": "rare"
+    }
+  },
+  "OTHERS": {
+    "Mismatched transfusion (hemoglobinuria)": {
+      "freq": "rare"
+    },
+    "Crush injuries (myoglobinuria)": {
+      "freq": "rare"
+    }
+  },
+  "ANURIA": {
+    "Blocked catheter": {
+      "freq": "common"
+    },
+    "Ureteric damage (bilateral)": {
+      "freq": "rare"
+    },
+    "Stone in solitary functioning kidney": {
+      "freq": "rare"
+    }
+  }
+},
+"Palpitations": {
+  "SINUS TACHYCARDIA": {
+    "Anxiety/emotional stress": {
+      "freq": "common"
+    },
+    "Caffeine": {
+      "freq": "common"
+    },
+    "Nicotine": {
+      "freq": "common"
+    },
+    "Alcohol": {
+      "freq": "common"
+    },
+    "Infection": {
+      "freq": "common"
+    },
+    "Hyperthyroidism": {
+      "freq": "common"
+    },
+    "Electrolyte disturbances": {
+      "freq": "common"
+    }
+  },
+  "CARDIAC ARRHYTHMIA": {
+    "Premature ventricular contractions (ventricular ectopic beats)*": {
+      "freq": "common"
+    },
+    "Premature atrial contractions (atrial ectopic beats)*": {
+      "freq": "common"
+    },
+    "Atrial ﬁbrillation* (Fig. 47)": {
+      "freq": "common"
+    },
+    "Supraventricular tachycardia (AVRT, AVNRT)": {
+      "freq": "uncommon"
+    },
+    "Ventricular tachycardia (long QT syndrome)": {
+      "freq": "rare"
+    }
+  }
+},
+"Penile lesions": {
+  "FORESKIN AND GLANS": {
+    "Penile lumps (pearly penile papules, molluscum contagiosam,": {
+      "freq": "common"
+    },
+    "Phimosis": {
+      "freq": "common"
+    },
+    "Paraphimosis": {
+      "freq": "common"
+    },
+    "Balanoposthitis": {
+      "freq": "common"
+    },
+    "Balanitis xerotica obliterans": {
+      "freq": "uncommon"
+    },
+    "Herpes genitalis": {
+      "freq": "uncommon"
+    },
+    "Condylomata (warts)": {
+      "freq": "uncommon"
+    },
+    "Trauma (bite)": {
+      "freq": "uncommon"
+    },
+    "Carcinoma (Fig. 48)": {
+      "freq": "rare"
+    },
+    "Erythroplasia of Queyrat (carcinoma in situ)": {
+      "freq": "rare"
+    }
+  },
+  "SHAFT OF THE PENIS": {
+    "Peyronie’s disease": {
+      "freq": "uncommon"
+    },
+    "Priapism": {
+      "freq": "uncommon"
+    }
+  },
+  "URETHRA": {
+    "Epispadias": {
+      "freq": "rare"
+    },
+    "Hypospadias": {
+      "freq": "rare"
+    }
+  }
+},
+"Polyuria": {
+  "THERAPEUTIC": {
+    "Loop – e.g. furosemide, bumetanide": {
+      "freq": "common"
+    },
+    "Thiazide – e.g. bendroﬂumethiazide, metolazone, indapamide": {
+      "freq": "common"
+    },
+    "Amiloride": {
+      "freq": "common"
+    }
+  },
+  "OSMOTIC": {
+    "Hyperglycemia": {
+      "freq": "common"
+    },
+    "Hypercalcemia": {
+      "freq": "uncommon"
+    },
+    "Mannitol": {
+      "freq": "rare"
+    },
+    "Urea": {
+      "freq": "rare"
+    }
+  },
+  "CRANIAL": {
+    "Head injuries": {
+      "freq": "uncommon"
+    },
+    "Neurosurgery": {
+      "freq": "uncommon"
+    },
+    "Brain tumours (especially of pituitary)": {
+      "freq": "uncommon"
+    },
+    "Idiopathic deﬁciency of ADH production": {
+      "freq": "rare"
+    },
+    "Inherited (dominant or recessive)": {
+      "freq": "rare"
+    },
+    "Pituitary granulomas, e.g. sarcoidosis, TB • (more common": {
+      "where TB is endemic)": {
+        "freq": "rare"
+      },
+      "Opiates": {
+        "freq": "rare"
+      }
+    }
+  },
+  "NEPHROGENIC": {
+    "Drugs": {
+      "freq": "uncommon"
+    },
+    "Lithium": {
+      "freq": "uncommon"
+    },
+    "Demeclocycline": {
+      "freq": "rare"
+    },
+    "Hypokalemia": {
+      "freq": "uncommon"
+    },
+    "Chronic tubulointerstitial nephritis": {
+      "freq": "uncommon"
+    },
+    "Recovering acute tubular necrosis": {
+      "freq": "uncommon"
+    },
+    "Recovering obstructive uropathy": {
+      "freq": "uncommon"
+    },
+    "Chronic hypercalcemia": {
+      "freq": "rare"
+    }
+  },
+  "EXCESSIVE FLUID INTAKE": {
+    "Drug-induced thirst – anticholinergics": {
+      "freq": "uncommon"
+    },
+    "Psychogenic polydipsia": {
+      "freq": "rare"
+    },
+    "Hypothalamic disease": {
+      "freq": "rare"
+    }
+  }
+},
+"Popliteal swellings": {
+  "SUPERFICIAL": {
+    "Sebaceous cyst": {
+      "freq": "common"
+    },
+    "Lipoma": {
+      "freq": "common"
+    },
+    "Varix of the short saphenous vein": {
+      "freq": "common"
+    },
+    "Lymphadenopathy": {
+      "freq": "uncommon"
+    },
+    "Semi-membranosus bursa": {
+      "freq": "uncommon"
+    },
+    "Baker’s cyst": {
+      "freq": "uncommon"
+    },
+    "Popliteal artery aneurysm (Fig. 49)": {
+      "freq": "uncommon"
+    }
+  }
+},
+"Pruritus": {
+  "General": {
+    "Obstructive jaundice": {
+      "freq": "common"
+    },
+    "Chronic renal failure": {
+      "freq": "common"
+    },
+    "Liver disease": {
+      "freq": "common"
+    },
+    "Stroke": {
+      "freq": "rare"
+    }
+  },
+  "HAEMATOLOGICAL DISEASE": {
+    "Iron deﬁciency": {
+      "freq": "uncommon"
+    },
+    "Polycythemia ruba vera": {
+      "freq": "uncommon"
+    }
+  },
+  "INTERNAL MALIGNANCY": {
+    "Bronchial carcinoma": {
+      "freq": "uncommon"
+    },
+    "Hodgkin’s lymphoma": {
+      "freq": "uncommon"
+    }
+  },
+  "ENDOCRINE DISEASE": {
+    "Hyperthyroidism": {
+      "freq": "uncommon"
+    },
+    "Hypothyroidism": {
+      "freq": "uncommon"
+    },
+    "Diabetes mellitus": {
+      "freq": "uncommon"
+    }
+  },
+  "INFECTION": {
+    "HIV": {
+      "freq": "rare"
+    },
+    "Hepatitis C": {
+      "freq": "rare"
+    },
+    "Oral contraceptive pill (cholestasis)": {
+      "freq": "common"
+    },
+    "Opiates (histamine release)": {
+      "freq": "uncommon"
+    },
+    "Alcohol and drug withdrawal": {
+      "freq": "uncommon"
+    }
+  }
+},
+"Pruritus ani": {
+  "ANAL DISCHARGE": {
+    "Hemorrhoids": {
+      "freq": "common"
+    },
+    "Fistula-in-ano": {
+      "freq": "common"
+    },
+    "Skin tags": {
+      "freq": "common"
+    },
+    "Warts (Fig. 50)": {
+      "freq": "uncommon"
+    },
+    "Carcinoma": {
+      "freq": "uncommon"
+    },
+    "Polyps": {
+      "freq": "uncommon"
+    },
+    "Gonococcal proctitis": {
+      "freq": "rare"
+    }
+  },
+  "FAECAL SOILING": {
+    "Incontinence": {
+      "freq": "common"
+    },
+    "Poor hygiene": {
+      "freq": "common"
+    }
+  },
+  "SKIN DISEASE": {
+    "Candidiasis": {
+      "freq": "common"
+    },
+    "Tinea cruris": {
+      "freq": "uncommon"
+    },
+    "Lichen sclerosus": {
+      "freq": "rare"
+    },
+    "Contact dermatitis": {
+      "freq": "rare"
+    },
+    "Scabies": {
+      "freq": "rare"
+    },
+    "Psoriasis": {
+      "freq": "rare"
+    },
+    "Eczema": {
+      "freq": "rare"
+    }
+  },
+  "PARASITES": {
+    "Threadworms": {
+      "freq": "common"
+    }
+  },
+  "PSYCHOGENIC": {
+    "Anxiety": {
+      "freq": "uncommon"
+    }
+  }
+},
+"Pyrexia of unknown origin": {
+  "BACTERIAL": {
+    "Abscess, e.g. subphrenic, pelvic": {
+      "freq": "common"
+    },
+    "Subacute bacterial endocarditis": {
+      "freq": "uncommon"
+    },
+    "TB": {
+      "freq": "uncommon"
+    },
+    "Brucellosis": {
+      "freq": "rare"
+    },
+    "Typhoid": {
+      "freq": "rare"
+    },
+    "Leptospirosis": {
+      "freq": "rare"
+    },
+    "Q fever": {
+      "freq": "rare"
+    },
+    "Cat scratch disease": {
+      "freq": "rare"
+    },
+    "Inﬂuenza": {
+      "freq": "common"
+    },
+    "Infectious mononucleosis syndromes": {
+      "freq": "uncommon"
+    },
+    "HIV": {
+      "freq": "rare"
+    }
+  },
+  "FUNGAL": {
+    "Candidiasis": {
+      "freq": "rare"
+    },
+    "Aspergillosis": {
+      "freq": "rare"
+    },
+    "Pneumocystis jirovecii (formerly carinii)": {
+      "freq": "rare"
+    }
+  },
+  "PROTOZOAL": {
+    "Malaria • (common in Africa)": {
+      "Amoebiasis": {
+        "freq": "rare"
+      },
+      "Toxoplasmosis": {
+        "freq": "rare"
+      }
+    }
+  },
+  "NEOPLASIA": {
+    "Hypernephroma": {
+      "freq": "uncommon"
+    },
+    "Lymphoma": {
+      "freq": "uncommon"
+    },
+    "Hepatoma": {
+      "freq": "uncommon"
+    }
+  },
+  "CONNECTIVE TISSUE DISEASE": {
+    "Rheumatoid arthritis": {
+      "freq": "common"
+    },
+    "SLE": {
+      "freq": "common"
+    },
+    "Polyarteritis nodosa and other vasculitis": {
+      "freq": "uncommon"
+    },
+    "Temporal arteritis": {
+      "freq": "uncommon"
+    }
+  },
+  "GRANULOMATOUS DISEASE": {
+    "Crohn’s disease": {
+      "freq": "common"
+    },
+    "Sarcoidosis": {
+      "freq": "uncommon"
+    }
+  },
+  "OTHERS": {
+    "Post-immunisation": {
+      "freq": "common"
+    },
+    "Drug induced": {
+      "freq": "uncommon"
+    },
+    "Familial Mediterranean fever": {
+      "freq": "rare"
+    },
+    "Munchausen’s disease (factitious)": {
+      "freq": "rare"
+    }
+  }
+},
+"Rectal bleeding": {
+  "General": {
+    "Hemorrhoids": {
+      "freq": "common"
+    },
+    "Fissure-in-ano": {
+      "freq": "common"
+    }
+  },
+  "COLON AND RECTUM": {
+    "Carcinoma (Fig. 51)": {
+      "freq": "common"
+    },
+    "Polyps": {
+      "freq": "common"
+    },
+    "Diverticular disease": {
+      "freq": "common"
+    },
+    "Inﬂammatory bowel disease": {
+      "freq": "uncommon"
+    },
+    "Ulcerative colitis": {
+      "freq": "uncommon"
+    },
+    "Crohn’s disease": {
+      "freq": "uncommon"
+    },
+    "Ischemic colitis": {
+      "freq": "uncommon"
+    },
+    "Rectal prolapse": {
+      "freq": "uncommon"
+    },
+    "Angiodysplasia": {
+      "freq": "rare"
+    },
+    "Irradiation colitis or proctitis": {
+      "freq": "rare"
+    },
+    "Solitary rectal ulcer": {
+      "freq": "rare"
+    }
+  },
+  "SMALL BOWEL": {
+    "Meckel’s diverticulum": {
+      "freq": "uncommon"
+    },
+    "Intussusception": {
+      "freq": "uncommon"
+    },
+    "Mesenteric infarction": {
+      "freq": "uncommon"
+    },
+    "Aortoenteric ﬁstula": {
+      "freq": "rare"
+    }
+  },
+  "UPPER GASTROINTESTINAL TRACT": {
+    "Massive hemorrhage, e.g. duodenal ulcer": {
+      "freq": "uncommon"
+    }
+  },
+  "OTHERS": {
+    "Anticoagulants": {
+      "freq": "uncommon"
+    },
+    "Bleeding diatheses": {
+      "freq": "uncommon"
+    }
+  }
+},
+"Scalp lesions": {
+  "TRAUMATIC": {
+    "Hematoma": {
+      "freq": "uncommon"
+    },
+    "Cephalhematoma": {
+      "freq": "uncommon"
+    }
+  },
+  "CYSTIC": {
+    "Sebaceous cysts (epidermal cysts) (Fig. 52)": {
+      "freq": "common"
+    }
+  },
+  "MALIGNANT": {
+    "Basal cell carcinoma": {
+      "freq": "common"
+    },
+    "Squamous cell carcinoma": {
+      "freq": "uncommon"
+    },
+    "Malignant melanoma": {
+      "freq": "uncommon"
+    },
+    "Leukemia": {
+      "freq": "rare"
+    },
+    "Myeloma": {
+      "freq": "rare"
+    },
+    "Breast": {
+      "freq": "rare"
+    },
+    "Bronchus": {
+      "freq": "rare"
+    },
+    "Thyroid": {
+      "freq": "rare"
+    },
+    "Prostate": {
+      "freq": "rare"
+    },
+    "Kidney": {
+      "freq": "rare"
+    }
+  },
+  "INFECTIVE": {
+    "Scalp abscess": {
+      "freq": "common"
+    },
+    "Tinea capitis": {
+      "freq": "uncommon"
+    },
+    "Cock’s peculiar tumour": {
+      "freq": "rare"
+    },
+    "Psoriasis": {
+      "freq": "uncommon"
+    },
+    "Seborrhoeic dermatitis": {
+      "freq": "uncommon"
+    }
+  }
+},
+"Scrotal pain": {
+  "General": {
+    "Infected sebaceous cyst": {
+      "freq": "common"
+    },
+    "Irritation (urine/feces in the incontinent)": {
+      "freq": "common"
+    },
+    "Dermatitis": {
+      "freq": "uncommon"
+    },
+    "Herpes simplex": {
+      "freq": "rare"
+    }
+  },
+  "INTERNAL SCROTAL SWELLINGS": {
+    "Strangulated hernia": {
+      "freq": "common"
+    },
+    "Testicular torsion": {
+      "freq": "common"
+    },
+    "Epididymo-orchitis": {
+      "freq": "common"
+    },
+    "Torsion of testicular appendage": {
+      "freq": "uncommon"
+    },
+    "Hematocele": {
+      "freq": "uncommon"
+    },
+    "Varicocele": {
+      "freq": "uncommon"
+    }
+  },
+  "REFERRED": {
+    "Groin strain": {
+      "freq": "common"
+    },
+    "Ilioinguinal nerve entrapment after hernia repair": {
+      "freq": "uncommon"
+    },
+    "Idiopathic cord neuralgia": {
+      "freq": "rare"
+    },
+    "Spinal nerve irritation": {
+      "freq": "rare"
+    }
+  }
+},
+"Scrotal swellings": {
+  "General": {
+    "Sebaceous cyst": {
+      "freq": "common"
+    },
+    "Indirect inguinal hernia": {
+      "freq": "common"
+    },
+    "Hydrocele": {
+      "freq": "common"
+    },
+    "Epididymal cyst (spermatocele) (Fig. 54)": {
+      "freq": "common"
+    },
+    "Testicular tumour": {
+      "freq": "uncommon"
+    },
+    "Varicocele": {
+      "freq": "uncommon"
+    },
+    "Hematocele": {
+      "freq": "uncommon"
+    },
+    "Sperm granuloma": {
+      "freq": "rare"
+    },
+    "TB • (common where TB is endemic)": {
+      "Gumma": {
+        "freq": "rare"
+      }
+    }
+  }
+},
+"Splenomegaly": {
+  "BACTERIAL": {
+    "Typhoid": {
+      "freq": "rare"
+    },
+    "Tuberculosis": {
+      "freq": "rare"
+    },
+    "Septicemia": {
+      "freq": "rare"
+    },
+    "Abscess": {
+      "freq": "rare"
+    },
+    "Infectious mononucleosis syndromes (EBV/CMV)": {
+      "freq": "uncommon"
+    }
+  },
+  "PROTOZOAL": {
+    "Malaria • (common in Africa)": {}
+  },
+  "PARASITIC": {
+    "Hydatid cyst": {
+      "freq": "rare"
+    }
+  },
+  "INFLAMMATORY": {
+    "Rheumatoid arthritis (Felty’s syndrome)": {
+      "freq": "uncommon"
+    },
+    "Sarcoidosis": {
+      "freq": "uncommon"
+    },
+    "Lupus": {
+      "freq": "uncommon"
+    },
+    "Amyloid": {
+      "freq": "rare"
+    }
+  },
+  "NEOPLASTIC": {
+    "Metastases": {
+      "freq": "uncommon"
+    },
+    "Primary tumours": {
+      "freq": "uncommon"
+    },
+    "Leukemia (Fig. 55)": {
+      "freq": "uncommon"
+    },
+    "Lymphoma": {
+      "freq": "uncommon"
+    },
+    "Polycythemia vera": {
+      "freq": "rare"
+    },
+    "Myeloﬁbrosis": {
+      "freq": "uncommon"
+    }
+  },
+  "HAEMOLYTIC DISEASE": {
+    "Hereditary spherocytosis": {
+      "freq": "rare"
+    },
+    "Acquired hemolytic anemia": {
+      "freq": "rare"
+    },
+    "Thrombocytopenic purpura": {
+      "freq": "rare"
+    }
+  },
+  "STORAGE DISEASES": {
+    "Gaucher’s disease": {
+      "freq": "rare"
+    }
+  },
+  "DEFICIENCY DISEASES": {
+    "Severe iron-deﬁciency anemia": {
+      "freq": "uncommon"
+    },
+    "Pernicious anemia": {
+      "freq": "rare"
+    }
+  },
+  "SPLENIC VEIN HYPERTENSION": {
+    "Cirrhosis": {
+      "freq": "common"
+    },
+    "Splenic vein thrombosis": {
+      "freq": "rare"
+    },
+    "Portal vein thrombosis": {
+      "freq": "rare"
+    }
+  }
+},
+"Steatorrhoea": {
+  "LIPASE DEFICIENCY": {
+    "Impaired secretion – chronic pancreatitis": {
+      "freq": "uncommon"
+    },
+    "Inactivation – excess gastric acid": {
+      "freq": "rare"
+    }
+  },
+  "BILE DEFICIENCY": {
+    "Underproduction – liver disease": {
+      "freq": "uncommon"
+    },
+    "Obstruction – obstructive jaundice": {
+      "freq": "uncommon"
+    }
+  },
+  "MUCOSAL DISEASE": {
+    "Coeliac disease": {
+      "freq": "common"
+    },
+    "Ileal resection": {
+      "freq": "uncommon"
+    },
+    "Crohn’s disease": {
+      "freq": "uncommon"
+    }
+  },
+  "IMPAIRED FAT TRANSPORT": {
+    "Abetalipoproteinemia": {
+      "freq": "rare"
+    }
+  },
+  "LYMPHATIC DEFICIENCY": {
+    "Lymphoma": {
+      "freq": "rare"
+    },
+    "Whipple’s disease": {
+      "freq": "rare"
+    },
+    "Orlistat": {
+      "freq": "uncommon"
+    }
+  }
+},
+"Stridor": {
+  "CONGENITAL": {
+    "Laryngomalacia (congenital ﬂaccid larynx)": {
+      "freq": "rare"
+    }
+  },
+  "ACQUIRED": {
+    "Foreign body": {
+      "freq": "common"
+    },
+    "Infection": {
+      "freq": "uncommon"
+    },
+    "Epiglottitis (green in countries without universal Hib": {
+      "freq": "uncommon"
+    },
+    "Retropharyngeal abscess": {
+      "freq": "rare"
+    },
+    "Iatrogenic": {
+      "freq": "uncommon"
+    },
+    "Post-tracheostomy stenosis": {
+      "freq": "uncommon"
+    },
+    "Post-intubation stenosis": {
+      "freq": "uncommon"
+    },
+    "Post-radiotherapy stenosis": {
+      "freq": "uncommon"
+    },
+    "Post-thyroid surgery": {
+      "freq": "rare"
+    },
+    "Goitre": {
+      "freq": "uncommon"
+    },
+    "Laryngeal oedema": {
+      "freq": "uncommon"
+    },
+    "Anaphylaxis": {
+      "freq": "uncommon"
+    },
+    "Inhalational injury": {
+      "freq": "uncommon"
+    },
+    "Cricoarytenoid rheumatoid arthritis": {
+      "freq": "rare"
+    },
+    "Relapsing polychondritis": {
+      "freq": "rare"
+    },
+    "Fractured larynx": {
+      "freq": "rare"
+    }
+  },
+  "MALIGNANCY": {
+    "Intraluminal obstruction": {
+      "freq": "uncommon"
+    },
+    "Larynx": {
+      "freq": "uncommon"
+    },
+    "Trachea": {
+      "freq": "rare"
+    },
+    "Bronchus": {
+      "freq": "rare"
+    },
+    "External compression": {
+      "freq": "uncommon"
+    },
+    "Malignant nodes": {
+      "freq": "uncommon"
+    }
+  },
+  "BILATERAL VOCAL CORD PALSY": {
+    "Brainstem stroke": {
+      "freq": "rare"
+    },
+    "Thyroid carcinoma": {
+      "freq": "rare"
+    },
+    "Oesophageal carcinoma": {
+      "freq": "rare"
+    }
+  }
+},
+"Sweating abnormalities": {
+  "EXCESSIVE SWEATING": {
+    "Primary hyperhidrosis": {
+      "freq": "common"
+    },
+    "Hypoglycemia": {
+      "freq": "uncommon"
+    }
+  },
+  "INFECTIONS": {
+    "Any systemic infection": {
+      "freq": "common"
+    }
+  },
+  "MALIGNANCY": {
+    "Brain tumours": {
+      "freq": "uncommon"
+    },
+    "Hodgkin’s lymphoma": {
+      "freq": "uncommon"
+    }
+  },
+  "ENDOCRINE": {
+    "Diabetic autonomic neuropathy": {
+      "freq": "common"
+    },
+    "Menopause": {
+      "freq": "common"
+    },
+    "Thyrotoxicosis": {
+      "freq": "common"
+    },
+    "Carcinoid syndrome": {
+      "freq": "rare"
+    },
+    "Pheochromocytoma": {
+      "freq": "rare"
+    }
+  },
+  "PSYCHIATRIC": {
+    "Substance dependency/withdrawal": {
+      "freq": "common"
+    },
+    "Anxiety states": {
+      "freq": "common"
+    }
+  },
+  "DEFICIENT SWEATING": {
+    "Heat stroke": {
+      "freq": "uncommon"
+    },
+    "Miliaria": {
+      "freq": "uncommon"
+    },
+    "Hypohidrotic ectodermal dysplasia": {
+      "freq": "rare"
+    },
+    "Sympathetic tract lesions": {
+      "freq": "rare"
+    }
+  }
+},
+"Syncope": {
+  "CARDIOVASCULAR": {
+    "Myocardial infarction (when complicated by arrhythmia or": {
+      "freq": "uncommon"
+    },
+    "Pulmonary embolism": {
+      "freq": "common"
+    },
+    "Aortic stenosis": {
+      "freq": "common"
+    },
+    "Carotid sinus hypersensitivity": {
+      "freq": "rare"
+    },
+    "Hypertrophic obstructive cardiomyopathy": {
+      "freq": "rare"
+    }
+  },
+  "VASOVAGAL SYNCOPE": {
+    "Situational syncope": {
+      "freq": "common"
+    },
+    "Micturition syncope": {
+      "freq": "uncommon"
+    },
+    "Cough syncope": {
+      "freq": "uncommon"
+    }
+  },
+  "ORTHOSTATIC HYPOTENSION": {
+    "Prolonged bedrest": {
+      "freq": "common"
+    },
+    "Drug-induced": {
+      "freq": "common"
+    },
+    "Hypovolemic": {
+      "freq": "common"
+    },
+    "Autonomic failure": {
+      "freq": "uncommon"
+    }
+  },
+  "ARRHYTHMIA": {
+    "Supraventricular tachycardia": {
+      "freq": "common"
+    },
+    "Ventricular tachycardia": {
+      "freq": "common"
+    },
+    "Sick sinus syndrome": {
+      "freq": "uncommon"
+    },
+    "AV nodal block (Mobitz type 2 or 3rd degree block)": {
+      "freq": "common"
+    }
+  },
+  "NEUROLOGICAL": {
+    "Seizure": {
+      "freq": "common"
+    },
+    "Functional syncope": {
+      "freq": "rare"
+    }
+  },
+  "METABOLIC": {
+    "Hypoxia": {
+      "freq": "common"
+    },
+    "Hypoglycemia": {
+      "freq": "common"
+    }
+  }
+},
+"Thirst": {
+  "INADEQUATE FLUID INTAKE": {
+    "General debility/frailty": {
+      "freq": "common"
+    },
+    "Neurological disease": {
+      "freq": "common"
+    },
+    "Anorexia": {
+      "freq": "uncommon"
+    }
+  },
+  "EXCESSIVE FLUID LOSS": {
+    "Vomiting": {
+      "freq": "common"
+    },
+    "Fever": {
+      "freq": "common"
+    },
+    "Diarrhoea": {
+      "freq": "common"
+    },
+    "Bleeding (i.e. loss of blood volume)": {
+      "freq": "common"
+    },
+    "Excessive sweating": {
+      "freq": "uncommon"
+    },
+    "Burns": {
+      "freq": "uncommon"
+    }
+  },
+  "ENDOCRINE AND METABOLIC": {
+    "Diabetes mellitus": {
+      "freq": "common"
+    },
+    "Chronic renal failure": {
+      "freq": "uncommon"
+    },
+    "Liver failure": {
+      "freq": "uncommon"
+    },
+    "Diabetes insipidus (cranial and nephrogenic)": {
+      "freq": "rare"
+    },
+    "Diuretics (especially overdose)": {
+      "freq": "common"
+    },
+    "Ecstasy": {
+      "freq": "uncommon"
+    }
+  },
+  "CAUSES OF DRY MOUTH": {
+    "Sjögren’s syndrome": {
+      "freq": "uncommon"
+    },
+    "Drugs, e.g. anticholinergics, monoamine oxidase inhibitors": {
+      "freq": "uncommon"
+    },
+    "Post head and neck radiotherapy": {
+      "freq": "rare"
+    }
+  },
+  "PSYCHIATRIC": {
+    "Psychogenic polydipsia": {
+      "freq": "rare"
+    },
+    "Salty foods": {
+      "freq": "common"
+    }
+  }
+},
+"Throat disorders": {
+  "INFECTIVE": {
+    "Tonsillitis (Fig. 56)": {
+      "freq": "common"
+    },
+    "Bacterial, e.g. streptococcus, gonococcus": {
+      "freq": "common"
+    },
+    "Viral, e.g. glandular fever (infectious mononucleosis)": {
+      "freq": "uncommon"
+    },
+    "Pharyngitis/laryngitis": {
+      "freq": "common"
+    },
+    "Viral": {
+      "freq": "common"
+    },
+    "Fungal": {
+      "freq": "rare"
+    },
+    "Quinsy (peritonsillar abscess)": {
+      "freq": "rare"
+    },
+    "Measles (on the increase)": {
+      "freq": "rare"
+    }
+  },
+  "INFLAMMATORY": {
+    "Thyroiditis": {
+      "freq": "rare"
+    }
+  },
+  "NEOPLASTIC": {
+    "Carcinoma": {
+      "freq": "rare"
+    },
+    "Tonsil": {
+      "freq": "rare"
+    },
+    "Posterior third of the tongue": {
+      "freq": "rare"
+    },
+    "Larynx • (common in Far East including Hong Kong,": {
+      "freq": "rare"
+    },
+    "Hematological disorders (e.g. lymphoma)": {
+      "freq": "rare"
+    }
+  },
+  "REFERRED PAIN": {
+    "Angina": {
+      "freq": "common"
+    },
+    "Oesophageal spasm": {
+      "freq": "common"
+    },
+    "Muscle strain": {
+      "freq": "common"
+    },
+    "Tobacco": {
+      "freq": "common"
+    },
+    "Allergy": {
+      "freq": "uncommon"
+    },
+    "Reﬂux oesophagitis": {
+      "freq": "common"
+    },
+    "AIDS": {
+      "freq": "uncommon"
+    }
+  }
+},
+"Tiredness": {
+  "POST-VIRAL FATIGUE SYNDROMES": {
+    "Infectious mononucleosis": {
+      "freq": "common"
+    },
+    "Viral hepatitis": {
+      "freq": "uncommon"
+    }
+  },
+  "CHRONIC": {
+    "Chronic post-viral fatigue syndrome (CFS)": {
+      "freq": "uncommon"
+    }
+  },
+  "ENDOCRINE": {
+    "Hypothyroidism": {
+      "freq": "common"
+    },
+    "Diabetes mellitus": {
+      "freq": "common"
+    },
+    "Hyperthyroidism": {
+      "freq": "uncommon"
+    },
+    "Addison’s disease": {
+      "freq": "uncommon"
+    }
+  },
+  "MAJOR ORGAN FAILURE": {
+    "Cardiac failure": {
+      "freq": "uncommon"
+    },
+    "Renal failure": {
+      "freq": "uncommon"
+    },
+    "Liver failure": {
+      "freq": "uncommon"
+    }
+  },
+  "NEOPLASTIC": {
+    "Malignancy": {
+      "freq": "uncommon"
+    }
+  },
+  "CHRONIC INFECTION": {
+    "TB": {
+      "freq": "uncommon"
+    },
+    "HIV": {
+      "freq": "uncommon"
+    },
+    "Brucellosis": {
+      "freq": "uncommon"
+    }
+  },
+  "CHRONIC INFLAMMATORY DISEASE": {
+    "Rheumatoid arthritis": {
+      "freq": "common"
+    },
+    "Polymyalgia rheumatica": {
+      "freq": "common"
+    },
+    "Crohn’s disease": {
+      "freq": "uncommon"
+    }
+  },
+  "CHRONIC NEUROLOGICAL DISORDERS": {
+    "Multiple sclerosis": {
+      "freq": "uncommon"
+    },
+    "Myasthenia gravis": {
+      "freq": "uncommon"
+    },
+    "Restless legs": {
+      "freq": "uncommon"
+    },
+    "Beta blockers": {
+      "freq": "uncommon"
+    },
+    "Diuretics": {
+      "freq": "uncommon"
+    }
+  },
+  "DRUG ABUSE": {
+    "Alcohol": {
+      "freq": "uncommon"
+    },
+    "Benzodiazepines": {
+      "freq": "uncommon"
+    }
+  },
+  "OTHERS": {
+    "Stress, e.g. overwork, family commitments": {
+      "freq": "common"
+    },
+    "Depressive illness": {
+      "freq": "common"
+    },
+    "Anemia": {
+      "freq": "common"
+    },
+    "Coeliac disease": {
+      "freq": "common"
+    },
+    "Pregnancy": {
+      "freq": "common"
+    },
+    "The over-training syndrome": {
+      "freq": "uncommon"
+    },
+    "Carbon monoxide poisoning": {
+      "freq": "rare"
+    }
+  }
+},
+"Toe lesions": {
+  "TOENAILS": {
+    "Ingrowing toenail (Fig. 57)": {
+      "freq": "common"
+    },
+    "Subungual hematoma": {
+      "freq": "common"
+    },
+    "Warts/verrucas": {
+      "freq": "common"
+    },
+    "Subungual melanoma": {
+      "freq": "uncommon"
+    },
+    "Subungual exostosis": {
+      "freq": "uncommon"
+    },
+    "Onychogryphosis": {
+      "freq": "uncommon"
+    },
+    "Onychomycosis": {
+      "freq": "uncommon"
+    }
+  },
+  "ISCHAEMIC": {
+    "Atherosclerosis": {
+      "freq": "uncommon"
+    },
+    "Embolism": {
+      "freq": "uncommon"
+    },
+    "Diabetes": {
+      "freq": "common"
+    },
+    "Raynaud’s": {
+      "freq": "uncommon"
+    },
+    "Buerger’s": {
+      "freq": "uncommon"
+    },
+    "Vasculitis (e.g. scleroderma, SLE, rheumatoid)": {
+      "freq": "rare"
+    }
+  },
+  "NEUROPATHIC": {
+    "Diabetes": {
+      "freq": "common"
+    },
+    "Nerve injuries": {
+      "freq": "uncommon"
+    },
+    "Leprosy • (common where leprosy is endemic)": {
+      "Spinal cord lesions": {
+        "freq": "rare"
+      },
+      "Spina biﬁda": {
+        "freq": "rare"
+      },
+      "Spinal injuries": {
+        "freq": "rare"
+      },
+      "Syringomyelia": {
+        "freq": "rare"
+      }
+    }
+  },
+  "NEOPLASTIC": {
+    "Skin tumours (perineural invasion)": {
+      "freq": "rare"
+    }
+  },
+  "DISCOLORATION": {
+    "Chilblains": {
+      "freq": "common"
+    },
+    "Ischemia": {
+      "freq": "uncommon"
+    }
+  }
+},
+"Tongue disorders": {
+  "FURRING": {
+    "Gastrointestinal disease": {
+      "freq": "common"
+    },
+    "Dehydration": {
+      "freq": "common"
+    },
+    "Smokers": {
+      "freq": "common"
+    },
+    "Antibiotics": {
+      "freq": "common"
+    }
+  },
+  "COLOUR CHANGE": {
+    "White patches, e.g. leucoplakia, thrush": {
+      "freq": "common"
+    },
+    "Pallor (anemia)": {
+      "freq": "common"
+    },
+    "Blue (central cyanosis)": {
+      "freq": "common"
+    },
+    "Red (pernicious anemia, vitamin deﬁciency)": {
+      "freq": "uncommon"
+    }
+  },
+  "SWELLING (MACROGLOSSIA)": {
+    "Down’s syndrome": {
+      "freq": "common"
+    },
+    "Trauma, e.g. hot liquids, corrosive substances": {
+      "freq": "common"
+    },
+    "Myxoedema": {
+      "freq": "uncommon"
+    },
+    "Allergy": {
+      "freq": "uncommon"
+    },
+    "Inﬁltration, e.g. amyloid, lymphoma": {
+      "freq": "rare"
+    },
+    "Congenital hypothyroidism": {
+      "freq": "rare"
+    },
+    "Acromegaly": {
+      "freq": "rare"
+    }
+  },
+  "GLOSSITIS": {
+    "Smoking": {
+      "freq": "common"
+    },
+    "Spices": {
+      "freq": "common"
+    },
+    "Spirits": {
+      "freq": "common"
+    },
+    "Sepsis": {
+      "freq": "common"
+    },
+    "Sharp teeth": {
+      "freq": "common"
+    },
+    "Geographic tongue": {
+      "freq": "common"
+    },
+    "Syphilis (tertiary syphilis)": {
+      "freq": "rare"
+    },
+    "Scarlet fever": {
+      "freq": "rare"
+    }
+  },
+  "ULCERATION": {
+    "Aphthous ulcer": {
+      "freq": "common"
+    },
+    "Dental trauma": {
+      "freq": "common"
+    },
+    "Carcinoma (Fig. 58)": {
+      "freq": "uncommon"
+    },
+    "Chancre": {
+      "freq": "rare"
+    },
+    "Gumma": {
+      "freq": "rare"
+    }
+  },
+  "WASTING": {
+    "Bulbar palsy": {
+      "freq": "uncommon"
+    },
+    "Hypoglossal nerve palsy": {
+      "freq": "rare"
+    },
+    "Motor neuron disease": {
+      "freq": "rare"
+    },
+    "Burning mouth syndrome": {
+      "freq": "common"
+    },
+    "Oral Lichen planus": {
+      "freq": "uncommon"
+    },
+    "Sjogren’s syndrome": {
+      "freq": "common"
+    }
+  }
+},
+"Tremor": {
+  "RESTING TREMOR": {
+    "Parkinsonian tremor": {
+      "freq": "common"
+    }
+  },
+  "ACTION TREMOR": {
+    "Idiopathic": {
+      "freq": "common"
+    },
+    "Benign essential tremor": {
+      "freq": "common"
+    },
+    "Physiological": {
+      "freq": "common"
+    },
+    "Anxiety": {
+      "freq": "common"
+    },
+    "Exercise": {
+      "freq": "common"
+    },
+    "Chronic respiratory disease": {
+      "freq": "uncommon"
+    },
+    "Thyrotoxicosis": {
+      "freq": "uncommon"
+    }
+  },
+  "INTENTION TREMOR": {
+    "Cerebellar disease": {
+      "freq": "uncommon"
+    }
+  }
+},
+"Urethral discharge": {
+  "General": {
+    "Prostatitis": {
+      "freq": "common"
+    },
+    "Non-gonococcal urethritis": {
+      "freq": "common"
+    },
+    "Chlamydia trachmatis": {
+      "freq": "common"
+    },
+    "UTI": {
+      "freq": "common"
+    },
+    "HSV": {
+      "freq": "common"
+    },
+    "Adenovirus": {
+      "freq": "common"
+    },
+    "Trichomonas vaginalis": {
+      "freq": "uncommon"
+    },
+    "Mycoplasma genitalium": {
+      "freq": "uncommon"
+    },
+    "Gonococcal urethritis": {
+      "freq": "uncommon"
+    },
+    "Rare causes": {
+      "freq": "common"
+    },
+    "Coliforms": {
+      "freq": "common"
+    },
+    "Hemophilus ducreyi (chancroid)": {
+      "freq": "rare"
+    },
+    "TB": {
+      "freq": "rare"
+    },
+    "Syphilis (chancre)": {
+      "freq": "rare"
+    },
+    "Reiter’s disease": {
+      "freq": "rare"
+    },
+    "Traumatic": {
+      "freq": "rare"
+    },
+    "Instrumental": {
+      "freq": "rare"
+    },
+    "Accidental": {
+      "freq": "rare"
+    },
+    "Foreign body": {
+      "freq": "rare"
+    },
+    "Chemical (e.g. soaps)": {
+      "freq": "rare"
+    },
+    "Neoplastic": {
+      "freq": "rare"
+    }
+  }
+},
+"Urinary incontinence": {
+  "PELVIC FLOOR INJURY": {
+    "Childbirth": {
+      "freq": "common"
+    },
+    "Obesity": {
+      "freq": "common"
+    },
+    "Prostatectomy": {
+      "freq": "uncommon"
+    },
+    "Hysterectomy": {
+      "freq": "uncommon"
+    }
+  },
+  "DETRUSOR INSTABILITY": {
+    "Constipation": {
+      "freq": "common"
+    },
+    "Excess alcohol/caffeine": {
+      "freq": "common"
+    },
+    "Cystitis": {
+      "freq": "common"
+    },
+    "Stones": {
+      "freq": "common"
+    },
+    "Prostatectomy": {
+      "freq": "common"
+    },
+    "Post-radiotherapy": {
+      "freq": "uncommon"
+    },
+    "Tuberculous-cystitis": {
+      "freq": "uncommon"
+    },
+    "Interstitial nephritis": {
+      "freq": "uncommon"
+    },
+    "Tumour": {
+      "freq": "uncommon"
+    }
+  },
+  "LOWER MOTOR NEURONE LESIONS": {
+    "Diabetes": {
+      "freq": "common"
+    },
+    "Sacral nerve injury (e.g. pelvic surgery)": {
+      "freq": "rare"
+    },
+    "Cauda equina injury": {
+      "freq": "rare"
+    }
+  },
+  "CHRONIC OUTFLOW OBSTRUCTION": {
+    "Prostatic enlargement": {
+      "freq": "common"
+    }
+  },
+  "UPPER MOTOR NEURONE LESION": {
+    "Disc lesions": {
+      "freq": "common"
+    },
+    "Stroke": {
+      "freq": "common"
+    },
+    "Head injury": {
+      "freq": "uncommon"
+    },
+    "Spinal cord injury above sacral centre": {
+      "freq": "uncommon"
+    },
+    "Spinal tumours": {
+      "freq": "uncommon"
+    },
+    "Parkinson’s disease": {
+      "freq": "uncommon"
+    },
+    "Multiple sclerosis": {
+      "freq": "uncommon"
+    },
+    "Syringomyelia": {
+      "freq": "rare"
+    }
+  },
+  "ANATOMICAL": {
+    "Ectopia vesice": {
+      "freq": "rare"
+    },
+    "Ectopic ureter": {
+      "freq": "rare"
+    },
+    "Vesicovaginal ﬁstula": {
+      "freq": "rare"
+    },
+    "Nocturnal enuresis": {
+      "freq": "common"
+    },
+    "Medications (ACE-I, HRT, diuretics)": {
+      "freq": "common"
+    }
+  }
+},
+"Urinary retention": {
+  "URETHRAL LUMEN OR BLADDER NECK": {
+    "Tumours": {
+      "freq": "rare"
+    },
+    "Urethral valves": {
+      "freq": "rare"
+    }
+  },
+  "URETHRAL OR BLADDER WALL": {
+    "Urethral trauma": {
+      "freq": "uncommon"
+    },
+    "Urethral stricture": {
+      "freq": "uncommon"
+    },
+    "Urethral tumour": {
+      "freq": "rare"
+    }
+  },
+  "OUTSIDE THE WALL": {
+    "Prostatic enlargement (Fig. 59)": {
+      "freq": "common"
+    },
+    "Fecal impaction": {
+      "freq": "common"
+    },
+    "Pregnant uterus": {
+      "freq": "common"
+    },
+    "Pelvic tumour": {
+      "freq": "uncommon"
+    }
+  },
+  "POSTOPERATIVE": {
+    "Spinal cord injuries": {
+      "freq": "common"
+    },
+    "Diabetic autonomic neuropathy": {
+      "freq": "common"
+    },
+    "Spinal cord disease": {
+      "freq": "uncommon"
+    },
+    "Multiple sclerosis": {
+      "freq": "uncommon"
+    },
+    "Spinal tumour": {
+      "freq": "rare"
+    },
+    "Tabes dorsalis": {
+      "freq": "rare"
+    },
+    "Anticholinergic drugs": {
+      "freq": "uncommon"
+    },
+    "Antidepressants": {
+      "freq": "uncommon"
+    },
+    "Alcohol": {
+      "freq": "uncommon"
+    }
+  }
+},
+"Vaginal discharge": {
+  "General": {
+    "Candidiasis": {
+      "freq": "common"
+    },
+    "Bacterial vaginosis": {
+      "freq": "common"
+    },
+    "Trichomonas vaginosis (Fig. 60)": {
+      "freq": "common"
+    },
+    "Cervicitis, e.g. gonorrhoea, Chlamydia, herpes": {
+      "freq": "common"
+    },
+    "Excessive normal secretions": {
+      "freq": "common"
+    },
+    "Retained foreign body, e.g. tampon, pessary": {
+      "freq": "uncommon"
+    },
+    "Intrauterine contraceptive device": {
+      "freq": "uncommon"
+    },
+    "Salpingitis": {
+      "freq": "uncommon"
+    },
+    "Infection of Bartholin’s glands": {
+      "freq": "uncommon"
+    },
+    "Neoplasm, e.g. vagina, vulva": {
+      "freq": "rare"
+    },
+    "Pyometra": {
+      "freq": "rare"
+    },
+    "Colovaginal ﬁstula": {
+      "freq": "rare"
+    }
+  }
+},
+"Visual problems": {
+  "General": {
+    "Migraine": {
+      "freq": "common"
+    },
+    "Retinal detachment": {
+      "freq": "common"
+    },
+    "Vitreous hemorrhage": {
+      "freq": "common"
+    },
+    "Age-related macular degeneration": {
+      "freq": "common"
+    },
+    "Vitreous detachment": {
+      "freq": "uncommon"
+    }
+  },
+  "BLURRING OF VISION": {
+    "Acute angle-closure glaucoma": {
+      "freq": "common"
+    },
+    "Blunt trauma to the eye": {
+      "freq": "uncommon"
+    }
+  },
+  "PARTIAL LOSS": {
+    "Homonymous hemianopia – stroke, tumour": {
+      "freq": "common"
+    },
+    "Peripheral ﬁeld loss – glaucoma, papilloedema": {
+      "freq": "common"
+    },
+    "Central ﬁeld loss – age-related macular degeneration": {
+      "freq": "common"
+    },
+    "Bitemporal hemianopia – pituitary tumour": {
+      "freq": "uncommon"
+    },
+    "Horizontal ﬁeld loss – retinal vascular occlusion": {
+      "freq": "rare"
+    }
+  },
+  "TOTAL LOSS": {
+    "Amaurosis fugax (thrombosis/embolism)": {
+      "freq": "common"
+    },
+    "Papilloedema (Fig. 61)": {
+      "freq": "uncommon"
+    },
+    "Raised intracranial pressure": {
+      "freq": "uncommon"
+    },
+    "Malignant hypertension": {
+      "freq": "rare"
+    },
+    "Temporal arteritis": {
+      "freq": "uncommon"
+    },
+    "Optic neuritis": {
+      "freq": "uncommon"
+    },
+    "Central retinal vein occlusion": {
+      "freq": "uncommon"
+    },
+    "Central retinal artery occlusion": {
+      "freq": "uncommon"
+    },
+    "Corneal ulcer": {
+      "freq": "uncommon"
+    },
+    "Vitreous hemorrhage": {
+      "freq": "uncommon"
+    },
+    "Posterior uveitis": {
+      "freq": "rare"
+    },
+    "Pituitary apoplexy": {
+      "freq": "rare"
+    },
+    "Retinal detachment": {
+      "freq": "rare"
+    },
+    "Cataract": {
+      "freq": "common"
+    },
+    "Glaucoma": {
+      "freq": "common"
+    },
+    "Diabetic retinopathy": {
+      "freq": "common"
+    },
+    "Hypertensive retinopathy": {
+      "freq": "common"
+    },
+    "Age-related macular degeneration": {
+      "freq": "common"
+    },
+    "Retinitis pigmentosa": {
+      "freq": "rare"
+    },
+    "Infectious": {
+      "freq": "rare"
+    },
+    "Trachoma (Chlamydia trachomatis) • (common in": {
+      "freq": "rare"
+    },
+    "Onchocerciasis (nematode infection) • (common in": {
+      "freq": "rare"
+    },
+    "Vitamin A deﬁciency • (common in underdeveloped countries)": {
+      "lesions at the optic chiasma or more posteriorly cause binocular loss": {
+        "freq": "rare"
+      },
+      "Sudden onset of visual disturbance or loss is an opthalmic": {
+        "freq": "common"
+      },
+      "If temporal arteritis is suspected consider treatment": {
+        "freq": "common"
+      }
+    }
+  }
+},
+"Voice disorders": {
+  "INFECTIVE": {
+    "Laryngitis": {
+      "freq": "common"
+    }
+  },
+  "TRAUMATIC": {
+    "Blunt trauma": {
+      "freq": "common"
+    },
+    "Excessive vocal use": {
+      "freq": "common"
+    }
+  },
+  "NEOPLASTIC": {
+    "Laryngeal papilloma (due to HPV infection)": {
+      "freq": "uncommon"
+    }
+  },
+  "RECURRENT LARYNGEAL NERVE PALSY": {
+    "Goitre": {
+      "freq": "common"
+    },
+    "Bronchial carcinoma": {
+      "freq": "common"
+    },
+    "Postoperative – thoracic, parathyroid and thyroid surgery": {
+      "freq": "common"
+    },
+    "Oesophageal carcinoma": {
+      "freq": "uncommon"
+    },
+    "Thoracic aortic aneurysm": {
+      "freq": "rare"
+    }
+  },
+  "AUTOIMMUNE DISEASE": {
+    "Myasthenia gravis": {
+      "freq": "uncommon"
+    },
+    "Parkinson’s disease": {
+      "freq": "uncommon"
+    },
+    "Psychogenic": {
+      "freq": "uncommon"
+    },
+    "Acid-reﬂux disease": {
+      "freq": "common"
+    },
+    "Vocal fold nodule": {
+      "freq": "uncommon"
+    },
+    "Vocal fold cyst": {
+      "freq": "uncommon"
+    },
+    "Vocal fold granulomatoma": {
+      "freq": "uncommon"
+    },
+    "Reinke’s oedema": {
+      "freq": "uncommon"
+    },
+    "Presbylarynx": {
+      "freq": "uncommon"
+    }
+  }
+},
+"Vomiting": {
+  "CENTRAL VOMITING": {
+    "Drugs, e.g. narcotic analgesics, chemotherapeutic agents": {
+      "freq": "common"
+    },
+    "Acute infections": {
+      "freq": "common"
+    },
+    "Endocrine/metabolic": {
+      "freq": "common"
+    },
+    "Pregnancy": {
+      "freq": "common"
+    },
+    "Diabetic ketoacidosis": {
+      "freq": "common"
+    },
+    "Hypercalcemia": {
+      "freq": "uncommon"
+    },
+    "Addison’s disease": {
+      "freq": "rare"
+    }
+  },
+  "GASTROINTESTINAL DISEASE": {
+    "Appendicitis": {
+      "freq": "common"
+    },
+    "Cholecystitis": {
+      "freq": "common"
+    },
+    "Pancreatitis": {
+      "freq": "common"
+    },
+    "Peptic ulceration/acute gastritis (Fig. 63)": {
+      "freq": "common"
+    },
+    "Peritonitis": {
+      "freq": "common"
+    },
+    "Biliary colic": {
+      "freq": "common"
+    },
+    "Gastroenteritis": {
+      "freq": "common"
+    },
+    "Viral": {
+      "freq": "common"
+    },
+    "Bacteria, e.g. Campylobacter, Salmonella spp": {
+      "freq": "common"
+    },
+    "Drugs, e.g. aspirin, NSAIDs, alcohol, iron, antibiotics": {
+      "freq": "common"
+    },
+    "Emetics, e.g. sodium chloride, ipecacuanha": {
+      "freq": "uncommon"
+    },
+    "Poisons, e.g. arsenic": {
+      "freq": "rare"
+    },
+    "Small bowel obstruction": {
+      "freq": "common"
+    },
+    "Pyloric stenosis": {
+      "freq": "common"
+    },
+    "Large bowel obstruction": {
+      "freq": "common"
+    }
+  },
+  "CNS CAUSES": {
+    "Raised intracranial pressure": {
+      "freq": "common"
+    },
+    "Labyrinthine disorders": {
+      "freq": "common"
+    },
+    "Head injury": {
+      "freq": "common"
+    },
+    "Migraine": {
+      "freq": "common"
+    },
+    "Ménière’s disease": {
+      "freq": "uncommon"
+    }
+  },
+  "PSYCHOGENIC": {
+    "Offensive sights and smells": {
+      "freq": "common"
+    },
+    "Psychiatric disorders, e.g. bulimia nervosa, anorexia nervosa": {
+      "freq": "uncommon"
+    }
+  },
+  "OTHERS": {
+    "Myocardial infarction": {
+      "freq": "common"
+    },
+    "Severe pain, e.g. testicular torsion, fractures": {
+      "freq": "common"
+    },
+    "Irradiation": {
+      "freq": "common"
+    },
+    "Widespread malignant disease": {
+      "freq": "common"
+    }
+  }
+},
+"Weight gain": {
+  "INCREASED FAT": {
+    "Simple obesity": {
+      "freq": "common"
+    },
+    "Polycystic ovarian syndrome": {
+      "freq": "uncommon"
+    },
+    "Hypothalamic disease": {
+      "freq": "rare"
+    }
+  },
+  "INCREASED FLUID": {
+    "Cardiac failure": {
+      "freq": "common"
+    },
+    "Hepatic failure with ascites": {
+      "freq": "common"
+    },
+    "Renal failure (e.g. nephrotic syndrome)": {
+      "freq": "uncommon"
+    },
+    "Lymphatic obstruction": {
+      "freq": "uncommon"
+    }
+  },
+  "INCREASED MUSCLE": {
+    "Athletes, e.g. weightlifters": {
+      "freq": "common"
+    },
+    "Androgenic steroids": {
+      "freq": "uncommon"
+    },
+    "Growth hormone": {
+      "freq": "rare"
+    },
+    "Pregnancy": {
+      "freq": "common"
+    },
+    "Depression": {
+      "freq": "common"
+    },
+    "Drugs, e.g. insulin gliclazide and corticosteroids": {
+      "freq": "uncommon"
+    },
+    "Tiredness": {
+      "freq": "common"
+    },
+    "Premenstrual syndrome": {
+      "freq": "uncommon"
+    }
+  }
+},
+"Weight loss": {
+  "SYSTEMIC DISEASE": {
+    "Malignancy": {
+      "freq": "common"
+    },
+    "Cardiac failure": {
+      "freq": "common"
+    },
+    "Chronic respiratory disease": {
+      "freq": "common"
+    },
+    "Renal failure": {
+      "freq": "common"
+    },
+    "Liver failure": {
+      "freq": "common"
+    },
+    "Malabsorption": {
+      "freq": "uncommon"
+    },
+    "Connective tissue disease (e.g. SLE, rheumatoid arthritis)": {
+      "freq": "uncommon"
+    }
+  },
+  "ENDOCRINE": {
+    "Diabetes mellitus": {
+      "freq": "common"
+    }
+  },
+  "INFECTIVE": {
+    "TB": {
+      "freq": "uncommon"
+      },
+    "HIV": {
+      "freq": "uncommon"
+    },
+    "Helminth infection ": {
+      "freq": "rare"
+    }
+  },
+  "PSYCHIATRIC": {
+    "Depression": {
+      "freq": "common"
+    },
+    "Anorexia nervosa": {
+      "freq": "uncommon"
+    }
+  },
+  "Other": {
+    "Any terminal illness": {
+      "freq": "common"
+    },
+    "Substance abuse (e.g. laxatives, amphetamines, opiates)": {
+      "freq": "common"
+    },
+    "Drugs, e.g. excessive thyroxine replacement": {
+      "freq": "uncommon"
+    },
+    "Malnutrition • (common in developing countries)": {}
+  }
+}
+}

@@ -1,4 +1,478 @@
 {
-  "presentation": "Convulsions",
-  "items": []
+  "presentation": "convulsions",
+  "items": [
+    {
+      "name": "Epilepsy (unprovoked seizure)",
+      "system": "Neurologic",
+      "freq": "common",
+      "redFlag": true,
+      "symptoms": {
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "intermittent"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "sleep-deprivation",
+          "flashing-lights"
+        ],
+        "quality": [
+          "generalized-tonic-clonic"
+        ],
+        "timing": [
+          "episodic"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "tongue-bite",
+          "incontinence",
+          "postictal-confusion"
+        ]
+      }
+    },
+    {
+      "name": "Febrile seizure (child)",
+      "system": "Neurologic",
+      "freq": "occasional",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "intermittent"
+        ],
+        "palliate": [
+          "antipyretics"
+        ],
+        "provoke": [
+          "fever"
+        ],
+        "quality": [
+          "generalized-tonic-clonic"
+        ],
+        "timing": [
+          "episodic"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "fever",
+          "upper-respiratory-symptoms"
+        ]
+      }
+    },
+    {
+      "name": "Alcohol withdrawal",
+      "system": "Toxicologic",
+      "freq": "occasional",
+      "redFlag": true,
+      "symptoms": {
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "intermittent"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "alcohol-cessation"
+        ],
+        "quality": [
+          "generalized-tonic-clonic"
+        ],
+        "timing": [
+          "episodic"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "tremor",
+          "sweating-abnormalities",
+          "hallucinations"
+        ]
+      }
+    },
+    {
+      "name": "Hypoglycemia",
+      "system": "Metabolic",
+      "freq": "occasional",
+      "redFlag": true,
+      "symptoms": {
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "intermittent"
+        ],
+        "palliate": [
+          "oral-intake"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "generalized-tonic-clonic"
+        ],
+        "timing": [
+          "episodic"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "diaphoresis",
+          "syncope"
+        ]
+      }
+    },
+    {
+      "name": "Hyponatremia/other electrolyte disturbance",
+      "system": "Metabolic",
+      "freq": "occasional",
+      "redFlag": true,
+      "symptoms": {
+        "onset": [
+          "subacute"
+        ],
+        "progression": [
+          "intermittent"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "generalized-tonic-clonic"
+        ],
+        "timing": [
+          "episodic"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "headache",
+          "vomiting"
+        ]
+      }
+    },
+    {
+      "name": "Intracranial hemorrhage",
+      "system": "Neurologic",
+      "freq": "rare",
+      "redFlag": true,
+      "symptoms": {
+        "onset": [
+          "sudden"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "hypertension",
+          "anticoagulation"
+        ],
+        "quality": [
+          "focal-onset",
+          "generalized-tonic-clonic"
+        ],
+        "timing": [
+          "episodic"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "catastrophic"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "headache",
+          "vomiting",
+          "hemiparesis"
+        ]
+      }
+    },
+    {
+      "name": "Brain tumor",
+      "system": "Oncology",
+      "freq": "rare",
+      "redFlag": true,
+      "symptoms": {
+        "onset": [
+          "insidious"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "focal-onset"
+        ],
+        "timing": [
+          "episodic"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "headache",
+          "vomiting",
+          "personality-change"
+        ]
+      }
+    },
+    {
+      "name": "Meningitis/Encephalitis",
+      "system": "Infectious",
+      "freq": "occasional",
+      "redFlag": true,
+      "symptoms": {
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "intermittent"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "infection"
+        ],
+        "quality": [
+          "generalized-tonic-clonic"
+        ],
+        "timing": [
+          "episodic"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "kernigs-sign",
+          "brudzinskis-sign"
+        ],
+        "other symptoms": [
+          "fever",
+          "headache",
+          "photophobia"
+        ]
+      }
+    },
+    {
+      "name": "Head trauma",
+      "system": "Trauma",
+      "freq": "occasional",
+      "redFlag": true,
+      "symptoms": {
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "intermittent"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "post-traumatic"
+        ],
+        "quality": [
+          "generalized-tonic-clonic"
+        ],
+        "timing": [
+          "episodic"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "headache",
+          "vomiting"
+        ]
+      }
+    },
+    {
+      "name": "Toxin/medication (theophylline, TCA, isoniazid)",
+      "system": "Toxicologic",
+      "freq": "rare",
+      "redFlag": true,
+      "symptoms": {
+        "onset": [
+          "subacute"
+        ],
+        "progression": [
+          "intermittent"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "medication"
+        ],
+        "quality": [
+          "generalized-tonic-clonic"
+        ],
+        "timing": [
+          "episodic"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "arrhythmia",
+          "hypotension"
+        ]
+      }
+    },
+    {
+      "name": "Eclampsia (pregnancy)",
+      "system": "Gynaecology",
+      "freq": "rare",
+      "redFlag": true,
+      "symptoms": {
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "intermittent"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "pregnancy"
+        ],
+        "quality": [
+          "generalized-tonic-clonic"
+        ],
+        "timing": [
+          "episodic"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "hypertension",
+          "headache",
+          "visual-problems"
+        ]
+      }
+    }
+  ],
+  "symptoms": {}
 }

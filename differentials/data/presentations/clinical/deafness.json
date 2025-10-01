@@ -1,4 +1,475 @@
 {
-  "presentation": "Deafness",
-  "items": []
+  "presentation": "deafness",
+  "items": [
+    {
+      "name": "Cerumen impaction",
+      "system": "ENT",
+      "freq": "common",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [
+          "subacute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "water-exposure"
+        ],
+        "quality": [
+          "conductive-loss"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "ear"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild"
+        ],
+        "clinical tests": [
+          "weber-lateralizes-to-affected",
+          "rinne-bc-greater-than-ac"
+        ],
+        "other symptoms": [
+          "ear-fullness",
+          "tinnitus"
+        ]
+      }
+    },
+    {
+      "name": "Otitis media with effusion",
+      "system": "ENT",
+      "freq": "common",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [
+          "subacute"
+        ],
+        "progression": [
+          "stable"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "upper-respiratory-symptoms"
+        ],
+        "quality": [
+          "conductive-loss"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "ear"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild"
+        ],
+        "clinical tests": [
+          "weber-lateralizes-to-affected",
+          "rinne-bc-greater-than-ac"
+        ],
+        "other symptoms": [
+          "ear-fullness"
+        ]
+      }
+    },
+    {
+      "name": "Acute otitis media",
+      "system": "ENT",
+      "freq": "occasional",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "analgesics"
+        ],
+        "provoke": [
+          "infection"
+        ],
+        "quality": [
+          "conductive-loss"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "ear"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "fever",
+          "ear-pain"
+        ]
+      }
+    },
+    {
+      "name": "Tympanic membrane perforation",
+      "system": "ENT",
+      "freq": "occasional",
+      "redFlag": true,
+      "symptoms": {
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "improving"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "post-traumatic",
+          "barotrauma"
+        ],
+        "quality": [
+          "conductive-loss"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "ear"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild"
+        ],
+        "clinical tests": [
+          "weber-lateralizes-to-affected",
+          "rinne-bc-greater-than-ac"
+        ],
+        "other symptoms": [
+          "otorrhea"
+        ]
+      }
+    },
+    {
+      "name": "Otosclerosis",
+      "system": "ENT",
+      "freq": "occasional",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [
+          "insidious"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "pregnancy"
+        ],
+        "quality": [
+          "conductive-loss"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "ear"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "weber-lateralizes-to-affected",
+          "rinne-bc-greater-than-ac"
+        ],
+        "other symptoms": [
+          "tinnitus"
+        ]
+      }
+    },
+    {
+      "name": "Presbycusis",
+      "system": "ENT",
+      "freq": "common",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [
+          "insidious"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "hearing-aids"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "sensorineural-loss"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "ear"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "weber-lateralizes-to-unaffected",
+          "rinne-ac-greater-than-bc"
+        ],
+        "other symptoms": [
+          "tinnitus",
+          "difficulty-in-noise"
+        ]
+      }
+    },
+    {
+      "name": "Noise-induced hearing loss",
+      "system": "ENT",
+      "freq": "occasional",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [
+          "insidious"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "hearing-protection"
+        ],
+        "provoke": [
+          "noise-exposure"
+        ],
+        "quality": [
+          "sensorineural-loss"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "ear"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "weber-lateralizes-to-unaffected",
+          "rinne-ac-greater-than-bc"
+        ],
+        "other symptoms": [
+          "tinnitus"
+        ]
+      }
+    },
+    {
+      "name": "Sudden sensorineural hearing loss",
+      "system": "ENT",
+      "freq": "rare",
+      "redFlag": true,
+      "symptoms": {
+        "onset": [
+          "sudden"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "sensorineural-loss"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "ear"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "weber-lateralizes-to-unaffected",
+          "rinne-ac-greater-than-bc"
+        ],
+        "other symptoms": [
+          "tinnitus",
+          "vertigo"
+        ]
+      }
+    },
+    {
+      "name": "M\u00e9ni\u00e8re disease",
+      "system": "ENT",
+      "freq": "occasional",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [
+          "subacute"
+        ],
+        "progression": [
+          "intermittent"
+        ],
+        "palliate": [
+          "salt-restriction"
+        ],
+        "provoke": [
+          "salt-excess"
+        ],
+        "quality": [
+          "sensorineural-loss"
+        ],
+        "timing": [
+          "episodic"
+        ],
+        "region": [
+          "ear"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "vertigo",
+          "tinnitus",
+          "ear-fullness"
+        ]
+      }
+    },
+    {
+      "name": "Vestibular schwannoma (acoustic neuroma)",
+      "system": "Neurologic",
+      "freq": "rare",
+      "redFlag": true,
+      "symptoms": {
+        "onset": [
+          "insidious"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "sensorineural-loss"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "ear"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "weber-lateralizes-to-unaffected",
+          "rinne-ac-greater-than-bc"
+        ],
+        "other symptoms": [
+          "tinnitus",
+          "dizziness"
+        ]
+      }
+    },
+    {
+      "name": "Ototoxic medications (aminoglycosides, cisplatin, loop-diuretics)",
+      "system": "Toxicologic",
+      "freq": "occasional",
+      "redFlag": true,
+      "symptoms": {
+        "onset": [
+          "subacute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "medication-change"
+        ],
+        "provoke": [
+          "medication"
+        ],
+        "quality": [
+          "sensorineural-loss"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "ear"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "weber-lateralizes-to-unaffected",
+          "rinne-ac-greater-than-bc"
+        ],
+        "other symptoms": [
+          "tinnitus",
+          "dizziness"
+        ]
+      }
+    }
+  ],
+  "symptoms": {}
 }

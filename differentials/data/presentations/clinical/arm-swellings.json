@@ -1,4 +1,217 @@
 {
-  "presentation": "Arm swellings",
-  "items": []
+  "presentation": "arm swellings",
+  "items": [
+    {
+      "name": "Lymphadenopathy (infectious/reactive)",
+      "system": "Lymphatic",
+      "freq": "common",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [
+          "subacute"
+        ],
+        "progression": [
+          "improving"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "aching",
+          "tender"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "fever",
+          "malaise"
+        ]
+      }
+    },
+    {
+      "name": "Hidradenitis suppurativa / abscess",
+      "system": "Dermatologic",
+      "freq": "occasional",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [
+          "subacute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "throbbing"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "discharge",
+          "fever"
+        ]
+      }
+    },
+    {
+      "name": "Lipoma",
+      "system": "Soft tissue",
+      "freq": "common",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [
+          "insidious"
+        ],
+        "progression": [
+          "stable"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "soft",
+          "mobile"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "n/a"
+        ]
+      }
+    },
+    {
+      "name": "Lymphedema",
+      "system": "Lymphatic",
+      "freq": "occasional",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [
+          "insidious"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "exercise"
+        ],
+        "quality": [
+          "pressure"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "heaviness",
+          "skin-changes"
+        ]
+      }
+    },
+    {
+      "name": "Soft-tissue sarcoma",
+      "system": "Oncology",
+      "freq": "rare",
+      "redFlag": true,
+      "symptoms": {
+        "onset": [
+          "insidious"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "firm"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "weight-loss",
+          "night-pain"
+        ]
+      }
+    }
+  ],
+  "symptoms": {}
 }

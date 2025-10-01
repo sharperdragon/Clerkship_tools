@@ -1,4 +1,64 @@
 {
-  "presentation": "Haemoptysis",
-  "items": []
+  "presentation": "Hemoptysis",
+  "symptoms": {},
+  "items": [
+    {
+      "name": "Bronchial carcinoma",
+      "category": "RESPIRATORY",
+      "freq": "common"
+    },
+    {
+      "name": "Pneumonia",
+      "category": "RESPIRATORY",
+      "freq": "common"
+    },
+    {
+      "name": "TB (worldwide) (Fig. 30)",
+      "category": "RESPIRATORY",
+      "freq": "common"
+    },
+    {
+      "name": "Chronic obstructive pulmonary disease (COPD)",
+      "category": "RESPIRATORY",
+      "freq": "common"
+    },
+    {
+      "name": "Bronchiectasis",
+      "category": "RESPIRATORY",
+      "freq": "uncommon"
+    },
+    {
+      "name": "Pulmonary oedema",
+      "category": "RESPIRATORY",
+      "freq": "uncommon"
+    },
+    {
+      "name": "Goodpasture\u2019s syndrome",
+      "category": "RESPIRATORY",
+      "freq": "rare"
+    },
+    {
+      "name": "Pulmonary embolism",
+      "category": "VASCULAR",
+      "freq": "uncommon"
+    },
+    {
+      "name": "Pulmonary hypertension \u2013 mitral stenosis",
+      "category": "VASCULAR",
+      "freq": "rare"
+    },
+    {
+      "name": "Hereditary hemorrhagic telangiectasia",
+      "category": "VASCULAR",
+      "freq": "rare"
+    },
+    {
+      "name": "Coagulation disorders",
+      "category": "SYSTEMIC",
+      "freq": "uncommon"
+    }
+  ],
+  "sources": {
+    "index_key": "Hemoptysis"
+  }
 }

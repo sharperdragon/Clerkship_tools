@@ -1,4 +1,476 @@
 {
-  "presentation": "Constipation",
-  "items": []
+  "presentation": "constipation",
+  "items": [
+    {
+      "name": "Functional constipation",
+      "system": "Gastrointestinal",
+      "freq": "common",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [
+          "chronic"
+        ],
+        "progression": [
+          "stable"
+        ],
+        "palliate": [
+          "fiber",
+          "oral-intake"
+        ],
+        "provoke": [
+          "dehydration",
+          "low-fiber-diet"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "bloating",
+          "abdominal-discomfort"
+        ]
+      }
+    },
+    {
+      "name": "Medication-induced (opioids, anticholinergics, iron)",
+      "system": "Toxicologic",
+      "freq": "common",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [
+          "subacute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "medication"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "dry-mouth",
+          "urinary-retention"
+        ]
+      }
+    },
+    {
+      "name": "Hypothyroidism",
+      "system": "Endocrine",
+      "freq": "occasional",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [
+          "insidious"
+        ],
+        "progression": [
+          "stable"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "fatigue",
+          "weight-gain",
+          "cold-intolerance"
+        ]
+      }
+    },
+    {
+      "name": "Hypercalcemia",
+      "system": "Metabolic",
+      "freq": "occasional",
+      "redFlag": true,
+      "symptoms": {
+        "onset": [
+          "subacute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "hydration"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "polyuria",
+          "abdominal-pain",
+          "nausea"
+        ]
+      }
+    },
+    {
+      "name": "Irritable bowel syndrome (constipation-predominant)",
+      "system": "Gastrointestinal",
+      "freq": "occasional",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [
+          "chronic"
+        ],
+        "progression": [
+          "intermittent"
+        ],
+        "palliate": [
+          "fiber"
+        ],
+        "provoke": [
+          "stress",
+          "dietary-triggers"
+        ],
+        "quality": [
+          "cramping"
+        ],
+        "timing": [
+          "episodic"
+        ],
+        "region": [
+          "diffuse"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "bloating",
+          "abdominal-pain"
+        ]
+      }
+    },
+    {
+      "name": "Colorectal cancer",
+      "system": "Oncology",
+      "freq": "occasional",
+      "redFlag": true,
+      "symptoms": {
+        "onset": [
+          "insidious"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "lower-abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "weight-loss",
+          "rectal-bleeding",
+          "iron-deficiency-anemia"
+        ]
+      }
+    },
+    {
+      "name": "Bowel obstruction",
+      "system": "Gastrointestinal",
+      "freq": "occasional",
+      "redFlag": true,
+      "symptoms": {
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "npo"
+        ],
+        "provoke": [
+          "oral-intake"
+        ],
+        "quality": [
+          "colicky"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "diffuse"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "succussion-splash"
+        ],
+        "other symptoms": [
+          "vomiting",
+          "distension",
+          "abdominal-pain"
+        ]
+      }
+    },
+    {
+      "name": "Neurogenic (Parkinson disease, spinal cord lesions)",
+      "system": "Neurologic",
+      "freq": "occasional",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [
+          "chronic"
+        ],
+        "progression": [
+          "stable"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "medication"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "gait-abnormalities",
+          "urinary-retention"
+        ]
+      }
+    },
+    {
+      "name": "Diabetes (autonomic dysfunction)",
+      "system": "Endocrine",
+      "freq": "occasional",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [
+          "chronic"
+        ],
+        "progression": [
+          "stable"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "polyuria",
+          "polydipsia",
+          "weight-loss"
+        ]
+      }
+    },
+    {
+      "name": "Pregnancy",
+      "system": "Gynaecology",
+      "freq": "occasional",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [
+          "subacute"
+        ],
+        "progression": [
+          "stable"
+        ],
+        "palliate": [
+          "fiber"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "lower-abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "nausea",
+          "vomiting"
+        ]
+      }
+    },
+    {
+      "name": "Dehydration/low intake",
+      "system": "General",
+      "freq": "common",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [
+          "subacute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "oral-intake"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "thirst",
+          "dizziness"
+        ]
+      }
+    }
+  ],
+  "symptoms": {}
 }

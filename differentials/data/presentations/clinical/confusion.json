@@ -1,4 +1,515 @@
 {
-  "presentation": "Confusion",
-  "items": []
+  "presentation": "confusion",
+  "items": [
+    {
+      "name": "Delirium (infection-triggered)",
+      "system": "Neurologic",
+      "freq": "common",
+      "redFlag": true,
+      "symptoms": {
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "infection"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "fluctuating"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "fever",
+          "rigors",
+          "malaise"
+        ]
+      }
+    },
+    {
+      "name": "Dementia (baseline cognitive disorder)",
+      "system": "Neurologic",
+      "freq": "common",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [
+          "insidious"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "memory-impairment"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "functional-decline"
+        ]
+      }
+    },
+    {
+      "name": "Stroke/TIA",
+      "system": "Neurologic",
+      "freq": "occasional",
+      "redFlag": true,
+      "symptoms": {
+        "onset": [
+          "sudden"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "hemiparesis",
+          "dysarthria",
+          "aphasia"
+        ]
+      }
+    },
+    {
+      "name": "Subdural hematoma",
+      "system": "Neurologic",
+      "freq": "occasional",
+      "redFlag": true,
+      "symptoms": {
+        "onset": [
+          "subacute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "post-traumatic"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "headache",
+          "vomiting"
+        ]
+      }
+    },
+    {
+      "name": "Hypoglycemia",
+      "system": "Metabolic",
+      "freq": "common",
+      "redFlag": true,
+      "symptoms": {
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "oral-intake"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "episodic"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "diaphoresis",
+          "syncope"
+        ]
+      }
+    },
+    {
+      "name": "Hyponatremia/Hypernatremia",
+      "system": "Metabolic",
+      "freq": "occasional",
+      "redFlag": true,
+      "symptoms": {
+        "onset": [
+          "subacute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "headache",
+          "nausea",
+          "vomiting"
+        ]
+      }
+    },
+    {
+      "name": "Uremic encephalopathy",
+      "system": "Renal",
+      "freq": "occasional",
+      "redFlag": true,
+      "symptoms": {
+        "onset": [
+          "subacute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "nausea",
+          "vomiting"
+        ]
+      }
+    },
+    {
+      "name": "Hepatic encephalopathy",
+      "system": "Hepatic",
+      "freq": "occasional",
+      "redFlag": true,
+      "symptoms": {
+        "onset": [
+          "subacute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "jaundice",
+          "asterixis"
+        ]
+      }
+    },
+    {
+      "name": "Drug effect (anticholinergic, sedatives, polypharmacy)",
+      "system": "Toxicologic",
+      "freq": "common",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [
+          "subacute"
+        ],
+        "progression": [
+          "stable"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "medication"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "dry-mouth",
+          "urinary-retention"
+        ]
+      }
+    },
+    {
+      "name": "Alcohol intoxication/withdrawal",
+      "system": "Toxicologic",
+      "freq": "occasional",
+      "redFlag": true,
+      "symptoms": {
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "alcohol"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "episodic"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "tremor",
+          "sweating-abnormalities",
+          "hallucinations"
+        ]
+      }
+    },
+    {
+      "name": "Wernicke encephalopathy",
+      "system": "Neurologic",
+      "freq": "rare",
+      "redFlag": true,
+      "symptoms": {
+        "onset": [
+          "subacute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "alcohol"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "ataxia",
+          "ophthalmoplegia",
+          "confabulation"
+        ]
+      }
+    },
+    {
+      "name": "Hypercapnia/hypoxia (COPD, pneumonia)",
+      "system": "Respiratory",
+      "freq": "occasional",
+      "redFlag": true,
+      "symptoms": {
+        "onset": [
+          "subacute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "infection"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "chest"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "shortness-of-breath",
+          "cough",
+          "fever"
+        ]
+      }
+    }
+  ],
+  "symptoms": {}
 }

@@ -1,4 +1,216 @@
 {
-  "presentation": "Axillary swellings",
-  "items": []
+  "presentation": "axillary swellings",
+  "items": [
+    {
+      "name": "Reactive lymphadenopathy",
+      "system": "Lymphatic",
+      "freq": "common",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [
+          "subacute"
+        ],
+        "progression": [
+          "improving"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "tender"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "fever",
+          "malaise"
+        ]
+      }
+    },
+    {
+      "name": "Metastatic breast carcinoma",
+      "system": "Oncology",
+      "freq": "occasional",
+      "redFlag": true,
+      "symptoms": {
+        "onset": [
+          "insidious"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "firm"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "weight-loss",
+          "breast-lump"
+        ]
+      }
+    },
+    {
+      "name": "Hidradenitis suppurativa / abscess",
+      "system": "Dermatologic",
+      "freq": "occasional",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [
+          "subacute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "throbbing"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "discharge",
+          "fever"
+        ]
+      }
+    },
+    {
+      "name": "Accessory breast tissue",
+      "system": "Breast",
+      "freq": "rare",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [
+          "insidious"
+        ],
+        "progression": [
+          "stable"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "menses"
+        ],
+        "quality": [
+          "soft"
+        ],
+        "timing": [
+          "cyclical"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "mastalgia"
+        ]
+      }
+    },
+    {
+      "name": "Lymphoma",
+      "system": "Oncology",
+      "freq": "rare",
+      "redFlag": true,
+      "symptoms": {
+        "onset": [
+          "insidious"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "firm"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "fever",
+          "weight-loss",
+          "night-sweats"
+        ]
+      }
+    }
+  ],
+  "symptoms": {}
 }

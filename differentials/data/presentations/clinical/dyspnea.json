@@ -1,0 +1,214 @@
+{
+  "presentation": "dyspnoea",
+  "items": [
+    {
+      "name": "Asthma",
+      "system": "Respiratory",
+      "freq": "common",
+      "redFlag": false,
+      "symptoms": {
+        "onset": ["subacute"],
+        "progression": ["intermittent"],
+        "palliate": ["inhaler"],
+        "provoke": ["allergens", "exercise"],
+        "quality": ["chest-tightness", "air-hunger"],
+        "timing": ["nocturnal", "episodic"],
+        "region": ["chest"],
+        "radiation": ["n/a"],
+        "severity": ["mild"],
+        "clinical tests": ["n/a"],
+        "other symptoms": ["wheeze", "cough"]
+      }
+    },
+    {
+      "name": "COPD exacerbation",
+      "system": "Respiratory",
+      "freq": "common",
+      "redFlag": true,
+      "symptoms": {
+        "onset": ["subacute"],
+        "progression": ["worsening"],
+        "palliate": ["rest"],
+        "provoke": ["infection", "smoke-exposure"],
+        "quality": ["air-hunger"],
+        "timing": ["persistent"],
+        "region": ["chest"],
+        "radiation": ["n/a"],
+        "severity": ["moderate"],
+        "clinical tests": ["n/a"],
+        "other symptoms": ["wheeze", "cough"]
+      }
+    },
+    {
+      "name": "Pneumonia",
+      "system": "Infectious",
+      "freq": "occasional",
+      "redFlag": true,
+      "symptoms": {
+        "onset": ["subacute"],
+        "progression": ["worsening"],
+        "palliate": ["n/a"],
+        "provoke": ["n/a"],
+        "quality": ["air-hunger"],
+        "timing": ["persistent"],
+        "region": ["chest"],
+        "radiation": ["n/a"],
+        "severity": ["moderate"],
+        "clinical tests": ["n/a"],
+        "other symptoms": ["fever", "cough", "pleuritic-pain"]
+      }
+    },
+    {
+      "name": "Pulmonary embolism",
+      "system": "Respiratory",
+      "freq": "occasional",
+      "redFlag": true,
+      "symptoms": {
+        "onset": ["sudden"],
+        "progression": ["worsening"],
+        "palliate": ["n/a"],
+        "provoke": ["immobility", "recent-surgery"],
+        "quality": ["air-hunger"],
+        "timing": ["constant"],
+        "region": ["chest"],
+        "radiation": ["n/a"],
+        "severity": ["severe"],
+        "clinical tests": ["n/a"],
+        "other symptoms": ["pleuritic-pain", "syncope"]
+      }
+    },
+    {
+      "name": "Pneumothorax",
+      "system": "Respiratory",
+      "freq": "occasional",
+      "redFlag": true,
+      "symptoms": {
+        "onset": ["sudden"],
+        "progression": ["worsening"],
+        "palliate": ["n/a"],
+        "provoke": ["post-traumatic"],
+        "quality": ["air-hunger"],
+        "timing": ["constant"],
+        "region": ["chest"],
+        "radiation": ["shoulder-tip"],
+        "severity": ["severe"],
+        "clinical tests": ["n/a"],
+        "other symptoms": ["pleuritic-pain"]
+      }
+    },
+    {
+      "name": "Acute decompensated heart failure",
+      "system": "Cardiac",
+      "freq": "occasional",
+      "redFlag": true,
+      "symptoms": {
+        "onset": ["subacute"],
+        "progression": ["worsening"],
+        "palliate": ["rest"],
+        "provoke": ["exercise", "salt-excess"],
+        "quality": ["air-hunger"],
+        "timing": ["nocturnal"],
+        "region": ["chest"],
+        "radiation": ["n/a"],
+        "severity": ["moderate"],
+        "clinical tests": ["n/a"],
+        "other symptoms": ["orthopnoea", "paroxysmal-nocturnal-dyspnoea", "edema"]
+      }
+    },
+    {
+      "name": "Myocardial infarction",
+      "system": "Cardiac",
+      "freq": "occasional",
+      "redFlag": true,
+      "symptoms": {
+        "onset": ["acute"],
+        "progression": ["worsening"],
+        "palliate": ["nitrates", "rest"],
+        "provoke": ["exercise", "stress"],
+        "quality": ["air-hunger", "chest-tightness"],
+        "timing": ["constant"],
+        "region": ["chest"],
+        "radiation": ["left-shoulder", "jaw"],
+        "severity": ["severe"],
+        "clinical tests": ["n/a"],
+        "other symptoms": ["diaphoresis", "nausea"]
+      }
+    },
+    {
+      "name": "Anemia",
+      "system": "Hematologic",
+      "freq": "occasional",
+      "redFlag": false,
+      "symptoms": {
+        "onset": ["insidious"],
+        "progression": ["worsening"],
+        "palliate": ["n/a"],
+        "provoke": ["n/a"],
+        "quality": ["air-hunger"],
+        "timing": ["persistent"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["mild"],
+        "clinical tests": ["n/a"],
+        "other symptoms": ["fatigue", "palpitations"]
+      }
+    },
+    {
+      "name": "Interstitial lung disease",
+      "system": "Respiratory",
+      "freq": "occasional",
+      "redFlag": true,
+      "symptoms": {
+        "onset": ["insidious"],
+        "progression": ["worsening"],
+        "palliate": ["rest"],
+        "provoke": ["exercise"],
+        "quality": ["air-hunger"],
+        "timing": ["persistent"],
+        "region": ["chest"],
+        "radiation": ["n/a"],
+        "severity": ["moderate"],
+        "clinical tests": ["n/a"],
+        "other symptoms": ["cough"]
+      }
+    },
+    {
+      "name": "Anxiety/panic",
+      "system": "Psychiatric",
+      "freq": "occasional",
+      "redFlag": false,
+      "symptoms": {
+        "onset": ["acute"],
+        "progression": ["intermittent"],
+        "palliate": ["rest"],
+        "provoke": ["stress"],
+        "quality": ["air-hunger"],
+        "timing": ["episodic"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["mild"],
+        "clinical tests": ["n/a"],
+        "other symptoms": ["chest-tightness", "diaphoresis"]
+      }
+    },
+    {
+      "name": "Anaphylaxis / severe asthma",
+      "system": "Allergy/Respiratory",
+      "freq": "rare",
+      "redFlag": true,
+      "symptoms": {
+        "onset": ["sudden"],
+        "progression": ["worsening"],
+        "palliate": ["n/a"],
+        "provoke": ["allergens"],
+        "quality": ["air-hunger"],
+        "timing": ["constant"],
+        "region": ["chest", "throat"],
+        "radiation": ["n/a"],
+        "severity": ["catastrophic"],
+        "clinical tests": ["n/a"],
+        "other symptoms": ["wheeze", "stridor", "hypotension"]
+      }
+    }
+  ]
+}

@@ -1,0 +1,488 @@
+{
+  "Hyperglycemia": {
+    "ENDOCRINE": [
+      "Diabetes mellitus (types 1 and 2)"
+    ],
+    "DRUGS": [
+      "Corticosteroids",
+      "Beta blockers",
+      "Thiazide diuretics",
+      "Niacin",
+      "Pentamidine",
+      "Protease inhibitors",
+      "L-asparaginase",
+      "Antipsychotic agents"
+    ],
+    "SYSTEMIC DISEASE": [
+      "Cushing’s syndrome"
+    ],
+    "SEVERE STRESS": [
+      "Stroke",
+      "Myocardial infarction"
+    ],
+    "PHYSIOLOGICAL": [
+      "Infection",
+      "Inﬂammation"
+    ],
+    "OTHER": [
+      "Pregnancy"
+    ]
+  },
+  "Hypoglycemia": {
+    "General": [
+      "Insulin",
+      "Sulfonylurea",
+      "Alcohol",
+      "Beta blockers",
+      "Quinolones",
+      "Pentamidine",
+      "Quinine"
+    ],
+    "ENDOCRINE": [
+      "Pituitary insufﬁciency",
+      "Addison’s disease"
+    ],
+    "NEOPLASTIC": [
+      "Pancreatic islet cell tumours; insulinoma",
+      "Non-pancreatic tumours; retroperitoneal ﬁbrosarcoma,"
+    ],
+    "LIVER DISEASE": [
+      "Inherited glycogen storage disorders",
+      "Cirrhosis",
+      "Acute liver failure",
+      "Alcohol",
+      "Post-prandial dumping syndrome (post-gastrectomy, post-",
+      "Immune-mediated (e.g. anti-insulin receptor antibodies in"
+    ]
+  },
+  "Hypokalaemia": {
+    "INADEQUATE INTAKE": [
+      "Potassium-free i.v. ﬂuids",
+      "Reduced oral intake, e.g. coma, dysphagia"
+    ],
+    "EXCESSIVE LOSS": [
+      "Renal",
+      "Thiazide or loop diuretics",
+      "Renal tubular disorders",
+      "Gastrointestinal",
+      "Diarrhoea",
+      "Vomiting",
+      "Fistulas",
+      "Laxatives",
+      "Villous adenoma",
+      "Endocrine",
+      "Cushing’s syndrome",
+      "Steroid therapy",
+      "Hyperaldosteronism",
+      "Diabetic ketoacidosis (related to excessive diuresis and"
+    ]
+},
+  "Hypernatraemia": {
+    "DECREASED WATER INTAKE": [
+      "Confusion"
+    ],
+    "NON-RENAL WATER LOSSES": [
+      "Gastrointestinal losses (e.g. vomiting, diarrhoea)",
+      "Pyrexia",
+      "Burns"
+    ],
+    "RENAL WATER LOSSES": [
+      "Osmotic diuresis (i.e. hyperglycemia)",
+      "Nephrogenic diabetes insipidus",
+      "Drugs (e.g. lithium)",
+      "Bence Jones proteins",
+      "Post-relief of obstructive uropathy",
+      "Recovering acute tubular necrosis",
+      "Congenital diabetes insipidus"
+    ],
+    "SODIUM EXCESS": [
+      "Excessive intravenous sodium therapy",
+      "Chronic congestive cardiac failure",
+      "Cirrhosis of the liver",
+      "Steroid therapy",
+      "Cushing’s syndrome",
+      "Primary hyperaldosteronism (Conn’s syndrome)"
+    ],
+    "SYMPTOMS AND SIGNS": [
+      "Rapid correction of hypernatraemia can lead to cerebral"
+    ]
+  },
+  "Hyponatraemia": {
+    "HYPOVOLAEMIC": [
+      "Gastrointestinal losses",
+      "Diarrhoea",
+      "Vomiting",
+      "Enterocutanous fistula",
+      "Renal sodium losses",
+      "Diuretics",
+      "Osmotic diuresis (e.g. hyperglycemia)",
+      "Renal failure",
+      "Other sodium losses",
+      "Burns",
+      "Ascites",
+      "Crush injuries",
+      "Peritonitis"
+    ],
+    "EUVOLAEMIC": [
+      "Endocrine",
+      "Severe hypothyroidism",
+      "Addison’s disease",
+      "Water load",
+      "Intravenous infusions",
+      "Water drinking (excessive)",
+      "TURP (transurethral resection of prostate) syndrome",
+      "SIADH",
+      "Pulmonary disease (e.g. pneumonia, lung cancer)",
+      "Drugs (e.g. carbamazepine)",
+      "Intracranial disease (e.g. tumour, head injuries)"
+    ],
+    "OEDEMATOUS": [
+      "Cardiac failure",
+      "Nephrotic syndrome"
+    ],
+    "SYMPTOMS AND SIGNS": [
+      "Falsely low sodium values can occur with high",
+      "Most patients with hyponatraemia do not require"
+    ]
+  },
+  "Hypercalcemia": {
+    "General": [
+      "Malignancy",
+      "Hyperparathyroidism (primary, secondary, tertiary)",
+      "Hyperthyroidism",
+      "Drugs, e.g. thiazide diuretics, lithium",
+      "Addison’s disease",
+      "Paget’s disease of bone",
+      "Excess intake of vitamin A, vitamin D or calcium",
+      "Sarcoidosis",
+      "Familial hypocalciuric hypercalcemia"
+    ],
+    "SYMPTOMS AND SIGNS": [
+      "In a patient with depression or psychosis, always",
+      "In a patient presenting with polyuria, if diabetes has"
+    ]
+  },
+  "Hypocalcemia": {
+    "ASSOCIATED WITH HIGH SERUM PHOSPHATE": [
+      "Chronic renal failure",
+      "Hypoparathyroidism",
+      "Rhabdomyolysis",
+      "Phosphate therapy",
+      "Hypomagnesaemia",
+      "Acute pancreatitis",
+      "Critical illness (i.e. sepsis, burns)",
+      "Osteomalacia (inc. Vit D deﬁciency)"
+    ],
+    "REDUCTION IN IONISED PLASMA CALCIUM": [
+      "Bisphosphonates",
+      "Calcitonin"
+    ],
+    "SYMPTOMS AND SIGNS": [
+      "The ﬁrst symptom of hypocalcemia is circumoral",
+      "If symptoms occur after thyroid or parathyroid"
+    ]
+  },
+  "Hypomagnesaemia": {
+    "EXCESSIVE LOSSES": [
+      "Diuretics",
+      "Severe diarrhoea",
+      "Prolonged vomiting",
+      "Polyuria (poorly controlled diabetes)",
+      "Prolonged and excessive nasogastric aspiration"
+    ],
+    "INADEQUATE INTAKE": [
+      "Starvation",
+      "Alcoholism",
+      "Malabsorption syndrome",
+      "Parenteral nutrition"
+    ]
+  },
+  "Metabolic alkalosis": {
+    "EXCESS LOSS OF H!": [
+      "Vomiting",
+      "Nasogastric aspiration",
+      "Gastric ﬁstula",
+      "Diuretic therapy (thiazide or loop)",
+      "Cushing’s syndrome (mineralocorticoid effect)",
+      "Conn’s syndrome (mineralocorticoid excess)"
+    ],
+    "EXCESSIVE INTAKE OF BASE": [
+      "Ingestion of HCO3",
+      "Antacids, e.g. milk-alkali syndrome"
+    ]
+  },
+  "Uraemia": {
+    "INCREASED BLOOD UREA": [
+      "Renal failure (acute and chronic)",
+      "Dehydration",
+      "Shock",
+      "Congestive cardiac failure",
+      "Gastrointestinal hemorrhage (digested blood increases blood",
+      "Excessive protein intake",
+      "Excessive protein catabolism"
+    ],
+    "DECREASED BLOOD UREA": [
+      "Malnutrition",
+      "Liver failure",
+      "Overhydration, e.g. prolonged i.v. ﬂuids",
+      "Pregnancy (increased plasma volume)",
+      "Impaired protein absorption",
+      "SIADH",
+      "Anabolic steroid use"
+    ],
+    "SYMPTOMS AND SIGNS": [
+      "A grossly raised blood urea in association with"
+    ]
+  },
+  "Anaemia": {
+    "General": [
+      "Iron deﬁciency",
+      "Anaemia of chronic disease",
+      "Thalassaemia (more common in certain groups)",
+      "Acute blood loss",
+      "Hemolytic anaemia",
+      "Hereditary spherocytosis",
+      "Sickle cell disease (most common in sub-Saharan Africa)",
+      "G6PD deficiency (varies with ethnicity)",
+      "Autoimmune hemolytic anaemia",
+      "Malaria (geographic variability)",
+      "Drugs (e.g. dapsone, quinine, sulphonamides)",
+      "Red cell trauma (burns, mechanical heart valves)",
+      "Mixed deﬁciencies",
+      "Secondary anaemia (liver and renal disease)",
+      "Bone marrow failure",
+      "Pregnancy",
+      "Megaloblastic anaemia",
+      "Pernicious anaemia",
+      "Vitamin B12 deficiency",
+      "Folate deficiency",
+      "Alcoholism",
+      "Liver disease",
+      "Hypothyroidism",
+      "Hyperthyroidism (Graves’ disease)",
+      "Addison’s disease",
+      "Marrow inﬁltration"
+    ],
+    "SYMPTOMS AND SIGNS": [
+      "Examination of the peripheral blood ﬁlm is an important",
+      "Remember that shortness of breath may be an early"
+    ]
+  },
+  "Clotting disorders": {
+    "CONGENITAL": [
+      "Factor V Leiden deﬁciency",
+      "Protein C deﬁciency",
+      "Protein S deﬁciency",
+      "Antithrombin III deﬁciency",
+      "Hemophilia A and B",
+      "von Willebrand’s disease"
+    ],
+    "ACQUIRED": [
+      "Malignancy",
+      "Pregnancy",
+      "Infection",
+      "Prolonged immobility",
+      "Autoimmune: anti-phospholipid syndrome (can be related to SLE)",
+      "Drugs: oral oestrogen-containing contraception, heparin-",
+      "Vitamin K deﬁciency",
+      "Obstructive jaundice",
+      "Fat malabsorption",
+      "Liver disease",
+      "Autoimmune diseases, e.g. systemic lupus erythematosus",
+      "Drugs – heparin, warfarin, thrombolytic therapy",
+      "Disseminated intravascular coagulation (DIC)",
+      "Massive transfusion"
+    ],
+    "SYMPTOMS AND SIGNS": [
+      "Prolonged bleeding can result from abnormal platelet"
+    ]
+  },
+  "Leucocytosis": {
+    "PHYSIOLOGICAL": [
+      "Neonates",
+      "Exercise",
+      "Pregnancy",
+      "Childbirth",
+      "Lactation",
+      "Stress"
+    ],
+    "ACUTE NON-INFECTIVE INFLAMMATION": [
+      "Surgery",
+      "Burns",
+      "Infarction, e.g. myocardial infarction, mesenteric infarction",
+      "Crush injuries",
+      "Rheumatoid arthritis"
+    ],
+    "METABOLIC": [
+      "Uraemia",
+      "Diabetic ketoacidosis",
+      "Gout"
+    ],
+    "CHRONIC MYELOPROLIFERATIVE DISEASE": [
+      "CML (chronic myeloid leukaemia)",
+      "Polycythemia rubrum vera",
+      "Myeloﬁbrosis"
+    ],
+    "NON-HAEMATOLOGICAL MALIGNANCY": [
+      "Carcinoma",
+      "Lymphoma",
+      "Corticosteroids"
+    ],
+    "MISCELLANEOUS": [
+      "Convulsions",
+      "Electric shock",
+      "Post-neutropenia rebound",
+      "Post-splenectomy (temporary)"
+    ],
+    "VIRAL INFECTIONS": [
+      "EBV/CMV (infectious mononucleosis)",
+      "Rubella",
+      "Varicella zoster (chickenpox)",
+      "Measles",
+      "Mumps",
+      "Inﬂuenza",
+      "Viral hepatitis"
+    ],
+    "BACTERIAL INFECTIONS": [
+      "Pertussis",
+      "TB",
+      "Brucellosis",
+      "Syphilis"
+    ],
+    "BACTERIAL (USUALLY CHRONIC INFECTIONS)": [
+      "TB",
+      "Brucellosis",
+      "Typhoid",
+      "Subacute infective endocarditis"
+    ],
+    "PROTOZOAL": [
+      "Malaria",
+      "Trypanosomiasis",
+      "Leishmaniasis"
+    ],
+    "MALIGNANT": [
+      "Myelodysplasia",
+      "Leukaemia – monocytic and myelomonocytic",
+      "Hodgkin’s"
+    ],
+    "EOSINOPHILIA": [
+      "Allergy, e.g. asthma, drug reaction",
+      "Allergic bronchopulmonary aspergillosis",
+      "Hypersensitivity pneumonitis",
+      "Parasitic infections, e.g. ﬁlariasis, schistosomiasis",
+      "Malignancy, e.g. Hodgkin’s disease",
+      "Cholesterol emboli",
+      "Pulmonary eosinophilia"
+    ],
+    "BASOPHILIA": [
+      "Chronic myeloproliferative disease",
+      "Hypersensitivity reactions",
+      "Hypothyroidism"
+    ],
+    " VDRL": [
+      "In patients with leucocytosis it is important to seek a"
+    ]
+  },
+  "Leucopenia": {
+    "PANCYTOPENIA": [
+      "Bone marrow depression, e.g. cytotoxic agents, malignant",
+      "Severe B12 or folate deﬁciency",
+      "Hypersplenism"
+    ],
+    "SELECTIVE NEUTROPENIA": [
+      "Physiological",
+      "Benign ethnic neutropenia, e.g. Afro-Caribbeans",
+      "Infection",
+      "Overwhelming sepsis, e.g. septicemia",
+      "Brucellosis",
+      "TB",
+      "Typhoid",
+      "Auto immune",
+      "Systemic lupus erythematosus (SLE)",
+      "Felty’s syndrome (rheumatoid arthritis)",
+      "Autoimmune neutropenia",
+      "Drug induced, e.g. chemotherapy agents, carbimazole,"
+    ],
+    "LYMPHOPENIA": [
+      "Acute infection",
+      "Trauma",
+      "Surgery",
+      "Radiotherapy",
+      "Chemotherapy",
+      "Steroid therapy",
+      "SLE",
+      "Uraemia",
+      "Cushing’s syndrome"
+    ]
+  },
+  "Polycythemia": {
+    "General": [
+      "Primary polycythemia",
+      "Polycythemia vera",
+      "Secondary polycythemia",
+      "Appropriate erythropoietin production (hypoxia)",
+      "Smoking (due to carbon monoxide exposure)",
+      "Chronic obstructive pulmonary disease",
+      "Long-term exposure to high altitude",
+      "Cyanotic heart disease",
+      "High-affinity hemoglobinopathy",
+      "Inappropriate erythropoietin production",
+      "Renal carcinoma or cysts",
+      "Renal artery stenosis",
+      "Renal amyloidosis",
+      "Hepatocellular carcinoma",
+      "Massive uterine fibroids",
+      "Cerebellar hemangioblastoma"
+    ],
+    "NORMAL RED CELL MASS)": [
+      "Low plasma volume polycythemia",
+      "Dehydration",
+      "Burns",
+      "Enteropathy",
+      "Stress; Gaisböck’s syndrome"
+    ]
+  },
+  "Thrombocytopenia": {
+    "REDUCED PRODUCTION": [
+      "Aplastic anaemia",
+      "Drugs, e.g. tolbutamide, alcohol, cytotoxic agents",
+      "Viral infections, e.g. EBV, CMV",
+      "Myelodysplasia",
+      "Bone marrow inﬁltration, e.g. carcinoma, leukaemia, myeloma,",
+      "Megaloblastic anaemia",
+      "Hereditary thrombocytopenia"
+    ],
+    "IMMUNE": [
+      "ITP",
+      "Drugs, e.g. penicillins, heparins, quinine, sulphonamides,",
+      "Infections",
+      "Post-transfusion"
+    ],
+    "NON-IMMUNE": [
+      "Disseminated intravascular coagulation (DIC)",
+      "Thrombotic thrombocytopenic purpura",
+      "Hemolytic uraemic syndrome"
+    ],
+    "HYPERSPLENISM": [
+      "Sequestration of platelets"
+    ]
+  },
+  "Thrombocytosis": {
+    "ESSENTIAL (PRIMARY)": [
+      "Essential thrombocythemia (myeloproliferative disorder)",
+      "Alternative chronic myeloproliferative disorders, e.g. chronic"
+    ],
+    "REACTIVE (SECONDARY)": [
+      "Hemorrhage",
+      "Hemolysis",
+      "Trauma",
+      "Surgery",
+      "Postpartum",
+      "Chronic inﬂammation, e.g. rheumatoid arthritis, inﬂammatory",
+      "Iron deﬁciency anaemia",
+      "Infection",
+      "Malignant disease",
+      "Hyposplenism (splenectomy, splenic atrophy)"
+    ]
+  }
+}

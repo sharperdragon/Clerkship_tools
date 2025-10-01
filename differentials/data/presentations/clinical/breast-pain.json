@@ -1,4 +1,307 @@
 {
-  "presentation": "Breast pain",
-  "items": []
+  "presentation": "breast pain",
+  "items": [
+    {
+      "name": "Cyclic mastalgia (fibrocystic change)",
+      "system": "Breast",
+      "freq": "common",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [
+          "insidious"
+        ],
+        "progression": [
+          "intermittent"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "menses",
+          "caffeine"
+        ],
+        "quality": [
+          "aching",
+          "tender"
+        ],
+        "timing": [
+          "cyclical"
+        ],
+        "region": [
+          "breast"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "nipple-discharge"
+        ]
+      }
+    },
+    {
+      "name": "Noncyclic mastalgia",
+      "system": "Breast",
+      "freq": "common",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [
+          "subacute"
+        ],
+        "progression": [
+          "stable"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "movement"
+        ],
+        "quality": [
+          "sharp",
+          "burning"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "breast"
+        ],
+        "radiation": [
+          "axilla"
+        ],
+        "severity": [
+          "mild"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "n/a"
+        ]
+      }
+    },
+    {
+      "name": "Mastitis",
+      "system": "Infectious",
+      "freq": "occasional",
+      "redFlag": true,
+      "symptoms": {
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "breastfeeding"
+        ],
+        "quality": [
+          "tender",
+          "warm"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "breast"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "fever",
+          "rigors",
+          "malaise"
+        ]
+      }
+    },
+    {
+      "name": "Breast abscess",
+      "system": "Infectious",
+      "freq": "occasional",
+      "redFlag": true,
+      "symptoms": {
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "breastfeeding"
+        ],
+        "quality": [
+          "fluctuant",
+          "tender"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "breast"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "fever",
+          "rigors"
+        ]
+      }
+    },
+    {
+      "name": "Costochondritis (extramammary pain)",
+      "system": "Musculoskeletal",
+      "freq": "occasional",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "improving"
+        ],
+        "palliate": [
+          "rest",
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "deep-breathing",
+          "coughing"
+        ],
+        "quality": [
+          "sharp"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "chest-wall"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "n/a"
+        ]
+      }
+    },
+    {
+      "name": "Invasive breast cancer (painful presentation)",
+      "system": "Oncology",
+      "freq": "rare",
+      "redFlag": true,
+      "symptoms": {
+        "onset": [
+          "insidious"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "aching"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "breast"
+        ],
+        "radiation": [
+          "axilla"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "nipple-retraction",
+          "skin-dimpling",
+          "weight-loss"
+        ]
+      }
+    },
+    {
+      "name": "Mondor disease",
+      "system": "Vascular",
+      "freq": "rare",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "improving"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "movement"
+        ],
+        "quality": [
+          "cord-like",
+          "tender"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "breast"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "cord-like-thrombosed-vein"
+        ]
+      }
+    }
+  ],
+  "symptoms": {}
 }

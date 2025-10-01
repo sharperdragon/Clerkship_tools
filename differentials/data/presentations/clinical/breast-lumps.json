@@ -1,4 +1,520 @@
 {
-  "presentation": "Breast lumps",
-  "items": []
+  "presentation": "breast lumps",
+  "items": [
+    {
+      "name": "Fibroadenoma",
+      "system": "Breast",
+      "freq": "common",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [
+          "insidious"
+        ],
+        "progression": [
+          "stable"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "firm",
+          "mobile"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "breast"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "n/a"
+        ]
+      }
+    },
+    {
+      "name": "Breast cyst",
+      "system": "Breast",
+      "freq": "common",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [
+          "subacute"
+        ],
+        "progression": [
+          "stable"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "menses"
+        ],
+        "quality": [
+          "fluctuant",
+          "tender"
+        ],
+        "timing": [
+          "cyclical"
+        ],
+        "region": [
+          "breast"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "nipple-discharge"
+        ]
+      }
+    },
+    {
+      "name": "Fibrocystic change",
+      "system": "Breast",
+      "freq": "common",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [
+          "insidious"
+        ],
+        "progression": [
+          "intermittent"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "menses",
+          "caffeine"
+        ],
+        "quality": [
+          "lumpy",
+          "tender"
+        ],
+        "timing": [
+          "cyclical"
+        ],
+        "region": [
+          "breast"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "nipple-discharge"
+        ]
+      }
+    },
+    {
+      "name": "Mastitis",
+      "system": "Infectious",
+      "freq": "occasional",
+      "redFlag": true,
+      "symptoms": {
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "breastfeeding"
+        ],
+        "quality": [
+          "tender",
+          "warm"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "breast"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "fever",
+          "rigors",
+          "malaise"
+        ]
+      }
+    },
+    {
+      "name": "Breast abscess",
+      "system": "Infectious",
+      "freq": "occasional",
+      "redFlag": true,
+      "symptoms": {
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "breastfeeding"
+        ],
+        "quality": [
+          "fluctuant",
+          "tender"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "breast"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "fever",
+          "rigors"
+        ]
+      }
+    },
+    {
+      "name": "Fat necrosis (post-trauma)",
+      "system": "Breast",
+      "freq": "occasional",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [
+          "subacute"
+        ],
+        "progression": [
+          "stable"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "post-traumatic"
+        ],
+        "quality": [
+          "firm"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "breast"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "skin-dimpling"
+        ]
+      }
+    },
+    {
+      "name": "Intraductal papilloma",
+      "system": "Breast",
+      "freq": "occasional",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [
+          "insidious"
+        ],
+        "progression": [
+          "stable"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "subareolar-nodule"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "areolar"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "nipple-discharge"
+        ]
+      }
+    },
+    {
+      "name": "Phyllodes tumor",
+      "system": "Breast",
+      "freq": "rare",
+      "redFlag": true,
+      "symptoms": {
+        "onset": [
+          "subacute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "firm",
+          "lobulated"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "breast"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "rapid-growth"
+        ]
+      }
+    },
+    {
+      "name": "Invasive ductal or lobular carcinoma",
+      "system": "Oncology",
+      "freq": "occasional",
+      "redFlag": true,
+      "symptoms": {
+        "onset": [
+          "insidious"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "hard",
+          "irregular",
+          "fixed"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "breast"
+        ],
+        "radiation": [
+          "axilla"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "nipple-retraction",
+          "skin-dimpling",
+          "peau-d-orange",
+          "weight-loss"
+        ]
+      }
+    },
+    {
+      "name": "Inflammatory breast cancer",
+      "system": "Oncology",
+      "freq": "rare",
+      "redFlag": true,
+      "symptoms": {
+        "onset": [
+          "subacute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "warm",
+          "tender"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "breast"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "peau-d-orange",
+          "axillary-lymphadenopathy",
+          "weight-loss"
+        ]
+      }
+    },
+    {
+      "name": "Mondor disease (superficial thrombophlebitis)",
+      "system": "Vascular",
+      "freq": "rare",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "improving"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "movement"
+        ],
+        "quality": [
+          "cord-like",
+          "tender"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "breast"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "cord-like-thrombosed-vein"
+        ]
+      }
+    },
+    {
+      "name": "Axillary lymphadenopathy (malignant or reactive)",
+      "system": "Lymphatic",
+      "freq": "occasional",
+      "redFlag": true,
+      "symptoms": {
+        "onset": [
+          "subacute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "firm",
+          "matted"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "axilla"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "fever",
+          "weight-loss",
+          "malaise"
+        ]
+      }
+    }
+  ],
+  "symptoms": {}
 }

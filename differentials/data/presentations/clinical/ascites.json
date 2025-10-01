@@ -1,4 +1,318 @@
 {
-  "presentation": "Ascites",
-  "items": []
+  "presentation": "ascites",
+  "items": [
+    {
+      "name": "Cirrhosis (portal hypertension)",
+      "system": "Hepatic",
+      "freq": "common",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [
+          "subacute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "rest",
+          "npo"
+        ],
+        "provoke": [
+          "oral-intake",
+          "alcohol"
+        ],
+        "quality": [
+          "pressure"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "diffuse"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "shifting-dullness",
+          "fluid-wave"
+        ],
+        "other symptoms": [
+          "distension",
+          "jaundice",
+          "weight-loss",
+          "malaise"
+        ]
+      }
+    },
+    {
+      "name": "Malignant ascites (peritoneal carcinomatosis)",
+      "system": "Oncology",
+      "freq": "occasional",
+      "redFlag": true,
+      "symptoms": {
+        "onset": [
+          "insidious"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "pressure",
+          "dull"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "diffuse"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "shifting-dullness",
+          "fluid-wave"
+        ],
+        "other symptoms": [
+          "weight-loss",
+          "anorexia",
+          "fever"
+        ]
+      }
+    },
+    {
+      "name": "Congestive heart failure",
+      "system": "Cardiac",
+      "freq": "occasional",
+      "redFlag": true,
+      "symptoms": {
+        "onset": [
+          "subacute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "exercise"
+        ],
+        "quality": [
+          "pressure"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "diffuse"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "shortness-of-breath",
+          "edema",
+          "fatigue"
+        ]
+      }
+    },
+    {
+      "name": "Nephrotic syndrome (hypoalbuminemia)",
+      "system": "Renal",
+      "freq": "rare",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [
+          "subacute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "pressure"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "diffuse"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "edema",
+          "fatigue"
+        ]
+      }
+    },
+    {
+      "name": "Tuberculous peritonitis",
+      "system": "Infectious disease",
+      "freq": "rare",
+      "redFlag": true,
+      "symptoms": {
+        "onset": [
+          "subacute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "dull"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "diffuse"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "fever",
+          "weight-loss",
+          "night-sweats"
+        ]
+      }
+    },
+    {
+      "name": "Pancreatitis-associated ascites",
+      "system": "Pancreas",
+      "freq": "rare",
+      "redFlag": true,
+      "symptoms": {
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "leaning-forward",
+          "npo"
+        ],
+        "provoke": [
+          "alcohol",
+          "fatty-meals"
+        ],
+        "quality": [
+          "pressure"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "epigastrium",
+          "diffuse"
+        ],
+        "radiation": [
+          "back"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "cullen-sign",
+          "grey-turner-sign"
+        ],
+        "other symptoms": [
+          "nausea",
+          "vomiting",
+          "fever"
+        ]
+      }
+    },
+    {
+      "name": "Budd\u2013Chiari syndrome (hepatic vein thrombosis)",
+      "system": "Hepatic/vascular",
+      "freq": "rare",
+      "redFlag": true,
+      "symptoms": {
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "pressure",
+          "aching"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "ruq",
+          "diffuse"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "jaundice",
+          "hepatomegaly",
+          "leg-swelling"
+        ]
+      }
+    }
+  ],
+  "symptoms": {}
 }

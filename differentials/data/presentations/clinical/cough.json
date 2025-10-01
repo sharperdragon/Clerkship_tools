@@ -1,4 +1,475 @@
 {
-  "presentation": "Cough",
-  "items": []
+  "presentation": "cough",
+  "items": [
+    {
+      "name": "Upper respiratory infection (viral)",
+      "system": "Respiratory",
+      "freq": "common",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "improving"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "dry"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "chest"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "fever",
+          "nasal-discharge",
+          "sore-throat"
+        ]
+      }
+    },
+    {
+      "name": "Acute bronchitis",
+      "system": "Respiratory",
+      "freq": "common",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "improving"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "productive"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "chest"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "fever",
+          "wheeze"
+        ]
+      }
+    },
+    {
+      "name": "Pneumonia",
+      "system": "Respiratory",
+      "freq": "occasional",
+      "redFlag": true,
+      "symptoms": {
+        "onset": [
+          "subacute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "productive"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "chest"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "fever",
+          "pleuritic-pain",
+          "shortness-of-breath"
+        ]
+      }
+    },
+    {
+      "name": "Asthma",
+      "system": "Respiratory",
+      "freq": "common",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [
+          "subacute"
+        ],
+        "progression": [
+          "intermittent"
+        ],
+        "palliate": [
+          "inhaler"
+        ],
+        "provoke": [
+          "exercise",
+          "allergens"
+        ],
+        "quality": [
+          "wheeze"
+        ],
+        "timing": [
+          "nocturnal",
+          "episodic"
+        ],
+        "region": [
+          "chest"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "shortness-of-breath",
+          "chest-tightness"
+        ]
+      }
+    },
+    {
+      "name": "COPD exacerbation",
+      "system": "Respiratory",
+      "freq": "occasional",
+      "redFlag": true,
+      "symptoms": {
+        "onset": [
+          "subacute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "infection",
+          "smoke-exposure"
+        ],
+        "quality": [
+          "productive"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "chest"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "shortness-of-breath",
+          "wheeze"
+        ]
+      }
+    },
+    {
+      "name": "Post-nasal drip (upper airway cough syndrome)",
+      "system": "ENT",
+      "freq": "occasional",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [
+          "subacute"
+        ],
+        "progression": [
+          "intermittent"
+        ],
+        "palliate": [
+          "antihistamines"
+        ],
+        "provoke": [
+          "allergens"
+        ],
+        "quality": [
+          "throat-clearing"
+        ],
+        "timing": [
+          "nocturnal"
+        ],
+        "region": [
+          "throat"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "nasal-discharge",
+          "sore-throat"
+        ]
+      }
+    },
+    {
+      "name": "GERD-related cough",
+      "system": "Gastrointestinal",
+      "freq": "occasional",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [
+          "insidious"
+        ],
+        "progression": [
+          "intermittent"
+        ],
+        "palliate": [
+          "ppi"
+        ],
+        "provoke": [
+          "postprandial",
+          "supine-position"
+        ],
+        "quality": [
+          "dry"
+        ],
+        "timing": [
+          "nocturnal"
+        ],
+        "region": [
+          "lower-chest",
+          "throat"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "heartburn",
+          "dysphagia"
+        ]
+      }
+    },
+    {
+      "name": "ACE-inhibitor cough",
+      "system": "Toxicologic",
+      "freq": "occasional",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [
+          "subacute"
+        ],
+        "progression": [
+          "stable"
+        ],
+        "palliate": [
+          "medication-change"
+        ],
+        "provoke": [
+          "medication"
+        ],
+        "quality": [
+          "dry"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "throat"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "n/a"
+        ]
+      }
+    },
+    {
+      "name": "Pertussis",
+      "system": "Infectious",
+      "freq": "rare",
+      "redFlag": true,
+      "symptoms": {
+        "onset": [
+          "subacute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "paroxysmal"
+        ],
+        "timing": [
+          "episodic"
+        ],
+        "region": [
+          "chest"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "post-tussive-emesis"
+        ]
+      }
+    },
+    {
+      "name": "Tuberculosis",
+      "system": "Infectious",
+      "freq": "rare",
+      "redFlag": true,
+      "symptoms": {
+        "onset": [
+          "insidious"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "productive"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "chest"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "fever",
+          "weight-loss",
+          "night-sweats",
+          "hemoptysis"
+        ]
+      }
+    },
+    {
+      "name": "Foreign body aspiration",
+      "system": "Respiratory",
+      "freq": "rare",
+      "redFlag": true,
+      "symptoms": {
+        "onset": [
+          "sudden"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "oral-intake"
+        ],
+        "quality": [
+          "paroxysmal"
+        ],
+        "timing": [
+          "episodic"
+        ],
+        "region": [
+          "chest"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "wheeze",
+          "stridor"
+        ]
+      }
+    }
+  ],
+  "symptoms": {}
 }

@@ -1,4 +1,104 @@
 {
   "presentation": "Dyspnoea",
-  "items": []
+  "symptoms": {},
+  "items": [
+    {
+      "name": "Pneumothorax (Fig. 15)",
+      "category": "SUDDEN (SECONDS TO MINUTES)",
+      "freq": "common"
+    },
+    {
+      "name": "Chest trauma",
+      "category": "SUDDEN (SECONDS TO MINUTES)",
+      "freq": "common"
+    },
+    {
+      "name": "Aspiration",
+      "category": "SUDDEN (SECONDS TO MINUTES)",
+      "freq": "common"
+    },
+    {
+      "name": "Pulmonary oedema",
+      "category": "SUDDEN (SECONDS TO MINUTES)",
+      "freq": "common"
+    },
+    {
+      "name": "Pulmonary embolism",
+      "category": "SUDDEN (SECONDS TO MINUTES)",
+      "freq": "common"
+    },
+    {
+      "name": "Anaphylaxis",
+      "category": "SUDDEN (SECONDS TO MINUTES)",
+      "freq": "uncommon"
+    },
+    {
+      "name": "Asthma",
+      "category": "ACUTE (HOURS TO DAYS)",
+      "freq": "common"
+    },
+    {
+      "name": "Respiratory tract infection",
+      "category": "ACUTE (HOURS TO DAYS)",
+      "freq": "common"
+    },
+    {
+      "name": "Pleural effusion",
+      "category": "ACUTE (HOURS TO DAYS)",
+      "freq": "common"
+    },
+    {
+      "name": "Chronic air\ufb02ow limitation (COPD)",
+      "category": "CHRONIC (MONTHS TO YEARS)",
+      "freq": "common"
+    },
+    {
+      "name": "Anaemia",
+      "category": "CHRONIC (MONTHS TO YEARS)",
+      "freq": "common"
+    },
+    {
+      "name": "Arrhythmia",
+      "category": "CHRONIC (MONTHS TO YEARS)",
+      "freq": "common"
+    },
+    {
+      "name": "Valvular heart disease",
+      "category": "CHRONIC (MONTHS TO YEARS)",
+      "freq": "common"
+    },
+    {
+      "name": "Cardiac failure",
+      "category": "CHRONIC (MONTHS TO YEARS)",
+      "freq": "common"
+    },
+    {
+      "name": "Cystic \ufb01brosis",
+      "category": "CHRONIC (MONTHS TO YEARS)",
+      "freq": "uncommon"
+    },
+    {
+      "name": "Idiopathic pulmonary \ufb01brosis",
+      "category": "CHRONIC (MONTHS TO YEARS)",
+      "freq": "uncommon"
+    },
+    {
+      "name": "Chest wall deformities",
+      "category": "CHRONIC (MONTHS TO YEARS)",
+      "freq": "rare"
+    },
+    {
+      "name": "Neuromuscular disorders",
+      "category": "CHRONIC (MONTHS TO YEARS)",
+      "freq": "rare"
+    },
+    {
+      "name": "Pulmonary hypertension",
+      "category": "CHRONIC (MONTHS TO YEARS)",
+      "freq": "rare"
+    }
+  ],
+  "sources": {
+    "index_key": "Dyspnoea"
+  }
 }

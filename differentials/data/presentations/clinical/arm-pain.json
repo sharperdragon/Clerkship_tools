@@ -1,4 +1,264 @@
 {
-  "presentation": "Arm pain",
-  "items": []
+  "presentation": "arm pain",
+  "items": [
+    {
+      "name": "Cervical radiculopathy (C6\u2013C7)",
+      "system": "Neurologic",
+      "freq": "occasional",
+      "redFlag": true,
+      "symptoms": {
+        "onset": [
+          "subacute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "movement"
+        ],
+        "quality": [
+          "shooting",
+          "sharp"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "numbness",
+          "weakness"
+        ]
+      }
+    },
+    {
+      "name": "Lateral epicondylitis",
+      "system": "Musculoskeletal",
+      "freq": "common",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [
+          "subacute"
+        ],
+        "progression": [
+          "stable"
+        ],
+        "palliate": [
+          "rest",
+          "ice"
+        ],
+        "provoke": [
+          "exercise"
+        ],
+        "quality": [
+          "aching"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "decreased-grip"
+        ]
+      }
+    },
+    {
+      "name": "Biceps tendonitis",
+      "system": "Musculoskeletal",
+      "freq": "common",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [
+          "subacute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "rest",
+          "ice"
+        ],
+        "provoke": [
+          "movement"
+        ],
+        "quality": [
+          "aching"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "tender-groove"
+        ]
+      }
+    },
+    {
+      "name": "Myocardial ischemia (referred)",
+      "system": "Cardiac",
+      "freq": "occasional",
+      "redFlag": true,
+      "symptoms": {
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "nitrates",
+          "rest"
+        ],
+        "provoke": [
+          "exercise"
+        ],
+        "quality": [
+          "pressure"
+        ],
+        "timing": [
+          "episodic"
+        ],
+        "region": [
+          "lower-chest"
+        ],
+        "radiation": [
+          "left-shoulder",
+          "jaw"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "shortness-of-breath",
+          "diaphoresis",
+          "nausea"
+        ]
+      }
+    },
+    {
+      "name": "Axillary vein thrombosis",
+      "system": "Vascular",
+      "freq": "rare",
+      "redFlag": true,
+      "symptoms": {
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "exercise"
+        ],
+        "quality": [
+          "aching"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "swelling",
+          "cyanosis",
+          "prominent-veins"
+        ]
+      }
+    },
+    {
+      "name": "Complex regional pain syndrome",
+      "system": "Neurologic",
+      "freq": "rare",
+      "redFlag": false,
+      "symptoms": {
+        "onset": [
+          "subacute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "burning"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "allodynia",
+          "color-change",
+          "edema"
+        ]
+      }
+    }
+  ],
+  "symptoms": {}
 }
