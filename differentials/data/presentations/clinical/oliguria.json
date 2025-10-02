@@ -250,7 +250,7 @@
     },
     {
       "name": "Mismatched transfusion (hemoglobinuria)",
-      "system": "Others",
+      "system": "Other",
       "redFlag": false,
       "hpi": {
         "onset": [],
@@ -269,7 +269,7 @@
     },
     {
       "name": "Crush injuries (myoglobinuria)",
-      "system": "Others",
+      "system": "Other",
       "redFlag": false,
       "hpi": {
         "onset": [],

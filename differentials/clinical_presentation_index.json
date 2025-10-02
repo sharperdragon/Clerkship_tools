@@ -22,7 +22,7 @@
     "Obstruction": {
       "freq": "common"
     },
-    "Diverticulitis (Fig. 1)": {
+    "Diverticulitis": {
       "freq": "common"
     },
     "Gastroenteritis": {
@@ -270,7 +270,7 @@
     "Carcinoma": {
       "freq": "uncommon"
     },
-    "Polycystic kidney (Fig. 2)": {
+    "Polycystic kidney": {
       "freq": "uncommon"
     },
     "Pyonephrosis/perinephric abscess": {
@@ -376,7 +376,7 @@
     "Perianal hematoma": {
       "freq": "common"
     },
-    "Thrombosed hemorrhoids (Fig. 3)": {
+    "Thrombosed hemorrhoids": {
       "freq": "common"
     },
     "Anorectal abscess (i.e. perinal, interspincteric, ischiorectal)": {
@@ -409,7 +409,7 @@
 },
 "Arm pain": {
   "CERVICAL LESIONS": {
-    "Disc lesion (Fig. 4)": {
+    "Disc lesion": {
       "freq": "common"
     },
     "Cervical spondylosis": {
@@ -656,7 +656,7 @@
     }
   },
   "INFLAMMATORY": {
-    "Ankylosing spondylitis (Fig. 6)": {
+    "Ankylosing spondylitis": {
       "freq": "common"
     },
     "Rheumatology disorders": {
@@ -741,7 +741,7 @@
 },
 "Breast lumps": {
   "MALIGNANT": {
-    "Carcinoma (Fig. 7)": {
+    "Carcinoma": {
       "freq": "common"
     },
     "Phyllodes tumour (some behave in benign fashion)": {
@@ -811,7 +811,7 @@
     "Duct ectasia": {
       "freq": "common"
     },
-    "Breast abscess (Fig. 8)": {
+    "Breast abscess": {
       "freq": "common"
     },
     "Pregnancy": {
@@ -906,7 +906,7 @@
     "• Cirrhosis": {},
     "• Ulcerative colitis": {},
     "• Crohn’s disease": {},
-    "• Coeliac disease": {},
+    "• Celiac disease": {},
     "• Graves’ disease (hyperthyroidism)": {},
     "• Familial": {}
   }
@@ -916,7 +916,7 @@
     "Head injury (diffuse axonal injury)": {
       "freq": "common"
     },
-    "Extradural hemorrhage (Fig. 11)": {
+    "Extradural hemorrhage": {
       "freq": "common"
     },
     "Subdural hemorrhage": {
@@ -1239,7 +1239,7 @@
       "freq": "common"
     },
     "TB (bloodstained) • (common where TB is endemic)": {
-      "Lung cancer (bloodstained) (Fig. 12)": {
+      "Lung cancer (bloodstained)": {
         "freq": "uncommon"
       },
       "Pulmonary embolism (bloodstained)": {
@@ -1412,12 +1412,12 @@
     "Ulcerative colitis": {
       "freq": "uncommon"
     },
-    "Crohn’s disease (Fig. 13)": {
+    "Crohn’s disease": {
       "freq": "uncommon"
     }
   },
   "MALABSORPTION": {
-    "Coeliac disease": {
+    "Celiac disease": {
       "freq": "uncommon"
     },
     "Blind loop syndrome": {
@@ -1607,7 +1607,7 @@
     "Gastro-oesophageal reﬂux": {
       "freq": "common"
     },
-    "Carcinoma (Fig. 14)": {
+    "Carcinoma": {
       "freq": "common"
     },
     "Irradiation": {
@@ -1676,9 +1676,9 @@
     }
   }
 },
-"Dyspnoea": {
+"Dyspnea": {
   "SUDDEN (SECONDS TO MINUTES)": {
-    "Pneumothorax (Fig. 15)": {
+    "Pneumothorax": {
       "freq": "common"
     },
     "Chest trauma": {
@@ -1768,7 +1768,7 @@
     }
   },
   "MIDDLE EAR": {
-    "Acute otitis media (AOM) (Fig. 16)": {
+    "Acute otitis media (AOM)": {
       "freq": "common"
     },
     "Chronic otitis media": {
@@ -1815,7 +1815,7 @@
 },
 "Eye disorders": {
   "EYELIDS": {
-    "Stye (hordeolum internum/externum) (Fig. 17)": {
+    "Stye (hordeolum internum/externum)": {
       "freq": "common"
     },
     "Xanthelasma": {
@@ -2023,7 +2023,7 @@
     "Dental abscess": {
       "freq": "common"
     },
-    "Herpes zoster (Fig. 18)": {
+    "Herpes zoster": {
       "freq": "uncommon"
     },
     "Post-herpetic neuralgia": {
@@ -2208,7 +2208,7 @@
     "Pyogenic granuloma": {
       "freq": "uncommon"
     },
-    "Boutonnière deformity (Fig. 21)": {
+    "Boutonnière deformity": {
       "freq": "uncommon"
     },
     "Heberden’s/Bouchard’s nodes": {
@@ -2275,7 +2275,7 @@
     "Small vessel disease": {
       "freq": "uncommon"
     },
-    "Raynaud’s phenomenon (Fig. 22)": {
+    "Raynaud’s phenomenon": {
       "freq": "uncommon"
     },
     "Buerger’s disease": {
@@ -2479,7 +2479,7 @@
     }
   },
   "PERIPHERAL NERVE LESIONS": {
-    "Diabetes (Fig. 24)": {
+    "Diabetes": {
       "freq": "common"
     },
     "Peripheral nerve injuries": {
@@ -2625,7 +2625,7 @@
     "Direct inguinal hernia": {
       "freq": "common"
     },
-    "Indirect inguinal hernia (Fig. 26)": {
+    "Indirect inguinal hernia": {
       "freq": "common"
     },
     "Imperfectly descended testis": {
@@ -2678,7 +2678,7 @@
     }
   },
   "PATHOLOGICAL": {
-    "Chronic liver disease (Fig. 27)": {
+    "Chronic liver disease": {
       "freq": "common"
     },
     "Drugs": {
@@ -2751,7 +2751,7 @@
     }
   },
   "BLADDER": {
-    "Carcinoma (Fig. 29)": {
+    "Carcinoma": {
       "freq": "common"
     },
     "Inﬂammatory, e.g. cystitis, TB, schistosomiasis": {
@@ -2836,7 +2836,7 @@
     "Pneumonia": {
       "freq": "common"
     },
-    "TB (worldwide) (Fig. 30)": {
+    "TB (worldwide)": {
       "freq": "common"
     },
     "Chronic obstructive pulmonary disease (COPD)": {
@@ -2971,7 +2971,7 @@
     "Dupuytren’s contracture": {
       "freq": "common"
     },
-    "Rheumatoid arthritis (Fig. 32)": {
+    "Rheumatoid arthritis": {
       "freq": "common"
     },
     "Osteoarthritis": {
@@ -3014,7 +3014,7 @@
     "Cerebrovascular": {
       "freq": "common"
     },
-    "Subarachnoid hemorrhage (Fig. 33)": {
+    "Subarachnoid hemorrhage": {
       "freq": "common"
     },
     "Intracranial hemorrhage/infarction": {
@@ -3130,7 +3130,7 @@
     }
   },
   "MALIGNANCY": {
-    "Metastases (Fig. 34)": {
+    "Metastases": {
       "freq": "common"
     },
     "Hepatoma": {
@@ -3330,7 +3330,7 @@
     "Diabetic nephropathy": {
       "freq": "common"
     },
-    "Renal artery stenosis (Fig. 34)": {
+    "Renal artery stenosis": {
       "freq": "uncommon"
     },
     "Chronic pyelonephritis": {
@@ -3623,7 +3623,7 @@
     }
   },
   "CYSTIC": {
-    "Dental cysts (Fig. 37)": {
+    "Dental cysts": {
       "freq": "rare"
     },
     "Dentigerous cysts": {
@@ -3767,7 +3767,7 @@
     }
   },
   "DEGENERATIVE": {
-    "Osteoarthritis (Fig. 38)": {
+    "Osteoarthritis": {
       "freq": "common"
     },
     "Supraspinatus tendinosis": {
@@ -4079,7 +4079,7 @@
     }
   },
   "NEOPLASTIC": {
-    "Hypernephroma (Fig. 39)": {
+    "Hypernephroma": {
       "freq": "uncommon"
     }
   }
@@ -4243,7 +4243,7 @@
     }
   },
   "VASCULAR": {
-    "Venous ulcers (Fig. 42)": {
+    "Venous ulcers": {
       "freq": "common"
     }
   },
@@ -4311,7 +4311,7 @@
     "Pyogenic granuloma": {
       "freq": "uncommon"
     },
-    "Squamous cell carcinoma (Fig. 43)": {
+    "Squamous cell carcinoma": {
       "freq": "uncommon"
     },
     "Malignant melanoma": {
@@ -4552,7 +4552,7 @@
     "Traumatic": {
       "freq": "common"
     },
-    "Aphthous (Fig. 44)": {
+    "Aphthous": {
       "freq": "common"
     }
   },
@@ -4756,10 +4756,10 @@
     "Iron deﬁciency anemia (koilonychia)": {
       "freq": "common"
     },
-    "Chronic liver disease (leuconychia)": {
+    "Chronic liver disease (leukonychia)": {
       "freq": "common"
     },
-    "Diabetes mellitus (leuconychia)": {
+    "Diabetes mellitus (leukonychia)": {
       "freq": "common"
     },
     "Psoriatic arthritis (onycholysis)": {
@@ -4770,7 +4770,7 @@
     }
   },
   "DERMATOLOGICAL": {
-    "Psoriasis (Fig. 45)": {
+    "Psoriasis": {
       "freq": "common"
     },
     "Eczema": {
@@ -4920,7 +4920,7 @@
     "Thyroid": {
       "freq": "common"
     },
-    "Thyroglossal cyst (Fig. 46)": {
+    "Thyroglossal cyst": {
       "freq": "rare"
     },
     "Salivary glands": {
@@ -5169,7 +5169,7 @@
     "Premature atrial contractions (atrial ectopic beats)*": {
       "freq": "common"
     },
-    "Atrial ﬁbrillation* (Fig. 47)": {
+    "Atrial ﬁbrillation*": {
       "freq": "common"
     },
     "Supraventricular tachycardia (AVRT, AVNRT)": {
@@ -5206,7 +5206,7 @@
     "Trauma (bite)": {
       "freq": "uncommon"
     },
-    "Carcinoma (Fig. 48)": {
+    "Carcinoma": {
       "freq": "rare"
     },
     "Erythroplasia of Queyrat (carcinoma in situ)": {
@@ -5339,7 +5339,7 @@
     "Baker’s cyst": {
       "freq": "uncommon"
     },
-    "Popliteal artery aneurysm (Fig. 49)": {
+    "Popliteal artery aneurysm": {
       "freq": "uncommon"
     }
   }
@@ -5415,7 +5415,7 @@
     "Skin tags": {
       "freq": "common"
     },
-    "Warts (Fig. 50)": {
+    "Warts": {
       "freq": "uncommon"
     },
     "Carcinoma": {
@@ -5585,7 +5585,7 @@
     }
   },
   "COLON AND RECTUM": {
-    "Carcinoma (Fig. 51)": {
+    "Carcinoma": {
       "freq": "common"
     },
     "Polyps": {
@@ -5657,7 +5657,7 @@
     }
   },
   "CYSTIC": {
-    "Sebaceous cysts (epidermal cysts) (Fig. 52)": {
+    "Sebaceous cysts (epidermal cysts)": {
       "freq": "common"
     }
   },
@@ -5772,7 +5772,7 @@
     "Hydrocele": {
       "freq": "common"
     },
-    "Epididymal cyst (spermatocele) (Fig. 54)": {
+    "Epididymal cyst (spermatocele)": {
       "freq": "common"
     },
     "Testicular tumour": {
@@ -5841,7 +5841,7 @@
     "Primary tumours": {
       "freq": "uncommon"
     },
-    "Leukemia (Fig. 55)": {
+    "Leukemia": {
       "freq": "uncommon"
     },
     "Lymphoma": {
@@ -5908,7 +5908,7 @@
     }
   },
   "MUCOSAL DISEASE": {
-    "Coeliac disease": {
+    "Celiac disease": {
       "freq": "common"
     },
     "Ileal resection": {
@@ -6233,7 +6233,7 @@
 },
 "Throat disorders": {
   "INFECTIVE": {
-    "Tonsillitis (Fig. 56)": {
+    "Tonsillitis": {
       "freq": "common"
     },
     "Bacterial, e.g. streptococcus, gonococcus": {
@@ -6405,7 +6405,7 @@
     "Anemia": {
       "freq": "common"
     },
-    "Coeliac disease": {
+    "Celiac disease": {
       "freq": "common"
     },
     "Pregnancy": {
@@ -6421,7 +6421,7 @@
 },
 "Toe lesions": {
   "TOENAILS": {
-    "Ingrowing toenail (Fig. 57)": {
+    "Ingrowing toenail": {
       "freq": "common"
     },
     "Subungual hematoma": {
@@ -6515,7 +6515,7 @@
     }
   },
   "COLOUR CHANGE": {
-    "White patches, e.g. leucoplakia, thrush": {
+    "White patches, e.g. leukoplakia, thrush": {
       "freq": "common"
     },
     "Pallor (anemia)": {
@@ -6584,7 +6584,7 @@
     "Dental trauma": {
       "freq": "common"
     },
-    "Carcinoma (Fig. 58)": {
+    "Carcinoma": {
       "freq": "uncommon"
     },
     "Chancre": {
@@ -6842,7 +6842,7 @@
     }
   },
   "OUTSIDE THE WALL": {
-    "Prostatic enlargement (Fig. 59)": {
+    "Prostatic enlargement": {
       "freq": "common"
     },
     "Fecal impaction": {
@@ -6893,7 +6893,7 @@
     "Bacterial vaginosis": {
       "freq": "common"
     },
-    "Trichomonas vaginosis (Fig. 60)": {
+    "Trichomonas vaginosis": {
       "freq": "common"
     },
     "Cervicitis, e.g. gonorrhoea, Chlamydia, herpes": {
@@ -6972,7 +6972,7 @@
     "Amaurosis fugax (thrombosis/embolism)": {
       "freq": "common"
     },
-    "Papilloedema (Fig. 61)": {
+    "Papilloedema": {
       "freq": "uncommon"
     },
     "Raised intracranial pressure": {
@@ -7148,7 +7148,7 @@
     "Pancreatitis": {
       "freq": "common"
     },
-    "Peptic ulceration/acute gastritis (Fig. 63)": {
+    "Peptic ulceration/acute gastritis": {
       "freq": "common"
     },
     "Peritonitis": {

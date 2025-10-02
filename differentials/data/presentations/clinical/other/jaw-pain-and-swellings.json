@@ -154,7 +154,7 @@
       "freq": "rare"
     },
     {
-      "name": "Dental cysts (Fig. 37)",
+      "name": "Dental cysts",
       "system": "Cystic",
       "redFlag": false,
       "hpi": {
@@ -248,25 +248,7 @@
       },
       "freq": "uncommon"
     },
-    {
-      "name": "rare",
-      "system": "Freq",
-      "redFlag": false,
-      "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
-      },
-      "freq": "unknown"
-    },
+
     {
       "name": "Secondary deposits",
       "system": "Burkitt\u2019s lymphoma \u2022 (endemic in equatorial Africa)",

@@ -96,25 +96,7 @@
       },
       "freq": "common"
     },
-    {
-      "name": "rare",
-      "system": "Freq",
-      "redFlag": false,
-      "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
-      },
-      "freq": "unknown"
-    },
+
     {
       "name": "Discitis",
       "system": "TB \u2022 (common in parts of the world where TB is endemic)",
@@ -135,7 +117,7 @@
       "freq": "rare"
     },
     {
-      "name": "Ankylosing spondylitis (Fig. 6)",
+      "name": "Ankylosing spondylitis",
       "system": "Inflammatory",
       "redFlag": false,
       "hpi": {
@@ -478,7 +460,7 @@
     },
     {
       "name": "Pelvic in\ufb02ammatory disease",
-      "system": "Gynaecological",
+      "system": "Gynecological",
       "redFlag": false,
       "hpi": {
         "onset": [],
@@ -497,7 +479,7 @@
     },
     {
       "name": "Endometriosis",
-      "system": "Gynaecological",
+      "system": "Gynecological",
       "redFlag": false,
       "hpi": {
         "onset": [],
@@ -516,7 +498,7 @@
     },
     {
       "name": "Uterine tumours",
-      "system": "Gynaecological",
+      "system": "Gynecological",
       "redFlag": false,
       "hpi": {
         "onset": [],

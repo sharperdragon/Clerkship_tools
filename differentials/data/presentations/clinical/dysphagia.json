@@ -40,7 +40,7 @@
       "freq": "common"
     },
     {
-      "name": "Carcinoma (Fig. 14)",
+      "name": "Carcinoma",
       "system": "In The Wall",
       "redFlag": false,
       "hpi": {
@@ -421,7 +421,7 @@
     },
     {
       "name": "Globus",
-      "system": "Others",
+      "system": "Other",
       "redFlag": false,
       "hpi": {
         "onset": [],

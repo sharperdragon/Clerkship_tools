@@ -1,5 +1,5 @@
 {
-  "presentation": "Leucopenia",
+  "presentation": "leukopenia",
   "items": [
     {
       "name": "Bone marrow depression, , malignant",
@@ -460,7 +460,7 @@
   ],
   "sources": {
     "index_keys": [
-      "Leucopenia"
+      "leukopenia"
     ],
     "index_type": "non-clinical"
   },

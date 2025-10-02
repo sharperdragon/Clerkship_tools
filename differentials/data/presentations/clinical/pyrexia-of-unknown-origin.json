@@ -478,7 +478,7 @@
     },
     {
       "name": "Post-immunisation",
-      "system": "Others",
+      "system": "Other",
       "redFlag": false,
       "hpi": {
         "onset": [],
@@ -497,7 +497,7 @@
     },
     {
       "name": "Drug induced",
-      "system": "Others",
+      "system": "Other",
       "redFlag": false,
       "hpi": {
         "onset": [],
@@ -516,7 +516,7 @@
     },
     {
       "name": "Familial Mediterranean fever",
-      "system": "Others",
+      "system": "Other",
       "redFlag": false,
       "hpi": {
         "onset": [],
@@ -535,7 +535,7 @@
     },
     {
       "name": "Munchausen\u2019s disease (factitious)",
-      "system": "Others",
+      "system": "Other",
       "redFlag": false,
       "hpi": {
         "onset": [],

@@ -1,37 +1,136 @@
-
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
+  <title>Clinical Differentials</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Clinical Differentials — Index</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="differentials_style.css" />
 </head>
 <body>
-  <header>
-    <h1><a style="font-size: 150%; background-color: transparent; padding: 3px 8px; border-radius: 8px; text-decoration:none; color: var(--ink)" href="../index.html">Clerkship Tools</a> <span style="font-size: 100%; font-weight: normal;">— Clinical Differentials Resource Browser</span></h1>
-    <div class="controls">
-      <input id="q" type="text" placeholder="Search presentation / etiology / system…" />
-      <select id="section">
-        <option value="">All sections</option>
-        <option>Clinical Presentations</option>
-        <option>Biochemical Presentations</option>
-        <option>Hematological Presentations</option>
-      </select>
-      <span id="status" class="pill">Idle</span>
+  <header class="app-header">
+    <div class="brand">
+      <a class="brand__home" href="/index.html" aria-label="Home">Clerkship Tools</a>
+      <h1 class="brand__title">Clinical Differentials</h1>
     </div>
+
+    <div class="controls controls--simple">
+      <button id="btnOpenFilters" class="btn ghost" aria-haspopup="dialog" aria-controls="drawer">Filters</button>
+      <input id="q" class="search" type="text" autocomplete="off"
+             placeholder="Search presentations, etiologies, systems" />
+      <div class="filters">
+        <label class="sr-only" for="section">Section</label>
+        <select id="section">
+          <option value="">All sections</option>
+          <option>Clinical Presentations</option>
+          <option>Biochemical Presentations</option>
+          <option>Hematological Presentations</option>
+        </select>
+      </div>
+      <div class="view-toggle" role="group" aria-label="View">
+        <button id="btnGrid" class="btn small" aria-pressed="true">Grid</button>
+        <button id="btnList" class="btn small ghost" aria-pressed="false">List</button>
+      </div>
+    </div>
+
+    <div id="stats" class="stats" aria-live="polite">Loading…</div>
   </header>
-  <main>
-    <div class="stats" id="stats">Loading…</div>
-    <div class="grid" id="grid"></div>
-    <div id="error" class="error"></div>
+
+  <!-- Drawer -->
+  <div id="drawer" class="drawer" aria-hidden="true" role="dialog" aria-label="Filters">
+    <div id="drawerScrim" class="drawer__scrim" tabindex="-1"></div>
+    <aside class="drawer__panel" role="document">
+      <div class="drawer__header">
+        <h2>Filters</h2>
+        <button id="btnCloseFilters" class="btn icon" aria-label="Close filters">✕</button>
+      </div>
+
+      <div class="drawer__content">
+        <div class="filter-block">
+          <label for="sectionDrawer">Section</label>
+          <select id="sectionDrawer">
+            <option value="">All sections</option>
+            <option>Clinical Presentations</option>
+            <option>Biochemical Presentations</option>
+            <option>Hematological Presentations</option>
+          </select>
+        </div>
+
+        <div class="filter-block">
+          <div class="filter-block__label">Systems</div>
+          <div id="systemChips" class="chips"></div>
+        </div>
+
+        <div class="filter-block">
+          <label class="checkbox">
+            <input id="toggleFreq" type="checkbox" />
+            <span>Show frequency column</span>
+          </label>
+        </div>
+
+        <div class="filter-block">
+          <label class="checkbox">
+            <input id="toggleCompact" type="checkbox" />
+            <span>Compact cards</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="drawer__footer">
+        <button id="btnClearFilters" class="btn ghost">Clear</button>
+        <button id="btnApplyFilters" class="btn primary">Apply</button>
+      </div>
+    </aside>
+  </div>
+
+  <main class="app-main">
+    <div id="error" class="error" role="alert" hidden></div>
+
+    <section id="results" class="grid" aria-live="polite">
+      <!-- Cards or List table will render here -->
+    </section>
+
+  <template id="tpl-card">
+    <article class="card" tabindex="0">
+      <header class="card__hd">
+        <h3 class="card__title"></h3>
+        <span class="badge"></span>
+        <!-- ? Collapse control: only visible when expanded -->
+        <button class="card__collapse btn small ghost" aria-label="Collapse" hidden>Collapse</button>
+      </header>
+      <div class="card__meta"></div>
+      <details class="card__details">
+        <!-- ! This summary will act as the collapse control when expanded -->
+        <summary class="card__summary" hidden>Collapse</summary>
+        <div class="card__body"></div>
+      </details>
+    </article>
+  </template>
+
+    <template id="tpl-list">
+      <table class="list">
+        <thead>
+          <tr>
+            <th>Presentation</th>
+            <th>Etiology</th>
+            <th>System</th>
+            <th class="th-freq">Freq</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </template>
+
+    <template id="tpl-empty">
+      <div class="empty">
+        <div class="empty__title">No matches</div>
+        <div class="empty__body">Try broader terms or clear filters.</div>
+      </div>
+    </template>
   </main>
-  <footer>
-    <span></span>
-  </footer>
-  
-  <script src="core_app.js"></script>
-  <script type="module" src="differentials_app.js"></script>
+  <script src="js/core_app.js"></script>
+  <script src="differentials_app.js"></script>
 </body>
 </html>

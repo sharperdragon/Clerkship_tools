@@ -40,7 +40,7 @@
       "freq": "common"
     },
     {
-      "name": "Carcinoma (Fig. 51)",
+      "name": "Carcinoma",
       "system": "Colon And Rectum",
       "redFlag": false,
       "hpi": {
@@ -345,7 +345,7 @@
     },
     {
       "name": "Anticoagulants",
-      "system": "Others",
+      "system": "Other",
       "redFlag": false,
       "hpi": {
         "onset": [],
@@ -364,7 +364,7 @@
     },
     {
       "name": "Bleeding diatheses",
-      "system": "Others",
+      "system": "Other",
       "redFlag": false,
       "hpi": {
         "onset": [],

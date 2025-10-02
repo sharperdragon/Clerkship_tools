@@ -459,7 +459,7 @@
     },
     {
       "name": "Stress, , family commitments",
-      "system": "Others",
+      "system": "Other",
       "redFlag": false,
       "hpi": {
         "onset": [],
@@ -478,7 +478,7 @@
     },
     {
       "name": "Depressive illness",
-      "system": "Others",
+      "system": "Other",
       "redFlag": false,
       "hpi": {
         "onset": [],
@@ -497,7 +497,7 @@
     },
     {
       "name": "Anemia",
-      "system": "Others",
+      "system": "Other",
       "redFlag": false,
       "hpi": {
         "onset": [],
@@ -515,8 +515,8 @@
       "freq": "common"
     },
     {
-      "name": "Coeliac disease",
-      "system": "Others",
+      "name": "Celiac disease",
+      "system": "Other",
       "redFlag": false,
       "hpi": {
         "onset": [],
@@ -535,7 +535,7 @@
     },
     {
       "name": "Pregnancy",
-      "system": "Others",
+      "system": "Other",
       "redFlag": false,
       "hpi": {
         "onset": [],
@@ -554,7 +554,7 @@
     },
     {
       "name": "The over-training syndrome",
-      "system": "Others",
+      "system": "Other",
       "redFlag": false,
       "hpi": {
         "onset": [],
@@ -573,7 +573,7 @@
     },
     {
       "name": "Carbon monoxide poisoning",
-      "system": "Others",
+      "system": "Other",
       "redFlag": false,
       "hpi": {
         "onset": [],

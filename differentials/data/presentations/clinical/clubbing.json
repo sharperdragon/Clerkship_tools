@@ -78,7 +78,7 @@
       "freq": "unknown"
     },
     {
-      "name": "Coeliac disease",
+      "name": "Celiac disease",
       "system": "Gastrointestinal",
       "redFlag": false,
       "hpi": {
@@ -116,7 +116,7 @@
       "freq": "unknown"
     },
     {
-      "name": "Familial",
+      "name": "Familial clubbing",
       "system": "Gastrointestinal",
       "redFlag": false,
       "hpi": {

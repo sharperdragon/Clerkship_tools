@@ -1,214 +1,503 @@
-// ================================
-  // $ Config (edit here)
-  // ================================
-  const PATHS = {
-    PRESENTATION_LIST: './Presentation_list.json',
-    BASE_DIR: './data/presentations'
+/* ============================================================================
+   Clinical Differentials App – path-aware loader for /differentials/*
+   - Reads Presentation_list.json (object of arrays with {name})
+   - Optional per-section index map (e.g., clinical_presentation_index.json)
+   - Tries several filename variants for resilience
+   ============================================================================ */
+
+/*! Config (edit here) */
+const CONFIG = {
+  searchDebounceMs: 220,
+  defaultView: "grid",
+  defaultShowFreq: false,
+  stateKey: "diff-ui-state-v4",
+};
+
+const PATHS = {
+  PRESENTATION_LIST: "./Presentation_list.json",
+  BASE_DIR: "./data/presentations",
+  // Optional index maps (provide only those you have)
+  INDEX_MAPS: {
+    clinical: "./clinical_presentation_index.json",
+    // biochemical: "./biochemical_presentation_index.json",
+    // hematological: "./hematological_presentation_index.json",
+  },
+};
+
+const SECTION_FOLDERS = {
+  "Clinical Presentations": "clinical",
+  "Biochemical Presentations": "biochemical",
+  "Hematological Presentations": "hematological",
+};
+
+/*! UI State */
+const UI = {
+  q: "",
+  section: "",
+  systems: new Set(),
+  view: CONFIG.defaultView,
+  showFreq: CONFIG.defaultShowFreq,
+  compact: false,
+};
+
+/* ---------------------------------- Utils --------------------------------- */
+const $ = (s) => document.querySelector(s);
+const hostEl = () => $("#results") || $("#grid");
+const statsEl = () => $("#stats");
+const errEl = () => $("#error");
+
+function debounce(fn, ms) { let t; return (...a) => { clearTimeout(t); t = setTimeout(() => fn(...a), ms); }; }
+const uniqSorted = (arr) => Array.from(new Set(arr)).sort((a,b)=>a.localeCompare(b));
+const val = (o, ...ks) => ks.reduce((a,k)=> (a && a[k]!=null ? a[k] : undefined), o);
+function escapeHTML(s){return String(s).replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[m]));}
+function slugify(s){
+  return String(s)
+    .normalize("NFKD").replace(/[\u0300-\u036f]/g,"")   // strip diacritics
+    .replace(/&/g,"and")
+    .replace(/['’]/g,"")
+    .replace(/[^a-zA-Z0-9]+/g,"-")
+    .replace(/^-+|-+$/g,"")
+    .toLowerCase();
+}
+function underscorify(s){
+  return String(s)
+    .normalize("NFKD").replace(/[\u0300-\u036f]/g,"")
+    .replace(/&/g,"and")
+    .replace(/['’]/g,"")
+    .replace(/[^a-zA-Z0-9]+/g,"_")
+    .replace(/^_+|_+$/g,"")
+    .toLowerCase();
+}
+
+async function fetchJSON(url){
+  const res = await fetch(url, { cache: "no-store" });
+  if (!res.ok) throw new Error(`${res.status} ${res.statusText} @ ${url}`);
+  return res.json();
+}
+
+/* ------------------------------- Normalization ---------------------------- */
+function mapItem(it){
+  const name = String(it?.name ?? it?.etiology ?? it?.title ?? it?.label ?? "—");
+  const system = String(it?.system ?? it?.category ?? it?.group ?? "");
+  const freq = it?.freq ?? it?.frequency ?? it?.rank ?? undefined;
+  return { name, system, freq };
+}
+
+function normalizeEntry(title, section, data){
+  const itemsRaw = val(data, "items") || val(data, "differentials") || val(data, "etiologies") || val(data, "causes") || [];
+  return {
+    title: String(title || data?.title || data?.presentation || "Untitled"),
+    section: String(section || data?.section || ""),
+    items: (itemsRaw || []).map(mapItem),
   };
+}
 
-  const SECTION_FOLDERS = {
-    'Clinical Presentations': 'clinical',
-    'Biochemical Presentations': 'biochemical',
-    'Hematological Presentations': 'hematological'
-  };
+/* ------------------------------ Index Map Load ---------------------------- */
+async function loadIndexMap(folder){
+  const url = PATHS.INDEX_MAPS[folder];
+  if (!url) return null;
+  try { return await fetchJSON(url); } catch { return null; }
+}
 
-  const ALT_CANDIDATES = {
-    // For clinical: try /clinical/<slug>.json then /clinical/other/<slug>.json
-    clinical: (slug) => [
-      `${PATHS.BASE_DIR}/clinical/${slug}.json`,
-      `${PATHS.BASE_DIR}/clinical/other/${slug}.json`
-    ],
-    biochemical: (slug) => [ `${PATHS.BASE_DIR}/biochemical/${slug}.json` ],
-    hematological: (slug) => [ `${PATHS.BASE_DIR}/haematological/${slug}.json`, `${PATHS.BASE_DIR}/hematological/${slug}.json` ], // try both spellings
-    misc: (slug) => [ `${PATHS.BASE_DIR}/misc/${slug}.json` ]
-  };
+/* ------------------------------ Data Loading ------------------------------ */
+async function loadViaPresentationList(){
+  const list = await fetchJSON(PATHS.PRESENTATION_LIST); // object: section -> [{name}, ...]
+  const out = [];
 
-  const REQUIRED_HPI = [
-    'onset','progression','palliate','provoke','quality','timing','region','radiation','severity','clinical tests','other symptoms'
-  ];
-
-  // ================================
-  // ! Utilities
-  // ================================
-  const $ = (sel) => document.querySelector(sel);
-  const $$ = (sel) => Array.from(document.querySelectorAll(sel));
-
-  function slugify(name) {
-    return name.toLowerCase().replace(/[^a-z0-9\s-]/g,'').trim().replace(/\s+/g,'-').replace(/-+/g,'-');
+  // Preload optional maps per folder
+  const mapCache = {};
+  for (const folder of Object.values(SECTION_FOLDERS)) {
+    mapCache[folder] = await loadIndexMap(folder); // can be null
   }
 
-  function hpiCompleteness(item) {
-    const hpi = item.hpi || item.symptoms || {}; // older files may use "symptoms"
-    const filled = REQUIRED_HPI.every(k => Array.isArray(hpi[k]) && hpi[k].length > 0);
-    return { filled, hpi };
-  }
+  for (const [section, arr] of Object.entries(list)) {
+    const folder = SECTION_FOLDERS[section];
+    if (!folder) continue;
+    for (const obj of arr) {
+      const name = typeof obj === "string" ? obj : obj?.name;
+      if (!name) continue;
 
-  async function fetchJSON(url) {
-    const res = await fetch(url);
-    if (!res.ok) throw new Error(res.status + ' ' + res.statusText + ' for ' + url);
-    return await res.json();
-  }
+      // Resolve filename via index map first (if present)
+      const mapped = mapCache[folder]?.[name]; // e.g., "pyrexia-of-unknown-origin"
+      const base = `${PATHS.BASE_DIR}/${folder}`;
 
-  async function tryFetchAny(urls) {
-    for (const u of urls) {
-      try { return { data: await fetchJSON(u), path: u }; } catch (e) { /* continue */ }
-    }
-    throw new Error('Not found in candidates: ' + urls.join(', '));
-  }
+      const candidates = [];
+      const nameSlug = slugify(name);
+      const nameUnder = underscorify(name);
 
-  // ================================
-  // ? Load all files listed in Presentation_list.json
-  // ================================
-  async function loadAll() {
-    setStatus('Loading list…');
-    const list = await fetchJSON(PATHS.PRESENTATION_LIST);
-
-    const entries = [];
-    for (const [section, arr] of Object.entries(list)) {
-      const folder = SECTION_FOLDERS[section] || 'misc';
-      for (const ent of arr) {
-        const name = (typeof ent === 'string') ? ent : ent.name;
-        const slug = slugify(name);
-        const cands = (ALT_CANDIDATES[folder] || ALT_CANDIDATES.misc)(slug);
-        try {
-          const { data, path } = await tryFetchAny(cands);
-          entries.push({ section, folder, name, slug, path, data });
-        } catch (e) {
-          entries.push({ section, folder, name, slug, path: null, data: null, error: String(e) });
-        }
+      // If index mapping exists, try that first
+      if (mapped) {
+        const mSlug = slugify(mapped);
+        candidates.push(`${base}/${mSlug}.json`, `${base}/other/${mSlug}.json`, `${base}/${mapped}.json`);
       }
-    }
-    setStatus('Loaded');
-    return entries;
-  }
 
-  function setStatus(text) { $('#status').textContent = text; }
+      // Common filename variants
+      candidates.push(
+        `${base}/${nameSlug}.json`,
+        `${base}/other/${nameSlug}.json`,
+        `${base}/${nameUnder}.json`,
+        `${base}/${name}.json`,                       // as-is (rare)
+        `${base}/${nameSlug}.JSON`                    // case variant
+      );
 
-  function render(entries) {
-    const q = $('#q').value.trim().toLowerCase();
-    const section = $('#section').value;
-
-    const filtered = entries.filter(e => {
-      if (!e.data) return false; // hide missing for main view; errors show in stats
-      if (section && e.section !== section) return false;
-
-      // search: presentation name OR any item name/system matches
-      if (q) {
-        const inName = e.name.toLowerCase().includes(q);
-        const inItems = (e.data.items || []).some(it => (
-          (it.name||'').toLowerCase().includes(q) || (it.system||'').toLowerCase().includes(q)
-        ));
-        if (!(inName || inItems)) return false;
+      // Try to fetch first one that exists
+      let data = null;
+      for (const url of candidates) {
+        try { data = await fetchJSON(url); break; } catch {}
       }
-      return true;
+
+      out.push(normalizeEntry(name, section, data || {}));
+    }
+  }
+  return out;
+}
+
+async function loadFallback(){
+  try {
+    const raw = await fetchJSON("./differentials.json");
+    if (Array.isArray(raw) && raw[0]?.items && raw[0]?.title) return raw.map(e=>normalizeEntry(e.title, e.section, e));
+    return (Array.isArray(raw) ? raw : []).map(e => normalizeEntry(e.title || e.presentation || e.name, e.section, e));
+  } catch { return []; }
+}
+
+async function loadData(){
+  try {
+    const entries = await loadViaPresentationList();
+    if (entries.some(e => e.items?.length)) return entries;
+  } catch { /* fall through */ }
+  return await loadFallback();
+}
+
+/* -------------------------------- Rendering ------------------------------- */
+function setStats(t){ const el = statsEl(); if (el) el.textContent = t; }
+function setError(m){ const el = errEl(); if (el){ el.hidden = false; el.textContent = m; } }
+function clearError(){ const el = errEl(); if (el){ el.hidden = true; el.textContent = ""; } }
+
+function renderSystemsChips(allSystems){
+  const box = $("#systemChips"); if (!box) return;
+  box.innerHTML = "";
+  allSystems.forEach(sys=>{
+    const b = document.createElement("button");
+    b.type="button";
+    b.className = "chip" + (UI.systems.has(sys) ? " chip--on" : "");
+    b.textContent = sys || "—";
+    b.addEventListener("click", ()=>{
+      UI.systems.has(sys) ? UI.systems.delete(sys) : UI.systems.add(sys);
+      saveState(); renderSystemsChips(allSystems);
     });
-
-    $('#stats').textContent = `${filtered.length} results · ${entries.length} loaded · ` +
-      `${entries.filter(e=>!e.data).length} missing files`;
-
-    const grid = $('#grid');
-    grid.innerHTML = '';
-
-    for (const e of filtered) {
-      const d = e.data;
-      const items = Array.isArray(d.items) ? d.items : [];
-      const noHpi = items.filter(it => !hpiCompleteness(it).filled).length;
-
-      const card = document.createElement('div');
-      card.className = 'card';
-      card.innerHTML = `
-        <div style="display:flex;justify-content:space-between;align-items:center;gap:8px;">
-          <h3>${escapeHTML(e.name)}</h3>
-          <span class="badge">${escapeHTML(e.section)}</span>
-        </div>
-        <div class="tags">
-          <span class="pill">${items.length} etiologies</span>
-        </div>
-      `;
-
-      const details = document.createElement('details');
-      const sum = document.createElement('summary');
-      sum.textContent = 'Show etiologies';
-      details.appendChild(sum);
-
-      const tbl = document.createElement('table');
-      const thead = document.createElement('thead');
-      thead.innerHTML = `<tr><th>Etiology</th><th>System</th><th>Freq</th></tr>`;
-      tbl.appendChild(thead);
-      const tbody = document.createElement('tbody');
-
-      for (const it of items) {
-        const tr = document.createElement('tr');
-        const freq = (it.freq||'').toLowerCase();
-        tr.innerHTML = `
-          <td>${escapeHTML(it.name||'')}</td>
-          <td>${escapeHTML(it.system||'')}</td>
-          <td class="freq-${freq}">${escapeHTML(it.freq||'')}</td>
-        `;
-        tbody.appendChild(tr);
-      }
-      tbl.appendChild(tbody);
-      details.appendChild(tbl);
-      card.appendChild(details);
-
-      grid.appendChild(card);
-    }
-    // Re-pack the masonry grid after DOM updates
-    requestAnimationFrame(() => packGrid());
-  }
-
-  function escapeHTML(s){
-    return (s==null? '' : String(s))
-      .replace(/&/g,'&amp;')
-      .replace(/</g,'&lt;')
-      .replace(/>/g,'&gt;')
-      .replace(/"/g,'&quot;')
-      .replace(/'/g,'&#39;');
-  }
-
-  // ================================
-  // $ Init
-  // ================================
-  (async function init(){
-    try {
-      const entries = await loadAll();
-      const state = { entries };
-
-      // wire controls
-      for (const id of ['q','section']) {
-        $("#"+id).addEventListener('input', () => render(state.entries));
-        $("#"+id).addEventListener('change', () => render(state.entries));
-      }
-
-      render(state.entries);
-    } catch (e) {
-      $('#error').textContent = String(e);
-      setStatus('Error');
-    }
-  })();
-
-// ! Call packGrid() after render(entries) and on window resize
-function packGrid() {
-  const grid = document.querySelector('.grid');
-  if (!grid) return;
-  const row = parseFloat(getComputedStyle(grid).gridAutoRows);  // 8
-  const gap = parseFloat(getComputedStyle(grid).gap) || 0;
-
-  grid.querySelectorAll('.card').forEach(card => {
-    // reset to natural height, then measure
-    card.style.gridRowEnd = '';
-    const h = card.getBoundingClientRect().height;
-    // rows to span = (height + gap) / (row + gap)
-    const span = Math.ceil((h + gap) / (row + gap));
-    card.style.gridRowEnd = `span ${span}`;
+    box.appendChild(b);
   });
 }
 
-// Example hooks:
-window.addEventListener('resize', packGrid);
-// render() already calls packGrid() after painting
+function applyFilters(entries){
+  const q = UI.q.trim().toLowerCase();
+  const hasSys = UI.systems.size>0;
 
+  return entries
+    .filter(e => !UI.section || e.section === UI.section)
+    .map(e=>{
+      const items = (e.items||[]).filter(it=>{
+        const okSys = !hasSys || UI.systems.has(it.system || "");
+        if (!okSys) return false;
+        if (!q) return true;
+        const hay = [e.title,e.section,it.name,it.system].filter(Boolean).join(" ").toLowerCase();
+        return hay.includes(q);
+      });
+      const titleHit = q && e.title.toLowerCase().includes(q);
+      const itemsFinal = titleHit ? (e.items||[]).filter(it=>!hasSys || UI.systems.has(it.system||"")) : items;
+      return { ...e, items: itemsFinal };
+    })
+    .filter(e => (e.items||[]).length > 0 || (q && e.title.toLowerCase().includes(q)));
+}
 
-  details.addEventListener('toggle', () => requestAnimationFrame(packGrid));
+function packGrid(){ /* hook for masonry if needed */ }
 
-  
+function renderGrid(entries){
+  const host = hostEl();
+  host.className = "grid";
+  host.innerHTML = "";
+
+  if (!entries.length) {
+    return host.appendChild(emptyNode());
+  }
+
+  // ! Collapse any expanded cards
+  const collapseAll = () => {
+    host.querySelectorAll(".card--expanded").forEach((c) => {
+      c.classList.remove("card--expanded");
+      c.style.gridColumn = ""; // reset inline span
+      const body = c.querySelector(".card__body");
+      const btn = c.querySelector(".card__collapse");
+      if (body) body.hidden = true;
+      if (btn) btn.hidden = true;
+    });
+  };
+
+  // ? Helper: ignore clicks on interactive elements inside the card
+  const isInteractive = (el) =>
+    !!el.closest?.("button, a, summary, input, select, textarea, .chip");
+
+  entries.forEach((e) => {
+    // Build card
+    const card = document.createElement("article");
+    card.className = "card";
+    card.tabIndex = 0;
+
+    const header = document.createElement("header");
+    header.className = "card__hd";
+
+    const title = document.createElement("h3");
+    title.className = "card__title";
+    title.textContent = e.title;
+
+    const badge = document.createElement("span");
+    badge.className = "badge";
+    badge.textContent = e.section || "—";
+
+    // $ Collapse button (only visible when expanded)
+    const collapseBtn = document.createElement("button");
+    collapseBtn.className = "card__collapse btn small ghost";
+    collapseBtn.setAttribute("aria-label", "Collapse");
+    collapseBtn.textContent = "Collapse";
+    collapseBtn.hidden = true;
+
+    header.append(title, badge, collapseBtn);
+
+    const meta = document.createElement("div");
+    meta.className = "card__meta";
+    meta.textContent = `${e.items.length} etiologies`;
+
+    // const details = document.createElement("details");
+    // details.className = "card__details";
+    const body = document.createElement("div");
+    body.className = "card__body";
+    body.hidden = true; // start hidden; revealed on expand
+
+    // Sort by frequency (common < uncommon < rare) then by name
+    const rank = (v) => {
+      const s = String(v || "").toLowerCase();
+      if (s === "common") return 0;
+      if (s === "uncommon") return 1;
+      if (s === "rare") return 2;
+      return 3; // unknown/unspecified to the bottom group
+    };
+    const itemsSorted = [...e.items].sort((a, b) => {
+      const ra = rank(a.freq), rb = rank(b.freq);
+      if (ra !== rb) return ra - rb;
+      return String(a.name).localeCompare(String(b.name), undefined, { sensitivity: "base" });
+    });
+
+    // Build etiologies table
+    const table = document.createElement("table");
+    table.className = "soft-table";
+    const tbody = document.createElement("tbody");
+    for (const it of itemsSorted) {
+      const tr = document.createElement("tr");
+      const td1 = document.createElement("td"); td1.textContent = it.name;
+      const td2 = document.createElement("td"); td2.textContent = it.system || "—";
+      tr.append(td1, td2);
+      const td3 = document.createElement("td");
+      td3.textContent = (it.freq ?? "—");
+      tr.appendChild(td3);
+      tbody.appendChild(tr);
+    }
+    table.appendChild(tbody);
+    body.appendChild(table);
+
+    // details.append(body);
+    card.append(header, meta, body);
+    host.appendChild(card);
+
+    // ! Expand on card click (except when clicking interactive controls)
+    card.addEventListener("click", (ev) => {
+      if (isInteractive(ev.target)) return;
+
+      // Triple-click on expanded card collapses it back
+      if (card.classList.contains("card--expanded") && ev.detail === 3) {
+        card.classList.remove("card--expanded");
+        card.style.gridColumn = "";
+        body.hidden = true;
+        collapseBtn.hidden = true;
+        packGrid();
+        return;
+      }
+
+      // If already expanded, do nothing (use explicit Collapse action instead)
+      if (card.classList.contains("card--expanded")) return;
+
+      collapseAll();
+      card.classList.add("card--expanded");
+      card.style.gridColumn = "1 / -1";         // span full width without relying on CSS
+      body.hidden = false;
+      collapseBtn.hidden = false;
+      packGrid();
+    });
+
+    // ? Collapse button behavior
+    collapseBtn.addEventListener("click", (ev) => {
+      ev.stopPropagation();
+      card.classList.remove("card--expanded");
+      card.style.gridColumn = "";
+      body.hidden = true;
+      collapseBtn.hidden = true;
+      packGrid();
+    });
+  });
+
+  // Click-away + Escape collapse handlers (one active set per render)
+  const onClickAway = (e) => {
+    const insideCard = e.target && e.target.closest && e.target.closest(".card");
+    if (!insideCard) {
+      collapseAll();
+    }
+  };
+  const onEsc = (e) => {
+    if (e.key === "Escape") collapseAll();
+  };
+
+  // Avoid duplicating listeners across re-renders
+  document.removeEventListener("click", host._cardAwayHandler);
+  document.removeEventListener("keydown", host._cardEscHandler);
+  host._cardAwayHandler = onClickAway;
+  host._cardEscHandler = onEsc;
+  document.addEventListener("click", onClickAway);
+  document.addEventListener("keydown", onEsc);
+
+  packGrid();
+}
+
+function renderList(entries){
+  const host = hostEl(); host.className = "list-wrap"; host.innerHTML = "";
+  if (!entries.length) return host.appendChild(emptyNode());
+
+  const table = document.createElement("table");
+  table.className = "list";
+  table.innerHTML = `
+    <thead><tr>
+      <th>Presentation</th><th>Etiology</th><th>System</th><th class="th-freq">Freq</th>
+    </tr></thead><tbody></tbody>`;
+  table.querySelector(".th-freq").style.display = UI.showFreq ? "" : "none";
+  const tbody = table.querySelector("tbody");
+
+  for (const e of entries){
+    e.items.forEach((it, idx)=>{
+      const tr = document.createElement("tr");
+      tr.innerHTML = `
+        <td class="${idx===0?"td-pres":"td-pres td-pres--repeat"}">${idx===0?escapeHTML(e.title):""}</td>
+        <td>${escapeHTML(it.name)}</td>
+        <td>${escapeHTML(it.system || "—")}</td>
+        <td style="display:${UI.showFreq?"":"none"}">${escapeHTML(it.freq ?? "—")}</td>`;
+      tbody.appendChild(tr);
+    });
+  }
+  host.appendChild(table);
+}
+
+function emptyNode(){
+  const d = document.createElement("div");
+  d.className = "empty";
+  d.innerHTML = `<div class="empty__title">No matches</div><div class="empty__body">Try broader terms or clear filters.</div>`;
+  return d;
+}
+
+function render(entries, all){
+  clearError();
+  const filtered = applyFilters(entries);
+  const totalItems = all.reduce((n,e)=>n+(e.items?.length||0),0);
+  const filteredItems = filtered.reduce((n,e)=>n+(e.items?.length||0),0);
+  setStats(`${filtered.length} results · ${filteredItems} etiologies · ${totalItems} total loaded`);
+  document.body.classList.toggle("compact", UI.compact);
+  (UI.view==="list" ? renderList : renderGrid)(filtered);
+  writeHash(); saveState();
+}
+
+/* ------------------------------- Wire controls ---------------------------- */
+function wireUI(data){
+  const q=$("#q"), section=$("#section"), sectionDrawer=$("#sectionDrawer");
+  const btnGrid=$("#btnGrid"), btnList=$("#btnList");
+  const toggleFreq=$("#toggleFreq"), toggleCompact=$("#toggleCompact");
+
+  // Systems inventory
+  const systemsAll = uniqSorted(data.flatMap(e=> (e.items||[]).map(it=>it.system||"")).filter(Boolean));
+  renderSystemsChips(systemsAll);
+
+  // Sync initial
+  if (q) q.value = UI.q;
+  if (section) section.value = UI.section;
+  if (sectionDrawer) sectionDrawer.value = UI.section;
+  if (toggleFreq) toggleFreq.checked = UI.showFreq;
+  if (toggleCompact) toggleCompact.checked = UI.compact;
+  updateViewButtons();
+
+  if (q) q.addEventListener("input", debounce(()=>{ UI.q = q.value; render(data,data); }, CONFIG.searchDebounceMs));
+  if (section) section.addEventListener("change", ()=>{ UI.section = section.value; if (sectionDrawer) sectionDrawer.value = UI.section; render(data,data); });
+
+  if (btnGrid) btnGrid.addEventListener("click", ()=>{ UI.view="grid"; updateViewButtons(); render(data,data); });
+  if (btnList) btnList.addEventListener("click", ()=>{ UI.view="list"; updateViewButtons(); render(data,data); });
+
+  const btnOpen=$("#btnOpenFilters"), btnClose=$("#btnCloseFilters"), scrim=$("#drawerScrim");
+  if (btnOpen) btnOpen.addEventListener("click", openDrawer);
+  if (btnClose) btnClose.addEventListener("click", closeDrawer);
+  if (scrim) scrim.addEventListener("click", closeDrawer);
+
+  document.addEventListener("keydown",(e)=>{
+    if (e.key==="Escape"){ if(!isDrawerHidden()) closeDrawer(); else if (q===document.activeElement) q.blur(); }
+    if (e.key==="/"){ if(!e.metaKey && !e.ctrlKey && !e.altKey && q){ e.preventDefault(); q.focus(); } }
+  });
+
+  if (sectionDrawer) sectionDrawer.addEventListener("change", ()=>{ UI.section = sectionDrawer.value; if (section) section.value = UI.section; });
+  if (toggleFreq) toggleFreq.addEventListener("change", ()=> UI.showFreq = toggleFreq.checked);
+  if (toggleCompact) toggleCompact.addEventListener("change", ()=> UI.compact = toggleCompact.checked);
+
+  const btnClear=$("#btnClearFilters"), btnApply=$("#btnApplyFilters");
+  if (btnClear) btnClear.addEventListener("click", ()=>{
+    UI.section=""; UI.systems.clear(); UI.showFreq=CONFIG.defaultShowFreq; UI.compact=false;
+    if (section) section.value=""; if (sectionDrawer) sectionDrawer.value="";
+    if (toggleFreq) toggleFreq.checked=UI.showFreq; if (toggleCompact) toggleCompact.checked=UI.compact;
+    renderSystemsChips(systemsAll);
+  });
+  if (btnApply) btnApply.addEventListener("click", ()=>{ closeDrawer(); render(data,data); });
+
+  render(data,data);
+
+  function updateViewButtons(){
+    const isGrid = UI.view==="grid";
+    if (btnGrid){ btnGrid.classList.toggle("ghost", !isGrid); btnGrid.setAttribute("aria-pressed", String(isGrid)); }
+    if (btnList){ btnList.classList.toggle("ghost", isGrid); btnList.setAttribute("aria-pressed", String(!isGrid)); }
+  }
+}
+
+/* ------------------------------- Drawer helpers --------------------------- */
+function isDrawerHidden(){ const dr=$("#drawer"); return !dr || dr.getAttribute("aria-hidden")==="true"; }
+function openDrawer(){ const dr=$("#drawer"); if (!dr) return; dr.setAttribute("aria-hidden","false"); document.body.classList.add("scrim-on"); }
+function closeDrawer(){ const dr=$("#drawer"); if (!dr) return; dr.setAttribute("aria-hidden","true"); document.body.classList.remove("scrim-on"); }
+
+/* ------------------------------ State & Hash ------------------------------ */
+function loadState(){
+  try{ const raw=localStorage.getItem(CONFIG.stateKey); if(!raw) return;
+    const s=JSON.parse(raw);
+    UI.q=s.q??UI.q; UI.section=s.section??UI.section; UI.systems=new Set(s.systems||[]);
+    UI.view=s.view||UI.view; UI.showFreq=!!s.showFreq; UI.compact=!!s.compact;
+  }catch{}
+}
+function saveState(){ const s={ q:UI.q, section:UI.section, systems:[...UI.systems], view:UI.view, showFreq:UI.showFreq, compact:UI.compact }; localStorage.setItem(CONFIG.stateKey, JSON.stringify(s)); }
+function readHash(){ try{ if(!location.hash) return; const s=JSON.parse(decodeURIComponent(location.hash.slice(1)));
+  if(typeof s.q==="string") UI.q=s.q; if(typeof s.section==="string") UI.section=s.section;
+  if(Array.isArray(s.systems)) UI.systems=new Set(s.systems);
+  if(s.view==="grid"||s.view==="list") UI.view=s.view;
+  if(typeof s.showFreq==="boolean") UI.showFreq=s.showFreq;
+  if(typeof s.compact==="boolean") UI.compact=s.compact;
+} catch{} }
+function writeHash(){ const s={ q:UI.q, section:UI.section, systems:[...UI.systems], view:UI.view, showFreq:UI.showFreq, compact:UI.compact }; location.hash = encodeURIComponent(JSON.stringify(s)); }
+
+/* ----------------------------------- Boot --------------------------------- */
+(async function boot(){
+  loadState(); readHash();
+  try{
+    setStats("Loading…");
+    const data = await loadData();
+    // Optional: inject section options if header select exists and is empty
+    // (we leave your hard-coded options intact)
+    wireUI(data);
+  }catch(err){ setError(err.message || "Unexpected error"); }
+})();

@@ -2,7 +2,7 @@
   "presentation": "Breast lumps",
   "items": [
     {
-      "name": "Carcinoma (Fig. 7)",
+      "name": "Carcinoma",
       "system": "Malignant",
       "redFlag": false,
       "hpi": {

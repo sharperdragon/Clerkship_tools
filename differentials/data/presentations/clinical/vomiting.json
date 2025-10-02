@@ -192,7 +192,7 @@
       "freq": "common"
     },
     {
-      "name": "Peptic ulceration/acute gastritis (Fig. 63)",
+      "name": "Peptic ulceration/acute gastritis",
       "system": "Gastrointestinal Disease",
       "redFlag": false,
       "hpi": {
@@ -554,7 +554,7 @@
     },
     {
       "name": "Myocardial infarction",
-      "system": "Others",
+      "system": "Other",
       "redFlag": false,
       "hpi": {
         "onset": [],
@@ -573,7 +573,7 @@
     },
     {
       "name": "Severe pain, , fractures",
-      "system": "Others",
+      "system": "Other",
       "redFlag": false,
       "hpi": {
         "onset": [],
@@ -592,7 +592,7 @@
     },
     {
       "name": "Irradiation",
-      "system": "Others",
+      "system": "Other",
       "redFlag": false,
       "hpi": {
         "onset": [],
@@ -611,7 +611,7 @@
     },
     {
       "name": "Widespread malignant disease",
-      "system": "Others",
+      "system": "Other",
       "redFlag": false,
       "hpi": {
         "onset": [],

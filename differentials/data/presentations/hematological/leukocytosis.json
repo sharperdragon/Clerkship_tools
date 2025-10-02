@@ -1,5 +1,5 @@
 {
-  "presentation": "Leucocytosis",
+  "presentation": "leukocytosis",
   "items": [
     {
       "name": "Neonates",
@@ -1047,7 +1047,7 @@
       "freq": "unknown"
     },
     {
-      "name": "In patients with leucocytosis it is important to seek a",
+      "name": "In patients with leukocytosis it is important to seek a",
       "system": "\uf06e Vdrl",
       "redFlag": false,
       "hpi": {
@@ -1068,7 +1068,7 @@
   ],
   "sources": {
     "index_keys": [
-      "Leucocytosis"
+      "leukocytosis"
     ],
     "index_type": "non-clinical"
   },

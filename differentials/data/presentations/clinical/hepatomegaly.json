@@ -249,7 +249,7 @@
       "freq": "rare"
     },
     {
-      "name": "Metastases (Fig. 34)",
+      "name": "Metastases",
       "system": "Malignancy",
       "redFlag": false,
       "hpi": {
@@ -402,7 +402,7 @@
     },
     {
       "name": "Cryptogenic cirrhosis",
-      "system": "Others",
+      "system": "Other",
       "redFlag": false,
       "hpi": {
         "onset": [],
@@ -421,7 +421,7 @@
     },
     {
       "name": "Riedel\u2019s lobe",
-      "system": "Others",
+      "system": "Other",
       "redFlag": false,
       "hpi": {
         "onset": [],

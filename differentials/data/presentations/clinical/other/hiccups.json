@@ -402,7 +402,7 @@
     },
     {
       "name": "Electrolyte disturbance (hypocalcemia, hyponatremia)",
-      "system": "Others",
+      "system": "Other",
       "redFlag": false,
       "hpi": {
         "onset": [],
@@ -421,7 +421,7 @@
     },
     {
       "name": "Hysterical",
-      "system": "Others",
+      "system": "Other",
       "redFlag": false,
       "hpi": {
         "onset": [],
@@ -440,7 +440,7 @@
     },
     {
       "name": "Toxic",
-      "system": "Others",
+      "system": "Other",
       "redFlag": false,
       "hpi": {
         "onset": [],
@@ -459,7 +459,7 @@
     },
     {
       "name": "General anesthesia",
-      "system": "Others",
+      "system": "Other",
       "redFlag": false,
       "hpi": {
         "onset": [],

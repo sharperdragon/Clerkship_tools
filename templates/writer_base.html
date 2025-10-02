@@ -1,0 +1,52 @@
+<html lang="en" style="--vsc-domain: &quot;sharperdragon.github.io&quot;;"><head>
+    <meta charset="utf-8">
+    <style> .title_home a:hover{color: rgb(120, 98, 206);}
+        .title_home{font-size:150%; background-color: transparent; padding:3px 8px; border-radius: 8px;} 
+        .title_home a {color:var(--ink);text-decoration: none;}
+    </style>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>NoteWriter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="appbar">
+        <div class="title_home">
+            <a href="index.html" >Clerkship Tools</a>
+        </div>
+        
+        <div class="tools">
+            <button id="copyBtn" title="Copy output">Copy</button>
+            <button id="clearSectionBtn" title="Clear section">Clear Section</button>
+            <button id="clearAllBtn" title="Clear all">Clear All</button>
+            <button data-role="clear-patients" title="Delete all saved patients and start fresh">Clear patients</button><div data-role="patient-controls" style="display: inline-flex; gap: 8px; margin-left: 8px;"><button title="Start a new patient session">New Patient</button><select><option value="">Select previous…</option><option value="1bvcfuua1csmg3zf5fc">9/28/2025, 1:36:59 PM</option></select></div></div>
+        </header>
+        
+        <nav id="tier1" class="tabs tier1" style="position: sticky; top: 44px; z-index: 5; background: rgb(238, 242, 247);" role="tablist">
+    <button class="tab" data-tab="subjective" role="tab" aria-selected="true">Subjective</button>
+    <button class="tab" data-tab="ROS" role="tab" aria-selected="false">ROS</button>
+    <button class="tab" data-tab="PE" role="tab" aria-selected="false">Physical Exam</button>
+    <button class="tab" data-tab="MSE" role="tab" aria-selected="false">MSE</button>
+  </nav>
+        <nav id="tier2" class="tabs tier2" style="position: sticky; top: 88px; z-index: 4; background: rgb(246, 248, 251); display: none;"></nav>
+        <div id="headerItems" class="header-items-bar" aria-live="polite" style="display: none;"></div>
+        <div id="tab-css-slot" hidden></div>
+        <div id="tab-js-slot" hidden></div>
+        
+        <main id="content" aria-live="polite"></main>
+        
+        <aside class="output">
+            <div class="output-header">Output</div>
+            <textarea id="out" rows="10" spellcheck="false"></textarea>
+        </aside>
+        <div class="out-wrap">
+            <div class="out-head">Complete Note</div>
+            <section class="panel complete-note"><div class="complete-note__body"><div id="completeOutView" class="complete-note__view" tabindex="0"></div><textarea id="completeOut" rows="12" readonly="" data-enhanced="1" class="complete-note__textarea" style="display: none; height: 2px;"></textarea></div></section>
+        </div>
+        
+        <script defer src="app_v2.js"></script>
+        <script defer src="js/tabs_runtime.js"></script>
+        <footer style="text-align:center; font-size:0.8em; color:rgba(0,0,0,0.4); margin-top:20px;">
+            NoteWriter – App Version: <span id="app-version-placeholder">2025-09-24-r</span>
+        </footer>
+    </body>
+    </html>

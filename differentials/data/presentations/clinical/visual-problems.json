@@ -229,25 +229,7 @@
       },
       "freq": "rare"
     },
-    {
-      "name": "common",
-      "system": "Freq",
-      "redFlag": false,
-      "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
-      },
-      "freq": "unknown"
-    },
+
     {
       "name": "uncommon",
       "system": "Freq",
@@ -267,25 +249,7 @@
       },
       "freq": "unknown"
     },
-    {
-      "name": "rare",
-      "system": "Freq",
-      "redFlag": false,
-      "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
-      },
-      "freq": "unknown"
-    },
+
     {
       "name": "lesions at the optic chiasma or more posteriorly cause binocular loss",
       "system": "Vitamin A de\ufb01ciency \u2022 (common in underdeveloped countries)",

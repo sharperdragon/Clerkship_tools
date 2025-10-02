@@ -1,8 +1,8 @@
 {
-  "presentation": "Dyspnoea",
+  "presentation": "Dyspnea",
   "items": [
     {
-      "name": "Pneumothorax (Fig. 15)",
+      "name": "Pneumothorax",
       "system": "Sudden (seconds To Minutes)",
       "redFlag": false,
       "hpi": {
@@ -365,7 +365,7 @@
   ],
   "sources": {
     "index_keys": [
-      "Dyspnoea"
+      "Dyspnea"
     ],
     "index_type": "clinical"
   },

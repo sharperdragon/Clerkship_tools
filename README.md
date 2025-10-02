@@ -8,7 +8,7 @@ The project is designed to run entirely in the browser with no backend dependenc
 Features
 	•	Tab-driven workflow: Navigate between Subjective, ROS, PE, and MSE.
 	•	Manifest-based config: tabs.json defines which tabs appear and their template sources.
-	•	Template-driven UI: Each mode (e.g., PE, ROS) pulls its structure from a JSON template file (e.g., template_pe.json, template_ROS.json).
+	•	Template-driven UI: Each mode (e.g., PE, ROS) pulls its structure from a JSON template file (e.g., templates/template_pe.json, template_ROS.json).
 	•	Autosave and caching: State is cached in localStorage with TTL-based invalidation.
 	•	Acute/Non-acute toggle: Subjective mode supports acuity-based rendering of the HPI panel.
 	•	Split-pane layout: Subjective history supports a resizable HPI/General History layout.
@@ -22,10 +22,10 @@ writer.html             – Entry point for NoteWriter (links from index.html)
 app.js                  – Core application logic (tab switching, rendering, caching)
 styles.css              – Theme, layout, and responsive styles
 tabs.json               – Manifest of available tabs & template files
-template_subjective.json – Subjective (HPI, PMH, Allergies, etc.)
+templates/template_subjective.json – Subjective (HPI, PMH, Allergies, etc.)
 template_ROS.json        – Review of Systems panels
-template_pe.json         – Physical Exam panels
-template_MSE.json        – Mental Status Exam panels
+templates/template_pe.json         – Physical Exam panels
+templates/template_MSE.json        – Mental Status Exam panels
 make_tab_manifest.py     – Helper script to generate tabs.json automatically
 
 Setup

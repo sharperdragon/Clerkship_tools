@@ -2,7 +2,7 @@
   "presentation": "Toe lesions",
   "items": [
     {
-      "name": "Ingrowing toenail (Fig. 57)",
+      "name": "Ingrowing toenail",
       "system": "Toenails",
       "redFlag": false,
       "hpi": {
@@ -248,25 +248,7 @@
       },
       "freq": "rare"
     },
-    {
-      "name": "common",
-      "system": "Freq",
-      "redFlag": false,
-      "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
-      },
-      "freq": "unknown"
-    },
+
     {
       "name": "uncommon",
       "system": "Freq",

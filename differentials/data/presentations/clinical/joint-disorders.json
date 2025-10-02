@@ -77,44 +77,8 @@
       },
       "freq": "uncommon"
     },
-    {
-      "name": "rare",
-      "system": "Freq",
-      "redFlag": false,
-      "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
-      },
-      "freq": "unknown"
-    },
-    {
-      "name": "common",
-      "system": "Freq",
-      "redFlag": false,
-      "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
-      },
-      "freq": "unknown"
-    },
+
+
     {
       "name": "increase in developed countries)",
       "system": "TB \u2022 (very common in the developing world and on the",
@@ -477,7 +441,7 @@
       "freq": "uncommon"
     },
     {
-      "name": "Osteoarthritis (Fig. 38)",
+      "name": "Osteoarthritis",
       "system": "Degenerative",
       "redFlag": false,
       "hpi": {
@@ -1637,7 +1601,7 @@
     },
     {
       "name": "Tenosynovitis",
-      "system": "Others",
+      "system": "Other",
       "redFlag": false,
       "hpi": {
         "onset": [],
@@ -1656,7 +1620,7 @@
     },
     {
       "name": "Footballer\u2019s ankle",
-      "system": "Others",
+      "system": "Other",
       "redFlag": false,
       "hpi": {
         "onset": [],
@@ -1675,7 +1639,7 @@
     },
     {
       "name": "Tarsal tunnel syndrome",
-      "system": "Others",
+      "system": "Other",
       "redFlag": false,
       "hpi": {
         "onset": [],
@@ -1694,7 +1658,7 @@
     },
     {
       "name": "Osteochondritis of the talus",
-      "system": "Others",
+      "system": "Other",
       "redFlag": false,
       "hpi": {
         "onset": [],

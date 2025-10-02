@@ -21,7 +21,7 @@
     {"name": "Diarrhoea"},
     {"name": "Dizziness"},
     {"name": "Dysphagia"},
-    {"name": "Dyspnoea"},
+    {"name": "Dyspnea"},
     {"name": "Ear disorders"},
     {"name": "Eye disorders"},
     {"name": "Erectile dysfunction"},
@@ -120,8 +120,8 @@
   "Hematological Presentations": [
     {"name": "Anemia"},
     {"name": "Clotting disorders"},
-    {"name": "Leucocytosis"},
-    {"name": "Leucopenia"},
+    {"name": "leukocytosis"},
+    {"name": "leukopenia"},
     {"name": "Polycythemia"},
     {"name": "Thrombocytopenia"},
     {"name": "Thrombocytosis"}

@@ -135,7 +135,7 @@
       "freq": "common"
     },
     {
-      "name": "Chronic liver disease (leuconychia)",
+      "name": "Chronic liver disease (leukonychia)",
       "system": "Systemic Illness",
       "redFlag": false,
       "hpi": {
@@ -154,7 +154,7 @@
       "freq": "common"
     },
     {
-      "name": "Diabetes mellitus (leuconychia)",
+      "name": "Diabetes mellitus (leukonychia)",
       "system": "Systemic Illness",
       "redFlag": false,
       "hpi": {
@@ -211,7 +211,7 @@
       "freq": "rare"
     },
     {
-      "name": "Psoriasis (Fig. 45)",
+      "name": "Psoriasis",
       "system": "Dermatological",
       "redFlag": false,
       "hpi": {

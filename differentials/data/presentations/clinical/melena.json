@@ -440,7 +440,7 @@
     },
     {
       "name": "Uremia",
-      "system": "Others",
+      "system": "Other",
       "redFlag": false,
       "hpi": {
         "onset": [],
@@ -459,7 +459,7 @@
     },
     {
       "name": "Connective tissue disorders",
-      "system": "Others",
+      "system": "Other",
       "redFlag": false,
       "hpi": {
         "onset": [],

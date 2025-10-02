@@ -1,25 +1,7 @@
 {
   "presentation": "Hematuria",
   "items": [
-    {
-      "name": "common",
-      "system": "Freq",
-      "redFlag": false,
-      "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
-      },
-      "freq": "unknown"
-    },
+
     {
       "name": "uncommon",
       "system": "Freq",
@@ -39,25 +21,7 @@
       },
       "freq": "unknown"
     },
-    {
-      "name": "rare",
-      "system": "Freq",
-      "redFlag": false,
-      "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
-      },
-      "freq": "unknown"
-    },
+
     {
       "name": "Embolism",
       "system": "TB \u2022 (common in some parts of the world where TB is endemic)",
@@ -116,7 +80,7 @@
       "freq": "rare"
     },
     {
-      "name": "Carcinoma (Fig. 29)",
+      "name": "Carcinoma",
       "system": "Bladder",
       "redFlag": false,
       "hpi": {

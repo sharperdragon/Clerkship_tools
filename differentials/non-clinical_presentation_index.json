@@ -297,7 +297,7 @@
       "Prolonged bleeding can result from abnormal platelet"
     ]
   },
-  "Leucocytosis": {
+  "leukocytosis": {
     "PHYSIOLOGICAL": [
       "Neonates",
       "Exercise",
@@ -380,10 +380,10 @@
       "Hypothyroidism"
     ],
     " VDRL": [
-      "In patients with leucocytosis it is important to seek a"
+      "In patients with leukocytosis it is important to seek a"
     ]
   },
-  "Leucopenia": {
+  "leukopenia": {
     "PANCYTOPENIA": [
       "Bone marrow depression, e.g. cytotoxic agents, malignant",
       "Severe B12 or folate deﬁciency",

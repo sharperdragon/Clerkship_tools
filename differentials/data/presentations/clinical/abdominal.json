@@ -441,7 +441,7 @@
     },
     {
       "name": "Ectopic pregnancy",
-      "system": "Gynaecological",
+      "system": "Gynecological",
       "redFlag": false,
       "hpi": {
         "onset": ["acute"],
@@ -460,7 +460,7 @@
     },
     {
       "name": "Torsion of ovarian cyst",
-      "system": "Gynaecological",
+      "system": "Gynecological",
       "redFlag": false,
       "hpi": {
         "onset": ["acute"],
@@ -479,7 +479,7 @@
     },
     {
       "name": "Ovarian cyst",
-      "system": "Gynaecological",
+      "system": "Gynecological",
       "redFlag": false,
       "hpi": {
         "onset": ["acute"],
@@ -498,7 +498,7 @@
     },
     {
       "name": "Mittelschmerz",
-      "system": "Gynaecological",
+      "system": "Gynecological",
       "redFlag": false,
       "hpi": {
         "onset": ["acute"],
@@ -517,7 +517,7 @@
     },
     {
       "name": "Endometriosis",
-      "system": "Gynaecological",
+      "system": "Gynecological",
       "redFlag": false,
       "hpi": {
         "onset": ["acute"],
@@ -536,7 +536,7 @@
     },
     {
       "name": "Uterine fibroid",
-      "system": "Gynaecological",
+      "system": "Gynecological",
       "redFlag": false,
       "hpi": {
         "onset": ["acute"],
@@ -555,7 +555,7 @@
     },
     {
       "name": "Salpingitis",
-      "system": "Gynaecological",
+      "system": "Gynecological",
       "redFlag": false,
       "hpi": {
         "onset": ["acute"],
@@ -1333,7 +1333,7 @@
       "freq": "uncommon"
     },
     {
-      "name": "Polycystic kidney (Fig. 2)",
+      "name": "Polycystic kidney",
       "system": "Kidney",
       "redFlag": false,
       "hpi": {

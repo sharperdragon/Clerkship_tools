@@ -135,7 +135,7 @@
       "freq": "common"
     },
     {
-      "name": "Herpes zoster (Fig. 18)",
+      "name": "Herpes zoster",
       "system": "Teeth And Salivary Gland",
       "redFlag": false,
       "hpi": {
@@ -286,25 +286,7 @@
       },
       "freq": "rare"
     },
-    {
-      "name": "common",
-      "system": "Freq",
-      "redFlag": false,
-      "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
-      },
-      "freq": "unknown"
-    },
+
     {
       "name": "uncommon",
       "system": "Freq",

@@ -1,0 +1,227 @@
+{
+  "modes": ["subjective"],
+  "sectionsByMode": {
+    "subjective": ["General"]
+  },
+  "sectionDefs": {
+    "subjective:General": {
+      "headerItems": [
+        {
+          "id": "subj_visit_note",
+          "label": "Visit Note",
+          "type": "text",
+          "placeholder": "Visit Note"
+        },
+        {
+          "id": "subj_chief_complaint",
+          "label": "Chief Complaint",
+          "type": "text",
+          "placeholder": "Chief Complaint"
+        }
+      ],
+      "panels": [
+        {
+          "title": "History of Present Illness",
+          "id": "subj_hpi",
+          "fields": [
+            {
+              "id": "hpi_onset",
+              "label": "Onset",
+              "type": "text",
+              "placeholder": ""
+            },
+            {
+              "id": "hpi_prior_flag",
+              "label": "Prior:",
+              "type": "boolean",
+              "ui": { "trueLabel": "Yes", "falseLabel": "No" },
+              "placeholder": ""
+            },
+            {
+              "id": "hpi_prior",
+              "label": "Prior",
+              "type": "text",
+              "showIf": { "field": "hpi_prior_flag", "equals": true },
+              "placeholder": ""
+            },
+            {
+              "id": "hpi_progression",
+              "label": "Progression",
+              "type": "text",
+              "placeholder": ""
+            },
+            {
+              "id": "hpi_palliate",
+              "label": "Palliate",
+              "type": "text",
+              "placeholder": ""
+            },
+            {
+              "id": "hpi_provoke",
+              "label": "Provoke",
+              "type": "text",
+              "placeholder": ""
+            },
+            {
+              "id": "hpi_quality",
+              "label": "Quality",
+              "type": "text",
+              "placeholder": ""
+            },
+            {
+              "id": "hpi_quantity",
+              "label": "Quantity",
+              "type": "text",
+              "placeholder": ""
+            },
+            {
+              "id": "hpi_region",
+              "label": "Region",
+              "type": "text",
+              "placeholder": ""
+            },
+            {
+              "id": "hpi_radiate_flag",
+              "label": "Radiation",
+              "type": "boolean",
+              "ui": { "trueLabel": "Yes", "falseLabel": "No" },
+              "placeholder": ""
+            },
+            {
+              "id": "hpi_radiate",
+              "label": "Radiation",
+              "type": "text",
+              "showIf": { "field": "hpi_radiate_flag", "equals": true },
+              "placeholder": ""
+            },
+            {
+              "id": "hpi_scale",
+              "label": "Scale",
+              "type": "range",
+              "min": 0,
+              "max": 10,
+              "step": 1
+            },
+            {
+              "id": "hpi_timing",
+              "label": "Timing",
+              "type": "text",
+              "placeholder": ""
+            },
+            {
+              "id": "hpi_treatment_flag",
+              "label": "Treatment",
+              "type": "boolean",
+              "ui": { "trueLabel": "Yes", "falseLabel": "No" },
+              "placeholder": ""
+            },
+            {
+              "id": "hpi_treatment",
+              "label": "Treatment",
+              "type": "text",
+              "showIf": { "field": "hpi_treatment_flag", "equals": true },
+              "placeholder": ""
+            },
+            {
+              "id": "hpi_assoc_symptoms",
+              "label": "Associated Symptoms",
+              "checkboxes": [
+                { "id": "Assoc_Fever", "label": "Fever" }
+              ],
+              "type": "text",
+              "placeholder": ""
+            }
+          ]
+        },
+        {
+          "title": "General History",
+          "id": "Subjective_main",
+          "fields": [
+            {
+              "id": "subj_pmh",
+              "label": "Past Medical",
+              "checkboxes": [
+                { "id": "pmh_htn", "label": "HTN" },
+                { "id": "pmh_t2dm", "label": "T2DM" },
+                { "id": "pmh_cancer", "label": "Cancer" },
+                { "id": "pmh_hld", "label": "HLD" },
+                { "id": "pmh_none", "label": "Not reported" }
+              ],
+              "type": "text",
+              "placeholder": ""
+            },
+            {
+              "id": "subj_surg_hx",
+              "label": "Surgical Hx",
+              "type": "text",
+              "placeholder": ""
+            },
+            {
+              "id": "subj_meds",
+              "label": "Meds",
+              "type": "text",
+              "placeholder": ""
+            },
+            {
+              "id": "subj_allergies",
+              "label": "Allergies",
+              "checkboxes": [
+                { "id": "allergies_nkda", "label": "NKDA" },
+                {
+                  "id": "allergies_food_ENV",
+                  "label": "No food or environmental allergies"
+                }
+              ],
+              "type": "text",
+              "placeholder": ""
+            },
+            {
+              "id": "subj_social_group",
+              "type": "group",
+              "label": "Social history",
+              "layout": { "flow": "inline" },
+              "fields": [
+                {
+                  "id": "soc_tobacco_flag",
+                  "label": "Tobacco",
+                  "type": "boolean",
+                  "ui": { "trueLabel": "Yes", "falseLabel": "No" },
+                  "children": [
+                    { "id": "soc_tob_status", "label": "Tobacco status", "type": "boolean",
+                      "ui": { "trueLabel": "Current", "falseLabel": "Former" } },
+                    { "id": "soc_tob_pk_years", "label": "Pack years", "type": "text",
+                      "ui": { "inline": true } }
+                  ]
+                },
+                {
+                  "id": "soc_alcohol_flag",
+                  "label": "Alcohol",
+                  "type": "boolean",
+                  "ui": { "trueLabel": "Yes", "falseLabel": "No" },
+                  "children": [
+                    { "id": "soc_alcohol_drinks_week", "label": "Drinks/week", "type": "text",
+                      "ui": { "inline": true } }
+                  ]
+                },
+                { "id": "subj_social", "label": "Social (notes)", "type": "text",
+                  "placeholder": "Any additional social history details" }
+              ]
+            },
+            {
+              "id": "subj_lmp",
+              "label": "LMP",
+              "type": "text",
+              "placeholder": ""
+            },
+            {
+              "id": "subj_fhx",
+              "label": "Family Hx",
+              "type": "text",
+              "placeholder": "Family Hx"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
