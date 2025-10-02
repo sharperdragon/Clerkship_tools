@@ -1,5 +1,4 @@
-
-  // ================================
+// ================================
   // $ Config (edit here)
   // ================================
   const PATHS = {
@@ -88,13 +87,10 @@
   function render(entries) {
     const q = $('#q').value.trim().toLowerCase();
     const section = $('#section').value;
-    const hideLocked = $('#hideLocked').checked;
-    const showEmpty = $('#showEmpty').checked;
 
     const filtered = entries.filter(e => {
       if (!e.data) return false; // hide missing for main view; errors show in stats
       if (section && e.section !== section) return false;
-      if (hideLocked && e.data.locked === true) return false;
 
       // search: presentation name OR any item name/system matches
       if (q) {
@@ -103,12 +99,6 @@
           (it.name||'').toLowerCase().includes(q) || (it.system||'').toLowerCase().includes(q)
         ));
         if (!(inName || inItems)) return false;
-      }
-
-      if (showEmpty) {
-        // only show if at least one item has missing HPI (any required key empty)
-        const hasGap = (e.data.items || []).some(it => !hpiCompleteness(it).filled);
-        if (!hasGap) return false;
       }
       return true;
     });
@@ -122,7 +112,6 @@
     for (const e of filtered) {
       const d = e.data;
       const items = Array.isArray(d.items) ? d.items : [];
-      const locked = d.locked === true;
       const noHpi = items.filter(it => !hpiCompleteness(it).filled).length;
 
       const card = document.createElement('div');
@@ -130,12 +119,10 @@
       card.innerHTML = `
         <div style="display:flex;justify-content:space-between;align-items:center;gap:8px;">
           <h3>${escapeHTML(e.name)}</h3>
-          <span class="badge">${escapeHTML(e.section)}${locked? ' · 🔒':''}</span>
+          <span class="badge">${escapeHTML(e.section)}</span>
         </div>
         <div class="tags">
           <span class="pill">${items.length} etiologies</span>
-          ${noHpi? `<span class="pill" title="Etiologies lacking full HPI">${noHpi} missing HPI</span>`:''}
-          ${e.path? `<span class="pill"><code class="path">${e.path}</code></span>`: `<span class="pill" style="color:var(--bad)">missing file</span>`}
         </div>
       `;
 
@@ -146,19 +133,17 @@
 
       const tbl = document.createElement('table');
       const thead = document.createElement('thead');
-      thead.innerHTML = `<tr><th>Etiology</th><th>System</th><th>Freq</th><th>HPI completeness</th></tr>`;
+      thead.innerHTML = `<tr><th>Etiology</th><th>System</th><th>Freq</th></tr>`;
       tbl.appendChild(thead);
       const tbody = document.createElement('tbody');
 
       for (const it of items) {
-        const { filled } = hpiCompleteness(it);
         const tr = document.createElement('tr');
         const freq = (it.freq||'').toLowerCase();
         tr.innerHTML = `
           <td>${escapeHTML(it.name||'')}</td>
           <td>${escapeHTML(it.system||'')}</td>
           <td class="freq-${freq}">${escapeHTML(it.freq||'')}</td>
-          <td>${filled? '✅' : '⚠️'}</td>
         `;
         tbody.appendChild(tr);
       }
@@ -168,6 +153,8 @@
 
       grid.appendChild(card);
     }
+    // Re-pack the masonry grid after DOM updates
+    requestAnimationFrame(() => packGrid());
   }
 
   function escapeHTML(s){
@@ -188,7 +175,7 @@
       const state = { entries };
 
       // wire controls
-      for (const id of ['q','section','hideLocked','showEmpty']) {
+      for (const id of ['q','section']) {
         $("#"+id).addEventListener('input', () => render(state.entries));
         $("#"+id).addEventListener('change', () => render(state.entries));
       }
@@ -199,3 +186,29 @@
       setStatus('Error');
     }
   })();
+
+// ! Call packGrid() after render(entries) and on window resize
+function packGrid() {
+  const grid = document.querySelector('.grid');
+  if (!grid) return;
+  const row = parseFloat(getComputedStyle(grid).gridAutoRows);  // 8
+  const gap = parseFloat(getComputedStyle(grid).gap) || 0;
+
+  grid.querySelectorAll('.card').forEach(card => {
+    // reset to natural height, then measure
+    card.style.gridRowEnd = '';
+    const h = card.getBoundingClientRect().height;
+    // rows to span = (height + gap) / (row + gap)
+    const span = Math.ceil((h + gap) / (row + gap));
+    card.style.gridRowEnd = `span ${span}`;
+  });
+}
+
+// Example hooks:
+window.addEventListener('resize', packGrid);
+// render() already calls packGrid() after painting
+
+
+  details.addEventListener('toggle', () => requestAnimationFrame(packGrid));
+
+  

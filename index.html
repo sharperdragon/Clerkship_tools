@@ -5,36 +5,12 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Home • Clerkship Tools</title>
   <link rel="stylesheet" href="styles.css" />
-  <style>
-    /* lightweight defaults in case styles.css is minimal */
-    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; margin: 0; }
-    header.appbar { display:flex; align-items:center; justify-content:space-between; padding:10px 14px; border-bottom:1px solid rgba(0,0,0,0.08); background:#f8f9fb; }
-    header.appbar h1 { font-size: 18px; margin: 0; }
-    main { max-width: 900px; margin: 28px auto; padding: 0 16px; }
-    .grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; }
-    .card { border:1px solid rgba(0,0,0,0.07); border-radius:12px; padding:16px; background:white; }
-    .card h2 { margin:0 0 8px; font-size:16px; }
-    .card p { margin:0 0 12px; color:#555; font-size:14px; }
-    .card a.button { display:inline-block; text-decoration:none; padding:10px 14px; border-radius:8px; border:1px solid rgba(0,0,0,0.1); }
-    footer { color:#777; font-size:12px; text-align:center; padding:28px 0; }
-  </style>
+  <link rel="stylesheet" href="core_style.css" />
 </head>
 <body>
   <header class="appbar">
     <h1>Clerkship Tools</h1>
-    <nav>
-      <details class="settings" id="settingsMenu">
-        <summary aria-label="Settings" title="Settings">
-          <span class="gear" aria-hidden="true">⚙️</span>
-          <span>Settings</span>
-        </summary>
-        <div class="settings-panel">
-          <div class="row">
-            <label class="check"><input id="themeToggle" type="checkbox"> Use light appearance</label>
-          </div>
-        </div>
-      </details>
-    </nav>
+    <button id="settings-button" class="settings-button">Settings</button>
   </header>
 
   <main>
@@ -75,5 +51,28 @@
 
   <footer>© CJG 2025</footer>
 
+
+
+  <div id="settings-panel" class="settings-panel">
+    <div class="settings-panel-content">
+      <button id="close-settings" class="close-settings">×</button>
+      <h2>Settings</h2>
+      <h3>Appearance</h3>
+      <label>
+        <input type="radio" name="theme" value="light"> Light Theme
+      </label><br/>
+      <label>
+        <input type="radio" name="theme" value="dark"> Dark Theme
+      </label>
+    </div>
+  </div>
+
+  <style>
+
+  </style>
+  <script src="core_app.js"></script>
+  <script>
+
+  </script>
 </body>
 </html>

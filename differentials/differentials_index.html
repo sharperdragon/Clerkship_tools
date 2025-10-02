@@ -19,8 +19,6 @@
         <option>Biochemical Presentations</option>
         <option>Hematological Presentations</option>
       </select>
-      <label class="check"><input id="hideLocked" type="checkbox" checked /> Hide locked</label>
-      <label class="check"><input id="showEmpty" type="checkbox" /> Show only with missing HPI</label>
       <span id="status" class="pill">Idle</span>
     </div>
   </header>
@@ -30,8 +28,10 @@
     <div id="error" class="error"></div>
   </main>
   <footer>
-    <span>Tip: This page assumes it sits next to <code class="path">Presentation_list.json</code> and the <code class="path">data/presentations/</code> folder. It will try multiple folders for each section.</span>
+    <span></span>
   </footer>
+  
+  <script src="core_app.js"></script>
   <script type="module" src="differentials_app.js"></script>
 </body>
 </html>

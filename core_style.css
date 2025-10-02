@@ -1,0 +1,377 @@
+:root {
+    --ink: #1f2937;
+    --muted: #6b7280;
+    --bg: #f7f9fc;
+    --panel: #fff;
+    --chip: #e8f1fb;
+    --chip-border: #cfe2f7;
+    --accent: #2f6db5;
+    --danger: #c0392b;
+    --divider: #e5e7eb;
+    --tab-bg: #eef2f7;
+    --good: #2bc233;
+
+    --chip-text: #0d3c73;
+    --chip-neg-bg: #ecfdf5;
+    --chip-neg-border: #34d399;
+    --chip-neg-text: #065f46;
+    --chip-critical-bg: #fee2e2;
+    --chip-critical-border: #dc2626;
+    --chip-critical-text: #b91c1c;
+    --panel-header-text: #27496d;
+    --subhead-border: #98b9e9;
+    --cb-text: #334;
+    --cb-bg: rgb(246, 250, 255, 0.2);
+    --subhead: #39639c;
+
+    /* Sticky stack heights */
+    --appbar-h: 38px;
+    /* app bar height */
+    --tier1-h: 36px;
+    /* top tabs row */
+    --tier2-h: 36px;
+    /* second tabs row */
+}
+
+
+
+/* lightweight defaults in case styles.css is minimal */
+body {
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+    margin: 0;
+}
+
+header.appbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 14px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    background: #f8f9fb;
+}
+
+header.appbar h1 {
+    font-size: 18px;
+    margin: 0;
+}
+
+main {
+    max-width: 900px;
+    margin: 28px auto;
+    padding: 0 16px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 14px;
+}
+
+.card {
+    border: 1px solid rgba(0, 0, 0, 0.07);
+    border-radius: 12px;
+    padding: 16px;
+    background: white;
+}
+
+.card h2 {
+    margin: 0 0 8px;
+    font-size: 16px;
+}
+
+.card p {
+    margin: 0 0 12px;
+    color: #555;
+    font-size: 14px;
+}
+
+.card a.button {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    color: #777;
+    font-size: 12px;
+    text-align: center;
+    padding: 28px 0;
+}
+
+
+/* Navigation Dropdown */
+#float-nav-container {
+    position: relative;
+    display: inline-block;
+    font-size: 14px;
+}
+
+#float-nav-button-container>span {
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 8px;
+    background: var(--chip);
+    border: 1px solid var(--chip-border);
+    color: var(--chip-text);
+    transition: background .2s ease;
+}
+
+#float-nav-button-container>span:hover {
+    background: color-mix(in oklab, var(--chip) 85%, var(--accent));
+    color: var(--ink);
+}
+
+
+.nav_category {
+    padding: 8px 16px;
+    cursor: pointer;
+    font-weight: 500;
+    color: var(--ink);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_category:hover {
+    background: var(--tab-bg);
+}
+
+.nav_category.has-children>.nav_submenu {
+    display: none;
+    padding-left: 12px;
+}
+
+
+.nav_submenu a.nav_link_tab,
+.nav_submenu label.nav_link_tab,
+.nav_submenu span.nav_link_tab {
+    display: block;
+    padding: 10px 14px;
+    font-size: 0.95rem;
+    color: #333;
+    text-decoration: none;
+    border-radius: 6px;
+    min-width: 160px;
+    /* readable target width */
+    width: max-content;
+    /* grow to content */
+    transition: background .2s ease, color .2s ease;
+}
+
+.nav_submenu a.nav_link_tab:hover,
+.nav_submenu label.nav_link_tab:hover,
+.nav_submenu span.nav_link_tab:hover {
+    background: var(--chip);
+    color: var(--ink);
+}
+
+/* --- Nav polish: accessibility, affordances, motion --- */
+
+/* Focus handling */
+#float-nav-button-container>span:focus-visible,
+.nav_category:focus-visible,
+.nav_submenu a.nav_link_tab:focus-visible,
+.nav_submenu label.nav_link_tab:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+    border-radius: 8px;
+}
+
+/* Caret affordance for categories */
+.nav_category.has-children>span::after {
+    content: "▸";
+    /* simple caret */
+    margin-left: 10px;
+    font-size: 12px;
+    color: var(--muted);
+    transition: transform .18s ease, color .18s ease;
+}
+
+.nav_category.has-children:hover>span::after {
+    transform: rotate(90deg);
+    color: var(--ink);
+}
+
+/* Dropdown subtle motion & layering */
+.nav_dropdown_container {
+    transform-origin: top right;
+    opacity: 0;
+    transform: translateY(4px) scale(0.98);
+    transition: opacity .16s ease, transform .16s ease;
+}
+
+#float-nav-button-container:hover .nav_dropdown_container,
+#float-nav-button-container:focus-within .nav_dropdown_container,
+.nav_dropdown_container:hover {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+/* Submenu reveal with smoothness */
+.nav_category.has-children>.nav_submenu {
+    transition: opacity .16s ease, transform .16s ease;
+    transform-origin: top left;
+    opacity: 0;
+    transform: translateY(2px);
+}
+
+.nav_category:hover>.nav_submenu,
+.nav_category:focus-within>.nav_submenu {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Submenu panel visuals */
+.nav_submenu {
+    border-left: 1px dashed var(--chip-border);
+    margin-left: 8px;
+    padding-left: 8px;
+}
+
+/* Item hit targets */
+.nav_submenu a.nav_link_tab,
+.nav_submenu label.nav_link_tab,
+.nav_submenu span.nav_link_tab {
+    border-radius: 6px;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+
+    .nav_dropdown_container,
+    .nav_category.has-children>.nav_submenu {
+        transition: none !important;
+        transform: none !important;
+    }
+}
+
+/* Mobile tweaks */
+@media (max-width: 768px) {
+    #float-nav-container {
+        font-size: 15px;
+    }
+
+    #float-nav-button-container>span {
+        padding: 10px 14px;
+    }
+
+    .nav_dropdown_container {
+        min-width: 260px;
+    }
+}
+
+
+/* Settings side-panel: polished, theme-aware, accessible */
+.settings-panel {
+    position: fixed;
+    inset: 0;
+    /* cover the whole viewport so we can add an overlay */
+    z-index: 1000;
+    pointer-events: none;
+    /* disabled until open */
+}
+
+/* Dimmed overlay */
+.settings-panel::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(2px);
+    opacity: 0;
+    transition: opacity .25s ease;
+}
+
+/* The sliding sheet */
+.settings-panel-content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: min(360px, 92vw);
+    height: 100%;
+    background: var(--panel, #fff);
+    color: var(--ink, #0e1116);
+    border-left: 1px solid var(--chip-border, #e2e8f0);
+    box-shadow: -16px 0 48px rgba(0, 0, 0, .2);
+    padding: 20px 18px 24px;
+    transform: translateX(100%);
+    transition: transform .28s ease;
+}
+
+/* Open state enables interactions, shows overlay, and slides in sheet */
+.settings-panel.open {
+    pointer-events: auto;
+}
+
+.settings-panel.open::before {
+    opacity: 1;
+}
+
+.settings-panel.open .settings-panel-content {
+    transform: translateX(0);
+}
+
+/* Close button */
+.close-settings {
+    background: none;
+    border: 1px solid transparent;
+    font-size: 22px;
+    line-height: 1;
+    width: 34px;
+    height: 34px;
+    border-radius: 8px;
+    display: inline-grid;
+    place-items: center;
+    cursor: pointer;
+    color: var(--muted, #667085);
+    transition: background .2s ease, border-color .2s ease, color .2s ease;
+    float: right;
+}
+
+.close-settings:hover {
+    background: var(--chip, #f5f7fb);
+    color: var(--ink, #0e1116);
+}
+
+.close-settings:focus-visible {
+    outline: 2px solid var(--accent, #3b82f6);
+    outline-offset: 2px;
+}
+
+/* Headings & layout */
+.settings-panel-content h2 {
+    margin: 0 0 6px;
+    font-size: 18px;
+}
+
+.settings-panel-content h3 {
+    margin: 18px 0 8px;
+    font-size: 14px;
+    color: var(--muted, #667085);
+    text-transform: uppercase;
+    letter-spacing: .04em;
+}
+
+/* Radio group */
+.settings-panel-content label {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin: 6px 0;
+    cursor: pointer;
+}
+
+.settings-panel-content input[type="radio"] {
+    accent-color: var(--accent, #3b82f6);
+}
+
+/* Motion preferences */
+@media (prefers-reduced-motion: reduce) {
+
+    .settings-panel::before,
+    .settings-panel-content {
+        transition: none !important;
+    }
+}
