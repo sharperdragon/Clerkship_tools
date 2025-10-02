@@ -24,11 +24,11 @@ DEFAULT_COLUMNS = 3
 # $ Optional explicit map from MODE key -> html partial path
 # ? Add/adjust as you add new modes/partials
 HTML_PATH_MAP = {
-    "SUBJECTIVE": "writer_tabs/subjective.html",
-    "ROS":        "writer_tabs/ROS.html",
-    "PE":         "writer_tabs/physical.html",
-    "MSE":        "writer_tabs/MSE.html",
-    # "PHYSICAL": "writer_tabs/physical.html",  # alias example
+    "SUBJECTIVE": "note_writer/subjective.html",
+    "ROS":        "note_writer/ROS.html",
+    "PE":         "note_writer/physical.html",
+    "MSE":        "note_writer/MSE.html",
+    # "PHYSICAL": "note_writer/physical.html",  # alias example
 }
 
 # $ Manifest version so your runtime can evolve safely
@@ -104,8 +104,8 @@ def derive_html_path(mode_key: str) -> str:
     key = mode_key.strip().upper()
     if key in HTML_PATH_MAP:
         return HTML_PATH_MAP[key]
-    # Fallback heuristic: TitleCase file under writer_tabs/
-    fallback = f"writer_tabs/{key.title()}.html"
+    # Fallback heuristic: TitleCase file under note_writer/
+    fallback = f"note_writer/{key.title()}.html"
     return fallback
 
 def read_template(path: Path) -> Dict[str, Any]:

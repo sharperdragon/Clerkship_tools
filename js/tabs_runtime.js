@@ -26,10 +26,10 @@ const ENABLE_HASH_ROUTING = true;
 
 
 const TAB_DEFS = {
-  subjective: { html: 'writer_tabs/subjective.html', css: [], js: [] },
-  ROS:        { html: 'writer_tabs/ROS.html',        css: [], js: [] },
-  PE:         { html: 'writer_tabs/PE.html',   css: [], js: [] },
-  MSE:        { html: 'writer_tabs/MSE.html',        css: [], js: [] }
+  subjective: { html: 'note_writer/subjective.html', css: [], js: [] },
+  ROS:        { html: 'note_writer/ROS.html',        css: [], js: [] },
+  PE:         { html: 'note_writer/PE.html',   css: [], js: [] },
+  MSE:        { html: 'note_writer/MSE.html',        css: [], js: [] }
 };
 
 
