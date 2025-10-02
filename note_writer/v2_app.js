@@ -553,6 +553,187 @@ function onClearPatients() {
   renderOutputsNow();
 }
 
+
+// === Output helpers (ported to mirror original phrasing) ===================
+function capFirst(s){ return s ? s.charAt(0).toUpperCase() + s.slice(1) : s; }
+function lcFirst(s){ return s ? s.charAt(0).toLowerCase() + s.slice(1) : s; }
+function joinWithOxford(list, conj="or"){
+  if (!list || list.length === 0) return "";
+  if (list.length === 1) return list[0];
+  if (list.length === 2) return `${list[0]} ${conj} ${list[1]}`;
+  return `${list.slice(0, -1).join(", ")}, ${conj} ${list[list.length - 1]}`;
+}
+
+// Normalize checkbox labels like the original (drop leading "+", "nl" -> "Normal")
+function formatPECheckLabel(raw){
+  if (!raw) return "";
+  let s = raw.trim().replace(/^\+\s*/,"");
+  s = s.replace(/(^|\s)nl(\s|$)/i, (m, p1, p2) => `${p1}Normal${p2}`);
+  return capFirst(s);
+}
+
+// Vital signs scrubber: returns { line1, line2 } or null
+function scrubVitalSigns(raw) {
+  if (!raw) return null;
+  const s = String(raw);
+
+  let bpBang = "", bpSys = "", bpDia = "";
+  { const m = s.match(/BP\s*(\(!\))?\s*([0-9]{2,3})\s*\/\s*([0-9]{2,3})/i);
+    if (m) { bpBang = m[1] ? "(!) " : ""; bpSys = m[2]; bpDia = m[3]; } }
+
+  let pulse = ""; { const m = s.match(/Pulse\s*([0-9]{1,3})/i); if (m) pulse = m[1]; }
+  let temp = "", site = ""; {
+    const m = s.match(/Temp\s*([\d.]+)\s*°?\s*F(?:\s*\(([^)]+)\))?/i);
+    if (m) { temp = m[1]; site = m[2] || ""; }
+  }
+  let resp = ""; { const m = s.match(/Resp\s*([0-9]{1,3})/i); if (m) resp = m[1]; }
+  let spo2 = ""; {
+    let m = s.match(/(?:SpO2|O2\s*Sat|Oxygen\s*Sat)\s*([0-9]{1,3})\s*%/i);
+    if (!m) m = s.match(/\bO2\b\s*([0-9]{1,3})\s*%/i);
+    if (m) spo2 = m[1];
+  }
+  let bmi = ""; {
+    let m = s.match(/BMI\s*([\d.]+)\s*kg\/m(?:2|²)/i);
+    if (!m) m = s.match(/BMI\s*([\d.]+)/i);
+    if (m) bmi = m[1];
+  }
+
+  const parts = [];
+  if (temp) parts.push(`Temp ${temp} °F${site ? ` (${site})` : ""}`);
+  if (bpSys && bpDia) parts.push(`BP ${bpBang}${bpSys}/${bpDia}`);
+  if (pulse) parts.push(`HR ${pulse}`);
+  if (resp) parts.push(`RR ${resp}`);
+  if (spo2) parts.push(`SpO2 ${spo2}%`);
+
+  let line1 = parts.join(", ");
+  line1 = line1.replace(", HR", ",  HR"); // double space before HR to match legacy look
+  if (/\bOxygen sat \(O2\)\b/i.test(line1)) {
+    if (spo2) line1 = line1.replace(/\bOxygen sat \(O2\)\b/gi, `SpO2 ${spo2}%`);
+    else line1 = line1.replace(/\s*,?\s*\bOxygen sat \(O2\)\b/gi, "").replace(/,\s*,/g, ", ").replace(/,\s*$/, "");
+  }
+  const line2 = bmi ? `BMI: ${bmi}` : "";
+  if (!line1 && !line2) return null;
+  return { line1, line2 };
+}
+
+// Find human-readable labels from the current DOM (HTML-first)
+function getControlLabelFromDOM(kind, id){
+  const roots = [QS(SEL.headerSlot), QS(SEL.contentSlot)];
+  for (const root of roots) {
+    if (!root) continue;
+    if (kind === 'field') {
+      const input = root.querySelector(`[data-field-id="${CSS.escape(id)}"]`);
+      const lab = input?.closest('label')?.querySelector('.field-label');
+      if (lab?.textContent?.trim()) return lab.textContent.trim();
+    }
+    if (kind === 'check') {
+      const el = root.querySelector(`input[type="checkbox"][data-check-id="${CSS.escape(id)}"]`);
+      const wrap = el?.closest('label');
+      if (wrap) {
+        const clone = wrap.cloneNode(true);
+        clone.querySelector('input')?.remove();
+        const t = clone.textContent.trim();
+        if (t) return t;
+      }
+    }
+    if (kind === 'chip') {
+      const el = root.querySelector(`[data-chip-id="${CSS.escape(id)}"]`);
+      if (el) {
+        const t = el.textContent?.trim();
+        if (t) return t;
+      }
+    }
+  }
+  return id; // fallback
+}
+
+// Chip state helpers
+function isPosChip(v){ return v === 'abn'; }
+function isNegChip(v){ return v === 'neg'; }
+
+function formatChipNegForOutput(id){
+  const label = getControlLabelFromDOM('chip', id);
+  if (STATE.mode === MODES.ROS) return `Denies ${label}`;
+  return `No ${label}`;
+}
+function formatChipPosForOutput(id){
+  return getControlLabelFromDOM('chip', id);
+}
+
+
+/* ==========================================================================
+   # Complete Note Enhancements (metrics, autosize, select-all)
+   ========================================================================== */
+
+function enhanceCompleteNoteUI(){
+  const view = document.getElementById('completeOutView');
+  const ta   = document.getElementById('completeOut');
+
+  // If there's no textarea, we only support view + metrics.
+  // If already enhanced, skip.
+  if (view) {
+    if (!view.dataset.enhanced) {
+      // Scoped Select-All inside the view
+      view.addEventListener('keydown', (e) => {
+        const isSelectAll = (e.metaKey || e.ctrlKey) && (e.key === 'a' || e.key === 'A');
+        if (!isSelectAll) return;
+        const sel = window.getSelection();
+        const range = document.createRange();
+        range.selectNodeContents(view);
+        sel.removeAllRanges();
+        sel.addRange(range);
+        e.preventDefault();
+        e.stopPropagation();
+      });
+      view.dataset.enhanced = "1";
+    }
+  }
+
+  // Metrics element (create if missing) — placed right before the textarea if present,
+  // otherwise appended after the view.
+  let metrics = document.querySelector('.cn-metrics[data-cn="metrics"]');
+  if (!metrics) {
+    metrics = document.createElement('div');
+    metrics.className = 'cn-metrics';
+    metrics.dataset.cn = 'metrics';
+    if (ta && ta.parentElement) {
+      ta.parentElement.insertBefore(metrics, ta);
+    } else if (view && view.parentElement) {
+      view.parentElement.insertBefore(metrics, view.nextSibling);
+    }
+  }
+
+  if (ta) {
+    // Hide the textarea by default; it remains the canonical plain-text store.
+    if (!ta.dataset.enhanced) {
+      ta.style.display = 'none';
+      ta.addEventListener('input', () => { _updateCnMetrics(); _autosizeCnTextarea(); });
+      ta.dataset.enhanced = "1";
+    }
+    _updateCnMetrics();
+    _autosizeCnTextarea();
+    window.addEventListener('resize', _autosizeCnTextarea);
+  }
+}
+
+function _updateCnMetrics(){
+  const ta = document.getElementById('completeOut');
+  const m  = document.querySelector('.cn-metrics[data-cn="metrics"]');
+  if (!ta || !m) return;
+  const txt = ta.value || "";
+  const chars = txt.length;
+  const words = (txt.trim().match(/\S+/g) || []).length;
+  const lines = txt ? txt.split(/\r\n|\n|\r/).length : 0;
+  m.textContent = `${chars} chars · ${words} words · ${lines} lines`;
+}
+
+function _autosizeCnTextarea(){
+  const ta = document.getElementById('completeOut');
+  if (!ta) return;
+  ta.style.height = 'auto';
+  ta.style.height = Math.min(ta.scrollHeight + 2, Math.floor(window.innerHeight * 0.6)) + 'px';
+}
+
 /* ==========================================================================
    # Output Builders
    ========================================================================== */
@@ -568,56 +749,119 @@ function renderOutputsNow() {
     const html = buildCompleteNoteHTML();
     const view = QS(SEL.completeOutView);
     if (view) view.innerHTML = html;
+
+    // Keep a plain-text mirror for copy/export and metrics/autosize
+    const ta = document.getElementById('completeOut');
+    if (ta) {
+      // Convert the HTML view to a reasonable plain text (line breaks preserved)
+      const tmp = document.createElement('div');
+      tmp.innerHTML = html;
+      const text = tmp.textContent || '';
+      ta.value = text.trim();
+      _updateCnMetrics();
+      _autosizeCnTextarea();
+    }
   });
 }
 
-// Build concise output for the *current* mode/subtab by reading DOM (fields/checks/chips)
-function buildSectionOutput() {
+function buildSectionOutput(){
   const mode = STATE.mode;
   const sub  = (mode === MODES.PE ? STATE.subtab : 'General');
   const sec  = getSec(mode, sub);
 
-  const chunks = [];
+  const lines = [];
 
-  // Fields
-  for (const [k, v] of Object.entries(sec.fields)) {
-    if (v != null && String(v).trim() !== '') chunks.push(`${k}: ${v}`);
-  }
+  // --- Header area: fields and vitals formatting ---
+  (function(){
+    const headerFields = QSA('[data-field-id]', QS(SEL.headerSlot));
+    const textParts = [];
+    let emittedVitals = false;
 
-  // Checks (positive only)
-  for (const [k, v] of Object.entries(sec.checks)) {
-    if (v) chunks.push(`${k}: yes`);
-  }
+    headerFields.forEach(el => {
+      const id = el.getAttribute('data-field-id');
+      const val = (sec.fields?.[id] ?? '').toString().trim();
+      if (!val) return;
 
-  // Chips
-  const abn = Object.entries(sec.chips).filter(([,v]) => v === 'abn').map(([k]) => k);
-  const neg = Object.entries(sec.chips).filter(([,v]) => v === 'neg').map(([k]) => k);
-  if (abn.length) chunks.push(`abnormal: ${abn.join(', ')}`);
-  if (neg.length) chunks.push(`negative: ${neg.join(', ')}`);
+      if (id === 'vital_signs_text') {
+        const fmt = scrubVitalSigns(val);
+        if (fmt) {
+          if (fmt.line1) { lines.push(fmt.line1); emittedVitals = true; }
+          if (fmt.line2) lines.push(fmt.line2);
+        }
+        return; // skip generic "Label: value."
+      }
 
-  return `[${mode}${mode===MODES.PE?`:${sub}`:''}] ` + (chunks.join(' | ') || '(no findings)');
+      const label = getControlLabelFromDOM('field', id);
+      textParts.push(`${label}: ${val}.`);
+    });
+    if (textParts.length) lines.push(...textParts);
+
+    // Header checkboxes (emit only if vitals didn’t already summarize)
+    if (!emittedVitals) {
+      const hdrChecks = QSA('input[type="checkbox"][data-check-id]', QS(SEL.headerSlot))
+        .filter(input => !!sec.checks?.[input.getAttribute('data-check-id')])
+        .map(input => formatPECheckLabel(getControlLabelFromDOM('check', input.getAttribute('data-check-id'))));
+      if (hdrChecks.length) {
+        lines.push(`${sub}: ${hdrChecks.join('. ')}.`);
+      }
+    }
+  })();
+
+  // --- Main content: positives first, then grouped negatives, then checks ---
+  (function(){
+    const contentRoot = QS(SEL.contentSlot);
+
+    const checks = QSA('input[type="checkbox"][data-check-id]', contentRoot)
+      .map(el => el.getAttribute('data-check-id'));
+    const chips  = QSA('[data-chip-id]', contentRoot)
+      .map(el => el.getAttribute('data-chip-id'));
+
+    const posParts = chips
+      .filter(id => isPosChip(sec.chips?.[id]))
+      .map(id => formatChipPosForOutput(id));
+
+    const negPartsRaw = chips
+      .filter(id => isNegChip(sec.chips?.[id]))
+      .map(id => formatChipNegForOutput(id));
+
+    const deniesItems = [];
+    const noItems = [];
+    negPartsRaw.forEach(t => {
+      const s = String(t).trim();
+      if (/^denies\b/i.test(s)) deniesItems.push(lcFirst(s.replace(/^denies\s+/i, "")));
+      else if (/^no\b/i.test(s)) noItems.push(lcFirst(s.replace(/^no\s+/i, "")));
+      else noItems.push(lcFirst(s.replace(/^(denies|no)\s+/i, "")));
+    });
+
+    const cbParts = checks
+      .filter(id => !!sec.checks?.[id])
+      .map(id => formatPECheckLabel(getControlLabelFromDOM('check', id)));
+
+    if (posParts.length || deniesItems.length || noItems.length || cbParts.length){
+      let line = `${sub}: `;
+
+      if (posParts.length){
+        const posPlainList = posParts.map((t,i)=> i===0 ? capFirst(t) : t);
+        line += `${posPlainList.join("; ")}.` + ((deniesItems.length || noItems.length || cbParts.length) ? " " : "");
+      }
+
+      const negSentences = [];
+      if (deniesItems.length) negSentences.push(`Denies ${joinWithOxford(deniesItems, "and")}.`);
+      if (noItems.length)     negSentences.push(`No ${joinWithOxford(noItems, "or")}.`);
+      if (cbParts.length)     negSentences.push(`${cbParts.join("; ")}.`);
+
+      line += negSentences.join(" ");
+      lines.push(line);
+    }
+  })();
+
+  return lines.join("\n");
 }
 
-// Build the full note by walking STATE (not DOM) and formatting to HTML
-function buildCompleteNoteHTML() {
+function buildCompleteNoteHTML(){
   const p = STATE.patientId;
   const ps = STATE.data[p] || {};
   const order = [MODES.SUBJECTIVE, MODES.ROS, MODES.PE, MODES.MSE];
-
-  const secToText = (secObj) => {
-    const chunks = [];
-    for (const [k, v] of Object.entries(secObj.fields)) {
-      if (v != null && String(v).trim() !== '') chunks.push(`${k}: ${v}`);
-    }
-    for (const [k, v] of Object.entries(secObj.checks)) {
-      if (v) chunks.push(`${k}: yes`);
-    }
-    const abn = Object.entries(secObj.chips).filter(([,v]) => v === 'abn').map(([k]) => k);
-    const neg = Object.entries(secObj.chips).filter(([,v]) => v === 'neg').map(([k]) => k);
-    if (abn.length) chunks.push(`Abnormal: ${abn.join(', ')}`);
-    if (neg.length) chunks.push(`Negative: ${neg.join(', ')}`);
-    return chunks.join(' | ');
-  };
 
   let html = '';
   for (const m of order) {
@@ -627,13 +871,22 @@ function buildCompleteNoteHTML() {
 
     html += `<section class="note-block"><h3>${m}</h3>`;
     for (const s of subNames) {
-      const txt = secToText(subs[s]);
-      if (!txt) continue;
-      const label = (m === MODES.PE) ? `${m} — ${s}` : m;
-      html += `<div class="note-section"><strong>${label}:</strong> ${escapeHTML(txt)}</div>`;
+      // temporarily switch context to reuse the same builder (uses DOM labels)
+      const prevMode = STATE.mode, prevSub = STATE.subtab;
+      STATE.mode = m; STATE.subtab = (m === MODES.PE ? s : 'General');
+
+      const txt = buildSectionOutput();
+
+      STATE.mode = prevMode; STATE.subtab = prevSub;
+
+      if (txt && txt.trim()) {
+        const label = (m === MODES.PE) ? `${m} — ${s}` : m;
+        html += `<div class="note-section"><strong>${label}:</strong> ${escapeHTML(txt).replace(/\n/g,'<br/>')}</div>`;
+      }
     }
     html += `</section>`;
   }
+
   return html || '<em>(No content yet)</em>';
 }
 
@@ -659,6 +912,7 @@ async function init() {
   // Default highlight for current patient in any patient UI (optional)
   highlightTier1(STATE.mode);
   await loadMode(STATE.mode);
+  enhanceCompleteNoteUI();
 }
 
 document.addEventListener('DOMContentLoaded', init);

@@ -24,12 +24,19 @@ const DEFAULT_TAB = 'subjective';
 const ENABLE_HTML_CACHE = true;
 const ENABLE_HASH_ROUTING = true;
 
+const ENABLE_ASSET_BUST = false; // set to true during active development to avoid cached CSS/JS
+function withBust(url){
+  if (!ENABLE_ASSET_BUST) return url;
+  const sep = url.includes('?') ? '&' : '?';
+  return `${url}${sep}v=${Date.now()}`;
+}
 
 const TAB_DEFS = {
-  subjective: { html: 'note_writer/subjective.html', css: [], js: [] },
-  ROS:        { html: 'note_writer/ROS.html',        css: [], js: [] },
-  PE:         { html: 'note_writer/PE.html',   css: [], js: [] },
-  MSE:        { html: 'note_writer/MSE.html',        css: [], js: [] }
+  // Paths are relative to writer_base.html. Adjust if you serve from another root.
+  subjective: { html: 'note_writer/subjective.html', css: ['note_writer/subjective.css'], js: ['note_writer/subjective.js'] },
+  ROS:        { html: 'note_writer/ROS.html',        css: ['note_writer/ROS.css'],        js: ['note_writer/ROS.js'] },
+  PE:         { html: 'note_writer/PE.html',         css: ['note_writer/PE.css'],         js: ['note_writer/PE.js'] },
+  MSE:        { html: 'note_writer/MSE.html',        css: ['note_writer/MSE.css'],        js: ['note_writer/MSE.js'] }
 };
 
 
@@ -137,6 +144,11 @@ function unloadTabAssets(prevKey){
       window.__tabCleanup[prevKey]();
     }
   } catch (e) { console.warn('Tab cleanup error:', e); }
+  try {
+    if (prevKey && window.__tabCleanup && typeof window.__tabCleanup[prevKey] !== 'undefined') {
+      delete window.__tabCleanup[prevKey];
+    }
+  } catch (_) {}
 
   for (const el of _currentAssets.css) el.remove();
   for (const el of _currentAssets.js) el.remove();
@@ -145,11 +157,17 @@ function unloadTabAssets(prevKey){
 
 function injectTabCSS(tabKey, urls){
   if (!Array.isArray(urls) || !urls.length) return;
-  const slot = byId(TAB_CSS_SLOT_ID) || document.head;
+  let slot = byId(TAB_CSS_SLOT_ID);
+  if (!slot) {
+    slot = document.createElement('div');
+    slot.id = TAB_CSS_SLOT_ID;
+    // Keep it in <head> so styles apply ASAP
+    (document.head || document.documentElement).appendChild(slot);
+  }
   urls.forEach(href => {
     const link = document.createElement('link');
     link.rel = 'stylesheet';
-    link.href = href;
+    link.href = withBust(href);
     link.dataset.tabAsset = tabKey;
     slot.appendChild(link);
     _currentAssets.css.push(link);
@@ -158,12 +176,18 @@ function injectTabCSS(tabKey, urls){
 
 async function injectTabJS(tabKey, urls){
   if (!Array.isArray(urls) || !urls.length) return;
-  const slot = byId(TAB_JS_SLOT_ID) || document.body;
+  let slot = byId(TAB_JS_SLOT_ID);
+  if (!slot) {
+    slot = document.createElement('div');
+    slot.id = TAB_JS_SLOT_ID;
+    // Put scripts near the end of <body> for predictable execution order
+    (document.body || document.documentElement).appendChild(slot);
+  }
   for (const src of urls){
     /* eslint no-await-in-loop: "off" */
     await new Promise((resolve, reject) => {
       const s = document.createElement('script');
-      s.src = src;
+      s.src = withBust(src);
       s.defer = true;
       s.dataset.tabAsset = tabKey;
       s.onload = resolve;
@@ -372,6 +396,18 @@ async function switchTab(rawKey){
    # Bootstrapping
    =========================== */
 function initTabsRuntime(){
+  // Ensure asset slots exist (optional, for cleaner DevTools structure)
+  if (!byId(TAB_CSS_SLOT_ID)) {
+    const slot = document.createElement('div');
+    slot.id = TAB_CSS_SLOT_ID;
+    (document.head || document.documentElement).appendChild(slot);
+  }
+  if (!byId(TAB_JS_SLOT_ID)) {
+    const slot = document.createElement('div');
+    slot.id = TAB_JS_SLOT_ID;
+    (document.body || document.documentElement).appendChild(slot);
+  }
+
   // Wire clicks on tab buttons
   document.addEventListener('click', (ev) => {
     const btn = ev.target.closest(TAB_BUTTONS_SELECTOR);
