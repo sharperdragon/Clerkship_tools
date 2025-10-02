@@ -3,9 +3,9 @@
   "items": [
     {
       "name": "Puberty",
-      "system": "PHYSIOLOGICAL",
+      "system": "Physiological",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -22,9 +22,9 @@
     },
     {
       "name": "Old age",
-      "system": "PHYSIOLOGICAL",
+      "system": "Physiological",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -41,9 +41,9 @@
     },
     {
       "name": "Neonates",
-      "system": "PHYSIOLOGICAL",
+      "system": "Physiological",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -60,9 +60,9 @@
     },
     {
       "name": "Chronic liver disease (Fig. 27)",
-      "system": "PATHOLOGICAL",
+      "system": "Pathological",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -79,9 +79,9 @@
     },
     {
       "name": "Drugs",
-      "system": "PATHOLOGICAL",
+      "system": "Pathological",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -98,9 +98,9 @@
     },
     {
       "name": "Chronic renal failure",
-      "system": "PATHOLOGICAL",
+      "system": "Pathological",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -117,9 +117,9 @@
     },
     {
       "name": "Carcinoma of the male breast",
-      "system": "PATHOLOGICAL",
+      "system": "Pathological",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -136,9 +136,9 @@
     },
     {
       "name": "Hyperthyroidism",
-      "system": "PATHOLOGICAL",
+      "system": "Pathological",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -155,9 +155,9 @@
     },
     {
       "name": "Hypogonadism",
-      "system": "PATHOLOGICAL",
+      "system": "Pathological",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -174,9 +174,9 @@
     },
     {
       "name": "Klinefelter\u2019s syndrome",
-      "system": "PATHOLOGICAL",
+      "system": "Pathological",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -193,9 +193,9 @@
     },
     {
       "name": "Agenesis",
-      "system": "PATHOLOGICAL",
+      "system": "Pathological",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -212,9 +212,9 @@
     },
     {
       "name": "Testicular tumours",
-      "system": "PATHOLOGICAL",
+      "system": "Pathological",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -231,9 +231,9 @@
     },
     {
       "name": "Bronchial carcinoma (inappropriate secretion of hormones)",
-      "system": "PATHOLOGICAL",
+      "system": "Pathological",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -250,9 +250,9 @@
     },
     {
       "name": "Pituitary tumours (",
-      "system": "PATHOLOGICAL",
+      "system": "Pathological",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -269,9 +269,9 @@
     },
     {
       "name": "Malnutrition",
-      "system": "PATHOLOGICAL",
+      "system": "Pathological",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],

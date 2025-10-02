@@ -1,7 +1,7 @@
 {
   "type": "object",
   "properties": {
-    "symptoms": {
+    "hpi": {
       "type": "object",
       "required": ["onset","progression","palliate","provoke","quality","timing","region","radiation","severity","clinical tests","other symptoms"],
       "properties": {

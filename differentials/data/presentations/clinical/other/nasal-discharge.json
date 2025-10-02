@@ -3,9 +3,9 @@
   "items": [
     {
       "name": "Choanal atresia",
-      "system": "CONGENITAL",
+      "system": "Congenital",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -22,9 +22,9 @@
     },
     {
       "name": "Cystic \ufb01brosis",
-      "system": "CONGENITAL",
+      "system": "Congenital",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -41,9 +41,9 @@
     },
     {
       "name": "Common cold (coryza)",
-      "system": "INFECTIVE",
+      "system": "Infective",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -60,9 +60,9 @@
     },
     {
       "name": "Chronic rhinitis",
-      "system": "INFECTIVE",
+      "system": "Infective",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -79,9 +79,9 @@
     },
     {
       "name": "Sinusitis (acute or chronic)",
-      "system": "INFECTIVE",
+      "system": "Infective",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -98,9 +98,9 @@
     },
     {
       "name": "Adenoiditis (large adenoids)",
-      "system": "INFECTIVE",
+      "system": "Infective",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -117,9 +117,9 @@
     },
     {
       "name": "Viral infections",
-      "system": "INFECTIVE",
+      "system": "Infective",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -136,9 +136,9 @@
     },
     {
       "name": "Bacterial infections (",
-      "system": "INFECTIVE",
+      "system": "Infective",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -155,9 +155,9 @@
     },
     {
       "name": "Fungal infections",
-      "system": "INFECTIVE",
+      "system": "Infective",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -174,9 +174,9 @@
     },
     {
       "name": "Chronic infections (",
-      "system": "INFECTIVE",
+      "system": "Infective",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -193,9 +193,9 @@
     },
     {
       "name": "AIDS \u2022 (common in certain developing countries)",
-      "system": "INFECTIVE",
+      "system": "Infective",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -212,9 +212,9 @@
     },
     {
       "name": "Allergic rhinitis",
-      "system": "ALLERGIC",
+      "system": "Allergic",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -231,9 +231,9 @@
     },
     {
       "name": "Nasal polyps",
-      "system": "INFLAMMATORY",
+      "system": "Inflammatory",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -250,9 +250,9 @@
     },
     {
       "name": "Decongestant spray overuse",
-      "system": "INFLAMMATORY",
+      "system": "Inflammatory",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -269,9 +269,9 @@
     },
     {
       "name": "Non-eosinophilic vasomotor rhinitis",
-      "system": "INFLAMMATORY",
+      "system": "Inflammatory",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -288,9 +288,9 @@
     },
     {
       "name": "Eosinophilic vasomotor rhinitis",
-      "system": "INFLAMMATORY",
+      "system": "Inflammatory",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -307,9 +307,9 @@
     },
     {
       "name": "Carcinoma",
-      "system": "NEOPLASTIC",
+      "system": "Neoplastic",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -326,9 +326,9 @@
     },
     {
       "name": "Nasopharynx \u2022 (common in South east Asia)",
-      "system": "NEOPLASTIC",
+      "system": "Neoplastic",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -345,9 +345,9 @@
     },
     {
       "name": "Sinuses",
-      "system": "NEOPLASTIC",
+      "system": "Neoplastic",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -364,9 +364,9 @@
     },
     {
       "name": "Lymphoma (malignant granuloma)",
-      "system": "NEOPLASTIC",
+      "system": "Neoplastic",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -383,9 +383,9 @@
     },
     {
       "name": "Granulomatosis with Polyangiitis (GPA \u2013 formerly Wegener\u2019s",
-      "system": "GRANULOMATOUS DISEASE",
+      "system": "Granulomatous Disease",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -402,9 +402,9 @@
     },
     {
       "name": "Foreign body",
-      "system": "TRAUMATIC",
+      "system": "Traumatic",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -421,9 +421,9 @@
     },
     {
       "name": "Crying",
-      "system": "TRAUMATIC",
+      "system": "Traumatic",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -440,9 +440,9 @@
     },
     {
       "name": "Fracture of the anterior or middle fossa",
-      "system": "TRAUMATIC",
+      "system": "Traumatic",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -459,9 +459,9 @@
     },
     {
       "name": "Irritant gases, , tobacco smoke",
-      "system": "TRAUMATIC",
+      "system": "Traumatic",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -478,9 +478,9 @@
     },
     {
       "name": "Senile rhinorrhoea",
-      "system": "DEGENERATIVE",
+      "system": "Degenerative",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -497,9 +497,9 @@
     },
     {
       "name": "Pregnancy",
-      "system": "MISCELLANEOUS",
+      "system": "Miscellaneous",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -516,9 +516,9 @@
     },
     {
       "name": "Cluster headache",
-      "system": "MISCELLANEOUS",
+      "system": "Miscellaneous",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],

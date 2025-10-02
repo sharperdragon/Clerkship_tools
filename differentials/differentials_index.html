@@ -1,0 +1,37 @@
+
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Clinical Differentials — Index</title>
+  <link rel="stylesheet" href="differentials_style.css" />
+</head>
+<body>
+  <header>
+    <h1><a style="font-size: 150%; background-color: transparent; padding: 3px 8px; border-radius: 8px; text-decoration:none; color: var(--ink)" href="../index.html">Clerkship Tools</a> <span style="font-size: 100%; font-weight: normal;">— Clinical Differentials Resource Browser</span></h1>
+    <div class="controls">
+      <input id="q" type="text" placeholder="Search presentation / etiology / system…" />
+      <select id="section">
+        <option value="">All sections</option>
+        <option>Clinical Presentations</option>
+        <option>Biochemical Presentations</option>
+        <option>Hematological Presentations</option>
+      </select>
+      <label class="check"><input id="hideLocked" type="checkbox" checked /> Hide locked</label>
+      <label class="check"><input id="showEmpty" type="checkbox" /> Show only with missing HPI</label>
+      <span id="status" class="pill">Idle</span>
+    </div>
+  </header>
+  <main>
+    <div class="stats" id="stats">Loading…</div>
+    <div class="grid" id="grid"></div>
+    <div id="error" class="error"></div>
+  </main>
+  <footer>
+    <span>Tip: This page assumes it sits next to <code class="path">Presentation_list.json</code> and the <code class="path">data/presentations/</code> folder. It will try multiple folders for each section.</span>
+  </footer>
+  <script type="module" src="differentials_app.js"></script>
+</body>
+</html>

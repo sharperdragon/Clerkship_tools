@@ -3,9 +3,9 @@
   "items": [
     {
       "name": "Torticollis",
-      "system": "CONGENITAL",
+      "system": "Congenital",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -22,9 +22,9 @@
     },
     {
       "name": "Klippel\u2013Feil syndrome",
-      "system": "CONGENITAL",
+      "system": "Congenital",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -41,9 +41,9 @@
     },
     {
       "name": "Fractures",
-      "system": "TRAUMATIC",
+      "system": "Traumatic",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -60,9 +60,9 @@
     },
     {
       "name": "Dislocations",
-      "system": "TRAUMATIC",
+      "system": "Traumatic",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -79,9 +79,9 @@
     },
     {
       "name": "Whiplash injury",
-      "system": "TRAUMATIC",
+      "system": "Traumatic",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -98,9 +98,9 @@
     },
     {
       "name": "Rheumatoid arthritis",
-      "system": "INFLAMMATORY",
+      "system": "Inflammatory",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -117,9 +117,9 @@
     },
     {
       "name": "Herpes zoster",
-      "system": "INFECTIVE",
+      "system": "Infective",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -136,9 +136,9 @@
     },
     {
       "name": "TB \u2022 (common where TB is endemic)",
-      "system": "INFECTIVE",
+      "system": "Infective",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -155,9 +155,9 @@
     },
     {
       "name": "Cervical spondylosis",
-      "system": "DEGENERATIVE",
+      "system": "Degenerative",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -174,9 +174,9 @@
     },
     {
       "name": "Cervical radiculopathy",
-      "system": "DEGENERATIVE",
+      "system": "Degenerative",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -193,9 +193,9 @@
     },
     {
       "name": "Degenerative cervical myelopathy",
-      "system": "DEGENERATIVE",
+      "system": "Degenerative",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -212,9 +212,9 @@
     },
     {
       "name": "Secondary deposits",
-      "system": "NEOPLASTIC",
+      "system": "Neoplastic",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -231,9 +231,9 @@
     },
     {
       "name": "Postural",
-      "system": "NEOPLASTIC",
+      "system": "Neoplastic",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -250,9 +250,9 @@
     },
     {
       "name": "Exposure to cold",
-      "system": "NEOPLASTIC",
+      "system": "Neoplastic",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -269,9 +269,9 @@
     },
     {
       "name": "Meningitis",
-      "system": "NEOPLASTIC",
+      "system": "Neoplastic",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -288,9 +288,9 @@
     },
     {
       "name": "Subarachnoid hemorrhage",
-      "system": "NEOPLASTIC",
+      "system": "Neoplastic",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -307,9 +307,9 @@
     },
     {
       "name": "Osteomyelitis",
-      "system": "NEOPLASTIC",
+      "system": "Neoplastic",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],

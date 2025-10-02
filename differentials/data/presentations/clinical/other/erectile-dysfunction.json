@@ -3,9 +3,9 @@
   "items": [
     {
       "name": "Diabetes mellitus",
-      "system": "ENDOCRINE",
+      "system": "Endocrine",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -22,9 +22,9 @@
     },
     {
       "name": "Hyperlipidemia",
-      "system": "ENDOCRINE",
+      "system": "Endocrine",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -41,9 +41,9 @@
     },
     {
       "name": "Hypogonadism",
-      "system": "ENDOCRINE",
+      "system": "Endocrine",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -60,9 +60,9 @@
     },
     {
       "name": "Hypothyroidism",
-      "system": "ENDOCRINE",
+      "system": "Endocrine",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -79,9 +79,9 @@
     },
     {
       "name": "Cushing\u2019s syndrome",
-      "system": "ENDOCRINE",
+      "system": "Endocrine",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -98,9 +98,9 @@
     },
     {
       "name": "Metabolic syndrome",
-      "system": "ENDOCRINE",
+      "system": "Endocrine",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -117,9 +117,9 @@
     },
     {
       "name": "Addison\u2019s disease",
-      "system": "ENDOCRINE",
+      "system": "Endocrine",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -136,9 +136,9 @@
     },
     {
       "name": "Diabetic vascular disease",
-      "system": "VASCULAR",
+      "system": "Vascular",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -155,9 +155,9 @@
     },
     {
       "name": "Aortoiliac disease (Leriche\u2019s syndrome)",
-      "system": "VASCULAR",
+      "system": "Vascular",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -174,9 +174,9 @@
     },
     {
       "name": "Spinal lesions",
-      "system": "NEUROLOGICAL",
+      "system": "Neurological",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -193,9 +193,9 @@
     },
     {
       "name": "Neuropathies (",
-      "system": "NEUROLOGICAL",
+      "system": "Neurological",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -212,9 +212,9 @@
     },
     {
       "name": "Spina bi\ufb01da",
-      "system": "NEUROLOGICAL",
+      "system": "Neurological",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -231,9 +231,9 @@
     },
     {
       "name": "Pelvic surgery (damage to nervi erigentes)",
-      "system": "NEUROLOGICAL",
+      "system": "Neurological",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -250,9 +250,9 @@
     },
     {
       "name": "Antihypertensives",
-      "system": "NEUROLOGICAL",
+      "system": "Neurological",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -269,9 +269,9 @@
     },
     {
       "name": "Antidepressants",
-      "system": "NEUROLOGICAL",
+      "system": "Neurological",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -288,9 +288,9 @@
     },
     {
       "name": "Alcohol",
-      "system": "NEUROLOGICAL",
+      "system": "Neurological",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -307,9 +307,9 @@
     },
     {
       "name": "Beta-blockers",
-      "system": "NEUROLOGICAL",
+      "system": "Neurological",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -326,9 +326,9 @@
     },
     {
       "name": "Oestrogens",
-      "system": "NEUROLOGICAL",
+      "system": "Neurological",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -345,9 +345,9 @@
     },
     {
       "name": "Cocaine",
-      "system": "NEUROLOGICAL",
+      "system": "Neurological",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -364,9 +364,9 @@
     },
     {
       "name": "Smoking",
-      "system": "NEUROLOGICAL",
+      "system": "Neurological",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -383,9 +383,9 @@
     },
     {
       "name": "Phimosis",
-      "system": "LOCAL PAINFUL CONDITIONS",
+      "system": "Local Painful Conditions",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -402,9 +402,9 @@
     },
     {
       "name": "Malignancy",
-      "system": "SYSTEMIC DISEASE",
+      "system": "Systemic Disease",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -421,9 +421,9 @@
     },
     {
       "name": "Hypertension",
-      "system": "SYSTEMIC DISEASE",
+      "system": "Systemic Disease",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -440,9 +440,9 @@
     },
     {
       "name": "Cirrhosis",
-      "system": "SYSTEMIC DISEASE",
+      "system": "Systemic Disease",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -459,9 +459,9 @@
     },
     {
       "name": "Chronic renal failure",
-      "system": "SYSTEMIC DISEASE",
+      "system": "Systemic Disease",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -478,9 +478,9 @@
     },
     {
       "name": "Parkinson\u2019s disease",
-      "system": "SYSTEMIC DISEASE",
+      "system": "Systemic Disease",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -497,9 +497,9 @@
     },
     {
       "name": "Depression",
-      "system": "PSYCHOGENIC",
+      "system": "Psychogenic",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -516,9 +516,9 @@
     },
     {
       "name": "Ageing",
-      "system": "PSYCHOGENIC",
+      "system": "Psychogenic",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],

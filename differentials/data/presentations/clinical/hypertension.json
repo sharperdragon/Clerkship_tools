@@ -5,7 +5,7 @@
       "name": "Renal parenchymal diseases",
       "system": "General",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -24,7 +24,7 @@
       "name": "Diabetic nephropathy",
       "system": "General",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -43,7 +43,7 @@
       "name": "Renal artery stenosis (Fig. 34)",
       "system": "General",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -62,7 +62,7 @@
       "name": "Chronic pyelonephritis",
       "system": "General",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -81,7 +81,7 @@
       "name": "Polycystic kidney disease",
       "system": "General",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -98,9 +98,9 @@
     },
     {
       "name": "Adrenal",
-      "system": "ENDOCRINE",
+      "system": "Endocrine",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -117,9 +117,9 @@
     },
     {
       "name": "Cushing\u2019s syndrome",
-      "system": "ENDOCRINE",
+      "system": "Endocrine",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -136,9 +136,9 @@
     },
     {
       "name": "Primary hyperaldosteronism (Conn\u2019s Syndrome)",
-      "system": "ENDOCRINE",
+      "system": "Endocrine",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -155,9 +155,9 @@
     },
     {
       "name": "Pheochromocytoma",
-      "system": "ENDOCRINE",
+      "system": "Endocrine",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -174,9 +174,9 @@
     },
     {
       "name": "Acromegaly",
-      "system": "ENDOCRINE",
+      "system": "Endocrine",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -193,9 +193,9 @@
     },
     {
       "name": "Oestrogen-containing oral contraceptives",
-      "system": "ENDOCRINE",
+      "system": "Endocrine",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -212,9 +212,9 @@
     },
     {
       "name": "Corticosteroids",
-      "system": "ENDOCRINE",
+      "system": "Endocrine",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -231,9 +231,9 @@
     },
     {
       "name": "SNRIs \u2013 venlafaxine, sibutramine",
-      "system": "ENDOCRINE",
+      "system": "Endocrine",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -250,9 +250,9 @@
     },
     {
       "name": "Non steroidal anti-in\ufb02ammatories \u2013 Ibuprofen, diclofenac",
-      "system": "ENDOCRINE",
+      "system": "Endocrine",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -269,9 +269,9 @@
     },
     {
       "name": "Sympathomimetics \u2013 amphetamines, ephedrine",
-      "system": "ENDOCRINE",
+      "system": "Endocrine",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -288,9 +288,9 @@
     },
     {
       "name": "Coarctation of the aorta",
-      "system": "CARDIOVASCULAR",
+      "system": "Cardiovascular",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -307,9 +307,9 @@
     },
     {
       "name": "Pregnancy (pre-eclampsia and eclampsia)",
-      "system": "CARDIOVASCULAR",
+      "system": "Cardiovascular",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],

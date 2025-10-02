@@ -3,9 +3,9 @@
   "items": [
     {
       "name": "Hematoma",
-      "system": "TRAUMATIC",
+      "system": "Traumatic",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -22,9 +22,9 @@
     },
     {
       "name": "Cephalhematoma",
-      "system": "TRAUMATIC",
+      "system": "Traumatic",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -41,9 +41,9 @@
     },
     {
       "name": "Sebaceous cysts (epidermal cysts) (Fig. 52)",
-      "system": "CYSTIC",
+      "system": "Cystic",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -60,9 +60,9 @@
     },
     {
       "name": "Basal cell carcinoma",
-      "system": "MALIGNANT",
+      "system": "Malignant",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -79,9 +79,9 @@
     },
     {
       "name": "Squamous cell carcinoma",
-      "system": "MALIGNANT",
+      "system": "Malignant",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -98,9 +98,9 @@
     },
     {
       "name": "Malignant melanoma",
-      "system": "MALIGNANT",
+      "system": "Malignant",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -117,9 +117,9 @@
     },
     {
       "name": "Leukemia",
-      "system": "MALIGNANT",
+      "system": "Malignant",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -136,9 +136,9 @@
     },
     {
       "name": "Myeloma",
-      "system": "MALIGNANT",
+      "system": "Malignant",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -155,9 +155,9 @@
     },
     {
       "name": "Breast",
-      "system": "MALIGNANT",
+      "system": "Malignant",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -174,9 +174,9 @@
     },
     {
       "name": "Bronchus",
-      "system": "MALIGNANT",
+      "system": "Malignant",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -193,9 +193,9 @@
     },
     {
       "name": "Thyroid",
-      "system": "MALIGNANT",
+      "system": "Malignant",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -212,9 +212,9 @@
     },
     {
       "name": "Prostate",
-      "system": "MALIGNANT",
+      "system": "Malignant",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -231,9 +231,9 @@
     },
     {
       "name": "Kidney",
-      "system": "MALIGNANT",
+      "system": "Malignant",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -250,9 +250,9 @@
     },
     {
       "name": "Scalp abscess",
-      "system": "INFECTIVE",
+      "system": "Infective",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -269,9 +269,9 @@
     },
     {
       "name": "Tinea capitis",
-      "system": "INFECTIVE",
+      "system": "Infective",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -288,9 +288,9 @@
     },
     {
       "name": "Cock\u2019s peculiar tumour",
-      "system": "INFECTIVE",
+      "system": "Infective",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -307,9 +307,9 @@
     },
     {
       "name": "Psoriasis",
-      "system": "INFECTIVE",
+      "system": "Infective",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -326,9 +326,9 @@
     },
     {
       "name": "Seborrhoeic dermatitis",
-      "system": "INFECTIVE",
+      "system": "Infective",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],

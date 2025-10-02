@@ -3,9 +3,9 @@
   "items": [
     {
       "name": "Dehydration, , diarrhoea",
-      "system": "RENAL CIRCULATORY INSUFFICIENCY",
+      "system": "Renal Circulatory Insufficiency",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -22,9 +22,9 @@
     },
     {
       "name": "Shock, , burns",
-      "system": "RENAL CIRCULATORY INSUFFICIENCY",
+      "system": "Renal Circulatory Insufficiency",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -41,9 +41,9 @@
     },
     {
       "name": "Nephrotoxins",
-      "system": "RENAL CIRCULATORY INSUFFICIENCY",
+      "system": "Renal Circulatory Insufficiency",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -60,9 +60,9 @@
     },
     {
       "name": "Acute tubular necrosis",
-      "system": "RENAL CIRCULATORY INSUFFICIENCY",
+      "system": "Renal Circulatory Insufficiency",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -79,9 +79,9 @@
     },
     {
       "name": "Acute cortical necrosis",
-      "system": "RENAL CIRCULATORY INSUFFICIENCY",
+      "system": "Renal Circulatory Insufficiency",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -98,9 +98,9 @@
     },
     {
       "name": "Acute glomerulonephritis",
-      "system": "RENAL CIRCULATORY INSUFFICIENCY",
+      "system": "Renal Circulatory Insufficiency",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -117,9 +117,9 @@
     },
     {
       "name": "Acute interstitial nephritis",
-      "system": "RENAL CIRCULATORY INSUFFICIENCY",
+      "system": "Renal Circulatory Insufficiency",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -136,9 +136,9 @@
     },
     {
       "name": "Vascular lesions",
-      "system": "RENAL CIRCULATORY INSUFFICIENCY",
+      "system": "Renal Circulatory Insufficiency",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -155,9 +155,9 @@
     },
     {
       "name": "Prostatic hypertrophy",
-      "system": "POST-RENAL (OBSTRUCTIVE)",
+      "system": "Post-Renal (obstructive)",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -174,9 +174,9 @@
     },
     {
       "name": "Post-renal calculi",
-      "system": "POST-RENAL (OBSTRUCTIVE)",
+      "system": "Post-Renal (obstructive)",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -193,9 +193,9 @@
     },
     {
       "name": "Pelvic tumours",
-      "system": "POST-RENAL (OBSTRUCTIVE)",
+      "system": "Post-Renal (obstructive)",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -212,9 +212,9 @@
     },
     {
       "name": "Hematoma",
-      "system": "POST-RENAL (OBSTRUCTIVE)",
+      "system": "Post-Renal (obstructive)",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -231,9 +231,9 @@
     },
     {
       "name": "Retroperitoneal \ufb01brosis",
-      "system": "POST-RENAL (OBSTRUCTIVE)",
+      "system": "Post-Renal (obstructive)",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -250,9 +250,9 @@
     },
     {
       "name": "Mismatched transfusion (hemoglobinuria)",
-      "system": "OTHERS",
+      "system": "Others",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -269,9 +269,9 @@
     },
     {
       "name": "Crush injuries (myoglobinuria)",
-      "system": "OTHERS",
+      "system": "Others",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -288,9 +288,9 @@
     },
     {
       "name": "Blocked catheter",
-      "system": "ANURIA",
+      "system": "Anuria",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -307,9 +307,9 @@
     },
     {
       "name": "Ureteric damage (bilateral)",
-      "system": "ANURIA",
+      "system": "Anuria",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -326,9 +326,9 @@
     },
     {
       "name": "Stone in solitary functioning kidney",
-      "system": "ANURIA",
+      "system": "Anuria",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],

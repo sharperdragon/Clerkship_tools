@@ -3,9 +3,9 @@
   "items": [
     {
       "name": "Alcohol",
-      "system": "HEPATITIS/INFECTION",
+      "system": "Hepatitis/Infection",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -22,9 +22,9 @@
     },
     {
       "name": "Viruses (Hep A/B/C, EBV)",
-      "system": "HEPATITIS/INFECTION",
+      "system": "Hepatitis/Infection",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -41,9 +41,9 @@
     },
     {
       "name": "Bacteria (Leptospirosis, actinomycosis, pyogenic abscess)",
-      "system": "HEPATITIS/INFECTION",
+      "system": "Hepatitis/Infection",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -60,9 +60,9 @@
     },
     {
       "name": "Protozoans (malaria, amoeba)",
-      "system": "HEPATITIS/INFECTION",
+      "system": "Hepatitis/Infection",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -79,9 +79,9 @@
     },
     {
       "name": "Parasites (hydatid cyst, liver \ufb02uke)",
-      "system": "HEPATITIS/INFECTION",
+      "system": "Hepatitis/Infection",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -98,9 +98,9 @@
     },
     {
       "name": "Congestive cardiac failure",
-      "system": "CONGESTION",
+      "system": "Congestion",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -117,9 +117,9 @@
     },
     {
       "name": "Constrictive pericarditis",
-      "system": "CONGESTION",
+      "system": "Congestion",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -136,9 +136,9 @@
     },
     {
       "name": "Budd\u2013Chiari syndrome",
-      "system": "CONGESTION",
+      "system": "Congestion",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -155,9 +155,9 @@
     },
     {
       "name": "Fatty liver",
-      "system": "INFILTRATION",
+      "system": "Infiltration",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -174,9 +174,9 @@
     },
     {
       "name": "Amyloid",
-      "system": "INFILTRATION",
+      "system": "Infiltration",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -193,9 +193,9 @@
     },
     {
       "name": "Extrahepatic obstruction, , bile",
-      "system": "BILIARY TRACT DISEASE",
+      "system": "Biliary Tract Disease",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -212,9 +212,9 @@
     },
     {
       "name": "Sclerosing cholangitis",
-      "system": "BILIARY TRACT DISEASE",
+      "system": "Biliary Tract Disease",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -231,9 +231,9 @@
     },
     {
       "name": "Primary biliary cirrhosis",
-      "system": "BILIARY TRACT DISEASE",
+      "system": "Biliary Tract Disease",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -250,9 +250,9 @@
     },
     {
       "name": "Metastases (Fig. 34)",
-      "system": "MALIGNANCY",
+      "system": "Malignancy",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -269,9 +269,9 @@
     },
     {
       "name": "Hepatoma",
-      "system": "MALIGNANCY",
+      "system": "Malignancy",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -288,9 +288,9 @@
     },
     {
       "name": "Myeloproliferative disorders",
-      "system": "MALIGNANCY",
+      "system": "Malignancy",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -307,9 +307,9 @@
     },
     {
       "name": "Myelo\ufb01brosis",
-      "system": "MALIGNANCY",
+      "system": "Malignancy",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -326,9 +326,9 @@
     },
     {
       "name": "Leukemia",
-      "system": "MALIGNANCY",
+      "system": "Malignancy",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -345,9 +345,9 @@
     },
     {
       "name": "Glycogen storage diseases",
-      "system": "METABOLIC",
+      "system": "Metabolic",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -364,9 +364,9 @@
     },
     {
       "name": "Hemochromatosis",
-      "system": "METABOLIC",
+      "system": "Metabolic",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -383,9 +383,9 @@
     },
     {
       "name": "Wilson\u2019s disease (hepatolenticular degeneration)",
-      "system": "METABOLIC",
+      "system": "Metabolic",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -402,9 +402,9 @@
     },
     {
       "name": "Cryptogenic cirrhosis",
-      "system": "OTHERS",
+      "system": "Others",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -421,9 +421,9 @@
     },
     {
       "name": "Riedel\u2019s lobe",
-      "system": "OTHERS",
+      "system": "Others",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],

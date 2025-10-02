@@ -3,9 +3,9 @@
   "items": [
     {
       "name": "Tumours",
-      "system": "URETHRAL LUMEN OR BLADDER NECK",
+      "system": "Urethral Lumen Or Bladder Neck",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -22,9 +22,9 @@
     },
     {
       "name": "Urethral valves",
-      "system": "URETHRAL LUMEN OR BLADDER NECK",
+      "system": "Urethral Lumen Or Bladder Neck",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -41,9 +41,9 @@
     },
     {
       "name": "Urethral trauma",
-      "system": "URETHRAL OR BLADDER WALL",
+      "system": "Urethral Or Bladder Wall",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -60,9 +60,9 @@
     },
     {
       "name": "Urethral stricture",
-      "system": "URETHRAL OR BLADDER WALL",
+      "system": "Urethral Or Bladder Wall",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -79,9 +79,9 @@
     },
     {
       "name": "Urethral tumour",
-      "system": "URETHRAL OR BLADDER WALL",
+      "system": "Urethral Or Bladder Wall",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -98,9 +98,9 @@
     },
     {
       "name": "Prostatic enlargement (Fig. 59)",
-      "system": "OUTSIDE THE WALL",
+      "system": "Outside The Wall",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -117,9 +117,9 @@
     },
     {
       "name": "Fecal impaction",
-      "system": "OUTSIDE THE WALL",
+      "system": "Outside The Wall",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -136,9 +136,9 @@
     },
     {
       "name": "Pregnant uterus",
-      "system": "OUTSIDE THE WALL",
+      "system": "Outside The Wall",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -155,9 +155,9 @@
     },
     {
       "name": "Pelvic tumour",
-      "system": "OUTSIDE THE WALL",
+      "system": "Outside The Wall",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -174,9 +174,9 @@
     },
     {
       "name": "Spinal cord injuries",
-      "system": "POSTOPERATIVE",
+      "system": "Postoperative",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -193,9 +193,9 @@
     },
     {
       "name": "Diabetic autonomic neuropathy",
-      "system": "POSTOPERATIVE",
+      "system": "Postoperative",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -212,9 +212,9 @@
     },
     {
       "name": "Spinal cord disease",
-      "system": "POSTOPERATIVE",
+      "system": "Postoperative",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -231,9 +231,9 @@
     },
     {
       "name": "Multiple sclerosis",
-      "system": "POSTOPERATIVE",
+      "system": "Postoperative",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -250,9 +250,9 @@
     },
     {
       "name": "Spinal tumour",
-      "system": "POSTOPERATIVE",
+      "system": "Postoperative",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -269,9 +269,9 @@
     },
     {
       "name": "Tabes dorsalis",
-      "system": "POSTOPERATIVE",
+      "system": "Postoperative",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -288,9 +288,9 @@
     },
     {
       "name": "Anticholinergic drugs",
-      "system": "POSTOPERATIVE",
+      "system": "Postoperative",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -307,9 +307,9 @@
     },
     {
       "name": "Antidepressants",
-      "system": "POSTOPERATIVE",
+      "system": "Postoperative",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -326,9 +326,9 @@
     },
     {
       "name": "Alcohol",
-      "system": "POSTOPERATIVE",
+      "system": "Postoperative",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],

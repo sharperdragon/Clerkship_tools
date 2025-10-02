@@ -3,9 +3,9 @@
   "items": [
     {
       "name": "Cirrhosis",
-      "system": "HEPATIC",
+      "system": "Hepatic",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -22,9 +22,9 @@
     },
     {
       "name": "Hepatic tumours",
-      "system": "HEPATIC",
+      "system": "Hepatic",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -41,9 +41,9 @@
     },
     {
       "name": "Peritoneal metastases",
-      "system": "MALIGNANT DISEASE",
+      "system": "Malignant Disease",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -60,9 +60,9 @@
     },
     {
       "name": "Abdominal/pelvic tumour (primary or secondary)",
-      "system": "MALIGNANT DISEASE",
+      "system": "Malignant Disease",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -79,9 +79,9 @@
     },
     {
       "name": "Pseudomyxoma peritonei",
-      "system": "MALIGNANT DISEASE",
+      "system": "Malignant Disease",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -98,9 +98,9 @@
     },
     {
       "name": "Primary mesothelioma",
-      "system": "MALIGNANT DISEASE",
+      "system": "Malignant Disease",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -117,9 +117,9 @@
     },
     {
       "name": "Cardiac failure",
-      "system": "CARDIAC",
+      "system": "Cardiac",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -136,9 +136,9 @@
     },
     {
       "name": "Nephrotic syndrome",
-      "system": "CARDIAC",
+      "system": "Cardiac",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -155,9 +155,9 @@
     },
     {
       "name": "TB",
-      "system": "PERITONITIS",
+      "system": "Peritonitis",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -174,9 +174,9 @@
     },
     {
       "name": "Spontaneous bacterial",
-      "system": "PERITONITIS",
+      "system": "Peritonitis",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -193,9 +193,9 @@
     },
     {
       "name": "Budd\u2013Chiari syndrome",
-      "system": "VENOUS OBSTRUCTION",
+      "system": "Venous Obstruction",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -212,9 +212,9 @@
     },
     {
       "name": "Veno-occlusive disease",
-      "system": "VENOUS OBSTRUCTION",
+      "system": "Venous Obstruction",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -231,9 +231,9 @@
     },
     {
       "name": "Hepatic portal vein obstruction",
-      "system": "VENOUS OBSTRUCTION",
+      "system": "Venous Obstruction",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -250,9 +250,9 @@
     },
     {
       "name": "Inferior vena cava obstruction",
-      "system": "VENOUS OBSTRUCTION",
+      "system": "Venous Obstruction",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -271,7 +271,7 @@
       "name": "Pancreatitis",
       "system": "Gastrointestinal",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -290,7 +290,7 @@
       "name": "Malabsorption",
       "system": "Gastrointestinal",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -309,7 +309,7 @@
       "name": "Bile ascites",
       "system": "Gastrointestinal",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],

@@ -5,7 +5,7 @@
       "name": "common",
       "system": "Freq",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -24,7 +24,7 @@
       "name": "uncommon",
       "system": "Freq",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -43,7 +43,7 @@
       "name": "rare",
       "system": "Freq",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -62,7 +62,7 @@
       "name": "Gumma",
       "system": "TB \u2022 (common where TB is endemic)",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],

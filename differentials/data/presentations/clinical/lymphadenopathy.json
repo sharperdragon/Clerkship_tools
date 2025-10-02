@@ -3,9 +3,9 @@
   "items": [
     {
       "name": "Infectious mononucleosis",
-      "system": "PRIMARY INFECTION",
+      "system": "Primary Infection",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -22,9 +22,9 @@
     },
     {
       "name": "HIV",
-      "system": "PRIMARY INFECTION",
+      "system": "Primary Infection",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -41,9 +41,9 @@
     },
     {
       "name": "CMV",
-      "system": "PRIMARY INFECTION",
+      "system": "Primary Infection",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -60,9 +60,9 @@
     },
     {
       "name": "Rubella",
-      "system": "PRIMARY INFECTION",
+      "system": "Primary Infection",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -79,9 +79,9 @@
     },
     {
       "name": "Measles",
-      "system": "PRIMARY INFECTION",
+      "system": "Primary Infection",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -100,7 +100,7 @@
       "name": "Syphilis",
       "system": "TB \u2022 (common in parts of the world where TB is endemic)",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -119,7 +119,7 @@
       "name": "Brucellosis",
       "system": "TB \u2022 (common in parts of the world where TB is endemic)",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -138,7 +138,7 @@
       "name": "Cat scratch disease",
       "system": "TB \u2022 (common in parts of the world where TB is endemic)",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -157,7 +157,7 @@
       "name": "Septicemia",
       "system": "TB \u2022 (common in parts of the world where TB is endemic)",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -174,9 +174,9 @@
     },
     {
       "name": "Toxoplasmosis",
-      "system": "PROTOZOAL",
+      "system": "Protozoal",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -193,9 +193,9 @@
     },
     {
       "name": "Filariasis \u2022 (common in tropical regions of Asia, Africa)",
-      "system": "PARASITIC",
+      "system": "Parasitic",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -212,9 +212,9 @@
     },
     {
       "name": ", abscess with regional",
-      "system": "SECONDARY INFECTION",
+      "system": "Secondary Infection",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -231,9 +231,9 @@
     },
     {
       "name": "Acute lymphoblastic leukemia",
-      "system": "PRIMARY MALIGNANCY",
+      "system": "Primary Malignancy",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -250,9 +250,9 @@
     },
     {
       "name": "Chronic lymphatic leukemia",
-      "system": "PRIMARY MALIGNANCY",
+      "system": "Primary Malignancy",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -269,9 +269,9 @@
     },
     {
       "name": "Hodgkin\u2019s disease",
-      "system": "PRIMARY MALIGNANCY",
+      "system": "Primary Malignancy",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -288,9 +288,9 @@
     },
     {
       "name": "Non-Hodgkin\u2019s lymphoma",
-      "system": "PRIMARY MALIGNANCY",
+      "system": "Primary Malignancy",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -307,9 +307,9 @@
     },
     {
       "name": "Metastases from local malignancy",
-      "system": "SECONDARY MALIGNANCY",
+      "system": "Secondary Malignancy",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -326,9 +326,9 @@
     },
     {
       "name": "Metastases from distant malignancy",
-      "system": "SECONDARY MALIGNANCY",
+      "system": "Secondary Malignancy",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -345,9 +345,9 @@
     },
     {
       "name": "Sarcoidosis",
-      "system": "OTHERS",
+      "system": "Others",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -364,9 +364,9 @@
     },
     {
       "name": "SLE",
-      "system": "OTHERS",
+      "system": "Others",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -383,9 +383,9 @@
     },
     {
       "name": "Rheumatoid arthritis",
-      "system": "OTHERS",
+      "system": "Others",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],

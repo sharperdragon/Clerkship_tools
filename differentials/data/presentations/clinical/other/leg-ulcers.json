@@ -3,9 +3,9 @@
   "items": [
     {
       "name": "Syphilis",
-      "system": "INFECTIVE",
+      "system": "Infective",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -22,9 +22,9 @@
     },
     {
       "name": "TB \u2022 (common where TB is endemic)",
-      "system": "INFECTIVE",
+      "system": "Infective",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -41,9 +41,9 @@
     },
     {
       "name": "Squamous cell carcinoma",
-      "system": "NEOPLASTIC",
+      "system": "Neoplastic",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -60,9 +60,9 @@
     },
     {
       "name": "Malignant melanoma",
-      "system": "NEOPLASTIC",
+      "system": "Neoplastic",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -79,9 +79,9 @@
     },
     {
       "name": "Basal cell carcinoma",
-      "system": "NEOPLASTIC",
+      "system": "Neoplastic",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -98,9 +98,9 @@
     },
     {
       "name": "Venous ulcers (Fig. 42)",
-      "system": "VASCULAR",
+      "system": "Vascular",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -117,9 +117,9 @@
     },
     {
       "name": "Diabetes",
-      "system": "NEUROPATHIC",
+      "system": "Neuropathic",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -136,9 +136,9 @@
     },
     {
       "name": "Leprosy",
-      "system": "NEUROPATHIC",
+      "system": "Neuropathic",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -155,9 +155,9 @@
     },
     {
       "name": "Tabes dorsalis (syphilis)",
-      "system": "NEUROPATHIC",
+      "system": "Neuropathic",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -174,9 +174,9 @@
     },
     {
       "name": "Rheumatoid arthritis",
-      "system": "AUTOIMMUNE/VASCULITIC",
+      "system": "Autoimmune/Vasculitic",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -193,9 +193,9 @@
     },
     {
       "name": "SLE",
-      "system": "AUTOIMMUNE/VASCULITIC",
+      "system": "Autoimmune/Vasculitic",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -212,9 +212,9 @@
     },
     {
       "name": "Sickle cell anemia",
-      "system": "HAEMATOLOGICAL",
+      "system": "Haematological",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -231,9 +231,9 @@
     },
     {
       "name": "Polycythemia rubra vera",
-      "system": "HAEMATOLOGICAL",
+      "system": "Haematological",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -250,9 +250,9 @@
     },
     {
       "name": "Thrombotic thrombocytopenic purpura",
-      "system": "HAEMATOLOGICAL",
+      "system": "Haematological",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -269,9 +269,9 @@
     },
     {
       "name": "Dermatitis artefacta (self-in\ufb02icted)",
-      "system": "HAEMATOLOGICAL",
+      "system": "Haematological",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -288,9 +288,9 @@
     },
     {
       "name": "Pyoderma gangrenosum",
-      "system": "HAEMATOLOGICAL",
+      "system": "Haematological",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],

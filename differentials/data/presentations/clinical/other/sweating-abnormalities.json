@@ -3,9 +3,9 @@
   "items": [
     {
       "name": "Primary hyperhidrosis",
-      "system": "EXCESSIVE SWEATING",
+      "system": "Excessive Sweating",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -22,9 +22,9 @@
     },
     {
       "name": "Hypoglycemia",
-      "system": "EXCESSIVE SWEATING",
+      "system": "Excessive Sweating",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -41,9 +41,9 @@
     },
     {
       "name": "Any systemic infection",
-      "system": "INFECTIONS",
+      "system": "Infections",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -60,9 +60,9 @@
     },
     {
       "name": "Brain tumours",
-      "system": "MALIGNANCY",
+      "system": "Malignancy",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -79,9 +79,9 @@
     },
     {
       "name": "Hodgkin\u2019s lymphoma",
-      "system": "MALIGNANCY",
+      "system": "Malignancy",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -98,9 +98,9 @@
     },
     {
       "name": "Diabetic autonomic neuropathy",
-      "system": "ENDOCRINE",
+      "system": "Endocrine",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -117,9 +117,9 @@
     },
     {
       "name": "Menopause",
-      "system": "ENDOCRINE",
+      "system": "Endocrine",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -136,9 +136,9 @@
     },
     {
       "name": "Thyrotoxicosis",
-      "system": "ENDOCRINE",
+      "system": "Endocrine",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -155,9 +155,9 @@
     },
     {
       "name": "Carcinoid syndrome",
-      "system": "ENDOCRINE",
+      "system": "Endocrine",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -174,9 +174,9 @@
     },
     {
       "name": "Pheochromocytoma",
-      "system": "ENDOCRINE",
+      "system": "Endocrine",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -193,9 +193,9 @@
     },
     {
       "name": "Substance dependency/withdrawal",
-      "system": "PSYCHIATRIC",
+      "system": "Psychiatric",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -212,9 +212,9 @@
     },
     {
       "name": "Anxiety states",
-      "system": "PSYCHIATRIC",
+      "system": "Psychiatric",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -231,9 +231,9 @@
     },
     {
       "name": "Heat stroke",
-      "system": "DEFICIENT SWEATING",
+      "system": "Deficient Sweating",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -250,9 +250,9 @@
     },
     {
       "name": "Miliaria",
-      "system": "DEFICIENT SWEATING",
+      "system": "Deficient Sweating",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -269,9 +269,9 @@
     },
     {
       "name": "Hypohidrotic ectodermal dysplasia",
-      "system": "DEFICIENT SWEATING",
+      "system": "Deficient Sweating",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -288,9 +288,9 @@
     },
     {
       "name": "Sympathetic tract lesions",
-      "system": "DEFICIENT SWEATING",
+      "system": "Deficient Sweating",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],

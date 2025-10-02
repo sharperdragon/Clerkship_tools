@@ -19,6 +19,10 @@ REBUILD_EXISTING = True              # Rebuild items array from sources on exist
 SUMMARY_PATH = "/Users/claytongoddard/Desktop/presentation_build_summary.md"
 DRY_RUN = False                      # <= per user request
 
+# --- Completion/locking flags ---
+SKIP_COMPLETED = True            # Skip files that appear fully curated
+COMPLETENESS_STRICT = True       # All HPI keys must be non-empty for every item
+
 # ! -----------------------------
 # ! Section → folder mapping
 # ! -----------------------------
@@ -133,13 +137,40 @@ def normalize_label(s: str) -> str:
     return s.strip()
 
 
+
+# Helper to convert ALL-CAPS labels to Title/Normal case, preserving separators
+def _title_from_all_caps(text: str) -> str:
+    """Convert ALL-CAPS labels into Title/Normal case while preserving separators.
+    Example: "GASTROINTESTINAL" -> "Gastrointestinal"; "UPPER GI" -> "Upper gi".
+    """
+    if not text:
+        return text
+    # Lowercase all letters first, then capitalize token-wise while preserving separators
+    parts = re.split(r"([\s_\-/]+)", text.lower())
+    out = []
+    for p in parts:
+        if not p:
+            continue
+        # If this is a separator, keep as-is
+        if re.fullmatch(r"[\s_\-/]+", p):
+            out.append(p)
+        else:
+            # Word token: capitalize first letter only
+            out.append(p[:1].upper() + p[1:])
+    return "".join(out)
+
 def title_case_system(cat: str) -> str:
     if not cat:
         return ""
     c = normalize_label(cat)
     low = c.lower()
+    # Explicit fixes first
     if low in SYSTEM_FIX:
         return SYSTEM_FIX[low]
+    # If the label is all-caps (contains at least one A-Z and equals its uppercase), normalize it
+    if re.search(r"[A-Z]", c) and c == c.upper():
+        return _title_from_all_caps(c)
+    # Otherwise, ensure first char is uppercase and keep the rest as-is
     return c[:1].upper() + c[1:]
 
 
@@ -150,8 +181,8 @@ def load_json(path: str) -> Any:
 
 def get_required_symptom_keys(schema_obj: Dict[str, Any]) -> List[str]:
     # Prefer explicit list if present
-    if isinstance(schema_obj.get("symptoms"), dict):
-        sym = schema_obj["symptoms"]
+    if isinstance(schema_obj.get("hpi"), dict):
+        sym = schema_obj["hpi"]
         # Try required list
         if isinstance(sym.get("required"), list) and sym.get("required"):
             return list(sym["required"])  # keep order
@@ -167,6 +198,46 @@ def get_required_symptom_keys(schema_obj: Dict[str, Any]) -> List[str]:
 
 def blank_symptoms(required_keys: Iterable[str]) -> Dict[str, list]:
     return {k: [] for k in required_keys}
+
+
+# --- Completion detection helpers ---
+
+def _has_nonempty_list(d: Dict[str, Any], key: str) -> bool:
+    v = d.get(key)
+    return isinstance(v, list) and len(v) > 0
+
+
+def is_file_locked(doc: Dict[str, Any]) -> bool:
+    """Allow an explicit opt-out from regeneration.
+    Honor any of these markers if present: locked: true, completed: true, do_not_overwrite: true,
+    or status in {"complete","done","final"}.
+    """
+    if doc.get("locked") is True or doc.get("completed") is True or doc.get("do_not_overwrite") is True:
+        return True
+    status = str(doc.get("status", "")).strip().lower()
+    return status in {"complete", "completed", "done", "final"}
+
+
+def is_document_complete(doc: Dict[str, Any], required_keys: Iterable[str]) -> bool:
+    items = doc.get("items")
+    if not isinstance(items, list) or not items:
+        return False
+    for it in items:
+        if not isinstance(it, dict):
+            return False
+        hpi = it.get("hpi")
+        if not isinstance(hpi, dict):
+            return False
+        if COMPLETENESS_STRICT:
+            # Every required key must be present and non-empty
+            for k in required_keys:
+                if not _has_nonempty_list(hpi, k):
+                    return False
+        else:
+            # At least one HPI key must be non-empty
+            if not any(_has_nonempty_list(hpi, k) for k in required_keys):
+                return False
+    return True
 
 
 def iter_etiologies(index_block: Any, parent_category: str = "") -> Iterable[Tuple[str, str, Optional[str]]]:
@@ -305,7 +376,7 @@ def main() -> None:
                         "name": name,
                         "system": system,
                         "redFlag": False,
-                        "symptoms": blank_symptoms(required_symptoms),
+                        "hpi": blank_symptoms(required_symptoms),
                     }
                     if INCLUDE_FREQ:
                         item["freq"] = fq if fq else "unknown"
@@ -323,12 +394,18 @@ def main() -> None:
 
             action = ""
             if os.path.exists(dest_path):
-                if REBUILD_EXISTING:
+                # Load existing once for checks/preservation
+                try:
+                    existing = load_json(dest_path)
+                except Exception:
+                    existing = {}
+
+                # Skip if file is explicitly locked or appears fully curated
+                if SKIP_COMPLETED and (is_file_locked(existing) or is_document_complete(existing, required_symptoms)):
+                    skipped += 1
+                    action = "skipped-complete"
+                elif REBUILD_EXISTING:
                     # Preserve extra top-level fields (if any) not managed by us
-                    try:
-                        existing = load_json(dest_path)
-                    except Exception:
-                        existing = {}
                     for k in existing.keys():
                         if k not in doc and k not in {"items", "sources"}:
                             doc[k] = existing[k]

@@ -3,9 +3,9 @@
   "items": [
     {
       "name": "Acute abscess",
-      "system": "SUPERFICIAL",
+      "system": "Superficial",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -22,9 +22,9 @@
     },
     {
       "name": "Sebaceous cyst",
-      "system": "SUPERFICIAL",
+      "system": "Superficial",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -41,9 +41,9 @@
     },
     {
       "name": "Lipoma",
-      "system": "SUPERFICIAL",
+      "system": "Superficial",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -60,9 +60,9 @@
     },
     {
       "name": "Viral or bacterial infections",
-      "system": "SUPERFICIAL",
+      "system": "Superficial",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -79,9 +79,9 @@
     },
     {
       "name": "Hidradenitis suppurativa",
-      "system": "SUPERFICIAL",
+      "system": "Superficial",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -98,9 +98,9 @@
     },
     {
       "name": "Lymphadenopathy (, leukemia, lupus)",
-      "system": "SUPERFICIAL",
+      "system": "Superficial",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -117,9 +117,9 @@
     },
     {
       "name": "Benign or malignant breast lump (arising in the axillary tail)",
-      "system": "SUPERFICIAL",
+      "system": "Superficial",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -136,9 +136,9 @@
     },
     {
       "name": "Chronic abscess (",
-      "system": "SUPERFICIAL",
+      "system": "Superficial",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -155,9 +155,9 @@
     },
     {
       "name": "Axillary artery aneurysm",
-      "system": "SUPERFICIAL",
+      "system": "Superficial",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],

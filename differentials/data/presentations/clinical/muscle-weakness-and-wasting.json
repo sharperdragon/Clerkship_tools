@@ -3,9 +3,9 @@
   "items": [
     {
       "name": "Peripheral nerve lesions",
-      "system": "LOCALISED",
+      "system": "Localised",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -22,9 +22,9 @@
     },
     {
       "name": "Peripheral nerve compression",
-      "system": "LOCALISED",
+      "system": "Localised",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -41,9 +41,9 @@
     },
     {
       "name": "Motor neuropathy",
-      "system": "LOCALISED",
+      "system": "Localised",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -60,9 +60,9 @@
     },
     {
       "name": "Peripheral nerve transection",
-      "system": "LOCALISED",
+      "system": "Localised",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -79,9 +79,9 @@
     },
     {
       "name": "Disuse atrophy",
-      "system": "LOCALISED",
+      "system": "Localised",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -98,9 +98,9 @@
     },
     {
       "name": "Anterior horn cell lesions",
-      "system": "LOCALISED",
+      "system": "Localised",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -117,9 +117,9 @@
     },
     {
       "name": "Previous poliomyelitis \u2022 (common in developing",
-      "system": "LOCALISED",
+      "system": "Localised",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -136,9 +136,9 @@
     },
     {
       "name": "Vitamin D de\ufb01ciency",
-      "system": "NUTRITIONAL DEFICIENCY",
+      "system": "Nutritional Deficiency",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -155,9 +155,9 @@
     },
     {
       "name": "Malignancy",
-      "system": "SYSTEMIC DISEASE",
+      "system": "Systemic Disease",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -174,9 +174,9 @@
     },
     {
       "name": "Cardiac and/or respiratory cachexia",
-      "system": "SYSTEMIC DISEASE",
+      "system": "Systemic Disease",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -193,9 +193,9 @@
     },
     {
       "name": "Thyrotoxicosis",
-      "system": "SYSTEMIC DISEASE",
+      "system": "Systemic Disease",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -212,9 +212,9 @@
     },
     {
       "name": "Sarcoidosis",
-      "system": "SYSTEMIC DISEASE",
+      "system": "Systemic Disease",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -231,9 +231,9 @@
     },
     {
       "name": "Guillain\u2013Barr\u00e9 syndrome",
-      "system": "SYSTEMIC DISEASE",
+      "system": "Systemic Disease",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -250,9 +250,9 @@
     },
     {
       "name": "Cushing\u2019s disease",
-      "system": "SYSTEMIC DISEASE",
+      "system": "Systemic Disease",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -269,9 +269,9 @@
     },
     {
       "name": "Addison\u2019s disease",
-      "system": "SYSTEMIC DISEASE",
+      "system": "Systemic Disease",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -288,9 +288,9 @@
     },
     {
       "name": "Myasthenia gravis",
-      "system": "MUSCLE AND MOTOR END PLATE DISORDERS",
+      "system": "Muscle And Motor End Plate Disorders",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -307,9 +307,9 @@
     },
     {
       "name": "Muscular dystrophies",
-      "system": "MUSCLE AND MOTOR END PLATE DISORDERS",
+      "system": "Muscle And Motor End Plate Disorders",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -326,9 +326,9 @@
     },
     {
       "name": "Motor neurone disease",
-      "system": "MUSCLE AND MOTOR END PLATE DISORDERS",
+      "system": "Muscle And Motor End Plate Disorders",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -345,9 +345,9 @@
     },
     {
       "name": "Myotonic dystrophy",
-      "system": "MUSCLE AND MOTOR END PLATE DISORDERS",
+      "system": "Muscle And Motor End Plate Disorders",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -364,9 +364,9 @@
     },
     {
       "name": "Polymyositis/dermatomyositis/inclusion body myositis",
-      "system": "MUSCLE AND MOTOR END PLATE DISORDERS",
+      "system": "Muscle And Motor End Plate Disorders",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -383,9 +383,9 @@
     },
     {
       "name": "Alcohol",
-      "system": "DRUGS AND TOXINS",
+      "system": "Drugs And Toxins",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -402,9 +402,9 @@
     },
     {
       "name": "Statins",
-      "system": "DRUGS AND TOXINS",
+      "system": "Drugs And Toxins",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -421,9 +421,9 @@
     },
     {
       "name": "Steroids",
-      "system": "DRUGS AND TOXINS",
+      "system": "Drugs And Toxins",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -440,9 +440,9 @@
     },
     {
       "name": "Ciclosporin",
-      "system": "DRUGS AND TOXINS",
+      "system": "Drugs And Toxins",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],

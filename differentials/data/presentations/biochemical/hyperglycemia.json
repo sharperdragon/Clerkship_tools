@@ -3,9 +3,9 @@
   "items": [
     {
       "name": "Diabetes mellitus (types 1 and 2)",
-      "system": "ENDOCRINE",
+      "system": "Endocrine",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -22,9 +22,9 @@
     },
     {
       "name": "Corticosteroids",
-      "system": "DRUGS",
+      "system": "Drugs",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -41,9 +41,9 @@
     },
     {
       "name": "Beta blockers",
-      "system": "DRUGS",
+      "system": "Drugs",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -60,9 +60,9 @@
     },
     {
       "name": "Thiazide diuretics",
-      "system": "DRUGS",
+      "system": "Drugs",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -79,9 +79,9 @@
     },
     {
       "name": "Niacin",
-      "system": "DRUGS",
+      "system": "Drugs",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -98,9 +98,9 @@
     },
     {
       "name": "Pentamidine",
-      "system": "DRUGS",
+      "system": "Drugs",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -117,9 +117,9 @@
     },
     {
       "name": "Protease inhibitors",
-      "system": "DRUGS",
+      "system": "Drugs",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -136,9 +136,9 @@
     },
     {
       "name": "L-asparaginase",
-      "system": "DRUGS",
+      "system": "Drugs",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -155,9 +155,9 @@
     },
     {
       "name": "Antipsychotic agents",
-      "system": "DRUGS",
+      "system": "Drugs",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -174,9 +174,9 @@
     },
     {
       "name": "Cushing\u2019s syndrome",
-      "system": "SYSTEMIC DISEASE",
+      "system": "Systemic Disease",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -193,9 +193,9 @@
     },
     {
       "name": "Stroke",
-      "system": "SEVERE STRESS",
+      "system": "Severe Stress",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -212,9 +212,9 @@
     },
     {
       "name": "Myocardial infarction",
-      "system": "SEVERE STRESS",
+      "system": "Severe Stress",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -231,9 +231,9 @@
     },
     {
       "name": "Infection",
-      "system": "PHYSIOLOGICAL",
+      "system": "Physiological",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -250,9 +250,9 @@
     },
     {
       "name": "In\ufb02ammation",
-      "system": "PHYSIOLOGICAL",
+      "system": "Physiological",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -269,9 +269,9 @@
     },
     {
       "name": "Pregnancy",
-      "system": "OTHER",
+      "system": "Other",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],

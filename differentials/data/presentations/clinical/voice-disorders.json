@@ -3,9 +3,9 @@
   "items": [
     {
       "name": "Laryngitis",
-      "system": "INFECTIVE",
+      "system": "Infective",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -22,9 +22,9 @@
     },
     {
       "name": "Blunt trauma",
-      "system": "TRAUMATIC",
+      "system": "Traumatic",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -41,9 +41,9 @@
     },
     {
       "name": "Excessive vocal use",
-      "system": "TRAUMATIC",
+      "system": "Traumatic",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -60,9 +60,9 @@
     },
     {
       "name": "Laryngeal papilloma (due to HPV infection)",
-      "system": "NEOPLASTIC",
+      "system": "Neoplastic",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -79,9 +79,9 @@
     },
     {
       "name": "Goitre",
-      "system": "RECURRENT LARYNGEAL NERVE PALSY",
+      "system": "Recurrent Laryngeal Nerve Palsy",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -98,9 +98,9 @@
     },
     {
       "name": "Bronchial carcinoma",
-      "system": "RECURRENT LARYNGEAL NERVE PALSY",
+      "system": "Recurrent Laryngeal Nerve Palsy",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -117,9 +117,9 @@
     },
     {
       "name": "Postoperative \u2013 thoracic, parathyroid and thyroid surgery",
-      "system": "RECURRENT LARYNGEAL NERVE PALSY",
+      "system": "Recurrent Laryngeal Nerve Palsy",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -136,9 +136,9 @@
     },
     {
       "name": "Oesophageal carcinoma",
-      "system": "RECURRENT LARYNGEAL NERVE PALSY",
+      "system": "Recurrent Laryngeal Nerve Palsy",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -155,9 +155,9 @@
     },
     {
       "name": "Thoracic aortic aneurysm",
-      "system": "RECURRENT LARYNGEAL NERVE PALSY",
+      "system": "Recurrent Laryngeal Nerve Palsy",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -174,9 +174,9 @@
     },
     {
       "name": "Myasthenia gravis",
-      "system": "AUTOIMMUNE DISEASE",
+      "system": "Autoimmune Disease",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -193,9 +193,9 @@
     },
     {
       "name": "Parkinson\u2019s disease",
-      "system": "AUTOIMMUNE DISEASE",
+      "system": "Autoimmune Disease",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -212,9 +212,9 @@
     },
     {
       "name": "Psychogenic",
-      "system": "AUTOIMMUNE DISEASE",
+      "system": "Autoimmune Disease",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -231,9 +231,9 @@
     },
     {
       "name": "Acid-re\ufb02ux disease",
-      "system": "AUTOIMMUNE DISEASE",
+      "system": "Autoimmune Disease",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -250,9 +250,9 @@
     },
     {
       "name": "Vocal fold nodule",
-      "system": "AUTOIMMUNE DISEASE",
+      "system": "Autoimmune Disease",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -269,9 +269,9 @@
     },
     {
       "name": "Vocal fold cyst",
-      "system": "AUTOIMMUNE DISEASE",
+      "system": "Autoimmune Disease",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -288,9 +288,9 @@
     },
     {
       "name": "Vocal fold granulomatoma",
-      "system": "AUTOIMMUNE DISEASE",
+      "system": "Autoimmune Disease",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -307,9 +307,9 @@
     },
     {
       "name": "Reinke\u2019s oedema",
-      "system": "AUTOIMMUNE DISEASE",
+      "system": "Autoimmune Disease",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -326,9 +326,9 @@
     },
     {
       "name": "Presbylarynx",
-      "system": "AUTOIMMUNE DISEASE",
+      "system": "Autoimmune Disease",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],

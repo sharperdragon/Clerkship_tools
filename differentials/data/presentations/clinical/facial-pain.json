@@ -5,7 +5,7 @@
       "name": "Sinusitis",
       "system": "General",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -24,7 +24,7 @@
       "name": "Carcinoma",
       "system": "General",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -43,7 +43,7 @@
       "name": "Otitis media",
       "system": "General",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -62,7 +62,7 @@
       "name": "Otitis externa",
       "system": "General",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -81,7 +81,7 @@
       "name": "Optic neuritis",
       "system": "General",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -98,9 +98,9 @@
     },
     {
       "name": "Mastoiditis",
-      "system": "MASTOID",
+      "system": "Mastoid",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -117,9 +117,9 @@
     },
     {
       "name": "Dental abscess",
-      "system": "TEETH AND SALIVARY GLAND",
+      "system": "Teeth And Salivary Gland",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -136,9 +136,9 @@
     },
     {
       "name": "Herpes zoster (Fig. 18)",
-      "system": "TEETH AND SALIVARY GLAND",
+      "system": "Teeth And Salivary Gland",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -155,9 +155,9 @@
     },
     {
       "name": "Post-herpetic neuralgia",
-      "system": "TEETH AND SALIVARY GLAND",
+      "system": "Teeth And Salivary Gland",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -174,9 +174,9 @@
     },
     {
       "name": "Cellulitis",
-      "system": "TEETH AND SALIVARY GLAND",
+      "system": "Teeth And Salivary Gland",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -193,9 +193,9 @@
     },
     {
       "name": "Candidiasis",
-      "system": "TEETH AND SALIVARY GLAND",
+      "system": "Teeth And Salivary Gland",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -212,9 +212,9 @@
     },
     {
       "name": "Temporomandibular (TMJ) dysfunction",
-      "system": "JOINTS",
+      "system": "Joints",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -231,9 +231,9 @@
     },
     {
       "name": "Mumps",
-      "system": "PAROTID GLAND",
+      "system": "Parotid Gland",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -250,9 +250,9 @@
     },
     {
       "name": "Parotitis",
-      "system": "PAROTID GLAND",
+      "system": "Parotid Gland",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -269,9 +269,9 @@
     },
     {
       "name": "Tumour (most common tumour type)",
-      "system": "PAROTID GLAND",
+      "system": "Parotid Gland",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -290,7 +290,7 @@
       "name": "common",
       "system": "Freq",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -309,7 +309,7 @@
       "name": "uncommon",
       "system": "Freq",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -328,7 +328,7 @@
       "name": "Chronic paroxysmal hemicrania",
       "system": "(common in Chinese populations)",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],

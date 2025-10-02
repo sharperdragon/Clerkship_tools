@@ -3,9 +3,9 @@
   "items": [
     {
       "name": "Dental abscess",
-      "system": "INFECTIVE",
+      "system": "Infective",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -22,9 +22,9 @@
     },
     {
       "name": "Tonsilitis",
-      "system": "INFECTIVE",
+      "system": "Infective",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -41,9 +41,9 @@
     },
     {
       "name": "Mumps (increasing incidence in UK)",
-      "system": "INFECTIVE",
+      "system": "Infective",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -60,9 +60,9 @@
     },
     {
       "name": "Pericoronitis",
-      "system": "INFECTIVE",
+      "system": "Infective",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -79,9 +79,9 @@
     },
     {
       "name": "Acute osteomyelitis",
-      "system": "INFECTIVE",
+      "system": "Infective",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -98,9 +98,9 @@
     },
     {
       "name": "Actinomycosis",
-      "system": "INFECTIVE",
+      "system": "Infective",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -117,9 +117,9 @@
     },
     {
       "name": "Osteoarthritis",
-      "system": "TEMPOROMANDIBULAR JOINT",
+      "system": "Temporomandibular Joint",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -136,9 +136,9 @@
     },
     {
       "name": "Dislocation",
-      "system": "TEMPOROMANDIBULAR JOINT",
+      "system": "Temporomandibular Joint",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -155,9 +155,9 @@
     },
     {
       "name": "Dental cysts (Fig. 37)",
-      "system": "CYSTIC",
+      "system": "Cystic",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -174,9 +174,9 @@
     },
     {
       "name": "Dentigerous cysts",
-      "system": "CYSTIC",
+      "system": "Cystic",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -193,9 +193,9 @@
     },
     {
       "name": "Giant cell granuloma",
-      "system": "BENIGN",
+      "system": "Benign",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -212,9 +212,9 @@
     },
     {
       "name": "Ameloblastoma",
-      "system": "LOCALLY INVASIVE",
+      "system": "Locally Invasive",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -231,9 +231,9 @@
     },
     {
       "name": "Odontogenic tumours",
-      "system": "LOCALLY INVASIVE",
+      "system": "Locally Invasive",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -252,7 +252,7 @@
       "name": "rare",
       "system": "Freq",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -271,7 +271,7 @@
       "name": "Secondary deposits",
       "system": "Burkitt\u2019s lymphoma \u2022 (endemic in equatorial Africa)",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -290,7 +290,7 @@
       "name": "Paget\u2019s disease",
       "system": "Burkitt\u2019s lymphoma \u2022 (endemic in equatorial Africa)",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -309,7 +309,7 @@
       "name": "Referred pain (",
       "system": "Burkitt\u2019s lymphoma \u2022 (endemic in equatorial Africa)",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -328,7 +328,7 @@
       "name": "Giant cell (temporal) arteritis",
       "system": "Burkitt\u2019s lymphoma \u2022 (endemic in equatorial Africa)",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -347,7 +347,7 @@
       "name": "Post-herpetic neuralgia",
       "system": "Burkitt\u2019s lymphoma \u2022 (endemic in equatorial Africa)",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -366,7 +366,7 @@
       "name": "Osteonecrosis of the mandible (steroid therapy",
       "system": "Burkitt\u2019s lymphoma \u2022 (endemic in equatorial Africa)",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -385,7 +385,7 @@
       "name": "Systemic conditions (RA, lupus, syphilis)",
       "system": "Burkitt\u2019s lymphoma \u2022 (endemic in equatorial Africa)",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],

@@ -3,9 +3,9 @@
   "items": [
     {
       "name": "Talipes congenital talipes equinovarus (congenital clubfoot)",
-      "system": "CONGENITAL",
+      "system": "Congenital",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -22,9 +22,9 @@
     },
     {
       "name": "Metatarsus adductus (intoeing)",
-      "system": "CONGENITAL",
+      "system": "Congenital",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -41,9 +41,9 @@
     },
     {
       "name": "Pes planus (\ufb02atfoot)",
-      "system": "CONGENITAL",
+      "system": "Congenital",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -60,9 +60,9 @@
     },
     {
       "name": "Pes cavus (high-arch foot)",
-      "system": "CONGENITAL",
+      "system": "Congenital",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -79,9 +79,9 @@
     },
     {
       "name": "Idiopathic",
-      "system": "CONGENITAL",
+      "system": "Congenital",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -98,9 +98,9 @@
     },
     {
       "name": "Neuropathic",
-      "system": "CONGENITAL",
+      "system": "Congenital",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -117,9 +117,9 @@
     },
     {
       "name": "Spastic dysplasia",
-      "system": "CONGENITAL",
+      "system": "Congenital",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -136,9 +136,9 @@
     },
     {
       "name": "Spina bifida (including spinda bifida occulta)",
-      "system": "CONGENITAL",
+      "system": "Congenital",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -155,9 +155,9 @@
     },
     {
       "name": "Cerebral palsy",
-      "system": "CONGENITAL",
+      "system": "Congenital",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -174,9 +174,9 @@
     },
     {
       "name": "Poliomyelitis",
-      "system": "CONGENITAL",
+      "system": "Congenital",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -193,9 +193,9 @@
     },
     {
       "name": "Charcot\u2013Marie\u2013Tooth disease (hereditary motor and sensory",
-      "system": "CONGENITAL",
+      "system": "Congenital",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -212,9 +212,9 @@
     },
     {
       "name": "Friedreich\u2019s ataxia",
-      "system": "CONGENITAL",
+      "system": "Congenital",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -231,9 +231,9 @@
     },
     {
       "name": "Acquired talipes equinovarus (causes listed below)",
-      "system": "CONGENITAL",
+      "system": "Congenital",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -250,9 +250,9 @@
     },
     {
       "name": "Cerebrovascular accident",
-      "system": "UPPER MOTOR NEURONE LESION",
+      "system": "Upper Motor Neurone Lesion",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -269,9 +269,9 @@
     },
     {
       "name": "Traumatic brain injury",
-      "system": "UPPER MOTOR NEURONE LESION",
+      "system": "Upper Motor Neurone Lesion",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -288,9 +288,9 @@
     },
     {
       "name": "Spastic paresis",
-      "system": "UPPER MOTOR NEURONE LESION",
+      "system": "Upper Motor Neurone Lesion",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -307,9 +307,9 @@
     },
     {
       "name": "Spina bi\ufb01da",
-      "system": "LOWER MOTOR NEURONE LESION",
+      "system": "Lower Motor Neurone Lesion",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -326,9 +326,9 @@
     },
     {
       "name": "Poliomyelitis",
-      "system": "LOWER MOTOR NEURONE LESION",
+      "system": "Lower Motor Neurone Lesion",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -345,9 +345,9 @@
     },
     {
       "name": "Meningitis",
-      "system": "LOWER MOTOR NEURONE LESION",
+      "system": "Lower Motor Neurone Lesion",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -364,9 +364,9 @@
     },
     {
       "name": "Amyotrophic lateral sclerosis",
-      "system": "LOWER MOTOR NEURONE LESION",
+      "system": "Lower Motor Neurone Lesion",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -383,9 +383,9 @@
     },
     {
       "name": "Cerebellar lesions",
-      "system": "LOWER MOTOR NEURONE LESION",
+      "system": "Lower Motor Neurone Lesion",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -402,9 +402,9 @@
     },
     {
       "name": "Friedreich\u2019s ataxia",
-      "system": "LOWER MOTOR NEURONE LESION",
+      "system": "Lower Motor Neurone Lesion",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -421,9 +421,9 @@
     },
     {
       "name": "Fractures",
-      "system": "TRAUMA",
+      "system": "Trauma",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -440,9 +440,9 @@
     },
     {
       "name": "Burns",
-      "system": "TRAUMA",
+      "system": "Trauma",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],

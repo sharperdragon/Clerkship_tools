@@ -5,7 +5,7 @@
       "name": "Insulin",
       "system": "General",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -24,7 +24,7 @@
       "name": "Sulfonylurea",
       "system": "General",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -43,7 +43,7 @@
       "name": "Alcohol",
       "system": "General",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -62,7 +62,7 @@
       "name": "Beta blockers",
       "system": "General",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -81,7 +81,7 @@
       "name": "Quinolones",
       "system": "General",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -100,7 +100,7 @@
       "name": "Pentamidine",
       "system": "General",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -119,7 +119,7 @@
       "name": "Quinine",
       "system": "General",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -136,9 +136,9 @@
     },
     {
       "name": "Pituitary insuf\ufb01ciency",
-      "system": "ENDOCRINE",
+      "system": "Endocrine",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -155,9 +155,9 @@
     },
     {
       "name": "Addison\u2019s disease",
-      "system": "ENDOCRINE",
+      "system": "Endocrine",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -174,9 +174,9 @@
     },
     {
       "name": "Pancreatic islet cell tumours; insulinoma",
-      "system": "NEOPLASTIC",
+      "system": "Neoplastic",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -193,9 +193,9 @@
     },
     {
       "name": "Non-pancreatic tumours; retroperitoneal \ufb01brosarcoma",
-      "system": "NEOPLASTIC",
+      "system": "Neoplastic",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -212,9 +212,9 @@
     },
     {
       "name": "Inherited glycogen storage disorders",
-      "system": "LIVER DISEASE",
+      "system": "Liver Disease",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -231,9 +231,9 @@
     },
     {
       "name": "Cirrhosis",
-      "system": "LIVER DISEASE",
+      "system": "Liver Disease",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -250,9 +250,9 @@
     },
     {
       "name": "Acute liver failure",
-      "system": "LIVER DISEASE",
+      "system": "Liver Disease",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -269,9 +269,9 @@
     },
     {
       "name": "Alcohol",
-      "system": "LIVER DISEASE",
+      "system": "Liver Disease",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -288,9 +288,9 @@
     },
     {
       "name": "Post-prandial dumping syndrome (post-gastrectomy, post",
-      "system": "LIVER DISEASE",
+      "system": "Liver Disease",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -307,9 +307,9 @@
     },
     {
       "name": "Immune-mediated (",
-      "system": "LIVER DISEASE",
+      "system": "Liver Disease",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],

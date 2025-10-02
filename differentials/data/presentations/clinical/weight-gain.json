@@ -3,9 +3,9 @@
   "items": [
     {
       "name": "Simple obesity",
-      "system": "INCREASED FAT",
+      "system": "Increased Fat",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -22,9 +22,9 @@
     },
     {
       "name": "Polycystic ovarian syndrome",
-      "system": "INCREASED FAT",
+      "system": "Increased Fat",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -41,9 +41,9 @@
     },
     {
       "name": "Hypothalamic disease",
-      "system": "INCREASED FAT",
+      "system": "Increased Fat",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -60,9 +60,9 @@
     },
     {
       "name": "Cardiac failure",
-      "system": "INCREASED FLUID",
+      "system": "Increased Fluid",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -79,9 +79,9 @@
     },
     {
       "name": "Hepatic failure with ascites",
-      "system": "INCREASED FLUID",
+      "system": "Increased Fluid",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -98,9 +98,9 @@
     },
     {
       "name": "Renal failure (",
-      "system": "INCREASED FLUID",
+      "system": "Increased Fluid",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -117,9 +117,9 @@
     },
     {
       "name": "Lymphatic obstruction",
-      "system": "INCREASED FLUID",
+      "system": "Increased Fluid",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -136,9 +136,9 @@
     },
     {
       "name": "Athletes",
-      "system": "INCREASED MUSCLE",
+      "system": "Increased Muscle",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -155,9 +155,9 @@
     },
     {
       "name": "Androgenic steroids",
-      "system": "INCREASED MUSCLE",
+      "system": "Increased Muscle",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -174,9 +174,9 @@
     },
     {
       "name": "Growth hormone",
-      "system": "INCREASED MUSCLE",
+      "system": "Increased Muscle",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -193,9 +193,9 @@
     },
     {
       "name": "Pregnancy",
-      "system": "INCREASED MUSCLE",
+      "system": "Increased Muscle",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -212,9 +212,9 @@
     },
     {
       "name": "Depression",
-      "system": "INCREASED MUSCLE",
+      "system": "Increased Muscle",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -231,9 +231,9 @@
     },
     {
       "name": "Drugs",
-      "system": "INCREASED MUSCLE",
+      "system": "Increased Muscle",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -250,9 +250,9 @@
     },
     {
       "name": "Tiredness",
-      "system": "INCREASED MUSCLE",
+      "system": "Increased Muscle",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -269,9 +269,9 @@
     },
     {
       "name": "Premenstrual syndrome",
-      "system": "INCREASED MUSCLE",
+      "system": "Increased Muscle",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],

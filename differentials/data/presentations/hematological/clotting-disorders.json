@@ -3,9 +3,9 @@
   "items": [
     {
       "name": "Factor V Leiden de\ufb01ciency",
-      "system": "CONGENITAL",
+      "system": "Congenital",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -22,9 +22,9 @@
     },
     {
       "name": "Protein C de\ufb01ciency",
-      "system": "CONGENITAL",
+      "system": "Congenital",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -41,9 +41,9 @@
     },
     {
       "name": "Protein S de\ufb01ciency",
-      "system": "CONGENITAL",
+      "system": "Congenital",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -60,9 +60,9 @@
     },
     {
       "name": "Antithrombin III de\ufb01ciency",
-      "system": "CONGENITAL",
+      "system": "Congenital",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -79,9 +79,9 @@
     },
     {
       "name": "Hemophilia A and B",
-      "system": "CONGENITAL",
+      "system": "Congenital",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -98,9 +98,9 @@
     },
     {
       "name": "von Willebrand\u2019s disease",
-      "system": "CONGENITAL",
+      "system": "Congenital",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -117,9 +117,9 @@
     },
     {
       "name": "Malignancy",
-      "system": "ACQUIRED",
+      "system": "Acquired",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -136,9 +136,9 @@
     },
     {
       "name": "Pregnancy",
-      "system": "ACQUIRED",
+      "system": "Acquired",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -155,9 +155,9 @@
     },
     {
       "name": "Infection",
-      "system": "ACQUIRED",
+      "system": "Acquired",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -174,9 +174,9 @@
     },
     {
       "name": "Prolonged immobility",
-      "system": "ACQUIRED",
+      "system": "Acquired",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -193,9 +193,9 @@
     },
     {
       "name": "Autoimmune: anti-phospholipid syndrome (can be related to SLE)",
-      "system": "ACQUIRED",
+      "system": "Acquired",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -212,9 +212,9 @@
     },
     {
       "name": "Drugs: oral oestrogen-containing contraception, heparin",
-      "system": "ACQUIRED",
+      "system": "Acquired",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -231,9 +231,9 @@
     },
     {
       "name": "Vitamin K de\ufb01ciency",
-      "system": "ACQUIRED",
+      "system": "Acquired",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -250,9 +250,9 @@
     },
     {
       "name": "Obstructive jaundice",
-      "system": "ACQUIRED",
+      "system": "Acquired",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -269,9 +269,9 @@
     },
     {
       "name": "Fat malabsorption",
-      "system": "ACQUIRED",
+      "system": "Acquired",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -288,9 +288,9 @@
     },
     {
       "name": "Liver disease",
-      "system": "ACQUIRED",
+      "system": "Acquired",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -307,9 +307,9 @@
     },
     {
       "name": "Autoimmune diseases",
-      "system": "ACQUIRED",
+      "system": "Acquired",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -326,9 +326,9 @@
     },
     {
       "name": "Drugs \u2013 heparin, warfarin, thrombolytic therapy",
-      "system": "ACQUIRED",
+      "system": "Acquired",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -345,9 +345,9 @@
     },
     {
       "name": "Disseminated intravascular coagulation (DIC)",
-      "system": "ACQUIRED",
+      "system": "Acquired",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -364,9 +364,9 @@
     },
     {
       "name": "Massive transfusion",
-      "system": "ACQUIRED",
+      "system": "Acquired",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -383,9 +383,9 @@
     },
     {
       "name": "Prolonged bleeding can result from abnormal platelet",
-      "system": "SYMPTOMS AND SIGNS",
+      "system": "Symptoms And Signs",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],

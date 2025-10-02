@@ -5,7 +5,7 @@
       "name": "Candidiasis",
       "system": "General",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -24,7 +24,7 @@
       "name": "Bacterial vaginosis",
       "system": "General",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -43,7 +43,7 @@
       "name": "Trichomonas vaginosis (Fig. 60)",
       "system": "General",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -62,7 +62,7 @@
       "name": "Cervicitis, , Chlamydia, herpes",
       "system": "General",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -81,7 +81,7 @@
       "name": "Excessive normal secretions",
       "system": "General",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -100,7 +100,7 @@
       "name": "Retained foreign body, , pessary",
       "system": "General",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -119,7 +119,7 @@
       "name": "Intrauterine contraceptive device",
       "system": "General",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -138,7 +138,7 @@
       "name": "Salpingitis",
       "system": "General",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -157,7 +157,7 @@
       "name": "Infection of Bartholin\u2019s glands",
       "system": "General",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -176,7 +176,7 @@
       "name": "Neoplasm, , vulva",
       "system": "General",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -195,7 +195,7 @@
       "name": "Pyometra",
       "system": "General",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -214,7 +214,7 @@
       "name": "Colovaginal \ufb01stula",
       "system": "General",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],

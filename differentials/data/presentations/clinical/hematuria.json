@@ -5,7 +5,7 @@
       "name": "common",
       "system": "Freq",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -24,7 +24,7 @@
       "name": "uncommon",
       "system": "Freq",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -43,7 +43,7 @@
       "name": "rare",
       "system": "Freq",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -62,7 +62,7 @@
       "name": "Embolism",
       "system": "TB \u2022 (common in some parts of the world where TB is endemic)",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -79,9 +79,9 @@
     },
     {
       "name": "Stone",
-      "system": "URETER",
+      "system": "Ureter",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -98,9 +98,9 @@
     },
     {
       "name": "Neoplasm",
-      "system": "URETER",
+      "system": "Ureter",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -117,9 +117,9 @@
     },
     {
       "name": "Carcinoma (Fig. 29)",
-      "system": "BLADDER",
+      "system": "Bladder",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -136,9 +136,9 @@
     },
     {
       "name": "In\ufb02ammatory, , TB, schistosomiasis",
-      "system": "BLADDER",
+      "system": "Bladder",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -155,9 +155,9 @@
     },
     {
       "name": "Catheter-associated",
-      "system": "BLADDER",
+      "system": "Bladder",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -174,9 +174,9 @@
     },
     {
       "name": "Stone",
-      "system": "BLADDER",
+      "system": "Bladder",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -193,9 +193,9 @@
     },
     {
       "name": "Trauma",
-      "system": "BLADDER",
+      "system": "Bladder",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -212,9 +212,9 @@
     },
     {
       "name": "Benign prostatic hypertrophy",
-      "system": "PROSTATE",
+      "system": "Prostate",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -231,9 +231,9 @@
     },
     {
       "name": "Carcinoma",
-      "system": "PROSTATE",
+      "system": "Prostate",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -250,9 +250,9 @@
     },
     {
       "name": "Trauma",
-      "system": "URETHRA",
+      "system": "Urethra",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -269,9 +269,9 @@
     },
     {
       "name": "Stone",
-      "system": "URETHRA",
+      "system": "Urethra",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -288,9 +288,9 @@
     },
     {
       "name": "Urethritis",
-      "system": "URETHRA",
+      "system": "Urethra",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -307,9 +307,9 @@
     },
     {
       "name": "Neoplasm",
-      "system": "URETHRA",
+      "system": "Urethra",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -326,9 +326,9 @@
     },
     {
       "name": "Anticoagulant therapy",
-      "system": "GENERAL",
+      "system": "General",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -345,9 +345,9 @@
     },
     {
       "name": "Thrombocytopenia",
-      "system": "GENERAL",
+      "system": "General",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -364,9 +364,9 @@
     },
     {
       "name": "Strenuous exercise",
-      "system": "GENERAL",
+      "system": "General",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -383,9 +383,9 @@
     },
     {
       "name": "Hemophilia",
-      "system": "GENERAL",
+      "system": "General",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -402,9 +402,9 @@
     },
     {
       "name": "Sickle cell disease",
-      "system": "GENERAL",
+      "system": "General",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -421,9 +421,9 @@
     },
     {
       "name": "Malaria \u2022 (common where malaria is endemic)",
-      "system": "GENERAL",
+      "system": "General",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -440,9 +440,9 @@
     },
     {
       "name": "Hemoglobinuria",
-      "system": "RED URINE",
+      "system": "Red Urine",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -459,9 +459,9 @@
     },
     {
       "name": "Myoglobinuria",
-      "system": "RED URINE",
+      "system": "Red Urine",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -478,9 +478,9 @@
     },
     {
       "name": "Acute intermittent porphyria",
-      "system": "RED URINE",
+      "system": "Red Urine",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -497,9 +497,9 @@
     },
     {
       "name": "Beetroot",
-      "system": "RED URINE",
+      "system": "Red Urine",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -516,9 +516,9 @@
     },
     {
       "name": "Senna",
-      "system": "RED URINE",
+      "system": "Red Urine",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -535,9 +535,9 @@
     },
     {
       "name": "Rifampicin",
-      "system": "RED URINE",
+      "system": "Red Urine",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],

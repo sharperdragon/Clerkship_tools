@@ -3,9 +3,9 @@
   "items": [
     {
       "name": "Abscess, , pelvic",
-      "system": "BACTERIAL",
+      "system": "Bacterial",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -22,9 +22,9 @@
     },
     {
       "name": "Subacute bacterial endocarditis",
-      "system": "BACTERIAL",
+      "system": "Bacterial",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -41,9 +41,9 @@
     },
     {
       "name": "TB",
-      "system": "BACTERIAL",
+      "system": "Bacterial",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -60,9 +60,9 @@
     },
     {
       "name": "Brucellosis",
-      "system": "BACTERIAL",
+      "system": "Bacterial",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -79,9 +79,9 @@
     },
     {
       "name": "Typhoid",
-      "system": "BACTERIAL",
+      "system": "Bacterial",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -98,9 +98,9 @@
     },
     {
       "name": "Leptospirosis",
-      "system": "BACTERIAL",
+      "system": "Bacterial",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -117,9 +117,9 @@
     },
     {
       "name": "Q fever",
-      "system": "BACTERIAL",
+      "system": "Bacterial",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -136,9 +136,9 @@
     },
     {
       "name": "Cat scratch disease",
-      "system": "BACTERIAL",
+      "system": "Bacterial",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -155,9 +155,9 @@
     },
     {
       "name": "In\ufb02uenza",
-      "system": "BACTERIAL",
+      "system": "Bacterial",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -174,9 +174,9 @@
     },
     {
       "name": "Infectious mononucleosis syndromes",
-      "system": "BACTERIAL",
+      "system": "Bacterial",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -193,9 +193,9 @@
     },
     {
       "name": "HIV",
-      "system": "BACTERIAL",
+      "system": "Bacterial",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -212,9 +212,9 @@
     },
     {
       "name": "Candidiasis",
-      "system": "FUNGAL",
+      "system": "Fungal",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -231,9 +231,9 @@
     },
     {
       "name": "Aspergillosis",
-      "system": "FUNGAL",
+      "system": "Fungal",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -250,9 +250,9 @@
     },
     {
       "name": "Pneumocystis jirovecii (formerly carinii)",
-      "system": "FUNGAL",
+      "system": "Fungal",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -271,7 +271,7 @@
       "name": "Amoebiasis",
       "system": "Malaria \u2022 (common in Africa)",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -290,7 +290,7 @@
       "name": "Toxoplasmosis",
       "system": "Malaria \u2022 (common in Africa)",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -307,9 +307,9 @@
     },
     {
       "name": "Hypernephroma",
-      "system": "NEOPLASIA",
+      "system": "Neoplasia",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -326,9 +326,9 @@
     },
     {
       "name": "Lymphoma",
-      "system": "NEOPLASIA",
+      "system": "Neoplasia",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -345,9 +345,9 @@
     },
     {
       "name": "Hepatoma",
-      "system": "NEOPLASIA",
+      "system": "Neoplasia",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -364,9 +364,9 @@
     },
     {
       "name": "Rheumatoid arthritis",
-      "system": "CONNECTIVE TISSUE DISEASE",
+      "system": "Connective Tissue Disease",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -383,9 +383,9 @@
     },
     {
       "name": "SLE",
-      "system": "CONNECTIVE TISSUE DISEASE",
+      "system": "Connective Tissue Disease",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -402,9 +402,9 @@
     },
     {
       "name": "Polyarteritis nodosa and other vasculitis",
-      "system": "CONNECTIVE TISSUE DISEASE",
+      "system": "Connective Tissue Disease",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -421,9 +421,9 @@
     },
     {
       "name": "Temporal arteritis",
-      "system": "CONNECTIVE TISSUE DISEASE",
+      "system": "Connective Tissue Disease",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -440,9 +440,9 @@
     },
     {
       "name": "Crohn\u2019s disease",
-      "system": "GRANULOMATOUS DISEASE",
+      "system": "Granulomatous Disease",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -459,9 +459,9 @@
     },
     {
       "name": "Sarcoidosis",
-      "system": "GRANULOMATOUS DISEASE",
+      "system": "Granulomatous Disease",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -478,9 +478,9 @@
     },
     {
       "name": "Post-immunisation",
-      "system": "OTHERS",
+      "system": "Others",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -497,9 +497,9 @@
     },
     {
       "name": "Drug induced",
-      "system": "OTHERS",
+      "system": "Others",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -516,9 +516,9 @@
     },
     {
       "name": "Familial Mediterranean fever",
-      "system": "OTHERS",
+      "system": "Others",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -535,9 +535,9 @@
     },
     {
       "name": "Munchausen\u2019s disease (factitious)",
-      "system": "OTHERS",
+      "system": "Others",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],

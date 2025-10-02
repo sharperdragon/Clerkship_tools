@@ -3,9 +3,9 @@
   "items": [
     {
       "name": "Severe diarrhoea, , irritable bowel syndrome",
-      "system": "NORMAL SPHINCTERS AND PELVIC FLOOR",
+      "system": "Normal Sphincters And Pelvic Floor",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -22,9 +22,9 @@
     },
     {
       "name": "Fecal impaction (\u2018over\ufb02ow\u2019 diarrhoea)",
-      "system": "NORMAL SPHINCTERS AND PELVIC FLOOR",
+      "system": "Normal Sphincters And Pelvic Floor",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -41,9 +41,9 @@
     },
     {
       "name": "Anorectal anomalies, meningomyelocele",
-      "system": "CONGENITAL",
+      "system": "Congenital",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -60,9 +60,9 @@
     },
     {
       "name": "Iatrogenic",
-      "system": "ACQUIRED",
+      "system": "Acquired",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -79,9 +79,9 @@
     },
     {
       "name": "Internal sphincter surgery",
-      "system": "ACQUIRED",
+      "system": "Acquired",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -98,9 +98,9 @@
     },
     {
       "name": "Fistula-in-ano surgery",
-      "system": "ACQUIRED",
+      "system": "Acquired",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -117,9 +117,9 @@
     },
     {
       "name": "Obstetric \u2013 traumatic childbirth",
-      "system": "ACQUIRED",
+      "system": "Acquired",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -136,9 +136,9 @@
     },
     {
       "name": "Pelvic fractures",
-      "system": "ACQUIRED",
+      "system": "Acquired",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -155,9 +155,9 @@
     },
     {
       "name": "Impalement",
-      "system": "ACQUIRED",
+      "system": "Acquired",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -174,9 +174,9 @@
     },
     {
       "name": "Multiple sclerosis",
-      "system": "ACQUIRED",
+      "system": "Acquired",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -193,9 +193,9 @@
     },
     {
       "name": "Spinal injuries (if acute onset)",
-      "system": "ACQUIRED",
+      "system": "Acquired",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -212,9 +212,9 @@
     },
     {
       "name": "Spinal tumours",
-      "system": "ACQUIRED",
+      "system": "Acquired",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -231,9 +231,9 @@
     },
     {
       "name": "Peripheral neuropathy",
-      "system": "ACQUIRED",
+      "system": "Acquired",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -250,9 +250,9 @@
     },
     {
       "name": "Stroke",
-      "system": "ACQUIRED",
+      "system": "Acquired",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -269,9 +269,9 @@
     },
     {
       "name": "Dementia",
-      "system": "ACQUIRED",
+      "system": "Acquired",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -288,9 +288,9 @@
     },
     {
       "name": "Rectal prolapse",
-      "system": "ACQUIRED",
+      "system": "Acquired",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -307,9 +307,9 @@
     },
     {
       "name": "Extensive anorectal carcinoma",
-      "system": "ACQUIRED",
+      "system": "Acquired",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -326,9 +326,9 @@
     },
     {
       "name": "Fistula-in-ano",
-      "system": "ACQUIRED",
+      "system": "Acquired",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -345,9 +345,9 @@
     },
     {
       "name": "Radiotherapy",
-      "system": "ACQUIRED",
+      "system": "Acquired",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],

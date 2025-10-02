@@ -3,9 +3,9 @@
   "items": [
     {
       "name": "Childbirth",
-      "system": "PELVIC FLOOR INJURY",
+      "system": "Pelvic Floor Injury",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -22,9 +22,9 @@
     },
     {
       "name": "Obesity",
-      "system": "PELVIC FLOOR INJURY",
+      "system": "Pelvic Floor Injury",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -41,9 +41,9 @@
     },
     {
       "name": "Prostatectomy",
-      "system": "PELVIC FLOOR INJURY",
+      "system": "Pelvic Floor Injury",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -60,9 +60,9 @@
     },
     {
       "name": "Hysterectomy",
-      "system": "PELVIC FLOOR INJURY",
+      "system": "Pelvic Floor Injury",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -79,9 +79,9 @@
     },
     {
       "name": "Constipation",
-      "system": "DETRUSOR INSTABILITY",
+      "system": "Detrusor Instability",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -98,9 +98,9 @@
     },
     {
       "name": "Excess alcohol/caffeine",
-      "system": "DETRUSOR INSTABILITY",
+      "system": "Detrusor Instability",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -117,9 +117,9 @@
     },
     {
       "name": "Cystitis",
-      "system": "DETRUSOR INSTABILITY",
+      "system": "Detrusor Instability",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -136,9 +136,9 @@
     },
     {
       "name": "Stones",
-      "system": "DETRUSOR INSTABILITY",
+      "system": "Detrusor Instability",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -155,9 +155,9 @@
     },
     {
       "name": "Prostatectomy",
-      "system": "DETRUSOR INSTABILITY",
+      "system": "Detrusor Instability",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -174,9 +174,9 @@
     },
     {
       "name": "Post-radiotherapy",
-      "system": "DETRUSOR INSTABILITY",
+      "system": "Detrusor Instability",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -193,9 +193,9 @@
     },
     {
       "name": "Tuberculous-cystitis",
-      "system": "DETRUSOR INSTABILITY",
+      "system": "Detrusor Instability",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -212,9 +212,9 @@
     },
     {
       "name": "Interstitial nephritis",
-      "system": "DETRUSOR INSTABILITY",
+      "system": "Detrusor Instability",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -231,9 +231,9 @@
     },
     {
       "name": "Tumour",
-      "system": "DETRUSOR INSTABILITY",
+      "system": "Detrusor Instability",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -250,9 +250,9 @@
     },
     {
       "name": "Diabetes",
-      "system": "LOWER MOTOR NEURONE LESIONS",
+      "system": "Lower Motor Neurone Lesions",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -269,9 +269,9 @@
     },
     {
       "name": "Sacral nerve injury (",
-      "system": "LOWER MOTOR NEURONE LESIONS",
+      "system": "Lower Motor Neurone Lesions",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -288,9 +288,9 @@
     },
     {
       "name": "Cauda equina injury",
-      "system": "LOWER MOTOR NEURONE LESIONS",
+      "system": "Lower Motor Neurone Lesions",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -307,9 +307,9 @@
     },
     {
       "name": "Prostatic enlargement",
-      "system": "CHRONIC OUTFLOW OBSTRUCTION",
+      "system": "Chronic Outflow Obstruction",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -326,9 +326,9 @@
     },
     {
       "name": "Disc lesions",
-      "system": "UPPER MOTOR NEURONE LESION",
+      "system": "Upper Motor Neurone Lesion",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -345,9 +345,9 @@
     },
     {
       "name": "Stroke",
-      "system": "UPPER MOTOR NEURONE LESION",
+      "system": "Upper Motor Neurone Lesion",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -364,9 +364,9 @@
     },
     {
       "name": "Head injury",
-      "system": "UPPER MOTOR NEURONE LESION",
+      "system": "Upper Motor Neurone Lesion",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -383,9 +383,9 @@
     },
     {
       "name": "Spinal cord injury above sacral centre",
-      "system": "UPPER MOTOR NEURONE LESION",
+      "system": "Upper Motor Neurone Lesion",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -402,9 +402,9 @@
     },
     {
       "name": "Spinal tumours",
-      "system": "UPPER MOTOR NEURONE LESION",
+      "system": "Upper Motor Neurone Lesion",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -421,9 +421,9 @@
     },
     {
       "name": "Parkinson\u2019s disease",
-      "system": "UPPER MOTOR NEURONE LESION",
+      "system": "Upper Motor Neurone Lesion",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -440,9 +440,9 @@
     },
     {
       "name": "Multiple sclerosis",
-      "system": "UPPER MOTOR NEURONE LESION",
+      "system": "Upper Motor Neurone Lesion",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -459,9 +459,9 @@
     },
     {
       "name": "Syringomyelia",
-      "system": "UPPER MOTOR NEURONE LESION",
+      "system": "Upper Motor Neurone Lesion",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -478,9 +478,9 @@
     },
     {
       "name": "Ectopia vesice",
-      "system": "ANATOMICAL",
+      "system": "Anatomical",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -497,9 +497,9 @@
     },
     {
       "name": "Ectopic ureter",
-      "system": "ANATOMICAL",
+      "system": "Anatomical",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -516,9 +516,9 @@
     },
     {
       "name": "Vesicovaginal \ufb01stula",
-      "system": "ANATOMICAL",
+      "system": "Anatomical",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -535,9 +535,9 @@
     },
     {
       "name": "Nocturnal enuresis",
-      "system": "ANATOMICAL",
+      "system": "Anatomical",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -554,9 +554,9 @@
     },
     {
       "name": "Medications (ACE-I, HRT, diuretics)",
-      "system": "ANATOMICAL",
+      "system": "Anatomical",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],

@@ -3,9 +3,9 @@
   "items": [
     {
       "name": "Trauma",
-      "system": "EXTERNAL EAR",
+      "system": "External Ear",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -22,9 +22,9 @@
     },
     {
       "name": "Boils",
-      "system": "EXTERNAL EAR",
+      "system": "External Ear",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -41,9 +41,9 @@
     },
     {
       "name": "Dermoid/epidermoid cyst",
-      "system": "EXTERNAL EAR",
+      "system": "External Ear",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -60,9 +60,9 @@
     },
     {
       "name": "Malignancy (, squamous cell carcinoma)",
-      "system": "EXTERNAL EAR",
+      "system": "External Ear",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -79,9 +79,9 @@
     },
     {
       "name": "Otitis externa",
-      "system": "EXTERNAL AUDITORY MEATUS",
+      "system": "External Auditory Meatus",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -98,9 +98,9 @@
     },
     {
       "name": "Boils",
-      "system": "EXTERNAL AUDITORY MEATUS",
+      "system": "External Auditory Meatus",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -117,9 +117,9 @@
     },
     {
       "name": "Malignancy",
-      "system": "EXTERNAL AUDITORY MEATUS",
+      "system": "External Auditory Meatus",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -136,9 +136,9 @@
     },
     {
       "name": "Acute otitis media (AOM) (Fig. 16)",
-      "system": "MIDDLE EAR",
+      "system": "Middle Ear",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -155,9 +155,9 @@
     },
     {
       "name": "Chronic otitis media",
-      "system": "MIDDLE EAR",
+      "system": "Middle Ear",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -174,9 +174,9 @@
     },
     {
       "name": "Mastoiditis",
-      "system": "MIDDLE EAR",
+      "system": "Middle Ear",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -195,7 +195,7 @@
       "name": "Dental problems (",
       "system": "Referred",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -214,7 +214,7 @@
       "name": "Pharynx",
       "system": "Referred",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -233,7 +233,7 @@
       "name": "Tonsillitis",
       "system": "Referred",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -252,7 +252,7 @@
       "name": "Pharyngitis",
       "system": "Referred",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -271,7 +271,7 @@
       "name": "Foreign body",
       "system": "Referred",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -290,7 +290,7 @@
       "name": "Quinsy",
       "system": "Referred",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -309,7 +309,7 @@
       "name": "Carcinoma of the posterior third of the tongue",
       "system": "Referred",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -328,7 +328,7 @@
       "name": "Laryngeal cancer",
       "system": "Referred",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -345,9 +345,9 @@
     },
     {
       "name": "Herpes zoster",
-      "system": "NEUROLOGICAL",
+      "system": "Neurological",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -364,9 +364,9 @@
     },
     {
       "name": "Glossopharyngeal neuralgia",
-      "system": "NEUROLOGICAL",
+      "system": "Neurological",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],

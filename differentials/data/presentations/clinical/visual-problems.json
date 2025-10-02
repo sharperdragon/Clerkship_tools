@@ -5,7 +5,7 @@
       "name": "Migraine",
       "system": "General",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -24,7 +24,7 @@
       "name": "Retinal detachment",
       "system": "General",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -43,7 +43,7 @@
       "name": "Vitreous hemorrhage",
       "system": "General",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -62,7 +62,7 @@
       "name": "Age-related macular degeneration",
       "system": "General",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -81,7 +81,7 @@
       "name": "Vitreous detachment",
       "system": "General",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -98,9 +98,9 @@
     },
     {
       "name": "Acute angle-closure glaucoma",
-      "system": "BLURRING OF VISION",
+      "system": "Blurring Of Vision",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -117,9 +117,9 @@
     },
     {
       "name": "Blunt trauma to the eye",
-      "system": "BLURRING OF VISION",
+      "system": "Blurring Of Vision",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -136,9 +136,9 @@
     },
     {
       "name": "Homonymous hemianopia \u2013 stroke, tumour",
-      "system": "PARTIAL LOSS",
+      "system": "Partial Loss",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -155,9 +155,9 @@
     },
     {
       "name": "Peripheral \ufb01eld loss \u2013 glaucoma, papilloedema",
-      "system": "PARTIAL LOSS",
+      "system": "Partial Loss",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -174,9 +174,9 @@
     },
     {
       "name": "Central \ufb01eld loss \u2013 age-related macular degeneration",
-      "system": "PARTIAL LOSS",
+      "system": "Partial Loss",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -193,9 +193,9 @@
     },
     {
       "name": "Bitemporal hemianopia \u2013 pituitary tumour",
-      "system": "PARTIAL LOSS",
+      "system": "Partial Loss",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -212,9 +212,9 @@
     },
     {
       "name": "Horizontal \ufb01eld loss \u2013 retinal vascular occlusion",
-      "system": "PARTIAL LOSS",
+      "system": "Partial Loss",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -233,7 +233,7 @@
       "name": "common",
       "system": "Freq",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -252,7 +252,7 @@
       "name": "uncommon",
       "system": "Freq",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -271,7 +271,7 @@
       "name": "rare",
       "system": "Freq",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -290,7 +290,7 @@
       "name": "lesions at the optic chiasma or more posteriorly cause binocular loss",
       "system": "Vitamin A de\ufb01ciency \u2022 (common in underdeveloped countries)",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -309,7 +309,7 @@
       "name": "Sudden onset of visual disturbance or loss is an opthalmic",
       "system": "Vitamin A de\ufb01ciency \u2022 (common in underdeveloped countries)",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -328,7 +328,7 @@
       "name": "If temporal arteritis is suspected consider treatment",
       "system": "Vitamin A de\ufb01ciency \u2022 (common in underdeveloped countries)",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],

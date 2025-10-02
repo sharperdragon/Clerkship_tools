@@ -3,9 +3,9 @@
   "items": [
     {
       "name": "Oesophageal atresia",
-      "system": "CONGENITAL",
+      "system": "Congenital",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -22,9 +22,9 @@
     },
     {
       "name": "Gastro-oesophageal re\ufb02ux",
-      "system": "IN THE WALL",
+      "system": "In The Wall",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -41,9 +41,9 @@
     },
     {
       "name": "Carcinoma (Fig. 14)",
-      "system": "IN THE WALL",
+      "system": "In The Wall",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -60,9 +60,9 @@
     },
     {
       "name": "Irradiation",
-      "system": "IN THE WALL",
+      "system": "In The Wall",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -79,9 +79,9 @@
     },
     {
       "name": "Scleroderma",
-      "system": "IN THE WALL",
+      "system": "In The Wall",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -98,9 +98,9 @@
     },
     {
       "name": "Caustic stricture",
-      "system": "IN THE WALL",
+      "system": "In The Wall",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -117,9 +117,9 @@
     },
     {
       "name": "Candidiasis",
-      "system": "IN THE WALL",
+      "system": "In The Wall",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -136,9 +136,9 @@
     },
     {
       "name": "Achalasia",
-      "system": "IN THE WALL",
+      "system": "In The Wall",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -155,9 +155,9 @@
     },
     {
       "name": "Plummer\u2013Vinson syndrome",
-      "system": "IN THE WALL",
+      "system": "In The Wall",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -174,9 +174,9 @@
     },
     {
       "name": "Chagas\u2019 disease \u2022 (South America)",
-      "system": "IN THE WALL",
+      "system": "In The Wall",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -193,9 +193,9 @@
     },
     {
       "name": "Goitre",
-      "system": "OUTSIDE THE WALL",
+      "system": "Outside The Wall",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -212,9 +212,9 @@
     },
     {
       "name": "Paraoesophageal (rolling) hiatus hernia",
-      "system": "OUTSIDE THE WALL",
+      "system": "Outside The Wall",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -231,9 +231,9 @@
     },
     {
       "name": "Mediastinal tumours/lymphadenopathy",
-      "system": "OUTSIDE THE WALL",
+      "system": "Outside The Wall",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -250,9 +250,9 @@
     },
     {
       "name": "Pharyngeal pouch",
-      "system": "OUTSIDE THE WALL",
+      "system": "Outside The Wall",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -269,9 +269,9 @@
     },
     {
       "name": "Enlarged left atrium (mitral stenosis)",
-      "system": "OUTSIDE THE WALL",
+      "system": "Outside The Wall",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -288,9 +288,9 @@
     },
     {
       "name": "Thoracic aortic aneurysm",
-      "system": "OUTSIDE THE WALL",
+      "system": "Outside The Wall",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -307,9 +307,9 @@
     },
     {
       "name": "Dysphagia lusoria",
-      "system": "OUTSIDE THE WALL",
+      "system": "Outside The Wall",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -326,9 +326,9 @@
     },
     {
       "name": "CVA",
-      "system": "NEUROMUSCULAR DISORDERS",
+      "system": "Neuromuscular Disorders",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -345,9 +345,9 @@
     },
     {
       "name": "Bulbar palsy",
-      "system": "NEUROMUSCULAR DISORDERS",
+      "system": "Neuromuscular Disorders",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -364,9 +364,9 @@
     },
     {
       "name": "Guillain\u2013Barr\u00e9 syndrome",
-      "system": "NEUROMUSCULAR DISORDERS",
+      "system": "Neuromuscular Disorders",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -383,9 +383,9 @@
     },
     {
       "name": "Motor neurone disease",
-      "system": "NEUROMUSCULAR DISORDERS",
+      "system": "Neuromuscular Disorders",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -402,9 +402,9 @@
     },
     {
       "name": "Myasthenia gravis",
-      "system": "NEUROMUSCULAR DISORDERS",
+      "system": "Neuromuscular Disorders",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -421,9 +421,9 @@
     },
     {
       "name": "Globus",
-      "system": "OTHERS",
+      "system": "Others",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],

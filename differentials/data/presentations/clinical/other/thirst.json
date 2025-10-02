@@ -3,9 +3,9 @@
   "items": [
     {
       "name": "General debility/frailty",
-      "system": "INADEQUATE FLUID INTAKE",
+      "system": "Inadequate Fluid Intake",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -22,9 +22,9 @@
     },
     {
       "name": "Neurological disease",
-      "system": "INADEQUATE FLUID INTAKE",
+      "system": "Inadequate Fluid Intake",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -41,9 +41,9 @@
     },
     {
       "name": "Anorexia",
-      "system": "INADEQUATE FLUID INTAKE",
+      "system": "Inadequate Fluid Intake",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -60,9 +60,9 @@
     },
     {
       "name": "Vomiting",
-      "system": "EXCESSIVE FLUID LOSS",
+      "system": "Excessive Fluid Loss",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -79,9 +79,9 @@
     },
     {
       "name": "Fever",
-      "system": "EXCESSIVE FLUID LOSS",
+      "system": "Excessive Fluid Loss",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -98,9 +98,9 @@
     },
     {
       "name": "Diarrhoea",
-      "system": "EXCESSIVE FLUID LOSS",
+      "system": "Excessive Fluid Loss",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -117,9 +117,9 @@
     },
     {
       "name": "Bleeding (i.e. loss of blood volume)",
-      "system": "EXCESSIVE FLUID LOSS",
+      "system": "Excessive Fluid Loss",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -136,9 +136,9 @@
     },
     {
       "name": "Excessive sweating",
-      "system": "EXCESSIVE FLUID LOSS",
+      "system": "Excessive Fluid Loss",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -155,9 +155,9 @@
     },
     {
       "name": "Burns",
-      "system": "EXCESSIVE FLUID LOSS",
+      "system": "Excessive Fluid Loss",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -174,9 +174,9 @@
     },
     {
       "name": "Diabetes mellitus",
-      "system": "ENDOCRINE AND METABOLIC",
+      "system": "Endocrine And Metabolic",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -193,9 +193,9 @@
     },
     {
       "name": "Chronic renal failure",
-      "system": "ENDOCRINE AND METABOLIC",
+      "system": "Endocrine And Metabolic",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -212,9 +212,9 @@
     },
     {
       "name": "Liver failure",
-      "system": "ENDOCRINE AND METABOLIC",
+      "system": "Endocrine And Metabolic",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -231,9 +231,9 @@
     },
     {
       "name": "Diabetes insipidus (cranial and nephrogenic)",
-      "system": "ENDOCRINE AND METABOLIC",
+      "system": "Endocrine And Metabolic",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -250,9 +250,9 @@
     },
     {
       "name": "Diuretics (especially overdose)",
-      "system": "ENDOCRINE AND METABOLIC",
+      "system": "Endocrine And Metabolic",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -269,9 +269,9 @@
     },
     {
       "name": "Ecstasy",
-      "system": "ENDOCRINE AND METABOLIC",
+      "system": "Endocrine And Metabolic",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -288,9 +288,9 @@
     },
     {
       "name": "Sj\u00f6gren\u2019s syndrome",
-      "system": "CAUSES OF DRY MOUTH",
+      "system": "Causes Of Dry Mouth",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -307,9 +307,9 @@
     },
     {
       "name": "Drugs, , monoamine oxidase inhibitors",
-      "system": "CAUSES OF DRY MOUTH",
+      "system": "Causes Of Dry Mouth",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -326,9 +326,9 @@
     },
     {
       "name": "Post head and neck radiotherapy",
-      "system": "CAUSES OF DRY MOUTH",
+      "system": "Causes Of Dry Mouth",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -345,9 +345,9 @@
     },
     {
       "name": "Psychogenic polydipsia",
-      "system": "PSYCHIATRIC",
+      "system": "Psychiatric",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -364,9 +364,9 @@
     },
     {
       "name": "Salty foods",
-      "system": "PSYCHIATRIC",
+      "system": "Psychiatric",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],

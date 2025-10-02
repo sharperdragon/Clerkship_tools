@@ -3,9 +3,9 @@
   "items": [
     {
       "name": "Arteriosclerosis",
-      "system": "LARGE VESSEL DISEASE",
+      "system": "Large Vessel Disease",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -22,9 +22,9 @@
     },
     {
       "name": "Embolism",
-      "system": "LARGE VESSEL DISEASE",
+      "system": "Large Vessel Disease",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -41,9 +41,9 @@
     },
     {
       "name": "Diabetes",
-      "system": "SMALL VESSEL DISEASE",
+      "system": "Small Vessel Disease",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -60,9 +60,9 @@
     },
     {
       "name": "Raynaud\u2019s disease",
-      "system": "SMALL VESSEL DISEASE",
+      "system": "Small Vessel Disease",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -79,9 +79,9 @@
     },
     {
       "name": "Embolism",
-      "system": "SMALL VESSEL DISEASE",
+      "system": "Small Vessel Disease",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -98,9 +98,9 @@
     },
     {
       "name": "Vasculitis, , rheumatoid arthritis, scleroderma",
-      "system": "SMALL VESSEL DISEASE",
+      "system": "Small Vessel Disease",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -117,9 +117,9 @@
     },
     {
       "name": "Diabetes (Fig. 24)",
-      "system": "PERIPHERAL NERVE LESIONS",
+      "system": "Peripheral Nerve Lesions",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -136,9 +136,9 @@
     },
     {
       "name": "Peripheral nerve injuries",
-      "system": "PERIPHERAL NERVE LESIONS",
+      "system": "Peripheral Nerve Lesions",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -155,9 +155,9 @@
     },
     {
       "name": "Leprosy \u2022JOFOEFNJDBSFBT",
-      "system": "PERIPHERAL NERVE LESIONS",
+      "system": "Peripheral Nerve Lesions",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -174,9 +174,9 @@
     },
     {
       "name": "Alcoholism",
-      "system": "PERIPHERAL NERVE LESIONS",
+      "system": "Peripheral Nerve Lesions",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -193,9 +193,9 @@
     },
     {
       "name": "Spina bi\ufb01da",
-      "system": "SPINAL CORD LESIONS",
+      "system": "Spinal Cord Lesions",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -212,9 +212,9 @@
     },
     {
       "name": "Tabes dorsalis",
-      "system": "SPINAL CORD LESIONS",
+      "system": "Spinal Cord Lesions",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -231,9 +231,9 @@
     },
     {
       "name": "Syringomyelia",
-      "system": "SPINAL CORD LESIONS",
+      "system": "Spinal Cord Lesions",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -250,9 +250,9 @@
     },
     {
       "name": "Squamous cell carcinoma",
-      "system": "NEOPLASTIC",
+      "system": "Neoplastic",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -269,9 +269,9 @@
     },
     {
       "name": "Malignant melanoma",
-      "system": "NEOPLASTIC",
+      "system": "Neoplastic",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -288,9 +288,9 @@
     },
     {
       "name": "Ill-\ufb01tting footwear",
-      "system": "TRAUMATIC",
+      "system": "Traumatic",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -307,9 +307,9 @@
     },
     {
       "name": "Madura foot \u2022FOEFNJDJO\"GSJDB*OEJB",
-      "system": "INFECTIVE",
+      "system": "Infective",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],

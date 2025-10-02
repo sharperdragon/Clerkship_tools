@@ -3,9 +3,9 @@
   "items": [
     {
       "name": "Senility",
-      "system": "PHYSIOLOGICAL",
+      "system": "Physiological",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -22,9 +22,9 @@
     },
     {
       "name": "Familial (varies with ethnicity)",
-      "system": "PHYSIOLOGICAL",
+      "system": "Physiological",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -41,9 +41,9 @@
     },
     {
       "name": "Ciclosporin",
-      "system": "PATHOLOGICAL",
+      "system": "Pathological",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -60,9 +60,9 @@
     },
     {
       "name": "Antiepileptic drugs",
-      "system": "PATHOLOGICAL",
+      "system": "Pathological",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -79,9 +79,9 @@
     },
     {
       "name": "Corticosteroids",
-      "system": "PATHOLOGICAL",
+      "system": "Pathological",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -98,9 +98,9 @@
     },
     {
       "name": "Progestogens",
-      "system": "PATHOLOGICAL",
+      "system": "Pathological",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -117,9 +117,9 @@
     },
     {
       "name": "Testosterone (including anabolic steroids)",
-      "system": "PATHOLOGICAL",
+      "system": "Pathological",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -136,9 +136,9 @@
     },
     {
       "name": "Minoxidil",
-      "system": "PATHOLOGICAL",
+      "system": "Pathological",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -155,9 +155,9 @@
     },
     {
       "name": "Prolactinoma",
-      "system": "PITUITARY",
+      "system": "Pituitary",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -174,9 +174,9 @@
     },
     {
       "name": "Cushing\u2019s disease",
-      "system": "PITUITARY",
+      "system": "Pituitary",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -193,9 +193,9 @@
     },
     {
       "name": "Acromegaly",
-      "system": "PITUITARY",
+      "system": "Pituitary",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -212,9 +212,9 @@
     },
     {
       "name": "Polycystic ovarian syndrome",
-      "system": "OVARIAN",
+      "system": "Ovarian",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -231,9 +231,9 @@
     },
     {
       "name": "Menopause",
-      "system": "OVARIAN",
+      "system": "Ovarian",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -250,9 +250,9 @@
     },
     {
       "name": "IN hyperthecosis",
-      "system": "OVARIAN",
+      "system": "Ovarian",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -269,9 +269,9 @@
     },
     {
       "name": "Androgen-producing ovarian tumour",
-      "system": "OVARIAN",
+      "system": "Ovarian",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -288,9 +288,9 @@
     },
     {
       "name": "Congenital adrenal hyperplasia",
-      "system": "ADRENAL",
+      "system": "Adrenal",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -307,9 +307,9 @@
     },
     {
       "name": "Cushing\u2019s syndrome",
-      "system": "ADRENAL",
+      "system": "Adrenal",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -326,9 +326,9 @@
     },
     {
       "name": "Androgen-producing adrenal tumours",
-      "system": "ADRENAL",
+      "system": "Adrenal",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
@@ -345,9 +345,9 @@
     },
     {
       "name": "Anorexia nervosa",
-      "system": "ADRENAL",
+      "system": "Adrenal",
       "redFlag": false,
-      "symptoms": {
+      "hpi": {
         "onset": [],
         "progression": [],
         "palliate": [],
