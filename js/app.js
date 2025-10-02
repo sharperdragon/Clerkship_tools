@@ -1,6 +1,6 @@
 
 // ===== Cache config =====
-const APP_VERSION = "2025-10-1-a";          // bump to invalidate everything
+const APP_VERSION = "2025-10-2-a";          // bump to invalidate everything
 const CACHE_ENABLED = true;                   // master switch
 const CACHE_TTL_MS = 1000 * 60 * 60 * 24;     // 24h for templates
 const STATE_AUTOSAVE_MS = 500;               // debounce for state saves
@@ -38,10 +38,10 @@ const CLASS_NORMAL   = "normal";   // applied when good/absent (left-click)
 
 // Map each mode to its own template file
 const MODE_FILES = {
-  subjective: "templates/template_subjective.json",
-  ROS: "template_ROS.json",
-  PE:  "templates/template_pe.json",
-  MSE: "templates/template_MSE.json",
+  subjective: "../templates/template_subjective.json",
+  ROS: "../templates/template_ROS.json",
+  PE:  "../templates/template_pe.json",
+  MSE: "../templates/template_MSE.json",
 
 };
 // Explicit order for tabs (so ROS appears first regardless of key enumeration)

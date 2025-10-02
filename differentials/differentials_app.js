@@ -1,9 +1,3 @@
-/* ============================================================================
-   Clinical Differentials App – path-aware loader for /differentials/*
-   - Reads Presentation_list.json (object of arrays with {name})
-   - Optional per-section index map (e.g., clinical_presentation_index.json)
-   - Tries several filename variants for resilience
-   ============================================================================ */
 
 /*! Config (edit here) */
 const CONFIG = {
@@ -273,32 +267,28 @@ function renderGrid(entries){
     body.className = "card__body";
     body.hidden = true; // start hidden; revealed on expand
 
-    // Sort by frequency (common < uncommon < rare) then by name
-    const rank = (v) => {
-      const s = String(v || "").toLowerCase();
-      if (s === "common") return 0;
-      if (s === "uncommon") return 1;
-      if (s === "rare") return 2;
-      return 3; // unknown/unspecified to the bottom group
-    };
-    const itemsSorted = [...e.items].sort((a, b) => {
-      const ra = rank(a.freq), rb = rank(b.freq);
-      if (ra !== rb) return ra - rb;
-      return String(a.name).localeCompare(String(b.name), undefined, { sensitivity: "base" });
-    });
-
     // Build etiologies table
     const table = document.createElement("table");
     table.className = "soft-table";
+    const thead = document.createElement("thead");
+    const headerRow = document.createElement("tr");
+    ["Etiology", "System", "Frequency"].forEach(label => {
+      const th = document.createElement("th");
+      th.textContent = label;
+      headerRow.appendChild(th);
+    });
+    thead.appendChild(headerRow);
+    table.appendChild(thead);
     const tbody = document.createElement("tbody");
-    for (const it of itemsSorted) {
+    for (const it of e.items) {
       const tr = document.createElement("tr");
       const td1 = document.createElement("td"); td1.textContent = it.name;
       const td2 = document.createElement("td"); td2.textContent = it.system || "—";
       tr.append(td1, td2);
-      const td3 = document.createElement("td");
-      td3.textContent = (it.freq ?? "—");
-      tr.appendChild(td3);
+      if (UI.showFreq) {
+        const td3 = document.createElement("td"); td3.textContent = it.freq ?? "—";
+        tr.appendChild(td3);
+      }
       tbody.appendChild(tr);
     }
     table.appendChild(tbody);

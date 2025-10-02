@@ -6,7 +6,7 @@
 
   // Default settings
   const DEFAULTS = {
-    theme: 'dark',   // 'dark' or 'light'
+    theme: 'light',   // 'dark' or 'light'
     hideLocked: true,
     showEmpty: false,
     section: ''      // section filter
@@ -130,3 +130,32 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+
+(function() {
+    const KEY = "ui-theme"; // "light" | "dark" | null (follow system)
+    const saved = localStorage.getItem(KEY);
+
+    // Apply saved theme (or follow system if none)
+    if (saved === "light" || saved === "dark") {
+      document.documentElement.setAttribute("data-theme", saved);
+      document.documentElement.style.colorScheme = saved;
+    } else {
+      // follow system; don't set data-theme to allow @media to handle
+      document.documentElement.removeAttribute("data-theme");
+      document.documentElement.style.colorScheme = "";
+    }
+
+    // Expose helper if you want a toggle somewhere
+    window.setTheme = function(mode) {
+      // mode: "light" | "dark" | "system"
+      if (mode === "system") {
+        localStorage.removeItem(KEY);
+        document.documentElement.removeAttribute("data-theme");
+        document.documentElement.style.colorScheme = "";
+      } else {
+        localStorage.setItem(KEY, mode);
+        document.documentElement.setAttribute("data-theme", mode);
+        document.documentElement.style.colorScheme = mode;
+      }
+    };
+  }());

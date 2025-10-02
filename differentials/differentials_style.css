@@ -4,32 +4,33 @@
    ============================================================================ */
 
 :root{
-  --bg: #0b0c0f;
-  --fg: #e6e9ef;
-  --muted: #9aa3b2;
-  --brand: #7aa2f7;
-  --accent: #94e2d5;
-  --danger: #ff6b6b;
-  --card: #12141a;
-  --chip: #1c1f26;
-  --chip-on: #1f2937;
-  --border: #262b35;
-  --focus: #7aa2f7;
+  --bg: #f7f8fb;
+  --fg: #0f1222;
+  --muted: #667085;
+  --brand: #3556e3;
+  --accent: #0ea5a5;
+  --danger: #c03535;
+  --card: #ffffff;
+  --chip: #eef1f6;
+  --chip-on: #e5e9f2;
+  --border: #dfe3eb;
+  --focus: #3556e3;
+
 }
 
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: dark) {
   :root{
-    --bg: #f7f8fb;
-    --fg: #0f1222;
-    --muted: #667085;
-    --brand: #3556e3;
-    --accent: #0ea5a5;
-    --danger: #c03535;
-    --card: #ffffff;
-    --chip: #eef1f6;
-    --chip-on: #e5e9f2;
-    --border: #dfe3eb;
-    --focus: #3556e3;
+    --bg: #0b0c0f;
+    --fg: #e6e9ef;
+    --muted: #9aa3b2;
+    --brand: #7aa2f7;
+    --accent: #94e2d5;
+    --danger: #ff6b6b;
+    --card: #12141a;
+    --chip: #1c1f26;
+    --chip-on: #1f2937;
+    --border: #262b35;
+    --focus: #7aa2f7;
   }
 }
 
