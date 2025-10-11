@@ -1,55 +1,87 @@
-Clerkship Tools – NoteWriter
+# Clerkship Tools – Clinical Web Utilities
 
-Overview
-NoteWriter is a browser-based tool for building structured clinical notes. It provides interactive panels for Subjective, Review of Systems (ROS), Physical Exam (PE), and Mental Status Exam (MSE). Each section is defined by JSON templates, rendered dynamically in the UI, and exported into a complete note.
+## Overview
+**Clerkship Tools** is a collection of browser-based utilities for medical students and clinicians.  
+It includes multiple standalone web apps—each focused on a distinct clinical workflow—but unified by a shared theme engine (`core_app.js`) and a modular design.  
+Everything runs entirely in the browser with no backend dependencies.
 
-The project is designed to run entirely in the browser with no backend dependencies. It uses a manifest-driven system (tabs.json) to control which tabs are available and which template each tab uses.
+### Included Apps
+| Module | Description | Entry Point |
+|:--|:--|:--|
+| **NoteWriter** | Structured SOAP note builder with Subjective, ROS, PE, and MSE tabs. | `writer.html` |
+| **Differential Explorer** | Symptom-based lookup of causes from the *Pocketbook of Differential Diagnosis*. | `differentials/differentials_index.html` |
+| **USPSTF Preventive Care** | Parse chart text or manually enter demographics to retrieve preventive screening recommendations. | `Maintenance/USPSTF.html` |
+| **Calculators (Coming Soon)** | Framework for quick clinical calculators and conversions. | `pages/calculators.html` |
 
-Features
-	•	Tab-driven workflow: Navigate between Subjective, ROS, PE, and MSE.
-	•	Manifest-based config: tabs.json defines which tabs appear and their template sources.
-	•	Template-driven UI: Each mode (e.g., PE, ROS) pulls its structure from a JSON template file (e.g., templates/template_pe.json, template_ROS.json).
-	•	Autosave and caching: State is cached in localStorage with TTL-based invalidation.
-	•	Acute/Non-acute toggle: Subjective mode supports acuity-based rendering of the HPI panel.
-	•	Split-pane layout: Subjective history supports a resizable HPI/General History layout.
-	•	Vital signs parser: Free-text vitals can be auto-scrubbed into a standardized format.
-	•	Sticky headers: App bar, Tier-1 (tabs), and Tier-2 (section tabs) remain visible while scrolling.
-	•	Customizable styles: Driven by styles.css with responsive design for smaller screens.
+---
 
-File Structure
-index.html              – Landing page (Clerkship Tools home)
-writer.html             – Entry point for NoteWriter (links from index.html)
-app.js                  – Core application logic (tab switching, rendering, caching)
-styles.css              – Theme, layout, and responsive styles
-tabs.json               – Manifest of available tabs & template files
-templates/template_subjective.json – Subjective (HPI, PMH, Allergies, etc.)
-template_ROS.json        – Review of Systems panels
-templates/template_pe.json         – Physical Exam panels
-templates/template_MSE.json        – Mental Status Exam panels
-make_tab_manifest.py     – Helper script to generate tabs.json automatically
+## Features
+- 🌗 **Persistent Light/Dark Theme** – Stored in `localStorage("ui-theme")` and shared across all tools.  
+- 🧠 **Manifest-based UI** – Each tool loads panels and forms from JSON templates.  
+- 💾 **Offline & Static** – Fully functional without a server; ideal for GitHub Pages.  
+- 🧩 **Unified Framework** – Common layout, app bar, and settings drawer.  
+- 🧰 **Built for Medical Students** – Focused on speed and structure for clerkships and COMAT prep.
 
-Setup
-	1.	Clone or download this repository.
-	2.	Open index.html in your browser.
-	3.	From the Clerkship Tools home screen, click NoteWriter to launch the tool.
-	4.	The app will dynamically load templates from JSON files and render structured panels.
+---
 
-Usage
-	1.	Select a Tab: Use the Tier-1 tab bar to choose Subjective, ROS, PE, or MSE.
-	2.	Fill in Panels: Each panel has text fields, checkboxes, or “chips” (toggle buttons) depending on the template definition.
-	3.	Resize Split View (Subjective only): Drag the vertical splitter between HPI and General History.
-	4.	Review Output: The app generates structured text in real time, ready for copy/paste into clinical notes.
+## File Structure
+```
+index.html                        – Home page linking all tools
+js/core_app.js                    – Shared logic (theme, settings, utilities)
+js/app.js                         – NoteWriter logic (rendering, caching)
+writer.html                       – Entry point for NoteWriter
+differentials/                    – Differential Diagnosis Explorer
+  ├── differentials_index.html
+  ├── differentials_app.js
+  └── data/presentations/...
+Maintenance/USPSTF.html           – USPSTF Preventive Care Calculator
+styles.css, core_style.css        – Global styling and layout
+assets/                           – Icons, JSON configs, and metadata
+```
 
-Customization
-	•	Add/Edit Tabs: Update tabs.json with new entries pointing to template files.
-	•	Modify Templates: Adjust template_*.json files to add new panels, fields, or chips.
-	•	Generate Manifest: Run make_tab_manifest.py to regenerate tabs.json automatically when new templates are added.
-	•	Styling: Modify styles.css to change theme colors, layout, or responsiveness.
+---
 
-Roadmap
-	•	Export to DOCX or PDF
-	•	Multi-patient state handling
-	•	Additional clerkship-specific tools (e.g., USPSTF Helper)
+## Setup
+1. Clone or download this repository.  
+2. Open `index.html` in your browser.  
+3. Select a module from the home page to launch it.  
+4. All data loads dynamically from local JSON—no backend required.
 
-License
-© 2025 CJG. For personal and educational use.
+---
+
+## Theme & Settings
+- The selected theme is saved to `localStorage` under the key `ui-theme`.  
+- Default theme is **light** when no preference is set.  
+- The shared file `core_app.js` automatically applies the theme across all pages.  
+- To switch manually, use:
+  ```js
+  setTheme('light');
+  setTheme('dark');
+  setTheme('system');
+  ```
+
+---
+
+## Deployment
+This project is GitHub Pages–ready.  
+To deploy:
+1. Go to **Settings → Pages** in your repository.  
+2. Choose “Deploy from branch: main, folder: / (root)”.  
+3. Visit your deployed site:  
+   ```
+   https://<username>.github.io/Clerkship_tools_v2/
+   ```
+
+---
+
+## Roadmap
+- 🧾 Export notes to DOCX/PDF  
+- 📋 Additional calculators and clinical score tools  
+- 🔗 Cross-app data caching  
+- ⚙️ Optional PWA (offline installation)
+
+---
+
+## License
+© 2025 Clayton Goddard.  
+For personal and educational use only. Redistribution or commercial use is prohibited.
