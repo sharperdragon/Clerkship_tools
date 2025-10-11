@@ -4,6 +4,19 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Home • Clerkship Tools</title>
+    <script>
+    (function(){
+      var m = localStorage.getItem('ui-theme'); // "light" | "dark" | null (system)
+      if (m === 'light' || m === 'dark') {
+        document.documentElement.setAttribute('data-theme', m);
+        document.documentElement.style.colorScheme = m;
+      } else {
+        // default to light if no preference saved
+        document.documentElement.setAttribute('data-theme', 'light');
+        document.documentElement.style.colorScheme = 'light';
+      }
+    })();
+    </script>
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="core_style.css" />
 </head>
@@ -71,6 +84,23 @@
 
   </style>
   <script src="js/core_app.js"></script>
+  <script>
+  // ! Theme radio wiring (Light/Dark/System) -> persists to localStorage via setTheme
+  document.addEventListener('DOMContentLoaded', function () {
+    if (!window.setTheme) return;
+    var saved = localStorage.getItem('ui-theme');          // "light" | "dark" | null => system
+    var radios = document.querySelectorAll('input[name="theme"]');
+    if (!radios.length) return;
+
+    // Initialize checked state (default to light if none saved)
+    radios.forEach(function(r){
+      r.checked = saved ? (r.value === saved) : (r.value === 'light');
+      r.addEventListener('change', function(e){
+        if (e.target.checked) window.setTheme(e.target.value);
+      });
+    });
+  });
+  </script>
   <script>
 
   </script>

@@ -3,10 +3,10 @@
 
 (function(global){
   const STORAGE_KEY = 'clerkship_tools_settings';
+  const THEME_KEY   = 'ui-theme'; // single source: "light" | "dark" | (unset -> default to light)
 
   // Default settings
   const DEFAULTS = {
-    theme: 'light',   // 'dark' or 'light'
     hideLocked: true,
     showEmpty: false,
     section: ''      // section filter
@@ -32,53 +32,55 @@
     }
   }
 
-  // Apply theme directly to <html>
-  function applyTheme(theme){
-    if(theme === 'light') {
-      document.documentElement.setAttribute('data-theme','light');
-    } else {
-      document.documentElement.removeAttribute('data-theme');
-    }
+  // === Unified theme helpers ===============================================
+  function readSavedTheme(){
+    const saved = localStorage.getItem(THEME_KEY);
+    // Default to "light" if not set
+    return (saved === 'dark' || saved === 'light') ? saved : 'light';
   }
+
+  function applyTheme(mode){
+    // mode: "light" | "dark"
+    const m = (mode === 'dark') ? 'dark' : 'light';
+    document.documentElement.setAttribute('data-theme', m);
+    document.documentElement.style.colorScheme = m;
+  }
+
+  window.setTheme = function(mode){
+    // mode: "light" | "dark" | "system"
+    if (mode === 'system') {
+      // fall back to default (light)
+      localStorage.removeItem(THEME_KEY);
+      applyTheme('light');
+    } else {
+      const m = (mode === 'dark') ? 'dark' : 'light';
+      localStorage.setItem(THEME_KEY, m);
+      applyTheme(m);
+    }
+  };
+  // ========================================================================
 
   // Public API
   const CoreApp = {
     settings: load(),
     save(){ save(this.settings); },
     reset(){ this.settings = {...DEFAULTS}; this.save(); },
-    applyTheme(){ applyTheme(this.settings.theme); },
+    // Theme is no longer kept in settings; delegate to unified setter
     toggleTheme(){
-      this.settings.theme = (this.settings.theme === 'light') ? 'dark' : 'light';
-      this.save();
-      this.applyTheme();
+      const current = readSavedTheme();                 // "light" | "dark"
+      const next = (current === 'light') ? 'dark' : 'light';
+      window.setTheme(next);
     }
   };
 
-  // Apply theme on load
-  CoreApp.applyTheme();
+  // Initialize theme once (default light if none saved)
+  applyTheme(readSavedTheme());
 
   // Expose globally
   global.CoreApp = CoreApp;
 
 })(window);
 
-const settingsButton = document.getElementById('settings-button');
-const settingsPanel = document.getElementById('settings-panel');
-const closeSettings = document.getElementById('close-settings');
-
-settingsButton.addEventListener('click', () => {
-  settingsPanel.classList.add('open');
-});
-
-closeSettings.addEventListener('click', () => {
-  settingsPanel.classList.remove('open');
-});
-
-document.addEventListener('click', (e) => {
-  if (settingsPanel.classList.contains('open') && !settingsPanel.contains(e.target) && e.target !== settingsButton) {
-    settingsPanel.classList.remove('open');
-  }
-});
 
 // --- Settings side-panel wiring
 // ? Close the panel when clicking outside the sheet (overlay/background) or the page
@@ -130,32 +132,3 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
-
-(function() {
-    const KEY = "ui-theme"; // "light" | "dark" | null (follow system)
-    const saved = localStorage.getItem(KEY);
-
-    // Apply saved theme (or follow system if none)
-    if (saved === "light" || saved === "dark") {
-      document.documentElement.setAttribute("data-theme", saved);
-      document.documentElement.style.colorScheme = saved;
-    } else {
-      // follow system; don't set data-theme to allow @media to handle
-      document.documentElement.removeAttribute("data-theme");
-      document.documentElement.style.colorScheme = "";
-    }
-
-    // Expose helper if you want a toggle somewhere
-    window.setTheme = function(mode) {
-      // mode: "light" | "dark" | "system"
-      if (mode === "system") {
-        localStorage.removeItem(KEY);
-        document.documentElement.removeAttribute("data-theme");
-        document.documentElement.style.colorScheme = "";
-      } else {
-        localStorage.setItem(KEY, mode);
-        document.documentElement.setAttribute("data-theme", mode);
-        document.documentElement.style.colorScheme = mode;
-      }
-    };
-  }());

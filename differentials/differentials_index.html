@@ -7,6 +7,19 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
+  <script>
+  (function(){
+    var m = localStorage.getItem('ui-theme'); // "light" | "dark" | null (system)
+    if (m === 'light' || m === 'dark') {
+      document.documentElement.setAttribute('data-theme', m);
+      document.documentElement.style.colorScheme = m;
+    } else {
+      // default to light if no preference saved
+      document.documentElement.setAttribute('data-theme', 'light');
+      document.documentElement.style.colorScheme = 'light';
+    }
+  })();
+  </script>
   <link rel="stylesheet" href="differentials_style.css" />
 </head>
 <body>
@@ -130,7 +143,25 @@
       </div>
     </template>
   </main>
+
   <script src="../js/core_app.js"></script>
+  <script>
+  // ! Theme radio wiring (Light/Dark/System) -> persists to localStorage via setTheme
+  document.addEventListener('DOMContentLoaded', function () {
+    if (!window.setTheme) return;
+    var saved = localStorage.getItem('ui-theme');          // "light" | "dark" | null => system
+    var radios = document.querySelectorAll('input[name="theme"]');
+    if (!radios.length) return;
+
+  // Initialize checked state (default to light if none saved)
+  radios.forEach(function(r){
+    r.checked = saved ? (r.value === saved) : (r.value === 'light');
+    r.addEventListener('change', function(e){
+      if (e.target.checked) window.setTheme(e.target.value);
+    });
+  });
+  });
+  </script>
   <script src="differentials_app.js"></script>
 </body>
 </html>
