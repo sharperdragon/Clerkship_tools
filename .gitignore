@@ -14,3 +14,4 @@ backups
 utils/**/*.py[cod]
 utils/**/**/__pycache__/
 utils/**/__pycache__/
+**
