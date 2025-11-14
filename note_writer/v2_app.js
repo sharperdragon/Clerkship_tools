@@ -26,12 +26,12 @@ const MODES = {
 
 // $ Files (served from the same folder as writer_base.html)
 const ROUTES = {
-  [MODES.SUBJECTIVE]: { file: './subjective.html', headerSel: '#headerItems', mainSel: '#grid' },
-  [MODES.ROS]:        { file: './ROS.html',        headerSel: null,          mainSel: '#grid' },
-  [MODES.MSE]:        { file: './MSE.html',        headerSel: null,          mainSel: '#grid' },
+  [MODES.SUBJECTIVE]: { file: './html/subjective.html', headerSel: '#headerItems', mainSel: '#grid' },
+  [MODES.ROS]:        { file: './html/ROS.html',        headerSel: null,          mainSel: '#grid' },
+  [MODES.MSE]:        { file: './html/MSE.html',        headerSel: null,          mainSel: '#grid' },
   [MODES.PE]: {
-    header: { file: './PE_header.html',  sel: '#headerItems' },
-    mains:  { General: { file: './PE_General.html', sel: '#grid' } },
+    header: { file: './html/PE_header.html',  sel: '#headerItems' },
+    mains:  { General: { file: './html/PE_General.html', sel: '#grid' } },
     subtabs: ['General'], // extend later: ['General','Cardio','Lungs',...]
   },
 };
@@ -138,9 +138,17 @@ function loadActivePatient() {
   }
 }
 
+
 function debounceFullNote(fn) {
   clearTimeout(_fullNoteTimer);
   _fullNoteTimer = setTimeout(fn, COMPLETE_NOTE_DEBOUNCE_MS);
+}
+
+// * Simple timestamp helper for debug logs – format: HH-MM_MM-DD
+function ts() {
+  const d = new Date();
+  const pad = (n) => String(n).padStart(2, '0');
+  return `${pad(d.getHours())}-${pad(d.getMinutes())}_${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
 }
 
 async function fetchFragment(fileUrl, selector) {
@@ -738,6 +746,7 @@ function _autosizeCnTextarea(){
    # Output Builders
    ========================================================================== */
 
+// ! Core render: rebuilds current section and debounced full note
 function renderOutputsNow() {
   // Build current section output from DOM/state
   const sectionText = buildSectionOutput();
@@ -764,6 +773,7 @@ function renderOutputsNow() {
   });
 }
 
+// ! Core: builds the current section text from STATE + live DOM
 function buildSectionOutput(){
   const mode = STATE.mode;
   const sub  = (mode === MODES.PE ? STATE.subtab : 'General');
@@ -810,6 +820,10 @@ function buildSectionOutput(){
   // --- Main content: positives first, then grouped negatives, then checks ---
   (function(){
     const contentRoot = QS(SEL.contentSlot);
+    if (!contentRoot) {
+      // ? No content root yet (e.g., initial load error) — return header-only lines
+      return lines.join("\n");
+    }
 
     const checks = QSA('input[type="checkbox"][data-check-id]', contentRoot)
       .map(el => el.getAttribute('data-check-id'));
@@ -898,6 +912,20 @@ function escapeHTML(str) {
     .replaceAll('"','&quot;')
     .replaceAll("'",'&#39;');
 }
+
+
+// * Debug helpers (dev-only) – access from console via `NoteWriter.*`
+window.NoteWriter = window.NoteWriter || {};
+window.NoteWriter.dumpState = function () {
+  const mode = STATE.mode;
+  const sub  = (mode === MODES.PE ? STATE.subtab : 'General');
+  const sec  = getSec(mode, sub);
+  console.log('! dumpState', ts(), { mode, sub, sec });
+};
+window.NoteWriter.forceRender = function () {
+  console.log('! forceRender', ts(), { mode: STATE.mode, subtab: STATE.subtab });
+  renderOutputsNow();
+};
 
 /* ==========================================================================
    # Boot

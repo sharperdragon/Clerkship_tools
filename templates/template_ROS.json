@@ -1,5 +1,5 @@
 {
-  "modes": ["ROS"],
+"modes": ["ROS"],
   "sectionsByMode": { "ROS": ["General"] },
   "sectionDefs": {
     "ROS:General": {
