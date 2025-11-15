@@ -25,16 +25,31 @@ const MODES = {
 };
 
 // $ Files (served from the same folder as writer_base.html)
-const ROUTES = {
-  [MODES.SUBJECTIVE]: { file: './html/subjective.html', headerSel: '#headerItems', mainSel: '#grid' },
-  [MODES.ROS]:        { file: './html/ROS.html',        headerSel: null,          mainSel: '#grid' },
-  [MODES.MSE]:        { file: './html/MSE.html',        headerSel: null,          mainSel: '#grid' },
-  [MODES.PE]: {
-    header: { file: './html/PE_header.html',  sel: '#headerItems' },
-    mains:  { General: { file: './html/PE_General.html', sel: '#grid' } },
-    subtabs: ['General'], // extend later: ['General','Cardio','Lungs',...]
-  },
-};
+const ROUTES = (window.NOTE_CONFIG && NOTE_CONFIG.routes)
+  ? {
+      [MODES.SUBJECTIVE]: NOTE_CONFIG.routes.SUBJECTIVE,
+      [MODES.ROS]:        NOTE_CONFIG.routes.ROS,
+      [MODES.MSE]:        NOTE_CONFIG.routes.MSE,
+      [MODES.PE]:         NOTE_CONFIG.routes.PE,
+    }
+  : {
+      [MODES.SUBJECTIVE]: { file: './html/subjective.html', headerSel: '#headerItems', mainSel: '#grid' },
+      [MODES.ROS]:        { file: './html/ROS.html',        headerSel: null,          mainSel: '#grid' },
+      [MODES.MSE]:        { file: './html/MSE.html',        headerSel: null,          mainSel: '#grid' },
+      [MODES.PE]: {
+        header: { file: './html/PE_header.html',  sel: '#headerItems' },
+        mains:  { General: { file: './html/PE_General.html', sel: '#grid' } },
+        subtabs: ['General'], // extend later: ['General','Cardio','Lungs',...]
+      },
+    };
+
+// $ Subjective-specific field groups (fed from note_config.js when available)
+const SUBJECTIVE_HEADER_FIELDS  = (window.NOTE_CONFIG && NOTE_CONFIG.subjective && NOTE_CONFIG.subjective.headerFields)  || [];
+const SUBJECTIVE_HPI_FIELDS     = (window.NOTE_CONFIG && NOTE_CONFIG.subjective && NOTE_CONFIG.subjective.hpiFields)     || [];
+const SUBJECTIVE_HISTORY_FIELDS = (window.NOTE_CONFIG && NOTE_CONFIG.subjective && NOTE_CONFIG.subjective.historyFields) || [];
+const SUBJECTIVE_MULTILINE_FIELDS = new Set(
+  (window.NOTE_CONFIG && NOTE_CONFIG.subjective && NOTE_CONFIG.subjective.multilineFields) || []
+);
 
 // $ Selectors in writer_base.html
 const SEL = {
@@ -572,6 +587,22 @@ function joinWithOxford(list, conj="or"){
   return `${list.slice(0, -1).join(", ")}, ${conj} ${list[list.length - 1]}`;
 }
 
+// * Decide if a field should be rendered as multi-line (bulleted) in Subjective
+function isMultilineField(id, label){
+  if (SUBJECTIVE_MULTILINE_FIELDS.has(id)) return true;
+  const name = String(label || '').toLowerCase();
+  return [
+    'past medical',
+    'surgical hx',
+    'meds',
+    'allergies',
+    'social',
+    'lmp',
+    'family hx',
+    'family history',
+  ].some((k) => name.startsWith(k));
+}
+
 // Normalize checkbox labels like the original (drop leading "+", "nl" -> "Normal")
 function formatPECheckLabel(raw){
   if (!raw) return "";
@@ -773,11 +804,63 @@ function renderOutputsNow() {
   });
 }
 
+// * Subjective-only builder – uses NOTE_CONFIG.subjective to group fields
+function buildSubjectiveSectionOutput(sec){
+  const lines = [];
+
+  // 1) Header-style fields (visit note, chief complaint, etc.)
+  for (const id of SUBJECTIVE_HEADER_FIELDS) {
+    const raw = sec.fields?.[id];
+    const val = (raw == null ? '' : String(raw)).trim();
+    if (!val) continue;
+    const label = getControlLabelFromDOM('field', id);
+    lines.push(`${label}: ${val}.`);
+  }
+
+  // 2) HPI – one sentence per filled HPI field
+  const hpiParts = [];
+  for (const id of SUBJECTIVE_HPI_FIELDS) {
+    const raw = sec.fields?.[id];
+    const val = (raw == null ? '' : String(raw)).trim();
+    if (!val) continue;
+    const label = getControlLabelFromDOM('field', id);
+    hpiParts.push(`${label}: ${val}.`);
+  }
+  if (hpiParts.length) {
+    lines.push('HPI:');
+    lines.push(...hpiParts);
+  }
+
+  // 3) General History – multiline-aware where appropriate
+  for (const id of SUBJECTIVE_HISTORY_FIELDS) {
+    const raw = sec.fields?.[id];
+    const val = (raw == null ? '' : String(raw)).trim();
+    if (!val) continue;
+
+    const label = getControlLabelFromDOM('field', id);
+    if (isMultilineField(id, label) && /[\r\n]/.test(val)) {
+      const pieces = val.split(/\r\n|\n|\r/).map((s) => s.trim()).filter(Boolean);
+      if (!pieces.length) continue;
+      lines.push(`${label}:`);
+      pieces.forEach((p) => lines.push(`- ${p}`));
+    } else {
+      lines.push(`${label}: ${val}.`);
+    }
+  }
+
+  return lines.join("\n");
+}
+
 // ! Core: builds the current section text from STATE + live DOM
 function buildSectionOutput(){
   const mode = STATE.mode;
   const sub  = (mode === MODES.PE ? STATE.subtab : 'General');
   const sec  = getSec(mode, sub);
+
+  // Subjective uses a dedicated builder wired to NOTE_CONFIG.subjective
+  if (mode === MODES.SUBJECTIVE) {
+    return buildSubjectiveSectionOutput(sec);
+  }
 
   const lines = [];
 
