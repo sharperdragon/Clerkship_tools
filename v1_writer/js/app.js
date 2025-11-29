@@ -13,7 +13,6 @@ const CK = {
   CURRENT:   `ct.patient.current.${APP_VERSION}`, // active patient id
 };
 
-const DEFAULT_MODE = "Subjective";
 const DEFAULT_COLUMNS = 3;
 
 // Sticky layout heights (JS-only; no CSS edits)
@@ -36,17 +35,28 @@ const COMPLETE_NOTE_MS = 150;
 const CLASS_CRITICAL = "critical"; // applied when abnormal/present (right-click)
 const CLASS_NORMAL   = "normal";   // applied when good/absent (left-click)
 
-// Map each mode to its own template file
+
+// Internal mode IDs
+const DEFAULT_MODE = "subjective";
+
 const MODE_FILES = {
   subjective: "./templates/template_subjective.json",
   ROS: "./templates/template_ROS.json",
   PE:  "./templates/template_pe.json",
   MSE: "./templates/template_MSE.json",
-
 };
-// Explicit order for tabs (so ROS appears first regardless of key enumeration)
-const MODE_LIST = ["Subjective", "ROS", "PE", "MSE"];
-const MODE_LABELS = { subjective: "Subjective", ROS: "ROS", PE: "Physical Exam", MSE: "MSE" };
+
+// Explicit order using IDs
+const MODE_LIST = ["subjective", "ROS", "PE", "MSE"];
+
+// UI labels
+const MODE_LABELS = {
+  subjective: "Subjective",
+  ROS: "ROS",
+  PE: "Physical Exam",
+  MSE: "MSE",
+};
+
 // subjective acuity toggle (defaults to Acute=true when undefined)
 function isAcute(){ return state?.globals?.subjAcute !== false; }
 function setAcute(on){ state.globals.subjAcute = !!on; saveStateSoon(); }
