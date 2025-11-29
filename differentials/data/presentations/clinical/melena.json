@@ -1,0 +1,563 @@
+{
+  "presentation": "Melena",
+  "items": [
+    {
+      "name": "Epistaxis",
+      "system": "Swallowed Blood",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["acute"],
+        "progression": ["worsening"],
+        "palliate": ["n/a"],
+        "provoke": ["Touch"],
+        "quality": ["n/a"],
+        "timing": ["intermittent"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["mild", "moderate"],
+        "clinical tests": ["inspection", "rhinoscopy", "guaiac-test"],
+        "other symptoms": ["epistaxis", "nausea", "melena"]
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Hemoptysis",
+      "system": "Swallowed Blood",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["acute"],
+        "progression": ["worsening"],
+        "palliate": ["n/a"],
+        "provoke": ["coughing"],
+        "quality": ["n/a"],
+        "timing": ["intermittent"],
+        "region": ["lower-chest"],
+        "radiation": ["n/a"],
+        "severity": ["mild", "moderate"],
+        "clinical tests": ["inspection", "lung-auscultation", "guaiac-test"],
+        "other symptoms": ["cough", "fever", "melena"]
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "Oesophageal varices",
+      "system": "Oesophagus",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["acute"],
+        "progression": ["worsening"],
+        "palliate": ["n/a"],
+        "provoke": ["alcohol"],
+        "quality": ["n/a"],
+        "timing": ["intermittent"],
+        "region": ["epigastrium"],
+        "radiation": ["back"],
+        "severity": ["severe", "catastrophic"],
+        "clinical tests": ["inspection", "digital-rectal-exam", "guaiac-test"],
+        "other symptoms": ["hematemesis", "syncope", "ascites", "jaundice"]
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "Oesophageal carcinoma",
+      "system": "Oesophagus",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["insidious"],
+        "progression": ["worsening"],
+        "palliate": ["n/a"],
+        "provoke": ["alcohol"],
+        "quality": ["n/a"],
+        "timing": ["intermittent"],
+        "region": ["retrosternal", "epigastrium"],
+        "radiation": ["back"],
+        "severity": ["moderate", "severe"],
+        "clinical tests": ["inspection", "digital-rectal-exam", "guaiac-test"],
+        "other symptoms": ["dysphagia", "weight-loss", "odynophagia"]
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Peptic ulceration",
+      "system": "Stomach",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["subacute"],
+        "progression": ["worsening"],
+        "palliate": ["ppi", "antacids"],
+        "provoke": ["nsaids", "alcohol"],
+        "quality": ["burning", "aching"],
+        "timing": ["nocturnal", "postprandial"],
+        "region": ["epigastrium"],
+        "radiation": ["back"],
+        "severity": ["moderate", "severe"],
+        "clinical tests": ["succussion-splash", "digital-rectal-exam", "guaiac-test"],
+        "other symptoms": ["hematemesis", "nausea"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Acute gastric erosions",
+      "system": "Stomach",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["acute"],
+        "progression": ["worsening"],
+        "palliate": ["ppi"],
+        "provoke": ["nsaids", "alcohol"],
+        "quality": ["burning"],
+        "timing": ["sudden"],
+        "region": ["epigastrium"],
+        "radiation": ["n/a"],
+        "severity": ["moderate", "severe"],
+        "clinical tests": ["inspection", "digital-rectal-exam", "guaiac-test"],
+        "other symptoms": ["nausea"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Mallory\u2013Weiss syndrome",
+      "system": "Stomach",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["acute"],
+        "progression": ["worsening"],
+        "palliate": ["n/a"],
+        "provoke": ["alcohol"],
+        "quality": ["sharp", "tender"],
+        "timing": ["intermittent"],
+        "region": ["epigastrium"],
+        "radiation": ["back"],
+        "severity": ["moderate"],
+        "clinical tests": ["inspection", "digital-rectal-exam", "guaiac-test"],
+        "other symptoms": ["hematemesis", "abdominal-pain"]
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Carcinoma",
+      "system": "Stomach",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["insidious"],
+        "progression": ["worsening"],
+        "palliate": ["n/a"],
+        "provoke": ["n/a"],
+        "quality": ["n/a"],
+        "timing": ["intermittent"],
+        "region": ["epigastrium"],
+        "radiation": ["back"],
+        "severity": ["moderate"],
+        "clinical tests": ["inspection", "digital-rectal-exam", "guaiac-test"],
+        "other symptoms": ["weight-loss", "fatigue"]
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Leiomyoma (gastrointestinal stromal tumour \u2013 GIST)",
+      "system": "Stomach",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["insidious"],
+        "progression": ["worsening"],
+        "palliate": ["n/a"],
+        "provoke": ["n/a"],
+        "quality": ["n/a"],
+        "timing": ["intermittent"],
+        "region": ["epigastrium"],
+        "radiation": ["n/a"],
+        "severity": ["moderate", "severe"],
+        "clinical tests": ["inspection", "digital-rectal-exam", "guaiac-test"],
+        "other symptoms": ["abdominal-pain", "fatigue"]
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "Hereditary hemorrhagic telangiectasia",
+      "system": "Stomach",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["chronic"],
+        "progression": ["worsening"],
+        "palliate": ["n/a"],
+        "provoke": ["n/a"],
+        "quality": ["n/a"],
+        "timing": ["intermittent"],
+        "region": ["diffuse"],
+        "radiation": ["n/a"],
+        "severity": ["mild", "moderate"],
+        "clinical tests": ["inspection", "digital-rectal-exam", "guaiac-test"],
+        "other symptoms": ["epistaxis", "anemia", "fatigue"]
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "Peptic ulceration",
+      "system": "Duodenum",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["subacute"],
+        "progression": ["worsening"],
+        "palliate": ["ppi"],
+        "provoke": ["nsaids"],
+        "quality": ["burning"],
+        "timing": ["nocturnal", "between-meals"],
+        "region": ["epigastrium"],
+        "radiation": ["back"],
+        "severity": ["moderate"],
+        "clinical tests": ["succussion-splash", "digital-rectal-exam", "guaiac-test"],
+        "other symptoms": ["nausea"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Duodenal diverticula",
+      "system": "Duodenum",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["insidious"],
+        "progression": ["worsening"],
+        "palliate": ["n/a"],
+        "provoke": ["n/a"],
+        "quality": ["aching"],
+        "timing": ["postprandial"],
+        "region": ["epigastrium", "ruq"],
+        "radiation": ["back"],
+        "severity": ["mild", "moderate"],
+        "clinical tests": ["inspection", "palpation", "guaiac-test"],
+        "other symptoms": ["abdominal-pain", "nausea"]
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Aortoduodenal \ufb01stula",
+      "system": "Duodenum",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["acute"],
+        "progression": ["worsening"],
+        "palliate": ["n/a"],
+        "provoke": ["n/a"],
+        "quality": ["tearing"],
+        "timing": ["intermittent"],
+        "region": ["epigastrium", "periumbilical"],
+        "radiation": ["back"],
+        "severity": ["catastrophic"],
+        "clinical tests": ["pulsatile-abdominal-mass", "guarding", "rebound-tenderness"],
+        "other symptoms": ["abdominal-pain", "syncope"]
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "Invasive pancreatic tumours",
+      "system": "Duodenum",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["insidious"],
+        "progression": ["worsening"],
+        "palliate": ["n/a"],
+        "provoke": ["n/a"],
+        "quality": ["aching"],
+        "timing": ["intermittent"],
+        "region": ["epigastrium"],
+        "radiation": ["back"],
+        "severity": ["moderate", "severe"],
+        "clinical tests": ["inspection", "palpation", "guaiac-test"],
+        "other symptoms": ["weight-loss", "jaundice", "abdominal-pain"]
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "Hemobilia",
+      "system": "Duodenum",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["acute", "subacute"],
+        "progression": ["worsening"],
+        "palliate": ["n/a"],
+        "provoke": ["trauma"],
+        "quality": ["cramping"],
+        "timing": ["intermittent"],
+        "region": ["ruq", "epigastrium"],
+        "radiation": ["right-shoulder", "back"],
+        "severity": ["moderate", "severe"],
+        "clinical tests": ["murphys-sign", "guarding", "digital-rectal-exam", "guaiac-test"],
+        "other symptoms": ["ruq-pain", "jaundice", "hematemesis"]
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "Leiomyoma (gastrointestinal stromal tumour \u2013 GIST)",
+      "system": "Small Intestine",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["insidious"],
+        "progression": ["worsening"],
+        "palliate": ["n/a"],
+        "provoke": ["n/a"],
+        "quality": ["cramping"],
+        "timing": ["intermittent"],
+        "region": ["periumbilical"],
+        "radiation": ["n/a"],
+        "severity": ["moderate", "severe"],
+        "clinical tests": ["inspection", "palpation", "guaiac-test"],
+        "other symptoms": ["anemia", "fatigue"]
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "Meckel\u2019s diverticulum",
+      "system": "Small Intestine",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["insidious"],
+        "progression": ["worsening"],
+        "palliate": ["n/a"],
+        "provoke": ["n/a"],
+        "quality": ["cramping"],
+        "timing": ["episodic"],
+        "region": ["periumbilical", "rlq"],
+        "radiation": ["n/a"],
+        "severity": ["mild", "moderate", "severe"],
+        "clinical tests": ["inspection", "palpation", "guaiac-test"],
+        "other symptoms": ["abdominal-pain", "anemia"]
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "Liver disease-associated",
+      "system": "Bleeding Disorders",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["chronic"],
+        "progression": ["worsening"],
+        "palliate": ["n/a"],
+        "provoke": ["alcohol"],
+        "quality": ["n/a"],
+        "timing": ["intermittent"],
+        "region": ["diffuse"],
+        "radiation": ["n/a"],
+        "severity": ["moderate", "severe"],
+        "clinical tests": ["inspection", "shifting-dullness", "guaiac-test"],
+        "other symptoms": ["easy-bruising", "epistaxis", "ascites", "jaundice"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Thrombocytopenia",
+      "system": "Bleeding Disorders",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["subacute"],
+        "progression": ["worsening"],
+        "palliate": ["n/a"],
+        "provoke": ["n/a"],
+        "quality": ["n/a"],
+        "timing": ["intermittent"],
+        "region": ["diffuse"],
+        "radiation": ["n/a"],
+        "severity": ["moderate", "severe"],
+        "clinical tests": ["inspection", "guaiac-test"],
+        "other symptoms": ["petechiae", "fatigue"]
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Anticoagulants",
+      "system": "Bleeding Disorders",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["subacute"],
+        "progression": ["worsening"],
+        "palliate": ["n/a"],
+        "provoke": ["n/a"],
+        "quality": ["n/a"],
+        "timing": ["intermittent"],
+        "region": ["diffuse"],
+        "radiation": ["n/a"],
+        "severity": ["moderate", "severe"],
+        "clinical tests": ["inspection", "guaiac-test"],
+        "other symptoms": ["easy-bruising", "melena"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Aspirin",
+      "system": "Bleeding Disorders",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["subacute"],
+        "progression": ["worsening"],
+        "palliate": ["antacids", "ppi"],
+        "provoke": ["nsaids"],
+        "quality": ["burning"],
+        "timing": ["with-activity"],
+        "region": ["epigastrium"],
+        "radiation": ["n/a"],
+        "severity": ["mild", "moderate"],
+        "clinical tests": ["succussion-splash", "digital-rectal-exam", "guaiac-test"],
+        "other symptoms": ["nausea", "melena"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "NSAIDs",
+      "system": "Bleeding Disorders",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["subacute"],
+        "progression": ["worsening"],
+        "palliate": ["antacids", "ppi"],
+        "provoke": ["nsaids"],
+        "quality": ["burning"],
+        "timing": ["with-activity"],
+        "region": ["epigastrium"],
+        "radiation": ["back"],
+        "severity": ["mild", "moderate", "severe"],
+        "clinical tests": ["succussion-splash", "digital-rectal-exam", "guaiac-test"],
+        "other symptoms": ["nausea", "melena"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Steroids",
+      "system": "Bleeding Disorders",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["subacute"],
+        "progression": ["worsening"],
+        "palliate": ["antacids", "ppi"],
+        "provoke": ["n/a"],
+        "quality": ["burning"],
+        "timing": ["with-activity"],
+        "region": ["epigastrium"],
+        "radiation": ["n/a"],
+        "severity": ["mild", "moderate"],
+        "clinical tests": ["succussion-splash", "digital-rectal-exam", "guaiac-test"],
+        "other symptoms": ["nausea", "melena"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Uremia",
+      "system": "Other",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["chronic"],
+        "progression": ["worsening"],
+        "palliate": ["n/a"],
+        "provoke": ["n/a"],
+        "quality": ["n/a"],
+        "timing": ["intermittent"],
+        "region": ["diffuse"],
+        "radiation": ["n/a"],
+        "severity": ["moderate"],
+        "clinical tests": ["inspection", "digital-rectal-exam", "guaiac-test"],
+        "other symptoms": ["fatigue", "melena"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Connective tissue disorders",
+      "system": "Other",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["chronic"],
+        "progression": ["worsening"],
+        "palliate": ["analgesics"],
+        "provoke": ["stress"],
+        "quality": ["aching", "tender"],
+        "timing": ["intermittent"],
+        "region": ["diffuse"],
+        "radiation": ["n/a"],
+        "severity": ["mild", "moderate"],
+        "clinical tests": ["inspection", "palpation", "guaiac-test"],
+        "other symptoms": ["arthralgia", "rash", "fatigue"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Iron therapy",
+      "system": "Other Causes Of Dark Stools",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["after-initiation"],
+        "progression": ["stable"],
+        "palliate": ["n/a"],
+        "provoke": ["n/a"],
+        "quality": ["n/a"],
+        "timing": ["with-activity"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["n/a"],
+        "clinical tests": ["guaiac-test"],
+        "other symptoms": ["n/a"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Bismuth preparations",
+      "system": "Other Causes Of Dark Stools",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["after-initiation"],
+        "progression": ["stable"],
+        "palliate": ["n/a"],
+        "provoke": ["n/a"],
+        "quality": ["n/a"],
+        "timing": ["with-activity"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["n/a"],
+        "clinical tests": ["guaiac-test"],
+        "other symptoms": ["n/a"]
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Liquorice",
+      "system": "Other Causes Of Dark Stools",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["after-ingestion"],
+        "progression": ["stable"],
+        "palliate": ["n/a"],
+        "provoke": ["n/a"],
+        "quality": ["n/a"],
+        "timing": ["with-activity"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["n/a"],
+        "clinical tests": ["guaiac-test"],
+        "other symptoms": ["n/a"]
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Charcoal biscuits",
+      "system": "Other Causes Of Dark Stools",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["after-ingestion"],
+        "progression": ["stable"],
+        "palliate": ["n/a"],
+        "provoke": ["n/a"],
+        "quality": ["n/a"],
+        "timing": ["with-activity"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["n/a"],
+        "clinical tests": ["guaiac-test"],
+        "other symptoms": ["n/a"]
+      },
+      "freq": "uncommon"
+    }
+  ],
+  "sources": {
+    "index_keys": [
+      "Melena"
+    ],
+    "index_type": "clinical"
+  },
+  "symptoms": {}
+}

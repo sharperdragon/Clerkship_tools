@@ -1,0 +1,392 @@
+{
+  "presentation": "Thirst",
+  "items": [
+    {
+      "name": "General debility/frailty",
+      "system": "Inadequate Fluid Intake",
+      "redFlag": false,
+      "hpi": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Neurological disease",
+      "system": "Inadequate Fluid Intake",
+      "redFlag": false,
+      "hpi": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Anorexia",
+      "system": "Inadequate Fluid Intake",
+      "redFlag": false,
+      "hpi": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Vomiting",
+      "system": "Excessive Fluid Loss",
+      "redFlag": false,
+      "hpi": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Fever",
+      "system": "Excessive Fluid Loss",
+      "redFlag": false,
+      "hpi": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Diarrhoea",
+      "system": "Excessive Fluid Loss",
+      "redFlag": false,
+      "hpi": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Bleeding (i.e. loss of blood volume)",
+      "system": "Excessive Fluid Loss",
+      "redFlag": false,
+      "hpi": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Excessive sweating",
+      "system": "Excessive Fluid Loss",
+      "redFlag": false,
+      "hpi": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Burns",
+      "system": "Excessive Fluid Loss",
+      "redFlag": false,
+      "hpi": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Diabetes mellitus",
+      "system": "Endocrine And Metabolic",
+      "redFlag": false,
+      "hpi": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Chronic renal failure",
+      "system": "Endocrine And Metabolic",
+      "redFlag": false,
+      "hpi": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Liver failure",
+      "system": "Endocrine And Metabolic",
+      "redFlag": false,
+      "hpi": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Diabetes insipidus (cranial and nephrogenic)",
+      "system": "Endocrine And Metabolic",
+      "redFlag": false,
+      "hpi": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "Diuretics (especially overdose)",
+      "system": "Endocrine And Metabolic",
+      "redFlag": false,
+      "hpi": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Ecstasy",
+      "system": "Endocrine And Metabolic",
+      "redFlag": false,
+      "hpi": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Sj\u00f6gren\u2019s syndrome",
+      "system": "Causes Of Dry Mouth",
+      "redFlag": false,
+      "hpi": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Drugs, , monoamine oxidase inhibitors",
+      "system": "Causes Of Dry Mouth",
+      "redFlag": false,
+      "hpi": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Post head and neck radiotherapy",
+      "system": "Causes Of Dry Mouth",
+      "redFlag": false,
+      "hpi": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "Psychogenic polydipsia",
+      "system": "Psychiatric",
+      "redFlag": false,
+      "hpi": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "Salty foods",
+      "system": "Psychiatric",
+      "redFlag": false,
+      "hpi": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "common"
+    }
+  ],
+  "sources": {
+    "index_keys": [
+      "Thirst"
+    ],
+    "index_type": "clinical"
+  },
+  "symptoms": {}
+}

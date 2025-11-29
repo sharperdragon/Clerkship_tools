@@ -1,0 +1,316 @@
+{
+  "presentation": "Leg ulcers",
+  "items": [
+    {
+      "name": "Syphilis",
+      "system": "Infective",
+      "redFlag": false,
+      "hpi": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "TB \u2022 (common where TB is endemic)",
+      "system": "Infective",
+      "redFlag": false,
+      "hpi": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Squamous cell carcinoma",
+      "system": "Neoplastic",
+      "redFlag": false,
+      "hpi": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Malignant melanoma",
+      "system": "Neoplastic",
+      "redFlag": false,
+      "hpi": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Basal cell carcinoma",
+      "system": "Neoplastic",
+      "redFlag": false,
+      "hpi": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "Venous ulcers",
+      "system": "Vascular",
+      "redFlag": false,
+      "hpi": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Diabetes",
+      "system": "Neuropathic",
+      "redFlag": false,
+      "hpi": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Leprosy",
+      "system": "Neuropathic",
+      "redFlag": false,
+      "hpi": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "Tabes dorsalis (syphilis)",
+      "system": "Neuropathic",
+      "redFlag": false,
+      "hpi": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "Rheumatoid arthritis",
+      "system": "Autoimmune/Vasculitic",
+      "redFlag": false,
+      "hpi": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "SLE",
+      "system": "Autoimmune/Vasculitic",
+      "redFlag": false,
+      "hpi": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "Sickle cell anemia",
+      "system": "Haematological",
+      "redFlag": false,
+      "hpi": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "Polycythemia rubra vera",
+      "system": "Haematological",
+      "redFlag": false,
+      "hpi": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "Thrombotic thrombocytopenic purpura",
+      "system": "Haematological",
+      "redFlag": false,
+      "hpi": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "Dermatitis artefacta (self-in\ufb02icted)",
+      "system": "Haematological",
+      "redFlag": false,
+      "hpi": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Pyoderma gangrenosum",
+      "system": "Haematological",
+      "redFlag": false,
+      "hpi": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "rare"
+    }
+  ],
+  "sources": {
+    "index_keys": [
+      "Leg ulcers"
+    ],
+    "index_type": "clinical"
+  },
+  "symptoms": {}
+}

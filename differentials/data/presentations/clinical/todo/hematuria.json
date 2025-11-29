@@ -1,0 +1,526 @@
+{
+  "presentation": "Hematuria",
+  "items": [
+
+    {
+      "name": "uncommon",
+      "system": "Freq",
+      "redFlag": false,
+      "hpi": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "unknown"
+    },
+
+    {
+      "name": "Embolism",
+      "system": "TB \u2022 (common in some parts of the world where TB is endemic)",
+      "redFlag": false,
+      "hpi": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "Stone",
+      "system": "Ureter",
+      "redFlag": false,
+      "hpi": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Neoplasm",
+      "system": "Ureter",
+      "redFlag": false,
+      "hpi": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "Carcinoma",
+      "system": "Bladder",
+      "redFlag": false,
+      "hpi": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "common"
+    },
+    {
+      "name": "In\ufb02ammatory, , TB, schistosomiasis",
+      "system": "Bladder",
+      "redFlag": false,
+      "hpi": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Catheter-associated",
+      "system": "Bladder",
+      "redFlag": false,
+      "hpi": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Stone",
+      "system": "Bladder",
+      "redFlag": false,
+      "hpi": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Trauma",
+      "system": "Bladder",
+      "redFlag": false,
+      "hpi": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "Benign prostatic hypertrophy",
+      "system": "Prostate",
+      "redFlag": false,
+      "hpi": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Carcinoma",
+      "system": "Prostate",
+      "redFlag": false,
+      "hpi": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Trauma",
+      "system": "Urethra",
+      "redFlag": false,
+      "hpi": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Stone",
+      "system": "Urethra",
+      "redFlag": false,
+      "hpi": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Urethritis",
+      "system": "Urethra",
+      "redFlag": false,
+      "hpi": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Neoplasm",
+      "system": "Urethra",
+      "redFlag": false,
+      "hpi": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "Anticoagulant therapy",
+      "system": "General",
+      "redFlag": false,
+      "hpi": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Thrombocytopenia",
+      "system": "General",
+      "redFlag": false,
+      "hpi": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Strenuous exercise",
+      "system": "General",
+      "redFlag": false,
+      "hpi": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "Hemophilia",
+      "system": "General",
+      "redFlag": false,
+      "hpi": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "Sickle cell disease",
+      "system": "General",
+      "redFlag": false,
+      "hpi": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "Malaria \u2022 (common where malaria is endemic)",
+      "system": "General",
+      "redFlag": false,
+      "hpi": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Hemoglobinuria",
+      "system": "Red Urine",
+      "redFlag": false,
+      "hpi": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "Myoglobinuria",
+      "system": "Red Urine",
+      "redFlag": false,
+      "hpi": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "Acute intermittent porphyria",
+      "system": "Red Urine",
+      "redFlag": false,
+      "hpi": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "Beetroot",
+      "system": "Red Urine",
+      "redFlag": false,
+      "hpi": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "Senna",
+      "system": "Red Urine",
+      "redFlag": false,
+      "hpi": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "Rifampicin",
+      "system": "Red Urine",
+      "redFlag": false,
+      "hpi": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "rare"
+    }
+  ],
+  "sources": {
+    "index_keys": [
+      "Hematuria"
+    ],
+    "index_type": "clinical"
+  }
+}

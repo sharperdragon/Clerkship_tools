@@ -1,0 +1,299 @@
+{
+  "presentation": "Intestinal obstruction",
+  "items": [
+    {
+      "name": "Gallstone ileus",
+      "system": "In The Lumen",
+      "redFlag": false,
+      "hpi": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "Food bolus (after pylorus-destroying or bypass surgery)",
+      "system": "In The Lumen",
+      "redFlag": false,
+      "hpi": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "Feces",
+      "system": "In The Lumen",
+      "redFlag": false,
+      "hpi": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "common"
+    },
+    {
+      "name": "uncommon",
+      "system": "Freq",
+      "redFlag": false,
+      "hpi": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "unknown"
+    },
+
+    {
+      "name": "Tumour, , carcinoma",
+      "system": "TB \u2022 (common in areas of the world where TB is endemic)",
+      "redFlag": false,
+      "hpi": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "rare"
+    },
+
+    {
+      "name": "Hernia",
+      "system": "Outside The Wall",
+      "redFlag": false,
+      "hpi": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Volvulus",
+      "system": "Outside The Wall",
+      "redFlag": false,
+      "hpi": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Intussusception",
+      "system": "Outside The Wall",
+      "redFlag": false,
+      "hpi": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Adhesions",
+      "system": "Outside The Wall",
+      "redFlag": false,
+      "hpi": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Peritonitis",
+      "system": "Outside The Wall",
+      "redFlag": false,
+      "hpi": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Postoperative",
+      "system": "Outside The Wall",
+      "redFlag": false,
+      "hpi": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Hypokalemia",
+      "system": "Outside The Wall",
+      "redFlag": false,
+      "hpi": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Spinal and pelvic fractures",
+      "system": "Outside The Wall",
+      "redFlag": false,
+      "hpi": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "Drugs, , anticholinergics",
+      "system": "Outside The Wall",
+      "redFlag": false,
+      "hpi": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "Immobilisation",
+      "system": "Outside The Wall",
+      "redFlag": false,
+      "hpi": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "rare"
+    }
+  ],
+  "sources": {
+    "index_keys": [
+      "Intestinal obstruction"
+    ],
+    "index_type": "clinical"
+  },
+  "symptoms": {}
+}

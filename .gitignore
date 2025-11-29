@@ -1,6 +1,6 @@
 .env
 .DS_Store
-.history/
+
 *.env*
 **/.DS_Store
 **/__pycache__
@@ -14,4 +14,3 @@ backups
 utils/**/*.py[cod]
 utils/**/**/__pycache__/
 utils/**/__pycache__/
-**

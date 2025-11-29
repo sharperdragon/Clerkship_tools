@@ -1,0 +1,145 @@
+{
+  "presentation": "Popliteal swellings",
+  "items": [
+    {
+      "name": "Sebaceous cyst",
+      "system": "Superficial",
+      "redFlag": false,
+      "hpi": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Lipoma",
+      "system": "Superficial",
+      "redFlag": false,
+      "hpi": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Varix of the short saphenous vein",
+      "system": "Superficial",
+      "redFlag": false,
+      "hpi": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Lymphadenopathy",
+      "system": "Superficial",
+      "redFlag": false,
+      "hpi": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Semi-membranosus bursa",
+      "system": "Superficial",
+      "redFlag": false,
+      "hpi": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Baker\u2019s cyst",
+      "system": "Superficial",
+      "redFlag": false,
+      "hpi": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Popliteal artery aneurysm",
+      "system": "Superficial",
+      "redFlag": false,
+      "hpi": {
+        "onset": [],
+        "progression": [],
+        "palliate": [],
+        "provoke": [],
+        "quality": [],
+        "timing": [],
+        "region": [],
+        "radiation": [],
+        "severity": [],
+        "clinical tests": [],
+        "other symptoms": []
+      },
+      "freq": "uncommon"
+    }
+  ],
+  "sources": {
+    "index_keys": [
+      "Popliteal swellings"
+    ],
+    "index_type": "clinical"
+  },
+  "symptoms": {}
+}

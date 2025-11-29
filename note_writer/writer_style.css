@@ -1,0 +1,978 @@
+:root {
+  --ink: #1f2937;
+  --muted: #6b7280;
+  --bg: #f7f9fc;
+  --panel: #fff;
+  --chip: #e8f1fb;
+  --chip-border: #cfe2f7;
+  --accent: #2f6db5;
+  --danger: #c0392b;
+  --divider: #e5e7eb;
+  --tab-bg: #eef2f7;
+  --good: #2bc233;
+
+  --chip-text: #0d3c73;
+  --chip-neg-bg: #ecfdf5;
+  --chip-neg-border: #34d399;
+  --chip-neg-text: #065f46;
+  --chip-critical-bg: #fee2e2;
+  --chip-critical-border: #dc2626;
+  --chip-critical-text: #b91c1c;
+  --panel-header-text: #27496d;
+  --subhead-border: #98b9e9;
+  --cb-text: #334;
+  --cb-bg: rgb(246, 250, 255, 0.2);
+  --subhead: #39639c;
+
+  /* Sticky stack heights */
+  --appbar-h: 38px;
+  /* app bar height */
+  --tier1-h: 36px;
+  /* top tabs row */
+  --tier2-h: 36px;
+  /* second tabs row */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.group-head {
+  font-size: 109%;
+}
+
+.appbar {
+  position: sticky;
+  top: 0;
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 5px 6px;
+  background: var(--panel);
+  border-bottom: 1px solid var(--divider);
+}
+
+.appbar h1 {
+  font-size: 13px;
+  margin: 0;
+}
+
+.tools button {
+  margin-left: 10px;
+}
+
+.tabs {
+  display: flex;
+  gap: 6px;
+  padding: 6px 8px;
+  border-bottom: 1px solid var(--divider);
+  background: var(--tab-bg);
+}
+
+.tabs .tab {
+  padding: 8px 12px;
+  border: 1px solid var(--divider);
+  border-bottom: 2px solid transparent;
+  background: #f6f8fb;
+  border-radius: 6px 6px 0 0;
+  cursor: pointer;
+  user-select: none;
+}
+
+.tabs .tab.active {
+  background: var(--panel);
+  border-color: var(--divider);
+  border-bottom-color: var(--accent);
+  font-weight: 800;
+}
+
+
+.section-grid {
+  margin: 0;
+  font: 12px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, Arial;
+  font-weight: 450;
+  color: var(--ink);
+}
+
+.section-grid.PE {
+  column-count: 3;
+  column-gap: 4px;
+  padding: 5px;
+}
+
+.section-grid.ROS {
+  column-count: 4;
+  column-gap: 4px;
+  padding: 5px;
+}
+
+.section-grid .panel {
+  display: inline-block;
+  width: 100%;
+  margin: 0 0 7px;
+  break-inside: avoid;
+  page-break-inside: avoid;
+  -webkit-column-break-inside: avoid;
+  -moz-column-break-inside: avoid;
+}
+
+@media (max-width: 1100px) {
+  .section-grid.PE {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 880px) {
+  .section-grid.PE {
+    column-count: 1;
+  }
+}
+
+@media (max-width: 1000px) {
+  .section-grid.ROS {
+    column-count: 3;
+  }
+}
+
+@media (max-width: 670px) {
+  .section-grid.ROS {
+    column-count: 2;
+  }
+}
+
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--divider);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+
+
+
+.cb {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 2px 2px 2px 5px;
+  border-radius: 8px;
+  background: var(--cb-bg);
+  color: var(--cb-text);
+}
+
+.cb input {
+  transform: translateY(1px);
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 2px;
+  border-radius: 8px;
+  background: var(--chip);
+  border: 1px solid var(--chip-border);
+  cursor: pointer;
+  user-select: none;
+  color: var(--chip-text);
+}
+
+.chip .plus {
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.chip.neg {
+  background: var(--chip-neg-bg);
+  border: 1px solid var(--chip-neg-border);
+  color: var(--chip-neg-text);
+}
+
+.chip.critical {
+  background: var(--chip-critical-bg);
+  border: 1px solid var(--chip-critical-border);
+  color: var(--chip-critical-text);
+}
+
+.tabs.tier1 {
+  margin-bottom: 10px;
+}
+
+.appbar {
+  background: #fff;
+  border-bottom: 1px solid #dbe3ef;
+}
+
+.tabs.tier1 {
+  /* Stick Tier 1 directly under the app bar */
+  position: sticky;
+  min-height: var(--tier1-h);
+  background: #eef2f7;
+}
+
+.tabs.tier2 {
+  min-height: var(--tier2-h);
+  background: #f6f8fb;
+  overflow: auto;
+  white-space: nowrap;
+  mask-image: linear-gradient(90deg, transparent 0, #000 24px, #000 calc(100% - 24px), transparent 100%);
+}
+
+.tabs .tab {
+  font-size: 12px;
+  padding: 7px 12px;
+  border: 1px solid #dbe3ef;
+  border-bottom: 2px solid transparent;
+  background: #f6f8fb;
+  border-radius: 6px 6px 0 0;
+  color: #445;
+}
+
+.tabs .tab.active {
+  background: #fff;
+  border-color: #dbe3ef;
+  border-bottom-color: var(--accent);
+  font-weight: 600;
+}
+
+.panel {
+  background: #fff;
+  border: 1px solid #dbe3ef;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.panel-header {
+  position: sticky;
+  font-size: 110%;
+  top: 0;
+  padding: 8px 10px;
+  font-weight: 600;
+  background: #fff;
+  padding: 8px 10px;
+  color: var(--panel-header-text);
+}
+
+.subhead {
+  padding: 6px 5px 2px;
+  color: var(--accent);
+  font-weight: 600;
+  margin: 6px 10px 4px;
+}
+
+.row {
+  object-fit: contain;
+  max-width: 100%;
+  padding: 4px 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 6px;
+  align-items: center;
+}
+
+.header-checks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 6px 8px;
+  background: #fff;
+  border-bottom: 1px solid #dbe3ef;
+  grid-column: 1 / -1;
+}
+
+.header-checks .cb {
+  background: transparent;
+  border: none;
+  font-size: 12px;
+  color: var(--cb-text);
+}
+
+.panel .row .chip {
+  flex: 1 1 calc(50% - 8px);
+  max-width: 50%;
+  min-width: min-content;
+  justify-content: flex-start;
+}
+
+.panel .row .chip {
+  flex: 1 1 calc(50% - 8px);
+  max-width: 50%;
+  min-width: min-content;
+  justify-content: flex-start;
+}
+
+.panel .row .chip {
+  flex: 1 1 calc(50% - 8px);
+  max-width: 50%;
+  min-width: min-content;
+  justify-content: flex-start;
+}
+
+
+.panel .row:has(.cb:only-child) .cb {
+  flex: 0 0 auto;
+  min-width: min-content;
+}
+
+.chip {
+  position: relative;
+}
+
+.chip .label {
+  flex: 1 1 auto;
+}
+
+.chip .aff {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 100%;
+  border: 1px solid transparent;
+  border-radius: 1px;
+  background: transparent;
+  color: var(--muted);
+  font-weight: 800;
+  font-size: 10.5px;
+  line-height: 1;
+  opacity: .55;
+  cursor: pointer;
+}
+
+.chip .aff:hover {
+  opacity: 1;
+}
+
+.chip .plus {
+  margin-right: 0;
+}
+
+.chip .minus {
+  margin-left: 0;
+}
+
+/* ==== Column-first layout inside each panel row (removes vertical gaps) ==== */
+.panel .row {
+  display: grid;
+  grid-auto-flow: row;
+  align-items: start;
+
+}
+
+.panel .row.PE {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 3px;
+}
+
+.panel .row.ROS,
+.panel .subpanel .row.PE {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 2px;
+}
+
+/* Allow row children to shrink within the grid cell */
+.panel .row>* {
+  min-width: 0;
+  max-width: 100%;
+  overflow-wrap: break-word;
+}
+
+/* Make items fill their grid column (not 100% of row) */
+
+.panel .row .cb {
+  flex: 1 1 0;
+  min-width: 140px;
+  justify-content: flex-start;
+}
+
+.panel .row .chip,
+.panel .row .cb {
+  width: 100%;
+  max-width: none;
+  min-width: 0;
+  justify-content: flex-start;
+}
+
+/* Keep chips visually ~50% by relying on the two grid columns; drop earlier flex sizing */
+.panel .row .chip {
+  flex: initial !important;
+}
+
+/* Uniform checkbox sizing within a row */
+.panel .row .cb :not(.subjective) {
+  flex: initial !important;
+}
+
+@media (max-width: 840px) {
+  .panel .row.PE {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Full-width header checks bar above the grid */
+.header-items-bar {
+  /* Stick header checks under Tier 2 */
+  top: calc(var(--appbar-h) + var(--tier1-h) + var(--tier2-h));
+  z-index: 3;
+  display: block;
+  background: #fff;
+  margin-bottom: 2px;
+  border-bottom: 1px solid var(--divider);
+}
+
+/* Reuse the row layout but ensure it spans the full content width */
+.header-items-bar .row.header-checks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+/* Compact look for header checkboxes */
+.header-items-bar .cb {
+  background: transparent;
+  border: 0;
+  padding: 2px 6px;
+  font-size: 12px;
+  color: var(--cb-text);
+}
+
+
+.panel .subhead+.row {
+  margin-top: 4px;
+}
+
+.chip:hover {
+  opacity: 1;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .15);
+}
+
+#out {
+  width: 100%;
+  object-fit: contain;
+}
+
+/* Good / normal */
+.chip.normal {
+  background: var(--chip-neg-bg);
+  border: 1px solid var(--chip-neg-border);
+  color: var(--chip-neg-text);
+}
+
+/* 2-column subgrid used by Cardio (Rate | Rhythm) */
+.subgrid {
+  display: grid;
+  gap: 8px;
+}
+
+.subgrid.cols-2 {
+  grid-template-columns: 1fr 1fr;
+}
+
+.subgrid.cols-2>.subpanel:first-child {
+  position: relative;
+  padding-right: 0px;
+  margin-right: 0px;
+}
+
+.subgrid.cols-2>.subpanel:first-child::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -0.25px;
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent, var(--divider), transparent);
+}
+
+.subgrid.cols-2>.subpanel:last-child {
+  padding-left: 8px;
+  margin-left: 4px;
+}
+
+.subpanel .subhead {
+  margin: 0 0 5x 0;
+  font-weight: 600;
+  color: var(--subhead)
+}
+
+.cb.selected {
+  background-color: color-mix(in srgb, var(--cb-bg) 70%, var(--chip) 30%);
+}
+
+.field {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+}
+
+.field-label {
+  min-width: 150px;
+  color: #44546a
+}
+
+.field input[type="text"] {
+  flex: 1;
+  padding: 6px 8px;
+  border: 1px solid var(--line, #d9dee3);
+  border-radius: 4px;
+}
+
+.field-boolean {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.field-boolean .field-label {
+  min-width: 160px;
+}
+
+.field-boolean .bool-opt {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+
+.section-grid.HPI .field:not(.field-boolean) {
+  flex-direction: column;
+  /* label above input */
+  align-items: stretch;
+  /* full-width input */
+  gap: 4px;
+  /* tight vertical spacing */
+}
+
+.section-grid.HPI .field:not(.field-boolean) .field-label {
+  min-width: 0;
+  /* allow wrapping */
+  margin: 0;
+  /* reset inline margins */
+}
+
+.section-grid.HPI .field:not(.field-boolean) input[type="text"],
+.section-grid.HPI .field:not(.field-boolean) textarea {
+  width: 100%;
+}
+
+/* Keep boolean fields horizontal in HPI */
+.section-grid.HPI .field.field-boolean {
+  flex-direction: row;
+  align-items: center;
+}
+
+.out-wrap {
+  margin: 6px 6px 10px;
+}
+
+.out-head {
+  font: 12px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, Arial;
+  color: var(--ink);
+  margin: 6px 0 4px;
+  font-weight: 600;
+}
+
+#out,
+#completeOut {
+  width: 100%;
+  min-height: 80px;
+  resize: vertical;
+  line-height: 1.45;
+  border: 1px solid var(--divider);
+  border-radius: 6px;
+  padding: 8px 10px;
+  background: #fff;
+}
+
+#completeOut {
+  min-height: 20px;
+  /* a little taller for the full note */
+  height: auto;
+  resize: none;
+  overflow: visible;
+}
+
+#out,
+#completeOut {
+  font-family: "SF Mono", "Menlo", monospace;
+  font-size: 11px;
+  color: #1f2937;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+
+.complete-note__view {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 12px;
+  line-height: 1.6;
+  color: #1f2937;
+  background: #fff;
+  border: 1px solid var(--divider, #e5e9f2);
+  border-radius: 6px;
+  padding: 10px 12px;
+  overflow: visible;
+}
+
+.cn-line {
+  white-space: pre-wrap;
+}
+
+.cn-line.cn-blank {
+  height: 0.9em;
+}
+
+.item-label {
+  text-decoration: underline;
+  text-decoration-thickness: 0.2px;
+  text-decoration-color: #2f6db5;
+  font-size: 105%;
+}
+
+.section-head.head-h1 {
+  font-weight: 700;
+  font-size: 114%;
+  text-decoration-thickness: 0.01px;
+  color: var(--subhead)
+}
+
+
+/* ===== Range (slider) field ===== */
+.field-range {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.field-range .field-label {
+  min-width: 160px;
+  /* matches your other fields */
+  color: var(--muted);
+}
+
+/* Track */
+.field-range input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 260px;
+  /* grows on small screens below */
+  height: 4px;
+  background: var(--divider);
+  border-radius: 999px;
+  outline: none;
+  cursor: pointer;
+}
+
+/* WebKit thumb (Safari/Chrome) */
+.field-range input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: 2px solid #fff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .15);
+}
+
+/* Firefox track & thumb */
+.field-range input[type="range"]::-moz-range-track {
+  height: 4px;
+  background: var(--divider);
+  border-radius: 999px;
+}
+
+.field-range input[type="range"]::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .15);
+}
+
+/* Focus + active states */
+.field-range input[type="range"]:focus::-webkit-slider-thumb,
+.field-range input[type="range"]:active::-webkit-slider-thumb,
+.field-range input[type="range"]:focus::-moz-range-thumb,
+.field-range input[type="range"]:active::-moz-range-thumb {
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent) 20%, transparent);
+}
+
+/* Value badge (e.g., "6/10") */
+.range-badge {
+  min-width: 44px;
+  text-align: right;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+/* Responsive width */
+@media (max-width: 900px) {
+  .field-range input[type="range"] {
+    width: 100%;
+  }
+}
+
+/* Range layout: put slider + badge stacked with ticks underneath */
+.field-range-right {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr auto;
+  /* slider stretches; badge to the right */
+  align-items: center;
+  gap: 6px 8px;
+  width: 100%;
+}
+
+.field-range-right input[type="range"] {
+  grid-row: 1;
+  grid-column: 1 / span 1;
+  width: 100%;
+}
+
+.field-range-right .range-badge {
+  grid-row: 1;
+  grid-column: 2;
+}
+
+/* Ticks row spans across under the slider+badge */
+.range-ticks {
+  grid-row: 2;
+  grid-column: 1 / span 2;
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  /* 0..10 */
+  margin-top: 2px;
+}
+
+.tick-cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.tick {
+  width: 1px;
+  height: 12px;
+  background: var(--divider);
+  opacity: 0.85;
+}
+
+.tick-label {
+  font-size: 12px;
+  line-height: 1;
+  color: color-mix(in srgb, var(--muted) 80%, transparent);
+  opacity: 0.9;
+}
+
+.field-range {
+  padding-bottom: 8px;
+  padding-top: 8px;
+}
+
+.heady .field-label {
+  text-align: right;
+  min-width: 102px;
+  font-size: 14px;
+}
+
+
+.section-head.item-label {
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-thickness: 0.5px;
+  text-decoration-color: #0d3c73;
+}
+
+.panel .row .cb {
+  display: inline-flex;
+  align-items: center;
+  margin: 2px 6px 2px 0;
+  font-size: 0.9em;
+}
+
+
+/* Target only the checkboxes inside mini-checks */
+.mini-checks {
+  display: block;            /* lay them out in a row */
+  flex-wrap: wrap;          /* wrap to the next line if needed */
+  gap: 8px;                 /* space between items */
+  justify-content: flex-start; /* keep them left aligned */
+}
+
+
+button.btn-mini {
+  border-radius: 4px;
+  border: 1px solid #759dffdb;
+  background-color: #f0f2f2;
+}
+
+.btn-mini:hover {
+  transform: translateY(1px);
+}
+
+.subjective textarea {
+  width: 100%;
+  resize: vertical;
+  display: block;
+  height: 53px;
+  border: 01px solid lightgray;
+}
+
+span.section-head {
+    font-size: 110%;
+    font-weight: 600;
+}
+
+.field-group { padding: 4px 0 8px; }
+.field-group + .field-group { margin-top: 8px; }
+
+
+.tab_bar {
+  background-color: var(--canvas);
+  position: sticky; 
+  top: 33px;
+  z-index:5;
+}
+
+/* ! Subjective main grid layout */
+.section-grid.SUBJECTIVE {
+  display: grid;
+  grid-template-columns: 50% 6px 50%;
+  gap: 8px;
+}
+
+/* * Panels in the left / right columns of the Subjective grid */
+.section-grid.SUBJECTIVE > .panel:first-of-type {
+  grid-column: 1 / 2;
+}
+
+.section-grid.SUBJECTIVE > .panel:last-of-type {
+  grid-column: 3 / 4;
+}
+
+/* * Generic vertical field layout used throughout Subjective */
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 4px;
+}
+
+.field-label {
+  display: block;
+  margin-bottom: 0;
+}
+
+.field input[type="text"],
+.field input[type="number"],
+.field textarea {
+  display: block;
+  width: 100%;
+}
+
+/* * Multiline history boxes */
+.field textarea {
+  resize: vertical;
+  min-height: 53px;
+}
+
+/* * Subjective acute toggle pill */
+.acute-toggle {
+  display: inline-flex;
+  gap: 6px;
+  margin-right: 8px;
+}
+
+/* * Social history field cluster (Tobacco / Alcohol mini-fields) */
+.field-group {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 12px;
+  padding: 4px 0 8px;
+}
+
+.field-group + .field-group {
+  margin-top: 8px;
+}
+
+/* * Numeric pain scale widget */
+.field-range-right {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 6px 8px;
+  max-width: 275px;
+  width: 100%;
+}
+
+.field-range-right input[type="range"] {
+  grid-area: 1 / 1 / auto / span 1;
+  z-index: 99;
+}
+
+.range-ticks {
+  margin-left: -1px;
+  margin-right: 2px;
+  grid-area: 2 / 1 / auto / span 2;
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  margin-top: -15px;
+}
+
+.range-ticks .tick-cell {
+  text-align: center;
+}
+
+/* ! Subjective splitter handle between HPI and General History */
+.subj-splitter {
+  grid-column: 2 / 3;
+  cursor: col-resize;
+  background: var(--divider, rgba(0, 0, 0, 0.06));
+  width: 6px;
+  user-select: none;
+}
+
+/* * Mini subjective checkbox row (e.g. fever, HTN/T2DM) */
+.mini-checks {
+  display: block;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: flex-start;
+}
+
+.cb.subjective input[type="checkbox"] {
+  margin-right: 4px;
+  transform: scale(0.9);
+  /* make them small/compact */
+}
+
+.panel .row .mini-checks .cb.subjective {
+  display: inline-flex;     /* inline-flex so width fits content */
+  align-items: center;      /* vertically align checkbox + text */
+  width: auto;              /* do not stretch */
+  min-width: 0;             /* prevent flex from forcing min width */
+  white-space: nowrap;      /* keep each label’s text on one line */
+}
+.neg-df-btn {
+    margin-left: 8px;
+    font-size: 11px;
+    line-height: 1.4;
+    padding: 2px 6px;
+    border: 1px solid var(--muted, #ccc);
+    border-radius: 4px;
+    background: var(--panel-btn-bg, #f5f5f5);
+    cursor: pointer; 
+}

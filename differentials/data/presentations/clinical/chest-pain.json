@@ -1,0 +1,279 @@
+{
+  "presentation": "Chest pain",
+  "locked": true,
+  "items": [
+    {
+      "name": "Angina",
+      "system": "Cardiovascular",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["gradual"],
+        "progression": ["worsening"],
+        "palliate": ["rest", "nitrates"],
+        "provoke": ["exertion", "emotional-stress"],
+        "quality": ["pressure", "tightness"],
+        "timing": ["intermittent"],
+        "region": ["retrosternal"],
+        "radiation": ["left-shoulder", "jaw"],
+        "severity": ["mild", "moderate"],
+        "clinical tests": ["auscultation", "jugular-venous-pressure", "carotid-bruit"],
+        "other symptoms": ["dyspnea", "palpitations", "clammy-skin", "nausea"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Myocardial infarction",
+      "system": "Cardiovascular",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["sudden"],
+        "progression": ["worsening"],
+        "palliate": [],
+        "provoke": [],
+        "quality": ["crushing", "pressure", "tightness"],
+        "timing": ["constant"],
+        "region": ["retrosternal"],
+        "radiation": ["left-shoulder", "jaw", "back"],
+        "severity": ["severe"],
+        "clinical tests": ["auscultation", "jugular-venous-pressure"],
+        "other symptoms": ["clammy-skin", "nausea", "dyspnea", "tachycardia"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Pericarditis/myocarditis",
+      "system": "Cardiovascular",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["gradual"],
+        "progression": ["worsening"],
+        "palliate": ["leaning-forward"],
+        "provoke": ["lying-down", "deep-breathing", "coughing"],
+        "quality": ["sharp", "pleuritic"],
+        "timing": ["constant"],
+        "region": ["retrosternal"],
+        "radiation": ["back", "neck"],
+        "severity": ["mild", "moderate", "severe"],
+        "clinical tests": ["auscultation", "jugular-venous-pressure"],
+        "other symptoms": ["fever", "dyspnea", "palpitations"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Acute aortic dissection",
+      "system": "Cardiovascular",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["sudden"],
+        "progression": ["progressive"],
+        "palliate": [],
+        "provoke": [],
+        "quality": ["tearing", "ripping"],
+        "timing": ["constant"],
+        "region": ["retrosternal"],
+        "radiation": ["back"],
+        "severity": ["severe"],
+        "clinical tests": ["auscultation"],
+        "other symptoms": ["dyspnea", "clammy-skin"]
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "Gastro-oesophageal re\uFB02ux disease",
+      "system": "Gastrointestinal",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["gradual"],
+        "progression": ["waxing-waning"],
+        "palliate": ["antacids"],
+        "provoke": ["meals", "lying-down"],
+        "quality": ["burning"],
+        "timing": ["intermittent", "constant"],
+        "region": ["retrosternal", "epigastric"],
+        "radiation": [],
+        "severity": ["mild", "moderate"],
+        "clinical tests": ["n/a"],
+        "other symptoms": ["cough", "nausea"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Peptic ulcer disease",
+      "system": "Gastrointestinal",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["gradual"],
+        "progression": ["waxing-waning"],
+        "palliate": ["antacids"],
+        "provoke": ["empty-stomach", "stress"],
+        "quality": ["burning", "gnawing"],
+        "timing": ["intermittent"],
+        "region": ["epigastric"],
+        "radiation": [],
+        "severity": ["mild", "moderate"],
+        "clinical tests": ["n/a"],
+        "other symptoms": ["nausea", "vomiting"]
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Oesophageal spasm",
+      "system": "Gastrointestinal",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["sudden", "gradual"],
+        "progression": ["waxing-waning"],
+        "palliate": [],
+        "provoke": ["oral-intake", "cold-drinks", "stress"],
+        "quality": ["pressure", "tightness", "cramping"],
+        "timing": ["intermittent"],
+        "region": ["retrosternal"],
+        "radiation": ["jaw", "back"],
+        "severity": ["mild", "moderate"],
+        "clinical tests": ["n/a"],
+        "other symptoms": []
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Pneumonia",
+      "system": "Pulmonary",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["gradual"],
+        "progression": ["progressive"],
+        "palliate": [],
+        "provoke": [],
+        "quality": ["pleuritic", "sharp"],
+        "timing": ["constant"],
+        "region": ["lower-chest"],
+        "radiation": [],
+        "severity": ["mild", "moderate", "severe"],
+        "clinical tests": ["chest-percussion", "lung-auscultation", "egophony"],
+        "other symptoms": ["fever", "cough", "dyspnea"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Pneumothorax",
+      "system": "Pulmonary",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["sudden"],
+        "progression": ["progressive"],
+        "palliate": [],
+        "provoke": ["deep-breathing", "cough"],
+        "quality": ["pleuritic", "sharp"],
+        "timing": ["constant"],
+        "region": ["lower-chest"],
+        "radiation": [],
+        "severity": ["moderate", "severe"],
+        "clinical tests": ["chest-percussion", "lung-auscultation", "tracheal-deviation"],
+        "other symptoms": ["dyspnea", "tachycardia"]
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Pulmonary embolism",
+      "system": "Pulmonary",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["sudden"],
+        "progression": ["progressive"],
+        "palliate": [],
+        "provoke": [],
+        "quality": ["pleuritic"],
+        "timing": ["constant"],
+        "region": ["lower-chest"],
+        "radiation": [],
+        "severity": ["moderate", "severe"],
+        "clinical tests": ["lung-auscultation"],
+        "other symptoms": ["dyspnea", "tachycardia", "cough"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Chest wall trauma",
+      "system": "Musculoskeletal",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["sudden"],
+        "progression": ["improving"],
+        "palliate": [],
+        "provoke": ["movement", "pressure"],
+        "quality": ["sharp", "aching"],
+        "timing": ["constant"],
+        "region": ["lower-chest"],
+        "radiation": [],
+        "severity": ["mild", "moderate"],
+        "clinical tests": ["inspection", "palpation"],
+        "other symptoms": ["pain", "swelling"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Herpes zoster",
+      "system": "Musculoskeletal",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["gradual"],
+        "progression": ["progressive"],
+        "palliate": [],
+        "provoke": [],
+        "quality": ["burning", "stabbing"],
+        "timing": ["constant"],
+        "region": ["lower-chest"],
+        "radiation": [],
+        "severity": ["moderate", "severe"],
+        "clinical tests": ["n/a"],
+        "other symptoms": ["pain"]
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Costochondritis",
+      "system": "Musculoskeletal",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["gradual"],
+        "progression": ["waxing-waning"],
+        "palliate": [],
+        "provoke": ["pressure", "movement"],
+        "quality": ["sharp", "aching"],
+        "timing": ["intermittent", "constant"],
+        "region": ["lower-chest"],
+        "radiation": [],
+        "severity": ["mild", "moderate"],
+        "clinical tests": ["palpation", "auscultation"],
+        "other symptoms": []
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Secondary tumours of the rib",
+      "system": "Musculoskeletal",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["gradual"],
+        "progression": ["progressive"],
+        "palliate": [],
+        "provoke": [],
+        "quality": ["dull", "aching"],
+        "timing": ["constant", "nocturnal"],
+        "region": ["lower-chest"],
+        "radiation": [],
+        "severity": ["moderate", "severe"],
+        "clinical tests": ["palpation"],
+        "other symptoms": ["weight-loss"]
+      },
+      "freq": "rare"
+    }
+  ],
+  "sources": {
+    "index_keys": [
+      "Chest pain"
+    ],
+    "index_type": "clinical"
+  },
+  "symptoms": {}
+}

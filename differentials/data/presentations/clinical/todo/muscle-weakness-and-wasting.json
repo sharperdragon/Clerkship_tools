@@ -1,0 +1,468 @@
+{
+  "presentation": "Muscle weakness and wasting",
+  "items": [
+    {
+      "name": "Peripheral nerve lesions",
+      "system": "Localised",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["subacute", "chronic"],
+        "progression": ["worsening", "waxing-waning"],
+        "palliate": ["rest", "splinting"],
+        "provoke": ["repetitive-use", "trauma", "compression"],
+        "quality": ["focal-weakness", "numbness", "tingling"],
+        "timing": ["intermittent", "persistent"],
+        "region": ["distal-limb", "dermatomal"],
+        "radiation": ["n/a"],
+        "severity": ["mild", "moderate"],
+        "clinical tests": ["emg-ncs", "mri-limb", "b12", "glucose"],
+        "other symptoms": ["paresthesias", "reduced-reflexes", "neuropathic-pain"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Peripheral nerve compression",
+      "system": "Localised",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["subacute"],
+        "progression": ["worsening"],
+        "palliate": ["rest", "splinting"],
+        "provoke": ["repetitive-use", "awkward-posture"],
+        "quality": ["focal-weakness", "numbness", "tingling"],
+        "timing": ["nocturnal", "with-activity"],
+        "region": ["median-nerve", "ulnar-nerve", "peroneal-nerve"],
+        "radiation": ["n/a"],
+        "severity": ["mild", "moderate"],
+        "clinical tests": ["phalen", "tinel", "emg-ncs", "ultrasound"],
+        "other symptoms": ["thenar-wasting", "clumsiness", "pain"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Motor neuropathy",
+      "system": "Localised",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["subacute", "chronic"],
+        "progression": ["progressive"],
+        "palliate": ["ivig"],
+        "provoke": ["autoimmune"],
+        "quality": ["distal-weakness", "cramps"],
+        "timing": ["persistent"],
+        "region": ["upper-limb", "lower-limb"],
+        "radiation": ["n/a"],
+        "severity": ["moderate"],
+        "clinical tests": ["emg-ncs", "anti-gm1", "csf"],
+        "other symptoms": ["fasciculations", "reduced-reflexes"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Peripheral nerve transection",
+      "system": "Localised",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["acute"],
+        "progression": ["stable"],
+        "palliate": ["surgical-repair", "splinting"],
+        "provoke": ["trauma", "laceration"],
+        "quality": ["complete-weakness", "numbness"],
+        "timing": ["constant"],
+        "region": ["injury-site"],
+        "radiation": ["n/a"],
+        "severity": ["severe"],
+        "clinical tests": ["emg-ncs", "wound-exploration"],
+        "other symptoms": ["loss-of-reflexes", "atrophy"]
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Disuse atrophy",
+      "system": "Localised",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["subacute", "chronic"],
+        "progression": ["worsening"],
+        "palliate": ["physiotherapy", "mobilization"],
+        "provoke": ["immobilization", "pain-avoidance"],
+        "quality": ["muscle-wasting", "weakness"],
+        "timing": ["persistent"],
+        "region": ["limb-immobilized"],
+        "radiation": ["n/a"],
+        "severity": ["mild", "moderate"],
+        "clinical tests": ["ck", "dexa", "grip-strength"],
+        "other symptoms": ["joint-stiffness", "deconditioning"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Anterior horn cell lesions",
+      "system": "Localised",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["subacute", "chronic"],
+        "progression": ["progressive"],
+        "palliate": ["supportive"],
+        "provoke": ["neurodegeneration"],
+        "quality": ["weakness", "atrophy", "fasciculations"],
+        "timing": ["persistent"],
+        "region": ["segmental", "asymmetric"],
+        "radiation": ["n/a"],
+        "severity": ["moderate", "severe"],
+        "clinical tests": ["emg", "mri-spine"],
+        "other symptoms": ["reduced-reflexes", "cramps"]
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Previous poliomyelitis \u2022 (common in developing",
+      "system": "Localised",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["remote"],
+        "progression": ["post-polio-decline"],
+        "palliate": ["physiotherapy"],
+        "provoke": ["overuse"],
+        "quality": ["asymmetric-weakness", "atrophy"],
+        "timing": ["persistent"],
+        "region": ["lower-limb", "upper-limb"],
+        "radiation": ["n/a"],
+        "severity": ["variable"],
+        "clinical tests": ["emg", "history"],
+        "other symptoms": ["fatigue", "cold-intolerance", "pain"]
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Vitamin D de\ufb01ciency",
+      "system": "Nutritional Deficiency",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["subacute", "chronic"],
+        "progression": ["worsening"],
+        "palliate": ["vitamin-d"],
+        "provoke": ["low-sunlight", "malabsorption"],
+        "quality": ["proximal-weakness", "myalgia"],
+        "timing": ["persistent"],
+        "region": ["hip-girdle", "shoulder-girdle"],
+        "radiation": ["n/a"],
+        "severity": ["mild", "moderate"],
+        "clinical tests": ["25-oh-d", "calcium", "alk-phos"],
+        "other symptoms": ["bone-pain", "falls"]
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Malignancy",
+      "system": "Systemic Disease",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["subacute", "chronic"],
+        "progression": ["progressive"],
+        "palliate": ["nutrition-support"],
+        "provoke": ["cancer-cachexia"],
+        "quality": ["generalized-weakness", "wasting"],
+        "timing": ["persistent"],
+        "region": ["diffuse"],
+        "radiation": ["n/a"],
+        "severity": ["moderate", "severe"],
+        "clinical tests": ["cbc", "esr", "ct-scan"],
+        "other symptoms": ["weight-loss", "night-sweats", "pain"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Cardiac and/or respiratory cachexia",
+      "system": "Systemic Disease",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["chronic"],
+        "progression": ["progressive"],
+        "palliate": ["optimize-heart-failure", "pulmonary-rehab"],
+        "provoke": ["heart-failure", "copd"],
+        "quality": ["wasting", "fatigue"],
+        "timing": ["persistent"],
+        "region": ["diffuse"],
+        "radiation": ["n/a"],
+        "severity": ["moderate"],
+        "clinical tests": ["bnp", "echo", "pft"],
+        "other symptoms": ["dyspnea", "edema", "orthopnea"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Thyrotoxicosis",
+      "system": "Systemic Disease",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["subacute", "chronic"],
+        "progression": ["worsening"],
+        "palliate": ["antithyroid", "beta-blocker"],
+        "provoke": ["thyroid-hormone-excess"],
+        "quality": ["proximal-weakness", "fatigue"],
+        "timing": ["persistent"],
+        "region": ["hip-girdle", "shoulder-girdle"],
+        "radiation": ["n/a"],
+        "severity": ["mild", "moderate"],
+        "clinical tests": ["tsh", "t4", "t3"],
+        "other symptoms": ["tremor", "weight-loss", "palpitations", "heat-intolerance"]
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Sarcoidosis",
+      "system": "Systemic Disease",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["subacute", "chronic"],
+        "progression": ["variable"],
+        "palliate": ["steroids"],
+        "provoke": ["granulomatous"],
+        "quality": ["myopathy", "neuropathy"],
+        "timing": ["persistent"],
+        "region": ["proximal", "diffuse"],
+        "radiation": ["n/a"],
+        "severity": ["mild", "moderate"],
+        "clinical tests": ["ace", "calcium", "chest-x-ray", "mri"],
+        "other symptoms": ["cough", "uveitis", "erythema-nodosum"]
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Guillain\u2013Barr\u00e9 syndrome",
+      "system": "Systemic Disease",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["acute"],
+        "progression": ["progressive"],
+        "palliate": ["ivig", "plasmapheresis"],
+        "provoke": ["post-infection"],
+        "quality": ["ascending-weakness", "areflexia"],
+        "timing": ["days-to-weeks"],
+        "region": ["legs", "arms"],
+        "radiation": ["n/a"],
+        "severity": ["moderate", "severe"],
+        "clinical tests": ["csf-protein", "emg-ncs", "spirometry"],
+        "other symptoms": ["paresthesias", "autonomic-symptoms", "respiratory-failure"]
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Cushing\u2019s disease",
+      "system": "Systemic Disease",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["subacute", "chronic"],
+        "progression": ["worsening"],
+        "palliate": ["steroid-reduction"],
+        "provoke": ["cortisol-excess"],
+        "quality": ["proximal-weakness", "painless"],
+        "timing": ["persistent"],
+        "region": ["hip-girdle", "shoulder-girdle"],
+        "radiation": ["n/a"],
+        "severity": ["mild", "moderate"],
+        "clinical tests": ["dexamethasone-test", "24h-urine-cortisol"],
+        "other symptoms": ["easy-bruising", "central-obesity", "striae", "hypertension"]
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "Addison\u2019s disease",
+      "system": "Systemic Disease",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["subacute"],
+        "progression": ["worsening"],
+        "palliate": ["steroids"],
+        "provoke": ["autoimmune", "tb"],
+        "quality": ["generalized-weakness", "fatigue"],
+        "timing": ["persistent"],
+        "region": ["diffuse"],
+        "radiation": ["n/a"],
+        "severity": ["moderate"],
+        "clinical tests": ["acth-stimulation", "cortisol", "electrolytes"],
+        "other symptoms": ["weight-loss", "hypotension", "hyperpigmentation", "salt-craving"]
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "Myasthenia gravis",
+      "system": "Muscle And Motor End Plate Disorders",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["subacute"],
+        "progression": ["fluctuating"],
+        "palliate": ["rest", "acetylcholinesterase"],
+        "provoke": ["exertion", "evening"],
+        "quality": ["fatigable-weakness", "ptosis", "diplopia"],
+        "timing": ["worse-later-day"],
+        "region": ["ocular", "bulbar", "proximal-limbs"],
+        "radiation": ["n/a"],
+        "severity": ["mild", "moderate", "severe"],
+        "clinical tests": ["achr-antibody", "emg-decrement", "ice-pack-test", "ct-chest"],
+        "other symptoms": ["dysphagia", "dysarthria", "respiratory-weakness"]
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Muscular dystrophies",
+      "system": "Muscle And Motor End Plate Disorders",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["childhood", "adolescent"],
+        "progression": ["progressive"],
+        "palliate": ["physiotherapy"],
+        "provoke": ["genetic"],
+        "quality": ["proximal-weakness", "gowers-sign"],
+        "timing": ["persistent"],
+        "region": ["hip-girdle", "shoulder-girdle"],
+        "radiation": ["n/a"],
+        "severity": ["severe"],
+        "clinical tests": ["ck", "genetic-testing", "emg"],
+        "other symptoms": ["calf-pseudohypertrophy", "cardiomyopathy"]
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Motor neurone disease",
+      "system": "Muscle And Motor End Plate Disorders",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["subacute", "chronic"],
+        "progression": ["progressive"],
+        "palliate": ["riluzole", "supportive"],
+        "provoke": ["neurodegeneration"],
+        "quality": ["weakness", "atrophy", "fasciculations"],
+        "timing": ["persistent"],
+        "region": ["focal-to-generalized"],
+        "radiation": ["n/a"],
+        "severity": ["severe"],
+        "clinical tests": ["emg", "mri-brain-spine"],
+        "other symptoms": ["dysarthria", "dysphagia", "weight-loss"]
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Myotonic dystrophy",
+      "system": "Muscle And Motor End Plate Disorders",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["adolescent", "adult"],
+        "progression": ["progressive"],
+        "palliate": ["warming", "avoid-cold"],
+        "provoke": ["cold", "repetition"],
+        "quality": ["myotonia", "distal-weakness"],
+        "timing": ["delayed-relaxation"],
+        "region": ["hands", "face", "forearms"],
+        "radiation": ["n/a"],
+        "severity": ["moderate"],
+        "clinical tests": ["emg-myotonic-discharges", "genetic-testing"],
+        "other symptoms": ["cataracts", "cardiac-conduction", "endocrine-issues"]
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "Polymyositis/dermatomyositis/inclusion body myositis",
+      "system": "Muscle And Motor End Plate Disorders",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["subacute", "chronic"],
+        "progression": ["worsening"],
+        "palliate": ["steroids", "immunosuppressants"],
+        "provoke": ["autoimmune"],
+        "quality": ["proximal-weakness", "myalgia"],
+        "timing": ["persistent"],
+        "region": ["hip-girdle", "shoulder-girdle"],
+        "radiation": ["n/a"],
+        "severity": ["moderate", "severe"],
+        "clinical tests": ["ck", "ana", "myositis-panel", "emg", "muscle-biopsy"],
+        "other symptoms": ["heliotrope-rash", "gottron-papules", "dysphagia"]
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "Alcohol",
+      "system": "Drugs And Toxins",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["chronic"],
+        "progression": ["worsening"],
+        "palliate": ["alcohol-cessation"],
+        "provoke": ["alcohol"],
+        "quality": ["myopathy", "neuropathy"],
+        "timing": ["persistent"],
+        "region": ["proximal", "distal"],
+        "radiation": ["n/a"],
+        "severity": ["mild", "moderate"],
+        "clinical tests": ["ck", "gammagt", "b1"],
+        "other symptoms": ["tremor", "ataxia", "malnutrition"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Statins",
+      "system": "Drugs And Toxins",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["subacute"],
+        "progression": ["worsening", "stable"],
+        "palliate": ["stop-med", "dose-reduction"],
+        "provoke": ["statin"],
+        "quality": ["myalgia", "proximal-weakness"],
+        "timing": ["persistent"],
+        "region": ["hip-girdle", "shoulder-girdle"],
+        "radiation": ["n/a"],
+        "severity": ["mild", "moderate"],
+        "clinical tests": ["ck", "tsH"],
+        "other symptoms": ["fatigue", "cramps"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Steroids",
+      "system": "Drugs And Toxins",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["subacute", "chronic"],
+        "progression": ["worsening"],
+        "palliate": ["dose-reduction"],
+        "provoke": ["glucocorticoids"],
+        "quality": ["proximal-weakness", "painless"],
+        "timing": ["persistent"],
+        "region": ["hip-girdle", "shoulder-girdle"],
+        "radiation": ["n/a"],
+        "severity": ["mild", "moderate"],
+        "clinical tests": ["ck-normal", "cortisol"],
+        "other symptoms": ["weight-gain", "bruising", "osteoporosis"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Ciclosporin",
+      "system": "Drugs And Toxins",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["subacute"],
+        "progression": ["worsening"],
+        "palliate": ["dose-reduction"],
+        "provoke": ["ciclosporin"],
+        "quality": ["myopathy", "tremor"],
+        "timing": ["persistent"],
+        "region": ["proximal"],
+        "radiation": ["n/a"],
+        "severity": ["mild", "moderate"],
+        "clinical tests": ["ck", "drug-level"],
+        "other symptoms": ["hypertension", "gingival-hyperplasia"]
+      },
+      "freq": "uncommon"
+    }
+  ],
+  "sources": {
+    "index_keys": [
+      "Muscle weakness and wasting"
+    ],
+    "index_type": "clinical"
+  },
+  "symptoms": {}
+}

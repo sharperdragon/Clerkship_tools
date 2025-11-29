@@ -1,0 +1,354 @@
+{
+  "presentation": "Oliguria",
+  "items": [
+    {
+      "name": "Dehydration, diarrhoea",
+      "system": "Renal Circulatory Insufficiency",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["acute"],
+        "progression": ["worsening"],
+        "palliate": ["n/a"],
+        "provoke": ["dehydration"],
+        "quality": ["n/a"],
+        "timing": ["persistent"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["moderate"],
+        "clinical tests": ["inspection", "orthostatic-blood-pressure"],
+        "other symptoms": ["dry-mucous-membranes", "hypotension", "tachycardia", "fatigue", "oliguria"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Shock, burns",
+      "system": "Renal Circulatory Insufficiency",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["acute"],
+        "progression": ["worsening"],
+        "palliate": ["n/a"],
+        "provoke": ["n/a"],
+        "quality": ["n/a"],
+        "timing": ["persistent"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["severe"],
+        "clinical tests": ["inspection", "orthostatic-blood-pressure", "capillary-refill"],
+        "other symptoms": ["hypotension", "tachycardia", "clammy-skin", "altered-mental-status", "oliguria"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Nephrotoxins",
+      "system": "Renal Circulatory Insufficiency",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["subacute"],
+        "progression": ["worsening"],
+        "palliate": ["n/a"],
+        "provoke": ["n/a"],
+        "quality": ["n/a"],
+        "timing": ["persistent"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["moderate"],
+        "clinical tests": ["inspection", "urine-dipstick"],
+        "other symptoms": ["edema", "fatigue", "oliguria"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Acute tubular necrosis",
+      "system": "Renal Circulatory Insufficiency",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["acute"],
+        "progression": ["worsening"],
+        "palliate": ["n/a"],
+        "provoke": ["n/a"],
+        "quality": ["n/a"],
+        "timing": ["persistent"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["moderate"],
+        "clinical tests": ["inspection", "urine-dipstick"],
+        "other symptoms": ["fatigue", "edema", "oliguria"]
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Acute cortical necrosis",
+      "system": "Renal Circulatory Insufficiency",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["acute"],
+        "progression": ["worsening"],
+        "palliate": ["n/a"],
+        "provoke": ["n/a"],
+        "quality": ["n/a"],
+        "timing": ["persistent"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["severe"],
+        "clinical tests": ["inspection", "ultrasound"],
+        "other symptoms": ["fever", "hypotension", "oliguria"]
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Acute glomerulonephritis",
+      "system": "Renal Circulatory Insufficiency",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["subacute"],
+        "progression": ["worsening"],
+        "palliate": ["n/a"],
+        "provoke": ["n/a"],
+        "quality": ["n/a"],
+        "timing": ["persistent"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["moderate"],
+        "clinical tests": ["inspection", "urine-dipstick"],
+        "other symptoms": ["edema", "hematuria", "fatigue", "oliguria"]
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Acute interstitial nephritis",
+      "system": "Renal Circulatory Insufficiency",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["subacute"],
+        "progression": ["worsening"],
+        "palliate": ["n/a"],
+        "provoke": ["nsaids"],
+        "quality": ["n/a"],
+        "timing": ["persistent"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["mild"],
+        "clinical tests": ["inspection", "urine-dipstick"],
+        "other symptoms": ["fever", "rash", "arthralgia", "oliguria"]
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Vascular lesions",
+      "system": "Renal Circulatory Insufficiency",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["acute"],
+        "progression": ["worsening"],
+        "palliate": ["n/a"],
+        "provoke": ["n/a"],
+        "quality": ["n/a"],
+        "timing": ["persistent"],
+        "region": ["flank"],
+        "radiation": ["back"],
+        "severity": ["severe"],
+        "clinical tests": ["inspection", "ultrasound"],
+        "other symptoms": ["flank-pain", "hematuria", "hypertension", "oliguria"]
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "Prostatic hypertrophy",
+      "system": "Post-Renal (obstructive)",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["chronic"],
+        "progression": ["worsening"],
+        "palliate": ["n/a"],
+        "provoke": ["n/a"],
+        "quality": ["n/a"],
+        "timing": ["persistent"],
+        "region": ["suprapubic"],
+        "radiation": ["n/a"],
+        "severity": ["moderate"],
+        "clinical tests": ["bladder-scan", "suprapubic-tenderness"],
+        "other symptoms": ["hesitancy", "nocturia", "urinary-urgency", "urinary-frequency", "incomplete-emptying", "oliguria"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Post-renal calculi",
+      "system": "Post-Renal (obstructive)",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["acute"],
+        "progression": ["worsening"],
+        "palliate": ["n/a"],
+        "provoke": ["dehydration"],
+        "quality": ["n/a"],
+        "timing": ["intermittent"],
+        "region": ["flank"],
+        "radiation": ["groin"],
+        "severity": ["severe"],
+        "clinical tests": ["ultrasound"],
+        "other symptoms": ["hematuria", "nausea", "vomiting", "restlessness", "oliguria"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Pelvic tumours",
+      "system": "Post-Renal (obstructive)",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["chronic"],
+        "progression": ["worsening"],
+        "palliate": ["n/a"],
+        "provoke": ["n/a"],
+        "quality": ["n/a"],
+        "timing": ["persistent"],
+        "region": ["pelvic"],
+        "radiation": ["back"],
+        "severity": ["severe"],
+        "clinical tests": ["ultrasound", "bladder-scan"],
+        "other symptoms": ["constipation", "weight-loss", "oliguria"]
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Hematoma",
+      "system": "Post-Renal (obstructive)",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["acute"],
+        "progression": ["worsening"],
+        "palliate": ["n/a"],
+        "provoke": ["n/a"],
+        "quality": ["n/a"],
+        "timing": ["persistent"],
+        "region": ["pelvic"],
+        "radiation": ["back"],
+        "severity": ["moderate"],
+        "clinical tests": ["ultrasound", "bladder-scan"],
+        "other symptoms": ["suprapubic-pain", "oliguria"]
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Retroperitoneal fibrosis",
+      "system": "Post-Renal (obstructive)",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["chronic"],
+        "progression": ["worsening"],
+        "palliate": ["n/a"],
+        "provoke": ["n/a"],
+        "quality": ["n/a"],
+        "timing": ["persistent"],
+        "region": ["flank"],
+        "radiation": ["groin"],
+        "severity": ["moderate"],
+        "clinical tests": ["ultrasound"],
+        "other symptoms": ["flank-pain", "weight-loss", "malaise", "oliguria"]
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "Mismatched transfusion (hemoglobinuria)",
+      "system": "Other",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["acute"],
+        "progression": ["worsening"],
+        "palliate": ["n/a"],
+        "provoke": ["n/a"],
+        "quality": ["n/a"],
+        "timing": ["intermittent"],
+        "region": ["n/a"],
+        "radiation": ["back"],
+        "severity": ["severe"],
+        "clinical tests": ["inspection", "urine-dipstick"],
+        "other symptoms": ["fever", "back-pain", "flank-pain", "hypotension", "oliguria"]
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "Crush injuries (myoglobinuria)",
+      "system": "Other",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["acute"],
+        "progression": ["worsening"],
+        "palliate": ["n/a"],
+        "provoke": ["n/a"],
+        "quality": ["n/a"],
+        "timing": ["persistent"],
+        "region": ["limb"],
+        "radiation": ["n/a"],
+        "severity": ["severe"],
+        "clinical tests": ["inspection", "urine-dipstick"],
+        "other symptoms": ["swelling", "weakness", "oliguria"]
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "Blocked catheter",
+      "system": "Anuria",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["acute"],
+        "progression": ["worsening"],
+        "palliate": ["n/a"],
+        "provoke": ["n/a"],
+        "quality": ["n/a"],
+        "timing": ["sudden"],
+        "region": ["suprapubic"],
+        "radiation": ["n/a"],
+        "severity": ["moderate"],
+        "clinical tests": ["bladder-scan", "suprapubic-tenderness"],
+        "other symptoms": ["bladder-distension", "discomfort", "oliguria"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Ureteric damage (bilateral)",
+      "system": "Anuria",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["acute"],
+        "progression": ["worsening"],
+        "palliate": ["n/a"],
+        "provoke": ["n/a"],
+        "quality": ["n/a"],
+        "timing": ["persistent"],
+        "region": ["flank"],
+        "radiation": ["groin"],
+        "severity": ["severe"],
+        "clinical tests": ["ultrasound", "bladder-scan"],
+        "other symptoms": ["flank-pain", "abdominal-swelling", "nausea", "oliguria"]
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "Stone in solitary functioning kidney",
+      "system": "Anuria",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["acute"],
+        "progression": ["worsening"],
+        "palliate": ["n/a"],
+        "provoke": ["dehydration"],
+        "quality": ["n/a"],
+        "timing": ["intermittent"],
+        "region": ["flank"],
+        "radiation": ["groin"],
+        "severity": ["severe"],
+        "clinical tests": ["ultrasound"],
+        "other symptoms": ["hematuria", "nausea", "vomiting", "restlessness", "oliguria"]
+      },
+      "freq": "rare"
+    }
+  ],
+  "sources": {
+    "index_keys": [
+      "Oliguria"
+    ],
+    "index_type": "clinical"
+  },
+  "symptoms": {}
+}

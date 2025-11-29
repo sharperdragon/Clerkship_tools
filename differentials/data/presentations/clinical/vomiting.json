@@ -1,0 +1,639 @@
+{
+  "presentation": "Vomiting",
+  "items": [
+    {
+      "name": "Drugs, , chemotherapeutic agents",
+      "system": "Central Vomiting",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["subacute"],
+        "progression": ["worsening"],
+        "palliate": ["rest", "npo"],
+        "provoke": ["meals"],
+        "quality": ["n/a"],
+        "timing": ["post-infusion", "postprandial"],
+        "region": ["diffuse"],
+        "radiation": ["n/a"],
+        "severity": ["moderate"],
+        "clinical tests": ["inspection"],
+        "other symptoms": ["nausea", "dehydration"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Acute infections",
+      "system": "Central Vomiting",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["acute"],
+        "progression": ["worsening"],
+        "palliate": ["rest", "npo"],
+        "provoke": ["meals"],
+        "quality": ["cramping"],
+        "timing": ["intermittent"],
+        "region": ["diffuse"],
+        "radiation": ["n/a"],
+        "severity": ["moderate"],
+        "clinical tests": ["inspection"],
+        "other symptoms": ["fever", "nausea", "dehydration"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Endocrine/metabolic",
+      "system": "Central Vomiting",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["subacute"],
+        "progression": ["worsening"],
+        "palliate": ["rest"],
+        "provoke": ["n/a"],
+        "quality": ["n/a"],
+        "timing": ["persistent"],
+        "region": ["diffuse"],
+        "radiation": ["n/a"],
+        "severity": ["moderate"],
+        "clinical tests": ["inspection"],
+        "other symptoms": ["fatigue", "nausea", "dehydration"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Pregnancy",
+      "system": "Central Vomiting",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["subacute"],
+        "progression": ["worsening"],
+        "palliate": ["rest"],
+        "provoke": ["meals"],
+        "quality": ["n/a"],
+        "timing": ["morning", "postprandial"],
+        "region": ["diffuse"],
+        "radiation": ["n/a"],
+        "severity": ["mild", "moderate"],
+        "clinical tests": ["inspection"],
+        "other symptoms": ["nausea", "dehydration"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Diabetic ketoacidosis",
+      "system": "Central Vomiting",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["acute"],
+        "progression": ["worsening"],
+        "palliate": ["rest"],
+        "provoke": ["n/a"],
+        "quality": ["n/a"],
+        "timing": ["persistent"],
+        "region": ["diffuse"],
+        "radiation": ["n/a"],
+        "severity": ["severe"],
+        "clinical tests": ["inspection"],
+        "other symptoms": ["nausea", "dehydration", "tachycardia", "clammy-skin"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Hypercalcemia",
+      "system": "Central Vomiting",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["subacute"],
+        "progression": ["worsening"],
+        "palliate": ["rest"],
+        "provoke": ["n/a"],
+        "quality": ["n/a"],
+        "timing": ["persistent"],
+        "region": ["diffuse"],
+        "radiation": ["n/a"],
+        "severity": ["moderate"],
+        "clinical tests": ["inspection"],
+        "other symptoms": ["fatigue", "dehydration", "nausea"]
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Addison\u2019s disease",
+      "system": "Central Vomiting",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["insidious"],
+        "progression": ["worsening"],
+        "palliate": ["rest"],
+        "provoke": ["n/a"],
+        "quality": ["n/a"],
+        "timing": ["persistent"],
+        "region": ["diffuse"],
+        "radiation": ["n/a"],
+        "severity": ["moderate"],
+        "clinical tests": ["inspection"],
+        "other symptoms": ["fatigue", "orthostasis", "nausea"]
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "Appendicitis",
+      "system": "Gastrointestinal Disease",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["acute"],
+        "progression": ["worsening"],
+        "palliate": ["n/a"],
+        "provoke": ["n/a"],
+        "quality": ["sharp", "cramping"],
+        "timing": ["constant"],
+        "region": ["periumbilical", "rlq"],
+        "radiation": ["n/a"],
+        "severity": ["moderate", "severe"],
+        "clinical tests": ["mcburneys-point-tenderness", "rovsings-sign", "psoas-sign", "guarding", "rebound-tenderness"],
+        "other symptoms": ["fever", "nausea"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Cholecystitis",
+      "system": "Gastrointestinal Disease",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["acute", "subacute"],
+        "progression": ["worsening"],
+        "palliate": ["n/a"],
+        "provoke": ["fatty-meals"],
+        "quality": ["aching", "cramping"],
+        "timing": ["postprandial"],
+        "region": ["ruq"],
+        "radiation": ["right-scapula"],
+        "severity": ["moderate", "severe"],
+        "clinical tests": ["murphys-sign"],
+        "other symptoms": ["fever", "nausea"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Pancreatitis",
+      "system": "Gastrointestinal Disease",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["acute"],
+        "progression": ["worsening"],
+        "palliate": ["leaning-forward", "rest"],
+        "provoke": ["alcohol", "fatty-meals"],
+        "quality": ["burning", "aching"],
+        "timing": ["constant"],
+        "region": ["epigastrium"],
+        "radiation": ["back"],
+        "severity": ["severe"],
+        "clinical tests": ["guarding", "cullen-sign", "grey-turner-sign"],
+        "other symptoms": ["nausea", "dehydration"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Peptic ulceration/acute gastritis",
+      "system": "Gastrointestinal Disease",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["subacute"],
+        "progression": ["worsening"],
+        "palliate": ["antacids", "ppi"],
+        "provoke": ["nsaids", "alcohol", "spicy-food"],
+        "quality": ["burning", "gnawing"],
+        "timing": ["nocturnal", "postprandial"],
+        "region": ["epigastrium"],
+        "radiation": ["back"],
+        "severity": ["moderate"],
+        "clinical tests": ["succussion-splash"],
+        "other symptoms": ["nausea"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Peritonitis",
+      "system": "Gastrointestinal Disease",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["acute"],
+        "progression": ["worsening"],
+        "palliate": ["n/a"],
+        "provoke": ["n/a"],
+        "quality": ["sharp", "tender"],
+        "timing": ["constant"],
+        "region": ["diffuse"],
+        "radiation": ["n/a"],
+        "severity": ["severe", "catastrophic"],
+        "clinical tests": ["guarding", "rebound-tenderness"],
+        "other symptoms": ["fever", "nausea"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Biliary colic",
+      "system": "Gastrointestinal Disease",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["acute"],
+        "progression": ["worsening"],
+        "palliate": ["n/a"],
+        "provoke": ["fatty-meals"],
+        "quality": ["colicky", "cramping"],
+        "timing": ["postprandial", "episodic"],
+        "region": ["ruq"],
+        "radiation": ["right-shoulder"],
+        "severity": ["moderate"],
+        "clinical tests": ["murphys-sign"],
+        "other symptoms": ["nausea"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Gastroenteritis",
+      "system": "Gastrointestinal Disease",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["acute"],
+        "progression": ["worsening"],
+        "palliate": ["rest", "npo"],
+        "provoke": ["meals"],
+        "quality": ["cramping"],
+        "timing": ["intermittent"],
+        "region": ["diffuse"],
+        "radiation": ["n/a"],
+        "severity": ["mild", "moderate"],
+        "clinical tests": ["inspection"],
+        "other symptoms": ["fever", "nausea", "dehydration"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Viral",
+      "system": "Gastrointestinal Disease",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["acute"],
+        "progression": ["worsening"],
+        "palliate": ["rest", "npo"],
+        "provoke": ["meals"],
+        "quality": ["cramping"],
+        "timing": ["intermittent"],
+        "region": ["diffuse"],
+        "radiation": ["n/a"],
+        "severity": ["mild", "moderate"],
+        "clinical tests": ["inspection"],
+        "other symptoms": ["fever", "nausea", "dehydration"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Bacteria, , Salmonella spp",
+      "system": "Gastrointestinal Disease",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["acute"],
+        "progression": ["worsening"],
+        "palliate": ["rest", "npo"],
+        "provoke": ["meals"],
+        "quality": ["cramping"],
+        "timing": ["intermittent"],
+        "region": ["diffuse"],
+        "radiation": ["n/a"],
+        "severity": ["moderate"],
+        "clinical tests": ["inspection"],
+        "other symptoms": ["fever", "nausea", "dehydration"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Drugs, , NSAIDs, alcohol, iron, antibiotics",
+      "system": "Gastrointestinal Disease",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["subacute"],
+        "progression": ["worsening"],
+        "palliate": ["rest", "npo"],
+        "provoke": ["alcohol", "nsaids", "meals"],
+        "quality": ["burning"],
+        "timing": ["postprandial"],
+        "region": ["epigastrium"],
+        "radiation": ["n/a"],
+        "severity": ["mild", "moderate"],
+        "clinical tests": ["succussion-splash"],
+        "other symptoms": ["nausea"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Emetics, , ipecacuanha",
+      "system": "Gastrointestinal Disease",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["acute"],
+        "progression": ["worsening"],
+        "palliate": ["npo"],
+        "provoke": ["oral-intake"],
+        "quality": ["n/a"],
+        "timing": ["postprandial"],
+        "region": ["diffuse"],
+        "radiation": ["n/a"],
+        "severity": ["mild", "moderate"],
+        "clinical tests": ["inspection"],
+        "other symptoms": ["nausea", "dehydration"]
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Poisons",
+      "system": "Gastrointestinal Disease",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["acute"],
+        "progression": ["worsening"],
+        "palliate": ["npo"],
+        "provoke": ["n/a"],
+        "quality": ["n/a"],
+        "timing": ["postprandial"],
+        "region": ["diffuse"],
+        "radiation": ["n/a"],
+        "severity": ["severe"],
+        "clinical tests": ["inspection"],
+        "other symptoms": ["clammy-skin", "nausea", "dehydration"]
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "Small bowel obstruction",
+      "system": "Gastrointestinal Disease",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["acute", "subacute"],
+        "progression": ["worsening"],
+        "palliate": ["npo", "rest"],
+        "provoke": ["n/a"],
+        "quality": ["colicky", "cramping"],
+        "timing": ["cyclical"],
+        "region": ["periumbilical"],
+        "radiation": ["n/a"],
+        "severity": ["severe"],
+        "clinical tests": ["succussion-splash"],
+        "other symptoms": ["nausea", "dehydration"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Pyloric stenosis",
+      "system": "Gastrointestinal Disease",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["insidious"],
+        "progression": ["worsening"],
+        "palliate": ["npo"],
+        "provoke": ["meals"],
+        "quality": ["n/a"],
+        "timing": ["postprandial"],
+        "region": ["epigastrium"],
+        "radiation": ["n/a"],
+        "severity": ["moderate", "severe"],
+        "clinical tests": ["succussion-splash"],
+        "other symptoms": ["dehydration", "nausea"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Large bowel obstruction",
+      "system": "Gastrointestinal Disease",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["subacute"],
+        "progression": ["worsening"],
+        "palliate": ["npo", "rest"],
+        "provoke": ["n/a"],
+        "quality": ["cramping"],
+        "timing": ["persistent"],
+        "region": ["suprapubic", "llq"],
+        "radiation": ["n/a"],
+        "severity": ["severe"],
+        "clinical tests": ["guarding"],
+        "other symptoms": ["nausea", "dehydration"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Raised intracranial pressure",
+      "system": "Cns Causes",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["subacute"],
+        "progression": ["worsening"],
+        "palliate": ["rest"],
+        "provoke": ["n/a"],
+        "quality": ["n/a"],
+        "timing": ["morning", "persistent"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["moderate", "severe"],
+        "clinical tests": ["inspection"],
+        "other symptoms": ["blurred-vision", "nausea"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Labyrinthine disorders",
+      "system": "Cns Causes",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["acute", "subacute"],
+        "progression": ["worsening"],
+        "palliate": ["rest"],
+        "provoke": ["movement"],
+        "quality": ["n/a"],
+        "timing": ["episodic"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["mild", "moderate"],
+        "clinical tests": ["inspection"],
+        "other symptoms": ["nausea", "clammy-skin"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Head injury",
+      "system": "Cns Causes",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["acute"],
+        "progression": ["worsening"],
+        "palliate": ["rest"],
+        "provoke": ["movement"],
+        "quality": ["aching"],
+        "timing": ["constant"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["moderate", "severe"],
+        "clinical tests": ["inspection"],
+        "other symptoms": ["nausea", "clumsiness"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Migraine",
+      "system": "Cns Causes",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["sudden", "subacute"],
+        "progression": ["worsening"],
+        "palliate": ["rest"],
+        "provoke": ["stress"],
+        "quality": ["throbbing"],
+        "timing": ["episodic"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["moderate", "severe"],
+        "clinical tests": ["inspection"],
+        "other symptoms": ["nausea", "blurred-vision"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "M\u00e9ni\u00e8re\u2019s disease",
+      "system": "Cns Causes",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["subacute"],
+        "progression": ["worsening"],
+        "palliate": ["rest"],
+        "provoke": ["movement"],
+        "quality": ["n/a"],
+        "timing": ["episodic"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["moderate"],
+        "clinical tests": ["inspection"],
+        "other symptoms": ["nausea", "clammy-skin"]
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Offensive sights and smells",
+      "system": "Psychogenic",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["acute"],
+        "progression": ["improving"],
+        "palliate": ["rest"],
+        "provoke": ["stress"],
+        "quality": ["n/a"],
+        "timing": ["episodic"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["mild"],
+        "clinical tests": ["inspection"],
+        "other symptoms": ["nausea"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Psychiatric disorders, , anorexia nervosa",
+      "system": "Psychogenic",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["insidious"],
+        "progression": ["worsening"],
+        "palliate": ["rest"],
+        "provoke": ["stress"],
+        "quality": ["n/a"],
+        "timing": ["persistent"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["moderate"],
+        "clinical tests": ["inspection"],
+        "other symptoms": ["weight-change", "nausea"]
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Myocardial infarction",
+      "system": "Other",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["sudden"],
+        "progression": ["worsening"],
+        "palliate": ["rest", "nitrates"],
+        "provoke": ["exertion", "emotional-stress"],
+        "quality": ["crushing", "tightness"],
+        "timing": ["constant"],
+        "region": ["retrosternal"],
+        "radiation": ["left-shoulder", "jaw"],
+        "severity": ["severe"],
+        "clinical tests": ["auscultation", "jugular-venous-pressure"],
+        "other symptoms": ["clammy-skin", "dyspnea", "tachycardia", "nausea"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Severe pain, , fractures",
+      "system": "Other",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["sudden"],
+        "progression": ["worsening"],
+        "palliate": ["rest", "analgesics"],
+        "provoke": ["movement", "Touch"],
+        "quality": ["sharp", "tender"],
+        "timing": ["constant"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["severe"],
+        "clinical tests": ["inspection", "palpation"],
+        "other symptoms": ["pain", "nausea"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Irradiation",
+      "system": "Other",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["subacute"],
+        "progression": ["worsening"],
+        "palliate": ["rest", "npo"],
+        "provoke": ["n/a"],
+        "quality": ["n/a"],
+        "timing": ["post-infusion"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["moderate"],
+        "clinical tests": ["inspection"],
+        "other symptoms": ["nausea", "dehydration"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Widespread malignant disease",
+      "system": "Other",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["insidious"],
+        "progression": ["worsening"],
+        "palliate": ["rest"],
+        "provoke": ["n/a"],
+        "quality": ["n/a"],
+        "timing": ["persistent"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["moderate"],
+        "clinical tests": ["inspection"],
+        "other symptoms": ["weight-change", "fatigue", "nausea"]
+      },
+      "freq": "common"
+    }
+  ],
+  "sources": {
+    "index_keys": [
+      "Vomiting"
+    ],
+    "index_type": "clinical"
+  },
+  "symptoms": {}
+}

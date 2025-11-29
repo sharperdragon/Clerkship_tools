@@ -1,0 +1,278 @@
+{
+  "presentation": "Weight gain",
+  "items": [
+    {
+      "name": "Simple obesity",
+      "system": "Increased Fat",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["insidious"],
+        "progression": ["worsening"],
+        "palliate": ["activity"],
+        "provoke": ["meals", "sedentary"],
+        "quality": ["n/a"],
+        "timing": ["persistent", "daytime"],
+        "region": ["abdomen", "hip", "thigh"],
+        "radiation": ["n/a"],
+        "severity": ["moderate"],
+        "clinical tests": ["inspection"],
+        "other symptoms": ["fatigue", "weight-change"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Polycystic ovarian syndrome",
+      "system": "Increased Fat",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["insidious"],
+        "progression": ["worsening"],
+        "palliate": ["activity"],
+        "provoke": ["stress", "meals"],
+        "quality": ["n/a"],
+        "timing": ["persistent"],
+        "region": ["abdomen"],
+        "radiation": ["n/a"],
+        "severity": ["mild", "moderate"],
+        "clinical tests": ["inspection"],
+        "other symptoms": ["pv-bleeding", "weight-change"]
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Hypothalamic disease",
+      "system": "Increased Fat",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["insidious"],
+        "progression": ["worsening"],
+        "palliate": ["n/a"],
+        "provoke": ["n/a"],
+        "quality": ["n/a"],
+        "timing": ["persistent"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["moderate"],
+        "clinical tests": ["inspection"],
+        "other symptoms": ["visual-loss", "fatigue"]
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "Cardiac failure",
+      "system": "Increased Fluid",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["insidious"],
+        "progression": ["worsening"],
+        "palliate": ["rest", "elevation"],
+        "provoke": ["exertion"],
+        "quality": ["heaviness"],
+        "timing": ["persistent", "evening"],
+        "region": ["chest", "leg", "ankle"],
+        "radiation": ["n/a"],
+        "severity": ["moderate", "severe"],
+        "clinical tests": ["jugular-venous-pressure", "lung-auscultation", "inspection", "peripheral-pulse-assessment", "capillary-refill"],
+        "other symptoms": ["edema", "orthopnea", "paroxysmal-nocturnal-dyspnea", "dyspnea"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Hepatic failure with ascites",
+      "system": "Increased Fluid",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["subacute"],
+        "progression": ["worsening"],
+        "palliate": ["n/a"],
+        "provoke": ["alcohol"],
+        "quality": ["heaviness"],
+        "timing": ["persistent"],
+        "region": ["abdomen", "ruq"],
+        "radiation": ["n/a"],
+        "severity": ["moderate", "severe"],
+        "clinical tests": ["inspection", "shifting-dullness", "fluid-wave-test"],
+        "other symptoms": ["ascites", "jaundice", "edema"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Renal failure (",
+      "system": "Increased Fluid",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["subacute"],
+        "progression": ["worsening"],
+        "palliate": ["n/a"],
+        "provoke": ["dehydration"],
+        "quality": ["n/a"],
+        "timing": ["persistent"],
+        "region": ["flank"],
+        "radiation": ["n/a"],
+        "severity": ["moderate", "severe"],
+        "clinical tests": ["inspection", "costovertebral-angle-tenderness"],
+        "other symptoms": ["edema", "oliguria", "fatigue"]
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Lymphatic obstruction",
+      "system": "Increased Fluid",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["insidious"],
+        "progression": ["worsening"],
+        "palliate": ["compression", "elevation", "massage"],
+        "provoke": ["n/a"],
+        "quality": ["firm", "heaviness"],
+        "timing": ["persistent"],
+        "region": ["leg", "arm"],
+        "radiation": ["n/a"],
+        "severity": ["moderate"],
+        "clinical tests": ["inspection", "stemmer-sign", "lymphoscintigraphy"],
+        "other symptoms": ["swelling"]
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Athletes",
+      "system": "Increased Muscle",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["subacute"],
+        "progression": ["improving"],
+        "palliate": ["rest"],
+        "provoke": ["exercise", "with-activity"],
+        "quality": ["firm"],
+        "timing": ["with-activity"],
+        "region": ["arm", "thigh"],
+        "radiation": ["n/a"],
+        "severity": ["mild"],
+        "clinical tests": ["inspection", "palpation"],
+        "other symptoms": ["none"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Androgenic steroids",
+      "system": "Increased Muscle",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["subacute"],
+        "progression": ["worsening"],
+        "palliate": ["n/a"],
+        "provoke": ["n/a"],
+        "quality": ["firm"],
+        "timing": ["persistent"],
+        "region": ["arm", "thigh"],
+        "radiation": ["n/a"],
+        "severity": ["moderate"],
+        "clinical tests": ["inspection"],
+        "other symptoms": ["gynecomastia", "edema"]
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Growth hormone",
+      "system": "Increased Muscle",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["insidious"],
+        "progression": ["worsening"],
+        "palliate": ["n/a"],
+        "provoke": ["n/a"],
+        "quality": ["firm"],
+        "timing": ["persistent"],
+        "region": ["hand", "jaw"],
+        "radiation": ["n/a"],
+        "severity": ["moderate"],
+        "clinical tests": ["inspection", "palpation"],
+        "other symptoms": ["jaw-swelling", "headache"]
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "Pregnancy",
+      "system": "Increased Muscle",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["subacute"],
+        "progression": ["worsening"],
+        "palliate": ["rest"],
+        "provoke": ["meals"],
+        "quality": ["n/a"],
+        "timing": ["persistent", "postprandial"],
+        "region": ["abdomen"],
+        "radiation": ["n/a"],
+        "severity": ["mild", "moderate"],
+        "clinical tests": ["inspection"],
+        "other symptoms": ["nausea", "fatigue"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Depression",
+      "system": "Increased Muscle",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["insidious"],
+        "progression": ["worsening"],
+        "palliate": ["rest"],
+        "provoke": ["stress"],
+        "quality": ["n/a"],
+        "timing": ["persistent", "daytime"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["moderate"],
+        "clinical tests": ["inspection"],
+        "other symptoms": ["fatigue", "weight-change"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Drugs",
+      "system": "Increased Muscle",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["subacute"],
+        "progression": ["worsening"],
+        "palliate": ["n/a"],
+        "provoke": ["meals"],
+        "quality": ["n/a"],
+        "timing": ["persistent"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["mild", "moderate"],
+        "clinical tests": ["inspection"],
+        "other symptoms": ["weight-change", "edema"]
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Premenstrual syndrome",
+      "system": "Increased Muscle",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["cyclical"],
+        "progression": ["worsening"],
+        "palliate": ["rest"],
+        "provoke": ["menses"],
+        "quality": ["n/a"],
+        "timing": ["cyclical", "evening"],
+        "region": ["abdomen"],
+        "radiation": ["n/a"],
+        "severity": ["mild", "moderate"],
+        "clinical tests": ["inspection"],
+        "other symptoms": ["breast-pain", "bloating"]
+      },
+      "freq": "uncommon"
+    }
+  ],
+  "sources": {
+    "index_keys": [
+      "Weight gain"
+    ],
+    "index_type": "clinical"
+  },
+  "symptoms": {}
+}

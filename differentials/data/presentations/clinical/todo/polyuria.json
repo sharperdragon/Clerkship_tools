@@ -1,0 +1,412 @@
+{
+  "presentation": "Polyuria",
+  "items": [
+    {
+      "name": "Loop \u2013 , bumetanide",
+      "system": "Therapeutic",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["acute", "subacute"],
+        "progression": ["worsening", "stable"],
+        "palliate": ["reduce-dose", "hold-med"],
+        "provoke": ["diuretics", "high-dose"],
+        "quality": ["excess-urine"],
+        "timing": ["daytime", "nocturnal"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["mild", "moderate", "severe"],
+        "clinical tests": ["electrolytes", "urine-osmolality", "urine-sodium", "specific-gravity"],
+        "other symptoms": ["nocturia", "thirst", "dizziness", "orthostasis", "cramps", "dry-mouth"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Thiazide \u2013 , metolazone, indapamide",
+      "system": "Therapeutic",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["acute", "subacute"],
+        "progression": ["stable", "worsening"],
+        "palliate": ["reduce-dose", "hold-med"],
+        "provoke": ["diuretics"],
+        "quality": ["excess-urine"],
+        "timing": ["daytime", "nocturnal"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["mild", "moderate"],
+        "clinical tests": ["electrolytes", "urine-osmolality", "urine-sodium", "specific-gravity"],
+        "other symptoms": ["nocturia", "thirst", "dry-mouth", "weakness"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Amiloride",
+      "system": "Therapeutic",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["acute", "subacute"],
+        "progression": ["stable"],
+        "palliate": ["adjust-dose"],
+        "provoke": ["diuretics"],
+        "quality": ["excess-urine"],
+        "timing": ["daytime"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["mild", "moderate"],
+        "clinical tests": ["electrolytes", "urine-osmolality", "specific-gravity"],
+        "other symptoms": ["nocturia", "thirst"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Hyperglycemia",
+      "system": "Osmotic",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["subacute", "chronic", "acute"],
+        "progression": ["worsening"],
+        "palliate": ["insulin", "oral-hypoglycemics"],
+        "provoke": ["high-sugar-intake", "infection", "steroids"],
+        "quality": ["osmotic-diuresis"],
+        "timing": ["daytime", "nocturnal"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["mild", "moderate", "severe"],
+        "clinical tests": ["glucose", "hba1c", "serum-osmolality", "urine-glucose", "ketones", "specific-gravity"],
+        "other symptoms": ["polydipsia", "weight-loss", "blurred-vision", "fatigue", "nocturia", "dehydration"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Hypercalcemia",
+      "system": "Osmotic",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["subacute", "chronic"],
+        "progression": ["worsening", "stable"],
+        "palliate": ["iv-fluids"],
+        "provoke": ["calcium-supplements", "thiazides"],
+        "quality": ["nephrogenic-diuresis"],
+        "timing": ["daytime", "nocturnal"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["mild", "moderate"],
+        "clinical tests": ["calcium", "pth", "electrolytes", "urine-osmolality", "specific-gravity"],
+        "other symptoms": ["polyuria", "polydipsia", "constipation", "nausea", "kidney-stones", "dehydration"]
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Mannitol",
+      "system": "Osmotic",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["acute"],
+        "progression": ["worsening", "improving"],
+        "palliate": ["stop-infusion"],
+        "provoke": ["mannitol"],
+        "quality": ["osmotic-diuresis"],
+        "timing": ["during-infusion", "post-infusion"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["mild", "moderate"],
+        "clinical tests": ["serum-osmolality", "urine-osmolality", "electrolytes", "specific-gravity"],
+        "other symptoms": ["thirst", "hypotension", "dizziness"]
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "Urea",
+      "system": "Osmotic",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["acute"],
+        "progression": ["stable"],
+        "palliate": ["stop-med"],
+        "provoke": ["urea"],
+        "quality": ["osmotic-diuresis"],
+        "timing": ["daytime"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["mild", "moderate"],
+        "clinical tests": ["serum-osmolality", "urine-osmolality", "electrolytes"],
+        "other symptoms": ["thirst", "dizziness"]
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "uncommon",
+      "system": "Freq",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["unknown"],
+        "progression": ["unknown"],
+        "palliate": ["n/a"],
+        "provoke": ["n/a"],
+        "quality": ["n/a"],
+        "timing": ["n/a"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["n/a"],
+        "clinical tests": ["n/a"],
+        "other symptoms": ["n/a"]
+      },
+      "freq": "unknown"
+    },
+
+    {
+      "name": "where TB is endemic)",
+      "system": "Pituitary granulomas, , TB \u2022 (more common",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["subacute", "chronic"],
+        "progression": ["worsening"],
+        "palliate": ["desmopressin"],
+        "provoke": ["infection"],
+        "quality": ["central-diabetes-insipidus"],
+        "timing": ["daytime", "nocturnal"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["moderate", "severe"],
+        "clinical tests": ["serum-sodium", "serum-osmolality", "urine-osmolality", "water-deprivation-test", "desmopressin-challenge", "mri-brain"],
+        "other symptoms": ["polydipsia", "nocturia", "dehydration", "headache", "visual-changes"]
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "Opiates",
+      "system": "Pituitary granulomas, , TB \u2022 (more common",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["subacute"],
+        "progression": ["stable"],
+        "palliate": ["stop-med"],
+        "provoke": ["opioids"],
+        "quality": ["hormonal-effect"],
+        "timing": ["daytime"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["mild"],
+        "clinical tests": ["serum-sodium", "serum-osmolality", "urine-osmolality"],
+        "other symptoms": ["dry-mouth", "sedation"]
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "Drugs",
+      "system": "Nephrogenic",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["subacute", "chronic"],
+        "progression": ["worsening", "stable"],
+        "palliate": ["stop-med"],
+        "provoke": ["medications"],
+        "quality": ["nephrogenic-diabetes-insipidus"],
+        "timing": ["daytime", "nocturnal"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["mild", "moderate"],
+        "clinical tests": ["serum-sodium", "serum-osmolality", "urine-osmolality", "desmopressin-challenge"],
+        "other symptoms": ["polydipsia", "nocturia", "dehydration"]
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Lithium",
+      "system": "Nephrogenic",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["chronic"],
+        "progression": ["worsening"],
+        "palliate": ["stop-med"],
+        "provoke": ["lithium"],
+        "quality": ["nephrogenic-diabetes-insipidus"],
+        "timing": ["daytime", "nocturnal"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["moderate"],
+        "clinical tests": ["lithium-level", "serum-sodium", "serum-osmolality", "urine-osmolality", "desmopressin-challenge"],
+        "other symptoms": ["polydipsia", "nocturia", "dehydration"]
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Demeclocycline",
+      "system": "Nephrogenic",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["subacute", "chronic"],
+        "progression": ["worsening"],
+        "palliate": ["stop-med"],
+        "provoke": ["demeclocycline"],
+        "quality": ["nephrogenic-diabetes-insipidus"],
+        "timing": ["daytime", "nocturnal"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["mild", "moderate"],
+        "clinical tests": ["serum-sodium", "serum-osmolality", "urine-osmolality", "desmopressin-challenge"],
+        "other symptoms": ["polydipsia", "nocturia", "dehydration"]
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "Hypokalemia",
+      "system": "Nephrogenic",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["subacute"],
+        "progression": ["worsening"],
+        "palliate": ["potassium-repletion"],
+        "provoke": ["diuretics", "gi-losses"],
+        "quality": ["nephrogenic-diuresis"],
+        "timing": ["daytime"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["mild", "moderate"],
+        "clinical tests": ["potassium", "electrolytes", "urine-osmolality"],
+        "other symptoms": ["weakness", "cramps", "constipation", "nocturia"]
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Chronic tubulointerstitial nephritis",
+      "system": "Nephrogenic",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["chronic"],
+        "progression": ["worsening"],
+        "palliate": ["treat-underlying"],
+        "provoke": ["analgesics", "toxins"],
+        "quality": ["impaired-concentration"],
+        "timing": ["daytime", "nocturnal"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["moderate"],
+        "clinical tests": ["creatinine", "urinalysis", "urine-osmolality", "specific-gravity"],
+        "other symptoms": ["fatigue", "nocturia", "hypertension"]
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Recovering acute tubular necrosis",
+      "system": "Nephrogenic",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["subacute"],
+        "progression": ["improving"],
+        "palliate": ["time", "iv-fluids"],
+        "provoke": ["post-ischemic", "post-toxin"],
+        "quality": ["post-ATN-diuresis"],
+        "timing": ["daytime", "nocturnal"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["mild", "moderate"],
+        "clinical tests": ["creatinine", "electrolytes", "urine-output-trend"],
+        "other symptoms": ["thirst", "dizziness"]
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Recovering obstructive uropathy",
+      "system": "Nephrogenic",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["acute", "subacute"],
+        "progression": ["improving"],
+        "palliate": ["catheterization", "relieve-obstruction"],
+        "provoke": ["post-obstruction"],
+        "quality": ["post-obstructive-diuresis"],
+        "timing": ["daytime", "nocturnal"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["moderate", "severe"],
+        "clinical tests": ["electrolytes", "urine-output-trend"],
+        "other symptoms": ["thirst", "dehydration", "dizziness"]
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Chronic hypercalcemia",
+      "system": "Nephrogenic",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["chronic"],
+        "progression": ["worsening", "stable"],
+        "palliate": ["iv-fluids"],
+        "provoke": ["calcium-supplements"],
+        "quality": ["nephrogenic-diuresis"],
+        "timing": ["daytime", "nocturnal"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["mild", "moderate"],
+        "clinical tests": ["calcium", "pth", "electrolytes", "urine-osmolality"],
+        "other symptoms": ["polyuria", "polydipsia", "dehydration"]
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "Drug-induced thirst \u2013 anticholinergics",
+      "system": "Excessive Fluid Intake",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["subacute"],
+        "progression": ["stable"],
+        "palliate": ["stop-med"],
+        "provoke": ["anticholinergics"],
+        "quality": ["excess-fluid-intake"],
+        "timing": ["daytime", "evening"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["mild"],
+        "clinical tests": ["serum-sodium", "serum-osmolality", "urine-osmolality"],
+        "other symptoms": ["dry-mouth", "blurred-vision", "constipation"]
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Psychogenic polydipsia",
+      "system": "Excessive Fluid Intake",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["chronic"],
+        "progression": ["worsening", "stable"],
+        "palliate": ["fluid-restriction"],
+        "provoke": ["stress"],
+        "quality": ["excess-fluid-intake"],
+        "timing": ["daytime", "evening"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["mild", "moderate"],
+        "clinical tests": ["serum-sodium", "serum-osmolality", "urine-osmolality", "water-deprivation-test"],
+        "other symptoms": ["hyponatremia", "habit-water-drinking", "psychiatric-history"]
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "Hypothalamic disease",
+      "system": "Excessive Fluid Intake",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["subacute", "chronic"],
+        "progression": ["worsening"],
+        "palliate": ["desmopressin"],
+        "provoke": ["tumor", "inflammation", "trauma"],
+        "quality": ["central-diabetes-insipidus"],
+        "timing": ["daytime", "nocturnal"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["moderate", "severe"],
+        "clinical tests": ["serum-sodium", "serum-osmolality", "urine-osmolality", "water-deprivation-test", "desmopressin-challenge", "mri-brain"],
+        "other symptoms": ["polydipsia", "nocturia", "headache", "visual-changes", "dehydration"]
+      },
+      "freq": "rare"
+    }
+  ],
+  "sources": {
+    "index_keys": [
+      "Polyuria"
+    ],
+    "index_type": "clinical"
+  },
+  "symptoms": {}
+}

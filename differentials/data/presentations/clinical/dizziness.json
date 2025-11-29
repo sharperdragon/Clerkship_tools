@@ -1,0 +1,467 @@
+
+{
+  "presentation": "Dizziness",
+  "items": [
+    {
+      "name": "Ménière’s disease",
+      "system": "Episodic",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["acute"],
+        "progression": ["worsening"],
+        "palliate": ["rest"],
+        "provoke": ["movement"],
+        "quality": ["n/a"],
+        "timing": ["intermittent"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["moderate"],
+        "clinical tests": ["cranial-nerve-exam", "coordination-test", "gait-assessment"],
+        "other symptoms": ["nausea", "vomiting", "gait-abnormality"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Benign paroxysmal positional vertigo (BPPV)",
+      "system": "Episodic",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["sudden"],
+        "progression": ["worsening"],
+        "palliate": ["rest"],
+        "provoke": ["lying-down"],
+        "quality": ["n/a"],
+        "timing": ["intermittent"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["moderate"],
+        "clinical tests": ["coordination-test", "gait-assessment"],
+        "other symptoms": ["nausea", "vomiting"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Arrhythmia",
+      "system": "Episodic",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["sudden"],
+        "progression": ["worsening"],
+        "palliate": ["n/a"],
+        "provoke": ["exertion"],
+        "quality": ["n/a"],
+        "timing": ["intermittent"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["severe"],
+        "clinical tests": ["peripheral-pulse-assessment", "orthostatic-blood-pressure"],
+        "other symptoms": ["palpitations", "syncope", "dyspnea"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Postural hypotension",
+      "system": "Episodic",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["acute"],
+        "progression": ["worsening"],
+        "palliate": ["rest"],
+        "provoke": ["n/a"],
+        "quality": ["n/a"],
+        "timing": ["intermittent"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["moderate"],
+        "clinical tests": ["orthostatic-blood-pressure"],
+        "other symptoms": ["syncope", "fatigue"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Migraine/Vestibular migraine",
+      "system": "Episodic",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["subacute"],
+        "progression": ["worsening"],
+        "palliate": ["rest"],
+        "provoke": ["stress"],
+        "quality": ["n/a"],
+        "timing": ["intermittent"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["moderate"],
+        "clinical tests": ["cranial-nerve-exam", "visual-field-test"],
+        "other symptoms": ["nausea", "vomiting"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Hyperventilation",
+      "system": "Episodic",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["acute"],
+        "progression": ["worsening"],
+        "palliate": ["rest"],
+        "provoke": ["stress"],
+        "quality": ["n/a"],
+        "timing": ["intermittent"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["mild"],
+        "clinical tests": ["inspection", "peripheral-pulse-assessment"],
+        "other symptoms": ["dyspnea", "palpitations", "fatigue"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Drugs (antihypertensives, antidepressants)",
+      "system": "Episodic",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["subacute"],
+        "progression": ["worsening"],
+        "palliate": ["n/a"],
+        "provoke": ["n/a"],
+        "quality": ["n/a"],
+        "timing": ["intermittent"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["mild"],
+        "clinical tests": ["orthostatic-blood-pressure", "inspection"],
+        "other symptoms": ["fatigue", "syncope"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Hypoglycemia",
+      "system": "Episodic",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["acute"],
+        "progression": ["worsening"],
+        "palliate": ["rest"],
+        "provoke": ["empty-stomach"],
+        "quality": ["n/a"],
+        "timing": ["intermittent"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["moderate"],
+        "clinical tests": ["orthostatic-blood-pressure", "glucose-fingerstick"],
+        "other symptoms": ["tachycardia", "syncope", "nausea", "fatigue"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Posterior circulation TIAs",
+      "system": "Episodic",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["sudden"],
+        "progression": ["improving"],
+        "palliate": ["n/a"],
+        "provoke": ["n/a"],
+        "quality": ["n/a"],
+        "timing": ["intermittent"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["severe"],
+        "clinical tests": ["cranial-nerve-exam", "visual-field-test", "motor-strength-testing", "sensory-testing"],
+        "other symptoms": ["visual-loss", "limb-weakness", "syncope"]
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Anxiety",
+      "system": "Episodic",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["subacute"],
+        "progression": ["worsening"],
+        "palliate": ["rest"],
+        "provoke": ["stress"],
+        "quality": ["n/a"],
+        "timing": ["intermittent"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["mild"],
+        "clinical tests": ["inspection", "peripheral-pulse-assessment"],
+        "other symptoms": ["palpitations", "dyspnea", "fatigue"]
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Seizures (partial)",
+      "system": "Episodic",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["sudden"],
+        "progression": ["improving"],
+        "palliate": ["n/a"],
+        "provoke": ["n/a"],
+        "quality": ["n/a"],
+        "timing": ["intermittent"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["moderate"],
+        "clinical tests": ["cranial-nerve-exam"],
+        "other symptoms": ["seizure", "fatigue"]
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Carbon monoxide poisoning",
+      "system": "Episodic",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["acute"],
+        "progression": ["worsening"],
+        "palliate": ["n/a"],
+        "provoke": ["n/a"],
+        "quality": ["n/a"],
+        "timing": ["persistent"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["severe"],
+        "clinical tests": ["inspection"],
+        "other symptoms": ["nausea", "fatigue", "syncope"]
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "Persistent postural-perceptual dizziness (PPPD)",
+      "system": "Episodic",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["chronic"],
+        "progression": ["stable"],
+        "palliate": ["n/a"],
+        "provoke": ["stress"],
+        "quality": ["n/a"],
+        "timing": ["persistent"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["mild"],
+        "clinical tests": ["gait-assessment", "coordination-test"],
+        "other symptoms": ["fatigue", "gait-abnormality"]
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "Labyrinthitis",
+      "system": "Acute Onset",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["acute"],
+        "progression": ["worsening"],
+        "palliate": ["rest"],
+        "provoke": ["n/a"],
+        "quality": ["n/a"],
+        "timing": ["persistent"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["moderate"],
+        "clinical tests": ["cranial-nerve-exam", "gait-assessment", "coordination-test", "pupillary-light-reflex"],
+        "other symptoms": ["nausea", "vomiting", "gait-abnormality"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Vestibular neuronitis",
+      "system": "Acute Onset",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["acute"],
+        "progression": ["worsening"],
+        "palliate": ["rest"],
+        "provoke": ["n/a"],
+        "quality": ["n/a"],
+        "timing": ["persistent"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["moderate"],
+        "clinical tests": ["cranial-nerve-exam", "gait-assessment", "coordination-test", "pupillary-light-reflex"],
+        "other symptoms": ["nausea", "vomiting", "gait-abnormality"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Acute alcohol or recreational drug intoxication",
+      "system": "Acute Onset",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["acute"],
+        "progression": ["worsening"],
+        "palliate": ["n/a"],
+        "provoke": ["alcohol"],
+        "quality": ["n/a"],
+        "timing": ["intermittent"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["moderate"],
+        "clinical tests": ["pupillary-light-reflex", "cranial-nerve-exam"],
+        "other symptoms": ["nausea", "vomiting", "fatigue", "syncope"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Head injuries",
+      "system": "Acute Onset",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["sudden"],
+        "progression": ["worsening"],
+        "palliate": ["n/a"],
+        "provoke": ["n/a"],
+        "quality": ["n/a"],
+        "timing": ["intermittent"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["severe"],
+        "clinical tests": ["pupillary-light-reflex", "cranial-nerve-exam", "motor-strength-testing", "coordination-test"],
+        "other symptoms": ["nausea", "vomiting", "syncope"]
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Posterior circulation CVA",
+      "system": "Acute Onset",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["sudden"],
+        "progression": ["worsening"],
+        "palliate": ["n/a"],
+        "provoke": ["n/a"],
+        "quality": ["n/a"],
+        "timing": ["persistent"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["severe"],
+        "clinical tests": ["cranial-nerve-exam", "visual-field-test", "motor-strength-testing", "sensory-testing"],
+        "other symptoms": ["visual-loss", "limb-weakness", "syncope", "dysphagia"]
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Diabetes mellitus",
+      "system": "Gradual Onset",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["chronic"],
+        "progression": ["worsening"],
+        "palliate": ["n/a"],
+        "provoke": ["n/a"],
+        "quality": ["n/a"],
+        "timing": ["persistent"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["mild"],
+        "clinical tests": ["orthostatic-blood-pressure", "inspection"],
+        "other symptoms": ["fatigue", "syncope"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Hypothyroidism",
+      "system": "Gradual Onset",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["chronic"],
+        "progression": ["worsening"],
+        "palliate": ["n/a"],
+        "provoke": ["n/a"],
+        "quality": ["n/a"],
+        "timing": ["persistent"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["mild"],
+        "clinical tests": ["inspection", "peripheral-pulse-assessment"],
+        "other symptoms": ["fatigue"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Multiple sclerosis",
+      "system": "Gradual Onset",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["chronic"],
+        "progression": ["worsening"],
+        "palliate": ["n/a"],
+        "provoke": ["n/a"],
+        "quality": ["n/a"],
+        "timing": ["persistent"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["moderate"],
+        "clinical tests": ["cranial-nerve-exam", "motor-strength-testing", "sensory-testing", "coordination-test", "gait-assessment"],
+        "other symptoms": ["gait-abnormality", "limb-weakness", "fatigue"]
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Aortic stenosis",
+      "system": "Gradual Onset",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["insidious"],
+        "progression": ["worsening"],
+        "palliate": ["rest"],
+        "provoke": ["exertion"],
+        "quality": ["n/a"],
+        "timing": ["intermittent"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["severe"],
+        "clinical tests": ["peripheral-pulse-assessment"],
+        "other symptoms": ["syncope", "dyspnea", "fatigue"]
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Cerebellopontine angle tumour",
+      "system": "Gradual Onset",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["insidious"],
+        "progression": ["worsening"],
+        "palliate": ["n/a"],
+        "provoke": ["n/a"],
+        "quality": ["n/a"],
+        "timing": ["persistent"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["moderate"],
+        "clinical tests": ["cranial-nerve-exam", "gait-assessment", "coordination-test"],
+        "other symptoms": ["gait-abnormality", "fatigue"]
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "Ototoxicity – aminoglycosides (i.e. gentamicin)",
+      "system": "Gradual Onset",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["subacute"],
+        "progression": ["worsening"],
+        "palliate": ["n/a"],
+        "provoke": ["n/a"],
+        "quality": ["n/a"],
+        "timing": ["persistent"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["moderate"],
+        "clinical tests": ["gait-assessment", "coordination-test", "cranial-nerve-exam"],
+        "other symptoms": ["gait-abnormality", "fatigue"]
+      },
+      "freq": "rare"
+    }
+  ],
+  "sources": {
+    "index_keys": ["Dizziness"],
+    "index_type": "clinical"
+  },
+  "symptoms": {}
+}

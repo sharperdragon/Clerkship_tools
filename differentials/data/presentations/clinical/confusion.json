@@ -1,0 +1,486 @@
+{
+  "presentation": "Confusion",
+  "items": [
+    {
+      "name": "Alcohol intoxication/withdrawal",
+      "system": "Toxins/Drugs",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["acute","hours"],
+        "progression": ["worsening"],
+        "palliate": ["alcohol-cessation","rest"],
+        "provoke": ["alcohol"],
+        "quality": ["n/a"],
+        "timing": ["intermittent","nocturnal"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["moderate"],
+        "clinical tests": ["glucose-fingerstick","coordination-test","gait-assessment","pupillary-light-reflex"],
+        "other symptoms": ["confusion","hallucinations","tremor","nausea","vomiting","fatigue"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Drug intoxication",
+      "system": "Toxins/Drugs",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["acute"],
+        "progression": ["worsening"],
+        "palliate": ["rest"],
+        "provoke": ["n/a"],
+        "quality": ["n/a"],
+        "timing": ["intermittent"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["moderate"],
+        "clinical tests": ["glucose-fingerstick","pupillary-light-reflex","cranial-nerve-exam"],
+        "other symptoms": ["confusion","nausea","vomiting","syncope"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Respiratory disorders",
+      "system": "Hypoxia",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["acute","subacute"],
+        "progression": ["worsening"],
+        "palliate": ["rest"],
+        "provoke": ["exertion","lying-down"],
+        "quality": ["n/a"],
+        "timing": ["with-activity","nocturnal"],
+        "region": ["n/a"],
+        "radiation": ["chest"],
+        "severity": ["moderate"],
+        "clinical tests": ["lung-auscultation","orthostatic-blood-pressure","inspection"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Cardiac failure",
+      "system": "Hypoxia",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["subacute","months"],
+        "progression": ["worsening"],
+        "palliate": ["elevation","rest"],
+        "provoke": ["exertion","lying-down"],
+        "quality": ["n/a"],
+        "timing": ["with-activity","nocturnal","persistent"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["moderate"],
+        "clinical tests": ["jugular distension","hepatojugular-reflux","lung-auscultation","peripheral-pulse-assessment"],
+        "other symptoms": ["dyspnea","orthopnea","paroxysmal-nocturnal-dyspnea","edema","fatigue"]
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Hypoglycemia",
+      "system": "Metabolic Disorder",
+      "redFlag": true,
+      "hpi": {
+        "onset": ["acute","rapid"],
+        "progression": ["worsening"],
+        "palliate": ["rest"],
+        "provoke": ["exercise","empty-stomach","exertion"],
+        "quality": ["n/a"],
+        "timing": ["between-meals","morning","episodic"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["severe"],
+        "clinical tests": ["glucose-fingerstick","orthostatic-blood-pressure"],
+        "other symptoms": ["abnormal-sweating","tremor","confusion","syncope","tachycardia","clammy-skin","blurred-vision","fatigue"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Hyperglycemia",
+      "system": "Metabolic Disorder",
+      "redFlag": true,
+      "hpi": {
+        "onset": ["subacute","days"],
+        "progression": ["worsening"],
+        "palliate": ["n/a"],
+        "provoke": ["dehydration","stress"],
+        "quality": ["n/a"],
+        "timing": ["persistent"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["moderate"],
+        "clinical tests": ["glucose-fingerstick","urine-dipstick"],
+        "other symptoms": ["polyuria","polydipsia","weight-loss","dehydration","dry-mucous-membranes","fatigue","nausea","vomiting"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Electrolyte imbalance (e.g., sodium, calcium)",
+      "system": "Metabolic Disorder",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["subacute","days"],
+        "progression": ["worsening"],
+        "palliate": ["n/a"],
+        "provoke": ["dehydration"],
+        "quality": ["n/a"],
+        "timing": ["persistent"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["moderate"],
+        "clinical tests": ["orthostatic-blood-pressure","chvostek-sign","trousseau-sign"],
+        "other symptoms": ["limb-weakness","paresthesia","cramps","confusion","fatigue"]
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Thiamine (vitamin B1) deficiency",
+      "system": "Metabolic Disorder",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["chronic","months"],
+        "progression": ["worsening"],
+        "palliate": ["alcohol-cessation"],
+        "provoke": ["alcohol"],
+        "quality": ["n/a"],
+        "timing": ["persistent"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["moderate"],
+        "clinical tests": ["gait-assessment","coordination-test","cranial-nerve-exam"],
+        "other symptoms": ["confusion","nystagmus","neuropathic-pain","fatigue"]
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Vitamin B12 deficiency",
+      "system": "Metabolic Disorder",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["chronic","months"],
+        "progression": ["worsening"],
+        "palliate": ["n/a"],
+        "provoke": ["n/a"],
+        "quality": ["n/a"],
+        "timing": ["persistent"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["moderate"],
+        "clinical tests": ["sensory-testing","reflex-testing","motor-strength-testing"],
+        "other symptoms": ["paresthesia","neuropathic-pain","fatigue","gait-abnormality"]
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Folate deficiency",
+      "system": "Metabolic Disorder",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["chronic"],
+        "progression": ["worsening"],
+        "palliate": ["n/a"],
+        "provoke": ["n/a"],
+        "quality": ["n/a"],
+        "timing": ["persistent"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["mild"],
+        "clinical tests": ["inspection"],
+        "other symptoms": ["fatigue","malaise","weight-loss"]
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "Renal failure",
+      "system": "Systemic Disease",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["subacute","chronic"],
+        "progression": ["worsening"],
+        "palliate": ["n/a"],
+        "provoke": ["dehydration"],
+        "quality": ["n/a"],
+        "timing": ["persistent"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["moderate"],
+        "clinical tests": ["urine-dipstick","inspection","orthostatic-blood-pressure"],
+        "other symptoms": ["edema","fatigue","nausea","vomiting","confusion"]
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Liver failure",
+      "system": "Systemic Disease",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["chronic","months"],
+        "progression": ["worsening"],
+        "palliate": ["alcohol-cessation"],
+        "provoke": ["alcohol"],
+        "quality": ["n/a"],
+        "timing": ["persistent"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["moderate"],
+        "clinical tests": ["inspection","scratch-test (liver)"],
+        "other symptoms": ["jaundice","ascites","fatigue","confusion"]
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Thyroid disorders",
+      "system": "Systemic Disease",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["subacute","chronic"],
+        "progression": ["worsening"],
+        "palliate": ["n/a"],
+        "provoke": ["stress"],
+        "quality": ["n/a"],
+        "timing": ["persistent"],
+        "region": ["neck"],
+        "radiation": ["n/a"],
+        "severity": ["mild"],
+        "clinical tests": ["thyroid-palpation"],
+        "other symptoms": ["fatigue","weight-change","cold-intolerance","tremor","palpitations"]
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "Head injuries",
+      "system": "Neurological",
+      "redFlag": true,
+      "hpi": {
+        "onset": ["sudden","acute"],
+        "progression": ["worsening"],
+        "palliate": ["rest"],
+        "provoke": ["n/a"],
+        "quality": ["n/a"],
+        "timing": ["post-traumatic","episodic"],
+        "region": ["scalp","face","n/a"],
+        "radiation": ["n/a"],
+        "severity": ["severe"],
+        "clinical tests": ["pupillary-light-reflex","cranial-nerve-exam","motor-strength-testing","coordination-test"],
+        "other symptoms": ["dizziness","nausea","vomiting","visual-problem","syncope","confusion"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Epilepsy (post-ictal)",
+      "system": "Neurological",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["sudden"],
+        "progression": ["improving"],
+        "palliate": ["rest"],
+        "provoke": ["n/a"],
+        "quality": ["n/a"],
+        "timing": ["episodic"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["moderate"],
+        "clinical tests": ["cranial-nerve-exam"],
+        "other symptoms": ["seizure","fatigue","confusion"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Stroke/TIA",
+      "system": "Neurological",
+      "redFlag": true,
+      "hpi": {
+        "onset": ["sudden","acute"],
+        "progression": ["worsening"],
+        "palliate": ["n/a"],
+        "provoke": ["n/a"],
+        "quality": ["n/a"],
+        "timing": ["persistent"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["severe"],
+        "clinical tests": ["cranial-nerve-exam","motor-strength-testing","sensory-testing","visual-field-test"],
+        "other symptoms": ["stroke-symptoms","limb-weakness","visual-loss","dysphagia","syncope"]
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Cerebral metastasis",
+      "system": "Neurological",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["subacute","chronic"],
+        "progression": ["worsening"],
+        "palliate": ["n/a"],
+        "provoke": ["n/a"],
+        "quality": ["n/a"],
+        "timing": ["persistent"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["severe"],
+        "clinical tests": ["cranial-nerve-exam","motor-strength-testing"],
+        "other symptoms": ["seizure","nausea","vomiting","fatigue"]
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Intracerebral hemorrhage",
+      "system": "Neurological",
+      "redFlag": true,
+      "hpi": {
+        "onset": ["sudden"],
+        "progression": ["worsening"],
+        "palliate": ["n/a"],
+        "provoke": ["n/a"],
+        "quality": ["n/a"],
+        "timing": ["persistent"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["catastrophic"],
+        "clinical tests": ["pupillary-light-reflex","cranial-nerve-exam"],
+        "other symptoms": ["stroke-symptoms","syncope","vomiting"]
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Urinary tract infection",
+      "system": "Infection",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["acute","days"],
+        "progression": ["worsening"],
+        "palliate": ["n/a"],
+        "provoke": ["n/a"],
+        "quality": ["n/a"],
+        "timing": ["persistent"],
+        "region": ["suprapubic"],
+        "radiation": ["n/a"],
+        "severity": ["mild"],
+        "clinical tests": ["suprapubic-tenderness","urine-dipstick"],
+        "other symptoms": ["dysuria","fever","malaise","confusion"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Respiratory tract infections",
+      "system": "Infection",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["acute"],
+        "progression": ["worsening"],
+        "palliate": ["rest"],
+        "provoke": ["exertion"],
+        "quality": ["n/a"],
+        "timing": ["daytime","nocturnal"],
+        "region": ["lower-chest","n/a"],
+        "radiation": ["chest"],
+        "severity": ["moderate"],
+        "clinical tests": ["lung-auscultation"],
+        "other symptoms": ["fever","cough","dyspnea","fatigue"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Sepsis",
+      "system": "Infection",
+      "redFlag": true,
+      "hpi": {
+        "onset": ["acute"],
+        "progression": ["worsening"],
+        "palliate": ["n/a"],
+        "provoke": ["n/a"],
+        "quality": ["n/a"],
+        "timing": ["persistent"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["severe"],
+        "clinical tests": ["orthostatic-blood-pressure","capillary-refill"],
+        "other symptoms": ["fever","hypotension","tachycardia","dyspnea","confusion","malaise"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Meningitis/encephalitis",
+      "system": "Infection",
+      "redFlag": true,
+      "hpi": {
+        "onset": ["acute"],
+        "progression": ["worsening"],
+        "palliate": ["rest"],
+        "provoke": ["n/a"],
+        "quality": ["n/a"],
+        "timing": ["persistent"],
+        "region": ["neck","n/a"],
+        "radiation": ["n/a"],
+        "severity": ["severe"],
+        "clinical tests": ["pupillary-light-reflex","cranial-nerve-exam"],
+        "other symptoms": ["fever","neck-stiffness","photophobia","nausea","vomiting","confusion"]
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Dementia",
+      "system": "Miscellaneous",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["insidious","chronic","months"],
+        "progression": ["worsening"],
+        "palliate": ["n/a"],
+        "provoke": ["n/a"],
+        "quality": ["n/a"],
+        "timing": ["persistent","daytime"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["mild"],
+        "clinical tests": ["cranial-nerve-exam","gait-assessment"],
+        "other symptoms": ["confusion","gait-abnormality","falls","fatigue"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Constipation",
+      "system": "Miscellaneous",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["subacute","days"],
+        "progression": ["worsening"],
+        "palliate": ["n/a"],
+        "provoke": ["n/a"],
+        "quality": ["n/a"],
+        "timing": ["persistent"],
+        "region": ["suprapubic","abdomen"],
+        "radiation": ["n/a"],
+        "severity": ["mild"],
+        "clinical tests": ["digital-rectal-exam","inspection"],
+        "other symptoms": ["constipation","abdominal-pain","nausea","malaise","confusion"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Environmental changes (elderly)",
+      "system": "Miscellaneous",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["acute","subacute"],
+        "progression": ["stable"],
+        "palliate": ["rest"],
+        "provoke": ["stress"],
+        "quality": ["n/a"],
+        "timing": ["intermittent","daytime","nocturnal"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["mild"],
+        "clinical tests": ["inspection"],
+        "other symptoms": ["confusion","malaise","fatigue"]
+      },
+      "freq": "common"
+    }
+  ],
+  "sources": {
+    "index_keys": [
+      "Confusion"
+    ],
+    "index_type": "clinical"
+  },
+  "symptoms": {}
+}

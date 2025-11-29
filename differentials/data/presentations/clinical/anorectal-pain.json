@@ -1,0 +1,221 @@
+{
+  "presentation": "Anorectal pain",
+  "items": [
+    {
+      "name": "Fissure-in-ano",
+      "system": "General",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["acute", "subacute"],
+        "progression": ["worsening", "improving"],
+        "palliate": ["analgesics", "sitz-baths"],
+        "provoke": ["defecation"],
+        "quality": ["sharp", "tearing", "burning"],
+        "timing": ["post-defecation", "intermittent"],
+        "region": ["perianal", "anal-canal"],
+        "radiation": ["n/a"],
+        "severity": ["moderate", "severe"],
+        "clinical tests": ["inspection", "anoscopy"],
+        "other symptoms": ["hematochezia", "anorectal-pain", "constipation", "pruritus-ani"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Perianal hematoma",
+      "system": "General",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["acute"],
+        "progression": ["worsening", "resolving"],
+        "palliate": ["analgesics", "ice"],
+        "provoke": ["defecation", "n/a"],
+        "quality": ["throbbing", "tender"],
+        "timing": ["sudden"],
+        "region": ["perianal"],
+        "radiation": ["n/a"],
+        "severity": ["moderate", "severe"],
+        "clinical tests": ["inspection"],
+        "other symptoms": ["bluish-swelling", "anorectal-pain"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Thrombosed hemorrhoids",
+      "system": "General",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["acute"],
+        "progression": ["worsening", "resolving"],
+        "palliate": ["sitz-baths", "analgesics"],
+        "provoke": ["defecation"],
+        "quality": ["throbbing", "pressure", "tender"],
+        "timing": ["post-defecation", "constant"],
+        "region": ["perianal"],
+        "radiation": ["n/a"],
+        "severity": ["moderate", "severe"],
+        "clinical tests": ["inspection", "anoscopy"],
+        "other symptoms": ["hematochezia", "pruritus-ani", "swelling"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Anorectal abscess (i.e. perinal, interspincteric, ischiorectal)",
+      "system": "General",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["acute", "subacute"],
+        "progression": ["worsening"],
+        "palliate": ["analgesics"],
+        "provoke": ["n/a"],
+        "quality": ["throbbing", "tender"],
+        "timing": ["constant"],
+        "region": ["perianal", "ischiorectal"],
+        "radiation": ["n/a"],
+        "severity": ["severe"],
+        "clinical tests": ["inspection", "digital-rectal-exam", "ultrasound"],
+        "other symptoms": ["fever", "malaise", "purulent-discharge"]
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Trauma",
+      "system": "General",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["acute"],
+        "progression": ["improving", "worsening"],
+        "palliate": ["analgesics", "ice"],
+        "provoke": ["n/a"],
+        "quality": ["sharp", "tender"],
+        "timing": ["sudden"],
+        "region": ["perianal", "anal-canal"],
+        "radiation": ["n/a"],
+        "severity": ["mild", "moderate", "severe"],
+        "clinical tests": ["inspection", "anoscopy"],
+        "other symptoms": ["hematochezia", "swelling"]
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Anorectal gonorrhoea",
+      "system": "General",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["subacute"],
+        "progression": ["worsening"],
+        "palliate": ["n/a"],
+        "provoke": ["n/a"],
+        "quality": ["burning", "itching"],
+        "timing": ["constant"],
+        "region": ["rectum", "perianal"],
+        "radiation": ["n/a"],
+        "severity": ["mild", "moderate"],
+        "clinical tests": ["n/a"],
+        "other symptoms": ["mucopurulent-discharge", "tenesmus", "bleeding"]
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "Herpes",
+      "system": "General",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["acute"],
+        "progression": ["recurrent"],
+        "palliate": ["n/a"],
+        "provoke": ["n/a"],
+        "quality": ["burning", "tender"],
+        "timing": ["episodic"],
+        "region": ["perianal", "buttocks"],
+        "radiation": ["n/a"],
+        "severity": ["mild", "moderate"],
+        "clinical tests": ["n/a"],
+        "other symptoms": ["dysuria", "fever", "inguinal-lymphadenopathy"]
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "Fistula-in-ano",
+      "system": "Chronic",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["subacute", "chronic"],
+        "progression": ["recurrent", "worsening"],
+        "palliate": ["sitz-baths", "drainage"],
+        "provoke": ["n/a"],
+        "quality": ["pain", "discharge"],
+        "timing": ["intermittent", "persistent"],
+        "region": ["perianal"],
+        "radiation": ["n/a"],
+        "severity": ["mild", "moderate"],
+        "clinical tests": ["inspection", "anoscopy"],
+        "other symptoms": ["soiling", "pruritus-ani", "swelling"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Proctalgia fugax",
+      "system": "Chronic",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["sudden"],
+        "progression": ["episodic"],
+        "palliate": ["heat"],
+        "provoke": ["stress", "defecation"],
+        "quality": ["spasm", "cramping"],
+        "timing": ["episodic", "intermittent"],
+        "region": ["rectum"],
+        "radiation": ["n/a"],
+        "severity": ["mild", "moderate", "severe"],
+        "clinical tests": ["n/a"],
+        "other symptoms": ["no-bleeding", "no-fever"]
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "Solitary rectal ulcer",
+      "system": "Chronic",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["insidious", "chronic"],
+        "progression": ["worsening"],
+        "palliate": ["n/a"],
+        "provoke": ["constipation", "straining"],
+        "quality": ["dull", "aching"],
+        "timing": ["post-defecation", "persistent"],
+        "region": ["rectum"],
+        "radiation": ["n/a"],
+        "severity": ["mild", "moderate"],
+        "clinical tests": ["n/a"],
+        "other symptoms": ["tenesmus", "mucus", "hematochezia"]
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "Cauda equina lesions",
+      "system": "Chronic",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["acute", "subacute"],
+        "progression": ["worsening"],
+        "palliate": ["n/a"],
+        "provoke": ["n/a"],
+        "quality": ["aching", "sharp"],
+        "timing": ["constant"],
+        "region": ["sacral", "low-back"],
+        "radiation": ["legs"],
+        "severity": ["severe"],
+        "clinical tests": ["mri-spine", "straight-leg-raise"],
+        "other symptoms": ["saddle-anesthesia", "urinary-retention", "leg-weakness", "constipation"]
+      },
+      "freq": "rare"
+    }
+  ],
+  "sources": {
+    "index_keys": [
+      "Anorectal pain"
+    ],
+    "index_type": "clinical"
+  },
+  "symptoms": {}
+}

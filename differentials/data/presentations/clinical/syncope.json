@@ -1,0 +1,392 @@
+{
+  "presentation": "Syncope",
+  "items": [
+    {
+      "name": "Myocardial infarction (when complicated by arrhythmia or",
+      "system": "Cardiovascular",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["sudden"],
+        "progression": ["worsening"],
+        "palliate": ["rest", "nitrates"],
+        "provoke": ["exertion", "emotional-stress"],
+        "quality": ["n/a"],
+        "timing": ["intermittent"],
+        "region": ["retrosternal"],
+        "radiation": ["left-shoulder", "jaw"],
+        "severity": ["severe"],
+        "clinical tests": ["auscultation", "jugular-venous-pressure", "carotid-bruit", "peripheral-pulse-assessment"],
+        "other symptoms": ["palpitations", "clammy-skin", "dyspnea", "nausea"]
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Pulmonary embolism",
+      "system": "Cardiovascular",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["sudden", "subacute"],
+        "progression": ["worsening"],
+        "palliate": ["rest"],
+        "provoke": ["n/a"],
+        "quality": ["n/a"],
+        "timing": ["intermittent"],
+        "region": ["lower-chest"],
+        "radiation": ["back"],
+        "severity": ["severe"],
+        "clinical tests": ["lung-auscultation", "chest-percussion", "jugular-venous-pressure"],
+        "other symptoms": ["dyspnea", "tachycardia", "cough"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Aortic stenosis",
+      "system": "Cardiovascular",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["insidious"],
+        "progression": ["worsening"],
+        "palliate": ["rest"],
+        "provoke": ["exertion"],
+        "quality": ["n/a"],
+        "timing": ["with-activity", "intermittent"],
+        "region": ["retrosternal"],
+        "radiation": ["jaw"],
+        "severity": ["moderate", "severe"],
+        "clinical tests": ["auscultation", "carotid-bruit", "jugular-venous-pressure"],
+        "other symptoms": ["dyspnea", "fatigue", "pain"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Carotid sinus hypersensitivity",
+      "system": "Cardiovascular",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["subacute"],
+        "progression": ["intermittent"],
+        "palliate": ["rest"],
+        "provoke": ["pressure", "Touch"],
+        "quality": ["n/a"],
+        "timing": ["episodic"],
+        "region": ["neck"],
+        "radiation": ["n/a"],
+        "severity": ["mild", "moderate"],
+        "clinical tests": ["carotid-bruit", "orthostatic-blood-pressure"],
+        "other symptoms": ["clammy-skin", "nausea"]
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "Hypertrophic obstructive cardiomyopathy",
+      "system": "Cardiovascular",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["insidious"],
+        "progression": ["worsening"],
+        "palliate": ["rest"],
+        "provoke": ["exertion", "stress"],
+        "quality": ["n/a"],
+        "timing": ["with-activity"],
+        "region": ["retrosternal"],
+        "radiation": ["left-shoulder"],
+        "severity": ["moderate", "severe"],
+        "clinical tests": ["auscultation", "jugular-venous-pressure", "peripheral-pulse-assessment"],
+        "other symptoms": ["palpitations", "dyspnea", "pain"]
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "Situational syncope",
+      "system": "Vasovagal Syncope",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["acute"],
+        "progression": ["intermittent"],
+        "palliate": ["rest"],
+        "provoke": ["defecation", "stress"],
+        "quality": ["n/a"],
+        "timing": ["episodic"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["mild", "moderate"],
+        "clinical tests": ["orthostatic-blood-pressure"],
+        "other symptoms": ["nausea", "clammy-skin"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Micturition syncope",
+      "system": "Vasovagal Syncope",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["acute"],
+        "progression": ["intermittent"],
+        "palliate": ["rest"],
+        "provoke": ["urination"],
+        "quality": ["n/a"],
+        "timing": ["nocturnal", "episodic"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["mild", "moderate"],
+        "clinical tests": ["orthostatic-blood-pressure"],
+        "other symptoms": ["nausea", "clammy-skin"]
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Cough syncope",
+      "system": "Vasovagal Syncope",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["acute"],
+        "progression": ["intermittent"],
+        "palliate": ["rest"],
+        "provoke": ["coughing"],
+        "quality": ["n/a"],
+        "timing": ["episodic"],
+        "region": ["lower-chest"],
+        "radiation": ["n/a"],
+        "severity": ["mild", "moderate"],
+        "clinical tests": ["lung-auscultation"],
+        "other symptoms": ["cough", "dyspnea"]
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Prolonged bedrest",
+      "system": "Orthostatic Hypotension",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["subacute"],
+        "progression": ["improving"],
+        "palliate": ["activity"],
+        "provoke": ["n/a"],
+        "quality": ["n/a"],
+        "timing": ["daytime"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["mild"],
+        "clinical tests": ["orthostatic-blood-pressure"],
+        "other symptoms": ["orthostasis", "fatigue", "blurred-vision"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Drug-induced",
+      "system": "Orthostatic Hypotension",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["subacute"],
+        "progression": ["worsening"],
+        "palliate": ["n/a"],
+        "provoke": ["n/a"],
+        "quality": ["n/a"],
+        "timing": ["persistent"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["moderate"],
+        "clinical tests": ["orthostatic-blood-pressure"],
+        "other symptoms": ["orthostasis", "fatigue"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Hypovolemic",
+      "system": "Orthostatic Hypotension",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["acute", "subacute"],
+        "progression": ["worsening"],
+        "palliate": ["rest"],
+        "provoke": ["dehydration"],
+        "quality": ["n/a"],
+        "timing": ["intermittent"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["moderate", "severe"],
+        "clinical tests": ["orthostatic-blood-pressure", "capillary-refill"],
+        "other symptoms": ["tachycardia", "clammy-skin", "orthostasis"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Autonomic failure",
+      "system": "Orthostatic Hypotension",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["insidious"],
+        "progression": ["worsening"],
+        "palliate": ["n/a"],
+        "provoke": ["n/a"],
+        "quality": ["n/a"],
+        "timing": ["persistent"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["moderate"],
+        "clinical tests": ["orthostatic-blood-pressure"],
+        "other symptoms": ["orthostasis", "fatigue", "blurred-vision"]
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Supraventricular tachycardia",
+      "system": "Arrhythmia",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["sudden"],
+        "progression": ["intermittent"],
+        "palliate": ["rest"],
+        "provoke": ["stress", "exertion"],
+        "quality": ["n/a"],
+        "timing": ["episodic"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["moderate"],
+        "clinical tests": ["auscultation", "peripheral-pulse-assessment", "jugular-venous-pressure"],
+        "other symptoms": ["palpitations", "clammy-skin", "dyspnea"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Ventricular tachycardia",
+      "system": "Arrhythmia",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["sudden"],
+        "progression": ["intermittent"],
+        "palliate": ["rest"],
+        "provoke": ["stress", "exertion"],
+        "quality": ["n/a"],
+        "timing": ["episodic"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["severe", "catastrophic"],
+        "clinical tests": ["auscultation", "peripheral-pulse-assessment", "jugular-venous-pressure"],
+        "other symptoms": ["palpitations", "clammy-skin", "dyspnea"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Sick sinus syndrome",
+      "system": "Arrhythmia",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["insidious"],
+        "progression": ["intermittent"],
+        "palliate": ["rest"],
+        "provoke": ["n/a"],
+        "quality": ["n/a"],
+        "timing": ["intermittent"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["moderate"],
+        "clinical tests": ["auscultation", "peripheral-pulse-assessment"],
+        "other symptoms": ["fatigue", "falls"]
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "AV nodal block (Mobitz type 2 or 3rd degree block)",
+      "system": "Arrhythmia",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["insidious"],
+        "progression": ["intermittent"],
+        "palliate": ["rest"],
+        "provoke": ["n/a"],
+        "quality": ["n/a"],
+        "timing": ["intermittent"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["severe"],
+        "clinical tests": ["auscultation", "peripheral-pulse-assessment"],
+        "other symptoms": ["fatigue", "falls"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Seizure",
+      "system": "Neurological",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["sudden"],
+        "progression": ["intermittent"],
+        "palliate": ["rest"],
+        "provoke": ["stress"],
+        "quality": ["n/a"],
+        "timing": ["episodic"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["severe"],
+        "clinical tests": ["inspection"],
+        "other symptoms": ["falls", "clumsiness", "nausea"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Functional syncope",
+      "system": "Neurological",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["subacute"],
+        "progression": ["intermittent"],
+        "palliate": ["rest"],
+        "provoke": ["stress"],
+        "quality": ["n/a"],
+        "timing": ["episodic"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["mild"],
+        "clinical tests": ["inspection"],
+        "other symptoms": ["none"]
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "Hypoxia",
+      "system": "Metabolic",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["acute"],
+        "progression": ["worsening"],
+        "palliate": ["rest"],
+        "provoke": ["exertion"],
+        "quality": ["n/a"],
+        "timing": ["intermittent"],
+        "region": ["lower-chest"],
+        "radiation": ["n/a"],
+        "severity": ["severe"],
+        "clinical tests": ["lung-auscultation", "chest-percussion"],
+        "other symptoms": ["dyspnea", "tachycardia", "clammy-skin"]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Hypoglycemia",
+      "system": "Metabolic",
+      "redFlag": false,
+      "hpi": {
+        "onset": ["acute"],
+        "progression": ["intermittent"],
+        "palliate": ["n/a"],
+        "provoke": ["empty-stomach"],
+        "quality": ["n/a"],
+        "timing": ["daytime", "episodic"],
+        "region": ["n/a"],
+        "radiation": ["n/a"],
+        "severity": ["moderate"],
+        "clinical tests": ["glucose-fingerstick"],
+        "other symptoms": ["clammy-skin", "tachycardia", "blurred-vision"]
+      },
+      "freq": "common"
+    }
+  ],
+  "sources": {
+    "index_keys": [
+      "Syncope"
+    ],
+    "index_type": "clinical"
+  },
+  "symptoms": {}
+}
