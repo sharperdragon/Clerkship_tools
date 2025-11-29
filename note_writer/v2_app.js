@@ -817,18 +817,19 @@ function buildSubjectiveSectionOutput(sec){
     lines.push(`${label}: ${val}.`);
   }
 
-  // 2) HPI – one sentence per filled HPI field
-  const hpiParts = [];
+  // 2) HPI – emit a single narrative line composed of each filled HPI field
+  const hpiSentences = [];
   for (const id of SUBJECTIVE_HPI_FIELDS) {
     const raw = sec.fields?.[id];
     const val = (raw == null ? '' : String(raw)).trim();
     if (!val) continue;
     const label = getControlLabelFromDOM('field', id);
-    hpiParts.push(`${label}: ${val}.`);
+    hpiSentences.push(`${label}: ${val}.`);
   }
-  if (hpiParts.length) {
-    lines.push('HPI:');
-    lines.push(...hpiParts);
+  if (hpiSentences.length) {
+    const hpiLine = hpiSentences.join(' ').trim();
+    // One narrative-style HPI line (matches old app.js style better)
+    lines.push(`HPI: ${hpiLine}`);
   }
 
   // 3) General History – multiline-aware where appropriate
