@@ -426,7 +426,7 @@ function renderHeaderChecks(){
   const host = document.getElementById("headerItems");
   host.innerHTML = "";
   // Add an Acute / Non-acute toggle at the very top for subjective
-if (state.mode === "Subjective") {
+if (state.mode === "subjective") {
   const acuteWrap = document.createElement("div");
   acuteWrap.className = "acute-toggle";
   acuteWrap.style.display = "inline-flex";
@@ -454,7 +454,7 @@ if (state.mode === "Subjective") {
   let items = Array.isArray(def.headerItems) ? def.headerItems.slice() : [];
 
   // subjective: also allow items defined on General
-  if ((!items.length) && state.mode === "Subjective") {
+  if ((!items.length) && state.mode === "subjective") {
     const generalDef = Templates.sectionDefs[`${state.mode}:General`];
     if (generalDef?.headerItems?.length) items = generalDef.headerItems.slice();
   }
@@ -477,7 +477,7 @@ if (state.mode === "Subjective") {
 
   // Prefer the current section's def; for subjective, allow subj_header to come from General
   let headerDef = def;
-  if (state.mode === "Subjective") {
+  if (state.mode === "subjective") {
     const generalKey = `${state.mode}:General`;
     if (Templates.sectionDefs[generalKey]) headerDef = Templates.sectionDefs[generalKey];
   }
@@ -642,7 +642,7 @@ function renderGrid(){
   if(!def){ grid.textContent = "No schema yet."; return; }
 
   // Dynamic resizable layout for subjective (HPI | splitter | General)
-  if (state.mode === "Subjective") {
+  if (state.mode === "subjective") {
     const panels = (def.panels || []).filter(p => p && p.id !== 'subj_header');
 
     // Identify HPI (by title) and a "General History" partner (fallback to first non-HPI)
@@ -672,7 +672,7 @@ function renderGrid(){
   }
 
   // --- Special subjective splitter row (HPI | splitter | General) ---
-  if (state.mode === "Subjective" && grid.dataset.subjSplit === "1") {
+  if (state.mode === "subjective" && grid.dataset.subjSplit === "1") {
     const panels = (def.panels || []).filter(p => p && p.id !== 'subj_header');
     const hpi = panels.find(p => p.title === "History of Present Illness");
     const gen = panels.find(p => p.title === "General History") || panels.find(p => p !== hpi);
@@ -754,7 +754,7 @@ function renderGrid(){
                   def.ui || {}
                 );
               } else if (def.type === "range") {
-                const stacked = (state.mode === "Subjective") && !(def.ui && def.ui.inline === true);
+                const stacked = (state.mode === "subjective") && !(def.ui && def.ui.inline === true);
                 return fieldRange(
                   def.id, def.label, val,
                   (v) => { setField(def.id, v); renderOutput(); renderCompleteSoon(); },
@@ -762,7 +762,7 @@ function renderGrid(){
                   /*stacked*/ stacked
                 );
               } else {
-                const stacked = (state.mode === "Subjective") && !(def.ui && def.ui.inline === true);
+                const stacked = (state.mode === "subjective") && !(def.ui && def.ui.inline === true);
                 const el = fieldText(
                   def.id, def.label, val,
                   (v) => { setField(def.id, v); renderOutput(); renderCompleteSoon(); },
@@ -820,7 +820,7 @@ function renderGrid(){
               )
             );
           } else if (f.type === "range") {
-            const stacked = (state.mode === "Subjective") && !(f.ui && f.ui.inline === true);
+            const stacked = (state.mode === "subjective") && !(f.ui && f.ui.inline === true);
             r.appendChild(
               fieldRange(
                 f.id,
@@ -834,7 +834,7 @@ function renderGrid(){
               )
             );
           } else {
-            const stacked = (state.mode === "Subjective") && !(f.ui && f.ui.inline === true);
+            const stacked = (state.mode === "subjective") && !(f.ui && f.ui.inline === true);
             const elem = fieldText(
               f.id,
               f.label,
@@ -946,7 +946,7 @@ function renderGrid(){
     // Skip subjective header fields panel; rendered up top in headerItems area
     if (pd.id === 'subj_header') { return; }
     // Hide the HPI panel in Non-acute subjective mode
-    if (state.mode === "Subjective" && !isAcute() && pd.title === "History of Present Illness") {
+    if (state.mode === "subjective" && !isAcute() && pd.title === "History of Present Illness") {
       return; // skip rendering this panel entirely
     }
     const p = panel(pd.title);
@@ -1169,7 +1169,7 @@ function renderGrid(){
                 def.ui || {}
               );
             } else if (def.type === "range") {
-              const stacked = (state.mode === "Subjective") && !(def.ui && def.ui.inline === true);
+              const stacked = (state.mode === "subjective") && !(def.ui && def.ui.inline === true);
               return fieldRange(
                 def.id, def.label, val,
                 (v) => { setField(def.id, v); renderOutput(); renderCompleteSoon(); },
@@ -1177,7 +1177,7 @@ function renderGrid(){
                 /*stacked*/ stacked
               );
             } else {
-              const stacked = (state.mode === "Subjective") && !(def.ui && def.ui.inline === true);
+              const stacked = (state.mode === "subjective") && !(def.ui && def.ui.inline === true);
               const el = fieldText(
                 def.id, def.label, val,
                 (v) => { setField(def.id, v); renderOutput(); renderCompleteSoon(); },
@@ -1233,7 +1233,7 @@ function renderGrid(){
             )
           );
         } else if (f.type === "range") {
-          const stacked = (state.mode === "Subjective") && !(f.ui && f.ui.inline === true);
+          const stacked = (state.mode === "subjective") && !(f.ui && f.ui.inline === true);
           r.appendChild(
             fieldRange(
               f.id,
@@ -1245,7 +1245,7 @@ function renderGrid(){
             )
           );
         } else {
-          const stacked = (state.mode === "Subjective") && !(f.ui && f.ui.inline === true);
+          const stacked = (state.mode === "subjective") && !(f.ui && f.ui.inline === true);
           const elem = fieldText(
             f.id,
             f.label,
@@ -1312,7 +1312,7 @@ function renderOutput(){
   (function(){
     // collect items from active section, then subjective:General, then merge across mode
     let items = Array.isArray(def.headerItems) ? def.headerItems.slice() : [];
-    if ((!items.length) && state.mode === "Subjective") {
+    if ((!items.length) && state.mode === "subjective") {
       const generalDef = Templates.sectionDefs[`${state.mode}:General`];
       if (generalDef?.headerItems?.length) items = generalDef.headerItems.slice();
     }
@@ -1373,7 +1373,7 @@ function renderOutput(){
 
     // subjective panels: only emit visible text fields with content.
     // Skip boolean flag fields entirely (they just gate visibility).
-    if (state.mode === "Subjective" && pd.fields?.length){
+    if (state.mode === "subjective" && pd.fields?.length){
       // Skip HPI emission when Non-acute
       if (!isAcute() && pd.title === "History of Present Illness") {
         return; // continue to next panel
@@ -1490,7 +1490,7 @@ function renderOutput(){
   });
 
   // Fallback: if subjective produced no lines, sweep all visible text fields
-  if (state.mode === "Subjective" && lines.length === 0) {
+  if (state.mode === "subjective" && lines.length === 0) {
     const def2 = Templates.sectionDefs[`${state.mode}:${state.activeSection}`];
     (def2?.panels || []).forEach(pd => {
       (pd.fields || []).forEach(f => {
@@ -1503,7 +1503,7 @@ function renderOutput(){
     });
   }
 
-  if (state.mode === "Subjective") {
+  if (state.mode === "subjective") {
     console.debug('[subjective][renderOutput] lines:', lines.length, lines);
   }
 
@@ -1714,7 +1714,7 @@ function applyCbSelectedClass(wrapperLabel, inputEl){
 
 function cb(id,label,checked,on){
   const w = document.createElement("label");
-  w.className = "cb" + (state && state.mode === "Subjective" ? " subjective" : "");
+  w.className = "cb" + (state && state.mode === "subjective" ? " subjective" : "");
   const i=document.createElement("input"); 
   i.type="checkbox"; 
   i.checked=checked;
@@ -1786,9 +1786,9 @@ function buildSectionLines(secKey, mode, tpl){
   // Header items (text + checks) with robust fallback sourcing
   (function(){
     // Skip subjective:General headerItems if already emitted above subjective
-    if (mode === "Subjective" && /(^|:)General$/.test(secKey) && state.globals && state.globals._emittedSubjHeaderOnce) return;
+    if (mode === "subjective" && /(^|:)General$/.test(secKey) && state.globals && state.globals._emittedSubjHeaderOnce) return;
     let items = Array.isArray(def.headerItems) ? def.headerItems.slice() : [];
-    if ((!items.length) && mode === "Subjective") {
+    if ((!items.length) && mode === "subjective") {
       const generalDef = tpl.sectionDefs[`${mode}:General`];
       if (generalDef?.headerItems?.length) items = generalDef.headerItems.slice();
     }
@@ -1845,7 +1845,7 @@ function buildSectionLines(secKey, mode, tpl){
     });
 
     // subjective: include visible text fields (skip booleans)
-    if (mode === "Subjective" && pd.fields?.length){
+    if (mode === "subjective" && pd.fields?.length){
       // Skip HPI emission when Non-acute
       if (!isAcute() && pd.title === "History of Present Illness") {
         return; // next panel
@@ -1950,7 +1950,7 @@ function buildSectionLines(secKey, mode, tpl){
   });
 
   // Fallback: if subjective produced no lines, sweep all visible text fields
-  if (mode === "Subjective" && lines.length === 0) {
+  if (mode === "subjective" && lines.length === 0) {
     (def.panels || []).forEach(pd => {
       (pd.fields || []).forEach(f => {
         if (!shouldShowFieldFor(f, mode, secKey)) return;
@@ -1977,7 +1977,7 @@ function collectTextFromTemplates(mode, tpl){
     orderedSections.forEach(sectionName => {
       const secKey = `${mode}:${sectionName}`;
       const lines = buildSectionLines(secKey, mode, tpl);
-      if (mode === "Subjective") {
+      if (mode === "subjective") {
         console.debug('[subjective][collect] sec=', sectionName, 'lines=', lines.length);
       }
       if (lines.length) out.push(...lines);
@@ -2010,7 +2010,7 @@ async function renderCompleteNote(){
   const parts = [];
   // Prepend headerItems from subjective:General (Visit Note, Chief Complaint) above subjective heading
   try {
-    const subjTpl = await loadTemplatesForMode("Subjective");
+    const subjTpl = await loadTemplatesForMode("subjective");
     const genDef = subjTpl.sectionDefs["subjective:General"];
     if (genDef && Array.isArray(genDef.headerItems) && genDef.headerItems.length) {
       const sec = state.sections["subjective:General"] || { fields:{}, checkboxes:{} };
@@ -2039,7 +2039,7 @@ async function renderCompleteNote(){
     try {
       const txt = await buildNoteForMode(m);
       if (txt && txt.trim()) {
-        const sep = (m === "Subjective") ? "\n\n" : "\n";   // extra blank line after subjective
+        const sep = (m === "subjective") ? "\n\n" : "\n";   // extra blank line after subjective
         const heading = SECTION_HEADS[m] || m;
         if (m === "PE") {
           // Insert Objective heading before the Physical Exam section
@@ -2242,7 +2242,7 @@ function fieldText(id, label, value, onChange, placeholder, stacked=false){
     input.oninput = (e) => onChange(e.target.value);
   }
 
-  if (stacked && state.mode === "Subjective") {
+  if (stacked && state.mode === "subjective") {
     // Force vertical stack even if .field is flex-row in CSS
     wrap.style.display = 'flex';
     wrap.style.flexDirection = 'column';
@@ -2331,7 +2331,7 @@ function fieldRange(id, label, value, onChange, min = 0, max = 10, step = 1, sta
   right.style.gap = '6px 8px';
   right.style.maxWidth = '275px';
 
-  if (stacked && state.mode === "Subjective") {
+  if (stacked && state.mode === "subjective") {
     // Force vertical stack even if .field is flex-row in CSS
     wrap.style.display = 'flex';
     wrap.style.flexDirection = 'column';
