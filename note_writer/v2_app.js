@@ -153,6 +153,72 @@ function loadActivePatient() {
   }
 }
 
+// --- Patient list helpers ---
+function getPatientList() {
+  try {
+    const raw = localStorage.getItem(LS_KEYS.PATIENTS);
+    return raw ? JSON.parse(raw) : [];
+  } catch {
+    return [];
+  }
+}
+
+function setPatientList(list) {
+  try {
+    localStorage.setItem(LS_KEYS.PATIENTS, JSON.stringify(list));
+  } catch {
+    // ignore
+  }
+}
+
+function setActivePatientId(id) {
+  STATE.patientId = id;
+  try {
+    localStorage.setItem(LS_KEYS.ACTIVE_PATIENT, id);
+  } catch {
+    // ignore
+  }
+}
+
+function fmtPatientTime(ts) {
+  try {
+    return new Date(ts).toLocaleString();
+  } catch {
+    return String(ts);
+  }
+}
+
+function ensurePatientList() {
+  let list = getPatientList();
+  const now = Date.now();
+  const existingIds = Object.keys(STATE.data || {});
+
+  // If no stored list, bootstrap from existing STATE.data or create default
+  if (!list.length) {
+    if (existingIds.length) {
+      list = existingIds.map((id) => ({ id, createdAt: now }));
+    } else {
+      STATE.data = {
+        default: {
+          [MODES.SUBJECTIVE]: { General: bucket() },
+          [MODES.ROS]:        { General: bucket() },
+          [MODES.PE]:         { General: bucket() },
+          [MODES.MSE]:        { General: bucket() },
+        },
+      };
+      list = [{ id: 'default', createdAt: now }];
+    }
+    setPatientList(list);
+  }
+
+  // Ensure active patient id is valid and synced
+  let active = loadActivePatient();
+  if (!active || !list.some((p) => p.id === active)) {
+    active = list[0].id;
+  }
+  setActivePatientId(active);
+}
+
 
 function debounceFullNote(fn) {
   clearTimeout(_fullNoteTimer);
@@ -555,6 +621,58 @@ function onClearAll() {
   renderOutputsNow();
 }
 
+// --- Patient lifecycle helpers ---
+function newPatientId() {
+  return Math.random().toString(36).slice(2) + Date.now().toString(36);
+}
+
+function createNewPatient() {
+  const id = newPatientId();
+  const createdAt = Date.now();
+
+  const list = getPatientList();
+  list.push({ id, createdAt });
+  setPatientList(list);
+
+  // Initialize patient space
+  STATE.data[id] = {
+    [MODES.SUBJECTIVE]: { General: bucket() },
+    [MODES.ROS]:        { General: bucket() },
+    [MODES.PE]:         { General: bucket() },
+    [MODES.MSE]:        { General: bucket() },
+  };
+
+  setActivePatientId(id);
+  saveStateSoon();
+  rehydrateFromState();
+  renderOutputsNow();
+  renderPatientControls();
+}
+
+function loadPatientById(id) {
+  if (!id) return;
+  const list = getPatientList();
+  const exists = list.some((p) => p.id === id);
+  if (!exists) return;
+
+  setActivePatientId(id);
+
+  // Lazily init data bucket if missing
+  if (!STATE.data[id]) {
+    STATE.data[id] = {
+      [MODES.SUBJECTIVE]: { General: bucket() },
+      [MODES.ROS]:        { General: bucket() },
+      [MODES.PE]:         { General: bucket() },
+      [MODES.MSE]:        { General: bucket() },
+    };
+  }
+
+  saveStateSoon();
+  rehydrateFromState();
+  renderOutputsNow();
+  renderPatientControls();
+}
+
 function onClearPatients() {
   if (!confirm('Delete all saved patients and their note data? This cannot be undone.')) return;
   try {
@@ -562,7 +680,9 @@ function onClearPatients() {
     localStorage.removeItem(LS_KEYS.PATIENTS);
     localStorage.removeItem(LS_KEYS.ACTIVE_PATIENT);
   } catch {}
-  // Reset in-memory state
+
+  // Reset in-memory state and bootstrap a fresh default patient
+  const createdAt = Date.now();
   STATE.patientId = 'default';
   STATE.data = {
     default: {
@@ -572,8 +692,61 @@ function onClearPatients() {
       [MODES.MSE]:        { General: bucket() },
     },
   };
+
+  setPatientList([{ id: 'default', createdAt }]);
+  setActivePatientId('default');
+
   rehydrateFromState();
   renderOutputsNow();
+  renderPatientControls();
+}
+
+function renderPatientControls() {
+  const host = document.querySelector('[data-role="patient-controls"]');
+  if (!host) return;
+
+  host.innerHTML = '';
+
+  const list = getPatientList().slice().sort((a, b) => b.createdAt - a.createdAt);
+  const curId = STATE.patientId;
+
+  // New Patient button
+  const btn = document.createElement('button');
+  btn.type = 'button';
+  btn.textContent = 'New Patient';
+  btn.title = 'Start a new patient session';
+  btn.addEventListener('click', () => {
+    createNewPatient();
+  });
+  host.appendChild(btn);
+
+  // Previous patients dropdown
+  const sel = document.createElement('select');
+
+  const opt0 = document.createElement('option');
+  opt0.value = '';
+  opt0.textContent = 'Select previous…';
+  sel.appendChild(opt0);
+
+  list.forEach((p) => {
+    const o = document.createElement('option');
+    o.value = p.id;
+    o.textContent = fmtPatientTime(p.createdAt);
+    if (p.id === curId) o.selected = true;
+    sel.appendChild(o);
+  });
+
+  sel.addEventListener('change', (e) => {
+    const id = e.target.value;
+    if (id) {
+      loadPatientById(id);
+    } else if (curId) {
+      // Revert to current if user picked placeholder
+      e.target.value = curId;
+    }
+  });
+
+  host.appendChild(sel);
 }
 
 
@@ -1021,9 +1194,11 @@ async function init() {
   if (ver) ver.textContent = APP_VERSION;
 
   wireDelegatedEvents();
-  // Default highlight for current patient in any patient UI (optional)
+  ensurePatientList();
+  // Default highlight for current mode in tier-1 tabs
   highlightTier1(STATE.mode);
   await loadMode(STATE.mode);
+  renderPatientControls();
   enhanceCompleteNoteUI();
 }
 
