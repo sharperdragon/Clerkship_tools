@@ -14,6 +14,7 @@ const LS_KEYS = {
   STATE: 'note_writer_state_v1',
   PATIENTS: 'note_writer_patients_v1',
   ACTIVE_PATIENT: 'note_writer_active_patient_v1',
+  SUBJ_ACUTE: 'note_writer_subjAcute_v1',
 };
 
 // $ Mode constants
@@ -225,6 +226,45 @@ function debounceFullNote(fn) {
   _fullNoteTimer = setTimeout(fn, COMPLETE_NOTE_DEBOUNCE_MS);
 }
 
+// * Subjective acuity helpers (Acute / Non-acute)
+function isAcute() {
+  try {
+    const raw = localStorage.getItem(LS_KEYS.SUBJ_ACUTE);
+    if (raw === null) return true; // default Acute
+    return raw === '1' || raw === 'true';
+  } catch {
+    return true;
+  }
+}
+
+function syncAcuteToggleFromState() {
+  const host = QS(SEL.headerSlot);
+  if (!host) return;
+  const buttons = host.querySelectorAll('.acute-toggle [data-acute]');
+  if (!buttons.length) return;
+  const acuteOn = isAcute();
+  buttons.forEach((btn) => {
+    const val = btn.getAttribute('data-acute') === 'true';
+    btn.classList.toggle('active', val === acuteOn);
+  });
+}
+
+
+function setAcute(on) {
+  const val = !!on;
+  try {
+    localStorage.setItem(LS_KEYS.SUBJ_ACUTE, val ? '1' : '0');
+  } catch {
+    // ignore
+  }
+
+  // ! Update header toggle UI whenever acuity changes
+  syncAcuteToggleFromState();
+
+  // ! HPI emission in Subjective depends on acuity, so rebuild outputs
+  renderOutputsNow();
+}
+
 // * Simple timestamp helper for debug logs – format: HH-MM_MM-DD
 function ts() {
   const d = new Date();
@@ -307,6 +347,10 @@ async function loadMode(mode) {
 
     // After DOM swapped in: rehydrate + wire + render
     rehydrateFromState();
+    // * Subjective-only: sync Acute / Non-acute toggle
+    if (mode === MODES.SUBJECTIVE) {
+      syncAcuteToggleFromState();
+    }
     wireDelegatedEvents(); // idempotent: uses single root listener
     renderOutputsNow();
   } catch (err) {
@@ -553,6 +597,14 @@ function onClick(e) {
       saveStateSoon();
       renderOutputsNow();
     }
+    return;
+  }
+
+  // Acute / Non-acute toggle in Subjective header
+  const acuteBtn = e.target.closest('.acute-toggle [data-acute]');
+  if (acuteBtn) {
+    const val = acuteBtn.getAttribute('data-acute') === 'true';
+    setAcute(val);
     return;
   }
 }
@@ -991,18 +1043,21 @@ function buildSubjectiveSectionOutput(sec){
   }
 
   // 2) HPI – emit a single narrative line composed of each filled HPI field
-  const hpiSentences = [];
-  for (const id of SUBJECTIVE_HPI_FIELDS) {
-    const raw = sec.fields?.[id];
-    const val = (raw == null ? '' : String(raw)).trim();
-    if (!val) continue;
-    const label = getControlLabelFromDOM('field', id);
-    hpiSentences.push(`${label}: ${val}.`);
-  }
-  if (hpiSentences.length) {
-    const hpiLine = hpiSentences.join(' ').trim();
-    // One narrative-style HPI line (matches old app.js style better)
-    lines.push(`HPI: ${hpiLine}`);
+  //    Only in Acute mode; Non-acute hides HPI in output (to mirror legacy behavior)
+  if (isAcute()) {
+    const hpiSentences = [];
+    for (const id of SUBJECTIVE_HPI_FIELDS) {
+      const raw = sec.fields?.[id];
+      const val = (raw == null ? '' : String(raw)).trim();
+      if (!val) continue;
+      const label = getControlLabelFromDOM('field', id);
+      hpiSentences.push(`${label}: ${val}.`);
+    }
+    if (hpiSentences.length) {
+      const hpiLine = hpiSentences.join(' ').trim();
+      // One narrative-style HPI line (matches old app.js style better)
+      lines.push(`HPI: ${hpiLine}`);
+    }
   }
 
   // 3) General History – multiline-aware where appropriate
@@ -1022,6 +1077,53 @@ function buildSubjectiveSectionOutput(sec){
     }
   }
 
+  // 4) Optional chip-based summary (Subjective chips)
+  (function(){
+    const rootMain = QS(SEL.contentSlot);
+    if (!rootMain) return;
+
+    // Collect all chip IDs present in the current Subjective DOM
+    const chipIds = QSA('[data-chip-id]', rootMain).map(el => el.getAttribute('data-chip-id'));
+    if (!chipIds.length) return;
+
+    const posIds = chipIds.filter((id) => isPosChip(sec.chips?.[id]));
+    const negIds = chipIds.filter((id) => isNegChip(sec.chips?.[id]));
+
+    if (!posIds.length && !negIds.length) return;
+
+    // Positives
+    if (posIds.length) {
+      const posTexts = posIds.map((id) => formatChipPosForOutput(id));
+      const posPlain = posTexts.map((t, i) => (i === 0 ? capFirst(t) : t));
+      lines.push(`Pertinent positives: ${posPlain.join("; ")}.`);
+    }
+
+    // Negatives grouped into "Denies" / "No" like PE/ROS builder
+    if (negIds.length) {
+      const negPartsRaw = negIds.map((id) => formatChipNegForOutput(id));
+      const deniesItems = [];
+      const noItems = [];
+
+      negPartsRaw.forEach((t) => {
+        const s = String(t).trim();
+        if (/^denies\b/i.test(s)) {
+          deniesItems.push(lcFirst(s.replace(/^denies\s+/i, "")));
+        } else if (/^no\b/i.test(s)) {
+          noItems.push(lcFirst(s.replace(/^no\s+/i, "")));
+        } else {
+          // Strip any leading "denies"/"no" if present in label
+          noItems.push(lcFirst(s.replace(/^(denies|no)\s+/i, "")));
+        }
+      });
+
+      if (deniesItems.length) {
+        lines.push(`Denies ${joinWithOxford(deniesItems, "and")}.`);
+      }
+      if (noItems.length) {
+        lines.push(`No ${joinWithOxford(noItems, "or")}.`);
+      }
+    }
+  })();
   return lines.join("\n");
 }
 

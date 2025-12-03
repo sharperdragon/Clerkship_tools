@@ -77,14 +77,4 @@ window.NOTE_CONFIG = {
       'subj_fhx',
     ],
   },
-
-  tabs: {
-    subjective: {
-      html: './html/subjective.html',
-      js:   ['./script/subjective.js']
-    },
-    ROS: { html: './html/ROS.html', js: ['./script/ROS.js'] },
-    PE:  { html: './html/PE.html',  js: ['./script/PE.js']},
-    MSE: { html: './html/MSE.html', js: ['./script/MSE.js']},
-  },
 };
