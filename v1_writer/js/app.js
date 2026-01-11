@@ -1294,8 +1294,6 @@ function renderGrid(){
 }
 
 
-
-
 function renderOutput(){
   // Build preview for the CURRENT section only,
   // separating section-level header checks from panel items.

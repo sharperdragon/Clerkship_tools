@@ -1,5 +1,5 @@
 .env
-.DS_Store
+./DS_Store
 
 *.env*
 **/.DS_Store
@@ -8,6 +8,8 @@
 /other:bad
 backups/
 backups
+
+/folder/*
 
 # Python cache folders
 */__pycache__/

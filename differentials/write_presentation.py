@@ -13,8 +13,8 @@ CLINICAL_INDEX_PATH = "/Users/claytongoddard/Git dub/Clerkship_tools_v2/differen
 NONCLINICAL_INDEX_PATH = "/Users/claytongoddard/Git dub/Clerkship_tools_v2/differentials/non-clinical_presentation_index.json"
 SCHEMA_PATH = "/Users/claytongoddard/Git dub/Clerkship_tools_v2/assets/presentations_schema.json"
 
-INCLUDE_FREQ = True                  # Include frequency in each etiology item
-LOW_PRIORITY_MODE = "subfolder"        # Route low-priority to clinical/other/
+INCLUDE_FREQ = True                  
+LOW_PRIORITY_MODE = "subfolder"        
 REBUILD_EXISTING = True              # Rebuild items array from sources on existing files
 SUMMARY_PATH = "/Users/claytongoddard/Desktop/presentation_build_summary.md"
 DRY_RUN = False                      # <= per user request

@@ -83,5 +83,8 @@ To deploy:
 ---
 
 ## License
-© 2025 Clayton Goddard.  
-For personal and educational use only. Redistribution or commercial use is prohibited.
+© 2026 SharperDragon 
+For personal and educational use only.
+Redistribution or commercial use is strictly prohibited.
+
+---

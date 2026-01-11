@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pediatric Topics & Tools</title>
+  <!-- $ External styles (Light is default; theme selector controls overrides) -->
+  <link rel="stylesheet" href="./peds_style.css" />
+</head>
+<body class="theme-light">
+  <header class="appbar">
+    <div class="title_home">
+      <a href="../index.html">Clerkship Tools</a>
+    </div>
+    <div class="appbrand">USPSTF Preventive Care</div>
+    <div class="spacer"></div>
+
+    <label class="theme-switch">
+      Theme
+      <select id="themeSelect" aria-label="Theme">
+        <option value="theme-light" selected>Light</option>
+        <option value="theme-dark">Dark</option>
+        <option value="theme-auto">Auto (system)</option>
+      </select>
+    </label>
+
+    <button id="btnSettings" class="btn ghost" type="button" aria-haspopup="dialog">Settings</button>
+  </header>
+
+  <main class="layout" role="main">
+   
+  </main>
+
+  <!-- Settings dialog -->
+  <dialog id="dlgSettings" class="dialog" aria-label="Settings">
+  </dialog>
+
+  <footer class="footer">
+    <div>Copyright© 2026</div>
+    <div id="lastUpdated" class="muted"></div>
+  </footer>
+
+  <!-- ? App entry: ES module imports other JS files -->
+  <script type="module" src="./peds_app.js"></script>
+
+  <noscript>
+    <div class="empty" style="max-width: 680px; margin: 16px auto;">
+      JavaScript is required for this page to load recommendations.
+    </div>
+  </noscript>
+</body>
+</html>
