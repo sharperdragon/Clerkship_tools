@@ -79,7 +79,7 @@
     },
     {
       "name": "Methemoglobinemia",
-      "system": "Abnormal Haemoglobin",
+      "system": "Abnormal Hemoglobin",
       "redFlag": false,
       "hpi": {
         "onset": [],
@@ -98,7 +98,7 @@
     },
     {
       "name": "Sulphemoglobinemia",
-      "system": "Abnormal Haemoglobin",
+      "system": "Abnormal Hemoglobin",
       "redFlag": false,
       "hpi": {
         "onset": [],

@@ -212,7 +212,7 @@
     },
     {
       "name": "Sickle cell anemia",
-      "system": "Haematological",
+      "system": "Hematological",
       "redFlag": false,
       "hpi": {
         "onset": [],
@@ -231,7 +231,7 @@
     },
     {
       "name": "Polycythemia rubra vera",
-      "system": "Haematological",
+      "system": "Hematological",
       "redFlag": false,
       "hpi": {
         "onset": [],
@@ -250,7 +250,7 @@
     },
     {
       "name": "Thrombotic thrombocytopenic purpura",
-      "system": "Haematological",
+      "system": "Hematological",
       "redFlag": false,
       "hpi": {
         "onset": [],
@@ -269,7 +269,7 @@
     },
     {
       "name": "Dermatitis artefacta (self-in\ufb02icted)",
-      "system": "Haematological",
+      "system": "Hematological",
       "redFlag": false,
       "hpi": {
         "onset": [],
@@ -288,7 +288,7 @@
     },
     {
       "name": "Pyoderma gangrenosum",
-      "system": "Haematological",
+      "system": "Hematological",
       "redFlag": false,
       "hpi": {
         "onset": [],

@@ -250,7 +250,7 @@
     },
     {
       "name": "Anemia",
-      "system": "Haematological Disorders",
+      "system": "Hematological Disorders",
       "redFlag": false,
       "hpi": {
         "onset": [],
@@ -269,7 +269,7 @@
     },
     {
       "name": "Leukemia",
-      "system": "Haematological Disorders",
+      "system": "Hematological Disorders",
       "redFlag": false,
       "hpi": {
         "onset": [],
@@ -288,7 +288,7 @@
     },
     {
       "name": "Agranulocytosis",
-      "system": "Haematological Disorders",
+      "system": "Hematological Disorders",
       "redFlag": false,
       "hpi": {
         "onset": [],

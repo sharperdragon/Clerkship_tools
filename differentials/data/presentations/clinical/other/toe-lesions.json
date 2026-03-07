@@ -136,7 +136,7 @@
     },
     {
       "name": "Atherosclerosis",
-      "system": "Ischaemic",
+      "system": "Ischemic",
       "redFlag": false,
       "hpi": {
         "onset": [],
@@ -155,7 +155,7 @@
     },
     {
       "name": "Embolism",
-      "system": "Ischaemic",
+      "system": "Ischemic",
       "redFlag": false,
       "hpi": {
         "onset": [],
@@ -174,7 +174,7 @@
     },
     {
       "name": "Diabetes",
-      "system": "Ischaemic",
+      "system": "Ischemic",
       "redFlag": false,
       "hpi": {
         "onset": [],
@@ -193,7 +193,7 @@
     },
     {
       "name": "Raynaud\u2019s",
-      "system": "Ischaemic",
+      "system": "Ischemic",
       "redFlag": false,
       "hpi": {
         "onset": [],
@@ -212,7 +212,7 @@
     },
     {
       "name": "Buerger\u2019s",
-      "system": "Ischaemic",
+      "system": "Ischemic",
       "redFlag": false,
       "hpi": {
         "onset": [],
@@ -231,7 +231,7 @@
     },
     {
       "name": "Vasculitis (, SLE, rheumatoid)",
-      "system": "Ischaemic",
+      "system": "Ischemic",
       "redFlag": false,
       "hpi": {
         "onset": [],

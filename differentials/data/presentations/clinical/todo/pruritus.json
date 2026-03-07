@@ -79,7 +79,7 @@
     },
     {
       "name": "Iron de\ufb01ciency",
-      "system": "Haematological Disease",
+      "system": "Hematological Disease",
       "redFlag": false,
       "hpi": {
         "onset": [],
@@ -98,7 +98,7 @@
     },
     {
       "name": "Polycythemia ruba vera",
-      "system": "Haematological Disease",
+      "system": "Hematological Disease",
       "redFlag": false,
       "hpi": {
         "onset": [],

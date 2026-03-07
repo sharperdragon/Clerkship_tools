@@ -822,7 +822,7 @@
     },
     {
       "name": "Hemophilia",
-      "system": "Haematological",
+      "system": "Hematological",
       "redFlag": false,
       "hpi": {
         "onset": [],
@@ -841,7 +841,7 @@
     },
     {
       "name": "Leukemia",
-      "system": "Haematological",
+      "system": "Hematological",
       "redFlag": false,
       "hpi": {
         "onset": [],
@@ -860,7 +860,7 @@
     },
     {
       "name": "Sickle cell disease",
-      "system": "Haematological",
+      "system": "Hematological",
       "redFlag": false,
       "hpi": {
         "onset": [],

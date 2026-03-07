@@ -126,9 +126,14 @@ a:hover {
 }
 
 .chips--drawer {
-  max-height: min(42vh, 320px);
-  overflow: auto;
+  flex: 1;
+  min-height: 0;
+  height: 100%;
+  align-content: flex-start;
+  overflow-y: auto;
+  overflow-x: hidden;
   padding-right: 2px;
+  padding-bottom: 2px;
   scrollbar-width: thin;
 }
 
@@ -232,8 +237,10 @@ a:hover {
 .drawer__content {
   padding: 12px 14px;
   flex: 1;
-  overflow: auto;
-  display: grid;
+  min-height: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
   gap: 14px;
 }
 
@@ -260,6 +267,13 @@ a:hover {
   border: 1px solid var(--border);
   background: var(--card-alt);
   color: var(--fg);
+}
+
+.filter-block--systems {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .checkbox {

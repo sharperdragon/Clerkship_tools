@@ -55,7 +55,7 @@
       "Immune-mediated (e.g. anti-insulin receptor antibodies in"
     ]
   },
-  "Hypokalaemia": {
+  "Hypokalemia": {
     "INADEQUATE INTAKE": [
       "Potassium-free i.v. ﬂuids",
       "Reduced oral intake, e.g. coma, dysphagia"
@@ -77,7 +77,7 @@
       "Diabetic ketoacidosis (related to excessive diuresis and"
     ]
 },
-  "Hypernatraemia": {
+  "Hypernatremia": {
     "DECREASED WATER INTAKE": [
       "Confusion"
     ],
@@ -104,10 +104,10 @@
       "Primary hyperaldosteronism (Conn’s syndrome)"
     ],
     "SYMPTOMS AND SIGNS": [
-      "Rapid correction of hypernatraemia can lead to cerebral"
+      "Rapid correction of hypernatremia can lead to cerebral"
     ]
   },
-  "Hyponatraemia": {
+  "Hyponatremia": {
     "HYPOVOLAEMIC": [
       "Gastrointestinal losses",
       "Diarrhoea",
@@ -142,7 +142,7 @@
     ],
     "SYMPTOMS AND SIGNS": [
       "Falsely low sodium values can occur with high",
-      "Most patients with hyponatraemia do not require"
+      "Most patients with hyponatremia do not require"
     ]
   },
   "Hypercalcemia": {
@@ -168,7 +168,7 @@
       "Hypoparathyroidism",
       "Rhabdomyolysis",
       "Phosphate therapy",
-      "Hypomagnesaemia",
+      "Hypomagnesemia",
       "Acute pancreatitis",
       "Critical illness (i.e. sepsis, burns)",
       "Osteomalacia (inc. Vit D deﬁciency)"
@@ -182,7 +182,7 @@
       "If symptoms occur after thyroid or parathyroid"
     ]
   },
-  "Hypomagnesaemia": {
+  "Hypomagnesemia": {
     "EXCESSIVE LOSSES": [
       "Diuretics",
       "Severe diarrhoea",
@@ -211,7 +211,7 @@
       "Antacids, e.g. milk-alkali syndrome"
     ]
   },
-  "Uraemia": {
+  "Uremia": {
     "INCREASED BLOOD UREA": [
       "Renal failure (acute and chronic)",
       "Dehydration",
@@ -234,26 +234,26 @@
       "A grossly raised blood urea in association with"
     ]
   },
-  "Anaemia": {
+  "Anemia": {
     "General": [
       "Iron deﬁciency",
-      "Anaemia of chronic disease",
-      "Thalassaemia (more common in certain groups)",
+      "Anemia of chronic disease",
+      "Thalassemia (more common in certain groups)",
       "Acute blood loss",
-      "Hemolytic anaemia",
+      "Hemolytic anemia",
       "Hereditary spherocytosis",
       "Sickle cell disease (most common in sub-Saharan Africa)",
       "G6PD deficiency (varies with ethnicity)",
-      "Autoimmune hemolytic anaemia",
+      "Autoimmune hemolytic anemia",
       "Malaria (geographic variability)",
       "Drugs (e.g. dapsone, quinine, sulphonamides)",
       "Red cell trauma (burns, mechanical heart valves)",
       "Mixed deﬁciencies",
-      "Secondary anaemia (liver and renal disease)",
+      "Secondary anemia (liver and renal disease)",
       "Bone marrow failure",
       "Pregnancy",
-      "Megaloblastic anaemia",
-      "Pernicious anaemia",
+      "Megaloblastic anemia",
+      "Pernicious anemia",
       "Vitamin B12 deficiency",
       "Folate deficiency",
       "Alcoholism",
@@ -314,12 +314,12 @@
       "Rheumatoid arthritis"
     ],
     "METABOLIC": [
-      "Uraemia",
+      "Uremia",
       "Diabetic ketoacidosis",
       "Gout"
     ],
     "CHRONIC MYELOPROLIFERATIVE DISEASE": [
-      "CML (chronic myeloid leukaemia)",
+      "CML (chronic myeloid leukemia)",
       "Polycythemia rubrum vera",
       "Myeloﬁbrosis"
     ],
@@ -362,7 +362,7 @@
     ],
     "MALIGNANT": [
       "Myelodysplasia",
-      "Leukaemia – monocytic and myelomonocytic",
+      "Leukemia – monocytic and myelomonocytic",
       "Hodgkin’s"
     ],
     "EOSINOPHILIA": [
@@ -411,7 +411,7 @@
       "Chemotherapy",
       "Steroid therapy",
       "SLE",
-      "Uraemia",
+      "Uremia",
       "Cushing’s syndrome"
     ]
   },
@@ -444,12 +444,12 @@
   },
   "Thrombocytopenia": {
     "REDUCED PRODUCTION": [
-      "Aplastic anaemia",
+      "Aplastic anemia",
       "Drugs, e.g. tolbutamide, alcohol, cytotoxic agents",
       "Viral infections, e.g. EBV, CMV",
       "Myelodysplasia",
-      "Bone marrow inﬁltration, e.g. carcinoma, leukaemia, myeloma,",
-      "Megaloblastic anaemia",
+      "Bone marrow inﬁltration, e.g. carcinoma, leukemia, myeloma,",
+      "Megaloblastic anemia",
       "Hereditary thrombocytopenia"
     ],
     "IMMUNE": [
@@ -479,7 +479,7 @@
       "Surgery",
       "Postpartum",
       "Chronic inﬂammation, e.g. rheumatoid arthritis, inﬂammatory",
-      "Iron deﬁciency anaemia",
+      "Iron deﬁciency anemia",
       "Infection",
       "Malignant disease",
       "Hyposplenism (splenectomy, splenic atrophy)"

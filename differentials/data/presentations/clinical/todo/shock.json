@@ -2,7 +2,7 @@
   "presentation": "Shock",
   "items": [
     {
-      "name": "Haemorrhage",
+      "name": "Hemorrhage",
       "system": "Hypovolemic",
       "freq": "common",
       "redFlag": false,

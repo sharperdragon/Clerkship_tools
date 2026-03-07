@@ -7,7 +7,7 @@
     "Gastric/peptic ulcer": {
       "freq": "common"
     },
-    "Oesophageal/gastric malignancy": {
+    "Esophagel/gastric malignancy": {
       "freq": "common"
     },
     "Gastric/duodenal perforation": {
@@ -28,7 +28,7 @@
     "Gastroenteritis": {
       "freq": "common"
     },
-    "TB • (common in parts of the world where TB is endemic)": {
+    "TB (endemic)": {
       "Strangulated hernia": {
         "freq": "uncommon"
       },
@@ -108,7 +108,7 @@
       "freq": "rare"
     }
   },
-  "GYNAECOLOGICAL": {
+  "GYNECOLOGICAL": {
     "Ectopic pregnancy": {
       "freq": "common"
     },
@@ -649,7 +649,7 @@
     "Osteomyelitis – acute and chronic": {
       "freq": "rare"
     },
-    "TB • (common in parts of the world where TB is endemic)": {
+    "TB (common in parts of the world where TB is endemic)": {
       "Discitis": {
         "freq": "rare"
       }
@@ -727,7 +727,7 @@
       "freq": "uncommon"
     }
   },
-  "GYNAECOLOGICAL": {
+  "GYNECOLOGICAL": {
     "Pelvic inﬂammatory disease": {
       "freq": "common"
     },
@@ -859,7 +859,7 @@
     "Peptic ulcer disease": {
       "freq": "uncommon"
     },
-    "Oesophageal spasm": {
+    "Esophagel spasm": {
       "freq": "uncommon"
     }
   },
@@ -969,7 +969,7 @@
     "Encephalitis": {
       "freq": "uncommon"
     },
-    "Cerebral malaria in the developed world • (common in": {
+    "Cerebral malaria in the developed world (common in": {
       "endemic areas)": {
         "freq": "rare"
       }
@@ -1238,7 +1238,7 @@
     "COPD (mucoid/purulent)": {
       "freq": "common"
     },
-    "TB (bloodstained) • (common where TB is endemic)": {
+    "TB (bloodstained) (common where TB is endemic)": {
       "Lung cancer (bloodstained)": {
         "freq": "uncommon"
       },
@@ -1383,8 +1383,8 @@
 },
 "Diarrhoea": {
   "INFECTIVE ENTERITIS": {
-    "Campylobacter spp • (rare in tropical Africa)": {},
-    "Salmonella spp • (rare in tropical Africa)": {
+    "Campylobacter spp (rare in tropical Africa)": {},
+    "Salmonella spp (rare in tropical Africa)": {
       "Escherichia coli": {
         "freq": "common"
       },
@@ -1401,8 +1401,8 @@
         "freq": "rare"
       }
     },
-    "Yersinia enterocolitica • (common in the Indian sub-continent)": {},
-    "Giardia lamblia • (more common in children worldwide)": {
+    "Yersinia enterocolitica (common in the Indian sub-continent)": {},
+    "Giardia lamblia (more common in children worldwide)": {
       "Entamoeba histolytica": {
         "freq": "rare"
       }
@@ -1439,7 +1439,7 @@
     }
   },
   "OTHER INTESTINAL": {
-    "Diverticular disease • (rare in rural Africa and Asia)": {
+    "Diverticular disease (rare in rural Africa and Asia)": {
       "Irritable bowel syndrome": {
         "freq": "common"
       },
@@ -1599,7 +1599,7 @@
 },
 "Dysphagia": {
   "CONGENITAL": {
-    "Oesophageal atresia": {
+    "Esophagel atresia": {
       "freq": "rare"
     }
   },
@@ -1628,7 +1628,7 @@
     "Plummer–Vinson syndrome": {
       "freq": "rare"
     },
-    "Chagas’ disease • (South America)": {}
+    "Chagas’ disease (South America)": {}
   },
   "OUTSIDE THE WALL": {
     "Goitre": {
@@ -2100,7 +2100,7 @@
     }
   },
   "NEOPLASTIC": {
-    "Basal cell carcinoma (rodent ulcer) • (rare in tropical": {
+    "Basal cell carcinoma (rodent ulcer) (rare in tropical": {
       "Africa)": {
         "freq": "uncommon"
       }
@@ -2119,7 +2119,7 @@
     "Syphilis (i.e. chancre, gumma)": {
       "freq": "rare"
     },
-    "Leishmaniasis • (common in tropical and subtropical areas)": {
+    "Leishmaniasis (common in tropical and subtropical areas)": {
       "OTHER": {
         "freq": "rare"
       },
@@ -2736,7 +2736,7 @@
     "Polycystic kidney": {
       "freq": "rare"
     },
-    "TB • (common in some parts of the world where TB is endemic)": {
+    "TB (common in some parts of the world where TB is endemic)": {
       "Embolism": {
         "freq": "rare"
       }
@@ -2805,7 +2805,7 @@
     "Sickle cell disease": {
       "freq": "rare"
     },
-    "Malaria • (common where malaria is endemic)": {}
+    "Malaria (common where malaria is endemic)": {}
   },
   "RED URINE": {
     "Hemoglobinuria": {
@@ -3177,7 +3177,7 @@
     "Goitre": {
       "freq": "uncommon"
     },
-    "Oesophageal carcinoma": {
+    "Esophagel carcinoma": {
       "freq": "uncommon"
     },
     "Lung tumour": {
@@ -3400,7 +3400,7 @@
     "Atresia": {
       "freq": "rare"
     },
-    "TB • (common in areas of the world where TB is endemic)": {
+    "TB (common in areas of the world where TB is endemic)": {
       "Tumour, e.g. lymphoma, carcinoma": {
         "freq": "rare"
       }
@@ -3464,7 +3464,7 @@
     "Sickle cell disease": {
       "freq": "uncommon"
     },
-    "Malaria • (common where malaria is endemic)": {
+    "Malaria (common where malaria is endemic)": {
       "Incompatible blood transfusion": {
         "freq": "rare"
       },
@@ -3647,7 +3647,7 @@
     "Osteogenic sarcoma": {
       "freq": "rare"
     },
-    "Burkitt’s lymphoma • (endemic in equatorial Africa)": {
+    "Burkitt’s lymphoma (endemic in equatorial Africa)": {
       "Secondary deposits": {
         "freq": "rare"
       },
@@ -3694,12 +3694,12 @@
     "Viral": {
       "freq": "common"
     },
-    "TB • (very common in the developing world and on the": {
+    "TB (very common in the developing world and on the": {
       "increase in developed countries)": {
         "freq": "uncommon"
       }
     },
-    "Rheumatic fever • (very common in developing countries)": {
+    "Rheumatic fever (very common in developing countries)": {
       "Endocarditis": {
         "freq": "rare"
       },
@@ -3707,14 +3707,14 @@
         "freq": "rare"
       }
     },
-    "Typhoid • (very common in developing countries)": {},
+    "Typhoid (very common in developing countries)": {},
     "TB arthritis": {
       "freq": "rare"
     },
     "Acute septic arthritis": {
       "freq": "uncommon"
     },
-    "TB • (common in developing countries)": {},
+    "TB (common in developing countries)": {},
     "TB": {
       "freq": "rare"
     }
@@ -3854,7 +3854,7 @@
     "Sarcoidosis": {
       "freq": "uncommon"
     },
-    "Behçet’s disease • (more common in certain Mediterranean": {
+    "Behçet’s disease (more common in certain Mediterranean": {
       "countries)": {
         "freq": "rare"
       }
@@ -4060,7 +4060,7 @@
     "Perinephric abscess": {
       "freq": "rare"
     },
-    "TB • (common where TB is endemic)": {}
+    "TB (common where TB is endemic)": {}
   },
   "OBSTRUCTIVE": {
     "Hydronephrosis": {
@@ -4226,7 +4226,7 @@
     "Syphilis": {
       "freq": "rare"
     },
-    "TB • (common where TB is endemic)": {}
+    "TB (common where TB is endemic)": {}
   },
   "NEOPLASTIC": {
     "Squamous cell carcinoma": {
@@ -4377,7 +4377,7 @@
     }
   },
   "BACTERIAL": {
-    "TB • (common in parts of the world where TB is endemic)": {
+    "TB (common in parts of the world where TB is endemic)": {
       "Syphilis": {
         "freq": "rare"
       },
@@ -4398,7 +4398,7 @@
     }
   },
   "PARASITIC": {
-    "Filariasis • (common in tropical regions of Asia, Africa)": {}
+    "Filariasis (common in tropical regions of Asia, Africa)": {}
   },
   "SECONDARY INFECTION": {
     "E.g. tonsillitis with cervical lymphadenitis, abscess with regional": {
@@ -4449,10 +4449,10 @@
     }
   },
   "OESOPHAGUS": {
-    "Oesophageal varices": {
+    "Esophagel varices": {
       "freq": "rare"
     },
-    "Oesophageal carcinoma": {
+    "Esophagel carcinoma": {
       "freq": "uncommon"
     }
   },
@@ -4660,7 +4660,7 @@
     "Anterior horn cell lesions": {
       "freq": "uncommon"
     },
-    "Previous poliomyelitis • (common in developing": {
+    "Previous poliomyelitis (common in developing": {
       "freq": "uncommon"
     }
   },
@@ -4827,7 +4827,7 @@
     "Chronic infections (e.g. syphilis)": {
       "freq": "rare"
     },
-    "AIDS • (common in certain developing countries)": {}
+    "AIDS (common in certain developing countries)": {}
   },
   "ALLERGIC": {
     "Allergic rhinitis": {
@@ -4852,7 +4852,7 @@
     "Carcinoma": {
       "freq": "uncommon"
     },
-    "Nasopharynx • (common in South east Asia)": {
+    "Nasopharynx (common in South east Asia)": {
       "freq": "uncommon"
     },
     "Sinuses": {
@@ -4974,7 +4974,7 @@
     "Herpes zoster": {
       "freq": "uncommon"
     },
-    "TB • (common where TB is endemic)": {}
+    "TB (common where TB is endemic)": {}
   },
   "DEGENERATIVE": {
     "Cervical spondylosis": {
@@ -5269,7 +5269,7 @@
     "Inherited (dominant or recessive)": {
       "freq": "rare"
     },
-    "Pituitary granulomas, e.g. sarcoidosis, TB • (more common": {
+    "Pituitary granulomas, e.g. sarcoidosis, TB (more common": {
       "where TB is endemic)": {
         "freq": "rare"
       },
@@ -5515,7 +5515,7 @@
     }
   },
   "PROTOZOAL": {
-    "Malaria • (common in Africa)": {
+    "Malaria (common in Africa)": {
       "Amoebiasis": {
         "freq": "rare"
       },
@@ -5784,7 +5784,7 @@
     "Sperm granuloma": {
       "freq": "rare"
     },
-    "TB • (common where TB is endemic)": {
+    "TB (common where TB is endemic)": {
       "Gumma": {
         "freq": "rare"
       }
@@ -5810,7 +5810,7 @@
     }
   },
   "PROTOZOAL": {
-    "Malaria • (common in Africa)": {}
+    "Malaria (common in Africa)": {}
   },
   "PARASITIC": {
     "Hydatid cyst": {
@@ -6015,7 +6015,7 @@
     "Thyroid carcinoma": {
       "freq": "rare"
     },
-    "Oesophageal carcinoma": {
+    "Esophagel carcinoma": {
       "freq": "rare"
     }
   }
@@ -6270,7 +6270,7 @@
     "Posterior third of the tongue": {
       "freq": "rare"
     },
-    "Larynx • (common in Far East including Hong Kong,": {
+    "Larynx (common in Far East including Hong Kong,": {
       "freq": "rare"
     },
     "Hematological disorders (e.g. lymphoma)": {
@@ -6281,7 +6281,7 @@
     "Angina": {
       "freq": "common"
     },
-    "Oesophageal spasm": {
+    "Esophagel spasm": {
       "freq": "common"
     },
     "Muscle strain": {
@@ -6467,7 +6467,7 @@
     "Nerve injuries": {
       "freq": "uncommon"
     },
-    "Leprosy • (common where leprosy is endemic)": {
+    "Leprosy (common where leprosy is endemic)": {
       "Spinal cord lesions": {
         "freq": "rare"
       },
@@ -7026,13 +7026,13 @@
     "Infectious": {
       "freq": "rare"
     },
-    "Trachoma (Chlamydia trachomatis) • (common in": {
+    "Trachoma (Chlamydia trachomatis) (common in": {
       "freq": "rare"
     },
-    "Onchocerciasis (nematode infection) • (common in": {
+    "Onchocerciasis (nematode infection) (common in": {
       "freq": "rare"
     },
-    "Vitamin A deﬁciency • (common in underdeveloped countries)": {
+    "Vitamin A deﬁciency (common in underdeveloped countries)": {
       "lesions at the optic chiasma or more posteriorly cause binocular loss": {
         "freq": "rare"
       },
@@ -7074,7 +7074,7 @@
     "Postoperative – thoracic, parathyroid and thyroid surgery": {
       "freq": "common"
     },
-    "Oesophageal carcinoma": {
+    "Esophagel carcinoma": {
       "freq": "uncommon"
     },
     "Thoracic aortic aneurysm": {
@@ -7333,7 +7333,7 @@
     "Drugs, e.g. excessive thyroxine replacement": {
       "freq": "uncommon"
     },
-    "Malnutrition • (common in developing countries)": {}
+    "Malnutrition (common in developing countries)": {}
   }
 }
 }

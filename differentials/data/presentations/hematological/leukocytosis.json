@@ -211,7 +211,7 @@
       "freq": "unknown"
     },
     {
-      "name": "Uraemia",
+      "name": "Uremia",
       "system": "Metabolic",
       "redFlag": false,
       "hpi": {
@@ -268,7 +268,7 @@
       "freq": "unknown"
     },
     {
-      "name": "CML (chronic myeloid leukaemia)",
+      "name": "CML (chronic myeloid leukemia)",
       "system": "Chronic Myeloproliferative Disease",
       "redFlag": false,
       "hpi": {
@@ -326,7 +326,7 @@
     },
     {
       "name": "Carcinoma",
-      "system": "Non-Haematological Malignancy",
+      "system": "Non-Hematological Malignancy",
       "redFlag": false,
       "hpi": {
         "onset": [],
@@ -345,7 +345,7 @@
     },
     {
       "name": "Lymphoma",
-      "system": "Non-Haematological Malignancy",
+      "system": "Non-Hematological Malignancy",
       "redFlag": false,
       "hpi": {
         "onset": [],
@@ -364,7 +364,7 @@
     },
     {
       "name": "Corticosteroids",
-      "system": "Non-Haematological Malignancy",
+      "system": "Non-Hematological Malignancy",
       "redFlag": false,
       "hpi": {
         "onset": [],
@@ -819,7 +819,7 @@
       "freq": "unknown"
     },
     {
-      "name": "Leukaemia \u2013 monocytic and myelomonocytic",
+      "name": "Leukemia \u2013 monocytic and myelomonocytic",
       "system": "Malignant",
       "redFlag": false,
       "hpi": {

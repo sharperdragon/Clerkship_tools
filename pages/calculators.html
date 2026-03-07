@@ -406,7 +406,7 @@
       const valText = (out.value === '—') ? '—' : `${out.value}${unit}`;
       $resVal.textContent = valText;
       $resExtra.textContent = out.extra || '';
-      $warn.textContent = (out.warnings || []).join(' • ');
+      $warn.textContent = (out.warnings || []).join(' ');
       state.lastResultText = `${calc.title}: ${valText}${out.extra ? ` (${out.extra})` : ''}`;
       $btnCopy.disabled = out.value === '—';
       $msg.textContent = '';

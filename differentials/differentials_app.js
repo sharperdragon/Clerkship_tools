@@ -41,6 +41,22 @@ const FILE_SLUG_ALIASES = {
   Uremia: ["uraemia"],
 };
 
+// Canonical groups used for sidebar "Systems" chips.
+const SYSTEM_CHIP_RULES = [
+  { label: "Cardiovascular", pattern: /\b(cardio|cardiac|vascular|vasovagal|arrhythm|hypotension|venous|arterial|circulatory)\b/ },
+  { label: "Respiratory", pattern: /\b(respir|pulmonary|airway|trache|bronch|pleur)\b/ },
+  { label: "Neurologic", pattern: /\b(neuro|cns|cerebr|brain|spinal|neurone|neuromuscular|neuropath|seizure|migraine|tremor|syncope)\b/ },
+  { label: "Gastrointestinal / Hepatic", pattern: /\b(gastro|abdominal|bowel|intestinal|stomach|duoden|colon|rect|anal|anorectal|esoph|oesoph|hepato|liver|pancrea|biliar|splen|periton|visceral)\b/ },
+  { label: "Renal / Genitourinary", pattern: /\b(renal|kidney|ureter|urethra|bladder|urinary|nephro|prostate|post renal)\b/ },
+  { label: "Hematologic", pattern: /\b(haemat|hemat|haemol|hemol|leuk|platelet|anemi|thromb)\b/ },
+  { label: "Endocrine / Metabolic", pattern: /\b(endocrine|metabolic|pituitary|adrenal|thyroid)\b/ },
+  { label: "Musculoskeletal", pattern: /\b(musculo|joint|ligament|menisci|tendon|bone|gait)\b/ },
+  { label: "Dermatologic", pattern: /\b(dermat|skin|nail|scalp|pruritus|ulcer)\b/ },
+  { label: "Reproductive", pattern: /\b(gynae|gyne|ovar|uter|fallopian|vaginal|pregnan|obstet|penis|scrot|foreskin|breast|testic)\b/ },
+  { label: "HEENT", pattern: /\b(eye|ear|nasal|nose|throat|pharyn|laryng|mastoid|salivary|parotid|tongue|lip|jaw)\b/ },
+  { label: "Systemic", pattern: /\b(systemic|general|constitutional)\b/ },
+];
+
 /*! UI State */
 const UI = {
   q: "",
@@ -130,6 +146,14 @@ function normalizeSystemLabel(system) {
     .replace(/\b[a-z]/g, (m) => m.toUpperCase());
 }
 
+function deriveSystemChip(system) {
+  const clean = normalizeSystemLabel(system);
+  if (!clean) return null;
+  const normalized = normalizeSearch(clean);
+  const match = SYSTEM_CHIP_RULES.find((rule) => rule.pattern.test(normalized));
+  return match ? match.label : null;
+}
+
 function isCompactViewport() {
   return window.matchMedia("(max-width: 1199px)").matches;
 }
@@ -215,6 +239,7 @@ function normalizeEntry(title, section, data) {
 function prepareEntry(entry) {
   const items = (entry.items || []).map((it) => ({
     ...it,
+    _systemChip: deriveSystemChip(it.system),
     _q: normalizeSearch(`${it.name} ${it.system} ${it.freq ?? ""}`),
   }));
 
@@ -426,7 +451,7 @@ function applyFilters(entries) {
     .filter((e) => !UI.section || e.section === UI.section)
     .map((e) => {
       const bySystem = hasSystemFilter
-        ? (e.items || []).filter((it) => UI.systems.has(it.system || ""))
+        ? (e.items || []).filter((it) => it._systemChip && UI.systems.has(it._systemChip))
         : [...(e.items || [])];
 
       const titleHit = q ? e._q.includes(q) : false;
@@ -649,7 +674,7 @@ function wireUI(data) {
 
   const systemsAll = uniqSorted(
     data
-      .flatMap((e) => (e.items || []).map((it) => it.system || ""))
+      .flatMap((e) => (e.items || []).map((it) => it._systemChip || ""))
       .filter(Boolean)
   );
 

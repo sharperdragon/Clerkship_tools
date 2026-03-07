@@ -40,7 +40,7 @@
       "freq": "rare"
     },
     {
-      "name": "Oesophageal varices",
+      "name": "Esophagel varices",
       "system": "Oesophagus",
       "redFlag": false,
       "hpi": {
@@ -59,7 +59,7 @@
       "freq": "rare"
     },
     {
-      "name": "Oesophageal carcinoma",
+      "name": "Esophagel carcinoma",
       "system": "Oesophagus",
       "redFlag": false,
       "hpi": {

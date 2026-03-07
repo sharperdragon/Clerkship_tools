@@ -2,7 +2,7 @@
   "presentation": "Thrombocytopenia",
   "items": [
     {
-      "name": "Aplastic anaemia",
+      "name": "Aplastic anemia",
       "system": "Reduced Production",
       "redFlag": false,
       "hpi": {
@@ -78,7 +78,7 @@
       "freq": "unknown"
     },
     {
-      "name": "Bone marrow in\ufb01ltration, , leukaemia, myeloma",
+      "name": "Bone marrow in\ufb01ltration, , leukemia, myeloma",
       "system": "Reduced Production",
       "redFlag": false,
       "hpi": {
@@ -97,7 +97,7 @@
       "freq": "unknown"
     },
     {
-      "name": "Megaloblastic anaemia",
+      "name": "Megaloblastic anemia",
       "system": "Reduced Production",
       "redFlag": false,
       "hpi": {

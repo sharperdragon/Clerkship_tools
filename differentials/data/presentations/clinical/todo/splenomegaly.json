@@ -326,7 +326,7 @@
     },
     {
       "name": "Hereditary spherocytosis",
-      "system": "Haemolytic Disease",
+      "system": "Hemolytic Disease",
       "redFlag": false,
       "hpi": {
         "onset": [],
@@ -345,7 +345,7 @@
     },
     {
       "name": "Acquired hemolytic anemia",
-      "system": "Haemolytic Disease",
+      "system": "Hemolytic Disease",
       "redFlag": false,
       "hpi": {
         "onset": [],
@@ -364,7 +364,7 @@
     },
     {
       "name": "Thrombocytopenic purpura",
-      "system": "Haemolytic Disease",
+      "system": "Hemolytic Disease",
       "redFlag": false,
       "hpi": {
         "onset": [],
