@@ -59,6 +59,22 @@
   margin: 0;
 }
 
+.app-title-link {
+  font-size: 150%;
+  background-color: transparent;
+  padding: 3px 8px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--ink);
+}
+
+.app-footer {
+  text-align: center;
+  font-size: 0.8em;
+  color: rgba(0, 0, 0, 0.4);
+  margin-top: 20px;
+}
+
 .tools button {
   margin-left: 10px;
 }
@@ -196,10 +212,6 @@
   color: var(--chip-critical-text);
 }
 
-.tabs.tier2 {
-  margin-bottom: 10px;
-  background-color: var(--canvas);
-}
 .abn_out {
     font-weight: 700;
     color: darkred;
@@ -261,7 +273,6 @@
   padding: 8px 10px;
   font-weight: 600;
   background: #fff;
-  padding: 8px 10px;
   color: var(--panel-header-text);
 }
 
@@ -297,20 +308,6 @@
   border: none;
   font-size: 12px;
   color: var(--cb-text);
-}
-
-.panel .row .chip {
-  flex: 1 1 calc(50% - 8px);
-  max-width: 50%;
-  min-width: min-content;
-  justify-content: flex-start;
-}
-
-.panel .row .chip {
-  flex: 1 1 calc(50% - 8px);
-  max-width: 50%;
-  min-width: min-content;
-  justify-content: flex-start;
 }
 
 .panel .row .chip {
@@ -503,9 +500,9 @@
 }
 
 .subpanel .subhead {
-  margin: 0 0 5x 0;
+  margin: 0 0 5px 0;
   font-weight: 600;
-  color: var(--subhead)
+  color: var(--subhead);
 }
 
 .cb.selected {
@@ -820,7 +817,7 @@
 }
 /* Target only the checkboxes inside mini-checks */
 .mini-checks {
-  display: block;            /* lay them out in a row */
+  display: flex;            /* lay them out in a row */
   flex-wrap: wrap;          /* wrap to the next line if needed */
   gap: 8px;                 /* space between items */
   justify-content: flex-start; /* keep them left aligned */
@@ -849,7 +846,7 @@ button.btn-mini {
   resize: vertical;
   display: block;
   height: 53px;
-  border: 01px solid lightgray;
+  border: 1px solid lightgray;
 }
 
 span.section-head {

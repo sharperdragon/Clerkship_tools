@@ -313,7 +313,7 @@ function scrubVitalSigns(raw) {
 
 
 async function init(){
-  const restored = maybeRestoreState();
+  maybeRestoreState();
   // Load templates and set activeSection for the (possibly restored) mode
   await switchMode(state.mode || DEFAULT_MODE);
   wireHeader();
@@ -420,6 +420,135 @@ function makeRow(extraClass){
   const d = document.createElement("div");
   d.className = "row " + state.mode + (extraClass ? (" " + extraClass) : "");
   return d;
+}
+
+function appendCheckboxesAndChips(host, defLike){
+  if (!host || !defLike) return;
+
+  if (defLike.checkboxes?.length){
+    const row = makeRow();
+    defLike.checkboxes.forEach(c => {
+      row.appendChild(
+        cb(c.id, c.label, !!getSec().checkboxes?.[c.id], v => { setCB(c.id, v); renderOutput(); })
+      );
+    });
+    host.appendChild(row);
+  }
+
+  if (defLike.chips?.length){
+    const row = makeRow();
+    if (defLike.layout?.chipCols) row.classList.add(`cols-${defLike.layout.chipCols}`);
+    defLike.chips.forEach(ch => {
+      const value = getSec().chips?.[ch.id] || 0;
+      row.appendChild(chip(ch, value, (evt) => handleChipMouse(evt, ch.id)));
+    });
+    host.appendChild(row);
+  }
+}
+
+function insertMiniChecks(fieldEl, checkboxes){
+  if (!fieldEl || !Array.isArray(checkboxes) || !checkboxes.length) return;
+  const checkRow = document.createElement("div");
+  checkRow.className = "mini-checks";
+  checkboxes.forEach(c => {
+    checkRow.appendChild(
+      cb(c.id, c.label, !!getSec().checkboxes?.[c.id], v => { setCB(c.id, v); renderOutput(); })
+    );
+  });
+  const last = fieldEl.lastChild;
+  fieldEl.insertBefore(checkRow, last);
+}
+
+function createFieldElement(def){
+  const val = getField(def.id);
+
+  if (def.type === "boolean") {
+    return fieldBoolean(
+      def.id,
+      def.label,
+      typeof val === "boolean" ? val : false,
+      (v) => { setField(def.id, v); renderGrid(); renderOutput(); renderCompleteSoon(); },
+      def.ui || {}
+    );
+  }
+
+  if (def.type === "range") {
+    const stacked = (state.mode === "subjective") && !(def.ui && def.ui.inline === true);
+    return fieldRange(
+      def.id,
+      def.label,
+      val,
+      (v) => { setField(def.id, v); renderOutput(); renderCompleteSoon(); },
+      def.min,
+      def.max,
+      def.step,
+      /*stacked*/ stacked
+    );
+  }
+
+  const stacked = (state.mode === "subjective") && !(def.ui && def.ui.inline === true);
+  const el = fieldText(
+    def.id,
+    def.label,
+    val,
+    (v) => { setField(def.id, v); renderOutput(); renderCompleteSoon(); },
+    def.placeholder,
+    /*stacked*/ stacked
+  );
+  insertMiniChecks(el, def.checkboxes);
+  return el;
+}
+
+function appendPanelFields(host, fields){
+  if (!fields?.length) return;
+
+  fields.forEach(f => {
+    if (!shouldShowField(f)) return;
+
+    if (f.type === "group") {
+      const rowGroup = makeRow();
+      if (f.label) {
+        const span = document.createElement("span");
+        span.className = "field-label";
+        span.style.display = "block";
+        span.style.marginBottom = "0px";
+        span.textContent = f.label;
+        rowGroup.appendChild(span);
+      }
+
+      const body = document.createElement("div");
+      body.className = "field-group";
+
+      const inlineFlow = !!(f.layout && f.layout.flow === "inline");
+      if (inlineFlow) {
+        body.style.display = "inline-flex";
+        body.style.flexWrap = "wrap";
+        body.style.alignItems = "center";
+        body.style.gap = "8px 12px";
+      }
+
+      (f.fields || []).forEach(cf => {
+        if (!shouldShowField(cf)) return;
+        body.appendChild(createFieldElement(cf));
+
+        const kids = Array.isArray(cf.children) ? cf.children : [];
+        kids.forEach(k => {
+          const childDef = { ...k };
+          if (!childDef.showIf) childDef.showIf = { field: cf.id, equals: true };
+          if (!shouldShowField(childDef)) return;
+          body.appendChild(createFieldElement(childDef));
+        });
+      });
+
+      rowGroup.appendChild(body);
+      host.appendChild(rowGroup);
+      return;
+    }
+
+    const row = makeRow();
+    row.appendChild(createFieldElement(f));
+    host.appendChild(row);
+  });
 }
 
 function renderHeaderChecks(){
@@ -695,186 +824,11 @@ function renderGrid(){
           sh.className = "subhead";
           sh.textContent = ss.title;
           host.appendChild(sh);
-          if (ss.checkboxes?.length){
-            const rr = makeRow();
-            ss.checkboxes.forEach(c=>{
-              rr.appendChild(cb(c.id, c.label, !!getSec().checkboxes?.[c.id], v=>{ setCB(c.id, v); renderOutput(); }));
-            });
-            host.appendChild(rr);
-          }
-          if (ss.chips?.length){
-            const rr = makeRow();
-            if (ss.layout?.chipCols) rr.classList.add(`cols-${ss.layout.chipCols}`);
-            ss.chips.forEach(ch=>{
-              const value = getSec().chips?.[ch.id] || 0;
-              rr.appendChild(chip(ch, value, (evt)=>handleChipMouse(evt, ch.id)));
-            });
-            host.appendChild(rr);
-          }
+          appendCheckboxesAndChips(host, ss);
         });
       }
-      if (pd.fields?.length){
-        pd.fields.forEach(f => {
-          if (!shouldShowField(f)) return;
-
-          // NEW: grouped subsection field (type: "group")
-          if (f.type === "group") {
-            // One row that contains: [label] [group body]
-            const rowGroup = makeRow();
-            if (f.label) {
-              const span = document.createElement("span");
-              span.className = "field-label";
-              span.style.display = "block";
-              span.style.marginBottom = "0px";
-              span.textContent = f.label;
-              rowGroup.appendChild(span);
-            }
-
-            // Group body that holds all child fields
-            const body = document.createElement("div");
-            body.className = "field-group";
-
-            const inlineFlow = !!(f.layout && f.layout.flow === "inline");
-            if (inlineFlow) {
-              body.style.display = "inline-flex";
-              body.style.flexWrap = "wrap";
-              body.style.alignItems = "center";
-              body.style.gap = "8px 12px";
-            }
-
-            // Helper to render one field (boolean/range/text) honoring ui.inline
-            const renderFieldEl = (def) => {
-              const val = getField(def.id);
-              if (def.type === "boolean") {
-                return fieldBoolean(
-                  def.id,
-                  def.label,
-                  typeof val === "boolean" ? val : false,
-                  (v) => { setField(def.id, v); renderGrid(); renderOutput(); renderCompleteSoon(); },
-                  def.ui || {}
-                );
-              } else if (def.type === "range") {
-                const stacked = (state.mode === "subjective") && !(def.ui && def.ui.inline === true);
-                return fieldRange(
-                  def.id, def.label, val,
-                  (v) => { setField(def.id, v); renderOutput(); renderCompleteSoon(); },
-                  def.min, def.max, def.step,
-                  /*stacked*/ stacked
-                );
-              } else {
-                const stacked = (state.mode === "subjective") && !(def.ui && def.ui.inline === true);
-                const el = fieldText(
-                  def.id, def.label, val,
-                  (v) => { setField(def.id, v); renderOutput(); renderCompleteSoon(); },
-                  def.placeholder,
-                  /*stacked*/ stacked
-                );
-                if (Array.isArray(def.checkboxes) && def.checkboxes.length){
-                  const checkRow = document.createElement("div");
-                  checkRow.className = "mini-checks";
-                  def.checkboxes.forEach(c => {
-                    checkRow.appendChild(
-                      cb(c.id, c.label, !!getSec().checkboxes?.[c.id], v => { setCB(c.id, v); renderOutput(); })
-                    );
-                  });
-                  const last = el.lastChild; // input/textarea
-                  el.insertBefore(checkRow, last);
-                }
-                return el;
-              }
-            };
-
-            // Render immediate fields and their children (children default showIf to the parent)
-            (f.fields || []).forEach(cf => {
-              if (!shouldShowField(cf)) return;
-
-              const parentEl = renderFieldEl(cf);
-              body.appendChild(parentEl);
-
-              const kids = Array.isArray(cf.children) ? cf.children : [];
-              kids.forEach(k => {
-                const childDef = { ...k };
-                if (!childDef.showIf) childDef.showIf = { field: cf.id, equals: true };
-                if (!shouldShowField(childDef)) return;
-                body.appendChild(renderFieldEl(childDef));
-              });
-            });
-
-            rowGroup.appendChild(body);
-            host.appendChild(rowGroup);
-            return; // handled group
-          }
-
-          // Normal (non-group) fields
-          const r = makeRow();
-          const val = getField(f.id);
-
-          if (f.type === "boolean") {
-            r.appendChild(
-              fieldBoolean(
-                f.id,
-                f.label,
-                typeof val === "boolean" ? val : false,
-                (v) => { setField(f.id, v); renderGrid(); renderOutput(); renderCompleteSoon(); },
-                f.ui || {}
-              )
-            );
-          } else if (f.type === "range") {
-            const stacked = (state.mode === "subjective") && !(f.ui && f.ui.inline === true);
-            r.appendChild(
-              fieldRange(
-                f.id,
-                f.label,
-                val,
-                (v) => { setField(f.id, v); renderOutput(); renderCompleteSoon(); },
-                f.min,
-                f.max,
-                f.step,
-                /*stacked*/ stacked
-              )
-            );
-          } else {
-            const stacked = (state.mode === "subjective") && !(f.ui && f.ui.inline === true);
-            const elem = fieldText(
-              f.id,
-              f.label,
-              val,
-              (v) => { setField(f.id, v); renderOutput(); renderCompleteSoon(); },
-              f.placeholder,
-              /*stacked*/ stacked
-            );
-
-            // Insert small checkboxes under the label, before the input
-            if (Array.isArray(f.checkboxes) && f.checkboxes.length){
-              const checkRow = document.createElement("div");
-              checkRow.className = "mini-checks";
-              f.checkboxes.forEach(c => {
-                checkRow.appendChild(
-                  cb(c.id, c.label, !!getSec().checkboxes?.[c.id], v => { setCB(c.id, v); renderOutput(); })
-                );
-              });
-              const last = elem.lastChild; // the input/textarea
-              elem.insertBefore(checkRow, last);
-            }
-
-            r.appendChild(elem);
-          }
-          host.appendChild(r);
-        });
-      }
-      if (pd.checkboxes?.length){
-        const r = makeRow();
-        pd.checkboxes.forEach(c=> r.appendChild(cb(c.id,c.label,!!getSec().checkboxes?.[c.id], v=>{ setCB(c.id,v); renderOutput(); })));
-        host.appendChild(r);
-      }
-      if (pd.chips?.length){
-        const r = makeRow();
-        pd.chips.forEach(ch=>{
-          const value = getSec().chips?.[ch.id] || 0;
-          r.appendChild(chip(ch, value, (evt)=>handleChipMouse(evt, ch.id)));
-        });
-        host.appendChild(r);
-      }
+      appendPanelFields(host, pd.fields);
+      appendCheckboxesAndChips(host, pd);
     };
 
     // Build left panel (HPI)
@@ -989,22 +943,7 @@ function renderGrid(){
             sh.textContent = ss.title;
             box.appendChild(sh);
 
-            if (ss.checkboxes?.length){
-              const rr = makeRow();
-              ss.checkboxes.forEach(c=>{
-                rr.appendChild(cb(c.id, c.label, !!getSec().checkboxes?.[c.id], v=>{ setCB(c.id, v); renderOutput(); }));
-              });
-              box.appendChild(rr);
-            }
-            if (ss.chips?.length){
-              const rr = makeRow();
-              if (ss.layout?.chipCols) rr.classList.add(`cols-${ss.layout.chipCols}`);
-              ss.chips.forEach(ch=>{
-                const value = getSec().chips?.[ch.id] || 0;
-                rr.appendChild(chip(ch, value, (evt)=>handleChipMouse(evt, ch.id)));
-              });
-              box.appendChild(rr);
-            }
+            appendCheckboxesAndChips(box, ss);
 
             sg.appendChild(box);
           }
@@ -1019,22 +958,7 @@ function renderGrid(){
           sh.textContent = ss.title;
           p.appendChild(sh);
 
-          if (ss.checkboxes?.length){
-            const rr = makeRow();
-            ss.checkboxes.forEach(c=>{
-              rr.appendChild(cb(c.id, c.label, !!getSec().checkboxes?.[c.id], v=>{ setCB(c.id, v); renderOutput(); }));
-            });
-            p.appendChild(rr);
-          }
-          if (ss.chips?.length){
-            const rr = makeRow();
-            if (ss.layout?.chipCols) rr.classList.add(`cols-${ss.layout.chipCols}`);
-            ss.chips.forEach(ch=>{
-              const value = getSec().chips?.[ch.id] || 0;
-              rr.appendChild(chip(ch, value, (evt)=>handleChipMouse(evt, ch.id)));
-            });
-            p.appendChild(rr);
-          }
+          appendCheckboxesAndChips(p, ss);
         });
 
         grid.appendChild(p);
@@ -1059,21 +983,7 @@ function renderGrid(){
           sh.textContent = ss.title;
           box.appendChild(sh);
 
-          if (ss.checkboxes?.length){
-            const rr = makeRow();
-            ss.checkboxes.forEach(c=>{
-              rr.appendChild(cb(c.id, c.label, !!getSec().checkboxes?.[c.id], v=>{ setCB(c.id, v); renderOutput(); }));
-            });
-            box.appendChild(rr);
-          }
-          if (ss.chips?.length){
-            const rr = makeRow();
-            ss.chips.forEach(ch=>{
-              const value = getSec().chips?.[ch.id] || 0;
-              rr.appendChild(chip(ch, value, (evt)=>handleChipMouse(evt, ch.id)));
-            });
-            box.appendChild(rr);
-          }
+          appendCheckboxesAndChips(box, ss);
           subgrid.appendChild(box);
         }
         p.appendChild(subgrid);
@@ -1085,21 +995,7 @@ function renderGrid(){
           sh.textContent = ss.title;
           p.appendChild(sh);
 
-          if (ss.checkboxes?.length){
-            const rr = makeRow();
-            ss.checkboxes.forEach(c=>{
-              rr.appendChild(cb(c.id, c.label, !!getSec().checkboxes?.[c.id], v=>{ setCB(c.id, v); renderOutput(); }));
-            });
-            p.appendChild(rr);
-          }
-          if (ss.chips?.length){
-            const rr = makeRow();
-            ss.chips.forEach(ch=>{
-              const value = getSec().chips?.[ch.id] || 0;
-              rr.appendChild(chip(ch, value, (evt)=>handleChipMouse(evt, ch.id)));
-            });
-            p.appendChild(rr);
-          }
+          appendCheckboxesAndChips(p, ss);
         }
         grid.appendChild(p);
         return; // done with this panel
@@ -1111,183 +1007,13 @@ function renderGrid(){
         sh.className = "subhead";
         sh.textContent = ss.title;
         p.appendChild(sh);
-        if (ss.checkboxes?.length){
-          const rr = makeRow();
-          ss.checkboxes.forEach(c=>{
-            rr.appendChild(cb(c.id, c.label, !!getSec().checkboxes?.[c.id], v=>{ setCB(c.id, v); renderOutput(); }));
-          });
-          p.appendChild(rr);
-        }
-        if (ss.chips?.length){
-          const rr = makeRow();
-          if (ss.layout?.chipCols) rr.classList.add(`cols-${ss.layout.chipCols}`);
-          ss.chips.forEach(ch=>{
-            const value = getSec().chips?.[ch.id] || 0;
-            rr.appendChild(chip(ch, value, (evt)=>handleChipMouse(evt, ch.id)));
-          });
-          p.appendChild(rr);
-        }
+        appendCheckboxesAndChips(p, ss);
       });
       grid.appendChild(p);
       return; // skip the normal checkboxes/chips path for this panel
     }
-    if (pd.fields?.length){
-      pd.fields.forEach(f => {
-        if (!shouldShowField(f)) return;
-
-        // NEW: grouped subsection field (type: "group")
-        if (f.type === "group") {
-          // One row that contains: [label] [group body]
-          const rowGroup = makeRow();
-          if (f.label) {
-            const span = document.createElement("span");
-            span.className = "field-label";
-            span.style.display = "block";
-            span.style.marginBottom = "0px";
-            span.textContent = f.label;
-            rowGroup.appendChild(span);
-          }
-
-          const body = document.createElement("div");
-          body.className = "field-group";
-
-          const inlineFlow = !!(f.layout && f.layout.flow === "inline");
-          if (inlineFlow) {
-            body.style.display = "inline-flex";
-            body.style.flexWrap = "wrap";
-            body.style.alignItems = "center";
-            body.style.gap = "8px 12px";
-          }
-
-          const renderFieldEl = (def) => {
-            const val = getField(def.id);
-            if (def.type === "boolean") {
-              return fieldBoolean(
-                def.id, def.label,
-                typeof val === "boolean" ? val : false,
-                (v) => { setField(def.id, v); renderGrid(); renderOutput(); renderCompleteSoon(); },
-                def.ui || {}
-              );
-            } else if (def.type === "range") {
-              const stacked = (state.mode === "subjective") && !(def.ui && def.ui.inline === true);
-              return fieldRange(
-                def.id, def.label, val,
-                (v) => { setField(def.id, v); renderOutput(); renderCompleteSoon(); },
-                def.min, def.max, def.step,
-                /*stacked*/ stacked
-              );
-            } else {
-              const stacked = (state.mode === "subjective") && !(def.ui && def.ui.inline === true);
-              const el = fieldText(
-                def.id, def.label, val,
-                (v) => { setField(def.id, v); renderOutput(); renderCompleteSoon(); },
-                def.placeholder,
-                /*stacked*/ stacked
-              );
-              if (Array.isArray(def.checkboxes) && def.checkboxes.length){
-                const checkRow = document.createElement("div");
-                checkRow.className = "mini-checks";
-                def.checkboxes.forEach(c => {
-                  checkRow.appendChild(
-                    cb(c.id, c.label, !!getSec().checkboxes?.[c.id], v => { setCB(c.id, v); renderOutput(); })
-                  );
-                });
-                const last = el.lastChild;
-                el.insertBefore(checkRow, last);
-              }
-              return el;
-            }
-          };
-
-          (f.fields || []).forEach(cf => {
-            if (!shouldShowField(cf)) return;
-            const parentEl = renderFieldEl(cf);
-            body.appendChild(parentEl);
-
-            const kids = Array.isArray(cf.children) ? cf.children : [];
-            kids.forEach(k => {
-              const childDef = { ...k };
-              if (!childDef.showIf) childDef.showIf = { field: cf.id, equals: true };
-              if (!shouldShowField(childDef)) return;
-              body.appendChild(renderFieldEl(childDef));
-            });
-          });
-
-          rowGroup.appendChild(body);
-          p.appendChild(rowGroup);
-          return; // handled group
-        }
-
-        // Normal (non-group) fields
-        const r = makeRow();
-        const val = getField(f.id);
-
-        if (f.type === "boolean") {
-          r.appendChild(
-            fieldBoolean(
-              f.id,
-              f.label,
-              typeof val === "boolean" ? val : false,
-              (v) => { setField(f.id, v); renderGrid(); renderOutput(); renderCompleteSoon(); },
-              f.ui || {}
-            )
-          );
-        } else if (f.type === "range") {
-          const stacked = (state.mode === "subjective") && !(f.ui && f.ui.inline === true);
-          r.appendChild(
-            fieldRange(
-              f.id,
-              f.label,
-              val,
-              (v) => { setField(f.id, v); renderOutput(); renderCompleteSoon(); },
-              f.min, f.max, f.step,
-              /*stacked*/ stacked
-            )
-          );
-        } else {
-          const stacked = (state.mode === "subjective") && !(f.ui && f.ui.inline === true);
-          const elem = fieldText(
-            f.id,
-            f.label,
-            val,
-            (v) => { setField(f.id, v); renderOutput(); renderCompleteSoon(); },
-            f.placeholder,
-            /*stacked*/ stacked
-          );
-
-          if (Array.isArray(f.checkboxes) && f.checkboxes.length){
-            const checkRow = document.createElement("div");
-            checkRow.className = "mini-checks";
-            f.checkboxes.forEach(c => {
-              checkRow.appendChild(
-                cb(c.id, c.label, !!getSec().checkboxes?.[c.id], v => { setCB(c.id, v); renderOutput(); })
-              );
-            });
-            const last = elem.lastChild;
-            elem.insertBefore(checkRow, last);
-          }
-
-          r.appendChild(elem);
-        }
-
-        p.appendChild(r);
-      });
-    }
-    if (pd.checkboxes?.length){
-      const r = makeRow();
-      pd.checkboxes.forEach(c=> r.appendChild(cb(c.id,c.label,!!getSec().checkboxes?.[c.id], v=>{ setCB(c.id,v); renderOutput(); })));
-      p.appendChild(r);
-    }
-    if (pd.chips?.length){
-      const r = makeRow();
-      pd.chips.forEach(ch=>{
-        const value = getSec().chips?.[ch.id] || 0; // 0 | 'neg' | {state:'pos', ...}
-        r.appendChild(
-          chip(ch, value, (evt)=>handleChipMouse(evt, ch.id))
-        );
-      });
-      p.appendChild(r);
-    }
+    appendPanelFields(p, pd.fields);
+    appendCheckboxesAndChips(p, pd);
     grid.appendChild(p);
   });
   
@@ -1295,211 +1021,11 @@ function renderGrid(){
 
 
 function renderOutput(){
-  // Build preview for the CURRENT section only,
-  // separating section-level header checks from panel items.
   const ta = document.getElementById("out");
   const secKey = `${state.mode}:${state.activeSection}`;
-  const def = Templates.sectionDefs[secKey];
-  const sec = state.sections[secKey] || { checkboxes:{}, chips:{} };
+  if (!Templates?.sectionDefs?.[secKey]) { if (ta) ta.value = ""; return; }
 
-  if (!def) { if (ta) ta.value = ""; return; }
-
-  const lines = [];
-
-  // Header items (text + checks) with robust fallback sourcing
-  (function(){
-    // collect items from active section, then subjective:General, then merge across mode
-    let items = Array.isArray(def.headerItems) ? def.headerItems.slice() : [];
-    if ((!items.length) && state.mode === "subjective") {
-      const generalDef = Templates.sectionDefs[`${state.mode}:General`];
-      if (generalDef?.headerItems?.length) items = generalDef.headerItems.slice();
-    }
-    if (!items.length) {
-      const secsAll = Templates.sectionsByMode[state.mode] || [];
-      const merged = []; const seen = new Set();
-      secsAll.forEach(secName => {
-        const d = Templates.sectionDefs[`${state.mode}:${secName}`];
-        (d?.headerItems || []).forEach(h => { if (h && h.id && !seen.has(h.id)) { seen.add(h.id); merged.push(h); } });
-      });
-      items = merged;
-    }
-    if (!items.length) return; // nothing to emit
-
-  const textParts = [];
-  const checkParts = [];
-  let _emittedVitals = false;
-
-  items.forEach(h => {
-    if (!h || !h.id) return;
-    if (h.type === 'text') {
-      const v = (sec.fields?.[h.id] ?? '').toString().trim();
-
-      // Special handling for the PE vitals paste box
-      if (h.id === 'vital_signs_text' && v) {
-        const fmt = scrubVitalSigns(v);
-        if (fmt) {
-          if (fmt.line1) { lines.push(fmt.line1); _emittedVitals = true; }
-          if (fmt.line2) { lines.push(fmt.line2); }
-        }
-        return; // do not add a default "Label: value." line
-      }
-
-      if (v) textParts.push(`${h.label || h.id}: ${v}.`);
-    } else {
-      if (sec.checkboxes?.[h.id]) checkParts.push(formatPECheckLabel(h.label || h.id));
-    }
-  });
-  // Emit remaining text items as their own lines first
-  if (textParts.length) lines.push(...textParts);
-  // Only emit checks sentence if we did NOT emit vitals
-  if (!_emittedVitals && checkParts.length) {
-    lines.push(`${state.activeSection}: ${checkParts.join('. ')}.`);
-  }
-  })();
-
-  (def.panels || []).forEach(pd => {
-    // collect items from panel + any subsections
-    const _cbs   = [...(pd.checkboxes || [])];
-    const _chips = [...(pd.chips || [])];
-    (pd.subsections || []).forEach(ss=>{
-      _cbs.push(...(ss.checkboxes || []));
-      _chips.push(...(ss.chips || []));
-    });
-
-    const cbIds  = _cbs.map(c => c.id);
-    const chipDs = _chips;
-
-    // subjective panels: only emit visible text fields with content.
-    // Skip boolean flag fields entirely (they just gate visibility).
-    if (state.mode === "subjective" && pd.fields?.length){
-      // Skip HPI emission when Non-acute
-      if (!isAcute() && pd.title === "History of Present Illness") {
-        return; // continue to next panel
-      }
-      const panelLines = [];
-      // Flatten group fields so nested text inputs are included in output
-      const fieldsFlat = (pd.fields || []).flatMap(f => {
-        const top = (f && f.type === "group") ? (f.fields || []) : [f];
-        const out = [];
-        top.forEach(it => {
-          if (!it) return;
-          out.push(it);
-          if (Array.isArray(it.children)) out.push(...it.children);
-        });
-        return out;
-      });
-
-      fieldsFlat.forEach(f => {
-        if (!shouldShowField(f)) return;
-        if (f.type === "boolean") return; // don't output Yes/No line
-        const raw = getSec().fields?.[f.id];
-        const v0 = (typeof raw === "string" ? raw : "");
-        const v = v0.trim();
-        if (!v) return;
-
-        if (isMultilineField(f.id, f.label) && /[\r\n]/.test(v)) {
-          const parts = v.split(/\r?\n/).map(s => s.trim()).filter(Boolean);
-          if (parts.length) {
-            panelLines.push(`${f.label}: ${parts[0]}.`);
-            for (let i = 1; i < parts.length; i++){
-              panelLines.push(parts[i] + ".");
-            }
-          }
-        } else {
-          panelLines.push(`${f.label}: ${v}.`);
-        }
-      });
-      if (panelLines.length){
-        if (pd.title === "History of Present Illness") {
-          lines.push("HPI:");
-        }
-        lines.push(...panelLines);
-      }
-      // Also include any checked panel checkboxes (PMH, Allergies, etc.)
-      const cbParts = (pd.checkboxes || []).filter(c => !!sec.checkboxes?.[c.id])
-                        .map(c => formatPECheckLabel(c.label || c.id));
-      if (cbParts.length) {
-        lines.push(`${pd.title}: ${cbParts.join('. ')}.`);
-      }
-      // Emit field-level checkboxes (e.g., PMH, Allergies)
-      pd.fields.forEach(f => {
-        if (!Array.isArray(f.checkboxes) || !f.checkboxes.length) return;
-        const picked = f.checkboxes
-          .filter(c => !!sec.checkboxes?.[c.id])
-          .map(c => formatPECheckLabel(c.label || c.id));
-        if (picked.length) lines.push(`${f.label}: ${picked.join('. ')}.`);
-      });
-      return; // continue to next panel
-    }
-    const cbParts = cbIds
-      .filter(id => !!sec.checkboxes?.[id])
-      .map(id => formatPECheckLabel(labelFor(secKey, id)));
-
-    const negParts = chipDs
-      .filter(d => isNeg(sec.chips?.[d.id]))
-      .map(d => formatChipNegForOutput(secKey, d.id));
-
-    const posParts = chipDs
-      .filter(d => isPos(sec.chips?.[d.id]))
-      .map(d => {
-        const txt = formatChipForOutput(secKey, d.id, sec.chips[d.id]);
-        return state.mode === "ROS" ? `<span class="abn_out">${txt}</span>` : txt;
-      });
-
-    // When there are positives, emit two sentences:
-    //   1) Positives first (capitalize the first positive), ending with a period.
-    //   2) Negatives/checkboxes next as a second sentence; keep first "No"/"Denies" capitalized
-    //      and lowercase subsequent occurrences ("no"/"denies") within the same sentence.
-    if (posParts.length || negParts.length || cbParts.length) {
-      let linePlain = `${pd.title}: `;
-
-      if (posParts.length) {
-        const posPlainList = posParts.map((t,i)=> i===0 ? capFirst(t) : t);
-        const posPlainSent = `${posPlainList.join("; ")}.`;
-        linePlain += posPlainSent + (negParts.length || cbParts.length ? " " : "");
-      }
-
-      // Group negatives by lead-in and collapse into list(s)
-      if (negParts.length || cbParts.length) {
-        const deniesItems = [];
-        const noItems = [];
-        negParts.forEach(raw => {
-          const t = String(raw).trim();
-          if (/^denies\b/i.test(t)) {
-            deniesItems.push(lcFirst(t.replace(/^denies\s+/i, "")));
-          } else if (/^no\b/i.test(t)) {
-            noItems.push(lcFirst(t.replace(/^no\s+/i, "")));
-          } else {
-            // fallback: remove any stray lead-in then treat as a "No"-style term
-            noItems.push(lcFirst(t.replace(/^(denies|no)\s+/i, "")));
-          }
-        });
-
-        const negSentences = [];
-        if (deniesItems.length) negSentences.push(`Denies ${joinWithOxford(deniesItems, "and")}.`);
-        if (noItems.length)     negSentences.push(`No ${joinWithOxford(noItems, "or")}.`);
-        if (cbParts.length)     negSentences.push(`${cbParts.join("; ")}.`);
-
-        linePlain += negSentences.join(" ");
-      }
-
-      lines.push(linePlain);
-    }
-  });
-
-  // Fallback: if subjective produced no lines, sweep all visible text fields
-  if (state.mode === "subjective" && lines.length === 0) {
-    const def2 = Templates.sectionDefs[`${state.mode}:${state.activeSection}`];
-    (def2?.panels || []).forEach(pd => {
-      (pd.fields || []).forEach(f => {
-        if (!shouldShowField(f)) return;
-        if (f.type === "boolean") return;
-        const raw = getSec().fields?.[f.id];
-        const v = (typeof raw === "string" ? raw : "").trim();
-        if (v) lines.push(`${f.label}: ${v}.`);
-      });
-    });
-  }
+  const lines = buildSectionLines(secKey, state.mode, Templates, { skipSubjHeaderOnce: false });
 
   if (state.mode === "subjective") {
     console.debug('[subjective][renderOutput] lines:', lines.length, lines);
@@ -1775,7 +1301,8 @@ function shouldShowFieldFor(f, mode, secKey){
 }
 
 // Build lines for a single section (pure; no DOM)
-function buildSectionLines(secKey, mode, tpl){
+function buildSectionLines(secKey, mode, tpl, options = {}){
+  const skipSubjHeaderOnce = options.skipSubjHeaderOnce !== false;
   const def = tpl.sectionDefs[secKey];
   const sec = state.sections[secKey] || { checkboxes:{}, chips:{}, fields:{} };
   if (!def) return [];
@@ -1784,7 +1311,7 @@ function buildSectionLines(secKey, mode, tpl){
   // Header items (text + checks) with robust fallback sourcing
   (function(){
     // Skip subjective:General headerItems if already emitted above subjective
-    if (mode === "subjective" && /(^|:)General$/.test(secKey) && state.globals && state.globals._emittedSubjHeaderOnce) return;
+    if (skipSubjHeaderOnce && mode === "subjective" && /(^|:)General$/.test(secKey) && state.globals && state.globals._emittedSubjHeaderOnce) return;
     let items = Array.isArray(def.headerItems) ? def.headerItems.slice() : [];
     if ((!items.length) && mode === "subjective") {
       const generalDef = tpl.sectionDefs[`${mode}:General`];
@@ -2711,289 +2238,3 @@ function formatChipNegForOutput(secKey, id){
   const isROS = secKey.startsWith("ROS:");
   return isROS ? `Denies ${label}` : `No ${label}`;
 }
-
-
-
-/* ----------------------------------------------
- * ROS: Inline "Default" button per panel
- * Inserts a small button next to each panel header.
- * Clicking it marks the panel's chips that match
- * template.defaults.negChips as negative.
- * ---------------------------------------------- */
-(function () {
-  // --- run after DOM ready ---
-  function onReady(fn){
-    if (document.readyState === "loading") {
-      document.addEventListener("DOMContentLoaded", fn, { once: true });
-    } else { fn(); }
-  }
-
-  // --- pull default negative chip ids from loaded template ---
-  function getDefaultNegs(){
-    try {
-      const t = (window.template || window.currentTemplate || window.ROS_TEMPLATE || {});
-      const defs = t.defaults || (t.sectionDefs && t.sectionDefs.defaults) || {};
-      const arr = defs.negChips || [];
-      return Array.isArray(arr) ? arr.slice() : [];
-    } catch(e){
-      return [];
-    }
-  }
-
-  // Try to toggle a single chip to the NEGATIVE option inside a scope element.
-  // NOTE: we support multiple markup patterns to avoid coupling to one renderer.
-  function setChipNegative(scopeEl, chipId){
-    if (!scopeEl || !chipId) return false;
-
-    // Prefer a container that declares the chip id.
-    let chipRoot = scopeEl.querySelector(`[data-chip-id="${chipId}"]`);
-
-    // Fallbacks: id/name/data-id
-    if (!chipRoot) {
-      chipRoot = scopeEl.querySelector(`#${CSS.escape(chipId)}`) ||
-                 scopeEl.querySelector(`[name="${CSS.escape(chipId)}"]`) ||
-                 scopeEl.querySelector(`[data-id="${chipId}"]`);
-    }
-    if (!chipRoot) return false;
-
-    // Common selectors for a "negative" control
-    const negCandidates = [
-      '[data-action="neg"]',
-      '.opt.neg',
-      '.bool-opt.neg',
-      'input[type="radio"][value="no"]',
-      'input[type="checkbox"][data-neg="1"]',
-      '[data-neg="1"]'
-    ];
-
-    // Try each selector in order and activate the negative option if found
-    let acted = false;
-    for (const sel of negCandidates) {
-      const el = chipRoot.querySelector(sel);
-      if (!el) continue;
-      // Prefer native click() if available (covers buttons)
-      if (typeof el.click === 'function') {
-        el.click();
-        acted = true;
-        break;
-      }
-      // Handle inputs directly by setting checked and dispatching change
-      if (el instanceof HTMLInputElement) {
-        if (el.type === 'checkbox' || el.type === 'radio') {
-          el.checked = true;
-          el.dispatchEvent(new Event('change', { bubbles: true }));
-          acted = true;
-          break;
-        }
-      }
-      // Fallback: synthesize a click via events
-      el.dispatchEvent(new MouseEvent('click', { bubbles: true }));
-      el.dispatchEvent(new Event('change', { bubbles: true }));
-      acted = true;
-      break;
-    }
-    return acted;
-}
-
-  // Apply defaults ONLY within the provided panel element
-  function applyDefaultNegativesInPanel(panelEl){
-    const defaults = getDefaultNegs();
-    if (!defaults.length) return;
-    defaults.forEach(id => setChipNegative(panelEl, id));
-  }
-
-
-  // Insert a button inline with a header element if not already present
-  function injectButtonNextToHeader(headerEl){
-    if (!headerEl || headerEl.dataset.negBtnInjected === '1') return;
-    if (headerEl.querySelector('.neg-fill-btn')) {
-      headerEl.dataset.negBtnInjected = '1';
-      return;
-    }
-    const btn = makeNegBtn();
-    const titleSpan = headerEl.querySelector('.panel-title, .section-head, .item-label, span');
-    if (titleSpan && titleSpan.parentElement === headerEl) {
-      titleSpan.insertAdjacentElement('afterend', btn);
-    } else {
-      headerEl.appendChild(btn);
-    }
-    headerEl.dataset.negBtnInjected = '1';
-  }
-
-  // Find a likely header element inside a panel container
-  function findHeaderCandidates(panelEl){
-    if (!panelEl) return [];
-    // Common header patterns used in prior patches
-    const sels = [
-      ':scope > .panel-header',
-      ':scope > .panel-head',
-      ':scope > .cn-line',
-      ':scope > .section-head-wrap',
-      ':scope > .section-header',
-      ':scope > .section-title',
-      ':scope > .section-head'
-    ];
-    for (const s of sels){
-      const el = panelEl.querySelector(s);
-      if (el) return [el];
-    }
-    // Fallback: first element that contains a head label
-    const alt = panelEl.querySelector('.section-head, .panel-title, .item-label');
-    return alt ? [alt.closest('.panel-header') || alt.parentElement || alt] : [];
-  }
-
-  // Scan the page and inject a button into each ROS panel header
-  function injectAllPanelButtons(root){
-    const scope = root || document;
-    const panels = scope.querySelectorAll('.panel.ROS, .ros-panel, .ROS .panel, .section.ROS, .panel');
-    panels.forEach(panel => {
-      const headers = findHeaderCandidates(panel);
-      headers.forEach(h => injectButtonNextToHeader(h));
-    });
-  }
-
-  // Observe for dynamically-rendered panels
-  function enableObserver(){
-    const obs = new MutationObserver(muts => {
-      for (const m of muts){
-        if (m.addedNodes && m.addedNodes.length){
-          m.addedNodes.forEach(node => {
-            if (!(node instanceof HTMLElement)) return;
-            if (node.matches('.panel, .ros-panel, .section')){
-              injectAllPanelButtons(node);
-            } else if (node.querySelector) {
-              const p = node.querySelector('.panel, .ros-panel, .section');
-              if (p) injectAllPanelButtons(node);
-            }
-          });
-        }
-      }
-    });
-    obs.observe(document.body, { childList: true, subtree: true });
-  }
-
-  onReady(function(){
-    injectAllPanelButtons(document);
-    enableObserver();
-  });
-})();
-
-/* ----------------------------------------------------
- * ROS: Inline "Default" button that actually works
- * with current DOM (chips rendered without IDs).
- * Strategy:
- *  - Build a map from panel title -> Set(label) for chips
- *    whose IDs are in template.defaults.negChips.
- *  - For a given panel, find its chips by label text and
- *    click the minus button to mark them negative.
- * ---------------------------------------------------- */
-(function(){
-  function onReady(fn){
-    if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', fn, {once:true});
-    else fn();
-  }
-
-  // Build a lookup of default-negative chip labels per panel title
-  function buildRosNegLabelMap(){
-    const out = new Map();
-    try {
-      if (!Templates || !Templates.sectionDefs) return out;
-      const key = 'ROS:General';
-      const def = Templates.sectionDefs[key];
-      if (!def || !def.defaults || !Array.isArray(def.defaults.negChips)) return out;
-      const want = new Set(def.defaults.negChips);
-
-      // Walk panels + subsections to collect chip defs
-      const panels = Array.isArray(def.panels) ? def.panels : [];
-      panels.forEach(pd => {
-        const title = (pd && pd.title) ? String(pd.title).trim() : '';
-        if (!title) return;
-        const ensure = () => {
-          if (!out.has(title)) out.set(title, new Set());
-          return out.get(title);
-        };
-
-        // Chips directly under panel
-        (pd.chips || []).forEach(ch => {
-          if (ch && want.has(ch.id)) ensure().add(String(ch.label).trim());
-        });
-        // Chips inside subsections
-        (pd.subsections || []).forEach(ss => {
-          (ss && ss.chips || []).forEach(ch => {
-            if (ch && want.has(ch.id)) ensure().add(String(ch.label).trim());
-          });
-        });
-      });
-    } catch(e) {
-      console.debug('[ROS NegBtn] map build failed:', e?.message || e);
-    }
-    return out;
-  }
-
-  function injectBtnInto(panelEl){
-    if (!panelEl || panelEl.dataset.negBtnInjected === '1') return;
-    const header = panelEl.querySelector(':scope > .panel-header');
-    if (!header) return;
-    if (header.querySelector('.neg-fill-btn')) { panelEl.dataset.negBtnInjected = '1'; return; }
-    const btn = makeNegBtn();
-    btn.addEventListener('click', function(e){
-      e.stopPropagation();
-      try {
-        const title = (header.textContent || '').trim();
-        if (!title) return;
-        const map = buildRosNegLabelMap();
-        const wanted = map.get(title);
-        if (!wanted || !wanted.size) return;
-        // Find every chip in this panel whose label matches a wanted label
-        panelEl.querySelectorAll(':scope .chip').forEach(ch => {
-          const lab = ch.querySelector('.label');
-          const minus = ch.querySelector('.aff.minus');
-          const txt = (lab && lab.textContent || '').trim();
-          if (txt && wanted.has(txt) && minus) {
-            // Click minus to set negative using existing handlers
-            if (typeof minus.click === 'function') minus.click();
-            else {
-              minus.dispatchEvent(new MouseEvent('click', {bubbles:true}));
-              minus.dispatchEvent(new Event('change', {bubbles:true}));
-            }
-          }
-        });
-      } catch(err){
-        console.debug('[ROS NegBtn] apply failed:', err?.message || err);
-      }
-    });
-    header.appendChild(btn);
-    panelEl.dataset.negBtnInjected = '1';
-  }
-
-  function scanAndInject(root){
-    if (state.mode !== 'ROS') return; // only add in ROS mode
-    const scope = root || document;
-    scope.querySelectorAll('main.section-grid.ROS > section.panel').forEach(injectBtnInto);
-  }
-
-  function enableObserver(){
-    const obs = new MutationObserver(muts => {
-      for (const m of muts){
-        if (m.addedNodes && m.addedNodes.length){
-          m.addedNodes.forEach(node => {
-            if (!(node instanceof HTMLElement)) return;
-            if (node.matches && node.matches('main.section-grid.ROS, section.panel')) {
-              scanAndInject(node);
-            } else if (node.querySelector) {
-              const any = node.querySelector('main.section-grid.ROS, section.panel');
-              if (any) scanAndInject(node);
-            }
-          });
-        }
-      }
-    });
-    obs.observe(document.body, { childList: true, subtree: true });
-  }
-
-  onReady(function(){
-    // Initial pass after first render
-    setTimeout(()=>scanAndInject(document), 0);
-    enableObserver();
-  });
-})

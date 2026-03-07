@@ -1,65 +1,68 @@
 {
-  "presentation": "Respiratory alkalosis",
+  "presentation": "Hematemesis",
   "items": [
     {
-      "name": "Anxiety-related hyperventilation",
-      "system": "Psychogenic",
-      "redFlag": false,
-      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
-      "freq": "common"
-    },
-    {
-      "name": "Pulmonary embolism",
-      "system": "Pulmonary Vascular",
+      "name": "Peptic ulcer disease",
+      "system": "Upper Gastrointestinal",
       "redFlag": true,
       "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
       "freq": "common"
     },
     {
-      "name": "Sepsis",
-      "system": "Systemic Illness",
+      "name": "Erosive gastritis",
+      "system": "Upper Gastrointestinal",
+      "redFlag": false,
+      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
+      "freq": "common"
+    },
+    {
+      "name": "Mallory-Weiss tear",
+      "system": "Esophageal",
+      "redFlag": false,
+      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
+      "freq": "common"
+    },
+    {
+      "name": "Esophageal varices",
+      "system": "Portal Hypertension Related",
       "redFlag": true,
       "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
       "freq": "common"
     },
     {
-      "name": "Pregnancy",
-      "system": "Physiologic",
-      "redFlag": false,
-      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
-      "freq": "common"
-    },
-    {
-      "name": "Pain or fever",
-      "system": "Physiologic Stress",
-      "redFlag": false,
-      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
-      "freq": "common"
-    },
-    {
-      "name": "Chronic liver disease",
-      "system": "Hepatic",
+      "name": "Esophagitis",
+      "system": "Esophageal",
       "redFlag": false,
       "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
       "freq": "uncommon"
     },
     {
-      "name": "Early salicylate toxicity",
-      "system": "Toxic Ingestion",
+      "name": "Gastric malignancy",
+      "system": "Neoplastic",
       "redFlag": true,
       "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
       "freq": "uncommon"
     },
     {
-      "name": "High altitude exposure",
-      "system": "Environmental",
-      "redFlag": false,
+      "name": "Dieulafoy lesion",
+      "system": "Vascular Lesion",
+      "redFlag": true,
+      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
+      "freq": "rare"
+    },
+    {
+      "name": "Anticoagulant-associated bleeding",
+      "system": "Medication Related",
+      "redFlag": true,
       "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
       "freq": "uncommon"
+    },
+    {
+      "name": "Aortoenteric fistula",
+      "system": "Vascular Catastrophe",
+      "redFlag": true,
+      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
+      "freq": "rare"
     }
-  ],
-  "sources": {
-    "index_keys": [],
-    "index_type": "non-clinical"
-  }
+  ]
 }

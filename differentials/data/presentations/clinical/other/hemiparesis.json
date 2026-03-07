@@ -1,6 +1,70 @@
 {
   "presentation": "Hemiparesis",
-  "items": [],
+  "items": [
+    {
+      "name": "Ischemic stroke",
+      "system": "Cerebrovascular",
+      "redFlag": true,
+      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
+      "freq": "common"
+    },
+    {
+      "name": "Intracerebral hemorrhage",
+      "system": "Cerebrovascular",
+      "redFlag": true,
+      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
+      "freq": "common"
+    },
+    {
+      "name": "Subdural hematoma",
+      "system": "Traumatic Intracranial",
+      "redFlag": true,
+      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
+      "freq": "uncommon"
+    },
+    {
+      "name": "Brain tumor",
+      "system": "Neoplastic",
+      "redFlag": true,
+      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
+      "freq": "uncommon"
+    },
+    {
+      "name": "Postictal Todd paresis",
+      "system": "Seizure Related",
+      "redFlag": false,
+      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
+      "freq": "uncommon"
+    },
+    {
+      "name": "Multiple sclerosis",
+      "system": "Demyelinating",
+      "redFlag": false,
+      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
+      "freq": "uncommon"
+    },
+    {
+      "name": "Brain abscess",
+      "system": "Infectious",
+      "redFlag": true,
+      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
+      "freq": "rare"
+    },
+    {
+      "name": "Hemiplegic migraine",
+      "system": "Migraine Variant",
+      "redFlag": false,
+      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
+      "freq": "rare"
+    },
+    {
+      "name": "Functional neurologic disorder",
+      "system": "Functional",
+      "redFlag": false,
+      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
+      "freq": "uncommon"
+    }
+  ],
   "sources": {
     "index_keys": [],
     "index_type": "clinical"

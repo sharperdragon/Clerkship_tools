@@ -1,6 +1,70 @@
 {
   "presentation": "Metabolic acidosis",
-  "items": [],
+  "items": [
+    {
+      "name": "Lactic acidosis from sepsis or hypoperfusion",
+      "system": "Increased Acid Production",
+      "redFlag": true,
+      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
+      "freq": "common"
+    },
+    {
+      "name": "Diabetic ketoacidosis",
+      "system": "Ketoacidosis",
+      "redFlag": true,
+      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
+      "freq": "common"
+    },
+    {
+      "name": "Alcoholic ketoacidosis",
+      "system": "Ketoacidosis",
+      "redFlag": true,
+      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
+      "freq": "uncommon"
+    },
+    {
+      "name": "Advanced chronic kidney disease",
+      "system": "Reduced Acid Excretion",
+      "redFlag": false,
+      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
+      "freq": "common"
+    },
+    {
+      "name": "Severe diarrhea with bicarbonate loss",
+      "system": "Bicarbonate Loss",
+      "redFlag": false,
+      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
+      "freq": "common"
+    },
+    {
+      "name": "Renal tubular acidosis",
+      "system": "Bicarbonate Handling Defect",
+      "redFlag": false,
+      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
+      "freq": "uncommon"
+    },
+    {
+      "name": "Methanol poisoning",
+      "system": "Toxic Ingestion",
+      "redFlag": true,
+      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
+      "freq": "rare"
+    },
+    {
+      "name": "Ethylene glycol poisoning",
+      "system": "Toxic Ingestion",
+      "redFlag": true,
+      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
+      "freq": "rare"
+    },
+    {
+      "name": "Salicylate toxicity",
+      "system": "Toxic Ingestion",
+      "redFlag": true,
+      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
+      "freq": "uncommon"
+    }
+  ],
   "sources": {
     "index_keys": [],
     "index_type": "non-clinical"

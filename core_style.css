@@ -85,6 +85,34 @@ main {
     font-size: 14px;
 }
 
+.home-welcome {
+    margin-bottom: 18px;
+}
+
+.home-welcome-title {
+    margin: 0 0 10px;
+    font-size: 18px;
+}
+
+.home-welcome-copy {
+    margin: 0;
+    color: #444;
+}
+
+.home-link {
+    font-size: 90%;
+    background-color: transparent;
+    padding: 3px 8px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--ink);
+}
+
+.noscript-empty {
+    max-width: 680px;
+    margin: 16px auto;
+}
+
 .card a.button {
     display: inline-block;
     text-decoration: none;
@@ -270,6 +298,7 @@ footer {
     /* cover the whole viewport so we can add an overlay */
     z-index: 1000;
     pointer-events: none;
+    visibility: hidden;
     /* disabled until open */
 }
 
@@ -303,6 +332,7 @@ footer {
 /* Open state enables interactions, shows overlay, and slides in sheet */
 .settings-panel.open {
     pointer-events: auto;
+    visibility: visible;
 }
 
 .settings-panel.open::before {

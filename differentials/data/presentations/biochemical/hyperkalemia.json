@@ -1,6 +1,63 @@
 {
   "presentation": "Hyperkalemia",
-  "items": [],
+  "items": [
+    {
+      "name": "Chronic kidney disease",
+      "system": "Reduced Renal Excretion",
+      "redFlag": false,
+      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
+      "freq": "common"
+    },
+    {
+      "name": "Acute kidney injury",
+      "system": "Reduced Renal Excretion",
+      "redFlag": true,
+      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
+      "freq": "common"
+    },
+    {
+      "name": "Potassium-sparing diuretics",
+      "system": "Medication Related",
+      "redFlag": false,
+      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
+      "freq": "common"
+    },
+    {
+      "name": "ACE inhibitor or ARB therapy",
+      "system": "Medication Related",
+      "redFlag": false,
+      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
+      "freq": "common"
+    },
+    {
+      "name": "Metabolic acidosis with potassium shift",
+      "system": "Transcellular Shift",
+      "redFlag": false,
+      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
+      "freq": "uncommon"
+    },
+    {
+      "name": "Tissue breakdown (rhabdomyolysis or tumor lysis)",
+      "system": "Cellular Release",
+      "redFlag": true,
+      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
+      "freq": "uncommon"
+    },
+    {
+      "name": "Hypoaldosteronism or Addison disease",
+      "system": "Endocrine",
+      "redFlag": false,
+      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
+      "freq": "uncommon"
+    },
+    {
+      "name": "Pseudohyperkalemia from sample hemolysis",
+      "system": "Laboratory Artifact",
+      "redFlag": false,
+      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
+      "freq": "common"
+    }
+  ],
   "sources": {
     "index_keys": [],
     "index_type": "non-clinical"

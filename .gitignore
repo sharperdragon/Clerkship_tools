@@ -1,18 +1,21 @@
+# Environment files
 .env
-./DS_Store
-
 *.env*
+
+# macOS files
+.DS_Store
 **/.DS_Store
-**/__pycache__
-*/.DS_Store
-/other:bad
+
+# Python caches/artifacts
+__pycache__/
+**/__pycache__/
+*.py[cod]
+
+# Local generated folders
 backups/
-backups
+folder/
 
-/folder/*
-
-# Python cache folders
-*/__pycache__/
-utils/**/*.py[cod]
-utils/**/**/__pycache__/
-utils/**/__pycache__/
+# Node / UI test artifacts
+node_modules/
+playwright-report/
+test-results/

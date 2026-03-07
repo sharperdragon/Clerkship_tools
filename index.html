@@ -4,19 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Home • Clerkship Tools</title>
-    <script>
-    (function(){
-      var m = localStorage.getItem('ui-theme'); // "light" | "dark" | null (system)
-      if (m === 'light' || m === 'dark') {
-        document.documentElement.setAttribute('data-theme', m);
-        document.documentElement.style.colorScheme = m;
-      } else {
-        // default to light if no preference saved
-        document.documentElement.setAttribute('data-theme', 'light');
-        document.documentElement.style.colorScheme = 'light';
-      }
-    })();
-    </script>
+  <script src="core_app.js"></script>
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="core_style.css" />
   <link rel="icon" href="ct_icon.svg">
@@ -24,13 +12,21 @@
 <body>
   <header class="appbar">
     <h1>Clerkship Tools</h1>
-    <button id="settings-button" class="settings-button">Settings</button>
+    <button
+      id="settings-button"
+      class="settings-button"
+      type="button"
+      aria-controls="settings-panel"
+      aria-expanded="false"
+    >
+      Settings
+    </button>
   </header>
 
   <main>
-    <section style="margin-bottom:18px">
-      <h2 style="margin:0 0 10px; font-size:18px;">Welcome</h2>
-      <p style="margin:0; color:#444;">Pick a tool to get started.</p>
+    <section class="home-welcome">
+      <h2 class="home-welcome-title">Welcome</h2>
+      <p class="home-welcome-copy">Pick a tool to get started.</p>
     </section>
 
     <section class="grid">
@@ -39,11 +35,6 @@
         <p>Build structured Subjective, ROS, PE, and MSE and auto-generate the complete note.</p>
         <a class="button" href="v1_writer/writer.html">Launch</a>
       </article>
-<!--      <article class="card">
-        <h2>NoteWriter v2 beta</h2>
-        <p>BETA – not currently functional</p>
-        <a class="button" href="folder/note_writer/writer_base.html">Launch</a>
-      </article> -->
       <article class="card">
         <h2>Health Maintanence</h2>
         <p>USPSTF Reccomendations</p>
@@ -53,7 +44,6 @@
         <h2>Pediatrics</h2>
         <p></p>
         <a class="button" href="pediatrics/peds_index.html">Launch</a>
-      </article>
       </article>
       <article class="card">
         <h2>Calculators</h2>
@@ -74,13 +64,17 @@
   </main>
 
   <footer>© CJG 2026</footer>
-
-
-
-  <div id="settings-panel" class="settings-panel">
+  <div
+    id="settings-panel"
+    class="settings-panel"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="settings-title"
+    aria-hidden="true"
+  >
     <div class="settings-panel-content">
-      <button id="close-settings" class="close-settings">×</button>
-      <h2>Settings</h2>
+      <button id="close-settings" class="close-settings" type="button" aria-label="Close settings panel">×</button>
+      <h2 id="settings-title">Settings</h2>
       <h3>Appearance</h3>
       <label>
         <input type="radio" name="theme" value="light"> Light Theme
@@ -90,30 +84,5 @@
       </label>
     </div>
   </div>
-
-  <style>
-
-  </style>
-  <script src="core_app.js"></script>
-  <script>
-  // ! Theme radio wiring (Light/Dark/System) -> persists to localStorage via setTheme
-  document.addEventListener('DOMContentLoaded', function () {
-    if (!window.setTheme) return;
-    var saved = localStorage.getItem('ui-theme');          // "light" | "dark" | null => system
-    var radios = document.querySelectorAll('input[name="theme"]');
-    if (!radios.length) return;
-
-    // Initialize checked state (default to light if none saved)
-    radios.forEach(function(r){
-      r.checked = saved ? (r.value === saved) : (r.value === 'light');
-      r.addEventListener('change', function(e){
-        if (e.target.checked) window.setTheme(e.target.value);
-      });
-    });
-  });
-  </script>
-  <script>
-
-  </script>
 </body>
 </html>

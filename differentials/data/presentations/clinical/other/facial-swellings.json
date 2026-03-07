@@ -1,6 +1,63 @@
 {
   "presentation": "Facial swellings",
-  "items": [],
+  "items": [
+    {
+      "name": "Cellulitis",
+      "system": "Infectious",
+      "redFlag": false,
+      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
+      "freq": "common"
+    },
+    {
+      "name": "Dental abscess",
+      "system": "Odontogenic",
+      "redFlag": false,
+      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
+      "freq": "common"
+    },
+    {
+      "name": "Parotitis",
+      "system": "Salivary Gland",
+      "redFlag": false,
+      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
+      "freq": "common"
+    },
+    {
+      "name": "Angioedema",
+      "system": "Allergic Or Immunologic",
+      "redFlag": true,
+      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
+      "freq": "uncommon"
+    },
+    {
+      "name": "Facial trauma with hematoma",
+      "system": "Trauma",
+      "redFlag": false,
+      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
+      "freq": "common"
+    },
+    {
+      "name": "Mumps",
+      "system": "Viral Infection",
+      "redFlag": false,
+      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
+      "freq": "uncommon"
+    },
+    {
+      "name": "Parotid gland neoplasm",
+      "system": "Neoplastic",
+      "redFlag": false,
+      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
+      "freq": "uncommon"
+    },
+    {
+      "name": "Superior vena cava obstruction",
+      "system": "Vascular",
+      "redFlag": true,
+      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
+      "freq": "rare"
+    }
+  ],
   "sources": {
     "index_keys": [],
     "index_type": "clinical"

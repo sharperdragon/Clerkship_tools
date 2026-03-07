@@ -1,6 +1,56 @@
 {
   "presentation": "Respiratory acidosis",
-  "items": [],
+  "items": [
+    {
+      "name": "COPD exacerbation with hypoventilation",
+      "system": "Pulmonary",
+      "redFlag": true,
+      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
+      "freq": "common"
+    },
+    {
+      "name": "Opioid or sedative respiratory depression",
+      "system": "Central Nervous System",
+      "redFlag": true,
+      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
+      "freq": "common"
+    },
+    {
+      "name": "Severe asthma with ventilatory fatigue",
+      "system": "Pulmonary",
+      "redFlag": true,
+      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
+      "freq": "uncommon"
+    },
+    {
+      "name": "Neuromuscular weakness (for example myasthenia or GBS)",
+      "system": "Neuromuscular",
+      "redFlag": true,
+      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
+      "freq": "uncommon"
+    },
+    {
+      "name": "Obesity hypoventilation syndrome",
+      "system": "Ventilatory Mechanics",
+      "redFlag": false,
+      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
+      "freq": "uncommon"
+    },
+    {
+      "name": "Advanced pneumonia with respiratory failure",
+      "system": "Pulmonary",
+      "redFlag": true,
+      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
+      "freq": "uncommon"
+    },
+    {
+      "name": "Chest wall restriction (severe kyphoscoliosis)",
+      "system": "Ventilatory Mechanics",
+      "redFlag": false,
+      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
+      "freq": "rare"
+    }
+  ],
   "sources": {
     "index_keys": [],
     "index_type": "non-clinical"

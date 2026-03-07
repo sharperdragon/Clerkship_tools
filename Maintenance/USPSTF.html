@@ -24,7 +24,16 @@
       </select>
     </label>
 
-    <button id="btnSettings" class="btn ghost" type="button" aria-haspopup="dialog">Settings</button>
+    <button
+      id="btnSettings"
+      class="btn ghost"
+      type="button"
+      aria-haspopup="dialog"
+      aria-controls="dlgSettings"
+      aria-expanded="false"
+    >
+      Settings
+    </button>
   </header>
 
   <main class="layout" role="main">
@@ -126,7 +135,7 @@
 
   <!-- Settings dialog -->
   <dialog id="dlgSettings" class="dialog" aria-label="Settings">
-    <form method="dialog">
+    <form id="settingsForm" method="dialog">
       <h3>Settings</h3>
       <label>USPSTF JSON URL
         <input type="text" id="apiUrl" placeholder="https://…" />
@@ -134,7 +143,7 @@
       <div class="muted">Defaults to your key-based link; no additional token required.</div>
       <div class="actions">
         <button id="btnSaveSettings" class="btn" type="submit">Save</button>
-        <button value="cancel" class="btn ghost">Close</button>
+        <button value="cancel" class="btn ghost" type="submit">Close</button>
       </div>
     </form>
   </dialog>
@@ -148,7 +157,7 @@
   <script type="module" src="./uspstf_app.js"></script>
 
   <noscript>
-    <div class="empty" style="max-width: 680px; margin: 16px auto;">
+    <div class="empty noscript-empty">
       JavaScript is required for this page to load recommendations.
     </div>
   </noscript>

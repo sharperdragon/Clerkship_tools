@@ -1,0 +1,32 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "UI Tests: Install Dependencies",
+      "type": "shell",
+      "command": "npm install && npm run test:ui:install",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "UI Tests: Smoke (Headless)",
+      "type": "shell",
+      "command": "npm run test:ui",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "UI Tests: Smoke (Headed)",
+      "type": "shell",
+      "command": "npm run test:ui:headed",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    }
+  ]
+}

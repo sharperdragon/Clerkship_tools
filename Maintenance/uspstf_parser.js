@@ -84,10 +84,10 @@ function trySex(s) {
    ! PREGNANCY
 ================================================================ */
 function tryPregnancy(s) {
-  // Positive cues
-  if (/\bpregnan(t|cy)\b|\bgravida\b|\btrimester\b|\bgestation\b|\bga\s*\d+\w*\b/.test(s)) return "Y";
   // Negative cues
   if (/\bnot\s+pregnan(t|cy)\b|\bpost\s*menopausal\b|\bpost[-\s]*partum\b|\bpostpartum\b/.test(s)) return "N";
+  // Positive cues
+  if (/\bpregnan(t|cy)\b|\bgravida\b|\btrimester\b|\bgestation\b|\bga\s*\d+\w*\b/.test(s)) return "Y";
   return undefined;
 }
 
@@ -106,8 +106,8 @@ function tryTobacco(s) {
    ! SEXUAL ACTIVITY
 ================================================================ */
 function trySexualActivity(s) {
-  if (/\bsexually\s*active\b|\bintercourse\b|\bpartners?\b/.test(s)) return "Y";
   if (/\bnot\s*sexually\s*active\b|\bdenies\s*sexual\s*activity\b/.test(s)) return "N";
+  if (/\bsexually\s*active\b|\bintercourse\b|\bpartners?\b/.test(s)) return "Y";
   return undefined;
 }
 
