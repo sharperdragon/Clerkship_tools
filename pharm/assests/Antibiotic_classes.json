@@ -3,7 +3,7 @@
     "Beta-Lactams": {
       "Penicillins": ["Penicillin G", "Penicillin V"],
       "Aminopenicillins": ["Amoxicillin", "Ampicillin"],
-      "Anti-Staph Penicillins": ["Nafcillin", "Oxacillin", "Dicloxacillin"],
+      "Anti-Staph Penicillins": ["Nafcillin", "Oxacillin", "Cloxacillin", "Dicloxacillin", "Flucloxacillin"],
       "Extended-Spectrum Penicillins": ["Piperacillin", "Ticarcillin"],
       "Beta-Lactam + Inhibitor Combinations": [
         "Amoxicillin-Clavulanate",

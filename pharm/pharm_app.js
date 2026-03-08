@@ -93,7 +93,10 @@
           ],
         },
         { label: "Macrolides", match: /macrolide/i },
-        { label: "Anti-staphylococcal Agents", match: /(anti-?staph|staphyl|mrsa)/i },
+        {
+          label: "Anti-Staph Penicillins",
+          match: /anti-?staph(?:ylococcal)?\s*penicillin|nafcillin|oxacillin|cloxacillin|dicloxacillin|flucloxacillin/i,
+        },
         { label: "Tetracyclines", match: /tetracycline/i },
         { label: "Glycopeptides", match: /(glycopeptide|vancomycin)/i },
         { label: "Lincosamides", match: /lincosamide/i },
