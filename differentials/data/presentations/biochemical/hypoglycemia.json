@@ -173,7 +173,7 @@
       "freq": "unknown"
     },
     {
-      "name": "Pancreatic islet cell tumours; insulinoma",
+      "name": "Pancreatic islet cell tumors; insulinoma",
       "system": "Neoplastic",
       "redFlag": false,
       "hpi": {
@@ -192,7 +192,7 @@
       "freq": "unknown"
     },
     {
-      "name": "Non-pancreatic tumours; retroperitoneal \ufb01brosarcoma",
+      "name": "Non-pancreatic tumors; retroperitoneal \ufb01brosarcoma",
       "system": "Neoplastic",
       "redFlag": false,
       "hpi": {

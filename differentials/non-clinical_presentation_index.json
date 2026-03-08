@@ -43,8 +43,8 @@
       "Addison’s disease"
     ],
     "NEOPLASTIC": [
-      "Pancreatic islet cell tumours; insulinoma",
-      "Non-pancreatic tumours; retroperitoneal ﬁbrosarcoma,"
+      "Pancreatic islet cell tumors; insulinoma",
+      "Non-pancreatic tumors; retroperitoneal ﬁbrosarcoma,"
     ],
     "LIVER DISEASE": [
       "Inherited glycogen storage disorders",
@@ -65,7 +65,7 @@
       "Thiazide or loop diuretics",
       "Renal tubular disorders",
       "Gastrointestinal",
-      "Diarrhoea",
+      "Diarrhea",
       "Vomiting",
       "Fistulas",
       "Laxatives",
@@ -82,7 +82,7 @@
       "Confusion"
     ],
     "NON-RENAL WATER LOSSES": [
-      "Gastrointestinal losses (e.g. vomiting, diarrhoea)",
+      "Gastrointestinal losses (e.g. vomiting, Diarrhea)",
       "Pyrexia",
       "Burns"
     ],
@@ -110,7 +110,7 @@
   "Hyponatremia": {
     "HYPOVOLAEMIC": [
       "Gastrointestinal losses",
-      "Diarrhoea",
+      "Diarrhea",
       "Vomiting",
       "Enterocutanous fistula",
       "Renal sodium losses",
@@ -185,7 +185,7 @@
   "Hypomagnesemia": {
     "EXCESSIVE LOSSES": [
       "Diuretics",
-      "Severe diarrhoea",
+      "Severe Diarrhea",
       "Prolonged vomiting",
       "Polyuria (poorly controlled diabetes)",
       "Prolonged and excessive nasogastric aspiration"

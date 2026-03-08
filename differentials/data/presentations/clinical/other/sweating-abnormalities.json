@@ -59,7 +59,7 @@
       "freq": "common"
     },
     {
-      "name": "Brain tumours",
+      "name": "Brain tumors",
       "system": "Malignancy",
       "redFlag": false,
       "hpi": {

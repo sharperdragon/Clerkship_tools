@@ -325,7 +325,7 @@
       "freq": "common"
     },
     {
-      "name": "Tumours",
+      "name": "Tumors",
       "system": "Cns Conditions",
       "redFlag": false,
       "hpi": {

@@ -2,7 +2,7 @@
   "presentation": "Fecal incontinence",
   "items": [
     {
-      "name": "Severe diarrhoea, , irritable bowel syndrome",
+      "name": "Severe Diarrhea, , irritable bowel syndrome",
       "system": "Normal Sphincters And Pelvic Floor",
       "redFlag": false,
       "hpi": {
@@ -21,7 +21,7 @@
       "freq": "common"
     },
     {
-      "name": "Fecal impaction (\u2018over\ufb02ow\u2019 diarrhoea)",
+      "name": "Fecal impaction (\u2018over\ufb02ow\u2019 Diarrhea)",
       "system": "Normal Sphincters And Pelvic Floor",
       "redFlag": false,
       "hpi": {
@@ -211,7 +211,7 @@
       "freq": "rare"
     },
     {
-      "name": "Spinal tumours",
+      "name": "Spinal tumors",
       "system": "Acquired",
       "redFlag": false,
       "hpi": {

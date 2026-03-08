@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pharm Reference • Clerkship Tools</title>
+  <script src="../core_app.js"></script>
+  <link rel="stylesheet" href="./pharm_style.css" />
+</head>
+<body>
+  <header class="app-header">
+    <div class="brand">
+      <a class="brand__home" href="../index.html" aria-label="Clerkship Tools Home">Clerkship Tools</a>
+      <h1 class="brand__title">Pharm Reference</h1>
+      <p class="brand__subtitle">Rapid medication review for mixed clerkship workflows.</p>
+    </div>
+  </header>
+
+  <main class="app-main">
+    <section id="disclaimerBanner" class="disclaimer" role="note" aria-label="Educational-use disclaimer">
+      Educational reference only. Verify all medication decisions with current institutional guidance and pharmacy resources.
+    </section>
+
+    <section class="controls" aria-label="Medication filters">
+      <label class="control control--search">
+        <span class="control__label">Search</span>
+        <input
+          id="searchInput"
+          class="input"
+          type="search"
+          autocomplete="off"
+          placeholder="Search name, class, indications, adverse effects, interactions..."
+        />
+      </label>
+
+      <label class="control">
+        <span class="control__label">Drug Class</span>
+        <select id="classFilter" class="select">
+          <option value="">All classes</option>
+        </select>
+      </label>
+
+      <label class="control">
+        <span class="control__label">Route</span>
+        <select id="routeFilter" class="select">
+          <option value="">All routes</option>
+        </select>
+      </label>
+
+      <div class="control control--actions">
+        <span id="resultCount" class="result-count" aria-live="polite">0 medications</span>
+        <button id="btnClearFilters" class="btn ghost" type="button">Clear filters</button>
+      </div>
+    </section>
+
+    <div id="loadError" class="error" role="alert" hidden></div>
+
+    <section class="layout-shell">
+      <section id="resultsRegion" class="results-region" aria-label="Medication results">
+        <div id="results" class="results-grid" aria-live="polite"></div>
+      </section>
+
+      <aside id="detailPanel" class="detail-panel" aria-label="Medication details">
+        <header class="detail-panel__header">
+          <div>
+            <p class="detail-panel__eyebrow">Selected medication</p>
+            <h2 id="detailTitle" class="detail-panel__title">No selection</h2>
+          </div>
+          <button id="btnCloseDetail" class="btn icon detail-panel__close" type="button" aria-label="Close details panel">✕</button>
+        </header>
+
+        <p id="detailMeta" class="detail-panel__meta" hidden></p>
+
+        <div id="detailEmpty" class="detail-empty">
+          <p>Select a medication card to view high-yield details.</p>
+        </div>
+
+        <div id="detailBody" class="detail-panel__body" hidden></div>
+      </aside>
+    </section>
+  </main>
+
+  <div id="detailScrim" class="detail-scrim" hidden></div>
+
+  <script src="./pharm_app.js"></script>
+</body>
+</html>

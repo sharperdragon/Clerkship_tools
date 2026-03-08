@@ -211,7 +211,7 @@
       "freq": "rare"
     },
     {
-      "name": "Testicular tumours",
+      "name": "Testicular tumors",
       "system": "Pathological",
       "redFlag": false,
       "hpi": {
@@ -249,7 +249,7 @@
       "freq": "rare"
     },
     {
-      "name": "Pituitary tumours (",
+      "name": "Pituitary tumors (",
       "system": "Pathological",
       "redFlag": false,
       "hpi": {

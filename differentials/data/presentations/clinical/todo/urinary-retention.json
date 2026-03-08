@@ -2,7 +2,7 @@
   "presentation": "Urinary retention",
   "items": [
     {
-      "name": "Tumours",
+      "name": "Tumors",
       "system": "Urethral Lumen Or Bladder Neck",
       "redFlag": false,
       "hpi": {

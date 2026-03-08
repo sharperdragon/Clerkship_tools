@@ -1,5 +1,5 @@
 {
-  "presentation": "Diarrhoea",
+  "presentation": "Diarrhea",
   "items": [
     {
       "name": "Escherichia coli",
@@ -287,7 +287,7 @@
       "freq": "common"
     },
     {
-      "name": "Fecal impaction \u2013 over\ufb02ow diarrhoea",
+      "name": "Fecal impaction \u2013 over\ufb02ow Diarrhea",
       "system": "Diverticular disease \u2022 (rare in rural Africa and Asia)",
       "redFlag": false,
       "hpi": {
@@ -688,7 +688,7 @@
   ],
   "sources": {
     "index_keys": [
-      "Diarrhoea"
+      "Diarrhea"
     ],
     "index_type": "clinical"
   },

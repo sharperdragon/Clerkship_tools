@@ -1,5 +1,5 @@
 {
-  "presentation": "Steatorrhoea",
+  "presentation": "Steatorrhea",
   "items": [
     {
       "name": "Impaired secretion \u2013 chronic pancreatitis",
@@ -213,7 +213,7 @@
   ],
   "sources": {
     "index_keys": [
-      "Steatorrhoea"
+      "Steatorrhea"
     ],
     "index_type": "clinical"
   },

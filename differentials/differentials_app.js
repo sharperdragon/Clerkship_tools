@@ -27,16 +27,16 @@ const SECTION_META = {
 
 const TITLE_ALIASES = {
   Abdominal: ["Abdominal pain"],
-  Diarrhoea: ["Diarrhea"],
-  Dyspnea: ["Dyspnoea"],
+  Diarrhea: ["Diarrhea"],
+  Dyspnea: ["Dyspnea"],
   "Fecal incontinence": ["Faecal incontinence"],
   Hyperkalemia: ["Hyperkalaemia"],
   Uremia: ["Uraemia"],
 };
 
 const FILE_SLUG_ALIASES = {
-  Diarrhoea: ["diarrhea"],
-  Dyspnea: ["dyspnoea"],
+  Diarrhea: ["diarrhea"],
+  Dyspnea: ["dyspnea"],
   Hyperkalemia: ["hyperkalaemia"],
   Uremia: ["uraemia"],
 };

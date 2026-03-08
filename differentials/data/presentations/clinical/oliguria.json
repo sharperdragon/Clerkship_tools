@@ -2,7 +2,7 @@
   "presentation": "Oliguria",
   "items": [
     {
-      "name": "Dehydration, diarrhoea",
+      "name": "Dehydration, Diarrhea",
       "system": "Renal Circulatory Insufficiency",
       "redFlag": false,
       "hpi": {
@@ -192,7 +192,7 @@
       "freq": "common"
     },
     {
-      "name": "Pelvic tumours",
+      "name": "Pelvic tumors",
       "system": "Post-Renal (obstructive)",
       "redFlag": false,
       "hpi": {

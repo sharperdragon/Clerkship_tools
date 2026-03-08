@@ -249,7 +249,7 @@
       "freq": "rare"
     },
     {
-      "name": "Brain tumours",
+      "name": "Brain tumors",
       "system": "Neoplastic",
       "redFlag": false,
       "hpi": {

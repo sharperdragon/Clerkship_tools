@@ -1,3 +1,5 @@
+# Symptoms
+
 Abdominal pain
 Abdominal swelling
 Anorectal pain
@@ -18,7 +20,7 @@ Convulsions
 Cough
 Cyanosis
 Deafness
-Diarrhoea
+Diarrhea
 Dizziness
 Dysphagia
 Dyspnea
@@ -35,7 +37,7 @@ Facial ulcer
 Fecal incontinence
 Finger lesion
 Finger pain
-Foot deformity 
+Foot deformity
 ankle deformity
 Foot pain
 Foot ulcer
@@ -86,7 +88,7 @@ Scrotal pain
 Scrotal swelling
 Shock
 Splenomegaly
-Steatorrhoea
+Steatorrhea
 Stridor
 Abnormal sweating
 Syncope
