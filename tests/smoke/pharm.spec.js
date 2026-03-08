@@ -70,6 +70,8 @@ test.describe("Pharm reference smoke", () => {
     await waitForCards(page, EXPECTED_INITIAL_COUNT);
 
     await page.locator(SEARCH_INPUT).fill("naloxone");
+    await expect(page.locator(RESULTS_CARDS)).toHaveCount(1);
+    await expect(page.locator(RESULTS_CARDS).first()).toContainText("Naloxone");
     await page.locator(RESULTS_CARDS).first().click();
 
     await expect(page.locator(DETAIL_TITLE)).toHaveText("Naloxone");
