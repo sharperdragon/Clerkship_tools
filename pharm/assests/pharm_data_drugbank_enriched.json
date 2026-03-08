@@ -184,7 +184,7 @@
     {
       "id": "amoxicillin",
       "name": "Amoxicillin",
-      "drugClass": "Aminopenicillin",
+      "drugClass": "Aminopenicillins",
       "routes": [
         "PO"
       ],
@@ -240,7 +240,7 @@
     {
       "id": "amoxicillin-clavulanate",
       "name": "Amoxicillin-Clavulanate",
-      "drugClass": "Beta-lactam/Beta-lactamase inhibitor",
+      "drugClass": "Beta-Lactam + Inhibitor Combinations",
       "routes": [
         "PO"
       ],
@@ -299,7 +299,7 @@
     {
       "id": "azithromycin",
       "name": "Azithromycin",
-      "drugClass": "Macrolide antibiotic",
+      "drugClass": "Macrolides",
       "routes": [
         "PO",
         "IV"
@@ -358,7 +358,7 @@
     {
       "id": "ceftriaxone",
       "name": "Ceftriaxone",
-      "drugClass": "Third-generation cephalosporin",
+      "drugClass": "3rd Generation Cephalosporin",
       "routes": [
         "IV",
         "IM"
@@ -416,7 +416,7 @@
     {
       "id": "vancomycin",
       "name": "Vancomycin",
-      "drugClass": "Glycopeptide antibiotic",
+      "drugClass": "Glycopeptides",
       "routes": [
         "IV",
         "PO"
@@ -1842,6 +1842,1482 @@
         "inchikey": "InChIKey=UZHSEJADLWPNLE-GRGSLBFTSA-N",
         "inchi": "InChI=1S/C19H21NO4/c1-2-8-20-9-7-18-15-11-3-4-12(21)16(15)24-17(18)13(22)5-6-19(18,23)14(20)10-11/h2-4,14,17,21,23H,1,5-10H2/t14-,17+,18+,19-/m1/s1",
         "description_first_sentence": "A specific opiate antagonist that has no agonist activity."
+      }
+    },
+    {
+      "id": "piperacillin-tazobactam",
+      "name": "Piperacillin-Tazobactam",
+      "drugClass": "Beta-Lactam + Inhibitor Combinations",
+      "routes": [
+        "IV"
+      ],
+      "moa": "Piperacillin inhibits bacterial cell wall synthesis while tazobactam inhibits susceptible beta-lactamases.",
+      "indications": [
+        "Severe polymicrobial infection",
+        "Hospital-acquired pneumonia",
+        "Complicated intra-abdominal or skin/soft tissue infections"
+      ],
+      "contraindications": [
+        "Serious immediate beta-lactam allergy",
+        "Known hypersensitivity to penicillin-derived agents"
+      ],
+      "adverseEffects": [
+        "Rash",
+        "Diarrhea",
+        "Acute kidney injury"
+      ],
+      "majorInteractions": [
+        "Concurrent vancomycin may increase nephrotoxicity risk",
+        "Methotrexate clearance may be reduced"
+      ],
+      "monitoring": [
+        "Renal function and dose adjustment",
+        "Clinical response with culture data",
+        "Hypersensitivity and severe diarrhea symptoms"
+      ],
+      "aliases": [
+        "Pip/Tazo",
+        "Piperacillin"
+      ],
+      "brandExamples": [
+        "Zosyn"
+      ],
+      "pearls": [
+        "Extended-infusion dosing is commonly used in hospitals to optimize pharmacodynamic exposure."
+      ],
+      "drugbank": {
+        "drugbank_id": "DB00319",
+        "name": "Piperacillin",
+        "type": "small molecule",
+        "groups": [
+          "approved"
+        ],
+        "atc_codes": [
+          "J01CA12"
+        ],
+        "categories": [
+          "Anti-Bacterial Agents",
+          "Penicillins"
+        ],
+        "inchikey": "InChIKey=IVBHGBMCVLDMKU-GXNBUGAJSA-N",
+        "inchi": "InChI=1S/C23H27N5O7S/c1-4-26-10-11-27(19(32)18(26)31)22(35)25-13(12-8-6-5-7-9-12)16(29)24-14-17(30)28-15(21(33)34)23(2,3)36-20(14)28/h5-9,13-15,20H,4,10-11H2,1-3H3,(H,24,29)(H,25,35)(H,33,34)/t13-,14-,15+,20-/m1/s1",
+        "description_first_sentence": "Semisynthetic, broad-spectrum, ampicillin derived ureidopenicillin antibiotic proposed for pseudomonas infections."
+      }
+    },
+    {
+      "id": "cefepime",
+      "name": "Cefepime",
+      "drugClass": "4th Generation Cephalosporin",
+      "routes": [
+        "IV",
+        "IM"
+      ],
+      "moa": "Beta-lactam antibiotic that inhibits bacterial cell wall synthesis.",
+      "indications": [
+        "Severe gram-negative infection including Pseudomonas risk",
+        "Febrile neutropenia regimens",
+        "Hospital-acquired pneumonia"
+      ],
+      "contraindications": [
+        "Severe cephalosporin anaphylaxis",
+        "Known immediate beta-lactam hypersensitivity"
+      ],
+      "adverseEffects": [
+        "Rash",
+        "Diarrhea",
+        "Neurotoxicity or encephalopathy in renal dysfunction"
+      ],
+      "majorInteractions": [
+        "Nephrotoxic agents may increase kidney injury risk",
+        "Warfarin anticoagulant effect may increase"
+      ],
+      "monitoring": [
+        "Renal function with dose adjustment",
+        "Mental status in high-risk patients",
+        "Clinical and microbiologic response"
+      ],
+      "aliases": [],
+      "brandExamples": [
+        "Maxipime"
+      ],
+      "pearls": [
+        "Neurotoxicity risk increases when renal dose adjustment is delayed."
+      ],
+      "drugbank": {
+        "drugbank_id": "DB01413",
+        "name": "Cefepime",
+        "type": "small molecule",
+        "groups": [
+          "approved"
+        ],
+        "atc_codes": [
+          "J01DE01"
+        ],
+        "categories": [
+          "Anti-Bacterial Agents",
+          "Cephalosporins"
+        ],
+        "inchikey": "InChIKey=HVFLCNVBZFFHBT-ZKDACBOMSA-N",
+        "inchi": "InChI=1S/C19H24N6O5S2/c1-25(5-3-4-6-25)7-10-8-31-17-13(16(27)24(17)14(10)18(28)29)22-15(26)12(23-30-2)11-9-32-19(20)21-11/h9,13,17H,3-8H2,1-2H3,(H3-,20,21,22,26,28,29)/b23-12-/t13-,17-/m1/s1",
+        "description_first_sentence": "Cefepime is a fourth-generation cephalosporin antibiotic developed in 1994."
+      }
+    },
+    {
+      "id": "meropenem",
+      "name": "Meropenem",
+      "drugClass": "Carbapenems",
+      "routes": [
+        "IV"
+      ],
+      "moa": "Broad-spectrum beta-lactam that inhibits bacterial cell wall synthesis and is stable to many beta-lactamases.",
+      "indications": [
+        "Severe sepsis with resistant gram-negative concern",
+        "Complicated intra-abdominal infection",
+        "Meningitis in selected protocols"
+      ],
+      "contraindications": [
+        "Serious immediate beta-lactam allergy",
+        "Known hypersensitivity to carbapenems"
+      ],
+      "adverseEffects": [
+        "Nausea",
+        "Rash",
+        "Seizures (rare, risk increased with renal impairment)"
+      ],
+      "majorInteractions": [
+        "Valproic acid concentrations may decrease significantly",
+        "Ganciclovir coadministration may increase seizure risk"
+      ],
+      "monitoring": [
+        "Renal function for dose adjustment",
+        "Neurologic status in high-risk patients",
+        "Culture-directed de-escalation opportunities"
+      ],
+      "aliases": [],
+      "brandExamples": [
+        "Merrem"
+      ],
+      "pearls": [
+        "Reserve broad carbapenem coverage for resistant organisms or severe illness when appropriate."
+      ],
+      "drugbank": {
+        "drugbank_id": "DB00760",
+        "name": "Meropenem",
+        "type": "small molecule",
+        "groups": [
+          "approved",
+          "investigational"
+        ],
+        "atc_codes": [
+          "J01DH02"
+        ],
+        "categories": [
+          "Anti-Bacterial Agents"
+        ],
+        "inchikey": "InChIKey=DMJNNHOOLUXYBV-PQTSNVLCSA-N",
+        "inchi": "InChI=1S/C17H25N3O5S/c1-7-12-11(8(2)21)16(23)20(12)13(17(24)25)14(7)26-9-5-10(18-6-9)15(22)19(3)4/h7-12,18,21H,5-6H2,1-4H3,(H,24,25)/t7-,8-,9+,10+,11-,12-/m1/s1",
+        "description_first_sentence": "Meropenem is a broad-spectrum carbapenem antibiotic."
+      }
+    },
+    {
+      "id": "doxycycline",
+      "name": "Doxycycline",
+      "drugClass": "Tetracyclines",
+      "routes": [
+        "PO",
+        "IV"
+      ],
+      "moa": "Binds the 30S ribosomal subunit to inhibit bacterial protein synthesis.",
+      "indications": [
+        "Atypical pneumonia coverage",
+        "Tick-borne infections",
+        "Selected skin/soft tissue infections including CA-MRSA"
+      ],
+      "contraindications": [
+        "Known hypersensitivity",
+        "Pregnancy or children younger than 8 years (relative depending on indication)"
+      ],
+      "adverseEffects": [
+        "Photosensitivity",
+        "Esophagitis",
+        "GI upset"
+      ],
+      "majorInteractions": [
+        "Calcium, iron, and magnesium products reduce oral absorption",
+        "Warfarin anticoagulant effect may increase"
+      ],
+      "monitoring": [
+        "Clinical response",
+        "GI tolerance and photosensitivity symptoms",
+        "INR when combined with warfarin"
+      ],
+      "aliases": [],
+      "brandExamples": [
+        "Vibramycin"
+      ],
+      "pearls": [
+        "Take with water and remain upright after oral dosing to reduce pill esophagitis risk."
+      ],
+      "drugbank": {
+        "drugbank_id": "DB00254",
+        "name": "Doxycycline",
+        "type": "small molecule",
+        "groups": [
+          "approved",
+          "investigational"
+        ],
+        "atc_codes": [
+          "A01AB22",
+          "J01AA02"
+        ],
+        "categories": [
+          "Anti-Bacterial Agents",
+          "Antimalarials",
+          "Tetracyclines"
+        ],
+        "inchikey": "InChIKey=JBIWCJUYHHGXTC-AKNGSSGZSA-N",
+        "inchi": "InChI=1S/C22H24N2O8/c1-7-8-5-4-6-9(25)11(8)16(26)12-10(7)17(27)14-15(24(2)3)18(28)13(21(23)31)20(30)22(14,32)19(12)29/h4-7,10,14-15,17,25,27-29,32H,1-3H3,(H2,23,31)/t7-,10+,14+,15-,17-,22-/m0/s1",
+        "description_first_sentence": "A synthetic tetracycline derivative with similar antimicrobial activity."
+      }
+    },
+    {
+      "id": "clindamycin",
+      "name": "Clindamycin",
+      "drugClass": "Lincosamides",
+      "routes": [
+        "PO",
+        "IV",
+        "Topical"
+      ],
+      "moa": "Binds the 50S ribosomal subunit and inhibits bacterial protein synthesis.",
+      "indications": [
+        "Skin and soft tissue infection",
+        "Dental or oral anaerobic infection",
+        "Adjunct toxin suppression in severe streptococcal infection"
+      ],
+      "contraindications": [
+        "Known hypersensitivity",
+        "History of severe clindamycin-associated C. difficile colitis (relative)"
+      ],
+      "adverseEffects": [
+        "Diarrhea",
+        "C. difficile colitis",
+        "Rash"
+      ],
+      "majorInteractions": [
+        "Neuromuscular blocking agents may have enhanced effects",
+        "Concurrent erythromycin may reduce antibacterial activity"
+      ],
+      "monitoring": [
+        "Bowel symptoms and stool frequency",
+        "Liver function during prolonged therapy",
+        "Clinical infection response"
+      ],
+      "aliases": [],
+      "brandExamples": [
+        "Cleocin"
+      ],
+      "pearls": [
+        "Coverage is strong for many gram-positive and anaerobic pathogens but limited for aerobic gram-negative organisms."
+      ],
+      "drugbank": {
+        "drugbank_id": "DB01190",
+        "name": "Clindamycin",
+        "type": "small molecule",
+        "groups": [
+          "approved"
+        ],
+        "atc_codes": [
+          "D10AF01",
+          "G01AA10",
+          "J01FF01"
+        ],
+        "categories": [
+          "Anti-Bacterial Agents",
+          "Protein Synthesis Inhibitors",
+          "Antibiotics"
+        ],
+        "inchikey": "InChIKey=KDLRVYVGXIQJDK-NOWPCOIGSA-N",
+        "inchi": "InChI=1S/C18H33ClN2O5S/c1-5-6-10-7-11(21(3)8-10)17(25)20-12(9(2)19)16-14(23)13(22)15(24)18(26-16)27-4/h9-16,18,22-24H,5-8H2,1-4H3,(H,20,25)/t9?,10-,11+,12?,13+,14-,15-,16-,18-/m1/s1",
+        "description_first_sentence": "Clindamycin is a semisynthetic lincosamide antibiotic that has largely replaced lincomycin due to an improved side effect profile."
+      }
+    },
+    {
+      "id": "linezolid",
+      "name": "Linezolid",
+      "drugClass": "Oxazolidinones",
+      "routes": [
+        "PO",
+        "IV"
+      ],
+      "moa": "Inhibits bacterial protein synthesis by preventing 50S initiation complex formation.",
+      "indications": [
+        "MRSA pneumonia or skin infection",
+        "VRE infection",
+        "Oral step-down therapy for resistant gram-positive infections"
+      ],
+      "contraindications": [
+        "Concurrent or recent MAOI use",
+        "Uncontrolled hypertension with potent adrenergic agents (relative)"
+      ],
+      "adverseEffects": [
+        "Thrombocytopenia",
+        "Peripheral or optic neuropathy with prolonged use",
+        "Serotonin syndrome risk"
+      ],
+      "majorInteractions": [
+        "Serotonergic medications increase serotonin syndrome risk",
+        "Tyramine-rich foods may increase blood pressure"
+      ],
+      "monitoring": [
+        "CBC, especially with prolonged therapy",
+        "Neuropathy and visual symptoms",
+        "Drug interaction profile"
+      ],
+      "aliases": [],
+      "brandExamples": [
+        "Zyvox"
+      ],
+      "pearls": [
+        "Excellent oral bioavailability allows IV-to-PO conversion in many stable patients."
+      ],
+      "drugbank": {
+        "drugbank_id": "DB00601",
+        "name": "Linezolid",
+        "type": "small molecule",
+        "groups": [
+          "approved",
+          "investigational"
+        ],
+        "atc_codes": [
+          "J01XX08"
+        ],
+        "categories": [
+          "Anti-Bacterial Agents"
+        ],
+        "inchikey": "InChIKey=TYZROVQLWOKYKF-ZDUSSCGKSA-N",
+        "inchi": "InChI=1S/C16H20FN3O4/c1-11(21)18-9-13-10-20(16(22)24-13)12-2-3-15(14(17)8-12)19-4-6-23-7-5-19/h2-3,8,13H,4-7,9-10H2,1H3,(H,18,21)/t13-/m0/s1",
+        "description_first_sentence": "Linezolid is a synthetic antibiotic, the first of the oxazolidinone class, used for the treatment of infections caused by multi-resistant bacteria including streptococcus and methicillin-resistant Staphylococcus aureus (MRSA)."
+      }
+    },
+    {
+      "id": "nafcillin",
+      "name": "Nafcillin",
+      "drugClass": "Anti-staphylococcal penicillins",
+      "routes": [
+        "IV",
+        "IM"
+      ],
+      "moa": "Penicillinase-resistant beta-lactam that inhibits bacterial cell wall synthesis in susceptible organisms.",
+      "indications": [
+        "Methicillin-susceptible Staphylococcus aureus (MSSA) bacteremia",
+        "MSSA endocarditis or deep tissue infection",
+        "Serious skin and soft tissue infection due to susceptible staphylococci"
+      ],
+      "contraindications": [
+        "Serious immediate beta-lactam allergy",
+        "Known hypersensitivity to penicillin-class agents"
+      ],
+      "adverseEffects": [
+        "Rash",
+        "Hepatotoxicity",
+        "Neutropenia with prolonged therapy"
+      ],
+      "majorInteractions": [
+        "Warfarin anticoagulant effect may decrease due to enzyme induction",
+        "Methotrexate exposure may increase"
+      ],
+      "monitoring": [
+        "Liver enzymes during prolonged therapy",
+        "CBC in extended courses",
+        "Clinical response with culture-guided de-escalation"
+      ],
+      "aliases": [],
+      "brandExamples": [
+        "Nallpen"
+      ],
+      "pearls": [
+        "For serious MSSA infections, anti-staphylococcal penicillins are often preferred over vancomycin when feasible."
+      ],
+      "drugbank": {
+        "drugbank_id": "DB00607",
+        "name": "Nafcillin",
+        "type": "small molecule",
+        "groups": [
+          "approved"
+        ],
+        "atc_codes": [],
+        "categories": [
+          "Anti-Bacterial Agents",
+          "Penicillins"
+        ],
+        "inchikey": "InChIKey=GPXLMGHLHQJAGZ-JTDSTZFVSA-N",
+        "inchi": "InChI=1S/C21H22N2O5S/c1-4-28-13-10-9-11-7-5-6-8-12(11)14(13)17(24)22-15-18(25)23-16(20(26)27)21(2,3)29-19(15)23/h5-10,15-16,19H,4H2,1-3H3,(H,22,24)(H,26,27)/t15-,16+,19-/m1/s1",
+        "description_first_sentence": "A semi-synthetic antibiotic related to penicillin."
+      }
+    },
+    {
+      "id": "oxacillin",
+      "name": "Oxacillin",
+      "drugClass": "Anti-staphylococcal penicillins",
+      "routes": [
+        "PO",
+        "IV",
+        "IM"
+      ],
+      "moa": "Penicillinase-resistant beta-lactam that inhibits bacterial cell wall synthesis in susceptible gram-positive bacteria.",
+      "indications": [
+        "MSSA bacteremia or endocarditis",
+        "MSSA skin and soft tissue infection",
+        "Bone and joint infection caused by susceptible staphylococci"
+      ],
+      "contraindications": [
+        "Serious immediate beta-lactam allergy",
+        "Known hypersensitivity to penicillin-class agents"
+      ],
+      "adverseEffects": [
+        "Rash",
+        "Hepatic enzyme elevation",
+        "Interstitial nephritis"
+      ],
+      "majorInteractions": [
+        "Warfarin anticoagulant effect may decrease",
+        "Methotrexate exposure may increase"
+      ],
+      "monitoring": [
+        "Renal and hepatic function",
+        "CBC in prolonged courses",
+        "Clinical and microbiologic response"
+      ],
+      "aliases": [],
+      "brandExamples": [
+        "Bactocill"
+      ],
+      "pearls": [
+        "A frequent inpatient choice for serious MSSA infection when susceptibilities confirm oxacillin sensitivity."
+      ],
+      "drugbank": {
+        "drugbank_id": "DB00713",
+        "name": "Oxacillin",
+        "type": "small molecule",
+        "groups": [
+          "approved"
+        ],
+        "atc_codes": [
+          "J01CF02",
+          "J01CF04"
+        ],
+        "categories": [
+          "Penicillins"
+        ],
+        "inchikey": "InChIKey=UWYHMGVUTGAWSP-JKIFEVAISA-N",
+        "inchi": "InChI=1S/C19H19N3O5S/c1-9-11(12(21-27-9)10-7-5-4-6-8-10)15(23)20-13-16(24)22-14(18(25)26)19(2,3)28-17(13)22/h4-8,13-14,17H,1-3H3,(H,20,23)(H,25,26)/t13-,14+,17-/m1/s1",
+        "description_first_sentence": "An antibiotic similar to flucloxacillin used in resistant staphylococci infections."
+      }
+    },
+    {
+      "id": "cloxacillin",
+      "name": "Cloxacillin",
+      "drugClass": "Anti-staphylococcal penicillins",
+      "routes": [
+        "PO",
+        "IV"
+      ],
+      "moa": "Penicillinase-resistant beta-lactam that inhibits bacterial cell wall synthesis in susceptible organisms.",
+      "indications": [
+        "MSSA skin and soft tissue infection",
+        "MSSA bone and joint infection",
+        "Step-down oral therapy for susceptible staphylococcal infection in selected settings"
+      ],
+      "contraindications": [
+        "Serious immediate beta-lactam allergy",
+        "Known hypersensitivity to penicillin-class agents"
+      ],
+      "adverseEffects": [
+        "GI upset",
+        "Rash",
+        "Cholestatic liver injury (rare)"
+      ],
+      "majorInteractions": [
+        "Warfarin anticoagulant effect may decrease",
+        "Methotrexate exposure may increase"
+      ],
+      "monitoring": [
+        "Clinical response",
+        "Liver function in prolonged treatment",
+        "Signs of hypersensitivity"
+      ],
+      "aliases": [],
+      "brandExamples": [
+        "Orbenin"
+      ],
+      "pearls": [
+        "Oral formulations can be useful for outpatient treatment of susceptible staphylococcal infections."
+      ],
+      "drugbank": {
+        "drugbank_id": "DB01147",
+        "name": "Cloxacillin",
+        "type": "small molecule",
+        "groups": [
+          "approved"
+        ],
+        "atc_codes": [],
+        "categories": [
+          "Penicillins"
+        ],
+        "inchikey": "InChIKey=LQOLIRLGBULYKD-JKIFEVAISA-N",
+        "inchi": "InChI=1S/C19H18ClN3O5S/c1-8-11(12(22-28-8)9-6-4-5-7-10(9)20)15(24)21-13-16(25)23-14(18(26)27)19(2,3)29-17(13)23/h4-7,13-14,17H,1-3H3,(H,21,24)(H,26,27)/t13-,14+,17-/m1/s1",
+        "description_first_sentence": "A semi-synthetic antibiotic that is a chlorinated derivative of oxacillin."
+      }
+    },
+    {
+      "id": "dicloxacillin",
+      "name": "Dicloxacillin",
+      "drugClass": "Anti-staphylococcal penicillins",
+      "routes": [
+        "PO"
+      ],
+      "moa": "Penicillinase-resistant beta-lactam that inhibits cell wall synthesis in susceptible staphylococci.",
+      "indications": [
+        "MSSA skin and soft tissue infection",
+        "Mild to moderate staphylococcal infection suitable for oral therapy"
+      ],
+      "contraindications": [
+        "Serious immediate beta-lactam allergy",
+        "Known hypersensitivity to penicillin-class agents"
+      ],
+      "adverseEffects": [
+        "GI upset",
+        "Rash",
+        "Hepatic enzyme elevation"
+      ],
+      "majorInteractions": [
+        "Warfarin anticoagulant effect may decrease",
+        "Methotrexate exposure may increase"
+      ],
+      "monitoring": [
+        "Clinical response",
+        "Liver function during prolonged courses",
+        "Allergic reaction symptoms"
+      ],
+      "aliases": [],
+      "brandExamples": [
+        "Dycill"
+      ],
+      "pearls": [
+        "Often used as an oral option for confirmed MSSA when MRSA risk is low."
+      ],
+      "drugbank": {
+        "drugbank_id": "DB00485",
+        "name": "Dicloxacillin",
+        "type": "small molecule",
+        "groups": [
+          "approved"
+        ],
+        "atc_codes": [
+          "J01CF01"
+        ],
+        "categories": [
+          "Anti-Bacterial Agents",
+          "Penicillins"
+        ],
+        "inchikey": "InChIKey=YFAGHNZHGGCZAX-JKIFEVAISA-N",
+        "inchi": "InChI=1S/C19H17Cl2N3O5S/c1-7-10(12(23-29-7)11-8(20)5-4-6-9(11)21)15(25)22-13-16(26)24-14(18(27)28)19(2,3)30-17(13)24/h4-6,13-14,17H,1-3H3,(H,22,25)(H,27,28)/t13-,14+,17-/m1/s1",
+        "description_first_sentence": "One of the penicillins which is resistant to penicillinase."
+      }
+    },
+    {
+      "id": "flucloxacillin",
+      "name": "Flucloxacillin",
+      "drugClass": "Anti-staphylococcal penicillins",
+      "routes": [
+        "PO",
+        "IV"
+      ],
+      "moa": "Penicillinase-resistant beta-lactam that inhibits bacterial cell wall synthesis in susceptible staphylococci.",
+      "indications": [
+        "MSSA skin and soft tissue infection",
+        "MSSA osteomyelitis or bone/joint infection",
+        "Serious MSSA infection when local protocols support use"
+      ],
+      "contraindications": [
+        "Serious immediate beta-lactam allergy",
+        "Prior flucloxacillin-associated cholestatic jaundice"
+      ],
+      "adverseEffects": [
+        "GI upset",
+        "Rash",
+        "Cholestatic hepatitis (rare)"
+      ],
+      "majorInteractions": [
+        "Warfarin anticoagulant effect may decrease",
+        "Methotrexate exposure may increase"
+      ],
+      "monitoring": [
+        "Liver function in prolonged therapy",
+        "Clinical and microbiologic response",
+        "Signs of hypersensitivity"
+      ],
+      "aliases": [],
+      "brandExamples": [
+        "Floxapen"
+      ],
+      "pearls": [
+        "Use is common in some international guidelines for MSSA where this agent is available."
+      ],
+      "drugbank": {
+        "drugbank_id": "DB00301",
+        "name": "Flucloxacillin",
+        "type": "small molecule",
+        "groups": [
+          "approved"
+        ],
+        "atc_codes": [
+          "J01CF05"
+        ],
+        "categories": [
+          "Anti-Bacterial Agents",
+          "Penicillins"
+        ],
+        "inchikey": "InChIKey=UIOFUWFRIANQPC-JKIFEVAISA-N",
+        "inchi": "InChI=1S/C19H17ClFN3O5S/c1-7-10(12(23-29-7)11-8(20)5-4-6-9(11)21)15(25)22-13-16(26)24-14(18(27)28)19(2,3)30-17(13)24/h4-6,13-14,17H,1-3H3,(H,22,25)(H,27,28)/t13-,14+,17-/m1/s1",
+        "description_first_sentence": "Antibiotic analog of cloxacillin."
+      }
+    },
+    {
+      "id": "trimethoprim-sulfamethoxazole",
+      "name": "Trimethoprim-Sulfamethoxazole",
+      "drugClass": "Sulfonamides",
+      "routes": [
+        "PO",
+        "IV"
+      ],
+      "moa": "Blocks sequential bacterial folate synthesis steps via sulfamethoxazole and trimethoprim.",
+      "indications": [
+        "Urinary tract infection",
+        "Selected CA-MRSA skin infections",
+        "Pneumocystis jirovecii treatment or prophylaxis"
+      ],
+      "contraindications": [
+        "Severe sulfonamide hypersensitivity",
+        "Severe hepatic dysfunction",
+        "Pregnancy near term (relative)"
+      ],
+      "adverseEffects": [
+        "Rash including severe cutaneous reactions",
+        "Hyperkalemia",
+        "Bone marrow suppression"
+      ],
+      "majorInteractions": [
+        "Warfarin anticoagulant effect may increase significantly",
+        "ACE inhibitors/ARBs can increase hyperkalemia risk"
+      ],
+      "monitoring": [
+        "CBC during prolonged therapy",
+        "Potassium and renal function",
+        "Rash and hypersensitivity symptoms"
+      ],
+      "aliases": [
+        "TMP-SMX",
+        "Co-trimoxazole",
+        "Trimethoprim"
+      ],
+      "brandExamples": [
+        "Bactrim",
+        "Septra"
+      ],
+      "pearls": [
+        "Renal dosing and hydration are important to reduce toxicity risk."
+      ],
+      "drugbank": {
+        "drugbank_id": "DB00440",
+        "name": "Trimethoprim",
+        "type": "small molecule",
+        "groups": [
+          "approved"
+        ],
+        "atc_codes": [
+          "J01EA01"
+        ],
+        "categories": [
+          "Anti-Infective Agents"
+        ],
+        "inchikey": "InChIKey=IEDVJHCEMCRBQM-UHFFFAOYSA-N",
+        "inchi": "InChI=1S/C14H18N4O3/c1-19-10-5-8(6-11(20-2)12(10)21-3)4-9-7-17-14(16)18-13(9)15/h5-7H,4H2,1-3H3,(H4,15,16,17,18)",
+        "description_first_sentence": "A pyrimidine inhibitor of dihydrofolate reductase, it is an antibacterial related to pyrimethamine."
+      }
+    },
+    {
+      "id": "clopidogrel",
+      "name": "Clopidogrel",
+      "drugClass": "P2Y12 inhibitor antiplatelet",
+      "routes": [
+        "PO"
+      ],
+      "moa": "Irreversibly inhibits platelet ADP (P2Y12) receptors to reduce platelet aggregation.",
+      "indications": [
+        "Acute coronary syndrome",
+        "Post-percutaneous coronary intervention with stent",
+        "Secondary prevention after ischemic stroke or peripheral arterial disease"
+      ],
+      "contraindications": [
+        "Active pathological bleeding",
+        "Known hypersensitivity"
+      ],
+      "adverseEffects": [
+        "Bleeding",
+        "Bruising",
+        "Thrombotic thrombocytopenic purpura (rare)"
+      ],
+      "majorInteractions": [
+        "Omeprazole or esomeprazole may reduce activation",
+        "Anticoagulants increase bleeding risk"
+      ],
+      "monitoring": [
+        "Bleeding signs",
+        "Adherence in post-stent patients",
+        "CBC if clinically indicated"
+      ],
+      "aliases": [],
+      "brandExamples": [
+        "Plavix"
+      ],
+      "pearls": [
+        "It is a prodrug requiring CYP2C19 activation, which can vary between patients."
+      ],
+      "drugbank": {
+        "drugbank_id": "DB00758",
+        "name": "Clopidogrel",
+        "type": "small molecule",
+        "groups": [
+          "approved",
+          "nutraceutical"
+        ],
+        "atc_codes": [
+          "B01AC04"
+        ],
+        "categories": [
+          "Platelet Aggregation Inhibitors"
+        ],
+        "inchikey": "InChIKey=GKTWGGQPFAXNFI-HNNXBMFYSA-N",
+        "inchi": "InChI=1S/C16H16ClNO2S/c1-20-16(19)15(12-4-2-3-5-13(12)17)18-8-6-14-11(10-18)7-9-21-14/h2-5,7,9,15H,6,8,10H2,1H3/t15-/m0/s1",
+        "description_first_sentence": "Clopidogrel, an antiplatelet agent structurally and pharmacologically similar to ticlopidine, is used to inhibit blood clots in a variety of conditions such as peripheral vascular disease, coronary artery disease, and cerebrovascular disease."
+      }
+    },
+    {
+      "id": "rivaroxaban",
+      "name": "Rivaroxaban",
+      "drugClass": "Direct factor Xa inhibitor",
+      "routes": [
+        "PO"
+      ],
+      "moa": "Directly inhibits factor Xa to reduce thrombin generation and clot formation.",
+      "indications": [
+        "Atrial fibrillation stroke prevention",
+        "VTE treatment and secondary prevention",
+        "Postoperative VTE prophylaxis in selected settings"
+      ],
+      "contraindications": [
+        "Active pathological bleeding",
+        "Significant hepatic disease with coagulopathy"
+      ],
+      "adverseEffects": [
+        "Bleeding",
+        "Anemia",
+        "GI upset"
+      ],
+      "majorInteractions": [
+        "Strong CYP3A4/P-gp inhibitors may increase exposure",
+        "Strong CYP3A4/P-gp inducers may reduce efficacy"
+      ],
+      "monitoring": [
+        "Bleeding and thrombosis signs",
+        "Renal and hepatic function periodically",
+        "Adherence and dose timing with food when required"
+      ],
+      "aliases": [],
+      "brandExamples": [
+        "Xarelto"
+      ],
+      "pearls": [
+        "Higher-dose regimens are typically taken with food to improve absorption."
+      ],
+      "drugbank": {
+        "drugbank_id": "DB06228",
+        "name": "Rivaroxaban",
+        "type": "small molecule",
+        "groups": [
+          "approved"
+        ],
+        "atc_codes": [
+          "B01AF01"
+        ],
+        "categories": [],
+        "inchikey": "InChIKey=KGFYHTZWPPHNLQ-AWEZNQCLSA-N",
+        "inchi": "InChI=1S/C19H18ClN3O5S/c20-16-6-5-15(29-16)18(25)21-9-14-10-23(19(26)28-14)13-3-1-12(2-4-13)22-7-8-27-11-17(22)24/h1-6,14H,7-11H2,(H,21,25)/t14-/m0/s1",
+        "description_first_sentence": "Rivaroxaban is an anticoagulant and the first orally active direct factor Xa inhibitor."
+      }
+    },
+    {
+      "id": "warfarin",
+      "name": "Warfarin",
+      "drugClass": "Vitamin K antagonist anticoagulant",
+      "routes": [
+        "PO"
+      ],
+      "moa": "Inhibits vitamin K epoxide reductase, reducing synthesis of factors II, VII, IX, and X.",
+      "indications": [
+        "Atrial fibrillation stroke prevention in selected patients",
+        "Mechanical heart valve anticoagulation",
+        "VTE treatment and prevention"
+      ],
+      "contraindications": [
+        "Pregnancy",
+        "Active major bleeding",
+        "Inability to perform safe INR monitoring"
+      ],
+      "adverseEffects": [
+        "Bleeding",
+        "Skin necrosis (rare)",
+        "Calciphylaxis (rare)"
+      ],
+      "majorInteractions": [
+        "Many CYP-modifying drugs can raise or lower INR",
+        "Large changes in vitamin K intake alter anticoagulant effect"
+      ],
+      "monitoring": [
+        "INR trend",
+        "Bleeding or thrombosis symptoms",
+        "Diet and medication change review"
+      ],
+      "aliases": [],
+      "brandExamples": [
+        "Coumadin",
+        "Jantoven"
+      ],
+      "pearls": [
+        "Onset is delayed, so bridging strategies may be needed in selected high-risk scenarios."
+      ],
+      "drugbank": {
+        "drugbank_id": "DB00682",
+        "name": "Warfarin",
+        "type": "small molecule",
+        "groups": [
+          "approved"
+        ],
+        "atc_codes": [
+          "B01AA03"
+        ],
+        "categories": [
+          "Anticoagulants",
+          "Rodenticides"
+        ],
+        "inchikey": "InChIKey=PJVWKTKQMONHTI-UHFFFAOYNA-N",
+        "inchi": "InChI=1/C19H16O4/c1-12(20)11-15(13-7-3-2-4-8-13)17-18(21)14-9-5-6-10-16(14)23-19(17)22/h2-10,15,21H,11H2,1H3",
+        "description_first_sentence": "Warfarin is an anticoagulant drug normally used to prevent blood clot formation as well as migration."
+      }
+    },
+    {
+      "id": "losartan",
+      "name": "Losartan",
+      "drugClass": "Angiotensin II receptor blocker (ARB)",
+      "routes": [
+        "PO"
+      ],
+      "moa": "Blocks angiotensin II type 1 receptors, reducing vasoconstriction and aldosterone effects.",
+      "indications": [
+        "Hypertension",
+        "Diabetic kidney disease with proteinuria",
+        "Heart failure when ACE inhibitors are not tolerated"
+      ],
+      "contraindications": [
+        "Pregnancy",
+        "Bilateral renal artery stenosis",
+        "Known hypersensitivity"
+      ],
+      "adverseEffects": [
+        "Hyperkalemia",
+        "Dizziness",
+        "Acute kidney injury"
+      ],
+      "majorInteractions": [
+        "Potassium supplements and potassium-sparing diuretics increase hyperkalemia risk",
+        "NSAIDs may blunt antihypertensive effect and worsen renal function"
+      ],
+      "monitoring": [
+        "Blood pressure",
+        "Serum creatinine",
+        "Serum potassium"
+      ],
+      "aliases": [],
+      "brandExamples": [
+        "Cozaar"
+      ],
+      "pearls": [
+        "Compared with ACE inhibitors, cough and angioedema are less common but still possible."
+      ],
+      "drugbank": {
+        "drugbank_id": "DB00678",
+        "name": "Losartan",
+        "type": "small molecule",
+        "groups": [
+          "approved"
+        ],
+        "atc_codes": [
+          "C09CA01"
+        ],
+        "categories": [
+          "Antihypertensive Agents",
+          "Anti-Arrhythmia Agents",
+          "Angiotensin II Type 1 Receptor Blockers",
+          "Angiotensin Receptor Antagonists"
+        ],
+        "inchikey": "InChIKey=PSIFNNKUMBGKDQ-UHFFFAOYSA-N",
+        "inchi": "InChI=1S/C22H23ClN6O/c1-2-3-8-20-24-21(23)19(14-30)29(20)13-15-9-11-16(12-10-15)17-6-4-5-7-18(17)22-25-27-28-26-22/h4-7,9-12,30H,2-3,8,13-14H2,1H3,(H,25,26,27,28)",
+        "description_first_sentence": "Losartan is an angiotensin-receptor blocker (ARB) that may be used alone or with other agents to treat hypertension."
+      }
+    },
+    {
+      "id": "hydrochlorothiazide",
+      "name": "Hydrochlorothiazide",
+      "drugClass": "Thiazide diuretic",
+      "routes": [
+        "PO"
+      ],
+      "moa": "Inhibits sodium-chloride transport in the distal convoluted tubule, increasing natriuresis.",
+      "indications": [
+        "Hypertension",
+        "Mild edema states",
+        "Recurrent calcium nephrolithiasis prevention in selected patients"
+      ],
+      "contraindications": [
+        "Anuria",
+        "Known severe sulfonamide hypersensitivity (relative)"
+      ],
+      "adverseEffects": [
+        "Hyponatremia",
+        "Hypokalemia",
+        "Hyperuricemia"
+      ],
+      "majorInteractions": [
+        "Lithium levels may increase",
+        "Other antihypertensives may cause additive hypotension"
+      ],
+      "monitoring": [
+        "Blood pressure",
+        "Sodium and potassium",
+        "Renal function"
+      ],
+      "aliases": [
+        "HCTZ"
+      ],
+      "brandExamples": [
+        "Microzide"
+      ],
+      "pearls": [
+        "Diuretic efficacy can fall at lower eGFR, so regimen adjustments may be needed."
+      ],
+      "drugbank": {
+        "drugbank_id": "DB00999",
+        "name": "Hydrochlorothiazide",
+        "type": "small molecule",
+        "groups": [
+          "approved"
+        ],
+        "atc_codes": [],
+        "categories": [
+          "Antihypertensive Agents",
+          "Diuretics",
+          "Sodium Chloride Symporter Inhibitors"
+        ],
+        "inchikey": "InChIKey=JZUFKLXOESDKRF-UHFFFAOYSA-N",
+        "inchi": "InChI=1S/C7H8ClN3O4S2/c8-4-1-5-7(2-6(4)16(9,12)13)17(14,15)11-3-10-5/h1-2,10-11H,3H2,(H2,9,12,13)",
+        "description_first_sentence": "A thiazide diuretic often considered the prototypical member of this class."
+      }
+    },
+    {
+      "id": "spironolactone",
+      "name": "Spironolactone",
+      "drugClass": "Potassium-sparing diuretic (aldosterone antagonist)",
+      "routes": [
+        "PO"
+      ],
+      "moa": "Antagonizes mineralocorticoid receptors to reduce sodium retention and potassium loss.",
+      "indications": [
+        "Heart failure with reduced ejection fraction",
+        "Primary hyperaldosteronism",
+        "Resistant hypertension or ascites in selected patients"
+      ],
+      "contraindications": [
+        "Hyperkalemia",
+        "Severe kidney dysfunction",
+        "Addison disease"
+      ],
+      "adverseEffects": [
+        "Hyperkalemia",
+        "Gynecomastia",
+        "Menstrual irregularities"
+      ],
+      "majorInteractions": [
+        "ACE inhibitors/ARBs or potassium supplements increase hyperkalemia risk",
+        "Trimethoprim can further increase potassium"
+      ],
+      "monitoring": [
+        "Serum potassium",
+        "Renal function",
+        "Blood pressure and volume status"
+      ],
+      "aliases": [],
+      "brandExamples": [
+        "Aldactone"
+      ],
+      "pearls": [
+        "Recheck potassium soon after initiation or dose increases, especially in CKD."
+      ],
+      "drugbank": {
+        "drugbank_id": "DB00421",
+        "name": "Spironolactone",
+        "type": "small molecule",
+        "groups": [
+          "approved"
+        ],
+        "atc_codes": [
+          "C03DA01"
+        ],
+        "categories": [
+          "Diuretics",
+          "Mineralocorticoid Receptor Antagonists"
+        ],
+        "inchikey": "InChIKey=LXMSZDCAJNLERA-ZHYRCANASA-N",
+        "inchi": "InChI=1S/C24H32O4S/c1-14(25)29-19-13-15-12-16(26)4-8-22(15,2)17-5-9-23(3)18(21(17)19)6-10-24(23)11-7-20(27)28-24/h12,17-19,21H,4-11,13H2,1-3H3/t17-,18-,19+,21+,22-,23-,24+/m0/s1",
+        "description_first_sentence": "A potassium sparing diuretic that acts by antagonism of aldosterone in the distal renal tubules."
+      }
+    },
+    {
+      "id": "carvedilol",
+      "name": "Carvedilol",
+      "drugClass": "Nonselective beta blocker with alpha-1 blockade",
+      "routes": [
+        "PO"
+      ],
+      "moa": "Blocks beta-1, beta-2, and alpha-1 receptors to reduce heart rate, contractility, and afterload.",
+      "indications": [
+        "Heart failure with reduced ejection fraction",
+        "Hypertension",
+        "Post-MI left ventricular dysfunction"
+      ],
+      "contraindications": [
+        "Severe bradycardia or high-grade AV block without pacing",
+        "Cardiogenic shock or decompensated severe heart failure",
+        "Severe bronchospastic disease"
+      ],
+      "adverseEffects": [
+        "Bradycardia",
+        "Hypotension",
+        "Fatigue"
+      ],
+      "majorInteractions": [
+        "Non-dihydropyridine calcium channel blockers may cause excessive AV nodal suppression",
+        "Insulin or hypoglycemic therapies may have masked adrenergic warning symptoms"
+      ],
+      "monitoring": [
+        "Heart rate",
+        "Blood pressure",
+        "Heart failure symptoms and volume status"
+      ],
+      "aliases": [],
+      "brandExamples": [
+        "Coreg"
+      ],
+      "pearls": [
+        "Taking with food can reduce orthostatic symptoms during titration."
+      ],
+      "drugbank": {
+        "drugbank_id": "DB01136",
+        "name": "Carvedilol",
+        "type": "small molecule",
+        "groups": [
+          "approved",
+          "investigational"
+        ],
+        "atc_codes": [
+          "C07AG02"
+        ],
+        "categories": [
+          "Antihypertensive Agents",
+          "Vasodilator Agents",
+          "Adrenergic alpha-1 Receptor Antagonists",
+          "Adrenergic beta-Antagonists"
+        ],
+        "inchikey": "InChIKey=OGHNVEJMJSYVRP-UHFFFAOYSA-N",
+        "inchi": "InChI=1S/C24H26N2O4/c1-28-21-10-4-5-11-22(21)29-14-13-25-15-17(27)16-30-23-12-6-9-20-24(23)18-7-2-3-8-19(18)26-20/h2-12,17,25-27H,13-16H2,1H3",
+        "description_first_sentence": "Carvedilol is a non-selective beta blocker indicated in the treatment of mild to moderate congestive heart failure (CHF)."
+      }
+    },
+    {
+      "id": "diltiazem",
+      "name": "Diltiazem",
+      "drugClass": "Non-dihydropyridine calcium channel blocker",
+      "routes": [
+        "PO",
+        "IV"
+      ],
+      "moa": "Blocks L-type calcium channels in myocardium, AV node, and vascular smooth muscle.",
+      "indications": [
+        "Atrial fibrillation rate control",
+        "Supraventricular tachycardia",
+        "Angina or hypertension"
+      ],
+      "contraindications": [
+        "Severe hypotension",
+        "High-grade AV block without pacing",
+        "Decompensated heart failure with reduced ejection fraction"
+      ],
+      "adverseEffects": [
+        "Bradycardia",
+        "Hypotension",
+        "Peripheral edema"
+      ],
+      "majorInteractions": [
+        "Beta blockers can increase risk of bradycardia or heart block",
+        "CYP3A4 interactions can alter exposure of diltiazem or coadministered drugs"
+      ],
+      "monitoring": [
+        "Heart rate",
+        "Blood pressure",
+        "ECG/PR interval when clinically indicated"
+      ],
+      "aliases": [],
+      "brandExamples": [
+        "Cardizem"
+      ],
+      "pearls": [
+        "Use caution in reduced-EF heart failure because of negative inotropic effects."
+      ],
+      "drugbank": {
+        "drugbank_id": "DB00343",
+        "name": "Diltiazem",
+        "type": "small molecule",
+        "groups": [
+          "approved"
+        ],
+        "atc_codes": [
+          "C08DB01"
+        ],
+        "categories": [],
+        "inchikey": "InChIKey=HSUGRBWQSSZJOP-RTWAWAEBSA-N",
+        "inchi": "InChI=1S/C22H26N2O4S/c1-15(25)28-20-21(16-9-11-17(27-4)12-10-16)29-19-8-6-5-7-18(19)24(22(20)26)14-13-23(2)3/h5-12,20-21H,13-14H2,1-4H3/t20-,21+/m1/s1",
+        "description_first_sentence": "A benzothiazepine derivative with vasodilating action due to its antagonism of the actions of the calcium ion in membrane functions."
+      }
+    },
+    {
+      "id": "nitroglycerin",
+      "name": "Nitroglycerin",
+      "drugClass": "Nitrate vasodilator antianginal",
+      "routes": [
+        "SL",
+        "IV",
+        "Topical"
+      ],
+      "moa": "Releases nitric oxide to increase cGMP, producing venodilation and reduced myocardial oxygen demand.",
+      "indications": [
+        "Acute angina relief",
+        "Hypertensive pulmonary edema adjunct",
+        "Ischemic chest pain protocols"
+      ],
+      "contraindications": [
+        "Recent phosphodiesterase-5 inhibitor use",
+        "Severe hypotension",
+        "Right ventricular infarction context"
+      ],
+      "adverseEffects": [
+        "Headache",
+        "Hypotension",
+        "Reflex tachycardia"
+      ],
+      "majorInteractions": [
+        "PDE-5 inhibitors can cause profound hypotension",
+        "Alcohol and other antihypertensives may enhance hypotension"
+      ],
+      "monitoring": [
+        "Blood pressure",
+        "Chest pain response",
+        "Headache severity and tolerance"
+      ],
+      "aliases": [
+        "Glyceryl trinitrate"
+      ],
+      "brandExamples": [
+        "Nitrostat",
+        "Nitro-Bid"
+      ],
+      "pearls": [
+        "Nitrate-free intervals are needed for chronic nitrate formulations to limit tolerance."
+      ],
+      "drugbank": {
+        "drugbank_id": "DB00727",
+        "name": "Nitroglycerin",
+        "type": "small molecule",
+        "groups": [
+          "approved",
+          "investigational"
+        ],
+        "atc_codes": [
+          "C01DA02"
+        ],
+        "categories": [
+          "Vasodilator Agents",
+          "Explosive Agents"
+        ],
+        "inchikey": "InChIKey=SNIOPGDIGTZGOP-UHFFFAOYSA-N",
+        "inchi": "InChI=1S/C3H5N3O9/c7-4(8)13-1-3(15-6(11)12)2-14-5(9)10/h3H,1-2H2",
+        "description_first_sentence": "A volatile vasodilator which relieves angina pectoris by stimulating guanylate cyclase and lowering cytosolic calcium."
+      }
+    },
+    {
+      "id": "pantoprazole",
+      "name": "Pantoprazole",
+      "drugClass": "Proton pump inhibitor",
+      "routes": [
+        "PO",
+        "IV"
+      ],
+      "moa": "Irreversibly inhibits gastric parietal cell H+/K+ ATPase to suppress acid production.",
+      "indications": [
+        "GERD or erosive esophagitis",
+        "Upper GI bleed regimens in selected protocols",
+        "Stress ulcer prophylaxis in selected patients"
+      ],
+      "contraindications": [
+        "Known hypersensitivity"
+      ],
+      "adverseEffects": [
+        "Headache",
+        "Diarrhea",
+        "Hypomagnesemia with long-term use"
+      ],
+      "majorInteractions": [
+        "Can reduce absorption of acid-dependent medications",
+        "High-dose methotrexate exposure may increase"
+      ],
+      "monitoring": [
+        "Symptom control",
+        "Magnesium and B12 in long-term therapy",
+        "Need for continued acid suppression"
+      ],
+      "aliases": [],
+      "brandExamples": [
+        "Protonix"
+      ],
+      "pearls": [
+        "Often preferred when minimizing CYP2C19-related interaction concerns."
+      ],
+      "drugbank": {
+        "drugbank_id": "DB00213",
+        "name": "Pantoprazole",
+        "type": "small molecule",
+        "groups": [
+          "approved"
+        ],
+        "atc_codes": [
+          "A02BC02"
+        ],
+        "categories": [
+          "Anti-Ulcer Agents",
+          "Proton Pump Inhibitors"
+        ],
+        "inchikey": "InChIKey=IQPSEEYGBUAQFF-UHFFFAOYSA-N",
+        "inchi": "InChI=1S/C16H15F2N3O4S/c1-23-13-5-6-19-12(14(13)24-2)8-26(22)16-20-10-4-3-9(25-15(17)18)7-11(10)21-16/h3-7,15H,8H2,1-2H3,(H,20,21)",
+        "description_first_sentence": "Pantoprazole is a proton pump inhibitor drug used for short-term treatment of erosion and ulceration of the esophagus caused by gastroesophageal reflux disease."
+      }
+    },
+    {
+      "id": "lactulose",
+      "name": "Lactulose",
+      "drugClass": "Osmotic laxative",
+      "routes": [
+        "PO",
+        "PR"
+      ],
+      "moa": "Nonabsorbable disaccharide that draws water into the colon and acidifies stool to trap ammonia.",
+      "indications": [
+        "Constipation",
+        "Hepatic encephalopathy treatment or prevention"
+      ],
+      "contraindications": [
+        "Bowel obstruction",
+        "Galactosemia"
+      ],
+      "adverseEffects": [
+        "Bloating",
+        "Abdominal cramping",
+        "Diarrhea"
+      ],
+      "majorInteractions": [
+        "Other laxatives can complicate hepatic encephalopathy titration",
+        "Broad-spectrum antibiotics may reduce ammonia-lowering effect"
+      ],
+      "monitoring": [
+        "Bowel movement frequency",
+        "Mental status in hepatic encephalopathy",
+        "Hydration and electrolytes"
+      ],
+      "aliases": [],
+      "brandExamples": [
+        "Constulose",
+        "Enulose"
+      ],
+      "pearls": [
+        "For hepatic encephalopathy, dosing is often titrated to 2-3 soft stools per day."
+      ],
+      "drugbank": {
+        "drugbank_id": "DB00581",
+        "name": "Lactulose",
+        "type": "small molecule",
+        "groups": [
+          "approved"
+        ],
+        "atc_codes": [
+          "A06AD11"
+        ],
+        "categories": [
+          "Gastrointestinal Agents"
+        ],
+        "inchikey": "InChIKey=JCQLYHFGKNRPGE-FCVZTGTOSA-N",
+        "inchi": "InChI=1S/C12H22O11/c13-1-4-6(16)7(17)8(18)11(21-4)22-9-5(2-14)23-12(20,3-15)10(9)19/h4-11,13-20H,1-3H2/t4-,5-,6+,7+,8-,9-,10+,11+,12-/m1/s1",
+        "description_first_sentence": "A synthetic disaccharide used in the treatment of constipation and hepatic encephalopathy."
+      }
+    },
+    {
+      "id": "insulin-regular",
+      "name": "Insulin Regular",
+      "drugClass": "Short-acting insulin",
+      "routes": [
+        "SQ",
+        "IV"
+      ],
+      "moa": "Binds insulin receptors to increase cellular glucose uptake and suppress hepatic glucose production.",
+      "indications": [
+        "Prandial and correction insulin in selected regimens",
+        "Diabetic ketoacidosis or hyperosmolar crisis IV protocols",
+        "Hyperkalemia treatment with dextrose"
+      ],
+      "contraindications": [
+        "Hypoglycemia episode at administration time",
+        "Known hypersensitivity"
+      ],
+      "adverseEffects": [
+        "Hypoglycemia",
+        "Hypokalemia",
+        "Weight gain"
+      ],
+      "majorInteractions": [
+        "Other glucose-lowering agents increase hypoglycemia risk",
+        "Corticosteroids may increase insulin requirements"
+      ],
+      "monitoring": [
+        "Point-of-care glucose",
+        "Potassium during IV high-dose therapy",
+        "Hypoglycemia symptoms"
+      ],
+      "aliases": [
+        "Regular insulin"
+      ],
+      "brandExamples": [
+        "Humulin R",
+        "Novolin R"
+      ],
+      "pearls": [
+        "It is the insulin most commonly used for IV infusion protocols such as DKA management."
+      ],
+      "drugbank": {
+        "drugbank_id": "DB00030",
+        "name": "Insulin Regular",
+        "type": "biotech",
+        "groups": [
+          "approved",
+          "experimental",
+          "investigational"
+        ],
+        "atc_codes": [
+          "A10AB01",
+          "A10AE05",
+          "A10AB04",
+          "A10AE04",
+          "A10AD05",
+          "A10AC03",
+          "A10AC01",
+          "A10AB05",
+          "A10AB03"
+        ],
+        "categories": [
+          "Antidiabetic Agents"
+        ],
+        "inchikey": "",
+        "inchi": "",
+        "description_first_sentence": "Insulin regular is a 51 residue peptide hormone, composed of two amino acid chains covalently linked by disulfide bonds."
+      }
+    },
+    {
+      "id": "glucagon",
+      "name": "Glucagon",
+      "drugClass": "Antihypoglycemic hormone",
+      "routes": [
+        "IM",
+        "IV",
+        "SQ",
+        "IN"
+      ],
+      "moa": "Activates hepatic glycogenolysis and gluconeogenesis to raise blood glucose.",
+      "indications": [
+        "Severe hypoglycemia when oral intake is not possible",
+        "Adjunct in beta blocker or calcium channel blocker toxicity",
+        "GI radiology smooth muscle relaxation adjunct"
+      ],
+      "contraindications": [
+        "Pheochromocytoma",
+        "Insulinoma (relative in emergencies)"
+      ],
+      "adverseEffects": [
+        "Nausea",
+        "Vomiting",
+        "Transient hypertension or tachycardia"
+      ],
+      "majorInteractions": [
+        "Warfarin anticoagulant effect may increase",
+        "Beta blockers may produce a more pronounced blood pressure or heart rate response"
+      ],
+      "monitoring": [
+        "Glucose response",
+        "Mental status recovery",
+        "Recurrence of hypoglycemia after initial reversal"
+      ],
+      "aliases": [
+        "Glucagon recombinant"
+      ],
+      "brandExamples": [
+        "GlucaGen",
+        "Baqsimi"
+      ],
+      "pearls": [
+        "Give oral carbohydrate when alert to replenish glycogen stores after rescue dosing."
+      ],
+      "drugbank": {
+        "drugbank_id": "DB00040",
+        "name": "Glucagon recombinant",
+        "type": "biotech",
+        "groups": [
+          "approved"
+        ],
+        "atc_codes": [
+          "H04AA01"
+        ],
+        "categories": [
+          "Hypoglycemic Agents"
+        ],
+        "inchikey": "",
+        "inchi": "",
+        "description_first_sentence": "29 residue peptide hormone."
       }
     }
   ]

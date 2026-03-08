@@ -11,8 +11,8 @@
     "drugbank_rows": 7759,
     "drugbank_unique_names": 7754,
     "drugbank_name_collisions": 5,
-    "pharm_records": 32,
-    "matched_records": 30,
+    "pharm_records": 57,
+    "matched_records": 55,
     "unmatched_records": 2,
     "records_with_missing_required_fields": 0
   },
@@ -230,6 +230,146 @@
       "drugbank_id": "DB01183",
       "match_source": "name",
       "match_candidate": "Naloxone"
+    },
+    {
+      "medication": "Piperacillin-Tazobactam",
+      "matched_drugbank_name": "Piperacillin",
+      "drugbank_id": "DB00319",
+      "match_source": "name:combo-part",
+      "match_candidate": "Piperacillin"
+    },
+    {
+      "medication": "Cefepime",
+      "matched_drugbank_name": "Cefepime",
+      "drugbank_id": "DB01413",
+      "match_source": "name",
+      "match_candidate": "Cefepime"
+    },
+    {
+      "medication": "Meropenem",
+      "matched_drugbank_name": "Meropenem",
+      "drugbank_id": "DB00760",
+      "match_source": "name",
+      "match_candidate": "Meropenem"
+    },
+    {
+      "medication": "Doxycycline",
+      "matched_drugbank_name": "Doxycycline",
+      "drugbank_id": "DB00254",
+      "match_source": "name",
+      "match_candidate": "Doxycycline"
+    },
+    {
+      "medication": "Clindamycin",
+      "matched_drugbank_name": "Clindamycin",
+      "drugbank_id": "DB01190",
+      "match_source": "name",
+      "match_candidate": "Clindamycin"
+    },
+    {
+      "medication": "Linezolid",
+      "matched_drugbank_name": "Linezolid",
+      "drugbank_id": "DB00601",
+      "match_source": "name",
+      "match_candidate": "Linezolid"
+    },
+    {
+      "medication": "Nafcillin",
+      "matched_drugbank_name": "Nafcillin",
+      "drugbank_id": "DB00607",
+      "match_source": "name",
+      "match_candidate": "Nafcillin"
+    },
+    {
+      "medication": "Oxacillin",
+      "matched_drugbank_name": "Oxacillin",
+      "drugbank_id": "DB00713",
+      "match_source": "name",
+      "match_candidate": "Oxacillin"
+    },
+    {
+      "medication": "Cloxacillin",
+      "matched_drugbank_name": "Cloxacillin",
+      "drugbank_id": "DB01147",
+      "match_source": "name",
+      "match_candidate": "Cloxacillin"
+    },
+    {
+      "medication": "Dicloxacillin",
+      "matched_drugbank_name": "Dicloxacillin",
+      "drugbank_id": "DB00485",
+      "match_source": "name",
+      "match_candidate": "Dicloxacillin"
+    },
+    {
+      "medication": "Flucloxacillin",
+      "matched_drugbank_name": "Flucloxacillin",
+      "drugbank_id": "DB00301",
+      "match_source": "name",
+      "match_candidate": "Flucloxacillin"
+    },
+    {
+      "medication": "Trimethoprim-Sulfamethoxazole",
+      "matched_drugbank_name": "Trimethoprim",
+      "drugbank_id": "DB00440",
+      "match_source": "name:combo-part",
+      "match_candidate": "Trimethoprim"
+    },
+    {
+      "medication": "Clopidogrel",
+      "matched_drugbank_name": "Clopidogrel",
+      "drugbank_id": "DB00758",
+      "match_source": "name",
+      "match_candidate": "Clopidogrel"
+    },
+    {
+      "medication": "Rivaroxaban",
+      "matched_drugbank_name": "Rivaroxaban",
+      "drugbank_id": "DB06228",
+      "match_source": "name",
+      "match_candidate": "Rivaroxaban"
+    },
+    {
+      "medication": "Warfarin",
+      "matched_drugbank_name": "Warfarin",
+      "drugbank_id": "DB00682",
+      "match_source": "name",
+      "match_candidate": "Warfarin"
+    },
+    {
+      "medication": "Losartan",
+      "matched_drugbank_name": "Losartan",
+      "drugbank_id": "DB00678",
+      "match_source": "name",
+      "match_candidate": "Losartan"
+    },
+    {
+      "medication": "Hydrochlorothiazide",
+      "matched_drugbank_name": "Hydrochlorothiazide",
+      "drugbank_id": "DB00999",
+      "match_source": "name",
+      "match_candidate": "Hydrochlorothiazide"
+    },
+    {
+      "medication": "Spironolactone",
+      "matched_drugbank_name": "Spironolactone",
+      "drugbank_id": "DB00421",
+      "match_source": "name",
+      "match_candidate": "Spironolactone"
+    },
+    {
+      "medication": "Carvedilol",
+      "matched_drugbank_name": "Carvedilol",
+      "drugbank_id": "DB01136",
+      "match_source": "name",
+      "match_candidate": "Carvedilol"
+    },
+    {
+      "medication": "Diltiazem",
+      "matched_drugbank_name": "Diltiazem",
+      "drugbank_id": "DB00343",
+      "match_source": "name",
+      "match_candidate": "Diltiazem"
     }
   ],
   "missing_required_fields": []

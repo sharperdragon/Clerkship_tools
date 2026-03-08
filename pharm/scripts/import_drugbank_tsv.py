@@ -14,7 +14,7 @@ import csv
 import json
 import re
 from pathlib import Path
-from typing import Dict, Iterable, List, Optional, Tuple
+from typing import Dict, Iterable, List, Optional, Tuple, TypedDict
 
 
 # ================================================================
@@ -57,6 +57,35 @@ NAME_SUFFIX_TOKENS = {
 }
 
 MAX_UNMATCHED_EXAMPLES = 50
+
+
+class ReportInputFiles(TypedDict):
+    drugbank_tsv: str
+    pharm_data_json: str
+
+
+class ReportOutputFiles(TypedDict):
+    enriched_pharm_json: str
+    import_report_json: str
+
+
+class ReportSummary(TypedDict):
+    drugbank_rows: int
+    drugbank_unique_names: int
+    drugbank_name_collisions: int
+    pharm_records: int
+    matched_records: int
+    unmatched_records: int
+    records_with_missing_required_fields: int
+
+
+class DrugBankImportReport(TypedDict):
+    input_files: ReportInputFiles
+    output_files: ReportOutputFiles
+    summary: ReportSummary
+    unmatched_medications: List[str]
+    matched_examples: List[Dict[str, object]]
+    missing_required_fields: List[Dict[str, object]]
 
 
 def clean_text(value: object) -> str:
@@ -238,7 +267,7 @@ def add_drugbank_metadata(med: Dict[str, object], match_row: Dict[str, str]) -> 
     return out
 
 
-def run() -> Dict[str, object]:
+def run() -> DrugBankImportReport:
     drugbank_rows = load_drugbank_rows(DRUGBANK_TSV_PATH)
     drugbank_index, collisions = build_drugbank_index(drugbank_rows)
 
@@ -283,7 +312,7 @@ def run() -> Dict[str, object]:
         encoding="utf-8",
     )
 
-    report = {
+    report: DrugBankImportReport = {
         "input_files": {
             "drugbank_tsv": str(DRUGBANK_TSV_PATH),
             "pharm_data_json": str(INPUT_PHARM_JSON_PATH),
@@ -315,10 +344,11 @@ def run() -> Dict[str, object]:
 def main() -> None:
     report = run()
     summary = report["summary"]
+    output_files = report["output_files"]
     print("DrugBank import completed.")
     print(f"Matched: {summary['matched_records']} / {summary['pharm_records']}")
     print(f"Unmatched: {summary['unmatched_records']}")
-    print(f"Enriched output: {report['output_files']['enriched_pharm_json']}")
+    print(f"Enriched output: {output_files['enriched_pharm_json']}")
     print(f"Report: {OUTPUT_REPORT_PATH}")
 
 

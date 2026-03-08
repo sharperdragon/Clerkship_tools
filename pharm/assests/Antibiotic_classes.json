@@ -1,0 +1,84 @@
+{
+  "Antibiotic Classes": {
+    "Beta-Lactams": {
+      "Penicillins": ["Penicillin G", "Penicillin V"],
+      "Aminopenicillins": ["Amoxicillin", "Ampicillin"],
+      "Anti-Staph Penicillins": ["Nafcillin", "Oxacillin", "Dicloxacillin"],
+      "Extended-Spectrum Penicillins": ["Piperacillin", "Ticarcillin"],
+      "Beta-Lactam + Inhibitor Combinations": [
+        "Amoxicillin-Clavulanate",
+        "Ampicillin-Sulbactam",
+        "Piperacillin-Tazobactam",
+        "Ticarcillin-Clavulanate"
+      ],
+      "Cephalosporins": {
+        "1st Generation": ["Cefazolin", "Cephalexin"],
+        "2nd Generation": ["Cefuroxime", "Cefaclor", "Cefoxitin", "Cefotetan"],
+        "3rd Generation": ["Ceftriaxone", "Cefotaxime", "Ceftazidime", "Cefdinir", "Cefpodoxime"],
+        "4th Generation": ["Cefepime"],
+        "5th Generation": ["Ceftaroline"]
+      },
+      "Carbapenems": ["Imipenem", "Meropenem", "Doripenem", "Ertapenem"],
+      "Monobactams": ["Aztreonam"]
+    },
+    "Glycopeptides": {
+      "Agents": ["Vancomycin", "Telavancin", "Dalbavancin", "Oritavancin"]
+    },
+    "Epoxides": {
+      "Agents": ["Fosfomycin"]
+    },
+    "Polymyxins": {
+      "Agents": ["Colistin", "Polymyxin B"]
+    },
+    "Aminoglycosides": {
+      "Agents": ["Gentamicin", "Tobramycin", "Amikacin", "Streptomycin", "Neomycin", "Plazomicin"]
+    },
+    "Macrolides": {
+      "Agents": ["Azithromycin", "Clarithromycin", "Erythromycin", "Fidaxomicin"]
+    },
+    "Fluoroquinolones": {
+      "Agents": ["Ciprofloxacin", "Levofloxacin", "Moxifloxacin", "Ofloxacin", "Delafloxacin"]
+    },
+    "Anti-mycobacterial": {
+      "Rifamycins": ["Rifampin", "Rifabutin", "Rifapentine"],
+      "Isonicotinic Acid Derivatives": ["Isoniazid", "Ethionamide", "Prothionamide"],
+      "Mycolic Acid Inhibitors": ["Isoniazid", "Ethionamide", "Prothionamide"],
+      "Arabinogalactan Synthesis Inhibitors": ["Ethambutol"],
+      "Pyrazinamide Derivatives": ["Pyrazinamide"],
+      "Diarylquinolines": ["Bedaquiline"],
+      "Nitroimidazoles": ["Delamanid", "Pretomanid"],
+      "Riminophenazines": ["Clofazimine"],
+      "Diaminodiphenyl Sulfones": ["Dapsone"],
+      "Oxazolidinones": ["Linezolid", "Tedizolid"],
+      "Aminoglycosides": ["Amikacin", "Kanamycin", "Streptomycin"],
+      "Cyclic Peptides": ["Capreomycin"],
+      "Folate Pathway Inhibitors": ["Para-aminosalicylic acid"],
+      "Fluoroquinolones": ["Levofloxacin", "Moxifloxacin"],
+      "Alanine Racemase Inhibitors": ["Cycloserine"]
+    },
+    "Nitroimidazoles": {
+      "Agents": ["Metronidazole", "Tinidazole", "Secnidazole"]
+    },
+    "Lincosamides": {
+      "Agents": ["Clindamycin"]
+    },
+    "Streptogramin": {
+      "Agents": ["Quinupristin", "Dalfopristin"]
+    },
+    "Oxazolidinones": {
+      "Agents": ["Linezolid", "Tedizolid"]
+    },
+    "Amphenicols": {
+      "Agents": ["Chloramphenicol"]
+    },
+    "Nitrofurans": {
+      "Agents": ["Nitrofurantoin"]
+    },
+    "Tetracyclines": {
+      "Agents": ["Tetracycline", "Doxycycline", "Minocycline", "Tigecycline", "Omadacycline", "Eravacycline"]
+    },
+    "Sulfonamides": {
+      "Agents": ["Trimethoprim-Sulfamethoxazole", "Sulfadiazine", "Sulfisoxazole"]
+    }
+  }
+}
