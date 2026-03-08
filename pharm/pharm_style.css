@@ -295,15 +295,19 @@ body {
   padding: var(--space-4) clamp(12px, 3vw, 24px) 30px;
 }
 
-.disclaimer {
-  margin: 0 0 var(--space-4);
+.app-footer {
+  padding: 0 clamp(12px, 3vw, 24px) var(--space-4);
+}
+
+.footer-disclaimer {
+  margin: 0;
   padding: 10px 12px;
   border: 1px solid color-mix(in oklab, var(--brand), var(--border) 66%);
   border-left: 4px solid color-mix(in oklab, var(--brand), var(--border) 30%);
   border-radius: var(--radius-md);
   background: color-mix(in oklab, var(--surface-emphasis), transparent 5%);
   color: var(--text-soft);
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .error {
@@ -329,8 +333,7 @@ body {
 
 .results-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(var(--card-min-width), 1fr));
-  gap: var(--space-3);
+  gap: var(--space-4);
 }
 
 .results-empty {
@@ -339,6 +342,47 @@ body {
   padding: 18px 14px;
   color: var(--text-muted);
   background: color-mix(in oklab, var(--surface), transparent 10%);
+}
+
+.results-group {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: color-mix(in oklab, var(--surface), transparent 5%);
+  padding: var(--space-3);
+  box-shadow: var(--shadow-sm);
+}
+
+.results-group__header {
+  margin: 0 0 var(--space-3);
+  font-family: var(--font-display);
+  line-height: 1.2;
+}
+
+.results-group[data-level="1"] > .results-group__header {
+  font-size: 22px;
+  letter-spacing: -0.02em;
+}
+
+.results-group[data-level="2"] > .results-group__header {
+  font-size: 18px;
+  color: var(--text-soft);
+}
+
+.results-group[data-level="3"] > .results-group__header,
+.results-group[data-level="4"] > .results-group__header {
+  font-size: 16px;
+  color: var(--text-muted);
+}
+
+.results-group__children {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.results-group__cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(var(--card-min-width), 1fr));
+  gap: var(--space-3);
 }
 
 .med-card {
@@ -592,7 +636,7 @@ body.detail-open {
     min-width: 0;
   }
 
-  .results-grid {
+  .results-group__cards {
     grid-template-columns: 1fr;
   }
 

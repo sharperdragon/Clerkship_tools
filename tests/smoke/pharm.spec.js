@@ -18,6 +18,9 @@ const DETAIL_SCRIM = "#detailScrim";
 const DETAIL_CLOSE_BUTTON = "#btnCloseDetail";
 const THEME_TOGGLE = "#btnThemeToggle";
 const THEME_STORAGE_KEY = "ui-theme";
+const FOOTER_DISCLAIMER = "footer #disclaimerBanner";
+const TOP_LEVEL_GROUP_HEADERS = '#results .results-group[data-level="1"] > .results-group__header';
+const SECOND_LEVEL_GROUP_HEADERS = '#results .results-group[data-level="2"] > .results-group__header';
 const EXPECTED_INITIAL_COUNT = 32;
 const MOBILE_WIDTH = 900;
 const MOBILE_HEIGHT = 1000;
@@ -30,6 +33,7 @@ test.describe("Pharm reference smoke", () => {
   test("page loads with disclaimer, cards, and no default selection", async ({ page }) => {
     await page.goto(PHARM_PATH);
     await expect(page.locator(DISCLAIMER_BANNER)).toBeVisible();
+    await expect(page.locator(FOOTER_DISCLAIMER)).toBeVisible();
     await waitForCards(page, EXPECTED_INITIAL_COUNT);
 
     await expect(page.locator(RESULTS_CARDS)).toHaveCount(EXPECTED_INITIAL_COUNT);
@@ -50,6 +54,16 @@ test.describe("Pharm reference smoke", () => {
     await expect(page.locator(RESULTS_CARDS)).toHaveCount(2);
     await expect(page.locator(`${RESULTS_CARDS} .med-card__title`).nth(0)).toHaveText("Amoxicillin");
     await expect(page.locator(`${RESULTS_CARDS} .med-card__title`).nth(1)).toHaveText("Amoxicillin-Clavulanate");
+  });
+
+  test("results are nested under class and subclass headings", async ({ page }) => {
+    await page.goto(PHARM_PATH);
+    await waitForCards(page, EXPECTED_INITIAL_COUNT);
+
+    await page.locator(SEARCH_INPUT).fill("amoxi");
+    await expect(page.locator(RESULTS_CARDS)).toHaveCount(2);
+    await expect(page.locator(TOP_LEVEL_GROUP_HEADERS).first()).toHaveText("Antibiotics");
+    await expect(page.locator(SECOND_LEVEL_GROUP_HEADERS)).toContainText("Beta-lactams");
   });
 
   test("filters combine correctly and clear resets all controls", async ({ page }) => {

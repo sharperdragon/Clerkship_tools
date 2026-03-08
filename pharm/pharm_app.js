@@ -9,6 +9,7 @@
     emptyStateCopy: "No medications match the current filters.",
     noSelectionTitle: "No selection",
     noSelectionCopy: "Select a medication card to view high-yield details.",
+    uncategorizedClassLabel: "Other Classes",
     themeKey: "ui-theme",
     themeChangedEvent: "core-theme-changed",
     themeToggleLightLabel: "Light mode",
@@ -43,6 +44,99 @@
   };
 
   const ROUTE_ENUM = ["PO", "IV", "IM", "SQ", "INH", "IN", "SL", "Topical", "PR"];
+
+  const CLASS_HIERARCHY_RULES = [
+    {
+      label: "Antibiotics",
+      match: /(antibiotic|penicillin|cephalosporin|glycopeptide|macrolide|beta-lactam|tetracycline|anti-?staph)/i,
+      children: [
+        {
+          label: "Beta-lactams",
+          match: /(beta-lactam|penicillin|cephalosporin)/i,
+          children: [
+            { label: "Penicillins", match: /(penicillin|aminopenicillin)/i },
+            { label: "Cephalosporins", match: /cephalosporin/i },
+            { label: "Beta-lactamase Inhibitor Combinations", match: /beta-lactamase inhibitor/i },
+          ],
+        },
+        { label: "Macrolides", match: /macrolide/i },
+        { label: "Anti-staphylococcal Agents", match: /(anti-?staph|staphyl|mrsa)/i },
+        { label: "Tetracyclines", match: /tetracycline/i },
+        { label: "Glycopeptides", match: /(glycopeptide|vancomycin)/i },
+      ],
+    },
+    {
+      label: "Antithrombotics",
+      match: /(anticoagulant|antiplatelet|factor xa|heparin)/i,
+      children: [
+        { label: "Heparins", match: /(heparin|lmwh)/i },
+        { label: "Direct Oral Anticoagulants", match: /(factor xa|apixaban|rivaroxaban)/i },
+        { label: "Antiplatelets", match: /antiplatelet/i },
+      ],
+    },
+    {
+      label: "Cardiovascular",
+      match: /(ace inhibitor|beta blocker|calcium channel|diuretic|statin)/i,
+      children: [
+        { label: "ACE Inhibitors", match: /ace inhibitor/i },
+        { label: "Beta Blockers", match: /beta blocker/i },
+        { label: "Calcium Channel Blockers", match: /calcium channel/i },
+        { label: "Diuretics", match: /diuretic/i },
+        { label: "Lipid Management", match: /statin|hmg-coa/i },
+      ],
+    },
+    {
+      label: "Endocrine and Metabolic",
+      match: /(insulin|biguanide|thyroid hormone|thyroid)/i,
+      children: [
+        { label: "Diabetes Agents", match: /(insulin|biguanide|metformin)/i },
+        { label: "Thyroid Replacement", match: /thyroid/i },
+      ],
+    },
+    {
+      label: "Respiratory",
+      match: /(beta-2 agonist|bronchodilator|anticholinergic|glucocorticoid)/i,
+      children: [
+        { label: "Rescue Bronchodilators", match: /(beta-2 agonist|saba|albuterol)/i },
+        { label: "Combination Bronchodilators", match: /(anticholinergic.*combination|ipratropium)/i },
+        { label: "Systemic Steroids", match: /glucocorticoid|prednisone/i },
+      ],
+    },
+    {
+      label: "Gastrointestinal",
+      match: /(proton pump|5-ht3|laxative|stool softener|antiemetic)/i,
+      children: [
+        { label: "Acid Suppression", match: /proton pump/i },
+        { label: "Antiemetics", match: /5-ht3|antiemetic|ondansetron/i },
+        { label: "Bowel Regimen", match: /laxative|stool softener|senna/i },
+      ],
+    },
+    {
+      label: "Psychiatric and Neurologic",
+      match: /(ssri|benzodiazepine|antipsychotic)/i,
+      children: [
+        { label: "SSRIs", match: /ssri/ },
+        { label: "Benzodiazepines", match: /benzodiazepine/ },
+        { label: "Antipsychotics", match: /antipsychotic/ },
+      ],
+    },
+    {
+      label: "Emergency and Toxicology",
+      match: /(opioid antagonist|adrenergic agonist|epinephrine|naloxone)/i,
+      children: [
+        { label: "Resuscitation Agents", match: /(adrenergic agonist|epinephrine)/i },
+        { label: "Overdose Reversal", match: /(opioid antagonist|naloxone)/i },
+      ],
+    },
+    {
+      label: "Pain and Inflammation",
+      match: /(nsaid|analgesic|antipyretic)/i,
+      children: [
+        { label: "NSAIDs", match: /nsaid/ },
+        { label: "Analgesics and Antipyretics", match: /analgesic|antipyretic/ },
+      ],
+    },
+  ];
 
   const REQUIRED_FIELDS = [
     "id",
@@ -287,6 +381,8 @@
       ...normalized.monitoringNorm,
     ];
 
+    normalized.classPath = deriveClassPath(normalized);
+
     return normalized;
   }
 
@@ -418,48 +514,121 @@
       return;
     }
 
+    const classTree = buildClassTree(STATE.filtered);
+    const useRelevanceOrder = Boolean(normalizeSearch(STATE.query));
     const fragment = document.createDocumentFragment();
+    renderClassNodes(classTree, fragment, 1, useRelevanceOrder);
+    EL.resultsGrid.appendChild(fragment);
+  }
 
-    STATE.filtered.forEach((medication) => {
-      const card = document.createElement("button");
-      card.type = "button";
-      card.className = `med-card${STATE.selectedId === medication.id ? " is-selected" : ""}`;
-      card.dataset.id = medication.id;
-      card.setAttribute("aria-label", `${medication.name} details`);
-      card.setAttribute("aria-pressed", String(STATE.selectedId === medication.id));
+  function buildClassTree(medications) {
+    const root = createClassNode(CONFIG.uncategorizedClassLabel);
+    medications.forEach((medication, rank) => {
+      insertMedicationIntoClassTree(root, medication.classPath, medication, rank);
+    });
+    return root;
+  }
 
-      const title = document.createElement("h3");
-      title.className = "med-card__title";
-      title.textContent = medication.name;
+  function createClassNode(label) {
+    return {
+      label,
+      children: new Map(),
+      medications: [],
+      firstRank: Number.POSITIVE_INFINITY,
+    };
+  }
 
-      const classText = document.createElement("p");
-      classText.className = "med-card__class";
-      classText.textContent = medication.drugClass;
+  function insertMedicationIntoClassTree(node, path, medication, rank) {
+    node.firstRank = Math.min(node.firstRank, rank);
+    if (!Array.isArray(path) || path.length === 0) {
+      node.medications.push(medication);
+      return;
+    }
 
-      const routeRow = document.createElement("div");
-      routeRow.className = "pill-row";
-      medication.routes.forEach((route) => {
-        const chip = document.createElement("span");
-        chip.className = "pill";
-        chip.textContent = route;
-        routeRow.appendChild(chip);
-      });
+    const [nextLabel, ...remainingPath] = path;
+    if (!node.children.has(nextLabel)) {
+      node.children.set(nextLabel, createClassNode(nextLabel));
+    }
 
-      const snippet = document.createElement("p");
-      snippet.className = "med-card__snippet";
-      const snippetValues = medication.indications.length > 0
-        ? medication.indications.slice(0, 2)
-        : [medication.moa];
-      snippet.textContent = snippetValues.join(" • ");
+    const child = node.children.get(nextLabel);
+    insertMedicationIntoClassTree(child, remainingPath, medication, rank);
+  }
 
-      card.appendChild(title);
-      card.appendChild(classText);
-      card.appendChild(routeRow);
-      card.appendChild(snippet);
-      fragment.appendChild(card);
+  function renderClassNodes(node, container, level, sortByRelevance) {
+    const children = Array.from(node.children.values());
+    children.sort((a, b) => {
+      if (sortByRelevance) return a.firstRank - b.firstRank;
+      return a.label.localeCompare(b.label);
     });
 
-    EL.resultsGrid.appendChild(fragment);
+    children.forEach((child) => {
+      const group = document.createElement("section");
+      group.className = "results-group";
+      group.dataset.level = String(level);
+
+      const heading = document.createElement(level <= 1 ? "h3" : level === 2 ? "h4" : "h5");
+      heading.className = "results-group__header";
+      heading.textContent = child.label;
+      group.appendChild(heading);
+
+      const body = document.createElement("div");
+      body.className = "results-group__children";
+
+      if (child.children.size > 0) {
+        renderClassNodes(child, body, level + 1, sortByRelevance);
+      }
+
+      if (child.medications.length > 0) {
+        const cards = document.createElement("div");
+        cards.className = "results-group__cards";
+        child.medications.forEach((medication) => {
+          cards.appendChild(makeMedicationCard(medication));
+        });
+        body.appendChild(cards);
+      }
+
+      group.appendChild(body);
+      container.appendChild(group);
+    });
+  }
+
+  function makeMedicationCard(medication) {
+    const card = document.createElement("button");
+    card.type = "button";
+    card.className = `med-card${STATE.selectedId === medication.id ? " is-selected" : ""}`;
+    card.dataset.id = medication.id;
+    card.setAttribute("aria-label", `${medication.name} details`);
+    card.setAttribute("aria-pressed", String(STATE.selectedId === medication.id));
+
+    const title = document.createElement("h3");
+    title.className = "med-card__title";
+    title.textContent = medication.name;
+
+    const classText = document.createElement("p");
+    classText.className = "med-card__class";
+    classText.textContent = medication.drugClass;
+
+    const routeRow = document.createElement("div");
+    routeRow.className = "pill-row";
+    medication.routes.forEach((route) => {
+      const chip = document.createElement("span");
+      chip.className = "pill";
+      chip.textContent = route;
+      routeRow.appendChild(chip);
+    });
+
+    const snippet = document.createElement("p");
+    snippet.className = "med-card__snippet";
+    const snippetValues = medication.indications.length > 0
+      ? medication.indications.slice(0, 2)
+      : [medication.moa];
+    snippet.textContent = snippetValues.join(" • ");
+
+    card.appendChild(title);
+    card.appendChild(classText);
+    card.appendChild(routeRow);
+    card.appendChild(snippet);
+    return card;
   }
 
   function handleResultsGridKeydown(event) {
@@ -542,7 +711,7 @@
 
     EL.detailTitle.textContent = selected.name;
     EL.detailMeta.hidden = false;
-    EL.detailMeta.textContent = `${selected.drugClass} • ${selected.routes.join(", ")}`;
+    EL.detailMeta.textContent = `${selected.classPath.join(" › ")} • ${selected.routes.join(", ")}`;
     EL.detailEmpty.hidden = true;
     EL.detailBody.hidden = false;
 
@@ -666,6 +835,63 @@
     }
 
     applyTheme(nextTheme);
+  }
+
+  function deriveClassPath(medication) {
+    const sourceClass = cleanText(medication.drugClass);
+    if (!sourceClass) return [CONFIG.uncategorizedClassLabel];
+
+    const context = normalizeSearch(
+      [
+        medication.name,
+        medication.drugClass,
+        ...medication.aliases,
+        ...medication.brandExamples,
+        ...medication.indications,
+      ].join(" ")
+    );
+
+    const rulePath = findClassPathFromRules(context, CLASS_HIERARCHY_RULES);
+    if (rulePath.length === 0) {
+      return [sourceClass];
+    }
+
+    const alreadyIncludesSource = rulePath.some((label) => normalizeSearch(label) === normalizeSearch(sourceClass));
+    if (!alreadyIncludesSource) {
+      rulePath.push(sourceClass);
+    }
+
+    return dedupeClassPath(rulePath);
+  }
+
+  function findClassPathFromRules(context, rules) {
+    for (const rule of rules) {
+      if (!rule.match.test(context)) continue;
+
+      const childPath = Array.isArray(rule.children)
+        ? findClassPathFromRules(context, rule.children)
+        : [];
+      return [rule.label, ...childPath];
+    }
+    return [];
+  }
+
+  function dedupeClassPath(path) {
+    const deduped = [];
+    path.forEach((segment) => {
+      const label = cleanText(segment);
+      if (!label) return;
+
+      const prior = deduped[deduped.length - 1];
+      if (prior && normalizeSearch(prior) === normalizeSearch(label)) return;
+      deduped.push(label);
+    });
+
+    if (deduped.length === 0) {
+      return [CONFIG.uncategorizedClassLabel];
+    }
+
+    return deduped;
   }
 
   function showError(message) {
