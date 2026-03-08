@@ -6,17 +6,42 @@
       "system": "General",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "hours",
+          "insidious"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "empty-stomach"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate",
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "weight-loss"
+        ]
       },
       "freq": "unknown"
     },
@@ -25,17 +50,42 @@
       "system": "General",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "hours",
+          "gradual"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "empty-stomach"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "unknown"
     },
@@ -44,17 +94,42 @@
       "system": "General",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "hours",
+          "gradual"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "empty-stomach"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "unknown"
     },
@@ -63,55 +138,125 @@
       "system": "General",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "hours"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "empty-stomach",
+          "alcohol"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "nausea"
+        ]
       },
       "freq": "unknown"
     },
     {
-      "name": "Addison\u2019s disease",
+      "name": "Addison’s disease",
       "system": "General",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "hours"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "empty-stomach"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "unknown"
     },
     {
-      "name": "Paget\u2019s disease of bone",
+      "name": "Paget’s disease of bone",
       "system": "General",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "hours"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "empty-stomach"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "unknown"
     },
@@ -120,17 +265,40 @@
       "system": "General",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "hours"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "empty-stomach"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "polyuria"
+        ]
       },
       "freq": "unknown"
     },
@@ -139,17 +307,40 @@
       "system": "General",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "hours"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "empty-stomach"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "unknown"
     },
@@ -158,17 +349,42 @@
       "system": "General",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "hours",
+          "gradual"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "empty-stomach"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "unknown"
     },
@@ -177,17 +393,43 @@
       "system": "Symptoms And Signs",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "hours",
+          "gradual"
+        ],
+        "progression": [
+          "stable"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "empty-stomach"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild",
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "vomiting",
+          "constipation"
+        ]
       },
       "freq": "unknown"
     },
@@ -196,17 +438,43 @@
       "system": "Symptoms And Signs",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "hours",
+          "gradual"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "empty-stomach"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "polyuria",
+          "nocturia"
+        ]
       },
       "freq": "unknown"
     }

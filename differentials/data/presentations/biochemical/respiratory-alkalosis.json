@@ -5,56 +5,344 @@
       "name": "Anxiety-related hyperventilation",
       "system": "Psychogenic",
       "redFlag": false,
-      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
+      "hpi": {
+        "onset": [
+          "acute",
+          "days",
+          "gradual"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild",
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
+      },
       "freq": "common"
     },
     {
       "name": "Pulmonary embolism",
       "system": "Pulmonary Vascular",
       "redFlag": true,
-      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
+      "hpi": {
+        "onset": [
+          "acute",
+          "days",
+          "sudden"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
+      },
       "freq": "common"
     },
     {
       "name": "Sepsis",
       "system": "Systemic Illness",
       "redFlag": true,
-      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
+      "hpi": {
+        "onset": [
+          "acute",
+          "days",
+          "subacute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "fever",
+          "malaise"
+        ]
+      },
       "freq": "common"
     },
     {
       "name": "Pregnancy",
       "system": "Physiologic",
       "redFlag": false,
-      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
+      "hpi": {
+        "onset": [
+          "acute",
+          "days"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
+      },
       "freq": "common"
     },
     {
       "name": "Pain or fever",
       "system": "Physiologic Stress",
       "redFlag": false,
-      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
+      "hpi": {
+        "onset": [
+          "acute",
+          "days"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "fever"
+        ]
+      },
       "freq": "common"
     },
     {
       "name": "Chronic liver disease",
       "system": "Hepatic",
       "redFlag": false,
-      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
+      "hpi": {
+        "onset": [
+          "acute",
+          "days",
+          "gradual"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
+      },
       "freq": "uncommon"
     },
     {
       "name": "Early salicylate toxicity",
       "system": "Toxic Ingestion",
       "redFlag": true,
-      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
+      "hpi": {
+        "onset": [
+          "acute",
+          "days"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
+      },
       "freq": "uncommon"
     },
     {
       "name": "High altitude exposure",
       "system": "Environmental",
       "redFlag": false,
-      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
+      "hpi": {
+        "onset": [
+          "acute",
+          "days"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
+      },
       "freq": "uncommon"
     }
   ],

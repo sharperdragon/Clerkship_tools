@@ -6,36 +6,86 @@
       "system": "Pancytopenia",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "insidious"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "nsaids"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate",
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "weight-loss"
+        ]
       },
       "freq": "unknown"
     },
     {
-      "name": "Severe B12 or folate de\ufb01ciency",
+      "name": "Severe B12 or folate deﬁciency",
       "system": "Pancytopenia",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "nsaids"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "catastrophic",
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "unknown"
     },
@@ -44,17 +94,42 @@
       "system": "Pancytopenia",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "gradual"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "nsaids"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "unknown"
     },
@@ -63,17 +138,40 @@
       "system": "Selective Neutropenia",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "nsaids"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "unknown"
     },
@@ -82,17 +180,42 @@
       "system": "Selective Neutropenia",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "relapsing"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "nsaids"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "face"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "catastrophic",
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "unknown"
     },
@@ -101,17 +224,44 @@
       "system": "Selective Neutropenia",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "nsaids"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "face",
+          "perianal"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe",
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "fever",
+          "malaise"
+        ]
       },
       "freq": "unknown"
     },
@@ -120,17 +270,43 @@
       "system": "Selective Neutropenia",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "nsaids"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "catastrophic",
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "fever",
+          "malaise"
+        ]
       },
       "freq": "unknown"
     },
@@ -139,17 +315,40 @@
       "system": "Selective Neutropenia",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "nsaids"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "unknown"
     },
@@ -158,17 +357,42 @@
       "system": "Selective Neutropenia",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "nsaids"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "fever",
+          "malaise"
+        ]
       },
       "freq": "unknown"
     },
@@ -177,17 +401,40 @@
       "system": "Selective Neutropenia",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "nsaids"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "unknown"
     },
@@ -196,17 +443,40 @@
       "system": "Selective Neutropenia",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "nsaids"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "unknown"
     },
@@ -215,36 +485,83 @@
       "system": "Selective Neutropenia",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "nsaids"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "unknown"
     },
     {
-      "name": "Felty\u2019s syndrome (rheumatoid arthritis)",
+      "name": "Felty’s syndrome (rheumatoid arthritis)",
       "system": "Selective Neutropenia",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "nsaids"
+        ],
+        "quality": [
+          "aching"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "unknown"
     },
@@ -253,17 +570,42 @@
       "system": "Selective Neutropenia",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "relapsing"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "nsaids"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "face"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "catastrophic",
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "unknown"
     },
@@ -272,17 +614,41 @@
       "system": "Selective Neutropenia",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "nsaids",
+          "alcohol"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "nausea"
+        ]
       },
       "freq": "unknown"
     },
@@ -291,17 +657,44 @@
       "system": "Lymphopenia",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "nsaids"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "face",
+          "perianal"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe",
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "fever",
+          "malaise"
+        ]
       },
       "freq": "unknown"
     },
@@ -310,17 +703,41 @@
       "system": "Lymphopenia",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "nsaids",
+          "movement"
+        ],
+        "quality": [
+          "sharp"
+        ],
+        "timing": [
+          "post-traumatic"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "unknown"
     },
@@ -329,17 +746,40 @@
       "system": "Lymphopenia",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "nsaids"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "unknown"
     },
@@ -348,17 +788,40 @@
       "system": "Lymphopenia",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "nsaids"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "unknown"
     },
@@ -367,17 +830,40 @@
       "system": "Lymphopenia",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "nsaids"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "unknown"
     },
@@ -386,17 +872,40 @@
       "system": "Lymphopenia",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "nsaids"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "unknown"
     },
@@ -405,17 +914,40 @@
       "system": "Lymphopenia",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "nsaids"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "unknown"
     },
@@ -424,36 +956,84 @@
       "system": "Lymphopenia",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "gradual"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "nsaids"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "unknown"
     },
     {
-      "name": "Cushing\u2019s syndrome",
+      "name": "Cushing’s syndrome",
       "system": "Lymphopenia",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "nsaids"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "unknown"
     }

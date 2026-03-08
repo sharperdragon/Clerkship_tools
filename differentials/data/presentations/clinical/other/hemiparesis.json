@@ -5,63 +5,415 @@
       "name": "Ischemic stroke",
       "system": "Cerebrovascular",
       "redFlag": true,
-      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
+      "hpi": {
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "coughing",
+          "pressure"
+        ],
+        "quality": [
+          "pressure",
+          "tearing"
+        ],
+        "timing": [
+          "morning"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "carotid-bruit"
+        ],
+        "other symptoms": [
+          "stroke-symptoms"
+        ]
+      },
       "freq": "common"
     },
     {
       "name": "Intracerebral hemorrhage",
       "system": "Cerebrovascular",
       "redFlag": true,
-      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
+      "hpi": {
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "coughing",
+          "pressure"
+        ],
+        "quality": [
+          "pressure",
+          "tearing"
+        ],
+        "timing": [
+          "morning"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
+      },
       "freq": "common"
     },
     {
       "name": "Subdural hematoma",
       "system": "Traumatic Intracranial",
       "redFlag": true,
-      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
+      "hpi": {
+        "onset": [
+          "sudden",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "coughing",
+          "pressure",
+          "movement"
+        ],
+        "quality": [
+          "pressure",
+          "tearing",
+          "sharp"
+        ],
+        "timing": [
+          "morning",
+          "post-traumatic"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
+      },
       "freq": "uncommon"
     },
     {
       "name": "Brain tumor",
       "system": "Neoplastic",
       "redFlag": true,
-      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
+      "hpi": {
+        "onset": [
+          "sudden",
+          "acute",
+          "insidious"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "coughing",
+          "pressure"
+        ],
+        "quality": [
+          "pressure",
+          "tearing"
+        ],
+        "timing": [
+          "morning"
+        ],
+        "region": [
+          "face"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate",
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "weight-loss"
+        ]
+      },
       "freq": "uncommon"
     },
     {
       "name": "Postictal Todd paresis",
       "system": "Seizure Related",
       "redFlag": false,
-      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
+      "hpi": {
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "coughing",
+          "pressure"
+        ],
+        "quality": [
+          "pressure",
+          "tearing"
+        ],
+        "timing": [
+          "morning"
+        ],
+        "region": [
+          "neck"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "seizure",
+          "limb-weakness"
+        ]
+      },
       "freq": "uncommon"
     },
     {
       "name": "Multiple sclerosis",
       "system": "Demyelinating",
       "redFlag": false,
-      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
+      "hpi": {
+        "onset": [
+          "sudden",
+          "acute",
+          "gradual"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "coughing",
+          "pressure"
+        ],
+        "quality": [
+          "pressure",
+          "tearing",
+          "ripping"
+        ],
+        "timing": [
+          "morning"
+        ],
+        "region": [
+          "neck",
+          "face"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "sensory-testing",
+          "motor-strength-testing"
+        ],
+        "other symptoms": [
+          "none"
+        ]
+      },
       "freq": "uncommon"
     },
     {
       "name": "Brain abscess",
       "system": "Infectious",
       "redFlag": true,
-      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
+      "hpi": {
+        "onset": [
+          "sudden",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "coughing",
+          "pressure"
+        ],
+        "quality": [
+          "pressure",
+          "tearing",
+          "ripping"
+        ],
+        "timing": [
+          "morning"
+        ],
+        "region": [
+          "neck",
+          "face"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "fever",
+          "seizure",
+          "malaise"
+        ]
+      },
       "freq": "rare"
     },
     {
       "name": "Hemiplegic migraine",
       "system": "Migraine Variant",
       "redFlag": false,
-      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
+      "hpi": {
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "coughing",
+          "pressure"
+        ],
+        "quality": [
+          "pressure",
+          "tearing"
+        ],
+        "timing": [
+          "morning"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
+      },
       "freq": "rare"
     },
     {
       "name": "Functional neurologic disorder",
       "system": "Functional",
       "redFlag": false,
-      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
+      "hpi": {
+        "onset": [
+          "sudden",
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "stable"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "coughing",
+          "pressure"
+        ],
+        "quality": [
+          "pressure",
+          "tearing"
+        ],
+        "timing": [
+          "morning",
+          "intermittent"
+        ],
+        "region": [
+          "face"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild",
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
+      },
       "freq": "uncommon"
     }
   ],

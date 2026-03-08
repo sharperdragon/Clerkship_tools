@@ -6,17 +6,39 @@
       "system": "Excess Loss Of H!",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "n/a"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "antacids"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "vomiting"
+        ]
       },
       "freq": "unknown"
     },
@@ -25,36 +47,80 @@
       "system": "Excess Loss Of H!",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "n/a"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "antacids"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "vomiting"
+        ]
       },
       "freq": "unknown"
     },
     {
-      "name": "Gastric \ufb01stula",
+      "name": "Gastric ﬁstula",
       "system": "Excess Loss Of H!",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "n/a"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "antacids"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "vomiting"
+        ]
       },
       "freq": "unknown"
     },
@@ -63,55 +129,121 @@
       "system": "Excess Loss Of H!",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "n/a"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "antacids"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "unknown"
     },
     {
-      "name": "Cushing\u2019s syndrome (mineralocorticoid effect)",
+      "name": "Cushing’s syndrome (mineralocorticoid effect)",
       "system": "Excess Loss Of H!",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "n/a"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "antacids"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "unknown"
     },
     {
-      "name": "Conn\u2019s syndrome (mineralocorticoid excess)",
+      "name": "Conn’s syndrome (mineralocorticoid excess)",
       "system": "Excess Loss Of H!",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "n/a"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "antacids"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "vomiting"
+        ]
       },
       "freq": "unknown"
     },
@@ -120,17 +252,39 @@
       "system": "Excessive Intake Of Base",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "n/a"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "antacids"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "unknown"
     },
@@ -139,17 +293,39 @@
       "system": "Excessive Intake Of Base",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "n/a"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "antacids"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "unknown"
     }

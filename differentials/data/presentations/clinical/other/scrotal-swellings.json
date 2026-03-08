@@ -1,43 +1,91 @@
 {
   "presentation": "Scrotal swellings",
   "items": [
-
     {
       "name": "uncommon",
       "system": "Freq",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic",
+          "months"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "coughing"
+        ],
+        "quality": [
+          "dull",
+          "aching"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "unknown"
     },
-
     {
       "name": "Gumma",
-      "system": "TB \u2022 (common where TB is endemic)",
+      "system": "TB • (common where TB is endemic)",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic",
+          "months",
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "coughing"
+        ],
+        "quality": [
+          "dull",
+          "aching"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "fever",
+          "malaise"
+        ]
       },
       "freq": "rare"
     }

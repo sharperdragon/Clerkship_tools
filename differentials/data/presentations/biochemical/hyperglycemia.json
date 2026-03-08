@@ -6,17 +6,43 @@
       "system": "Endocrine",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "relapsing",
+          "gradual"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "stress",
+          "empty-stomach"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "unknown"
     },
@@ -25,17 +51,42 @@
       "system": "Drugs",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "relapsing"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "stress",
+          "empty-stomach",
+          "alcohol"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "nausea"
+        ]
       },
       "freq": "unknown"
     },
@@ -44,17 +95,42 @@
       "system": "Drugs",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "relapsing"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "stress",
+          "empty-stomach",
+          "alcohol"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "nausea"
+        ]
       },
       "freq": "unknown"
     },
@@ -63,17 +139,42 @@
       "system": "Drugs",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "relapsing"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "stress",
+          "empty-stomach",
+          "alcohol"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "nausea"
+        ]
       },
       "freq": "unknown"
     },
@@ -82,17 +183,42 @@
       "system": "Drugs",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "relapsing"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "stress",
+          "empty-stomach",
+          "alcohol"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "nausea"
+        ]
       },
       "freq": "unknown"
     },
@@ -101,17 +227,42 @@
       "system": "Drugs",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "relapsing"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "stress",
+          "empty-stomach",
+          "alcohol"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "nausea"
+        ]
       },
       "freq": "unknown"
     },
@@ -120,17 +271,42 @@
       "system": "Drugs",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "relapsing"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "stress",
+          "empty-stomach",
+          "alcohol"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "nausea"
+        ]
       },
       "freq": "unknown"
     },
@@ -139,17 +315,42 @@
       "system": "Drugs",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "relapsing"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "stress",
+          "empty-stomach",
+          "alcohol"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "nausea"
+        ]
       },
       "freq": "unknown"
     },
@@ -158,36 +359,86 @@
       "system": "Drugs",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "relapsing"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "stress",
+          "empty-stomach",
+          "alcohol"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "nausea"
+        ]
       },
       "freq": "unknown"
     },
     {
-      "name": "Cushing\u2019s syndrome",
+      "name": "Cushing’s syndrome",
       "system": "Systemic Disease",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "relapsing"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "stress",
+          "empty-stomach"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "face"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "weight-gain",
+          "limb-weakness"
+        ]
       },
       "freq": "unknown"
     },
@@ -196,17 +447,43 @@
       "system": "Severe Stress",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "relapsing",
+          "sudden"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "stress",
+          "empty-stomach"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "limb-weakness",
+          "stroke-symptoms"
+        ]
       },
       "freq": "unknown"
     },
@@ -215,17 +492,42 @@
       "system": "Severe Stress",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "relapsing",
+          "sudden"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "stress",
+          "empty-stomach"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "stroke-symptoms"
+        ]
       },
       "freq": "unknown"
     },
@@ -234,36 +536,86 @@
       "system": "Physiological",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "relapsing",
+          "subacute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "stress",
+          "empty-stomach"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "fever",
+          "malaise"
+        ]
       },
       "freq": "unknown"
     },
     {
-      "name": "In\ufb02ammation",
+      "name": "Inﬂammation",
       "system": "Physiological",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "relapsing"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "stress",
+          "empty-stomach"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "unknown"
     },
@@ -272,17 +624,41 @@
       "system": "Other",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "relapsing"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "stress",
+          "empty-stomach"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "stroke-symptoms"
+        ]
       },
       "freq": "unknown"
     }

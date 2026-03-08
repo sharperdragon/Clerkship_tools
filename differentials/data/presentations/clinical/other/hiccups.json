@@ -6,17 +6,46 @@
       "system": "Phrenic Nerve Irritation",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "elevation"
+        ],
+        "provoke": [
+          "coughing",
+          "oral-intake"
+        ],
+        "quality": [
+          "tender",
+          "pleuritic",
+          "aching"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "neck"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "numbness",
+          "paresthesia"
+        ]
       },
       "freq": "common"
     },
@@ -25,17 +54,46 @@
       "system": "Phrenic Nerve Irritation",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "elevation"
+        ],
+        "provoke": [
+          "coughing",
+          "oral-intake"
+        ],
+        "quality": [
+          "tender",
+          "pleuritic",
+          "aching"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "neck"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "numbness",
+          "paresthesia"
+        ]
       },
       "freq": "uncommon"
     },
@@ -44,17 +102,46 @@
       "system": "Phrenic Nerve Irritation",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "elevation"
+        ],
+        "provoke": [
+          "coughing",
+          "oral-intake"
+        ],
+        "quality": [
+          "tender",
+          "pleuritic",
+          "aching"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "numbness",
+          "paresthesia"
+        ]
       },
       "freq": "uncommon"
     },
@@ -63,17 +150,50 @@
       "system": "Phrenic Nerve Irritation",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "insidious"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "elevation"
+        ],
+        "provoke": [
+          "coughing",
+          "oral-intake",
+          "alcohol"
+        ],
+        "quality": [
+          "tender",
+          "pleuritic",
+          "aching"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "catastrophic",
+          "severe"
+        ],
+        "clinical tests": [
+          "percussion",
+          "tracheal-deviation"
+        ],
+        "other symptoms": [
+          "weight-loss",
+          "numbness",
+          "paresthesia"
+        ]
       },
       "freq": "uncommon"
     },
@@ -82,17 +202,48 @@
       "system": "Phrenic Nerve Irritation",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "insidious"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "elevation"
+        ],
+        "provoke": [
+          "coughing",
+          "oral-intake"
+        ],
+        "quality": [
+          "tender",
+          "pleuritic",
+          "aching"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "lower-chest"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate",
+          "severe"
+        ],
+        "clinical tests": [
+          "cranial-nerve-exam"
+        ],
+        "other symptoms": [
+          "weight-loss",
+          "numbness",
+          "paresthesia"
+        ]
       },
       "freq": "uncommon"
     },
@@ -101,17 +252,49 @@
       "system": "Phrenic Nerve Irritation",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "elevation"
+        ],
+        "provoke": [
+          "coughing",
+          "oral-intake"
+        ],
+        "quality": [
+          "tender",
+          "pleuritic",
+          "aching"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "lower-chest",
+          "abdomen"
+        ],
+        "radiation": [
+          "chest"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "fever",
+          "abdominal-pain",
+          "numbness",
+          "paresthesia"
+        ]
       },
       "freq": "rare"
     },
@@ -120,17 +303,43 @@
       "system": "Diaphragmatic Irritation",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "elevation"
+        ],
+        "provoke": [
+          "coughing",
+          "oral-intake"
+        ],
+        "quality": [
+          "tender",
+          "pleuritic"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "common"
     },
@@ -139,17 +348,43 @@
       "system": "Diaphragmatic Irritation",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "elevation"
+        ],
+        "provoke": [
+          "coughing",
+          "oral-intake"
+        ],
+        "quality": [
+          "tender",
+          "pleuritic"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "common"
     },
@@ -158,17 +393,48 @@
       "system": "Diaphragmatic Irritation",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "elevation"
+        ],
+        "provoke": [
+          "coughing",
+          "oral-intake"
+        ],
+        "quality": [
+          "tender",
+          "pleuritic"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "lower-chest",
+          "abdomen"
+        ],
+        "radiation": [
+          "chest"
+        ],
+        "severity": [
+          "catastrophic",
+          "severe"
+        ],
+        "clinical tests": [
+          "auscultation",
+          "cranial-nerve-exam"
+        ],
+        "other symptoms": [
+          "fever",
+          "pleuritic-pain"
+        ]
       },
       "freq": "common"
     },
@@ -177,17 +443,46 @@
       "system": "Diaphragmatic Irritation",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "elevation"
+        ],
+        "provoke": [
+          "coughing",
+          "oral-intake",
+          "alcohol"
+        ],
+        "quality": [
+          "tender",
+          "pleuritic"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "lower-chest",
+          "abdomen"
+        ],
+        "radiation": [
+          "chest"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "percussion",
+          "tracheal-deviation"
+        ],
+        "other symptoms": [
+          "fever"
+        ]
       },
       "freq": "common"
     },
@@ -196,17 +491,46 @@
       "system": "Diaphragmatic Irritation",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "elevation"
+        ],
+        "provoke": [
+          "coughing",
+          "oral-intake"
+        ],
+        "quality": [
+          "tender",
+          "pleuritic"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "lower-chest",
+          "abdomen"
+        ],
+        "radiation": [
+          "chest"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "fever",
+          "malaise"
+        ]
       },
       "freq": "common"
     },
@@ -215,17 +539,44 @@
       "system": "Diaphragmatic Irritation",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "elevation"
+        ],
+        "provoke": [
+          "coughing",
+          "oral-intake"
+        ],
+        "quality": [
+          "tender",
+          "pleuritic"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "lower-chest"
+        ],
+        "radiation": [
+          "chest"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "abdominal-swelling",
+          "distension"
+        ]
       },
       "freq": "uncommon"
     },
@@ -234,17 +585,45 @@
       "system": "Diaphragmatic Irritation",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "rapid"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "elevation"
+        ],
+        "provoke": [
+          "coughing",
+          "oral-intake"
+        ],
+        "quality": [
+          "tender",
+          "pleuritic"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "abdominal-swelling",
+          "distension"
+        ]
       },
       "freq": "uncommon"
     },
@@ -253,17 +632,43 @@
       "system": "Gi Conditions",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "elevation"
+        ],
+        "provoke": [
+          "coughing",
+          "oral-intake"
+        ],
+        "quality": [
+          "tender",
+          "pleuritic"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "common"
     },
@@ -272,17 +677,46 @@
       "system": "Gi Conditions",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "gradual"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "elevation"
+        ],
+        "provoke": [
+          "coughing",
+          "oral-intake"
+        ],
+        "quality": [
+          "tender",
+          "pleuritic"
+        ],
+        "timing": [
+          "persistent",
+          "intermittent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild",
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "uncommon"
     },
@@ -291,17 +725,43 @@
       "system": "Gi Conditions",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "elevation"
+        ],
+        "provoke": [
+          "coughing",
+          "oral-intake"
+        ],
+        "quality": [
+          "tender",
+          "pleuritic"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "rare"
     },
@@ -310,17 +770,47 @@
       "system": "Cns Conditions",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "elevation"
+        ],
+        "provoke": [
+          "coughing",
+          "oral-intake"
+        ],
+        "quality": [
+          "tender",
+          "pleuritic"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "neck",
+          "low-back"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "fever",
+          "photophobia",
+          "malaise"
+        ]
       },
       "freq": "common"
     },
@@ -329,17 +819,45 @@
       "system": "Cns Conditions",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "insidious"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "elevation"
+        ],
+        "provoke": [
+          "coughing",
+          "oral-intake"
+        ],
+        "quality": [
+          "tender",
+          "pleuritic"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate",
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "weight-loss"
+        ]
       },
       "freq": "common"
     },
@@ -348,17 +866,43 @@
       "system": "Cns Conditions",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "elevation"
+        ],
+        "provoke": [
+          "coughing",
+          "oral-intake"
+        ],
+        "quality": [
+          "tender",
+          "pleuritic"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "stroke-symptoms"
+        ]
       },
       "freq": "common"
     },
@@ -367,17 +911,44 @@
       "system": "Cns Conditions",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "elevation"
+        ],
+        "provoke": [
+          "coughing",
+          "oral-intake"
+        ],
+        "quality": [
+          "tender",
+          "pleuritic"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "seizure",
+          "stroke-symptoms"
+        ]
       },
       "freq": "common"
     },
@@ -386,17 +957,47 @@
       "system": "Cns Conditions",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "elevation"
+        ],
+        "provoke": [
+          "coughing",
+          "oral-intake"
+        ],
+        "quality": [
+          "tender",
+          "pleuritic"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "seizure",
+          "stroke-symptoms",
+          "fever",
+          "malaise"
+        ]
       },
       "freq": "uncommon"
     },
@@ -405,17 +1006,44 @@
       "system": "Other",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "gradual"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "elevation"
+        ],
+        "provoke": [
+          "coughing",
+          "oral-intake"
+        ],
+        "quality": [
+          "tender",
+          "pleuritic"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "uncommon"
     },
@@ -424,17 +1052,43 @@
       "system": "Other",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "elevation"
+        ],
+        "provoke": [
+          "coughing",
+          "oral-intake"
+        ],
+        "quality": [
+          "tender",
+          "pleuritic"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "uncommon"
     },
@@ -443,17 +1097,43 @@
       "system": "Other",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "elevation"
+        ],
+        "provoke": [
+          "coughing",
+          "oral-intake"
+        ],
+        "quality": [
+          "tender",
+          "pleuritic"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "rare"
     },
@@ -462,17 +1142,44 @@
       "system": "Other",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "elevation"
+        ],
+        "provoke": [
+          "coughing",
+          "oral-intake"
+        ],
+        "quality": [
+          "tender",
+          "pleuritic"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "neck",
+          "hip"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "rare"
     }

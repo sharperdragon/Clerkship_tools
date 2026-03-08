@@ -1,8 +1,711 @@
 {
   "presentation": "Hypokalemia",
-  "items": [],
+  "items": [
+    {
+      "name": "Potassium-free i.v. ﬂuids",
+      "system": "Inadequate Intake",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "myalgia"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "fatigue",
+          "limb-weakness"
+        ]
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Reduced oral intake, dysphagia",
+      "system": "Inadequate Intake",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "myalgia"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "coma",
+          "altered-mental-status"
+        ]
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Renal",
+      "system": "Excessive Loss",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "myalgia"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "digital-rectal-exam"
+        ],
+        "other symptoms": [
+          "none"
+        ]
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Thiazide or loop diuretics",
+      "system": "Excessive Loss",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "myalgia"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Renal tubular disorders",
+      "system": "Excessive Loss",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "myalgia"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "digital-rectal-exam"
+        ],
+        "other symptoms": [
+          "none"
+        ]
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Gastrointestinal",
+      "system": "Excessive Loss",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "myalgia"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "diarrhea"
+        ]
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Diarrhea",
+      "system": "Excessive Loss",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "myalgia"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Vomiting",
+      "system": "Excessive Loss",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "myalgia"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "vomiting",
+          "diarrhea"
+        ]
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Fistulas",
+      "system": "Excessive Loss",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "myalgia"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "vomiting"
+        ]
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Laxatives",
+      "system": "Excessive Loss",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "myalgia"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Villous adenoma",
+      "system": "Excessive Loss",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "sudden",
+          "acute",
+          "insidious"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "myalgia"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate",
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "weight-loss"
+        ]
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Endocrine",
+      "system": "Excessive Loss",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "sudden",
+          "acute",
+          "gradual"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "myalgia"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Cushing’s syndrome",
+      "system": "Excessive Loss",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "myalgia"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Steroid therapy",
+      "system": "Excessive Loss",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "myalgia"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Hyperaldosteronism",
+      "system": "Excessive Loss",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "sudden",
+          "acute",
+          "gradual"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "myalgia"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Diabetic ketoacidosis (related to excessive diuresis and",
+      "system": "Excessive Loss",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "sudden",
+          "acute",
+          "gradual"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "myalgia"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "coma",
+          "altered-mental-status"
+        ]
+      },
+      "freq": "unknown"
+    }
+  ],
   "sources": {
-    "index_keys": [],
+    "index_keys": [
+      "Hypokalemia"
+    ],
     "index_type": "non-clinical"
   }
 }

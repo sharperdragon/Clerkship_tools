@@ -2,40 +2,96 @@
   "presentation": "Finger lesions",
   "items": [
     {
-      "name": "Dupuytren\u2019s contracture",
+      "name": "Dupuytren’s contracture",
       "system": "Traumatic/Degenerative",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic",
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "pressure",
+          "movement"
+        ],
+        "quality": [
+          "pressure",
+          "tightness",
+          "firm"
+        ],
+        "timing": [
+          "post-traumatic"
+        ],
+        "region": [
+          "fingers"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "common"
     },
     {
-      "name": "Trigger \ufb01nger",
+      "name": "Trigger ﬁnger",
       "system": "Traumatic/Degenerative",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic",
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "pressure",
+          "movement"
+        ],
+        "quality": [
+          "pressure",
+          "tightness",
+          "firm"
+        ],
+        "timing": [
+          "post-traumatic"
+        ],
+        "region": [
+          "neck",
+          "hand"
+        ],
+        "radiation": [
+          "hand"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "digital-rectal-exam",
+          "reflex-testing"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "uncommon"
     },
@@ -44,17 +100,44 @@
       "system": "Traumatic/Degenerative",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic",
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "pressure",
+          "movement"
+        ],
+        "quality": [
+          "pressure",
+          "tightness",
+          "firm"
+        ],
+        "timing": [
+          "post-traumatic"
+        ],
+        "region": [
+          "fingers"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "uncommon"
     },
@@ -63,55 +146,137 @@
       "system": "Traumatic/Degenerative",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic",
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "pressure",
+          "movement"
+        ],
+        "quality": [
+          "pressure",
+          "tightness",
+          "sharp"
+        ],
+        "timing": [
+          "post-traumatic"
+        ],
+        "region": [
+          "fingers"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "uncommon"
     },
     {
-      "name": "Boutonni\u00e8re deformity",
+      "name": "Boutonnière deformity",
       "system": "Traumatic/Degenerative",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic",
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "pressure",
+          "movement"
+        ],
+        "quality": [
+          "pressure",
+          "tightness",
+          "sharp"
+        ],
+        "timing": [
+          "post-traumatic"
+        ],
+        "region": [
+          "neck",
+          "face"
+        ],
+        "radiation": [
+          "hand"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "uncommon"
     },
     {
-      "name": "Heberden\u2019s/Bouchard\u2019s nodes",
+      "name": "Heberden’s/Bouchard’s nodes",
       "system": "Traumatic/Degenerative",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic",
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "pressure",
+          "movement"
+        ],
+        "quality": [
+          "pressure",
+          "tightness",
+          "sharp"
+        ],
+        "timing": [
+          "post-traumatic"
+        ],
+        "region": [
+          "fingers"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "uncommon"
     },
@@ -120,17 +285,44 @@
       "system": "Traumatic/Degenerative",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic",
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "pressure",
+          "movement"
+        ],
+        "quality": [
+          "pressure",
+          "tightness",
+          "sharp"
+        ],
+        "timing": [
+          "post-traumatic"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "rare"
     },
@@ -139,17 +331,45 @@
       "system": "Traumatic/Degenerative",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic",
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "pressure",
+          "movement"
+        ],
+        "quality": [
+          "pressure",
+          "tightness",
+          "sharp"
+        ],
+        "timing": [
+          "post-traumatic"
+        ],
+        "region": [
+          "face",
+          "hand"
+        ],
+        "radiation": [
+          "hand"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "reflex-testing"
+        ],
+        "other symptoms": [
+          "vomiting"
+        ]
       },
       "freq": "rare"
     },
@@ -158,55 +378,129 @@
       "system": "Metabolic",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic",
+          "gradual"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "pressure"
+        ],
+        "quality": [
+          "pressure",
+          "tightness"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "fingers"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "uncommon"
     },
     {
-      "name": "Ectopic calci\ufb01cation",
+      "name": "Ectopic calciﬁcation",
       "system": "Metabolic",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic",
+          "gradual"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "pressure"
+        ],
+        "quality": [
+          "pressure",
+          "tightness",
+          "firm"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "fingers"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "rare"
     },
     {
-      "name": "Calcinosis in CREST (Calcinosis, Raynaud\u2019s phenomenon, oesoph",
+      "name": "Calcinosis in CREST (Calcinosis, Raynaud’s phenomenon, oesoph",
       "system": "Connective Tissue Disease",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "pressure"
+        ],
+        "quality": [
+          "pressure",
+          "tightness"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "fingers"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "rare"
     },
@@ -215,17 +509,41 @@
       "system": "Neoplastic",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "pressure"
+        ],
+        "quality": [
+          "pressure",
+          "tightness"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "fingers",
+          "nails"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "uncommon"
     },
@@ -234,17 +552,40 @@
       "system": "Neoplastic",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "pressure"
+        ],
+        "quality": [
+          "pressure",
+          "tightness"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "nails"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "rare"
     }

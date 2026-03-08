@@ -5,49 +5,309 @@
       "name": "COPD exacerbation with hypoventilation",
       "system": "Pulmonary",
       "redFlag": true,
-      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
+      "hpi": {
+        "onset": [
+          "acute",
+          "chronic",
+          "days"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "movement",
+          "pressure"
+        ],
+        "quality": [
+          "pressure"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
+      },
       "freq": "common"
     },
     {
       "name": "Opioid or sedative respiratory depression",
       "system": "Central Nervous System",
       "redFlag": true,
-      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
+      "hpi": {
+        "onset": [
+          "acute",
+          "chronic",
+          "gradual"
+        ],
+        "progression": [
+          "stable"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "movement",
+          "pressure"
+        ],
+        "quality": [
+          "pressure"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild",
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "tachycardia"
+        ]
+      },
       "freq": "common"
     },
     {
       "name": "Severe asthma with ventilatory fatigue",
       "system": "Pulmonary",
       "redFlag": true,
-      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
+      "hpi": {
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "movement",
+          "pressure"
+        ],
+        "quality": [
+          "pressure"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "lower-chest"
+        ],
+        "radiation": [
+          "chest"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "shock",
+          "hypotension"
+        ]
+      },
       "freq": "uncommon"
     },
     {
       "name": "Neuromuscular weakness (for example myasthenia or GBS)",
       "system": "Neuromuscular",
       "redFlag": true,
-      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
+      "hpi": {
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "movement",
+          "pressure"
+        ],
+        "quality": [
+          "pressure"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
+      },
       "freq": "uncommon"
     },
     {
       "name": "Obesity hypoventilation syndrome",
       "system": "Ventilatory Mechanics",
       "redFlag": false,
-      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
+      "hpi": {
+        "onset": [
+          "acute",
+          "chronic",
+          "days"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "movement",
+          "pressure"
+        ],
+        "quality": [
+          "pressure"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "lower-chest"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
+      },
       "freq": "uncommon"
     },
     {
       "name": "Advanced pneumonia with respiratory failure",
       "system": "Pulmonary",
       "redFlag": true,
-      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
+      "hpi": {
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "movement",
+          "pressure"
+        ],
+        "quality": [
+          "pressure"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "tachycardia"
+        ]
+      },
       "freq": "uncommon"
     },
     {
       "name": "Chest wall restriction (severe kyphoscoliosis)",
       "system": "Ventilatory Mechanics",
       "redFlag": false,
-      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
+      "hpi": {
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "movement",
+          "pressure"
+        ],
+        "quality": [
+          "pressure"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "lower-chest"
+        ],
+        "radiation": [
+          "chest"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "shock",
+          "hypotension"
+        ]
+      },
       "freq": "rare"
     }
   ],

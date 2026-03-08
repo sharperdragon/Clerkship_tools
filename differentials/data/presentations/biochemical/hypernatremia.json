@@ -1,8 +1,781 @@
 {
   "presentation": "Hypernatremia",
-  "items": [],
+  "items": [
+    {
+      "name": "Confusion",
+      "system": "Decreased Water Intake",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "dehydration"
+        ],
+        "quality": [
+          "burning"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Gastrointestinal losses (, Diarrhea)",
+      "system": "Non-Renal Water Losses",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "dehydration"
+        ],
+        "quality": [
+          "burning"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "vomiting",
+          "diarrhea"
+        ]
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Pyrexia",
+      "system": "Non-Renal Water Losses",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "dehydration"
+        ],
+        "quality": [
+          "burning"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "fever",
+          "vomiting"
+        ]
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Burns",
+      "system": "Non-Renal Water Losses",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "dehydration"
+        ],
+        "quality": [
+          "burning"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "fever"
+        ]
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Osmotic diuresis (i.e. hyperglycemia)",
+      "system": "Renal Water Losses",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "acute",
+          "chronic",
+          "gradual"
+        ],
+        "progression": [
+          "improving",
+          "stable"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "dehydration"
+        ],
+        "quality": [
+          "burning"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Nephrogenic diabetes insipidus",
+      "system": "Renal Water Losses",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "acute",
+          "chronic",
+          "gradual"
+        ],
+        "progression": [
+          "improving",
+          "stable"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "dehydration"
+        ],
+        "quality": [
+          "burning"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "dehydration"
+        ]
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Drugs (",
+      "system": "Renal Water Losses",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "dehydration",
+          "alcohol"
+        ],
+        "quality": [
+          "burning"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "nausea"
+        ]
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Bence Jones proteins",
+      "system": "Renal Water Losses",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "dehydration"
+        ],
+        "quality": [
+          "burning"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Post-relief of obstructive uropathy",
+      "system": "Renal Water Losses",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "improving",
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "dehydration"
+        ],
+        "quality": [
+          "burning"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Recovering acute tubular necrosis",
+      "system": "Renal Water Losses",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "dehydration"
+        ],
+        "quality": [
+          "burning"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Congenital diabetes insipidus",
+      "system": "Renal Water Losses",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "acute",
+          "chronic",
+          "gradual"
+        ],
+        "progression": [
+          "improving",
+          "stable"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "dehydration"
+        ],
+        "quality": [
+          "burning"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "dehydration"
+        ]
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Excessive intravenous sodium therapy",
+      "system": "Sodium Excess",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "dehydration"
+        ],
+        "quality": [
+          "burning"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "polydipsia"
+        ]
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Chronic congestive cardiac failure",
+      "system": "Sodium Excess",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "dehydration"
+        ],
+        "quality": [
+          "burning"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Cirrhosis of the liver",
+      "system": "Sodium Excess",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "dehydration"
+        ],
+        "quality": [
+          "burning"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Steroid therapy",
+      "system": "Sodium Excess",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "dehydration"
+        ],
+        "quality": [
+          "burning"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Cushing’s syndrome",
+      "system": "Sodium Excess",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "dehydration"
+        ],
+        "quality": [
+          "burning"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Primary hyperaldosteronism (Conn’s syndrome)",
+      "system": "Sodium Excess",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "acute",
+          "chronic",
+          "gradual"
+        ],
+        "progression": [
+          "improving",
+          "stable"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "dehydration"
+        ],
+        "quality": [
+          "burning"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Rapid correction of hypernatremia can lead to cerebral",
+      "system": "Symptoms And Signs",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "acute",
+          "chronic",
+          "rapid"
+        ],
+        "progression": [
+          "improving",
+          "stable"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "dehydration"
+        ],
+        "quality": [
+          "burning"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
+      },
+      "freq": "unknown"
+    }
+  ],
   "sources": {
-    "index_keys": [],
+    "index_keys": [
+      "Hypernatremia"
+    ],
     "index_type": "non-clinical"
   }
 }

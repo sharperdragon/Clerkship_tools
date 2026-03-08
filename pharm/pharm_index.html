@@ -10,22 +10,22 @@
 </head>
 <body>
   <header class="app-header">
-    <div class="brand">
-      <a class="brand__home" href="../index.html" aria-label="Clerkship Tools Home">
-        <img class="brand__icon" src="../ct_icon.svg" alt="" aria-hidden="true" width="24" height="24" />
-        <span>Clerkship Tools</span>
-      </a>
-      <h1 class="brand__title">Pharm Reference</h1>
-      <p class="brand__subtitle">Rapid medication review for mixed clerkship workflows.</p>
+    <div class="header-row header-row--brand">
+      <div class="brand">
+        <a class="brand__home" href="../index.html" aria-label="Clerkship Tools Home">
+          <img class="brand__icon" src="../ct_icon.svg" alt="" aria-hidden="true" width="24" height="24" />
+          <span>Clerkship Tools</span>
+        </a>
+        <h1 class="brand__title">Pharm Reference</h1>
+        <p class="brand__subtitle">Rapid medication review for mixed clerkship workflows.</p>
+      </div>
+
+      <button id="btnThemeToggle" class="btn btn--theme" type="button" aria-label="Switch theme">
+        Dark mode
+      </button>
     </div>
-  </header>
 
-  <main class="app-main">
-    <section id="disclaimerBanner" class="disclaimer" role="note" aria-label="Educational-use disclaimer">
-      Educational reference only. Verify all medication decisions with current institutional guidance and pharmacy resources.
-    </section>
-
-    <section class="controls" aria-label="Medication filters">
+    <section class="controls controls--primary" aria-label="Medication search">
       <label class="control control--search">
         <span class="control__label">Search</span>
         <input
@@ -33,10 +33,17 @@
           class="input"
           type="search"
           autocomplete="off"
-          placeholder="Search name, class, indications, adverse effects, interactions..."
+          placeholder="Search medication, class, indication, adverse effect, interaction..."
         />
       </label>
 
+      <div class="control control--result-meta">
+        <p class="result-count__label">Matches</p>
+        <p id="resultCount" class="result-count" aria-live="polite">0 medications</p>
+      </div>
+    </section>
+
+    <section class="controls controls--secondary" aria-label="Medication filters">
       <label class="control">
         <span class="control__label">Drug Class</span>
         <select id="classFilter" class="select">
@@ -52,15 +59,21 @@
       </label>
 
       <div class="control control--actions">
-        <span id="resultCount" class="result-count" aria-live="polite">0 medications</span>
         <button id="btnClearFilters" class="btn ghost" type="button">Clear filters</button>
       </div>
+    </section>
+  </header>
+
+  <main class="app-main">
+    <section id="disclaimerBanner" class="disclaimer" role="note" aria-label="Educational-use disclaimer">
+      Educational reference only. Verify all medication decisions with current institutional guidance and pharmacy resources.
     </section>
 
     <div id="loadError" class="error" role="alert" hidden></div>
 
     <section class="layout-shell">
       <section id="resultsRegion" class="results-region" aria-label="Medication results">
+        <h2 class="visually-hidden">Medication results</h2>
         <div id="results" class="results-grid" aria-live="polite"></div>
       </section>
 

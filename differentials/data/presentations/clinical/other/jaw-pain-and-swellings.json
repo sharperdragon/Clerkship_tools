@@ -6,17 +6,46 @@
       "system": "Infective",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic",
+          "subacute"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "movement",
+          "oral-intake"
+        ],
+        "quality": [
+          "dull",
+          "aching"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "face"
+        ],
+        "radiation": [
+          "jaw"
+        ],
+        "severity": [
+          "severe",
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "fever",
+          "malaise"
+        ]
       },
       "freq": "common"
     },
@@ -25,17 +54,45 @@
       "system": "Infective",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic",
+          "subacute"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "movement",
+          "oral-intake"
+        ],
+        "quality": [
+          "dull",
+          "aching"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "fever",
+          "malaise"
+        ]
       },
       "freq": "common"
     },
@@ -44,17 +101,45 @@
       "system": "Infective",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic",
+          "subacute"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "movement",
+          "oral-intake"
+        ],
+        "quality": [
+          "dull",
+          "aching"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "fever",
+          "malaise"
+        ]
       },
       "freq": "uncommon"
     },
@@ -63,17 +148,45 @@
       "system": "Infective",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic",
+          "subacute"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "movement",
+          "oral-intake"
+        ],
+        "quality": [
+          "dull",
+          "aching"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "fever",
+          "malaise"
+        ]
       },
       "freq": "uncommon"
     },
@@ -82,17 +195,46 @@
       "system": "Infective",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic",
+          "subacute"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "movement",
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "dull",
+          "aching"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "face"
+        ],
+        "radiation": [
+          "jaw"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "fever",
+          "malaise"
+        ]
       },
       "freq": "rare"
     },
@@ -101,17 +243,45 @@
       "system": "Infective",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic",
+          "subacute"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "movement",
+          "oral-intake"
+        ],
+        "quality": [
+          "dull",
+          "aching"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "face"
+        ],
+        "radiation": [
+          "jaw"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "fever",
+          "malaise"
+        ]
       },
       "freq": "rare"
     },
@@ -120,17 +290,45 @@
       "system": "Temporomandibular Joint",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic",
+          "subacute"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "movement",
+          "oral-intake"
+        ],
+        "quality": [
+          "dull",
+          "aching"
+        ],
+        "timing": [
+          "persistent",
+          "intermittent"
+        ],
+        "region": [
+          "face"
+        ],
+        "radiation": [
+          "jaw"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "rare"
     },
@@ -139,17 +337,44 @@
       "system": "Temporomandibular Joint",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic",
+          "relapsing"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "movement",
+          "oral-intake"
+        ],
+        "quality": [
+          "dull",
+          "aching"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "rare"
     },
@@ -158,17 +383,43 @@
       "system": "Cystic",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "movement",
+          "oral-intake"
+        ],
+        "quality": [
+          "dull",
+          "aching"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "face"
+        ],
+        "radiation": [
+          "jaw"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "rare"
     },
@@ -177,17 +428,43 @@
       "system": "Cystic",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "movement",
+          "oral-intake"
+        ],
+        "quality": [
+          "dull",
+          "aching"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "rare"
     },
@@ -196,17 +473,45 @@
       "system": "Benign",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "movement",
+          "oral-intake"
+        ],
+        "quality": [
+          "dull",
+          "aching"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "face",
+          "lower-chest"
+        ],
+        "radiation": [
+          "chest",
+          "jaw"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "chest-pain"
+        ]
       },
       "freq": "rare"
     },
@@ -215,17 +520,43 @@
       "system": "Locally Invasive",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "movement",
+          "oral-intake"
+        ],
+        "quality": [
+          "dull",
+          "aching"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "rare"
     },
@@ -234,151 +565,370 @@
       "system": "Locally Invasive",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic",
+          "insidious"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "movement",
+          "oral-intake"
+        ],
+        "quality": [
+          "dull",
+          "aching"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate",
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "weight-loss"
+        ]
       },
       "freq": "uncommon"
     },
-
     {
       "name": "Secondary deposits",
-      "system": "Burkitt\u2019s lymphoma \u2022 (endemic in equatorial Africa)",
+      "system": "Burkitt’s lymphoma • (endemic in equatorial Africa)",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "movement",
+          "oral-intake"
+        ],
+        "quality": [
+          "dull",
+          "aching"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "face"
+        ],
+        "radiation": [
+          "jaw"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "rare"
     },
     {
-      "name": "Paget\u2019s disease",
-      "system": "Burkitt\u2019s lymphoma \u2022 (endemic in equatorial Africa)",
+      "name": "Paget’s disease",
+      "system": "Burkitt’s lymphoma • (endemic in equatorial Africa)",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "movement",
+          "oral-intake"
+        ],
+        "quality": [
+          "dull",
+          "aching"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "rare"
     },
     {
       "name": "Referred pain (",
-      "system": "Burkitt\u2019s lymphoma \u2022 (endemic in equatorial Africa)",
+      "system": "Burkitt’s lymphoma • (endemic in equatorial Africa)",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "movement",
+          "oral-intake"
+        ],
+        "quality": [
+          "dull",
+          "aching",
+          "throbbing"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "face",
+          "lower-chest"
+        ],
+        "radiation": [
+          "chest",
+          "jaw"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "chest-pain"
+        ]
       },
       "freq": "common"
     },
     {
       "name": "Giant cell (temporal) arteritis",
-      "system": "Burkitt\u2019s lymphoma \u2022 (endemic in equatorial Africa)",
+      "system": "Burkitt’s lymphoma • (endemic in equatorial Africa)",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "movement",
+          "oral-intake",
+          "Touch"
+        ],
+        "quality": [
+          "dull",
+          "aching",
+          "tender"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "face",
+          "lower-chest"
+        ],
+        "radiation": [
+          "chest",
+          "jaw"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "chest-pain"
+        ]
       },
       "freq": "uncommon"
     },
     {
       "name": "Post-herpetic neuralgia",
-      "system": "Burkitt\u2019s lymphoma \u2022 (endemic in equatorial Africa)",
+      "system": "Burkitt’s lymphoma • (endemic in equatorial Africa)",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "movement",
+          "oral-intake"
+        ],
+        "quality": [
+          "dull",
+          "aching"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "scalp"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "uncommon"
     },
     {
       "name": "Osteonecrosis of the mandible (steroid therapy",
-      "system": "Burkitt\u2019s lymphoma \u2022 (endemic in equatorial Africa)",
+      "system": "Burkitt’s lymphoma • (endemic in equatorial Africa)",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "movement",
+          "oral-intake",
+          "Touch"
+        ],
+        "quality": [
+          "dull",
+          "aching",
+          "tender"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "face",
+          "scalp"
+        ],
+        "radiation": [
+          "jaw"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "uncommon"
     },
     {
       "name": "Systemic conditions (RA, lupus, syphilis)",
-      "system": "Burkitt\u2019s lymphoma \u2022 (endemic in equatorial Africa)",
+      "system": "Burkitt’s lymphoma • (endemic in equatorial Africa)",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "movement",
+          "oral-intake"
+        ],
+        "quality": [
+          "dull",
+          "aching"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "face"
+        ],
+        "radiation": [
+          "jaw"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "uncommon"
     }

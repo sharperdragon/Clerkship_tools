@@ -6,17 +6,44 @@
       "system": "Furring",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "oral-intake",
+          "eating",
+          "dehydration"
+        ],
+        "quality": [
+          "burning",
+          "sharp"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "motor-strength-testing"
+        ],
+        "other symptoms": [
+          "dehydration",
+          "limb-weakness"
+        ]
       },
       "freq": "common"
     },
@@ -25,17 +52,43 @@
       "system": "Furring",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "oral-intake",
+          "eating",
+          "dehydration"
+        ],
+        "quality": [
+          "burning",
+          "sharp"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "dehydration"
+        ]
       },
       "freq": "common"
     },
@@ -44,17 +97,43 @@
       "system": "Furring",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "oral-intake",
+          "eating",
+          "dehydration"
+        ],
+        "quality": [
+          "burning",
+          "sharp"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "dehydration"
+        ]
       },
       "freq": "common"
     },
@@ -63,17 +142,43 @@
       "system": "Furring",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "oral-intake",
+          "eating",
+          "dehydration"
+        ],
+        "quality": [
+          "burning",
+          "sharp"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "dehydration"
+        ]
       },
       "freq": "common"
     },
@@ -82,17 +187,43 @@
       "system": "Colour Change",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "burning",
+          "sharp",
+          "tender"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "common"
     },
@@ -101,17 +232,42 @@
       "system": "Colour Change",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "burning",
+          "sharp"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "cyanosis"
+        ]
       },
       "freq": "common"
     },
@@ -120,55 +276,130 @@
       "system": "Colour Change",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "burning",
+          "sharp"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "cyanosis"
+        ]
       },
       "freq": "common"
     },
     {
-      "name": "Red (pernicious anemia, vitamin de\ufb01ciency)",
+      "name": "Red (pernicious anemia, vitamin deﬁciency)",
       "system": "Colour Change",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "burning",
+          "sharp"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "uncommon"
     },
     {
-      "name": "Down\u2019s syndrome",
+      "name": "Down’s syndrome",
       "system": "Swelling (macroglossia)",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "burning",
+          "sharp"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "common"
     },
@@ -177,17 +408,46 @@
       "system": "Swelling (macroglossia)",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic",
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "oral-intake",
+          "eating",
+          "movement"
+        ],
+        "quality": [
+          "burning",
+          "sharp"
+        ],
+        "timing": [
+          "persistent",
+          "post-traumatic"
+        ],
+        "region": [
+          "neck"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "common"
     },
@@ -196,17 +456,42 @@
       "system": "Swelling (macroglossia)",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "burning",
+          "sharp"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "face"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "reflex-testing"
+        ],
+        "other symptoms": [
+          "weight-gain"
+        ]
       },
       "freq": "uncommon"
     },
@@ -215,36 +500,86 @@
       "system": "Swelling (macroglossia)",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "burning",
+          "sharp"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "uncommon"
     },
     {
-      "name": "In\ufb01ltration, , lymphoma",
+      "name": "Inﬁltration, , lymphoma",
       "system": "Swelling (macroglossia)",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "burning",
+          "sharp"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "rare"
     },
@@ -253,17 +588,43 @@
       "system": "Swelling (macroglossia)",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic",
+          "gradual"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "burning",
+          "sharp"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "rare"
     },
@@ -272,17 +633,42 @@
       "system": "Swelling (macroglossia)",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "burning",
+          "sharp"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "face"
+        ],
+        "radiation": [
+          "jaw"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "constipation"
+        ]
       },
       "freq": "rare"
     },
@@ -291,17 +677,43 @@
       "system": "Glossitis",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "oral-intake",
+          "eating",
+          "dehydration"
+        ],
+        "quality": [
+          "burning",
+          "sharp"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "dehydration"
+        ]
       },
       "freq": "common"
     },
@@ -310,17 +722,42 @@
       "system": "Glossitis",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "burning",
+          "sharp"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "common"
     },
@@ -329,17 +766,42 @@
       "system": "Glossitis",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "burning",
+          "sharp"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "common"
     },
@@ -348,17 +810,45 @@
       "system": "Glossitis",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic",
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "burning",
+          "sharp"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "fever",
+          "malaise"
+        ]
       },
       "freq": "common"
     },
@@ -367,17 +857,42 @@
       "system": "Glossitis",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "burning",
+          "sharp"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "common"
     },
@@ -386,17 +901,44 @@
       "system": "Glossitis",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "burning",
+          "sharp"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "neck",
+          "face"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "fever",
+          "rash"
+        ]
       },
       "freq": "common"
     },
@@ -405,17 +947,42 @@
       "system": "Glossitis",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "burning",
+          "sharp"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "fever"
+        ]
       },
       "freq": "rare"
     },
@@ -424,17 +991,43 @@
       "system": "Glossitis",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "burning",
+          "sharp"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "neck"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "fever",
+          "rash"
+        ]
       },
       "freq": "rare"
     },
@@ -443,17 +1036,44 @@
       "system": "Ulceration",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "burning",
+          "sharp",
+          "tender"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "neck"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "fever",
+          "rash"
+        ]
       },
       "freq": "common"
     },
@@ -462,17 +1082,46 @@
       "system": "Ulceration",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic",
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "oral-intake",
+          "eating",
+          "movement"
+        ],
+        "quality": [
+          "burning",
+          "sharp"
+        ],
+        "timing": [
+          "persistent",
+          "post-traumatic"
+        ],
+        "region": [
+          "neck"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "common"
     },
@@ -481,17 +1130,44 @@
       "system": "Ulceration",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic",
+          "insidious"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "burning",
+          "sharp"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate",
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "weight-loss"
+        ]
       },
       "freq": "uncommon"
     },
@@ -500,17 +1176,42 @@
       "system": "Ulceration",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "burning",
+          "sharp"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "rare"
     },
@@ -519,17 +1220,42 @@
       "system": "Ulceration",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "burning",
+          "sharp"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "rare"
     },
@@ -538,17 +1264,42 @@
       "system": "Wasting",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "burning",
+          "sharp"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "motor-strength-testing"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "uncommon"
     },
@@ -557,17 +1308,46 @@
       "system": "Wasting",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic",
+          "gradual"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "burning",
+          "sharp",
+          "aching"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "neck",
+          "scalp"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "motor-strength-testing"
+        ],
+        "other symptoms": [
+          "numbness",
+          "paresthesia"
+        ]
       },
       "freq": "rare"
     },
@@ -576,17 +1356,45 @@
       "system": "Wasting",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "oral-intake",
+          "eating",
+          "dehydration"
+        ],
+        "quality": [
+          "burning",
+          "sharp"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "neck",
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "motor-strength-testing"
+        ],
+        "other symptoms": [
+          "dehydration",
+          "limb-weakness"
+        ]
       },
       "freq": "rare"
     },
@@ -595,17 +1403,42 @@
       "system": "Wasting",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "burning",
+          "sharp"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "common"
     },
@@ -614,36 +1447,88 @@
       "system": "Wasting",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "burning",
+          "sharp"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "nails",
+          "scalp"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "itching",
+          "rash"
+        ]
       },
       "freq": "uncommon"
     },
     {
-      "name": "Sjogren\u2019s syndrome",
+      "name": "Sjogren’s syndrome",
       "system": "Wasting",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "burning",
+          "sharp"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "common"
     }

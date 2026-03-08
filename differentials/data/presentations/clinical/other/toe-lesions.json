@@ -6,17 +6,43 @@
       "system": "Toenails",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "walking",
+          "pressure"
+        ],
+        "quality": [
+          "sharp",
+          "pressure"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "toes",
+          "nails"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "common"
     },
@@ -25,17 +51,43 @@
       "system": "Toenails",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "walking",
+          "pressure"
+        ],
+        "quality": [
+          "sharp",
+          "pressure"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "toes",
+          "nails"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "syncope"
+        ]
       },
       "freq": "common"
     },
@@ -44,17 +96,42 @@
       "system": "Toenails",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "walking",
+          "pressure"
+        ],
+        "quality": [
+          "sharp",
+          "pressure"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "common"
     },
@@ -63,17 +140,43 @@
       "system": "Toenails",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "walking",
+          "pressure"
+        ],
+        "quality": [
+          "sharp",
+          "pressure"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "toes",
+          "nails"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "syncope"
+        ]
       },
       "freq": "uncommon"
     },
@@ -82,17 +185,43 @@
       "system": "Toenails",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "walking",
+          "pressure"
+        ],
+        "quality": [
+          "sharp",
+          "pressure"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "toes",
+          "nails"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "syncope"
+        ]
       },
       "freq": "uncommon"
     },
@@ -101,17 +230,42 @@
       "system": "Toenails",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "walking",
+          "pressure"
+        ],
+        "quality": [
+          "sharp",
+          "pressure"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "nails"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "uncommon"
     },
@@ -120,17 +274,42 @@
       "system": "Toenails",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "walking",
+          "pressure"
+        ],
+        "quality": [
+          "sharp",
+          "pressure"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "uncommon"
     },
@@ -139,17 +318,44 @@
       "system": "Ischemic",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic",
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "walking",
+          "pressure"
+        ],
+        "quality": [
+          "sharp",
+          "pressure"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "uncommon"
     },
@@ -158,17 +364,44 @@
       "system": "Ischemic",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic",
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "walking",
+          "pressure"
+        ],
+        "quality": [
+          "sharp",
+          "pressure"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "uncommon"
     },
@@ -177,55 +410,137 @@
       "system": "Ischemic",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic",
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "walking",
+          "pressure"
+        ],
+        "quality": [
+          "sharp",
+          "pressure"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "common"
     },
     {
-      "name": "Raynaud\u2019s",
+      "name": "Raynaud’s",
       "system": "Ischemic",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic",
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "walking",
+          "pressure"
+        ],
+        "quality": [
+          "sharp",
+          "pressure"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "uncommon"
     },
     {
-      "name": "Buerger\u2019s",
+      "name": "Buerger’s",
       "system": "Ischemic",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic",
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "walking",
+          "pressure"
+        ],
+        "quality": [
+          "sharp",
+          "pressure"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "uncommon"
     },
@@ -234,113 +549,266 @@
       "system": "Ischemic",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic",
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "walking",
+          "pressure"
+        ],
+        "quality": [
+          "sharp",
+          "pressure",
+          "aching"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "rare"
     },
-
     {
       "name": "uncommon",
       "system": "Freq",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "walking",
+          "pressure"
+        ],
+        "quality": [
+          "sharp",
+          "pressure"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "unknown"
     },
     {
       "name": "Spinal cord lesions",
-      "system": "Leprosy \u2022 (common where leprosy is endemic)",
+      "system": "Leprosy • (common where leprosy is endemic)",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "walking",
+          "pressure"
+        ],
+        "quality": [
+          "sharp",
+          "pressure"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "foot",
+          "toes"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "rare"
     },
     {
-      "name": "Spina bi\ufb01da",
-      "system": "Leprosy \u2022 (common where leprosy is endemic)",
+      "name": "Spina biﬁda",
+      "system": "Leprosy • (common where leprosy is endemic)",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "walking",
+          "pressure"
+        ],
+        "quality": [
+          "sharp",
+          "pressure"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "foot"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "rare"
     },
     {
       "name": "Spinal injuries",
-      "system": "Leprosy \u2022 (common where leprosy is endemic)",
+      "system": "Leprosy • (common where leprosy is endemic)",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "walking",
+          "pressure"
+        ],
+        "quality": [
+          "sharp",
+          "pressure"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "foot"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "rare"
     },
     {
       "name": "Syringomyelia",
-      "system": "Leprosy \u2022 (common where leprosy is endemic)",
+      "system": "Leprosy • (common where leprosy is endemic)",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "walking",
+          "pressure"
+        ],
+        "quality": [
+          "sharp",
+          "pressure"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "rare"
     },
@@ -349,17 +817,44 @@
       "system": "Neoplastic",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic",
+          "insidious"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "walking",
+          "pressure"
+        ],
+        "quality": [
+          "sharp",
+          "pressure"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate",
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "weight-loss"
+        ]
       },
       "freq": "rare"
     },
@@ -368,17 +863,42 @@
       "system": "Discoloration",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "walking",
+          "pressure"
+        ],
+        "quality": [
+          "sharp",
+          "pressure"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "common"
     },
@@ -387,17 +907,44 @@
       "system": "Discoloration",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic",
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "walking",
+          "pressure"
+        ],
+        "quality": [
+          "sharp",
+          "pressure"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "uncommon"
     }

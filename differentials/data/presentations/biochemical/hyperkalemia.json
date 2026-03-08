@@ -5,56 +5,359 @@
       "name": "Chronic kidney disease",
       "system": "Reduced Renal Excretion",
       "redFlag": false,
-      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
+      "hpi": {
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "nsaids"
+        ],
+        "quality": [
+          "burning",
+          "crushing"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "digital-rectal-exam"
+        ],
+        "other symptoms": [
+          "none"
+        ]
+      },
       "freq": "common"
     },
     {
       "name": "Acute kidney injury",
       "system": "Reduced Renal Excretion",
       "redFlag": true,
-      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
+      "hpi": {
+        "onset": [
+          "acute",
+          "chronic",
+          "sudden"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "nsaids",
+          "movement"
+        ],
+        "quality": [
+          "burning",
+          "crushing",
+          "sharp"
+        ],
+        "timing": [
+          "post-traumatic"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
+      },
       "freq": "common"
     },
     {
       "name": "Potassium-sparing diuretics",
       "system": "Medication Related",
       "redFlag": false,
-      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
+      "hpi": {
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "nsaids",
+          "alcohol"
+        ],
+        "quality": [
+          "burning",
+          "crushing"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe",
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "nausea"
+        ]
+      },
       "freq": "common"
     },
     {
       "name": "ACE inhibitor or ARB therapy",
       "system": "Medication Related",
       "redFlag": false,
-      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
+      "hpi": {
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "nsaids",
+          "alcohol"
+        ],
+        "quality": [
+          "burning",
+          "crushing"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "digital-rectal-exam"
+        ],
+        "other symptoms": [
+          "nausea"
+        ]
+      },
       "freq": "common"
     },
     {
       "name": "Metabolic acidosis with potassium shift",
       "system": "Transcellular Shift",
       "redFlag": false,
-      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
+      "hpi": {
+        "onset": [
+          "acute",
+          "chronic",
+          "gradual"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "nsaids"
+        ],
+        "quality": [
+          "burning",
+          "crushing"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe",
+          "moderate"
+        ],
+        "clinical tests": [
+          "digital-rectal-exam"
+        ],
+        "other symptoms": [
+          "none"
+        ]
+      },
       "freq": "uncommon"
     },
     {
       "name": "Tissue breakdown (rhabdomyolysis or tumor lysis)",
       "system": "Cellular Release",
       "redFlag": true,
-      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
+      "hpi": {
+        "onset": [
+          "acute",
+          "chronic",
+          "insidious"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "nsaids"
+        ],
+        "quality": [
+          "burning",
+          "crushing"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate",
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "weight-loss"
+        ]
+      },
       "freq": "uncommon"
     },
     {
       "name": "Hypoaldosteronism or Addison disease",
       "system": "Endocrine",
       "redFlag": false,
-      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
+      "hpi": {
+        "onset": [
+          "acute",
+          "chronic",
+          "gradual"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "nsaids"
+        ],
+        "quality": [
+          "burning",
+          "crushing"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "digital-rectal-exam"
+        ],
+        "other symptoms": [
+          "none"
+        ]
+      },
       "freq": "uncommon"
     },
     {
       "name": "Pseudohyperkalemia from sample hemolysis",
       "system": "Laboratory Artifact",
       "redFlag": false,
-      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
+      "hpi": {
+        "onset": [
+          "acute",
+          "chronic",
+          "gradual"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "nsaids"
+        ],
+        "quality": [
+          "burning",
+          "crushing"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
+      },
       "freq": "common"
     }
   ],

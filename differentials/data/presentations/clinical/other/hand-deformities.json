@@ -6,17 +6,40 @@
       "system": "Failure Of Formation",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic"
+        ],
+        "progression": [
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "pressure"
+        ],
+        "quality": [
+          "burning",
+          "pressure"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "fingers"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "rare"
     },
@@ -25,17 +48,44 @@
       "system": "Failure Of Formation",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic",
+          "gradual"
+        ],
+        "progression": [
+          "improving",
+          "stable"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "pressure"
+        ],
+        "quality": [
+          "burning",
+          "pressure",
+          "firm"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "neck",
+          "forearm"
+        ],
+        "radiation": [
+          "hand"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "motor-strength-testing"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "rare"
     },
@@ -44,17 +94,42 @@
       "system": "Failure Of Formation",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic"
+        ],
+        "progression": [
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "pressure"
+        ],
+        "quality": [
+          "burning",
+          "pressure"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "wrist",
+          "hand"
+        ],
+        "radiation": [
+          "hand"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "sensory-testing",
+          "motor-strength-testing"
+        ],
+        "other symptoms": [
+          "limb-weakness"
+        ]
       },
       "freq": "rare"
     },
@@ -63,17 +138,40 @@
       "system": "Failure Of Formation",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic"
+        ],
+        "progression": [
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "pressure"
+        ],
+        "quality": [
+          "burning",
+          "pressure"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "hand"
+        ],
+        "radiation": [
+          "hand"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "rare"
     },
@@ -82,17 +180,40 @@
       "system": "Duplication",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic"
+        ],
+        "progression": [
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "pressure"
+        ],
+        "quality": [
+          "burning",
+          "pressure"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "rare"
     },
@@ -101,36 +222,85 @@
       "system": "Primary Muscle Contractures",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic"
+        ],
+        "progression": [
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "pressure"
+        ],
+        "quality": [
+          "burning",
+          "pressure"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "rare"
     },
     {
-      "name": "Dupuytren\u2019s contracture",
+      "name": "Dupuytren’s contracture",
       "system": "Acquired",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic"
+        ],
+        "progression": [
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "pressure"
+        ],
+        "quality": [
+          "burning",
+          "pressure",
+          "firm"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "arm",
+          "forearm"
+        ],
+        "radiation": [
+          "arm",
+          "hand"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "common"
     },
@@ -139,17 +309,42 @@
       "system": "Acquired",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic",
+          "subacute"
+        ],
+        "progression": [
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "pressure"
+        ],
+        "quality": [
+          "burning",
+          "pressure",
+          "heaviness"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "hand"
+        ],
+        "radiation": [
+          "hand"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "common"
     },
@@ -158,17 +353,42 @@
       "system": "Acquired",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic",
+          "subacute"
+        ],
+        "progression": [
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "pressure"
+        ],
+        "quality": [
+          "burning",
+          "pressure",
+          "aching"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "common"
     },
@@ -177,17 +397,44 @@
       "system": "Acquired",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic",
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "pressure",
+          "movement"
+        ],
+        "quality": [
+          "burning",
+          "pressure",
+          "sharp"
+        ],
+        "timing": [
+          "post-traumatic"
+        ],
+        "region": [
+          "hand"
+        ],
+        "radiation": [
+          "hand"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "limb-weakness"
+        ]
       },
       "freq": "uncommon"
     },
@@ -196,36 +443,88 @@
       "system": "Acquired",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic"
+        ],
+        "progression": [
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "pressure"
+        ],
+        "quality": [
+          "burning",
+          "pressure"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "hand"
+        ],
+        "radiation": [
+          "hand"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "limb-weakness"
+        ]
       },
       "freq": "uncommon"
     },
     {
-      "name": "Volkmann\u2019s ischemic contracture",
+      "name": "Volkmann’s ischemic contracture",
       "system": "Acquired",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic",
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "improving",
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "pressure"
+        ],
+        "quality": [
+          "burning",
+          "pressure",
+          "firm"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "arm",
+          "forearm"
+        ],
+        "radiation": [
+          "arm",
+          "hand"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "uncommon"
     },
@@ -234,17 +533,42 @@
       "system": "Acquired",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic"
+        ],
+        "progression": [
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "pressure"
+        ],
+        "quality": [
+          "burning",
+          "pressure"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "neck",
+          "arm"
+        ],
+        "radiation": [
+          "arm",
+          "hand"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "motor-strength-testing"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "uncommon"
     },
@@ -253,17 +577,44 @@
       "system": "Acquired",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic"
+        ],
+        "progression": [
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "pressure"
+        ],
+        "quality": [
+          "burning",
+          "pressure",
+          "aching"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "neck",
+          "arm"
+        ],
+        "radiation": [
+          "arm",
+          "hand"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "motor-strength-testing"
+        ],
+        "other symptoms": [
+          "numbness",
+          "paresthesia"
+        ]
       },
       "freq": "uncommon"
     },
@@ -272,17 +623,41 @@
       "system": "Acquired",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic"
+        ],
+        "progression": [
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "pressure"
+        ],
+        "quality": [
+          "burning",
+          "pressure"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "neck",
+          "elbow"
+        ],
+        "radiation": [
+          "hand"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "motor-strength-testing"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "rare"
     },
@@ -291,17 +666,40 @@
       "system": "Acquired",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic"
+        ],
+        "progression": [
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "pressure"
+        ],
+        "quality": [
+          "burning",
+          "pressure"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "rare"
     },
@@ -310,36 +708,84 @@
       "system": "Acquired",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic"
+        ],
+        "progression": [
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "pressure"
+        ],
+        "quality": [
+          "burning",
+          "pressure"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "hand"
+        ],
+        "radiation": [
+          "hand"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "motor-strength-testing"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "rare"
     },
     {
-      "name": "Multiple chondromas (Ollier\u2019s disease)",
+      "name": "Multiple chondromas (Ollier’s disease)",
       "system": "Acquired",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic"
+        ],
+        "progression": [
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "pressure"
+        ],
+        "quality": [
+          "burning",
+          "pressure",
+          "tightness"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "forearm",
+          "hand"
+        ],
+        "radiation": [
+          "hand"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "limb-weakness"
+        ]
       },
       "freq": "rare"
     }

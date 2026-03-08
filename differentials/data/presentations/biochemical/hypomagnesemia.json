@@ -1,8 +1,386 @@
 {
   "presentation": "Hypomagnesemia",
-  "items": [],
+  "items": [
+    {
+      "name": "Diuretics",
+      "system": "Excessive Losses",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "n/a"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "diarrhea"
+        ]
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Severe Diarrhea",
+      "system": "Excessive Losses",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "n/a"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "vomiting",
+          "diarrhea"
+        ]
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Prolonged vomiting",
+      "system": "Excessive Losses",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "n/a"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "vomiting",
+          "diarrhea"
+        ]
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Polyuria (poorly controlled diabetes)",
+      "system": "Excessive Losses",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "gradual",
+          "chronic"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "vomiting",
+          "polyuria"
+        ]
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Prolonged and excessive nasogastric aspiration",
+      "system": "Excessive Losses",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "n/a"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "vomiting",
+          "diarrhea"
+        ]
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Starvation",
+      "system": "Inadequate Intake",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "n/a"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Alcoholism",
+      "system": "Inadequate Intake",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "n/a"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "alcohol"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "nausea"
+        ]
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Malabsorption syndrome",
+      "system": "Inadequate Intake",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "n/a"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Parenteral nutrition",
+      "system": "Inadequate Intake",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "n/a"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
+      },
+      "freq": "unknown"
+    }
+  ],
   "sources": {
-    "index_keys": [],
+    "index_keys": [
+      "Hypomagnesemia"
+    ],
     "index_type": "non-clinical"
   }
 }

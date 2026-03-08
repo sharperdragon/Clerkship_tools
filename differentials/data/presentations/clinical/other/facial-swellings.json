@@ -5,56 +5,367 @@
       "name": "Cellulitis",
       "system": "Infectious",
       "redFlag": false,
-      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
+      "hpi": {
+        "onset": [
+          "sudden",
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "burning",
+          "throbbing"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "fever",
+          "malaise"
+        ]
+      },
       "freq": "common"
     },
     {
       "name": "Dental abscess",
       "system": "Odontogenic",
       "redFlag": false,
-      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
+      "hpi": {
+        "onset": [
+          "sudden",
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "burning",
+          "throbbing",
+          "tender"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "face"
+        ],
+        "radiation": [
+          "jaw"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "fever",
+          "malaise"
+        ]
+      },
       "freq": "common"
     },
     {
       "name": "Parotitis",
       "system": "Salivary Gland",
       "redFlag": false,
-      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
+      "hpi": {
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "burning",
+          "throbbing",
+          "tender"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "face"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
+      },
       "freq": "common"
     },
     {
       "name": "Angioedema",
       "system": "Allergic Or Immunologic",
       "redFlag": true,
-      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
+      "hpi": {
+        "onset": [
+          "sudden",
+          "acute",
+          "relapsing"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "burning",
+          "throbbing"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "face"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
+      },
       "freq": "uncommon"
     },
     {
       "name": "Facial trauma with hematoma",
       "system": "Trauma",
       "redFlag": false,
-      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
+      "hpi": {
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "oral-intake",
+          "eating",
+          "movement"
+        ],
+        "quality": [
+          "burning",
+          "throbbing",
+          "tender"
+        ],
+        "timing": [
+          "constant",
+          "post-traumatic"
+        ],
+        "region": [
+          "face"
+        ],
+        "radiation": [
+          "jaw"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
+      },
       "freq": "common"
     },
     {
       "name": "Mumps",
       "system": "Viral Infection",
       "redFlag": false,
-      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
+      "hpi": {
+        "onset": [
+          "sudden",
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "burning",
+          "throbbing"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "face"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "fever",
+          "malaise"
+        ]
+      },
       "freq": "uncommon"
     },
     {
       "name": "Parotid gland neoplasm",
       "system": "Neoplastic",
       "redFlag": false,
-      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
+      "hpi": {
+        "onset": [
+          "sudden",
+          "acute",
+          "insidious"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "burning",
+          "throbbing",
+          "tender"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "face"
+        ],
+        "radiation": [
+          "jaw"
+        ],
+        "severity": [
+          "moderate",
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "weight-loss"
+        ]
+      },
       "freq": "uncommon"
     },
     {
       "name": "Superior vena cava obstruction",
       "system": "Vascular",
       "redFlag": true,
-      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
+      "hpi": {
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "burning",
+          "throbbing"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "face"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
+      },
       "freq": "rare"
     }
   ],

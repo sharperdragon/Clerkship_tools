@@ -1,8 +1,1232 @@
 {
   "presentation": "Anemia",
-  "items": [],
+  "items": [
+    {
+      "name": "Iron deﬁciency",
+      "system": "General",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "alcohol",
+          "menses"
+        ],
+        "quality": [
+          "burning"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "nails"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Anemia of chronic disease",
+      "system": "General",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "acute",
+          "subacute",
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "alcohol",
+          "menses"
+        ],
+        "quality": [
+          "burning"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "jaundice"
+        ]
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Thalassemia (more common in certain groups)",
+      "system": "General",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "acute",
+          "subacute",
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "alcohol",
+          "menses"
+        ],
+        "quality": [
+          "burning"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Acute blood loss",
+      "system": "General",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "acute",
+          "subacute",
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "alcohol",
+          "menses",
+          "Touch"
+        ],
+        "quality": [
+          "burning"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "jaundice"
+        ]
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Hemolytic anemia",
+      "system": "General",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "alcohol",
+          "menses"
+        ],
+        "quality": [
+          "burning"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Hereditary spherocytosis",
+      "system": "General",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "alcohol",
+          "menses"
+        ],
+        "quality": [
+          "burning"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Sickle cell disease (most common in sub-Saharan Africa)",
+      "system": "General",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "alcohol",
+          "menses"
+        ],
+        "quality": [
+          "burning"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "jaundice"
+        ]
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "G6PD deficiency (varies with ethnicity)",
+      "system": "General",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "alcohol",
+          "menses"
+        ],
+        "quality": [
+          "burning"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "nails"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Autoimmune hemolytic anemia",
+      "system": "General",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "alcohol",
+          "menses"
+        ],
+        "quality": [
+          "burning"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Malaria (geographic variability)",
+      "system": "General",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "alcohol",
+          "menses"
+        ],
+        "quality": [
+          "burning"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Drugs (, quinine, sulphonamides)",
+      "system": "General",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "alcohol",
+          "menses"
+        ],
+        "quality": [
+          "burning"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "nausea"
+        ]
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Red cell trauma (burns, mechanical heart valves)",
+      "system": "General",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "acute",
+          "subacute",
+          "sudden"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "alcohol",
+          "menses",
+          "movement"
+        ],
+        "quality": [
+          "burning",
+          "sharp"
+        ],
+        "timing": [
+          "post-traumatic"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Mixed deﬁciencies",
+      "system": "General",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "alcohol",
+          "menses"
+        ],
+        "quality": [
+          "burning"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Secondary anemia (liver and renal disease)",
+      "system": "General",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "acute",
+          "subacute",
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "alcohol",
+          "menses"
+        ],
+        "quality": [
+          "burning"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "jaundice"
+        ]
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Bone marrow failure",
+      "system": "General",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "alcohol",
+          "menses"
+        ],
+        "quality": [
+          "burning"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Pregnancy",
+      "system": "General",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "alcohol",
+          "menses"
+        ],
+        "quality": [
+          "burning"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Megaloblastic anemia",
+      "system": "General",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "alcohol",
+          "menses"
+        ],
+        "quality": [
+          "burning"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Pernicious anemia",
+      "system": "General",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "alcohol",
+          "menses"
+        ],
+        "quality": [
+          "burning"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Vitamin B12 deficiency",
+      "system": "General",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "alcohol",
+          "menses"
+        ],
+        "quality": [
+          "burning"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "nails"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Folate deficiency",
+      "system": "General",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "alcohol",
+          "menses"
+        ],
+        "quality": [
+          "burning"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "nails"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Alcoholism",
+      "system": "General",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "alcohol",
+          "menses"
+        ],
+        "quality": [
+          "burning"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "nausea"
+        ]
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Liver disease",
+      "system": "General",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "acute",
+          "subacute",
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "alcohol",
+          "menses"
+        ],
+        "quality": [
+          "burning"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "jaundice"
+        ]
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Hypothyroidism",
+      "system": "General",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "acute",
+          "subacute",
+          "gradual"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "alcohol",
+          "menses"
+        ],
+        "quality": [
+          "burning"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Hyperthyroidism (Graves’ disease)",
+      "system": "General",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "acute",
+          "subacute",
+          "chronic"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "alcohol",
+          "menses"
+        ],
+        "quality": [
+          "burning"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "jaundice"
+        ]
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Addison’s disease",
+      "system": "General",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "acute",
+          "subacute",
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "alcohol",
+          "menses"
+        ],
+        "quality": [
+          "burning"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "jaundice"
+        ]
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Marrow inﬁltration",
+      "system": "General",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "alcohol",
+          "menses"
+        ],
+        "quality": [
+          "burning"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Examination of the peripheral blood ﬁlm is an important",
+      "system": "Symptoms And Signs",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "acute",
+          "subacute",
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "alcohol",
+          "menses",
+          "Touch"
+        ],
+        "quality": [
+          "burning"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "tachycardia"
+        ]
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Remember that shortness of breath may be an early",
+      "system": "Symptoms And Signs",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "alcohol",
+          "menses"
+        ],
+        "quality": [
+          "burning"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "dyspnea",
+          "shortness-of-breath"
+        ]
+      },
+      "freq": "unknown"
+    }
+  ],
   "sources": {
-    "index_keys": [],
+    "index_keys": [
+      "Anemia"
+    ],
     "index_type": "non-clinical"
   }
 }

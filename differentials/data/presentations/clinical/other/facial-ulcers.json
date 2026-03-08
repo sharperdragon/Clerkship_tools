@@ -6,17 +6,43 @@
       "system": "Traumatic",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "days",
+          "months",
+          "sudden"
+        ],
+        "progression": [
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "movement"
+        ],
+        "quality": [
+          "burning",
+          "tender",
+          "sharp"
+        ],
+        "timing": [
+          "post-traumatic"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "common"
     },
@@ -25,17 +51,43 @@
       "system": "Traumatic",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "days",
+          "months",
+          "sudden"
+        ],
+        "progression": [
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "movement"
+        ],
+        "quality": [
+          "burning",
+          "tender",
+          "sharp"
+        ],
+        "timing": [
+          "post-traumatic"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "common"
     },
@@ -44,17 +96,43 @@
       "system": "Traumatic",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "days",
+          "months",
+          "sudden"
+        ],
+        "progression": [
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "movement"
+        ],
+        "quality": [
+          "burning",
+          "tender",
+          "sharp"
+        ],
+        "timing": [
+          "post-traumatic"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "uncommon"
     },
@@ -63,17 +141,43 @@
       "system": "Traumatic",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "days",
+          "months",
+          "sudden"
+        ],
+        "progression": [
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "movement"
+        ],
+        "quality": [
+          "burning",
+          "tender",
+          "sharp"
+        ],
+        "timing": [
+          "post-traumatic"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "uncommon"
     },
@@ -82,95 +186,218 @@
       "system": "Traumatic",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "days",
+          "months",
+          "sudden"
+        ],
+        "progression": [
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "movement"
+        ],
+        "quality": [
+          "burning",
+          "tender",
+          "sharp"
+        ],
+        "timing": [
+          "post-traumatic"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "uncommon"
     },
     {
       "name": "Africa)",
-      "system": "Basal cell carcinoma (rodent ulcer) \u2022 (rare in tropical",
+      "system": "Basal cell carcinoma (rodent ulcer) • (rare in tropical",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "days",
+          "months",
+          "insidious"
+        ],
+        "progression": [
+          "improving",
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "burning",
+          "tender"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate",
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "weight-loss"
+        ]
       },
       "freq": "uncommon"
     },
-
     {
       "name": "uncommon",
       "system": "Freq",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "days",
+          "months"
+        ],
+        "progression": [
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "burning",
+          "tender"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "face"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "unknown"
     },
-
     {
       "name": "OTHER",
-      "system": "Leishmaniasis \u2022 (common in tropical and subtropical areas)",
+      "system": "Leishmaniasis • (common in tropical and subtropical areas)",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "days",
+          "months"
+        ],
+        "progression": [
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "burning",
+          "tender"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "rare"
     },
     {
       "name": "Pyoderma gangrenosum",
-      "system": "Leishmaniasis \u2022 (common in tropical and subtropical areas)",
+      "system": "Leishmaniasis • (common in tropical and subtropical areas)",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "days",
+          "months"
+        ],
+        "progression": [
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "burning",
+          "tender"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "face"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "rare"
     }

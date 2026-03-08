@@ -6,17 +6,44 @@
       "system": "Congenital",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "rapid"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "walking"
+        ],
+        "quality": [
+          "burning",
+          "aching"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "foot",
+          "face"
+        ],
+        "radiation": [
+          "legs"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation",
+          "digital-rectal-exam"
+        ],
+        "other symptoms": [
+          "foot-pain",
+          "limb-weakness"
+        ]
       },
       "freq": "uncommon"
     },
@@ -25,36 +52,87 @@
       "system": "Congenital",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "rapid"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "walking"
+        ],
+        "quality": [
+          "burning",
+          "aching"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "foot",
+          "face"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation",
+          "digital-rectal-exam"
+        ],
+        "other symptoms": [
+          "foot-pain"
+        ]
       },
       "freq": "uncommon"
     },
     {
-      "name": "Pes planus (\ufb02atfoot)",
+      "name": "Pes planus (ﬂatfoot)",
       "system": "Congenital",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "rapid"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "walking"
+        ],
+        "quality": [
+          "burning",
+          "aching"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "foot"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation",
+          "digital-rectal-exam"
+        ],
+        "other symptoms": [
+          "foot-pain"
+        ]
       },
       "freq": "uncommon"
     },
@@ -63,17 +141,45 @@
       "system": "Congenital",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "rapid"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "walking"
+        ],
+        "quality": [
+          "burning",
+          "aching",
+          "tightness"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "foot",
+          "face"
+        ],
+        "radiation": [
+          "legs"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation",
+          "digital-rectal-exam"
+        ],
+        "other symptoms": [
+          "foot-pain",
+          "limb-weakness"
+        ]
       },
       "freq": "rare"
     },
@@ -82,17 +188,41 @@
       "system": "Congenital",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "rapid"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "walking"
+        ],
+        "quality": [
+          "burning",
+          "aching"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "foot"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "foot-pain"
+        ]
       },
       "freq": "rare"
     },
@@ -101,17 +231,41 @@
       "system": "Congenital",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "rapid"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "walking"
+        ],
+        "quality": [
+          "burning",
+          "aching"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "foot"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "foot-pain"
+        ]
       },
       "freq": "rare"
     },
@@ -120,17 +274,43 @@
       "system": "Congenital",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "rapid"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "walking"
+        ],
+        "quality": [
+          "burning",
+          "aching"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "foot",
+          "face"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation",
+          "motor-strength-testing"
+        ],
+        "other symptoms": [
+          "foot-pain"
+        ]
       },
       "freq": "rare"
     },
@@ -139,17 +319,43 @@
       "system": "Congenital",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "rapid"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "walking"
+        ],
+        "quality": [
+          "burning",
+          "aching"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "foot",
+          "low-back"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation",
+          "digital-rectal-exam"
+        ],
+        "other symptoms": [
+          "foot-pain"
+        ]
       },
       "freq": "rare"
     },
@@ -158,17 +364,42 @@
       "system": "Congenital",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "rapid"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "walking"
+        ],
+        "quality": [
+          "burning",
+          "aching"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "foot"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation",
+          "digital-rectal-exam"
+        ],
+        "other symptoms": [
+          "foot-pain"
+        ]
       },
       "freq": "rare"
     },
@@ -177,55 +408,134 @@
       "system": "Congenital",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "rapid"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "walking"
+        ],
+        "quality": [
+          "burning",
+          "aching"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "foot",
+          "low-back"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation",
+          "digital-rectal-exam"
+        ],
+        "other symptoms": [
+          "foot-pain"
+        ]
       },
       "freq": "rare"
     },
     {
-      "name": "Charcot\u2013Marie\u2013Tooth disease (hereditary motor and sensory",
+      "name": "Charcot–Marie–Tooth disease (hereditary motor and sensory",
       "system": "Congenital",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "rapid"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "walking"
+        ],
+        "quality": [
+          "burning",
+          "aching"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "foot",
+          "face"
+        ],
+        "radiation": [
+          "legs"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation",
+          "sensory-testing"
+        ],
+        "other symptoms": [
+          "foot-pain",
+          "limb-weakness"
+        ]
       },
       "freq": "rare"
     },
     {
-      "name": "Friedreich\u2019s ataxia",
+      "name": "Friedreich’s ataxia",
       "system": "Congenital",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "rapid"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "walking"
+        ],
+        "quality": [
+          "burning",
+          "aching"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "foot",
+          "face"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation",
+          "digital-rectal-exam"
+        ],
+        "other symptoms": [
+          "foot-pain"
+        ]
       },
       "freq": "rare"
     },
@@ -234,17 +544,44 @@
       "system": "Congenital",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "rapid"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "walking"
+        ],
+        "quality": [
+          "burning",
+          "aching"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "foot",
+          "face"
+        ],
+        "radiation": [
+          "legs"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation",
+          "digital-rectal-exam"
+        ],
+        "other symptoms": [
+          "foot-pain",
+          "limb-weakness"
+        ]
       },
       "freq": "rare"
     },
@@ -253,17 +590,44 @@
       "system": "Upper Motor Neurone Lesion",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "rapid",
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "walking"
+        ],
+        "quality": [
+          "burning",
+          "aching"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "foot"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation",
+          "digital-rectal-exam"
+        ],
+        "other symptoms": [
+          "foot-pain"
+        ]
       },
       "freq": "uncommon"
     },
@@ -272,17 +636,45 @@
       "system": "Upper Motor Neurone Lesion",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "rapid",
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "walking",
+          "movement"
+        ],
+        "quality": [
+          "burning",
+          "aching",
+          "sharp"
+        ],
+        "timing": [
+          "post-traumatic"
+        ],
+        "region": [
+          "foot"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "foot-pain"
+        ]
       },
       "freq": "uncommon"
     },
@@ -291,36 +683,88 @@
       "system": "Upper Motor Neurone Lesion",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "rapid"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "walking"
+        ],
+        "quality": [
+          "burning",
+          "aching"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "foot",
+          "face"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation",
+          "digital-rectal-exam"
+        ],
+        "other symptoms": [
+          "foot-pain"
+        ]
       },
       "freq": "rare"
     },
     {
-      "name": "Spina bi\ufb01da",
+      "name": "Spina biﬁda",
       "system": "Lower Motor Neurone Lesion",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "rapid"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "walking"
+        ],
+        "quality": [
+          "burning",
+          "aching"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "foot",
+          "low-back"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation",
+          "digital-rectal-exam"
+        ],
+        "other symptoms": [
+          "foot-pain"
+        ]
       },
       "freq": "rare"
     },
@@ -329,17 +773,43 @@
       "system": "Lower Motor Neurone Lesion",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "rapid"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "walking"
+        ],
+        "quality": [
+          "burning",
+          "aching"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "foot",
+          "low-back"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation",
+          "digital-rectal-exam"
+        ],
+        "other symptoms": [
+          "foot-pain"
+        ]
       },
       "freq": "rare"
     },
@@ -348,17 +818,45 @@
       "system": "Lower Motor Neurone Lesion",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "rapid",
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "walking"
+        ],
+        "quality": [
+          "burning",
+          "aching"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "foot"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "foot-pain",
+          "fever",
+          "malaise"
+        ]
       },
       "freq": "rare"
     },
@@ -367,17 +865,42 @@
       "system": "Lower Motor Neurone Lesion",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "rapid"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "walking"
+        ],
+        "quality": [
+          "burning",
+          "aching",
+          "limp"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "foot"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "foot-pain"
+        ]
       },
       "freq": "rare"
     },
@@ -386,36 +909,88 @@
       "system": "Lower Motor Neurone Lesion",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "rapid"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "walking"
+        ],
+        "quality": [
+          "burning",
+          "aching"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "foot",
+          "face"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation",
+          "digital-rectal-exam"
+        ],
+        "other symptoms": [
+          "foot-pain"
+        ]
       },
       "freq": "rare"
     },
     {
-      "name": "Friedreich\u2019s ataxia",
+      "name": "Friedreich’s ataxia",
       "system": "Lower Motor Neurone Lesion",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "rapid"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "walking"
+        ],
+        "quality": [
+          "burning",
+          "aching"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "foot",
+          "face"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation",
+          "digital-rectal-exam"
+        ],
+        "other symptoms": [
+          "foot-pain"
+        ]
       },
       "freq": "rare"
     },
@@ -424,17 +999,45 @@
       "system": "Trauma",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "rapid",
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "walking",
+          "movement"
+        ],
+        "quality": [
+          "burning",
+          "aching",
+          "sharp"
+        ],
+        "timing": [
+          "post-traumatic"
+        ],
+        "region": [
+          "foot"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "foot-pain"
+        ]
       },
       "freq": "uncommon"
     },
@@ -443,17 +1046,45 @@
       "system": "Trauma",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "rapid",
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "walking",
+          "movement"
+        ],
+        "quality": [
+          "burning",
+          "aching",
+          "sharp"
+        ],
+        "timing": [
+          "post-traumatic"
+        ],
+        "region": [
+          "foot"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "foot-pain"
+        ]
       },
       "freq": "uncommon"
     }

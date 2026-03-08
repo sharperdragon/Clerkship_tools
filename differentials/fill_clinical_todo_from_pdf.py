@@ -77,6 +77,15 @@ US_UK_REPLACEMENTS: Sequence[Tuple[str, str]] = (
     ("hemo", "haemo"),
     ("gynecomastia", "gynaecomastia"),
     ("esophagus", "oesophagus"),
+    ("calcemia", "calcaemia"),
+    ("glycemia", "glycaemia"),
+    ("natremia", "natraemia"),
+    ("kalemia", "kalaemia"),
+    ("magnesemia", "magnesaemia"),
+    ("anemia", "anaemia"),
+    ("leuk", "leuc"),
+    ("cythemia", "cythaemia"),
+    ("uremia", "uraemia"),
 )
 
 VALUE_LIMITS: Dict[str, int] = {

@@ -2,78 +2,175 @@
   "presentation": "Clotting disorders",
   "items": [
     {
-      "name": "Factor V Leiden de\ufb01ciency",
+      "name": "Factor V Leiden deﬁciency",
       "system": "Congenital",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "relapsing",
+          "hours"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "burning",
+          "aching"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "face"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "jaundice"
+        ]
       },
       "freq": "unknown"
     },
     {
-      "name": "Protein C de\ufb01ciency",
+      "name": "Protein C deﬁciency",
       "system": "Congenital",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "relapsing",
+          "hours"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "burning",
+          "aching"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "face"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "jaundice"
+        ]
       },
       "freq": "unknown"
     },
     {
-      "name": "Protein S de\ufb01ciency",
+      "name": "Protein S deﬁciency",
       "system": "Congenital",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "relapsing",
+          "hours"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "burning",
+          "aching"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "face"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "jaundice"
+        ]
       },
       "freq": "unknown"
     },
     {
-      "name": "Antithrombin III de\ufb01ciency",
+      "name": "Antithrombin III deﬁciency",
       "system": "Congenital",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "relapsing",
+          "hours",
+          "sudden"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "burning",
+          "aching"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "face"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "jaundice"
+        ]
       },
       "freq": "unknown"
     },
@@ -82,36 +179,84 @@
       "system": "Congenital",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "relapsing",
+          "hours"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "burning",
+          "aching"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "unknown"
     },
     {
-      "name": "von Willebrand\u2019s disease",
+      "name": "von Willebrand’s disease",
       "system": "Congenital",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "relapsing",
+          "hours"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "burning",
+          "aching"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "face"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "jaundice"
+        ]
       },
       "freq": "unknown"
     },
@@ -120,17 +265,44 @@
       "system": "Acquired",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "relapsing",
+          "hours",
+          "insidious"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "burning",
+          "aching"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe",
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "jaundice",
+          "weight-loss"
+        ]
       },
       "freq": "unknown"
     },
@@ -139,17 +311,41 @@
       "system": "Acquired",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "relapsing",
+          "hours"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "burning",
+          "aching"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "unknown"
     },
@@ -158,17 +354,45 @@
       "system": "Acquired",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "relapsing",
+          "hours",
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "burning",
+          "aching"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe",
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "jaundice",
+          "fever",
+          "malaise"
+        ]
       },
       "freq": "unknown"
     },
@@ -177,17 +401,41 @@
       "system": "Acquired",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "relapsing",
+          "hours"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "burning",
+          "aching"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "face"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "unknown"
     },
@@ -196,17 +444,41 @@
       "system": "Acquired",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "relapsing",
+          "hours"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "burning",
+          "aching"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "face"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "unknown"
     },
@@ -215,36 +487,84 @@
       "system": "Acquired",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "relapsing",
+          "hours"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "alcohol"
+        ],
+        "quality": [
+          "burning",
+          "aching"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "face"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "nausea"
+        ]
       },
       "freq": "unknown"
     },
     {
-      "name": "Vitamin K de\ufb01ciency",
+      "name": "Vitamin K deﬁciency",
       "system": "Acquired",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "relapsing",
+          "hours"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "burning",
+          "aching"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "face"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "jaundice"
+        ]
       },
       "freq": "unknown"
     },
@@ -253,17 +573,41 @@
       "system": "Acquired",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "relapsing",
+          "hours"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "burning",
+          "aching"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "jaundice"
+        ]
       },
       "freq": "unknown"
     },
@@ -272,17 +616,41 @@
       "system": "Acquired",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "relapsing",
+          "hours"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "burning",
+          "aching"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "jaundice"
+        ]
       },
       "freq": "unknown"
     },
@@ -291,17 +659,41 @@
       "system": "Acquired",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "relapsing",
+          "hours"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "burning",
+          "aching"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "face"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "jaundice"
+        ]
       },
       "freq": "unknown"
     },
@@ -310,36 +702,85 @@
       "system": "Acquired",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "relapsing",
+          "hours"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "burning",
+          "aching"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "face"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "unknown"
     },
     {
-      "name": "Drugs \u2013 heparin, warfarin, thrombolytic therapy",
+      "name": "Drugs – heparin, warfarin, thrombolytic therapy",
       "system": "Acquired",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "relapsing",
+          "hours",
+          "sudden"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "alcohol"
+        ],
+        "quality": [
+          "burning",
+          "aching"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "face"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "nausea"
+        ]
       },
       "freq": "unknown"
     },
@@ -348,17 +789,42 @@
       "system": "Acquired",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "relapsing",
+          "hours",
+          "sudden"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "burning",
+          "aching"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "face"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "unknown"
     },
@@ -367,17 +833,41 @@
       "system": "Acquired",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "relapsing",
+          "hours"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "burning",
+          "aching"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "unknown"
     },
@@ -386,17 +876,41 @@
       "system": "Symptoms And Signs",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "relapsing",
+          "hours"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "burning",
+          "aching"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "face"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "jaundice"
+        ]
       },
       "freq": "unknown"
     }

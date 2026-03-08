@@ -6,17 +6,44 @@
       "system": "Traumatic",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "movement",
+          "pressure"
+        ],
+        "quality": [
+          "sharp",
+          "pressure",
+          "crushing"
+        ],
+        "timing": [
+          "nocturnal",
+          "post-traumatic"
+        ],
+        "region": [
+          "nails"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "common"
     },
@@ -25,17 +52,43 @@
       "system": "Traumatic",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "movement",
+          "pressure"
+        ],
+        "quality": [
+          "sharp",
+          "pressure"
+        ],
+        "timing": [
+          "nocturnal",
+          "post-traumatic"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "uncommon"
     },
@@ -44,17 +97,46 @@
       "system": "Inflammatory/Infective",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "movement",
+          "pressure"
+        ],
+        "quality": [
+          "sharp",
+          "pressure",
+          "tender"
+        ],
+        "timing": [
+          "nocturnal",
+          "intermittent"
+        ],
+        "region": [
+          "nails"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "fever",
+          "malaise"
+        ]
       },
       "freq": "common"
     },
@@ -63,36 +145,96 @@
       "system": "Inflammatory/Infective",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "movement",
+          "pressure"
+        ],
+        "quality": [
+          "sharp",
+          "pressure",
+          "aching"
+        ],
+        "timing": [
+          "nocturnal",
+          "intermittent"
+        ],
+        "region": [
+          "neck",
+          "fingers"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation"
+        ],
+        "other symptoms": [
+          "fever",
+          "malaise"
+        ]
       },
       "freq": "uncommon"
     },
     {
-      "name": "Tendon sheath infection \u2013 especially if open",
+      "name": "Tendon sheath infection – especially if open",
       "system": "Inflammatory/Infective",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "movement",
+          "pressure"
+        ],
+        "quality": [
+          "sharp",
+          "pressure",
+          "tender"
+        ],
+        "timing": [
+          "nocturnal",
+          "intermittent"
+        ],
+        "region": [
+          "fingers",
+          "nails"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "fever",
+          "malaise"
+        ]
       },
       "freq": "uncommon"
     },
@@ -101,17 +243,46 @@
       "system": "Degenerative",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "movement",
+          "pressure"
+        ],
+        "quality": [
+          "sharp",
+          "pressure",
+          "aching"
+        ],
+        "timing": [
+          "nocturnal",
+          "intermittent"
+        ],
+        "region": [
+          "hand",
+          "fingers"
+        ],
+        "radiation": [
+          "hand"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "uncommon"
     },
@@ -120,17 +291,42 @@
       "system": "Vascular",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "movement",
+          "pressure"
+        ],
+        "quality": [
+          "sharp",
+          "pressure"
+        ],
+        "timing": [
+          "nocturnal"
+        ],
+        "region": [
+          "fingers"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "common"
     },
@@ -139,55 +335,133 @@
       "system": "Vascular",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "movement",
+          "pressure"
+        ],
+        "quality": [
+          "sharp",
+          "pressure"
+        ],
+        "timing": [
+          "nocturnal"
+        ],
+        "region": [
+          "neck",
+          "fingers"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "cyanosis"
+        ]
       },
       "freq": "uncommon"
     },
     {
-      "name": "Raynaud\u2019s phenomenon",
+      "name": "Raynaud’s phenomenon",
       "system": "Vascular",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "movement",
+          "pressure"
+        ],
+        "quality": [
+          "sharp",
+          "pressure"
+        ],
+        "timing": [
+          "nocturnal"
+        ],
+        "region": [
+          "neck",
+          "lower-chest"
+        ],
+        "radiation": [
+          "hand"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "uncommon"
     },
     {
-      "name": "Buerger\u2019s disease",
+      "name": "Buerger’s disease",
       "system": "Vascular",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "movement",
+          "pressure"
+        ],
+        "quality": [
+          "sharp",
+          "pressure"
+        ],
+        "timing": [
+          "nocturnal"
+        ],
+        "region": [
+          "neck",
+          "fingers"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "cyanosis"
+        ]
       },
       "freq": "uncommon"
     },
@@ -196,17 +470,43 @@
       "system": "Vascular",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "movement",
+          "pressure"
+        ],
+        "quality": [
+          "sharp",
+          "pressure"
+        ],
+        "timing": [
+          "nocturnal"
+        ],
+        "region": [
+          "neck",
+          "lower-chest"
+        ],
+        "radiation": [
+          "hand"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "uncommon"
     },
@@ -215,17 +515,44 @@
       "system": "Metabolic",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "movement",
+          "pressure"
+        ],
+        "quality": [
+          "sharp",
+          "pressure"
+        ],
+        "timing": [
+          "nocturnal"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "uncommon"
     },
@@ -234,17 +561,44 @@
       "system": "Autoimmune",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "movement",
+          "pressure"
+        ],
+        "quality": [
+          "sharp",
+          "pressure",
+          "tightness"
+        ],
+        "timing": [
+          "nocturnal"
+        ],
+        "region": [
+          "face"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "rare"
     },
@@ -253,17 +607,43 @@
       "system": "Neurological",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "movement",
+          "pressure"
+        ],
+        "quality": [
+          "sharp",
+          "pressure"
+        ],
+        "timing": [
+          "nocturnal"
+        ],
+        "region": [
+          "neck",
+          "lower-chest"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "common"
     },
@@ -272,17 +652,44 @@
       "system": "Neurological",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "movement",
+          "pressure"
+        ],
+        "quality": [
+          "sharp",
+          "pressure"
+        ],
+        "timing": [
+          "nocturnal"
+        ],
+        "region": [
+          "neck",
+          "lower-chest"
+        ],
+        "radiation": [
+          "arm"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation"
+        ],
+        "other symptoms": [
+          "itching",
+          "paresthesia"
+        ]
       },
       "freq": "common"
     }

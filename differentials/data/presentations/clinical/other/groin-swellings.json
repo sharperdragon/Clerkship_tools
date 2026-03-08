@@ -6,17 +6,45 @@
       "system": "Above The Inguinal Ligament",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "movement",
+          "coughing"
+        ],
+        "quality": [
+          "pressure",
+          "tender"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "face",
+          "groin"
+        ],
+        "radiation": [
+          "groin"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "fever",
+          "malaise"
+        ]
       },
       "freq": "common"
     },
@@ -25,17 +53,42 @@
       "system": "Above The Inguinal Ligament",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "movement",
+          "coughing"
+        ],
+        "quality": [
+          "pressure",
+          "tender"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "face"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "cough"
+        ]
       },
       "freq": "common"
     },
@@ -44,17 +97,45 @@
       "system": "Above The Inguinal Ligament",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "movement",
+          "coughing"
+        ],
+        "quality": [
+          "pressure",
+          "tender"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "epigastrium",
+          "face"
+        ],
+        "radiation": [
+          "groin",
+          "legs"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation"
+        ],
+        "other symptoms": [
+          "cough",
+          "tachycardia"
+        ]
       },
       "freq": "common"
     },
@@ -63,17 +144,45 @@
       "system": "Above The Inguinal Ligament",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "movement",
+          "coughing"
+        ],
+        "quality": [
+          "pressure",
+          "tender"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "epigastrium",
+          "face"
+        ],
+        "radiation": [
+          "groin",
+          "legs"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation"
+        ],
+        "other symptoms": [
+          "cough",
+          "tachycardia"
+        ]
       },
       "freq": "common"
     },
@@ -82,17 +191,43 @@
       "system": "Above The Inguinal Ligament",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "movement",
+          "coughing"
+        ],
+        "quality": [
+          "pressure",
+          "tender"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "face",
+          "groin"
+        ],
+        "radiation": [
+          "groin"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "uncommon"
     },
@@ -101,17 +236,44 @@
       "system": "Above The Inguinal Ligament",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "movement",
+          "coughing"
+        ],
+        "quality": [
+          "pressure",
+          "tender"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "epigastrium",
+          "face"
+        ],
+        "radiation": [
+          "groin",
+          "legs"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation"
+        ],
+        "other symptoms": [
+          "cough"
+        ]
       },
       "freq": "rare"
     },
@@ -120,17 +282,45 @@
       "system": "Below The Inguinal Ligament",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "movement",
+          "coughing"
+        ],
+        "quality": [
+          "pressure",
+          "tender"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "face",
+          "groin"
+        ],
+        "radiation": [
+          "groin"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "fever",
+          "malaise"
+        ]
       },
       "freq": "common"
     },
@@ -139,17 +329,42 @@
       "system": "Below The Inguinal Ligament",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "movement",
+          "coughing"
+        ],
+        "quality": [
+          "pressure",
+          "tender"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "face"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "cough"
+        ]
       },
       "freq": "common"
     },
@@ -158,17 +373,45 @@
       "system": "Below The Inguinal Ligament",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "movement",
+          "coughing"
+        ],
+        "quality": [
+          "pressure",
+          "tender"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "face",
+          "groin"
+        ],
+        "radiation": [
+          "groin",
+          "legs"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "percussion"
+        ],
+        "other symptoms": [
+          "cough",
+          "tachycardia"
+        ]
       },
       "freq": "common"
     },
@@ -177,17 +420,45 @@
       "system": "Below The Inguinal Ligament",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "movement",
+          "coughing"
+        ],
+        "quality": [
+          "pressure",
+          "tender",
+          "fluctuant"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "anal-canal",
+          "buttocks"
+        ],
+        "radiation": [
+          "groin",
+          "legs"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "common"
     },
@@ -196,17 +467,43 @@
       "system": "Below The Inguinal Ligament",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "movement",
+          "coughing"
+        ],
+        "quality": [
+          "pressure",
+          "tender"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "face",
+          "leg"
+        ],
+        "radiation": [
+          "legs"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "common"
     },
@@ -215,17 +512,44 @@
       "system": "Below The Inguinal Ligament",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "movement",
+          "coughing"
+        ],
+        "quality": [
+          "pressure",
+          "tender"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "face",
+          "groin"
+        ],
+        "radiation": [
+          "groin",
+          "legs"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "percussion"
+        ],
+        "other symptoms": [
+          "tachycardia"
+        ]
       },
       "freq": "rare"
     },
@@ -234,17 +558,43 @@
       "system": "Below The Inguinal Ligament",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "movement",
+          "coughing"
+        ],
+        "quality": [
+          "pressure",
+          "tender"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "groin",
+          "hip"
+        ],
+        "radiation": [
+          "groin"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "rare"
     },
@@ -253,17 +603,43 @@
       "system": "Below The Inguinal Ligament",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "movement",
+          "coughing"
+        ],
+        "quality": [
+          "pressure",
+          "tender"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "face",
+          "groin"
+        ],
+        "radiation": [
+          "groin"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "cough"
+        ]
       },
       "freq": "rare"
     },
@@ -272,17 +648,46 @@
       "system": "Below The Inguinal Ligament",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "movement",
+          "coughing"
+        ],
+        "quality": [
+          "pressure",
+          "tender",
+          "fluctuant"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "face",
+          "groin"
+        ],
+        "radiation": [
+          "groin"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "fever",
+          "malaise"
+        ]
       },
       "freq": "rare"
     }

@@ -6,17 +6,46 @@
       "system": "Post-Viral Fatigue Syndromes",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic",
+          "subacute"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "rest",
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "exercise"
+        ],
+        "quality": [
+          "aching"
+        ],
+        "timing": [
+          "nocturnal",
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "fever",
+          "malaise"
+        ]
       },
       "freq": "common"
     },
@@ -25,17 +54,48 @@
       "system": "Post-Viral Fatigue Syndromes",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic",
+          "subacute"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "rest",
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "exercise",
+          "alcohol"
+        ],
+        "quality": [
+          "aching"
+        ],
+        "timing": [
+          "nocturnal",
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "fatigue",
+          "fever",
+          "malaise"
+        ]
       },
       "freq": "uncommon"
     },
@@ -44,17 +104,48 @@
       "system": "Chronic",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic",
+          "subacute"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "rest",
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "exercise"
+        ],
+        "quality": [
+          "aching"
+        ],
+        "timing": [
+          "nocturnal",
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "fatigue",
+          "shock",
+          "fever",
+          "malaise"
+        ]
       },
       "freq": "uncommon"
     },
@@ -63,17 +154,45 @@
       "system": "Endocrine",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic",
+          "gradual"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "rest",
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "exercise"
+        ],
+        "quality": [
+          "aching"
+        ],
+        "timing": [
+          "nocturnal",
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "common"
     },
@@ -82,17 +201,45 @@
       "system": "Endocrine",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic",
+          "gradual"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "rest",
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "exercise"
+        ],
+        "quality": [
+          "aching"
+        ],
+        "timing": [
+          "nocturnal",
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "urine-dipstick"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "common"
     },
@@ -101,36 +248,93 @@
       "system": "Endocrine",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic",
+          "gradual"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "rest",
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "exercise"
+        ],
+        "quality": [
+          "aching"
+        ],
+        "timing": [
+          "nocturnal",
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "uncommon"
     },
     {
-      "name": "Addison\u2019s disease",
+      "name": "Addison’s disease",
       "system": "Endocrine",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic",
+          "gradual"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "rest",
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "exercise"
+        ],
+        "quality": [
+          "aching"
+        ],
+        "timing": [
+          "nocturnal",
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "legs"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "weight-loss",
+          "fatigue"
+        ]
       },
       "freq": "uncommon"
     },
@@ -139,17 +343,44 @@
       "system": "Major Organ Failure",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "rest",
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "exercise"
+        ],
+        "quality": [
+          "aching"
+        ],
+        "timing": [
+          "nocturnal",
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "uncommon"
     },
@@ -158,17 +389,45 @@
       "system": "Major Organ Failure",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic",
+          "gradual"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "rest",
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "exercise"
+        ],
+        "quality": [
+          "aching"
+        ],
+        "timing": [
+          "nocturnal",
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "uncommon"
     },
@@ -177,17 +436,44 @@
       "system": "Major Organ Failure",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "rest",
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "exercise"
+        ],
+        "quality": [
+          "aching"
+        ],
+        "timing": [
+          "nocturnal",
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "uncommon"
     },
@@ -196,17 +482,48 @@
       "system": "Neoplastic",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic",
+          "insidious"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "rest",
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "exercise",
+          "alcohol"
+        ],
+        "quality": [
+          "aching"
+        ],
+        "timing": [
+          "nocturnal",
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate",
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "fever",
+          "weight-loss"
+        ]
       },
       "freq": "uncommon"
     },
@@ -215,17 +532,46 @@
       "system": "Chronic Infection",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic",
+          "subacute"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "rest",
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "exercise"
+        ],
+        "quality": [
+          "aching"
+        ],
+        "timing": [
+          "nocturnal",
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "fever",
+          "malaise"
+        ]
       },
       "freq": "uncommon"
     },
@@ -234,17 +580,46 @@
       "system": "Chronic Infection",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic",
+          "subacute"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "rest",
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "exercise"
+        ],
+        "quality": [
+          "aching"
+        ],
+        "timing": [
+          "nocturnal",
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "fever",
+          "malaise"
+        ]
       },
       "freq": "uncommon"
     },
@@ -253,17 +628,46 @@
       "system": "Chronic Infection",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic",
+          "subacute"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "rest",
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "exercise"
+        ],
+        "quality": [
+          "aching"
+        ],
+        "timing": [
+          "nocturnal",
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "fever",
+          "malaise"
+        ]
       },
       "freq": "uncommon"
     },
@@ -272,17 +676,46 @@
       "system": "Chronic Inflammatory Disease",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic",
+          "subacute"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "rest",
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "exercise"
+        ],
+        "quality": [
+          "aching"
+        ],
+        "timing": [
+          "nocturnal",
+          "persistent",
+          "intermittent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "common"
     },
@@ -291,36 +724,95 @@
       "system": "Chronic Inflammatory Disease",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic",
+          "subacute"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "rest",
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "exercise"
+        ],
+        "quality": [
+          "aching"
+        ],
+        "timing": [
+          "nocturnal",
+          "persistent",
+          "intermittent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "common"
     },
     {
-      "name": "Crohn\u2019s disease",
+      "name": "Crohn’s disease",
       "system": "Chronic Inflammatory Disease",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic",
+          "subacute"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "rest",
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "exercise"
+        ],
+        "quality": [
+          "aching"
+        ],
+        "timing": [
+          "nocturnal",
+          "persistent",
+          "intermittent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "legs"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "weight-loss",
+          "fatigue"
+        ]
       },
       "freq": "uncommon"
     },
@@ -329,17 +821,45 @@
       "system": "Chronic Neurological Disorders",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic",
+          "hours"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "rest",
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "exercise"
+        ],
+        "quality": [
+          "aching"
+        ],
+        "timing": [
+          "nocturnal",
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "legs"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "uncommon"
     },
@@ -348,17 +868,44 @@
       "system": "Chronic Neurological Disorders",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "rest",
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "exercise"
+        ],
+        "quality": [
+          "aching"
+        ],
+        "timing": [
+          "nocturnal",
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "legs"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "uncommon"
     },
@@ -367,17 +914,44 @@
       "system": "Chronic Neurological Disorders",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "rest",
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "exercise"
+        ],
+        "quality": [
+          "aching"
+        ],
+        "timing": [
+          "nocturnal",
+          "persistent"
+        ],
+        "region": [
+          "leg"
+        ],
+        "radiation": [
+          "legs"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "uncommon"
     },
@@ -386,17 +960,44 @@
       "system": "Chronic Neurological Disorders",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "rest",
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "exercise"
+        ],
+        "quality": [
+          "aching"
+        ],
+        "timing": [
+          "nocturnal",
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "uncommon"
     },
@@ -405,17 +1006,44 @@
       "system": "Chronic Neurological Disorders",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "rest",
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "exercise"
+        ],
+        "quality": [
+          "aching"
+        ],
+        "timing": [
+          "nocturnal",
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "uncommon"
     },
@@ -424,17 +1052,46 @@
       "system": "Drug Abuse",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "rest",
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "exercise",
+          "alcohol"
+        ],
+        "quality": [
+          "aching"
+        ],
+        "timing": [
+          "nocturnal",
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "fatigue",
+          "nausea"
+        ]
       },
       "freq": "uncommon"
     },
@@ -443,17 +1100,45 @@
       "system": "Drug Abuse",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "rest",
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "exercise",
+          "alcohol"
+        ],
+        "quality": [
+          "aching"
+        ],
+        "timing": [
+          "nocturnal",
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "nausea"
+        ]
       },
       "freq": "uncommon"
     },
@@ -462,17 +1147,47 @@
       "system": "Other",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic",
+          "hours"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "rest",
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "exercise",
+          "alcohol"
+        ],
+        "quality": [
+          "aching"
+        ],
+        "timing": [
+          "nocturnal",
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "tachycardia",
+          "fatigue"
+        ]
       },
       "freq": "common"
     },
@@ -481,17 +1196,46 @@
       "system": "Other",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "rest",
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "exercise",
+          "alcohol"
+        ],
+        "quality": [
+          "aching"
+        ],
+        "timing": [
+          "nocturnal",
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "fever",
+          "fatigue"
+        ]
       },
       "freq": "common"
     },
@@ -500,17 +1244,44 @@
       "system": "Other",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "rest",
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "exercise"
+        ],
+        "quality": [
+          "aching"
+        ],
+        "timing": [
+          "nocturnal",
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "common"
     },
@@ -519,17 +1290,45 @@
       "system": "Other",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "rest",
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "exercise"
+        ],
+        "quality": [
+          "aching"
+        ],
+        "timing": [
+          "nocturnal",
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "legs"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "weight-loss",
+          "fatigue"
+        ]
       },
       "freq": "common"
     },
@@ -538,17 +1337,44 @@
       "system": "Other",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "rest",
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "exercise"
+        ],
+        "quality": [
+          "aching"
+        ],
+        "timing": [
+          "nocturnal",
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "common"
     },
@@ -557,17 +1383,45 @@
       "system": "Other",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "rest",
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "exercise",
+          "stress"
+        ],
+        "quality": [
+          "aching"
+        ],
+        "timing": [
+          "nocturnal",
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "fatigue"
+        ]
       },
       "freq": "uncommon"
     },
@@ -576,17 +1430,44 @@
       "system": "Other",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "rest",
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "exercise"
+        ],
+        "quality": [
+          "aching"
+        ],
+        "timing": [
+          "nocturnal",
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "fatigue"
+        ]
       },
       "freq": "rare"
     }

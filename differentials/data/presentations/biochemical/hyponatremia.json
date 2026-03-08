@@ -1,8 +1,1224 @@
 {
   "presentation": "Hyponatremia",
-  "items": [],
+  "items": [
+    {
+      "name": "Gastrointestinal losses",
+      "system": "Hypovolaemic",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "gradual",
+          "chronic"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "burning",
+          "crushing"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "diarrhea"
+        ]
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Diarrhea",
+      "system": "Hypovolaemic",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "gradual",
+          "chronic"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "burning",
+          "crushing"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Vomiting",
+      "system": "Hypovolaemic",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "gradual",
+          "chronic"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "burning",
+          "crushing"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild"
+        ],
+        "clinical tests": [
+          "reflex-testing"
+        ],
+        "other symptoms": [
+          "nausea",
+          "vomiting"
+        ]
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Enterocutanous fistula",
+      "system": "Hypovolaemic",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "gradual",
+          "chronic"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "burning",
+          "crushing"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "vomiting"
+        ]
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Renal sodium losses",
+      "system": "Hypovolaemic",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "gradual",
+          "chronic"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "burning",
+          "crushing"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "face"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "diarrhea"
+        ]
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Diuretics",
+      "system": "Hypovolaemic",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "gradual",
+          "chronic"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "burning",
+          "crushing"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Osmotic diuresis (",
+      "system": "Hypovolaemic",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "gradual",
+          "chronic"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "burning",
+          "crushing"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Renal failure",
+      "system": "Hypovolaemic",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "gradual",
+          "chronic"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "burning",
+          "crushing"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Other sodium losses",
+      "system": "Hypovolaemic",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "gradual",
+          "chronic"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "burning",
+          "crushing"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "face"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "diarrhea"
+        ]
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Burns",
+      "system": "Hypovolaemic",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "gradual",
+          "chronic"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "burning",
+          "crushing"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Ascites",
+      "system": "Hypovolaemic",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "gradual",
+          "chronic"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "burning",
+          "crushing"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Crush injuries",
+      "system": "Hypovolaemic",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "gradual",
+          "chronic"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "burning",
+          "crushing"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Peritonitis",
+      "system": "Hypovolaemic",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "gradual",
+          "chronic"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "burning",
+          "crushing"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Endocrine",
+      "system": "Euvolaemic",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "gradual",
+          "chronic"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "burning",
+          "crushing"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Severe hypothyroidism",
+      "system": "Euvolaemic",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "gradual",
+          "chronic"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "burning",
+          "crushing"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "face"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Addison’s disease",
+      "system": "Euvolaemic",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "n/a"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "burning",
+          "crushing"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Water load",
+      "system": "Euvolaemic",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "n/a"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "burning",
+          "crushing"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Intravenous infusions",
+      "system": "Euvolaemic",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "n/a"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "burning",
+          "crushing"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Water drinking (excessive)",
+      "system": "Euvolaemic",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "n/a"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "burning",
+          "crushing"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "TURP (transurethral resection of prostate) syndrome",
+      "system": "Euvolaemic",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "n/a"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "burning",
+          "crushing"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "SIADH",
+      "system": "Euvolaemic",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "n/a"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "burning",
+          "crushing"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Pulmonary disease (, lung cancer)",
+      "system": "Euvolaemic",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "insidious",
+          "chronic"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "burning",
+          "crushing"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe",
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "weight-loss"
+        ]
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Drugs (",
+      "system": "Euvolaemic",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "n/a"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "alcohol"
+        ],
+        "quality": [
+          "burning",
+          "crushing"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "nausea"
+        ]
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Intracranial disease (, head injuries)",
+      "system": "Euvolaemic",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "n/a"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "burning",
+          "crushing"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe",
+          "mild"
+        ],
+        "clinical tests": [
+          "reflex-testing"
+        ],
+        "other symptoms": [
+          "nausea",
+          "vomiting"
+        ]
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Cardiac failure",
+      "system": "Oedematous",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "n/a"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "burning",
+          "crushing"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Nephrotic syndrome",
+      "system": "Oedematous",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "n/a"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "burning",
+          "crushing"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Falsely low sodium values can occur with high",
+      "system": "Symptoms And Signs",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "n/a"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "burning",
+          "crushing"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "face"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
+      },
+      "freq": "unknown"
+    },
+    {
+      "name": "Most patients with hyponatremia do not require",
+      "system": "Symptoms And Signs",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "gradual",
+          "chronic"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "burning",
+          "crushing"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
+      },
+      "freq": "unknown"
+    }
+  ],
   "sources": {
-    "index_keys": [],
+    "index_keys": [
+      "Hyponatremia"
+    ],
     "index_type": "non-clinical"
   }
 }

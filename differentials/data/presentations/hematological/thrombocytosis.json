@@ -6,17 +6,54 @@
       "system": "Essential (primary)",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "improving",
+          "stable"
+        ],
+        "palliate": [
+          "antacids",
+          "ppi"
+        ],
+        "provoke": [
+          "coughing",
+          "exercise",
+          "oral-intake"
+        ],
+        "quality": [
+          "colicky",
+          "cramping",
+          "burning"
+        ],
+        "timing": [
+          "intermittent",
+          "cyclical",
+          "nocturnal"
+        ],
+        "region": [
+          "neck",
+          "face"
+        ],
+        "radiation": [
+          "groin",
+          "chest"
+        ],
+        "severity": [
+          "catastrophic",
+          "severe"
+        ],
+        "clinical tests": [
+          "digital-rectal-exam",
+          "gait-assessment"
+        ],
+        "other symptoms": [
+          "fever",
+          "vomiting"
+        ]
       },
       "freq": "unknown"
     },
@@ -25,17 +62,54 @@
       "system": "Essential (primary)",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "improving",
+          "stable"
+        ],
+        "palliate": [
+          "antacids",
+          "ppi"
+        ],
+        "provoke": [
+          "coughing",
+          "exercise",
+          "oral-intake"
+        ],
+        "quality": [
+          "colicky",
+          "cramping",
+          "burning"
+        ],
+        "timing": [
+          "intermittent",
+          "cyclical",
+          "nocturnal"
+        ],
+        "region": [
+          "neck",
+          "face"
+        ],
+        "radiation": [
+          "groin",
+          "chest"
+        ],
+        "severity": [
+          "catastrophic",
+          "severe"
+        ],
+        "clinical tests": [
+          "digital-rectal-exam",
+          "gait-assessment"
+        ],
+        "other symptoms": [
+          "fever",
+          "vomiting"
+        ]
       },
       "freq": "unknown"
     },
@@ -44,17 +118,45 @@
       "system": "Reactive (secondary)",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "improving",
+          "stable"
+        ],
+        "palliate": [
+          "antacids",
+          "ppi"
+        ],
+        "provoke": [
+          "coughing",
+          "exercise"
+        ],
+        "quality": [
+          "colicky",
+          "cramping"
+        ],
+        "timing": [
+          "intermittent",
+          "cyclical"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "unknown"
     },
@@ -63,17 +165,45 @@
       "system": "Reactive (secondary)",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "improving",
+          "stable"
+        ],
+        "palliate": [
+          "antacids",
+          "ppi"
+        ],
+        "provoke": [
+          "coughing",
+          "exercise"
+        ],
+        "quality": [
+          "colicky",
+          "cramping"
+        ],
+        "timing": [
+          "intermittent",
+          "cyclical"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "unknown"
     },
@@ -82,17 +212,53 @@
       "system": "Reactive (secondary)",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "improving",
+          "stable"
+        ],
+        "palliate": [
+          "antacids",
+          "ppi"
+        ],
+        "provoke": [
+          "coughing",
+          "exercise",
+          "stress"
+        ],
+        "quality": [
+          "colicky",
+          "cramping",
+          "sharp"
+        ],
+        "timing": [
+          "intermittent",
+          "cyclical",
+          "post-traumatic"
+        ],
+        "region": [
+          "neck",
+          "face"
+        ],
+        "radiation": [
+          "chest",
+          "legs"
+        ],
+        "severity": [
+          "catastrophic",
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "fever",
+          "vomiting"
+        ]
       },
       "freq": "unknown"
     },
@@ -101,17 +267,49 @@
       "system": "Reactive (secondary)",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "improving",
+          "stable"
+        ],
+        "palliate": [
+          "antacids",
+          "ppi"
+        ],
+        "provoke": [
+          "coughing",
+          "exercise"
+        ],
+        "quality": [
+          "colicky",
+          "cramping"
+        ],
+        "timing": [
+          "intermittent",
+          "cyclical"
+        ],
+        "region": [
+          "face",
+          "lower-chest"
+        ],
+        "radiation": [
+          "groin",
+          "jaw"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "gait-assessment"
+        ],
+        "other symptoms": [
+          "dyspnea",
+          "shortness-of-breath"
+        ]
       },
       "freq": "unknown"
     },
@@ -120,55 +318,149 @@
       "system": "Reactive (secondary)",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "improving",
+          "stable"
+        ],
+        "palliate": [
+          "antacids",
+          "ppi"
+        ],
+        "provoke": [
+          "coughing",
+          "exercise"
+        ],
+        "quality": [
+          "colicky",
+          "cramping"
+        ],
+        "timing": [
+          "intermittent",
+          "cyclical"
+        ],
+        "region": [
+          "leg"
+        ],
+        "radiation": [
+          "legs"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "unknown"
     },
     {
-      "name": "Chronic in\ufb02ammation, , in\ufb02ammatory",
+      "name": "Chronic inﬂammation, , inﬂammatory",
       "system": "Reactive (secondary)",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "improving",
+          "stable"
+        ],
+        "palliate": [
+          "antacids",
+          "ppi"
+        ],
+        "provoke": [
+          "coughing",
+          "exercise"
+        ],
+        "quality": [
+          "colicky",
+          "cramping"
+        ],
+        "timing": [
+          "intermittent",
+          "cyclical"
+        ],
+        "region": [
+          "rectum",
+          "pelvic"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "diarrhea",
+          "fatigue"
+        ]
       },
       "freq": "unknown"
     },
     {
-      "name": "Iron de\ufb01ciency anemia",
+      "name": "Iron deﬁciency anemia",
       "system": "Reactive (secondary)",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "improving",
+          "stable"
+        ],
+        "palliate": [
+          "antacids",
+          "ppi"
+        ],
+        "provoke": [
+          "coughing",
+          "exercise",
+          "walking"
+        ],
+        "quality": [
+          "colicky",
+          "cramping",
+          "waddling"
+        ],
+        "timing": [
+          "intermittent",
+          "cyclical"
+        ],
+        "region": [
+          "neck",
+          "face"
+        ],
+        "radiation": [
+          "groin",
+          "legs"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "digital-rectal-exam",
+          "gait-assessment"
+        ],
+        "other symptoms": [
+          "weight-gain",
+          "cough"
+        ]
       },
       "freq": "unknown"
     },
@@ -177,17 +469,54 @@
       "system": "Reactive (secondary)",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "improving",
+          "stable"
+        ],
+        "palliate": [
+          "antacids",
+          "ppi"
+        ],
+        "provoke": [
+          "coughing",
+          "exercise",
+          "exertion"
+        ],
+        "quality": [
+          "colicky",
+          "cramping",
+          "sharp"
+        ],
+        "timing": [
+          "intermittent",
+          "cyclical",
+          "nocturnal"
+        ],
+        "region": [
+          "neck",
+          "face"
+        ],
+        "radiation": [
+          "groin",
+          "chest"
+        ],
+        "severity": [
+          "catastrophic",
+          "severe"
+        ],
+        "clinical tests": [
+          "gait-assessment"
+        ],
+        "other symptoms": [
+          "fever",
+          "vomiting",
+          "malaise"
+        ]
       },
       "freq": "unknown"
     },
@@ -196,17 +525,54 @@
       "system": "Reactive (secondary)",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "improving",
+          "stable"
+        ],
+        "palliate": [
+          "antacids",
+          "ppi"
+        ],
+        "provoke": [
+          "coughing",
+          "exercise",
+          "oral-intake"
+        ],
+        "quality": [
+          "colicky",
+          "cramping",
+          "aching"
+        ],
+        "timing": [
+          "intermittent",
+          "cyclical"
+        ],
+        "region": [
+          "neck",
+          "face"
+        ],
+        "radiation": [
+          "chest",
+          "jaw"
+        ],
+        "severity": [
+          "catastrophic",
+          "severe"
+        ],
+        "clinical tests": [
+          "digital-rectal-exam",
+          "gait-assessment"
+        ],
+        "other symptoms": [
+          "fever",
+          "vomiting",
+          "weight-loss"
+        ]
       },
       "freq": "unknown"
     },
@@ -215,17 +581,48 @@
       "system": "Reactive (secondary)",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "improving",
+          "stable"
+        ],
+        "palliate": [
+          "antacids",
+          "ppi"
+        ],
+        "provoke": [
+          "coughing",
+          "exercise"
+        ],
+        "quality": [
+          "colicky",
+          "cramping"
+        ],
+        "timing": [
+          "intermittent",
+          "cyclical"
+        ],
+        "region": [
+          "lower-chest",
+          "ankle"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "fever",
+          "visual-problem"
+        ]
       },
       "freq": "unknown"
     }

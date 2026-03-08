@@ -7,7 +7,21 @@
     searchDebounceMs: 170,
     mobileBreakpointPx: 1080,
     emptyStateCopy: "No medications match the current filters.",
+    noSelectionTitle: "No selection",
+    noSelectionCopy: "Select a medication card to view high-yield details.",
     themeKey: "ui-theme",
+    themeChangedEvent: "core-theme-changed",
+    themeToggleLightLabel: "Light mode",
+    themeToggleDarkLabel: "Dark mode",
+    relevanceWeights: {
+      exactName: 100,
+      namePrefix: 80,
+      aliasBrandPrefix: 60,
+      nameContains: 45,
+      classContains: 30,
+      indicationMoaContains: 20,
+      otherFieldsContains: 10,
+    },
   };
 
   const SELECTORS = {
@@ -25,6 +39,7 @@
     detailBody: "#detailBody",
     detailScrim: "#detailScrim",
     loadError: "#loadError",
+    themeToggleButton: "#btnThemeToggle",
   };
 
   const ROUTE_ENUM = ["PO", "IV", "IM", "SQ", "INH", "IN", "SL", "Topical", "PR"];
@@ -52,6 +67,7 @@
     query: "",
     classFilter: "",
     routeFilter: "",
+    theme: "light",
   };
 
   const EL = {};
@@ -60,7 +76,7 @@
 
   function init() {
     cacheElements();
-    applyThemeFromStorage();
+    syncThemeFromStorage();
     bindEvents();
     loadData();
   }
@@ -72,47 +88,61 @@
   }
 
   function bindEvents() {
-    if (!EL.searchInput || !EL.classFilter || !EL.routeFilter || !EL.resultsGrid) return;
+    if (EL.searchInput) {
+      EL.searchInput.addEventListener(
+        "input",
+        debounce(() => {
+          STATE.query = EL.searchInput.value.trim();
+          applyFiltersAndRender();
+        }, CONFIG.searchDebounceMs)
+      );
+    }
 
-    EL.searchInput.addEventListener(
-      "input",
-      debounce(() => {
-        STATE.query = EL.searchInput.value.trim();
+    if (EL.classFilter) {
+      EL.classFilter.addEventListener("change", () => {
+        STATE.classFilter = EL.classFilter.value;
         applyFiltersAndRender();
-      }, CONFIG.searchDebounceMs)
-    );
+      });
+    }
 
-    EL.classFilter.addEventListener("change", () => {
-      STATE.classFilter = EL.classFilter.value;
-      applyFiltersAndRender();
-    });
+    if (EL.routeFilter) {
+      EL.routeFilter.addEventListener("change", () => {
+        STATE.routeFilter = EL.routeFilter.value;
+        applyFiltersAndRender();
+      });
+    }
 
-    EL.routeFilter.addEventListener("change", () => {
-      STATE.routeFilter = EL.routeFilter.value;
-      applyFiltersAndRender();
-    });
+    if (EL.clearFiltersButton) {
+      EL.clearFiltersButton.addEventListener("click", () => {
+        clearFilters();
+        applyFiltersAndRender();
+      });
+    }
 
-    EL.clearFiltersButton.addEventListener("click", () => {
-      EL.searchInput.value = "";
-      EL.classFilter.value = "";
-      EL.routeFilter.value = "";
-      STATE.query = "";
-      STATE.classFilter = "";
-      STATE.routeFilter = "";
-      applyFiltersAndRender();
-    });
+    if (EL.resultsGrid) {
+      EL.resultsGrid.addEventListener("click", (event) => {
+        const card = event.target.closest(".med-card");
+        if (!card) return;
+        selectMedication(card.dataset.id, true);
+      });
 
-    EL.resultsGrid.addEventListener("click", (event) => {
-      const card = event.target.closest(".med-card");
-      if (!card) return;
-      selectMedication(card.dataset.id, true);
-    });
+      EL.resultsGrid.addEventListener("keydown", handleResultsGridKeydown);
+    }
 
-    EL.detailCloseButton.addEventListener("click", closeMobileDetailPanel);
-    EL.detailScrim.addEventListener("click", closeMobileDetailPanel);
+    if (EL.detailCloseButton) {
+      EL.detailCloseButton.addEventListener("click", closeMobileDetailPanel);
+    }
+
+    if (EL.detailScrim) {
+      EL.detailScrim.addEventListener("click", closeMobileDetailPanel);
+    }
+
+    if (EL.themeToggleButton) {
+      EL.themeToggleButton.addEventListener("click", toggleTheme);
+    }
 
     document.addEventListener("keydown", (event) => {
-      if (event.key === "Escape" && EL.detailPanel.classList.contains("open")) {
+      if (event.key === "Escape" && EL.detailPanel && EL.detailPanel.classList.contains("open")) {
         closeMobileDetailPanel();
       }
     });
@@ -122,6 +152,31 @@
         closeMobileDetailPanel();
       }
     });
+
+    window.addEventListener("storage", (event) => {
+      if (event.key === CONFIG.themeKey) {
+        syncThemeFromStorage();
+      }
+    });
+
+    document.addEventListener(CONFIG.themeChangedEvent, (event) => {
+      const eventTheme = event?.detail?.theme;
+      if (eventTheme === "light" || eventTheme === "dark") {
+        applyTheme(eventTheme);
+      } else {
+        syncThemeFromStorage();
+      }
+    });
+  }
+
+  function clearFilters() {
+    if (EL.searchInput) EL.searchInput.value = "";
+    if (EL.classFilter) EL.classFilter.value = "";
+    if (EL.routeFilter) EL.routeFilter.value = "";
+
+    STATE.query = "";
+    STATE.classFilter = "";
+    STATE.routeFilter = "";
   }
 
   async function loadData() {
@@ -198,21 +253,39 @@
       return null;
     }
 
-    normalized.searchBlob = normalizeSearch(
-      [
-        normalized.name,
-        normalized.drugClass,
-        normalized.moa,
-        ...normalized.routes,
-        ...normalized.aliases,
-        ...normalized.brandExamples,
-        ...normalized.indications,
-        ...normalized.contraindications,
-        ...normalized.adverseEffects,
-        ...normalized.majorInteractions,
-        ...normalized.monitoring,
-      ].join(" ")
-    );
+    normalized.nameNorm = normalizeSearch(normalized.name);
+    normalized.drugClassNorm = normalizeSearch(normalized.drugClass);
+    normalized.routesNorm = normalized.routes.map(normalizeSearch);
+    normalized.moaNorm = normalizeSearch(normalized.moa);
+    normalized.indicationsNorm = normalized.indications.map(normalizeSearch);
+    normalized.aliasesNorm = normalized.aliases.map(normalizeSearch);
+    normalized.brandExamplesNorm = normalized.brandExamples.map(normalizeSearch);
+    normalized.contraindicationsNorm = normalized.contraindications.map(normalizeSearch);
+    normalized.adverseEffectsNorm = normalized.adverseEffects.map(normalizeSearch);
+    normalized.majorInteractionsNorm = normalized.majorInteractions.map(normalizeSearch);
+    normalized.monitoringNorm = normalized.monitoring.map(normalizeSearch);
+
+    normalized.searchBlob = [
+      normalized.nameNorm,
+      normalized.drugClassNorm,
+      normalized.moaNorm,
+      ...normalized.routesNorm,
+      ...normalized.aliasesNorm,
+      ...normalized.brandExamplesNorm,
+      ...normalized.indicationsNorm,
+      ...normalized.contraindicationsNorm,
+      ...normalized.adverseEffectsNorm,
+      ...normalized.majorInteractionsNorm,
+      ...normalized.monitoringNorm,
+    ].join(" ");
+
+    normalized.otherFieldsNorm = [
+      ...normalized.routesNorm,
+      ...normalized.contraindicationsNorm,
+      ...normalized.adverseEffectsNorm,
+      ...normalized.majorInteractionsNorm,
+      ...normalized.monitoringNorm,
+    ];
 
     return normalized;
   }
@@ -229,6 +302,12 @@
       return true;
     });
 
+    if (q) {
+      STATE.filtered.sort((a, b) => compareByRelevance(a, b, q));
+    } else {
+      STATE.filtered.sort((a, b) => a.name.localeCompare(b.name));
+    }
+
     if (!STATE.filtered.some((medication) => medication.id === STATE.selectedId)) {
       STATE.selectedId = null;
       closeMobileDetailPanel();
@@ -239,19 +318,75 @@
     renderDetail();
   }
 
+  function compareByRelevance(a, b, query) {
+    const aScore = computeRelevanceScore(a, query);
+    const bScore = computeRelevanceScore(b, query);
+
+    if (aScore !== bScore) {
+      return bScore - aScore;
+    }
+
+    return a.name.localeCompare(b.name);
+  }
+
+  function computeRelevanceScore(medication, query) {
+    const w = CONFIG.relevanceWeights;
+    let score = 0;
+
+    if (medication.nameNorm === query) {
+      score = Math.max(score, w.exactName);
+    }
+
+    if (medication.nameNorm.startsWith(query)) {
+      score = Math.max(score, w.namePrefix);
+    }
+
+    if (
+      medication.aliasesNorm.some((value) => value.startsWith(query)) ||
+      medication.brandExamplesNorm.some((value) => value.startsWith(query))
+    ) {
+      score = Math.max(score, w.aliasBrandPrefix);
+    }
+
+    if (medication.nameNorm.includes(query)) {
+      score = Math.max(score, w.nameContains);
+    }
+
+    if (medication.drugClassNorm.includes(query)) {
+      score = Math.max(score, w.classContains);
+    }
+
+    if (
+      medication.moaNorm.includes(query) ||
+      medication.indicationsNorm.some((value) => value.includes(query))
+    ) {
+      score = Math.max(score, w.indicationMoaContains);
+    }
+
+    if (medication.otherFieldsNorm.some((value) => value.includes(query))) {
+      score = Math.max(score, w.otherFieldsContains);
+    }
+
+    return score;
+  }
+
   function populateClassFilter() {
     const classes = uniq(STATE.medications.map((medication) => medication.drugClass)).sort((a, b) =>
       a.localeCompare(b)
     );
-    setSelectOptions(EL.classFilter, [{ value: "", label: "All classes" }, ...classes.map((item) => ({ value: item, label: item }))]);
+    setSelectOptions(EL.classFilter, [
+      { value: "", label: "All classes" },
+      ...classes.map((item) => ({ value: item, label: item })),
+    ]);
   }
 
   function populateRouteFilter() {
-    const presentRoutes = new Set(
-      STATE.medications.flatMap((medication) => medication.routes)
-    );
+    const presentRoutes = new Set(STATE.medications.flatMap((medication) => medication.routes));
     const routes = ROUTE_ENUM.filter((route) => presentRoutes.has(route));
-    setSelectOptions(EL.routeFilter, [{ value: "", label: "All routes" }, ...routes.map((route) => ({ value: route, label: route }))]);
+    setSelectOptions(EL.routeFilter, [
+      { value: "", label: "All routes" },
+      ...routes.map((route) => ({ value: route, label: route })),
+    ]);
   }
 
   function setSelectOptions(selectEl, options) {
@@ -284,12 +419,14 @@
     }
 
     const fragment = document.createDocumentFragment();
+
     STATE.filtered.forEach((medication) => {
       const card = document.createElement("button");
       card.type = "button";
       card.className = `med-card${STATE.selectedId === medication.id ? " is-selected" : ""}`;
       card.dataset.id = medication.id;
       card.setAttribute("aria-label", `${medication.name} details`);
+      card.setAttribute("aria-pressed", String(STATE.selectedId === medication.id));
 
       const title = document.createElement("h3");
       title.className = "med-card__title";
@@ -310,7 +447,10 @@
 
       const snippet = document.createElement("p");
       snippet.className = "med-card__snippet";
-      snippet.textContent = medication.indications.slice(0, 2).join(" • ");
+      const snippetValues = medication.indications.length > 0
+        ? medication.indications.slice(0, 2)
+        : [medication.moa];
+      snippet.textContent = snippetValues.join(" • ");
 
       card.appendChild(title);
       card.appendChild(classText);
@@ -322,12 +462,63 @@
     EL.resultsGrid.appendChild(fragment);
   }
 
+  function handleResultsGridKeydown(event) {
+    const card = event.target.closest(".med-card");
+    if (!card || !EL.resultsGrid) return;
+
+    const cards = Array.from(EL.resultsGrid.querySelectorAll(".med-card"));
+    if (cards.length === 0) return;
+
+    const currentIndex = cards.indexOf(card);
+    if (currentIndex < 0) return;
+
+    switch (event.key) {
+      case "ArrowRight":
+      case "ArrowDown":
+        event.preventDefault();
+        focusCard(cards, currentIndex + 1);
+        break;
+      case "ArrowLeft":
+      case "ArrowUp":
+        event.preventDefault();
+        focusCard(cards, currentIndex - 1);
+        break;
+      case "Home":
+        event.preventDefault();
+        focusCard(cards, 0);
+        break;
+      case "End":
+        event.preventDefault();
+        focusCard(cards, cards.length - 1);
+        break;
+      case "Enter":
+      case " ":
+      case "Spacebar":
+        event.preventDefault();
+        selectMedication(card.dataset.id, true);
+        break;
+      default:
+        break;
+    }
+  }
+
+  function focusCard(cards, index) {
+    const boundedIndex = Math.max(0, Math.min(cards.length - 1, index));
+    const target = cards[boundedIndex];
+    if (!target) return;
+
+    target.focus();
+    target.scrollIntoView({ block: "nearest", inline: "nearest" });
+  }
+
   function selectMedication(id, openOnMobile) {
+    if (!id) return;
     STATE.selectedId = id;
+
     renderCards();
     renderDetail();
 
-    if (openOnMobile && isMobileViewport()) {
+    if (openOnMobile && isMobileViewport() && EL.detailPanel && EL.detailScrim) {
       EL.detailPanel.classList.add("open");
       EL.detailScrim.hidden = false;
       document.body.classList.add("detail-open");
@@ -341,10 +532,11 @@
     EL.detailBody.innerHTML = "";
 
     if (!selected) {
-      EL.detailTitle.textContent = "No selection";
+      EL.detailTitle.textContent = CONFIG.noSelectionTitle;
       EL.detailMeta.hidden = true;
       EL.detailBody.hidden = true;
       EL.detailEmpty.hidden = false;
+      EL.detailEmpty.innerHTML = `<p>${CONFIG.noSelectionCopy}</p>`;
       return;
     }
 
@@ -364,6 +556,8 @@
       makeListSection("Major Interactions", selected.majorInteractions, "major-interactions"),
       makeListSection("Monitoring", selected.monitoring, "monitoring"),
       makeListSection("Pearls", selected.pearls, "pearls"),
+      makeListSection("Aliases", selected.aliases, "aliases"),
+      makeListSection("Brand Examples", selected.brandExamples, "brand-examples"),
     ];
 
     const fragment = document.createDocumentFragment();
@@ -401,6 +595,7 @@
     const list = document.createElement("ul");
     list.className = "detail-section__list";
     const values = items.length > 0 ? items : ["None listed."];
+
     values.forEach((item) => {
       const li = document.createElement("li");
       li.textContent = item;
@@ -423,16 +618,54 @@
     return window.matchMedia(`(max-width: ${CONFIG.mobileBreakpointPx}px)`).matches;
   }
 
-  function applyThemeFromStorage() {
+  function syncThemeFromStorage() {
+    applyTheme(getStoredTheme());
+  }
+
+  function getStoredTheme() {
     try {
       const saved = localStorage.getItem(CONFIG.themeKey);
-      const mode = saved === "dark" || saved === "light" ? saved : "light";
-      document.documentElement.setAttribute("data-theme", mode);
-      document.documentElement.style.colorScheme = mode;
+      return saved === "dark" || saved === "light" ? saved : "light";
     } catch {
-      document.documentElement.setAttribute("data-theme", "light");
-      document.documentElement.style.colorScheme = "light";
+      return "light";
     }
+  }
+
+  function applyTheme(mode) {
+    const theme = mode === "dark" ? "dark" : "light";
+    STATE.theme = theme;
+    document.documentElement.setAttribute("data-theme", theme);
+    document.documentElement.style.colorScheme = theme;
+    updateThemeToggleLabel();
+  }
+
+  function updateThemeToggleLabel() {
+    if (!EL.themeToggleButton) return;
+
+    const willSwitchToDark = STATE.theme !== "dark";
+    const nextLabel = willSwitchToDark
+      ? CONFIG.themeToggleDarkLabel
+      : CONFIG.themeToggleLightLabel;
+
+    EL.themeToggleButton.textContent = nextLabel;
+    EL.themeToggleButton.setAttribute("aria-label", `Switch to ${nextLabel.toLowerCase()}`);
+  }
+
+  function toggleTheme() {
+    const nextTheme = STATE.theme === "dark" ? "light" : "dark";
+
+    if (typeof window.setTheme === "function") {
+      window.setTheme(nextTheme);
+      return;
+    }
+
+    try {
+      localStorage.setItem(CONFIG.themeKey, nextTheme);
+    } catch {
+      // If local storage fails, still apply in-memory theme for this session.
+    }
+
+    applyTheme(nextTheme);
   }
 
   function showError(message) {

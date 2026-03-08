@@ -6,17 +6,46 @@
       "system": "Excessive Sweating",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "gradual"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "coughing",
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "pressure"
+        ],
+        "timing": [
+          "constant",
+          "episodic"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "catastrophic",
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "common"
     },
@@ -25,17 +54,44 @@
       "system": "Excessive Sweating",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "gradual"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "coughing",
+          "oral-intake"
+        ],
+        "quality": [
+          "pressure"
+        ],
+        "timing": [
+          "constant",
+          "episodic"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "uncommon"
     },
@@ -44,17 +100,47 @@
       "system": "Infections",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "coughing",
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "pressure"
+        ],
+        "timing": [
+          "constant",
+          "episodic"
+        ],
+        "region": [
+          "lower-chest"
+        ],
+        "radiation": [
+          "chest"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "digital-rectal-exam",
+          "palpation"
+        ],
+        "other symptoms": [
+          "fever",
+          "tachycardia",
+          "malaise"
+        ]
       },
       "freq": "common"
     },
@@ -63,36 +149,92 @@
       "system": "Malignancy",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "insidious"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "coughing",
+          "oral-intake"
+        ],
+        "quality": [
+          "pressure"
+        ],
+        "timing": [
+          "constant",
+          "episodic"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate",
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "weight-loss"
+        ]
       },
       "freq": "uncommon"
     },
     {
-      "name": "Hodgkin\u2019s lymphoma",
+      "name": "Hodgkin’s lymphoma",
       "system": "Malignancy",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "coughing",
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "pressure"
+        ],
+        "timing": [
+          "constant",
+          "episodic"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate",
+          "severe"
+        ],
+        "clinical tests": [
+          "digital-rectal-exam"
+        ],
+        "other symptoms": [
+          "fever",
+          "weight-loss"
+        ]
       },
       "freq": "uncommon"
     },
@@ -101,17 +243,46 @@
       "system": "Endocrine",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "gradual"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "coughing",
+          "oral-intake"
+        ],
+        "quality": [
+          "pressure",
+          "aching"
+        ],
+        "timing": [
+          "constant",
+          "episodic"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "numbness",
+          "paresthesia"
+        ]
       },
       "freq": "common"
     },
@@ -120,17 +291,45 @@
       "system": "Endocrine",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "gradual"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "coughing",
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "pressure"
+        ],
+        "timing": [
+          "constant",
+          "episodic"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "common"
     },
@@ -139,17 +338,45 @@
       "system": "Endocrine",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "gradual"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "coughing",
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "pressure"
+        ],
+        "timing": [
+          "constant",
+          "episodic"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "tachycardia"
+        ]
       },
       "freq": "common"
     },
@@ -158,17 +385,47 @@
       "system": "Endocrine",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "relapsing"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "coughing",
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "pressure"
+        ],
+        "timing": [
+          "constant",
+          "episodic"
+        ],
+        "region": [
+          "face",
+          "lower-chest"
+        ],
+        "radiation": [
+          "chest"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation",
+          "auscultation"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "rare"
     },
@@ -177,17 +434,44 @@
       "system": "Endocrine",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "gradual"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "coughing",
+          "oral-intake"
+        ],
+        "quality": [
+          "pressure"
+        ],
+        "timing": [
+          "constant",
+          "episodic"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "rare"
     },
@@ -196,17 +480,44 @@
       "system": "Psychiatric",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "coughing",
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "pressure"
+        ],
+        "timing": [
+          "constant",
+          "episodic"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "hallucinations",
+          "nausea"
+        ]
       },
       "freq": "common"
     },
@@ -215,17 +526,47 @@
       "system": "Psychiatric",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "gradual"
+        ],
+        "progression": [
+          "stable"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "coughing",
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "pressure"
+        ],
+        "timing": [
+          "constant",
+          "episodic",
+          "intermittent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe",
+          "mild"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "dizziness",
+          "palpitations"
+        ]
       },
       "freq": "common"
     },
@@ -234,17 +575,44 @@
       "system": "Deficient Sweating",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "coughing",
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "pressure"
+        ],
+        "timing": [
+          "constant",
+          "episodic"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "fever",
+          "weight-loss"
+        ]
       },
       "freq": "uncommon"
     },
@@ -253,17 +621,43 @@
       "system": "Deficient Sweating",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "coughing",
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "pressure"
+        ],
+        "timing": [
+          "constant",
+          "episodic"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "stroke-symptoms"
+        ]
       },
       "freq": "uncommon"
     },
@@ -272,17 +666,44 @@
       "system": "Deficient Sweating",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "gradual"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "coughing",
+          "oral-intake"
+        ],
+        "quality": [
+          "pressure"
+        ],
+        "timing": [
+          "constant",
+          "episodic"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "rare"
     },
@@ -291,17 +712,43 @@
       "system": "Deficient Sweating",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "coughing",
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "pressure"
+        ],
+        "timing": [
+          "constant",
+          "episodic"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "diarrhea"
+        ]
       },
       "freq": "rare"
     }
