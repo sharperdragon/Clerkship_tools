@@ -6,17 +6,48 @@
       "system": "Sinus Tachycardia",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "gradual"
+        ],
+        "progression": [
+          "stable"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "exercise",
+          "exertion",
+          "caffeine"
+        ],
+        "quality": [
+          "pressure"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "retrosternal",
+          "lower-chest"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild",
+          "moderate"
+        ],
+        "clinical tests": [
+          "auscultation",
+          "orthostatic-blood-pressure"
+        ],
+        "other symptoms": [
+          "shortness-of-breath",
+          "palpitations",
+          "tachycardia"
+        ]
       },
       "freq": "common"
     },
@@ -25,17 +56,44 @@
       "system": "Sinus Tachycardia",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "exercise",
+          "exertion",
+          "alcohol"
+        ],
+        "quality": [
+          "pressure"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "retrosternal",
+          "lower-chest"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "auscultation",
+          "orthostatic-blood-pressure"
+        ],
+        "other symptoms": [
+          "shortness-of-breath"
+        ]
       },
       "freq": "common"
     },
@@ -44,17 +102,44 @@
       "system": "Sinus Tachycardia",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "exercise",
+          "exertion",
+          "alcohol"
+        ],
+        "quality": [
+          "pressure"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "retrosternal",
+          "lower-chest"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "auscultation",
+          "orthostatic-blood-pressure"
+        ],
+        "other symptoms": [
+          "shortness-of-breath"
+        ]
       },
       "freq": "common"
     },
@@ -63,17 +148,45 @@
       "system": "Sinus Tachycardia",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "exercise",
+          "exertion",
+          "alcohol"
+        ],
+        "quality": [
+          "pressure"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "retrosternal",
+          "lower-chest"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "auscultation",
+          "orthostatic-blood-pressure"
+        ],
+        "other symptoms": [
+          "shortness-of-breath",
+          "nausea"
+        ]
       },
       "freq": "common"
     },
@@ -82,17 +195,47 @@
       "system": "Sinus Tachycardia",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "exercise",
+          "exertion",
+          "alcohol"
+        ],
+        "quality": [
+          "pressure"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "retrosternal",
+          "lower-chest"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "auscultation",
+          "orthostatic-blood-pressure"
+        ],
+        "other symptoms": [
+          "shortness-of-breath",
+          "fever",
+          "malaise"
+        ]
       },
       "freq": "common"
     },
@@ -101,17 +244,45 @@
       "system": "Sinus Tachycardia",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "gradual"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "exercise",
+          "exertion"
+        ],
+        "quality": [
+          "pressure"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "retrosternal",
+          "lower-chest"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "auscultation",
+          "orthostatic-blood-pressure"
+        ],
+        "other symptoms": [
+          "shortness-of-breath"
+        ]
       },
       "freq": "common"
     },
@@ -120,17 +291,45 @@
       "system": "Sinus Tachycardia",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "gradual"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "exercise",
+          "exertion"
+        ],
+        "quality": [
+          "pressure"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "retrosternal",
+          "lower-chest"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "auscultation",
+          "orthostatic-blood-pressure"
+        ],
+        "other symptoms": [
+          "shortness-of-breath"
+        ]
       },
       "freq": "common"
     },
@@ -139,17 +338,45 @@
       "system": "Cardiac Arrhythmia",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "exercise",
+          "exertion"
+        ],
+        "quality": [
+          "pressure"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "retrosternal",
+          "lower-chest"
+        ],
+        "radiation": [
+          "chest"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "auscultation",
+          "orthostatic-blood-pressure"
+        ],
+        "other symptoms": [
+          "shortness-of-breath",
+          "dizziness",
+          "palpitations"
+        ]
       },
       "freq": "common"
     },
@@ -158,36 +385,91 @@
       "system": "Cardiac Arrhythmia",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "exercise",
+          "exertion"
+        ],
+        "quality": [
+          "pressure"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "retrosternal",
+          "lower-chest"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "auscultation",
+          "orthostatic-blood-pressure"
+        ],
+        "other symptoms": [
+          "shortness-of-breath",
+          "palpitations",
+          "tachycardia"
+        ]
       },
       "freq": "common"
     },
     {
-      "name": "Atrial \ufb01brillation*",
+      "name": "Atrial ﬁbrillation*",
       "system": "Cardiac Arrhythmia",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "exercise",
+          "exertion"
+        ],
+        "quality": [
+          "pressure"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "retrosternal",
+          "lower-chest"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "auscultation",
+          "orthostatic-blood-pressure"
+        ],
+        "other symptoms": [
+          "shortness-of-breath",
+          "tachycardia"
+        ]
       },
       "freq": "common"
     },
@@ -196,17 +478,45 @@
       "system": "Cardiac Arrhythmia",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "exercise",
+          "exertion"
+        ],
+        "quality": [
+          "pressure"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "retrosternal",
+          "lower-chest"
+        ],
+        "radiation": [
+          "chest"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "auscultation",
+          "orthostatic-blood-pressure"
+        ],
+        "other symptoms": [
+          "shortness-of-breath",
+          "dizziness",
+          "palpitations"
+        ]
       },
       "freq": "uncommon"
     },
@@ -215,17 +525,45 @@
       "system": "Cardiac Arrhythmia",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "exercise",
+          "exertion"
+        ],
+        "quality": [
+          "pressure"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "retrosternal",
+          "lower-chest"
+        ],
+        "radiation": [
+          "chest"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "auscultation",
+          "orthostatic-blood-pressure"
+        ],
+        "other symptoms": [
+          "shortness-of-breath",
+          "dizziness",
+          "palpitations"
+        ]
       },
       "freq": "rare"
     }

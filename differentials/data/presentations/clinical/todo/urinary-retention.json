@@ -6,17 +6,47 @@
       "system": "Urethral Lumen Or Bladder Neck",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "insidious"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "alcohol",
+          "urination"
+        ],
+        "quality": [
+          "colicky",
+          "pressure"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "suprapubic",
+          "flank"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate",
+          "severe"
+        ],
+        "clinical tests": [
+          "urine-dipstick",
+          "suprapubic-tenderness"
+        ],
+        "other symptoms": [
+          "dysuria",
+          "weight-loss"
+        ]
       },
       "freq": "rare"
     },
@@ -25,17 +55,44 @@
       "system": "Urethral Lumen Or Bladder Neck",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "alcohol",
+          "urination"
+        ],
+        "quality": [
+          "colicky",
+          "pressure"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "suprapubic",
+          "flank"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "urine-dipstick",
+          "suprapubic-tenderness"
+        ],
+        "other symptoms": [
+          "dysuria"
+        ]
       },
       "freq": "rare"
     },
@@ -44,17 +101,46 @@
       "system": "Urethral Or Bladder Wall",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "alcohol",
+          "urination",
+          "movement"
+        ],
+        "quality": [
+          "colicky",
+          "pressure",
+          "sharp"
+        ],
+        "timing": [
+          "post-traumatic"
+        ],
+        "region": [
+          "suprapubic",
+          "flank"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "urine-dipstick",
+          "suprapubic-tenderness"
+        ],
+        "other symptoms": [
+          "dysuria"
+        ]
       },
       "freq": "uncommon"
     },
@@ -63,17 +149,45 @@
       "system": "Urethral Or Bladder Wall",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "alcohol",
+          "urination"
+        ],
+        "quality": [
+          "colicky",
+          "pressure"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "suprapubic",
+          "flank"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "urine-dipstick",
+          "suprapubic-tenderness",
+          "digital-rectal-exam"
+        ],
+        "other symptoms": [
+          "dysuria"
+        ]
       },
       "freq": "uncommon"
     },
@@ -82,17 +196,49 @@
       "system": "Urethral Or Bladder Wall",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "alcohol",
+          "urination"
+        ],
+        "quality": [
+          "colicky",
+          "pressure"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "suprapubic",
+          "flank"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate",
+          "severe"
+        ],
+        "clinical tests": [
+          "urine-dipstick",
+          "suprapubic-tenderness",
+          "digital-rectal-exam"
+        ],
+        "other symptoms": [
+          "dysuria",
+          "urinary-retention",
+          "weight-loss"
+        ]
       },
       "freq": "rare"
     },
@@ -101,17 +247,45 @@
       "system": "Outside The Wall",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "alcohol",
+          "urination"
+        ],
+        "quality": [
+          "colicky",
+          "pressure"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "suprapubic",
+          "flank"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "urine-dipstick",
+          "suprapubic-tenderness",
+          "digital-rectal-exam"
+        ],
+        "other symptoms": [
+          "dysuria"
+        ]
       },
       "freq": "common"
     },
@@ -120,17 +294,46 @@
       "system": "Outside The Wall",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "alcohol",
+          "urination"
+        ],
+        "quality": [
+          "colicky",
+          "pressure"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "suprapubic",
+          "flank"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "urine-dipstick",
+          "suprapubic-tenderness"
+        ],
+        "other symptoms": [
+          "dysuria",
+          "constipation",
+          "urinary-retention"
+        ]
       },
       "freq": "common"
     },
@@ -139,17 +342,47 @@
       "system": "Outside The Wall",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "alcohol",
+          "urination",
+          "pressure"
+        ],
+        "quality": [
+          "colicky",
+          "pressure"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "suprapubic",
+          "flank"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "urine-dipstick",
+          "suprapubic-tenderness"
+        ],
+        "other symptoms": [
+          "dysuria",
+          "constipation",
+          "urinary-retention"
+        ]
       },
       "freq": "common"
     },
@@ -158,17 +391,50 @@
       "system": "Outside The Wall",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "alcohol",
+          "urination"
+        ],
+        "quality": [
+          "colicky",
+          "pressure"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "suprapubic",
+          "flank"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate",
+          "severe"
+        ],
+        "clinical tests": [
+          "urine-dipstick",
+          "suprapubic-tenderness",
+          "digital-rectal-exam"
+        ],
+        "other symptoms": [
+          "dysuria",
+          "constipation",
+          "urinary-retention",
+          "weight-loss"
+        ]
       },
       "freq": "uncommon"
     },
@@ -177,17 +443,45 @@
       "system": "Postoperative",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "alcohol",
+          "urination"
+        ],
+        "quality": [
+          "colicky",
+          "pressure"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "suprapubic",
+          "flank"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "urine-dipstick",
+          "suprapubic-tenderness"
+        ],
+        "other symptoms": [
+          "dysuria",
+          "urinary-retention"
+        ]
       },
       "freq": "common"
     },
@@ -196,17 +490,49 @@
       "system": "Postoperative",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "gradual"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "alcohol",
+          "urination"
+        ],
+        "quality": [
+          "colicky",
+          "pressure",
+          "aching"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "suprapubic",
+          "flank"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "urine-dipstick",
+          "suprapubic-tenderness"
+        ],
+        "other symptoms": [
+          "dysuria",
+          "numbness",
+          "paresthesia"
+        ]
       },
       "freq": "common"
     },
@@ -215,17 +541,45 @@
       "system": "Postoperative",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "alcohol",
+          "urination"
+        ],
+        "quality": [
+          "colicky",
+          "pressure"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "suprapubic",
+          "flank"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "urine-dipstick",
+          "suprapubic-tenderness"
+        ],
+        "other symptoms": [
+          "dysuria",
+          "urinary-retention"
+        ]
       },
       "freq": "uncommon"
     },
@@ -234,17 +588,44 @@
       "system": "Postoperative",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "alcohol",
+          "urination"
+        ],
+        "quality": [
+          "colicky",
+          "pressure"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "suprapubic",
+          "flank"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "urine-dipstick",
+          "suprapubic-tenderness"
+        ],
+        "other symptoms": [
+          "dysuria"
+        ]
       },
       "freq": "uncommon"
     },
@@ -253,17 +634,49 @@
       "system": "Postoperative",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "alcohol",
+          "urination"
+        ],
+        "quality": [
+          "colicky",
+          "pressure"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "suprapubic",
+          "flank"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate",
+          "severe"
+        ],
+        "clinical tests": [
+          "urine-dipstick",
+          "suprapubic-tenderness",
+          "digital-rectal-exam"
+        ],
+        "other symptoms": [
+          "dysuria",
+          "urinary-retention",
+          "weight-loss"
+        ]
       },
       "freq": "rare"
     },
@@ -272,17 +685,44 @@
       "system": "Postoperative",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "alcohol",
+          "urination"
+        ],
+        "quality": [
+          "colicky",
+          "pressure"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "suprapubic",
+          "flank"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "urine-dipstick",
+          "suprapubic-tenderness"
+        ],
+        "other symptoms": [
+          "dysuria"
+        ]
       },
       "freq": "rare"
     },
@@ -291,17 +731,46 @@
       "system": "Postoperative",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "alcohol",
+          "urination"
+        ],
+        "quality": [
+          "colicky",
+          "pressure"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "suprapubic",
+          "flank"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "urine-dipstick",
+          "suprapubic-tenderness"
+        ],
+        "other symptoms": [
+          "dysuria",
+          "urinary-retention",
+          "nausea"
+        ]
       },
       "freq": "uncommon"
     },
@@ -310,17 +779,44 @@
       "system": "Postoperative",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "alcohol",
+          "urination"
+        ],
+        "quality": [
+          "colicky",
+          "pressure"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "suprapubic",
+          "flank"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "urine-dipstick",
+          "suprapubic-tenderness"
+        ],
+        "other symptoms": [
+          "dysuria"
+        ]
       },
       "freq": "uncommon"
     },
@@ -329,17 +825,45 @@
       "system": "Postoperative",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "alcohol",
+          "urination"
+        ],
+        "quality": [
+          "colicky",
+          "pressure"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "suprapubic",
+          "flank"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "urine-dipstick",
+          "suprapubic-tenderness"
+        ],
+        "other symptoms": [
+          "dysuria",
+          "nausea"
+        ]
       },
       "freq": "uncommon"
     }

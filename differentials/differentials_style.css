@@ -57,6 +57,7 @@ a:hover {
 }
 
 .app-header {
+  --brand-icon-size: 28px;
   position: sticky;
   top: 0;
   z-index: 20;
@@ -74,9 +75,23 @@ a:hover {
 }
 
 .brand__home {
+  width: max-content;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   font-size: 14px;
   font-weight: 600;
   color: var(--brand-strong);
+}
+
+.brand__icon {
+  width: auto;
+  height: var(--brand-icon-size, 28px);
+  max-height: 100%;
+  aspect-ratio: 1 / 1;
+  flex: 0 0 auto;
+  border-radius: 0.35em;
+  object-fit: contain;
 }
 
 .brand__title {

@@ -6,17 +6,46 @@
       "system": "Hepatic",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "gradual"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "elevation"
+        ],
+        "provoke": [
+          "deep-breathing",
+          "alcohol"
+        ],
+        "quality": [
+          "pressure"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "abdomen",
+          "pelvic"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation",
+          "percussion",
+          "shifting-dullness"
+        ],
+        "other symptoms": [
+          "abdominal-swelling"
+        ]
       },
       "freq": "common"
     },
@@ -25,17 +54,47 @@
       "system": "Hepatic",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "insidious"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "elevation"
+        ],
+        "provoke": [
+          "deep-breathing",
+          "alcohol"
+        ],
+        "quality": [
+          "pressure"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate",
+          "severe"
+        ],
+        "clinical tests": [
+          "palpation",
+          "percussion",
+          "shifting-dullness"
+        ],
+        "other symptoms": [
+          "abdominal-swelling",
+          "weight-loss"
+        ]
       },
       "freq": "uncommon"
     },
@@ -44,17 +103,47 @@
       "system": "Malignant Disease",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "insidious"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "elevation"
+        ],
+        "provoke": [
+          "deep-breathing",
+          "alcohol"
+        ],
+        "quality": [
+          "pressure"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "abdomen",
+          "pelvic"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate",
+          "severe"
+        ],
+        "clinical tests": [
+          "palpation",
+          "percussion",
+          "shifting-dullness"
+        ],
+        "other symptoms": [
+          "abdominal-swelling",
+          "weight-loss"
+        ]
       },
       "freq": "common"
     },
@@ -63,17 +152,48 @@
       "system": "Malignant Disease",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "insidious"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "elevation"
+        ],
+        "provoke": [
+          "deep-breathing",
+          "alcohol"
+        ],
+        "quality": [
+          "pressure"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "abdomen",
+          "pelvic"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate",
+          "severe"
+        ],
+        "clinical tests": [
+          "palpation",
+          "percussion",
+          "shifting-dullness"
+        ],
+        "other symptoms": [
+          "abdominal-swelling",
+          "weight-gain",
+          "weight-loss"
+        ]
       },
       "freq": "common"
     },
@@ -82,17 +202,47 @@
       "system": "Malignant Disease",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "insidious"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "elevation"
+        ],
+        "provoke": [
+          "deep-breathing",
+          "alcohol"
+        ],
+        "quality": [
+          "pressure"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "abdomen",
+          "pelvic"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate",
+          "severe"
+        ],
+        "clinical tests": [
+          "palpation",
+          "percussion",
+          "shifting-dullness"
+        ],
+        "other symptoms": [
+          "abdominal-swelling",
+          "weight-loss"
+        ]
       },
       "freq": "rare"
     },
@@ -101,17 +251,47 @@
       "system": "Malignant Disease",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "insidious"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "elevation"
+        ],
+        "provoke": [
+          "deep-breathing",
+          "alcohol"
+        ],
+        "quality": [
+          "pressure"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "abdomen",
+          "pelvic"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate",
+          "severe"
+        ],
+        "clinical tests": [
+          "palpation",
+          "percussion",
+          "shifting-dullness"
+        ],
+        "other symptoms": [
+          "abdominal-swelling",
+          "weight-loss"
+        ]
       },
       "freq": "rare"
     },
@@ -120,17 +300,47 @@
       "system": "Cardiac",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "elevation"
+        ],
+        "provoke": [
+          "deep-breathing",
+          "alcohol",
+          "pressure"
+        ],
+        "quality": [
+          "pressure"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "abdomen",
+          "pelvic"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation",
+          "percussion",
+          "shifting-dullness"
+        ],
+        "other symptoms": [
+          "abdominal-swelling",
+          "dyspnea",
+          "shortness-of-breath"
+        ]
       },
       "freq": "common"
     },
@@ -139,17 +349,47 @@
       "system": "Cardiac",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "hours"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "elevation"
+        ],
+        "provoke": [
+          "deep-breathing",
+          "alcohol"
+        ],
+        "quality": [
+          "pressure"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "abdomen",
+          "pelvic"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "palpation",
+          "percussion",
+          "shifting-dullness"
+        ],
+        "other symptoms": [
+          "abdominal-swelling",
+          "dyspnea",
+          "shortness-of-breath"
+        ]
       },
       "freq": "common"
     },
@@ -158,17 +398,46 @@
       "system": "Peritonitis",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "elevation"
+        ],
+        "provoke": [
+          "deep-breathing",
+          "alcohol"
+        ],
+        "quality": [
+          "pressure"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation",
+          "percussion",
+          "shifting-dullness"
+        ],
+        "other symptoms": [
+          "abdominal-swelling",
+          "fever",
+          "malaise"
+        ]
       },
       "freq": "uncommon"
     },
@@ -177,36 +446,95 @@
       "system": "Peritonitis",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "elevation"
+        ],
+        "provoke": [
+          "deep-breathing",
+          "alcohol"
+        ],
+        "quality": [
+          "pressure"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation",
+          "percussion",
+          "shifting-dullness"
+        ],
+        "other symptoms": [
+          "abdominal-swelling",
+          "fever",
+          "malaise"
+        ]
       },
       "freq": "uncommon"
     },
     {
-      "name": "Budd\u2013Chiari syndrome",
+      "name": "Budd–Chiari syndrome",
       "system": "Venous Obstruction",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "hours"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "elevation"
+        ],
+        "provoke": [
+          "deep-breathing",
+          "alcohol"
+        ],
+        "quality": [
+          "pressure"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "abdomen",
+          "pelvic"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "palpation",
+          "percussion",
+          "shifting-dullness"
+        ],
+        "other symptoms": [
+          "abdominal-swelling",
+          "dyspnea",
+          "shortness-of-breath"
+        ]
       },
       "freq": "rare"
     },
@@ -215,17 +543,45 @@
       "system": "Venous Obstruction",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "elevation"
+        ],
+        "provoke": [
+          "deep-breathing",
+          "alcohol",
+          "pressure"
+        ],
+        "quality": [
+          "pressure"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "palpation",
+          "percussion",
+          "shifting-dullness"
+        ],
+        "other symptoms": [
+          "abdominal-swelling",
+          "jaundice"
+        ]
       },
       "freq": "rare"
     },
@@ -234,17 +590,46 @@
       "system": "Venous Obstruction",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "gradual"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "elevation"
+        ],
+        "provoke": [
+          "deep-breathing",
+          "alcohol"
+        ],
+        "quality": [
+          "pressure"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "abdomen",
+          "lower-chest"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "palpation",
+          "percussion",
+          "shifting-dullness"
+        ],
+        "other symptoms": [
+          "abdominal-swelling"
+        ]
       },
       "freq": "rare"
     },
@@ -253,17 +638,44 @@
       "system": "Venous Obstruction",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "elevation"
+        ],
+        "provoke": [
+          "deep-breathing",
+          "alcohol"
+        ],
+        "quality": [
+          "pressure"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "abdomen",
+          "lower-chest"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "palpation",
+          "percussion",
+          "shifting-dullness"
+        ],
+        "other symptoms": [
+          "abdominal-swelling"
+        ]
       },
       "freq": "rare"
     },
@@ -272,17 +684,43 @@
       "system": "Gastrointestinal",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "elevation"
+        ],
+        "provoke": [
+          "deep-breathing",
+          "alcohol"
+        ],
+        "quality": [
+          "pressure"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation",
+          "percussion",
+          "shifting-dullness"
+        ],
+        "other symptoms": [
+          "abdominal-swelling"
+        ]
       },
       "freq": "uncommon"
     },
@@ -291,17 +729,44 @@
       "system": "Gastrointestinal",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "elevation"
+        ],
+        "provoke": [
+          "deep-breathing",
+          "alcohol"
+        ],
+        "quality": [
+          "pressure"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "abdomen",
+          "pelvic"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation",
+          "percussion",
+          "shifting-dullness"
+        ],
+        "other symptoms": [
+          "abdominal-swelling"
+        ]
       },
       "freq": "uncommon"
     },
@@ -310,17 +775,46 @@
       "system": "Gastrointestinal",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "elevation"
+        ],
+        "provoke": [
+          "deep-breathing",
+          "alcohol"
+        ],
+        "quality": [
+          "pressure"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "abdomen",
+          "lower-chest"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation",
+          "percussion",
+          "shifting-dullness"
+        ],
+        "other symptoms": [
+          "abdominal-swelling",
+          "weight-gain",
+          "dyspnea"
+        ]
       },
       "freq": "uncommon"
     }

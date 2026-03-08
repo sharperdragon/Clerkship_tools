@@ -6,17 +6,48 @@
       "system": "Traumatic",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "walking",
+          "stress",
+          "movement"
+        ],
+        "quality": [
+          "sharp",
+          "pressure",
+          "tender"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal",
+          "post-traumatic"
+        ],
+        "region": [
+          "foot"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "foot-pain",
+          "fatigue"
+        ]
       },
       "freq": "common"
     },
@@ -25,36 +56,98 @@
       "system": "Traumatic",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "walking",
+          "stress",
+          "movement"
+        ],
+        "quality": [
+          "sharp",
+          "pressure",
+          "tender"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal",
+          "post-traumatic"
+        ],
+        "region": [
+          "foot"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "foot-pain",
+          "fatigue"
+        ]
       },
       "freq": "uncommon"
     },
     {
-      "name": "Cellulitis \u2013 esp if suspected necrotising fascitis",
+      "name": "Cellulitis – esp if suspected necrotising fascitis",
       "system": "Infective",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "walking",
+          "stress"
+        ],
+        "quality": [
+          "sharp",
+          "pressure",
+          "tender"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "foot"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "foot-pain",
+          "fever",
+          "malaise"
+        ]
       },
       "freq": "common"
     },
@@ -63,17 +156,49 @@
       "system": "Infective",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "walking",
+          "stress"
+        ],
+        "quality": [
+          "sharp",
+          "pressure",
+          "tender"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "foot"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe",
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "foot-pain",
+          "fever",
+          "malaise"
+        ]
       },
       "freq": "rare"
     },
@@ -82,17 +207,50 @@
       "system": "Infective",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "walking",
+          "stress"
+        ],
+        "quality": [
+          "sharp",
+          "pressure",
+          "tender"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "foot",
+          "toes"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe",
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "foot-pain",
+          "fever",
+          "malaise"
+        ]
       },
       "freq": "rare"
     },
@@ -101,17 +259,49 @@
       "system": "Inflammatory",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "walking",
+          "stress"
+        ],
+        "quality": [
+          "sharp",
+          "pressure",
+          "tender"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "foot",
+          "toes"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "foot-pain",
+          "fever",
+          "malaise"
+        ]
       },
       "freq": "common"
     },
@@ -120,74 +310,193 @@
       "system": "Inflammatory",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "walking",
+          "stress"
+        ],
+        "quality": [
+          "sharp",
+          "pressure",
+          "tender"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "foot",
+          "toes"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "foot-pain"
+        ]
       },
       "freq": "common"
     },
     {
-      "name": "Reiter\u2019s disease",
+      "name": "Reiter’s disease",
       "system": "Inflammatory",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "walking",
+          "stress"
+        ],
+        "quality": [
+          "sharp",
+          "pressure",
+          "tender"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "foot"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "foot-pain"
+        ]
       },
       "freq": "uncommon"
     },
     {
-      "name": "Osteochondritis of the navicular bone (K\u00f6hler\u2019s disease)",
+      "name": "Osteochondritis of the navicular bone (Köhler’s disease)",
       "system": "Inflammatory",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "walking",
+          "stress"
+        ],
+        "quality": [
+          "sharp",
+          "pressure",
+          "tender"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "foot"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "foot-pain",
+          "fever"
+        ]
       },
       "freq": "rare"
     },
     {
-      "name": "Osteochondritis of the metatarsal head (Freiberg\u2019s disease)",
+      "name": "Osteochondritis of the metatarsal head (Freiberg’s disease)",
       "system": "Inflammatory",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "walking",
+          "stress"
+        ],
+        "quality": [
+          "sharp",
+          "pressure",
+          "tender"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "foot",
+          "toes"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "foot-pain"
+        ]
       },
       "freq": "rare"
     },
@@ -196,17 +505,45 @@
       "system": "Vascular",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "walking",
+          "stress"
+        ],
+        "quality": [
+          "sharp",
+          "pressure",
+          "tender"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "foot"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "foot-pain"
+        ]
       },
       "freq": "common"
     },
@@ -215,17 +552,45 @@
       "system": "Vascular",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "walking",
+          "stress"
+        ],
+        "quality": [
+          "sharp",
+          "pressure"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "foot"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "foot-pain"
+        ]
       },
       "freq": "uncommon"
     },
@@ -234,17 +599,47 @@
       "system": "Degenerative",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "walking",
+          "stress"
+        ],
+        "quality": [
+          "sharp",
+          "pressure",
+          "aching"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "foot",
+          "toes"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "foot-pain"
+        ]
       },
       "freq": "common"
     },
@@ -253,17 +648,44 @@
       "system": "Degenerative",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "walking",
+          "stress"
+        ],
+        "quality": [
+          "sharp",
+          "pressure"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "foot"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "foot-pain"
+        ]
       },
       "freq": "uncommon"
     },
@@ -272,17 +694,47 @@
       "system": "Degenerative",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "walking",
+          "stress",
+          "pressure"
+        ],
+        "quality": [
+          "sharp",
+          "pressure",
+          "tender"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "foot",
+          "toes"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "foot-pain"
+        ]
       },
       "freq": "common"
     },
@@ -291,17 +743,47 @@
       "system": "Degenerative",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "walking",
+          "stress",
+          "pressure"
+        ],
+        "quality": [
+          "sharp",
+          "pressure"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "foot",
+          "toes"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "foot-pain",
+          "fever"
+        ]
       },
       "freq": "common"
     },
@@ -310,36 +792,92 @@
       "system": "Degenerative",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "walking",
+          "stress"
+        ],
+        "quality": [
+          "sharp",
+          "pressure",
+          "tender"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "foot"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "foot-pain"
+        ]
       },
       "freq": "uncommon"
     },
     {
-      "name": "Morton\u2019s metatarsalgia",
+      "name": "Morton’s metatarsalgia",
       "system": "Degenerative",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "walking",
+          "stress"
+        ],
+        "quality": [
+          "sharp",
+          "pressure",
+          "tender"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "foot"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "foot-pain"
+        ]
       },
       "freq": "uncommon"
     },
@@ -348,17 +886,46 @@
       "system": "Degenerative",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "walking",
+          "stress"
+        ],
+        "quality": [
+          "sharp",
+          "pressure",
+          "tender"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "foot",
+          "toes"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "foot-pain"
+        ]
       },
       "freq": "uncommon"
     }

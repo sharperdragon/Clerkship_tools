@@ -6,17 +6,47 @@
       "system": "Acute Headache",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "coughing",
+          "alcohol",
+          "movement"
+        ],
+        "quality": [
+          "throbbing",
+          "pressure",
+          "sharp"
+        ],
+        "timing": [
+          "intermittent",
+          "post-traumatic"
+        ],
+        "region": [
+          "scalp"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "cranial-nerve-exam"
+        ],
+        "other symptoms": [
+          "nausea",
+          "photophobia"
+        ]
       },
       "freq": "common"
     },
@@ -25,17 +55,44 @@
       "system": "Acute Headache",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "coughing",
+          "alcohol"
+        ],
+        "quality": [
+          "throbbing",
+          "pressure"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "scalp"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "cranial-nerve-exam"
+        ],
+        "other symptoms": [
+          "nausea",
+          "photophobia"
+        ]
       },
       "freq": "common"
     },
@@ -44,17 +101,48 @@
       "system": "Acute Headache",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "coughing",
+          "alcohol",
+          "pressure"
+        ],
+        "quality": [
+          "throbbing",
+          "pressure"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "scalp",
+          "neck"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "cranial-nerve-exam"
+        ],
+        "other symptoms": [
+          "nausea",
+          "photophobia",
+          "visual-problem",
+          "neck-stiffness"
+        ]
       },
       "freq": "common"
     },
@@ -63,17 +151,50 @@
       "system": "Acute Headache",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "coughing",
+          "alcohol",
+          "pressure"
+        ],
+        "quality": [
+          "throbbing",
+          "pressure",
+          "tightness"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "scalp",
+          "neck"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "cranial-nerve-exam"
+        ],
+        "other symptoms": [
+          "nausea",
+          "photophobia",
+          "cough",
+          "neck-stiffness"
+        ]
       },
       "freq": "common"
     },
@@ -82,17 +203,48 @@
       "system": "Acute Headache",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "coughing",
+          "alcohol"
+        ],
+        "quality": [
+          "throbbing",
+          "pressure",
+          "tender"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "scalp"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "cranial-nerve-exam"
+        ],
+        "other symptoms": [
+          "nausea",
+          "photophobia",
+          "fever",
+          "malaise"
+        ]
       },
       "freq": "common"
     },
@@ -101,17 +253,50 @@
       "system": "Acute Headache",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "hours"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "coughing",
+          "alcohol",
+          "pressure"
+        ],
+        "quality": [
+          "throbbing",
+          "pressure"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "scalp",
+          "neck"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe",
+          "moderate"
+        ],
+        "clinical tests": [
+          "cranial-nerve-exam"
+        ],
+        "other symptoms": [
+          "nausea",
+          "photophobia",
+          "fever",
+          "malaise"
+        ]
       },
       "freq": "uncommon"
     },
@@ -120,17 +305,48 @@
       "system": "Acute Headache",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "coughing",
+          "alcohol",
+          "pressure"
+        ],
+        "quality": [
+          "throbbing",
+          "pressure",
+          "tender"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "scalp"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "cranial-nerve-exam"
+        ],
+        "other symptoms": [
+          "nausea",
+          "photophobia",
+          "visual-problem"
+        ]
       },
       "freq": "uncommon"
     },
@@ -139,17 +355,50 @@
       "system": "Chronic Or Recurrent Headache",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "coughing",
+          "alcohol",
+          "Touch"
+        ],
+        "quality": [
+          "throbbing",
+          "pressure"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "scalp",
+          "low-back"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "cranial-nerve-exam",
+          "palpation"
+        ],
+        "other symptoms": [
+          "nausea",
+          "photophobia",
+          "vomiting",
+          "cough"
+        ]
       },
       "freq": "common"
     },
@@ -158,17 +407,49 @@
       "system": "Chronic Or Recurrent Headache",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "coughing",
+          "alcohol",
+          "Touch"
+        ],
+        "quality": [
+          "throbbing",
+          "pressure"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "scalp"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "cranial-nerve-exam",
+          "palpation"
+        ],
+        "other symptoms": [
+          "nausea",
+          "photophobia",
+          "vomiting",
+          "cough"
+        ]
       },
       "freq": "common"
     },
@@ -177,17 +458,47 @@
       "system": "Chronic Or Recurrent Headache",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "hours"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "coughing",
+          "alcohol",
+          "pressure"
+        ],
+        "quality": [
+          "throbbing",
+          "pressure"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "scalp"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "cranial-nerve-exam"
+        ],
+        "other symptoms": [
+          "nausea",
+          "photophobia",
+          "vomiting"
+        ]
       },
       "freq": "common"
     },
@@ -196,17 +507,44 @@
       "system": "Chronic Or Recurrent Headache",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "coughing",
+          "alcohol"
+        ],
+        "quality": [
+          "throbbing",
+          "pressure"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "scalp"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "cranial-nerve-exam"
+        ],
+        "other symptoms": [
+          "nausea",
+          "photophobia"
+        ]
       },
       "freq": "common"
     },
@@ -215,17 +553,45 @@
       "system": "Chronic Or Recurrent Headache",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "coughing",
+          "alcohol"
+        ],
+        "quality": [
+          "throbbing",
+          "pressure"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "scalp",
+          "neck"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "cranial-nerve-exam"
+        ],
+        "other symptoms": [
+          "nausea",
+          "photophobia"
+        ]
       },
       "freq": "common"
     },
@@ -234,17 +600,48 @@
       "system": "Chronic Or Recurrent Headache",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "gradual"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "coughing",
+          "alcohol",
+          "pressure"
+        ],
+        "quality": [
+          "throbbing",
+          "pressure"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "scalp",
+          "neck"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild",
+          "moderate"
+        ],
+        "clinical tests": [
+          "cranial-nerve-exam"
+        ],
+        "other symptoms": [
+          "nausea",
+          "photophobia"
+        ]
       },
       "freq": "common"
     },
@@ -253,17 +650,50 @@
       "system": "Chronic Or Recurrent Headache",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "coughing",
+          "alcohol",
+          "pressure"
+        ],
+        "quality": [
+          "throbbing",
+          "pressure",
+          "tightness"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "scalp",
+          "neck"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "cranial-nerve-exam"
+        ],
+        "other symptoms": [
+          "nausea",
+          "photophobia",
+          "vomiting",
+          "cough"
+        ]
       },
       "freq": "uncommon"
     },
@@ -272,17 +702,50 @@
       "system": "Chronic Or Recurrent Headache",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "coughing",
+          "alcohol",
+          "pressure"
+        ],
+        "quality": [
+          "throbbing",
+          "pressure"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "scalp",
+          "neck"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe",
+          "moderate"
+        ],
+        "clinical tests": [
+          "cranial-nerve-exam"
+        ],
+        "other symptoms": [
+          "nausea",
+          "photophobia",
+          "neck-stiffness",
+          "weight-loss"
+        ]
       },
       "freq": "uncommon"
     },
@@ -291,17 +754,47 @@
       "system": "Chronic Or Recurrent Headache",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "coughing",
+          "alcohol",
+          "pressure"
+        ],
+        "quality": [
+          "throbbing",
+          "pressure"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "scalp",
+          "low-back"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "cranial-nerve-exam"
+        ],
+        "other symptoms": [
+          "nausea",
+          "photophobia",
+          "vomiting"
+        ]
       },
       "freq": "uncommon"
     },
@@ -310,17 +803,49 @@
       "system": "Chronic Or Recurrent Headache",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "coughing",
+          "alcohol"
+        ],
+        "quality": [
+          "throbbing",
+          "pressure"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "scalp",
+          "low-back"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "cranial-nerve-exam",
+          "visual-field-test"
+        ],
+        "other symptoms": [
+          "nausea",
+          "photophobia",
+          "visual-problem",
+          "fever"
+        ]
       },
       "freq": "rare"
     },
@@ -329,17 +854,50 @@
       "system": "Chronic Or Recurrent Headache",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "coughing",
+          "alcohol",
+          "pressure"
+        ],
+        "quality": [
+          "throbbing",
+          "pressure",
+          "tightness"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "scalp",
+          "neck"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "cranial-nerve-exam"
+        ],
+        "other symptoms": [
+          "nausea",
+          "photophobia",
+          "cough",
+          "neck-stiffness"
+        ]
       },
       "freq": "uncommon"
     },
@@ -348,17 +906,50 @@
       "system": "Chronic Or Recurrent Headache",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "coughing",
+          "alcohol",
+          "Touch"
+        ],
+        "quality": [
+          "throbbing",
+          "pressure"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "scalp",
+          "face"
+        ],
+        "radiation": [
+          "jaw"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "cranial-nerve-exam",
+          "palpation",
+          "visual-field-test"
+        ],
+        "other symptoms": [
+          "nausea",
+          "photophobia",
+          "visual-problem",
+          "limb-weakness"
+        ]
       },
       "freq": "uncommon"
     },
@@ -367,36 +958,92 @@
       "system": "Chronic Or Recurrent Headache",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "coughing",
+          "alcohol"
+        ],
+        "quality": [
+          "throbbing",
+          "pressure"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "scalp"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "cranial-nerve-exam"
+        ],
+        "other symptoms": [
+          "nausea",
+          "photophobia",
+          "headache"
+        ]
       },
       "freq": "uncommon"
     },
     {
-      "name": "Paget\u2019s disease of bone",
+      "name": "Paget’s disease of bone",
       "system": "Chronic Or Recurrent Headache",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "coughing",
+          "alcohol"
+        ],
+        "quality": [
+          "throbbing",
+          "pressure"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "scalp",
+          "neck"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "cranial-nerve-exam"
+        ],
+        "other symptoms": [
+          "nausea",
+          "photophobia"
+        ]
       },
       "freq": "uncommon"
     },
@@ -405,17 +1052,48 @@
       "system": "Chronic Or Recurrent Headache",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "gradual"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "coughing",
+          "alcohol",
+          "pressure"
+        ],
+        "quality": [
+          "throbbing",
+          "pressure"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "scalp",
+          "low-back"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "cranial-nerve-exam"
+        ],
+        "other symptoms": [
+          "nausea",
+          "photophobia",
+          "headache"
+        ]
       },
       "freq": "uncommon"
     },
@@ -424,17 +1102,44 @@
       "system": "Chronic Or Recurrent Headache",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "coughing",
+          "alcohol"
+        ],
+        "quality": [
+          "throbbing",
+          "pressure"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "scalp"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "cranial-nerve-exam"
+        ],
+        "other symptoms": [
+          "nausea",
+          "photophobia"
+        ]
       },
       "freq": "rare"
     }

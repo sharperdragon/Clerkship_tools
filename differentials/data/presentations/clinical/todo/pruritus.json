@@ -6,17 +6,47 @@
       "system": "General",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "gradual",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "coughing",
+          "alcohol"
+        ],
+        "quality": [
+          "tender",
+          "myalgia"
+        ],
+        "timing": [
+          "persistent",
+          "constant"
+        ],
+        "region": [
+          "n/a",
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "itching",
+          "jaundice"
+        ]
       },
       "freq": "common"
     },
@@ -25,17 +55,45 @@
       "system": "General",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "gradual",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "coughing",
+          "alcohol"
+        ],
+        "quality": [
+          "tender",
+          "myalgia"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "urine-dipstick"
+        ],
+        "other symptoms": [
+          "itching",
+          "jaundice"
+        ]
       },
       "freq": "common"
     },
@@ -44,17 +102,45 @@
       "system": "General",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "gradual",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "stable"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "coughing",
+          "alcohol"
+        ],
+        "quality": [
+          "tender",
+          "myalgia"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a",
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "urine-dipstick"
+        ],
+        "other symptoms": [
+          "itching",
+          "stroke-symptoms"
+        ]
       },
       "freq": "common"
     },
@@ -63,36 +149,90 @@
       "system": "General",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "gradual",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "coughing",
+          "alcohol"
+        ],
+        "quality": [
+          "tender",
+          "myalgia"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "stroke-symptoms"
+        ]
       },
       "freq": "rare"
     },
     {
-      "name": "Iron de\ufb01ciency",
+      "name": "Iron deﬁciency",
       "system": "Hematological Disease",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "gradual",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "stable"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "coughing",
+          "alcohol"
+        ],
+        "quality": [
+          "tender",
+          "myalgia"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a",
+          "lower-chest"
+        ],
+        "radiation": [
+          "chest"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "itching"
+        ]
       },
       "freq": "uncommon"
     },
@@ -101,17 +241,43 @@
       "system": "Hematological Disease",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "gradual",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "stable"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "coughing",
+          "alcohol"
+        ],
+        "quality": [
+          "tender",
+          "myalgia"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "itching"
+        ]
       },
       "freq": "uncommon"
     },
@@ -120,36 +286,96 @@
       "system": "Internal Malignancy",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "gradual",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "coughing",
+          "alcohol"
+        ],
+        "quality": [
+          "tender",
+          "myalgia"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a",
+          "lower-chest"
+        ],
+        "radiation": [
+          "chest"
+        ],
+        "severity": [
+          "catastrophic",
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "weight-loss",
+          "cough"
+        ]
       },
       "freq": "uncommon"
     },
     {
-      "name": "Hodgkin\u2019s lymphoma",
+      "name": "Hodgkin’s lymphoma",
       "system": "Internal Malignancy",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "gradual",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "coughing",
+          "alcohol"
+        ],
+        "quality": [
+          "tender",
+          "myalgia"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a",
+          "lower-chest"
+        ],
+        "radiation": [
+          "chest"
+        ],
+        "severity": [
+          "moderate",
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "fever",
+          "weight-loss"
+        ]
       },
       "freq": "uncommon"
     },
@@ -158,17 +384,45 @@
       "system": "Endocrine Disease",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "gradual",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "coughing",
+          "alcohol"
+        ],
+        "quality": [
+          "tender",
+          "myalgia"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "weight-loss",
+          "palpitations"
+        ]
       },
       "freq": "uncommon"
     },
@@ -177,17 +431,45 @@
       "system": "Endocrine Disease",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "gradual",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "coughing",
+          "alcohol"
+        ],
+        "quality": [
+          "tender",
+          "myalgia"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "weight-gain",
+          "constipation"
+        ]
       },
       "freq": "uncommon"
     },
@@ -196,17 +478,44 @@
       "system": "Endocrine Disease",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "gradual",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "coughing",
+          "alcohol"
+        ],
+        "quality": [
+          "tender",
+          "myalgia"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "uncommon"
     },
@@ -215,17 +524,45 @@
       "system": "Infection",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "gradual",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "coughing",
+          "alcohol"
+        ],
+        "quality": [
+          "tender",
+          "myalgia"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "fever",
+          "malaise"
+        ]
       },
       "freq": "rare"
     },
@@ -234,17 +571,47 @@
       "system": "Infection",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "gradual",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "coughing",
+          "alcohol"
+        ],
+        "quality": [
+          "tender",
+          "myalgia"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a",
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "fever",
+          "itching",
+          "malaise"
+        ]
       },
       "freq": "rare"
     },
@@ -253,17 +620,45 @@
       "system": "Infection",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "gradual",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "coughing",
+          "alcohol"
+        ],
+        "quality": [
+          "tender",
+          "myalgia"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "fever",
+          "malaise"
+        ]
       },
       "freq": "common"
     },
@@ -272,17 +667,45 @@
       "system": "Infection",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "gradual",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "coughing",
+          "alcohol"
+        ],
+        "quality": [
+          "tender",
+          "myalgia"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "fever",
+          "malaise"
+        ]
       },
       "freq": "uncommon"
     },
@@ -291,17 +714,47 @@
       "system": "Infection",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "gradual",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "coughing",
+          "alcohol"
+        ],
+        "quality": [
+          "tender",
+          "myalgia"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "itching",
+          "fever",
+          "malaise",
+          "nausea"
+        ]
       },
       "freq": "uncommon"
     }

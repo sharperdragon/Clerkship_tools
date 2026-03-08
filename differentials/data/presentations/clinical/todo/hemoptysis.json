@@ -6,17 +6,51 @@
       "system": "Respiratory",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "movement",
+          "coughing"
+        ],
+        "quality": [
+          "tender",
+          "pleuritic",
+          "heaviness"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "retrosternal",
+          "lower-chest"
+        ],
+        "radiation": [
+          "chest"
+        ],
+        "severity": [
+          "moderate",
+          "severe"
+        ],
+        "clinical tests": [
+          "auscultation",
+          "orthostatic-blood-pressure",
+          "palpation"
+        ],
+        "other symptoms": [
+          "shortness-of-breath",
+          "weight-loss",
+          "dyspnea"
+        ]
       },
       "freq": "common"
     },
@@ -25,17 +59,45 @@
       "system": "Respiratory",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "movement",
+          "coughing"
+        ],
+        "quality": [
+          "tender",
+          "pleuritic"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "retrosternal",
+          "lower-chest"
+        ],
+        "radiation": [
+          "chest"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "auscultation",
+          "orthostatic-blood-pressure"
+        ],
+        "other symptoms": [
+          "shortness-of-breath"
+        ]
       },
       "freq": "common"
     },
@@ -44,17 +106,48 @@
       "system": "Respiratory",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "movement",
+          "coughing"
+        ],
+        "quality": [
+          "tender",
+          "pleuritic"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "retrosternal",
+          "lower-chest"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "auscultation",
+          "orthostatic-blood-pressure"
+        ],
+        "other symptoms": [
+          "shortness-of-breath",
+          "fever",
+          "malaise"
+        ]
       },
       "freq": "common"
     },
@@ -63,17 +156,50 @@
       "system": "Respiratory",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "movement",
+          "coughing"
+        ],
+        "quality": [
+          "tender",
+          "pleuritic"
+        ],
+        "timing": [
+          "persistent",
+          "constant"
+        ],
+        "region": [
+          "retrosternal",
+          "lower-chest"
+        ],
+        "radiation": [
+          "chest"
+        ],
+        "severity": [
+          "catastrophic",
+          "severe"
+        ],
+        "clinical tests": [
+          "auscultation",
+          "orthostatic-blood-pressure",
+          "palpation"
+        ],
+        "other symptoms": [
+          "shortness-of-breath",
+          "cough",
+          "dyspnea"
+        ]
       },
       "freq": "common"
     },
@@ -82,17 +208,46 @@
       "system": "Respiratory",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "movement",
+          "coughing"
+        ],
+        "quality": [
+          "tender",
+          "pleuritic"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "retrosternal",
+          "lower-chest"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "auscultation",
+          "orthostatic-blood-pressure"
+        ],
+        "other symptoms": [
+          "shortness-of-breath"
+        ]
       },
       "freq": "uncommon"
     },
@@ -101,36 +256,98 @@
       "system": "Respiratory",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "movement",
+          "coughing",
+          "lying-down"
+        ],
+        "quality": [
+          "tender",
+          "pleuritic"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "retrosternal",
+          "lower-chest"
+        ],
+        "radiation": [
+          "chest"
+        ],
+        "severity": [
+          "catastrophic",
+          "severe"
+        ],
+        "clinical tests": [
+          "auscultation",
+          "orthostatic-blood-pressure",
+          "palpation"
+        ],
+        "other symptoms": [
+          "shortness-of-breath",
+          "cough",
+          "dyspnea"
+        ]
       },
       "freq": "uncommon"
     },
     {
-      "name": "Goodpasture\u2019s syndrome",
+      "name": "Goodpasture’s syndrome",
       "system": "Respiratory",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "relapsing"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "movement",
+          "coughing"
+        ],
+        "quality": [
+          "tender",
+          "pleuritic"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "retrosternal",
+          "lower-chest"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "auscultation",
+          "orthostatic-blood-pressure"
+        ],
+        "other symptoms": [
+          "shortness-of-breath"
+        ]
       },
       "freq": "rare"
     },
@@ -139,36 +356,103 @@
       "system": "Vascular",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "movement",
+          "coughing",
+          "lying-down"
+        ],
+        "quality": [
+          "tender",
+          "pleuritic"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "retrosternal",
+          "lower-chest"
+        ],
+        "radiation": [
+          "chest"
+        ],
+        "severity": [
+          "catastrophic",
+          "severe"
+        ],
+        "clinical tests": [
+          "auscultation",
+          "orthostatic-blood-pressure",
+          "palpation"
+        ],
+        "other symptoms": [
+          "shortness-of-breath",
+          "cough",
+          "dyspnea"
+        ]
       },
       "freq": "uncommon"
     },
     {
-      "name": "Pulmonary hypertension \u2013 mitral stenosis",
+      "name": "Pulmonary hypertension – mitral stenosis",
       "system": "Vascular",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "gradual"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "movement",
+          "coughing"
+        ],
+        "quality": [
+          "tender",
+          "pleuritic"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "retrosternal",
+          "lower-chest"
+        ],
+        "radiation": [
+          "chest"
+        ],
+        "severity": [
+          "catastrophic",
+          "severe"
+        ],
+        "clinical tests": [
+          "auscultation",
+          "orthostatic-blood-pressure",
+          "palpation"
+        ],
+        "other symptoms": [
+          "shortness-of-breath",
+          "fever",
+          "cough",
+          "headache"
+        ]
       },
       "freq": "rare"
     },
@@ -177,17 +461,45 @@
       "system": "Vascular",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "movement",
+          "coughing"
+        ],
+        "quality": [
+          "tender",
+          "pleuritic"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "retrosternal",
+          "lower-chest"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "auscultation",
+          "orthostatic-blood-pressure"
+        ],
+        "other symptoms": [
+          "shortness-of-breath"
+        ]
       },
       "freq": "rare"
     },
@@ -196,17 +508,45 @@
       "system": "Systemic",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "movement",
+          "coughing"
+        ],
+        "quality": [
+          "tender",
+          "pleuritic"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "retrosternal",
+          "lower-chest"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "auscultation",
+          "orthostatic-blood-pressure"
+        ],
+        "other symptoms": [
+          "shortness-of-breath"
+        ]
       },
       "freq": "uncommon"
     }

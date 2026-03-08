@@ -6,17 +6,42 @@
       "system": "Acute Swelling",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute"],
-        "progression": ["worsening"],
-        "palliate": ["antibiotics", "elevation"],
-        "provoke": ["skin-break", "infection"],
-        "quality": ["redness", "warmth", "tenderness"],
-        "timing": ["sudden-onset"],
-        "region": ["unilateral-leg"],
-        "radiation": ["n/a"],
-        "severity": ["moderate", "severe"],
-        "clinical tests": ["wcc", "crp", "ultrasound-to-rule-out-dvt"],
-        "other symptoms": ["fever", "chills", "pain"]
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "elevation"
+        ],
+        "provoke": [
+          "pressure"
+        ],
+        "quality": [
+          "pressure",
+          "tender"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "leg"
+        ],
+        "radiation": [
+          "legs"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "pain"
+        ]
       },
       "freq": "uncommon"
     },
@@ -25,17 +50,44 @@
       "system": "Acute Swelling",
       "redFlag": false,
       "hpi": {
-        "onset": ["insidious"],
-        "progression": ["episodic", "worsening"],
-        "palliate": ["dmards", "steroids"],
-        "provoke": ["autoimmune"],
-        "quality": ["joint-swelling", "morning-stiffness"],
-        "timing": ["morning-worse"],
-        "region": ["bilateral-ankles", "knees"],
-        "radiation": ["n/a"],
-        "severity": ["mild", "moderate"],
-        "clinical tests": ["rf", "anti-ccp", "esr", "crp"],
-        "other symptoms": ["fatigue", "joint-pain", "deformities"]
+        "onset": [
+          "acute",
+          "chronic",
+          "subacute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "elevation"
+        ],
+        "provoke": [
+          "pressure"
+        ],
+        "quality": [
+          "pressure",
+          "tender",
+          "aching"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "leg"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "pain"
+        ]
       },
       "freq": "uncommon"
     },
@@ -44,17 +96,42 @@
       "system": "Acute Swelling",
       "redFlag": false,
       "hpi": {
-        "onset": ["minutes", "hours"],
-        "progression": ["rapid"],
-        "palliate": ["antihistamines", "steroids"],
-        "provoke": ["allergen-exposure", "insect-bite", "drug"],
-        "quality": ["itching", "erythema", "pitting-edema"],
-        "timing": ["sudden"],
-        "region": ["bilateral-legs", "generalized"],
-        "radiation": ["diffuse"],
-        "severity": ["mild", "moderate", "severe"],
-        "clinical tests": ["allergy-testing", "eosinophil-count"],
-        "other symptoms": ["urticaria", "dyspnea", "rash"]
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "elevation"
+        ],
+        "provoke": [
+          "pressure"
+        ],
+        "quality": [
+          "pressure",
+          "tender"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "leg"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "pain"
+        ]
       },
       "freq": "rare"
     },
@@ -63,17 +140,44 @@
       "system": "Chronic Swelling",
       "redFlag": false,
       "hpi": {
-        "onset": ["gradual"],
-        "progression": ["chronic"],
-        "palliate": ["leg-elevation", "compression"],
-        "provoke": ["prolonged-standing", "obesity"],
-        "quality": ["pitting-edema", "heaviness"],
-        "timing": ["evening-worse"],
-        "region": ["bilateral-lower-legs"],
-        "radiation": ["n/a"],
-        "severity": ["mild", "moderate"],
-        "clinical tests": ["duplex-ultrasound", "venous-doppler"],
-        "other symptoms": ["skin-discoloration", "aching", "varicosities"]
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "elevation"
+        ],
+        "provoke": [
+          "pressure"
+        ],
+        "quality": [
+          "pressure",
+          "tender"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "leg",
+          "rectum"
+        ],
+        "radiation": [
+          "legs"
+        ],
+        "severity": [
+          "catastrophic",
+          "severe"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "pain"
+        ]
       },
       "freq": "common"
     },
@@ -82,17 +186,44 @@
       "system": "Chronic Swelling",
       "redFlag": false,
       "hpi": {
-        "onset": ["gradual"],
-        "progression": ["chronic"],
-        "palliate": ["compression-stockings", "elevation"],
-        "provoke": ["standing", "pregnancy"],
-        "quality": ["aching", "swelling", "pitting"],
-        "timing": ["daytime"],
-        "region": ["lower-leg", "ankle"],
-        "radiation": ["n/a"],
-        "severity": ["mild", "moderate"],
-        "clinical tests": ["duplex-ultrasound", "trendelenburg-test"],
-        "other symptoms": ["itching", "skin-thickening"]
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "elevation"
+        ],
+        "provoke": [
+          "pressure"
+        ],
+        "quality": [
+          "pressure",
+          "tender"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "leg",
+          "pelvic"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "catastrophic",
+          "severe"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "pain"
+        ]
       },
       "freq": "common"
     },
@@ -101,17 +232,46 @@
       "system": "Chronic Swelling",
       "redFlag": false,
       "hpi": {
-        "onset": ["subacute"],
-        "progression": ["worsening"],
-        "palliate": ["leg-elevation"],
-        "provoke": ["pelvic-mass", "abdominal-tumour", "pregnancy"],
-        "quality": ["pitting-edema"],
-        "timing": ["persistent"],
-        "region": ["bilateral-legs"],
-        "radiation": ["n/a"],
-        "severity": ["moderate", "severe"],
-        "clinical tests": ["ct-abdomen", "pelvic-ultrasound", "venogram"],
-        "other symptoms": ["abdominal-mass", "pain", "fullness"]
+        "onset": [
+          "acute",
+          "chronic",
+          "insidious"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "elevation"
+        ],
+        "provoke": [
+          "pressure"
+        ],
+        "quality": [
+          "pressure",
+          "tender"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "leg",
+          "rectum"
+        ],
+        "radiation": [
+          "legs"
+        ],
+        "severity": [
+          "catastrophic",
+          "severe"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "pain",
+          "weight-loss"
+        ]
       },
       "freq": "uncommon"
     },
@@ -120,17 +280,44 @@
       "system": "Chronic Swelling",
       "redFlag": false,
       "hpi": {
-        "onset": ["gradual"],
-        "progression": ["chronic"],
-        "palliate": ["compression", "manual-lymphatic-drainage"],
-        "provoke": ["lymph-node-dissection", "infection", "radiation"],
-        "quality": ["non-pitting", "heaviness"],
-        "timing": ["persistent"],
-        "region": ["unilateral", "bilateral"],
-        "radiation": ["n/a"],
-        "severity": ["mild", "moderate", "severe"],
-        "clinical tests": ["lymphoscintigraphy", "stemmer-sign"],
-        "other symptoms": ["skin-thickening", "recurrent-cellulitis"]
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "elevation"
+        ],
+        "provoke": [
+          "pressure"
+        ],
+        "quality": [
+          "pressure",
+          "tender"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "leg",
+          "groin"
+        ],
+        "radiation": [
+          "groin",
+          "legs"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "pain"
+        ]
       },
       "freq": "rare"
     },
@@ -139,17 +326,42 @@
       "system": "Chronic Swelling",
       "redFlag": false,
       "hpi": {
-        "onset": ["childhood"],
-        "progression": ["stable"],
-        "palliate": ["compression"],
-        "provoke": ["venous-malformation", "lymphatic-malformation"],
-        "quality": ["non-pitting", "localized-swelling"],
-        "timing": ["lifelong"],
-        "region": ["one-limb"],
-        "radiation": ["n/a"],
-        "severity": ["variable"],
-        "clinical tests": ["mri", "ultrasound"],
-        "other symptoms": ["visible-veins", "limb-asymmetry"]
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "elevation"
+        ],
+        "provoke": [
+          "pressure"
+        ],
+        "quality": [
+          "pressure",
+          "tender"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "leg"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "pain"
+        ]
       },
       "freq": "rare"
     },
@@ -158,17 +370,42 @@
       "system": "Chronic Swelling",
       "redFlag": false,
       "hpi": {
-        "onset": ["subacute", "chronic"],
-        "progression": ["stable"],
-        "palliate": ["physiotherapy", "compression"],
-        "provoke": ["neurologic-injury", "immobility"],
-        "quality": ["pitting-edema", "heaviness"],
-        "timing": ["persistent"],
-        "region": ["paralyzed-limb"],
-        "radiation": ["n/a"],
-        "severity": ["moderate"],
-        "clinical tests": ["doppler", "neurologic-exam"],
-        "other symptoms": ["weakness", "muscle-wasting"]
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "elevation"
+        ],
+        "provoke": [
+          "pressure"
+        ],
+        "quality": [
+          "pressure",
+          "tender"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "leg"
+        ],
+        "radiation": [
+          "legs"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "pain"
+        ]
       },
       "freq": "rare"
     },
@@ -177,17 +414,43 @@
       "system": "General",
       "redFlag": false,
       "hpi": {
-        "onset": ["subacute", "chronic"],
-        "progression": ["worsening"],
-        "palliate": ["diuretics", "leg-elevation"],
-        "provoke": ["exertion", "salt-intake"],
-        "quality": ["pitting-edema", "bilateral"],
-        "timing": ["worse-evening"],
-        "region": ["ankles", "legs"],
-        "radiation": ["n/a"],
-        "severity": ["moderate", "severe"],
-        "clinical tests": ["bnp", "echo", "chest-xray"],
-        "other symptoms": ["orthopnea", "dyspnea", "fatigue"]
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "elevation"
+        ],
+        "provoke": [
+          "pressure"
+        ],
+        "quality": [
+          "pressure",
+          "tender"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "leg",
+          "pelvic"
+        ],
+        "radiation": [
+          "legs"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "pain"
+        ]
       },
       "freq": "common"
     },
@@ -196,17 +459,44 @@
       "system": "General",
       "redFlag": false,
       "hpi": {
-        "onset": ["subacute"],
-        "progression": ["worsening"],
-        "palliate": ["treat-underlying"],
-        "provoke": ["protein-loss"],
-        "quality": ["pitting-edema", "generalized"],
-        "timing": ["persistent"],
-        "region": ["legs", "face", "abdomen"],
-        "radiation": ["n/a"],
-        "severity": ["moderate", "severe"],
-        "clinical tests": ["urine-protein", "albumin", "renal-function"],
-        "other symptoms": ["frothy-urine", "fatigue"]
+        "onset": [
+          "acute",
+          "chronic",
+          "gradual"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "elevation"
+        ],
+        "provoke": [
+          "pressure"
+        ],
+        "quality": [
+          "pressure",
+          "tender"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "leg"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "pain"
+        ]
       },
       "freq": "uncommon"
     },
@@ -215,17 +505,45 @@
       "system": "General",
       "redFlag": false,
       "hpi": {
-        "onset": ["subacute", "chronic"],
-        "progression": ["worsening"],
-        "palliate": ["dialysis", "fluid-restriction"],
-        "provoke": ["renal-disease"],
-        "quality": ["pitting-edema"],
-        "timing": ["persistent"],
-        "region": ["bilateral-legs"],
-        "radiation": ["n/a"],
-        "severity": ["moderate", "severe"],
-        "clinical tests": ["bun", "creatinine", "urinalysis"],
-        "other symptoms": ["fatigue", "anemia", "hypertension"]
+        "onset": [
+          "acute",
+          "chronic",
+          "gradual"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "elevation"
+        ],
+        "provoke": [
+          "pressure"
+        ],
+        "quality": [
+          "pressure",
+          "tender"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "leg"
+        ],
+        "radiation": [
+          "legs"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation",
+          "urine-dipstick"
+        ],
+        "other symptoms": [
+          "pain"
+        ]
       },
       "freq": "uncommon"
     },
@@ -234,17 +552,42 @@
       "system": "General",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute", "subacute"],
-        "progression": ["worsening"],
-        "palliate": ["diuretics", "fluid-restriction"],
-        "provoke": ["iv-fluids", "heart-failure", "renal-failure"],
-        "quality": ["pitting-edema"],
-        "timing": ["persistent"],
-        "region": ["legs", "sacral"],
-        "radiation": ["n/a"],
-        "severity": ["moderate", "severe"],
-        "clinical tests": ["electrolytes", "bnp", "weight-trend"],
-        "other symptoms": ["dyspnea", "ascites"]
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "elevation"
+        ],
+        "provoke": [
+          "pressure"
+        ],
+        "quality": [
+          "pressure",
+          "tender"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "leg"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "pain"
+        ]
       },
       "freq": "uncommon"
     },
@@ -253,17 +596,42 @@
       "system": "General",
       "redFlag": false,
       "hpi": {
-        "onset": ["gradual"],
-        "progression": ["chronic"],
-        "palliate": ["thyroid-replacement"],
-        "provoke": ["hypothyroidism"],
-        "quality": ["non-pitting", "generalized-swelling"],
-        "timing": ["persistent"],
-        "region": ["legs", "face", "hands"],
-        "radiation": ["n/a"],
-        "severity": ["mild", "moderate"],
-        "clinical tests": ["tsh", "t4"],
-        "other symptoms": ["fatigue", "cold-intolerance", "weight-gain"]
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "elevation"
+        ],
+        "provoke": [
+          "pressure"
+        ],
+        "quality": [
+          "pressure",
+          "tender"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "leg"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "pain"
+        ]
       },
       "freq": "rare"
     }

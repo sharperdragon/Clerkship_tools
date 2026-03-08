@@ -2,21 +2,50 @@
   "presentation": "Constipation",
   "items": [
     {
-      "name": "Hirschsprung\u2019s disease",
+      "name": "Hirschsprung’s disease",
       "system": "Congenital",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "defecation",
+          "pressure"
+        ],
+        "quality": [
+          "cramping",
+          "colicky",
+          "pressure"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation",
+          "auscultation"
+        ],
+        "other symptoms": [
+          "abdominal-pain",
+          "constipation",
+          "abdominal-swelling"
+        ]
       },
       "freq": "rare"
     },
@@ -25,17 +54,48 @@
       "system": "Obstruction",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "defecation",
+          "pressure"
+        ],
+        "quality": [
+          "cramping",
+          "colicky",
+          "pressure"
+        ],
+        "timing": [
+          "intermittent",
+          "constant"
+        ],
+        "region": [
+          "abdomen",
+          "rectum"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "palpation",
+          "auscultation"
+        ],
+        "other symptoms": [
+          "abdominal-pain",
+          "constipation",
+          "abdominal-swelling"
+        ]
       },
       "freq": "common"
     },
@@ -44,17 +104,49 @@
       "system": "Obstruction",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic",
+          "insidious"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "defecation",
+          "pressure"
+        ],
+        "quality": [
+          "cramping",
+          "colicky",
+          "pressure"
+        ],
+        "timing": [
+          "intermittent",
+          "constant"
+        ],
+        "region": [
+          "abdomen",
+          "rectum"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate",
+          "severe"
+        ],
+        "clinical tests": [
+          "palpation",
+          "auscultation"
+        ],
+        "other symptoms": [
+          "abdominal-pain",
+          "weight-loss"
+        ]
       },
       "freq": "common"
     },
@@ -63,17 +155,45 @@
       "system": "Obstruction",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "defecation",
+          "pressure"
+        ],
+        "quality": [
+          "cramping",
+          "colicky",
+          "pressure"
+        ],
+        "timing": [
+          "intermittent",
+          "constant"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "palpation",
+          "auscultation"
+        ],
+        "other symptoms": [
+          "abdominal-pain"
+        ]
       },
       "freq": "common"
     },
@@ -82,17 +202,48 @@
       "system": "Obstruction",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic",
+          "insidious"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "defecation",
+          "pressure"
+        ],
+        "quality": [
+          "cramping",
+          "colicky",
+          "pressure"
+        ],
+        "timing": [
+          "intermittent",
+          "constant"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate",
+          "severe"
+        ],
+        "clinical tests": [
+          "palpation",
+          "auscultation"
+        ],
+        "other symptoms": [
+          "abdominal-pain",
+          "weight-loss"
+        ]
       },
       "freq": "uncommon"
     },
@@ -101,17 +252,46 @@
       "system": "Painful Anus",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "defecation",
+          "pressure"
+        ],
+        "quality": [
+          "cramping",
+          "colicky",
+          "pressure"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen",
+          "perianal"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation",
+          "auscultation",
+          "digital-rectal-exam"
+        ],
+        "other symptoms": [
+          "abdominal-pain"
+        ]
       },
       "freq": "common"
     },
@@ -120,17 +300,49 @@
       "system": "Painful Anus",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic",
+          "subacute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "defecation",
+          "pressure"
+        ],
+        "quality": [
+          "cramping",
+          "colicky",
+          "pressure"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen",
+          "perianal"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation",
+          "auscultation",
+          "digital-rectal-exam"
+        ],
+        "other symptoms": [
+          "abdominal-pain",
+          "fever",
+          "malaise"
+        ]
       },
       "freq": "common"
     },
@@ -139,17 +351,45 @@
       "system": "Painful Anus",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "defecation",
+          "pressure"
+        ],
+        "quality": [
+          "cramping",
+          "colicky",
+          "pressure"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen",
+          "perianal"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation",
+          "auscultation"
+        ],
+        "other symptoms": [
+          "abdominal-pain"
+        ]
       },
       "freq": "uncommon"
     },
@@ -158,17 +398,45 @@
       "system": "Painful Anus",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "defecation",
+          "pressure"
+        ],
+        "quality": [
+          "cramping",
+          "colicky",
+          "pressure"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation",
+          "auscultation"
+        ],
+        "other symptoms": [
+          "abdominal-pain",
+          "constipation"
+        ]
       },
       "freq": "uncommon"
     },
@@ -177,17 +445,44 @@
       "system": "Adynamic Bowel",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "defecation",
+          "pressure"
+        ],
+        "quality": [
+          "cramping",
+          "colicky",
+          "pressure"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation",
+          "auscultation"
+        ],
+        "other symptoms": [
+          "abdominal-pain"
+        ]
       },
       "freq": "uncommon"
     },
@@ -196,17 +491,44 @@
       "system": "Adynamic Bowel",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "defecation",
+          "pressure"
+        ],
+        "quality": [
+          "cramping",
+          "colicky",
+          "pressure"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation",
+          "auscultation"
+        ],
+        "other symptoms": [
+          "abdominal-pain"
+        ]
       },
       "freq": "uncommon"
     },
@@ -215,17 +537,49 @@
       "system": "Adynamic Bowel",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic",
+          "sudden"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "defecation",
+          "pressure",
+          "movement"
+        ],
+        "quality": [
+          "cramping",
+          "colicky",
+          "pressure"
+        ],
+        "timing": [
+          "intermittent",
+          "post-traumatic"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation",
+          "auscultation",
+          "digital-rectal-exam"
+        ],
+        "other symptoms": [
+          "abdominal-pain",
+          "constipation"
+        ]
       },
       "freq": "rare"
     },
@@ -234,17 +588,49 @@
       "system": "Endocrine",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic",
+          "gradual"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "defecation",
+          "pressure"
+        ],
+        "quality": [
+          "cramping",
+          "colicky",
+          "pressure"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation",
+          "auscultation"
+        ],
+        "other symptoms": [
+          "abdominal-pain",
+          "constipation",
+          "numbness",
+          "paresthesia"
+        ]
       },
       "freq": "uncommon"
     },
@@ -253,17 +639,48 @@
       "system": "Endocrine",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic",
+          "gradual"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "defecation",
+          "pressure"
+        ],
+        "quality": [
+          "cramping",
+          "colicky",
+          "pressure"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation",
+          "auscultation"
+        ],
+        "other symptoms": [
+          "abdominal-pain",
+          "nausea",
+          "vomiting"
+        ]
       },
       "freq": "uncommon"
     },
@@ -272,17 +689,46 @@
       "system": "Endocrine",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic",
+          "gradual"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "defecation",
+          "pressure"
+        ],
+        "quality": [
+          "cramping",
+          "colicky",
+          "pressure"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation",
+          "auscultation"
+        ],
+        "other symptoms": [
+          "abdominal-pain"
+        ]
       },
       "freq": "common"
     },
@@ -291,17 +737,46 @@
       "system": "Endocrine",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic",
+          "gradual"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "defecation",
+          "pressure"
+        ],
+        "quality": [
+          "cramping",
+          "colicky",
+          "pressure"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation",
+          "auscultation"
+        ],
+        "other symptoms": [
+          "abdominal-pain"
+        ]
       },
       "freq": "common"
     },
@@ -310,17 +785,46 @@
       "system": "Endocrine",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic",
+          "gradual"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "defecation",
+          "pressure"
+        ],
+        "quality": [
+          "cramping",
+          "colicky",
+          "pressure"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation",
+          "auscultation"
+        ],
+        "other symptoms": [
+          "abdominal-pain"
+        ]
       },
       "freq": "common"
     },
@@ -329,17 +833,46 @@
       "system": "Endocrine",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic",
+          "gradual"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "defecation",
+          "pressure"
+        ],
+        "quality": [
+          "cramping",
+          "colicky",
+          "pressure"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation",
+          "auscultation"
+        ],
+        "other symptoms": [
+          "abdominal-pain"
+        ]
       },
       "freq": "uncommon"
     },
@@ -348,36 +881,98 @@
       "system": "Endocrine",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic",
+          "gradual"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "defecation",
+          "pressure"
+        ],
+        "quality": [
+          "cramping",
+          "colicky",
+          "pressure"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation",
+          "auscultation"
+        ],
+        "other symptoms": [
+          "abdominal-pain",
+          "constipation"
+        ]
       },
       "freq": "uncommon"
     },
     {
-      "name": "Dietary changes (i.e. low-\ufb01bre diet, dehydration)",
+      "name": "Dietary changes (i.e. low-ﬁbre diet, dehydration)",
       "system": "Endocrine",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic",
+          "gradual"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "defecation",
+          "pressure",
+          "dehydration"
+        ],
+        "quality": [
+          "cramping",
+          "colicky",
+          "pressure"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation",
+          "auscultation"
+        ],
+        "other symptoms": [
+          "abdominal-pain",
+          "constipation",
+          "dehydration"
+        ]
       },
       "freq": "common"
     }

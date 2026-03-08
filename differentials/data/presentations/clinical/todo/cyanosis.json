@@ -6,17 +6,45 @@
       "system": "Decreased Oxygen Saturation",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "relapsing"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "dull",
+          "aching"
+        ],
+        "timing": [
+          "episodic"
+        ],
+        "region": [
+          "retrosternal",
+          "lower-chest"
+        ],
+        "radiation": [
+          "chest"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "auscultation",
+          "orthostatic-blood-pressure"
+        ],
+        "other symptoms": [
+          "shortness-of-breath",
+          "cyanosis"
+        ]
       },
       "freq": "common"
     },
@@ -25,17 +53,45 @@
       "system": "Decreased Oxygen Saturation",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "dull",
+          "aching"
+        ],
+        "timing": [
+          "episodic"
+        ],
+        "region": [
+          "retrosternal",
+          "lower-chest"
+        ],
+        "radiation": [
+          "chest"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "auscultation",
+          "orthostatic-blood-pressure"
+        ],
+        "other symptoms": [
+          "shortness-of-breath",
+          "fever",
+          "dyspnea"
+        ]
       },
       "freq": "common"
     },
@@ -44,17 +100,45 @@
       "system": "Decreased Oxygen Saturation",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "dull",
+          "aching"
+        ],
+        "timing": [
+          "episodic"
+        ],
+        "region": [
+          "retrosternal",
+          "lower-chest"
+        ],
+        "radiation": [
+          "chest"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "auscultation",
+          "orthostatic-blood-pressure"
+        ],
+        "other symptoms": [
+          "shortness-of-breath",
+          "fever",
+          "dyspnea"
+        ]
       },
       "freq": "common"
     },
@@ -63,17 +147,45 @@
       "system": "Decreased Oxygen Saturation",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "relapsing"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "dull",
+          "aching"
+        ],
+        "timing": [
+          "episodic"
+        ],
+        "region": [
+          "retrosternal",
+          "lower-chest"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "auscultation",
+          "orthostatic-blood-pressure"
+        ],
+        "other symptoms": [
+          "shortness-of-breath",
+          "cyanosis"
+        ]
       },
       "freq": "common"
     },
@@ -82,17 +194,43 @@
       "system": "Abnormal Hemoglobin",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "dull",
+          "aching"
+        ],
+        "timing": [
+          "episodic"
+        ],
+        "region": [
+          "retrosternal",
+          "lower-chest"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "auscultation",
+          "orthostatic-blood-pressure"
+        ],
+        "other symptoms": [
+          "shortness-of-breath"
+        ]
       },
       "freq": "rare"
     },
@@ -101,17 +239,43 @@
       "system": "Abnormal Hemoglobin",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "dull",
+          "aching"
+        ],
+        "timing": [
+          "episodic"
+        ],
+        "region": [
+          "retrosternal",
+          "lower-chest"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "auscultation",
+          "orthostatic-blood-pressure"
+        ],
+        "other symptoms": [
+          "shortness-of-breath"
+        ]
       },
       "freq": "rare"
     },
@@ -120,17 +284,44 @@
       "system": "Peripheral Cyanosis",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "dull",
+          "aching"
+        ],
+        "timing": [
+          "episodic"
+        ],
+        "region": [
+          "retrosternal",
+          "lower-chest"
+        ],
+        "radiation": [
+          "chest"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "auscultation",
+          "orthostatic-blood-pressure"
+        ],
+        "other symptoms": [
+          "shortness-of-breath",
+          "dyspnea"
+        ]
       },
       "freq": "common"
     },
@@ -139,36 +330,91 @@
       "system": "Peripheral Cyanosis",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "dull",
+          "aching"
+        ],
+        "timing": [
+          "episodic"
+        ],
+        "region": [
+          "retrosternal",
+          "lower-chest"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "auscultation",
+          "orthostatic-blood-pressure"
+        ],
+        "other symptoms": [
+          "shortness-of-breath",
+          "cyanosis"
+        ]
       },
       "freq": "common"
     },
     {
-      "name": "Raynaud\u2019s phenomenon",
+      "name": "Raynaud’s phenomenon",
       "system": "Peripheral Cyanosis",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "relapsing"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "dull",
+          "aching"
+        ],
+        "timing": [
+          "episodic"
+        ],
+        "region": [
+          "retrosternal",
+          "lower-chest"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "auscultation",
+          "orthostatic-blood-pressure"
+        ],
+        "other symptoms": [
+          "shortness-of-breath",
+          "cyanosis"
+        ]
       },
       "freq": "common"
     },
@@ -177,17 +423,45 @@
       "system": "Peripheral Cyanosis",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "dull",
+          "aching"
+        ],
+        "timing": [
+          "episodic",
+          "constant"
+        ],
+        "region": [
+          "retrosternal",
+          "lower-chest"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "auscultation",
+          "orthostatic-blood-pressure"
+        ],
+        "other symptoms": [
+          "shortness-of-breath",
+          "cyanosis"
+        ]
       },
       "freq": "common"
     },
@@ -196,17 +470,45 @@
       "system": "Peripheral Cyanosis",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "dull",
+          "aching"
+        ],
+        "timing": [
+          "episodic",
+          "constant"
+        ],
+        "region": [
+          "retrosternal",
+          "lower-chest"
+        ],
+        "radiation": [
+          "legs"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "auscultation",
+          "orthostatic-blood-pressure"
+        ],
+        "other symptoms": [
+          "shortness-of-breath",
+          "cyanosis"
+        ]
       },
       "freq": "uncommon"
     },
@@ -215,17 +517,43 @@
       "system": "Peripheral Cyanosis",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "dull",
+          "aching"
+        ],
+        "timing": [
+          "episodic"
+        ],
+        "region": [
+          "retrosternal",
+          "lower-chest"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "auscultation",
+          "orthostatic-blood-pressure"
+        ],
+        "other symptoms": [
+          "shortness-of-breath"
+        ]
       },
       "freq": "uncommon"
     }

@@ -6,17 +6,41 @@
       "system": "General",
       "redFlag": false,
       "hpi": {
-        "onset": ["chronic", "insidious"],
-        "progression": ["worsening", "stable"],
-        "palliate": ["analgesics", "n/a"],
-        "provoke": ["defecation", "nsaids"],
-        "quality": ["sharp", "aching", "n/a"],
-        "timing": ["intermittent", "postprandial", "n/a"],
-        "region": ["suprapubic", "n/a"],
-        "radiation": ["n/a"],
-        "severity": ["mild", "moderate"],
-        "clinical tests": ["n/a"],
-        "other symptoms": ["anorectal-pain", "pruritus-ani", "constipation", "hematochezia", "malaise", "n/a"]
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "defecation"
+        ],
+        "quality": [
+          "colicky",
+          "tender"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "common"
     },
@@ -25,17 +49,43 @@
       "system": "General",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute", "sudden"],
-        "progression": ["worsening", "improving"],
-        "palliate": ["analgesics", "n/a"],
-        "provoke": ["defecation", "caffeine", "nsaids"],
-        "quality": ["sharp", "stabbing", "burning"],
-        "timing": ["intermittent"],
-        "region": ["suprapubic", "n/a"],
-        "radiation": ["n/a"],
-        "severity": ["moderate", "severe"],
-        "clinical tests": ["n/a"],
-        "other symptoms": ["anorectal-pain", "pruritus-ani", "constipation", "hematochezia", "n/a"]
+        "onset": [
+          "sudden",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "defecation"
+        ],
+        "quality": [
+          "colicky",
+          "tender"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "anal-canal",
+          "buttocks"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "constipation"
+        ]
       },
       "freq": "common"
     },
@@ -44,17 +94,44 @@
       "system": "Colon And Rectum",
       "redFlag": false,
       "hpi": {
-        "onset": ["insidious", "chronic"],
-        "progression": ["worsening"],
-        "palliate": ["n/a"],
-        "provoke": ["nsaids", "n/a"],
-        "quality": ["n/a"],
-        "timing": ["intermittent", "nocturnal", "n/a"],
-        "region": ["llq", "rlq", "suprapubic", "diffuse", "n/a"],
-        "radiation": ["back", "n/a"],
-        "severity": ["mild", "moderate", "severe"],
-        "clinical tests": ["n/a"],
-        "other symptoms": ["weight-loss", "anorexia", "fatigue", "constipation", "diarrhea", "abdominal-pain", "melena", "hematochezia", "fecal-incontinence", "n/a"]
+        "onset": [
+          "sudden",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "defecation"
+        ],
+        "quality": [
+          "colicky",
+          "tender"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "rectum",
+          "anal-canal"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate",
+          "severe"
+        ],
+        "clinical tests": [
+          "digital-rectal-exam"
+        ],
+        "other symptoms": [
+          "weight-loss"
+        ]
       },
       "freq": "common"
     },
@@ -63,17 +140,41 @@
       "system": "Colon And Rectum",
       "redFlag": false,
       "hpi": {
-        "onset": ["insidious", "chronic"],
-        "progression": ["stable", "worsening"],
-        "palliate": ["n/a"],
-        "provoke": ["defecation", "nsaids", "n/a"],
-        "quality": ["n/a"],
-        "timing": ["intermittent"],
-        "region": ["suprapubic", "n/a"],
-        "radiation": ["n/a"],
-        "severity": ["mild", "moderate"],
-        "clinical tests": ["n/a"],
-        "other symptoms": ["hematochezia", "constipation", "anorexia", "abdominal-pain", "n/a"]
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "defecation"
+        ],
+        "quality": [
+          "colicky",
+          "tender"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "rectum"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "common"
     },
@@ -82,36 +183,87 @@
       "system": "Colon And Rectum",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute", "sudden", "chronic"],
-        "progression": ["worsening", "stable"],
-        "palliate": ["rest", "analgesics", "n/a"],
-        "provoke": ["nsaids", "oral-intake", "defecation"],
-        "quality": ["cramping", "dull", "aching"],
-        "timing": ["intermittent", "postprandial"],
-        "region": ["llq", "diffuse"],
-        "radiation": ["back", "n/a"],
-        "severity": ["mild", "moderate", "severe"],
-        "clinical tests": ["rebound-tenderness", "guarding", "n/a"],
-        "other symptoms": ["abdominal-pain", "fever", "constipation", "diarrhea", "malaise", "hematochezia", "n/a"]
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "defecation"
+        ],
+        "quality": [
+          "colicky",
+          "tender"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "rectum",
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "diarrhea"
+        ]
       },
       "freq": "common"
     },
     {
-      "name": "In\ufb02ammatory bowel disease",
+      "name": "Inﬂammatory bowel disease",
       "system": "Colon And Rectum",
       "redFlag": false,
       "hpi": {
-        "onset": ["chronic", "insidious"],
-        "progression": ["worsening", "stable"],
-        "palliate": ["n/a"],
-        "provoke": ["nsaids", "stress", "n/a"],
-        "quality": ["cramping", "aching", "n/a"],
-        "timing": ["intermittent", "nocturnal"],
-        "region": ["diffuse", "llq", "rlq"],
-        "radiation": ["n/a"],
-        "severity": ["mild", "moderate", "severe"],
-        "clinical tests": ["n/a"],
-        "other symptoms": ["diarrhea", "abdominal-pain", "weight-loss", "fever", "malaise", "hematochezia", "n/a"]
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "defecation"
+        ],
+        "quality": [
+          "colicky",
+          "tender"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "rectum",
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "digital-rectal-exam"
+        ],
+        "other symptoms": [
+          "weight-loss",
+          "diarrhea"
+        ]
       },
       "freq": "uncommon"
     },
@@ -120,36 +272,91 @@
       "system": "Colon And Rectum",
       "redFlag": false,
       "hpi": {
-        "onset": ["chronic", "insidious"],
-        "progression": ["worsening", "stable"],
-        "palliate": ["n/a"],
-        "provoke": ["nsaids", "n/a"],
-        "quality": ["cramping", "n/a"],
-        "timing": ["intermittent", "nocturnal"],
-        "region": ["diffuse", "llq", "suprapubic"],
-        "radiation": ["n/a"],
-        "severity": ["mild", "moderate", "severe"],
-        "clinical tests": ["n/a"],
-        "other symptoms": ["diarrhea", "abdominal-pain", "weight-loss", "fever", "malaise", "hematochezia", "n/a"]
+        "onset": [
+          "sudden",
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "defecation"
+        ],
+        "quality": [
+          "colicky",
+          "tender",
+          "aching"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "rectum",
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "diarrhea",
+          "abdominal-pain"
+        ]
       },
       "freq": "uncommon"
     },
     {
-      "name": "Crohn\u2019s disease",
+      "name": "Crohn’s disease",
       "system": "Colon And Rectum",
       "redFlag": false,
       "hpi": {
-        "onset": ["chronic", "insidious"],
-        "progression": ["worsening", "stable"],
-        "palliate": ["n/a"],
-        "provoke": ["nsaids", "n/a"],
-        "quality": ["cramping", "aching"],
-        "timing": ["intermittent"],
-        "region": ["rlq", "diffuse"],
-        "radiation": ["n/a"],
-        "severity": ["mild", "moderate"],
-        "clinical tests": ["n/a"],
-        "other symptoms": ["diarrhea", "abdominal-pain", "weight-loss", "fever", "malaise", "fecal-incontinence", "hematochezia", "n/a"]
+        "onset": [
+          "sudden",
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "defecation"
+        ],
+        "quality": [
+          "colicky",
+          "tender",
+          "aching"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "rectum",
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "diarrhea"
+        ]
       },
       "freq": "uncommon"
     },
@@ -158,17 +365,44 @@
       "system": "Colon And Rectum",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute", "sudden", "subacute"],
-        "progression": ["worsening"],
-        "palliate": ["rest", "npo"],
-        "provoke": ["exercise", "nsaids", "n/a"],
-        "quality": ["cramping", "sharp"],
-        "timing": ["constant", "intermittent"],
-        "region": ["llq", "diffuse"],
-        "radiation": ["back", "n/a"],
-        "severity": ["moderate", "severe"],
-        "clinical tests": ["guarding", "rebound-tenderness", "n/a"],
-        "other symptoms": ["abdominal-pain", "diarrhea", "shock", "syncope", "hematochezia", "n/a"]
+        "onset": [
+          "sudden",
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "defecation"
+        ],
+        "quality": [
+          "colicky",
+          "tender",
+          "aching"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "rectum",
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "diarrhea"
+        ]
       },
       "freq": "uncommon"
     },
@@ -177,17 +411,44 @@
       "system": "Colon And Rectum",
       "redFlag": false,
       "hpi": {
-        "onset": ["chronic", "insidious"],
-        "progression": ["worsening", "stable"],
-        "palliate": ["rest", "n/a"],
-        "provoke": ["defecation", "straining", "n/a"],
-        "quality": ["dull", "aching", "n/a"],
-        "timing": ["intermittent"],
-        "region": ["suprapubic", "n/a"],
-        "radiation": ["n/a"],
-        "severity": ["mild", "moderate"],
-        "clinical tests": ["n/a"],
-        "other symptoms": ["fecal-incontinence", "constipation", "anorectal-pain", "hematochezia", "n/a"]
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "defecation"
+        ],
+        "quality": [
+          "colicky",
+          "tender"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "rectum",
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "catastrophic",
+          "severe"
+        ],
+        "clinical tests": [
+          "digital-rectal-exam"
+        ],
+        "other symptoms": [
+          "weight-loss",
+          "abdominal-pain"
+        ]
       },
       "freq": "uncommon"
     },
@@ -196,17 +457,41 @@
       "system": "Colon And Rectum",
       "redFlag": false,
       "hpi": {
-        "onset": ["chronic", "acute"],
-        "progression": ["worsening", "stable"],
-        "palliate": ["n/a"],
-        "provoke": ["nsaids", "n/a"],
-        "quality": ["n/a"],
-        "timing": ["intermittent", "episodic"],
-        "region": ["diffuse", "n/a"],
-        "radiation": ["n/a"],
-        "severity": ["mild", "moderate", "severe"],
-        "clinical tests": ["n/a"],
-        "other symptoms": ["hematochezia", "melena", "fatigue", "syncope", "n/a"]
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "defecation"
+        ],
+        "quality": [
+          "colicky",
+          "tender"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "rectum"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "rare"
     },
@@ -215,17 +500,45 @@
       "system": "Colon And Rectum",
       "redFlag": false,
       "hpi": {
-        "onset": ["subacute", "chronic"],
-        "progression": ["worsening", "stable"],
-        "palliate": ["n/a"],
-        "provoke": ["defecation", "n/a"],
-        "quality": ["burning", "aching"],
-        "timing": ["intermittent", "constant"],
-        "region": ["diffuse", "suprapubic"],
-        "radiation": ["n/a"],
-        "severity": ["mild", "moderate"],
-        "clinical tests": ["n/a"],
-        "other symptoms": ["diarrhea", "abdominal-pain", "anorectal-pain", "hematochezia", "n/a"]
+        "onset": [
+          "sudden",
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "defecation"
+        ],
+        "quality": [
+          "colicky",
+          "tender",
+          "aching"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "rectum",
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "diarrhea",
+          "abdominal-pain"
+        ]
       },
       "freq": "rare"
     },
@@ -234,36 +547,88 @@
       "system": "Colon And Rectum",
       "redFlag": false,
       "hpi": {
-        "onset": ["insidious", "chronic"],
-        "progression": ["worsening", "stable"],
-        "palliate": ["rest", "n/a"],
-        "provoke": ["defecation", "n/a"],
-        "quality": ["aching", "sharp"],
-        "timing": ["intermittent"],
-        "region": ["suprapubic", "n/a"],
-        "radiation": ["n/a"],
-        "severity": ["mild", "moderate"],
-        "clinical tests": ["n/a"],
-        "other symptoms": ["constipation", "mucus", "anorectal-pain", "hematochezia", "n/a"]
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "defecation"
+        ],
+        "quality": [
+          "colicky",
+          "tender"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "epigastrium",
+          "rectum"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "catastrophic",
+          "severe"
+        ],
+        "clinical tests": [
+          "digital-rectal-exam"
+        ],
+        "other symptoms": [
+          "weight-loss",
+          "diarrhea"
+        ]
       },
       "freq": "rare"
     },
     {
-      "name": "Meckel\u2019s diverticulum",
+      "name": "Meckel’s diverticulum",
       "system": "Small Bowel",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute", "subacute", "chronic"],
-        "progression": ["worsening", "stable"],
-        "palliate": ["n/a"],
-        "provoke": ["nsaids", "n/a"],
-        "quality": ["cramping", "n/a"],
-        "timing": ["intermittent", "episodic"],
-        "region": ["rlq", "periumbilical", "diffuse"],
-        "radiation": ["n/a"],
-        "severity": ["mild", "moderate", "severe"],
-        "clinical tests": ["n/a"],
-        "other symptoms": ["abdominal-pain", "hematochezia", "melena", "vomiting", "n/a"]
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "defecation"
+        ],
+        "quality": [
+          "colicky",
+          "tender"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "rectum",
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "digital-rectal-exam"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "uncommon"
     },
@@ -272,17 +637,41 @@
       "system": "Small Bowel",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute", "sudden"],
-        "progression": ["worsening"],
-        "palliate": ["n/a"],
-        "provoke": ["n/a"],
-        "quality": ["colicky", "cramping"],
-        "timing": ["intermittent", "episodic"],
-        "region": ["periumbilical", "rlq"],
-        "radiation": ["n/a"],
-        "severity": ["moderate", "severe"],
-        "clinical tests": ["guarding", "rebound-tenderness", "n/a"],
-        "other symptoms": ["abdominal-pain", "vomiting", "malaise", "hematochezia", "n/a"]
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "defecation"
+        ],
+        "quality": [
+          "colicky",
+          "tender"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "rectum"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "uncommon"
     },
@@ -291,36 +680,86 @@
       "system": "Small Bowel",
       "redFlag": false,
       "hpi": {
-        "onset": ["sudden", "acute"],
-        "progression": ["worsening"],
-        "palliate": ["npo"],
-        "provoke": ["exercise", "n/a"],
-        "quality": ["sharp", "tearing"],
-        "timing": ["constant"],
-        "region": ["diffuse", "periumbilical"],
-        "radiation": ["back"],
-        "severity": ["severe", "catastrophic"],
-        "clinical tests": ["guarding", "rebound-tenderness", "n/a"],
-        "other symptoms": ["abdominal-pain", "shock", "syncope", "vomiting", "hematochezia", "n/a"]
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "defecation"
+        ],
+        "quality": [
+          "colicky",
+          "tender"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "uncommon"
     },
     {
-      "name": "Aortoenteric \ufb01stula",
+      "name": "Aortoenteric ﬁstula",
       "system": "Small Bowel",
       "redFlag": false,
       "hpi": {
-        "onset": ["sudden", "acute"],
-        "progression": ["worsening"],
-        "palliate": ["n/a"],
-        "provoke": ["n/a"],
-        "quality": ["n/a"],
-        "timing": ["intermittent", "constant"],
-        "region": ["diffuse", "periumbilical"],
-        "radiation": ["back"],
-        "severity": ["catastrophic"],
-        "clinical tests": ["pulsatile-abdominal-mass", "n/a"],
-        "other symptoms": ["shock", "syncope", "abdominal-pain", "melena", "hematochezia", "n/a"]
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "defecation"
+        ],
+        "quality": [
+          "colicky",
+          "tender"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "diffuse"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "catastrophic",
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "shock",
+          "hypotension"
+        ]
       },
       "freq": "rare"
     },
@@ -329,17 +768,41 @@
       "system": "Upper Gastrointestinal Tract",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute", "sudden"],
-        "progression": ["worsening"],
-        "palliate": ["npo"],
-        "provoke": ["alcohol", "nsaids", "oral-intake"],
-        "quality": ["burning", "n/a"],
-        "timing": ["constant", "nocturnal"],
-        "region": ["epigastrium", "diffuse"],
-        "radiation": ["back", "n/a"],
-        "severity": ["severe", "catastrophic"],
-        "clinical tests": ["succussion-splash", "n/a"],
-        "other symptoms": ["hematemesis", "melena", "shock", "syncope", "abdominal-pain", "n/a"]
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "defecation"
+        ],
+        "quality": [
+          "colicky",
+          "tender"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "uncommon"
     },
@@ -348,17 +811,41 @@
       "system": "Other",
       "redFlag": false,
       "hpi": {
-        "onset": ["subacute", "chronic", "acute"],
-        "progression": ["worsening", "stable"],
-        "palliate": ["n/a"],
-        "provoke": ["nsaids", "alcohol", "n/a"],
-        "quality": ["n/a"],
-        "timing": ["intermittent", "constant"],
-        "region": ["n/a"],
-        "radiation": ["n/a"],
-        "severity": ["mild", "moderate", "severe"],
-        "clinical tests": ["n/a"],
-        "other symptoms": ["hematochezia", "melena", "epistaxis", "hematuria", "bruising", "n/a"]
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "defecation"
+        ],
+        "quality": [
+          "colicky",
+          "tender"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "uncommon"
     },
@@ -367,17 +854,42 @@
       "system": "Other",
       "redFlag": false,
       "hpi": {
-        "onset": ["insidious", "chronic", "acute"],
-        "progression": ["worsening", "stable"],
-        "palliate": ["n/a"],
-        "provoke": ["nsaids", "n/a"],
-        "quality": ["n/a"],
-        "timing": ["intermittent", "constant"],
-        "region": ["n/a"],
-        "radiation": ["n/a"],
-        "severity": ["mild", "moderate", "severe"],
-        "clinical tests": ["n/a"],
-        "other symptoms": ["hematochezia", "melena", "epistaxis", "hematuria", "malaise", "n/a"]
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "defecation"
+        ],
+        "quality": [
+          "colicky",
+          "tender"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "rectum",
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "weight-loss"
+        ]
       },
       "freq": "uncommon"
     }

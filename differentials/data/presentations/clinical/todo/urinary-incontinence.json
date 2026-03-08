@@ -6,17 +6,49 @@
       "system": "Pelvic Floor Injury",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic",
+          "relapsing",
+          "sudden"
+        ],
+        "progression": [
+          "stable"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "coughing",
+          "alcohol",
+          "stress"
+        ],
+        "quality": [
+          "colicky",
+          "pressure",
+          "sharp"
+        ],
+        "timing": [
+          "nocturnal",
+          "persistent",
+          "post-traumatic"
+        ],
+        "region": [
+          "suprapubic",
+          "flank"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "urine-dipstick",
+          "suprapubic-tenderness"
+        ],
+        "other symptoms": [
+          "dysuria"
+        ]
       },
       "freq": "common"
     },
@@ -25,17 +57,49 @@
       "system": "Pelvic Floor Injury",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic",
+          "relapsing",
+          "sudden"
+        ],
+        "progression": [
+          "stable"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "coughing",
+          "alcohol",
+          "pressure"
+        ],
+        "quality": [
+          "colicky",
+          "pressure",
+          "sharp"
+        ],
+        "timing": [
+          "nocturnal",
+          "persistent",
+          "post-traumatic"
+        ],
+        "region": [
+          "suprapubic",
+          "flank"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "urine-dipstick",
+          "suprapubic-tenderness"
+        ],
+        "other symptoms": [
+          "dysuria"
+        ]
       },
       "freq": "common"
     },
@@ -44,17 +108,49 @@
       "system": "Pelvic Floor Injury",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic",
+          "relapsing",
+          "sudden"
+        ],
+        "progression": [
+          "stable"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "coughing",
+          "alcohol",
+          "movement"
+        ],
+        "quality": [
+          "colicky",
+          "pressure",
+          "sharp"
+        ],
+        "timing": [
+          "nocturnal",
+          "persistent",
+          "post-traumatic"
+        ],
+        "region": [
+          "suprapubic",
+          "flank"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "urine-dipstick",
+          "suprapubic-tenderness"
+        ],
+        "other symptoms": [
+          "dysuria"
+        ]
       },
       "freq": "uncommon"
     },
@@ -63,17 +159,49 @@
       "system": "Pelvic Floor Injury",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic",
+          "relapsing",
+          "sudden"
+        ],
+        "progression": [
+          "stable"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "coughing",
+          "alcohol",
+          "movement"
+        ],
+        "quality": [
+          "colicky",
+          "pressure",
+          "sharp"
+        ],
+        "timing": [
+          "nocturnal",
+          "persistent",
+          "post-traumatic"
+        ],
+        "region": [
+          "suprapubic",
+          "flank"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "urine-dipstick",
+          "suprapubic-tenderness"
+        ],
+        "other symptoms": [
+          "dysuria"
+        ]
       },
       "freq": "uncommon"
     },
@@ -82,17 +210,47 @@
       "system": "Detrusor Instability",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic",
+          "relapsing"
+        ],
+        "progression": [
+          "stable"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "coughing",
+          "alcohol",
+          "caffeine"
+        ],
+        "quality": [
+          "colicky",
+          "pressure"
+        ],
+        "timing": [
+          "nocturnal",
+          "persistent"
+        ],
+        "region": [
+          "suprapubic",
+          "flank"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "urine-dipstick",
+          "suprapubic-tenderness"
+        ],
+        "other symptoms": [
+          "dysuria",
+          "constipation"
+        ]
       },
       "freq": "common"
     },
@@ -101,17 +259,48 @@
       "system": "Detrusor Instability",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic",
+          "relapsing"
+        ],
+        "progression": [
+          "stable"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "coughing",
+          "alcohol",
+          "caffeine"
+        ],
+        "quality": [
+          "colicky",
+          "pressure"
+        ],
+        "timing": [
+          "nocturnal",
+          "persistent"
+        ],
+        "region": [
+          "suprapubic",
+          "flank"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "urine-dipstick",
+          "suprapubic-tenderness"
+        ],
+        "other symptoms": [
+          "dysuria",
+          "constipation",
+          "nausea"
+        ]
       },
       "freq": "common"
     },
@@ -120,17 +309,46 @@
       "system": "Detrusor Instability",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic",
+          "relapsing"
+        ],
+        "progression": [
+          "stable"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "coughing",
+          "alcohol",
+          "caffeine"
+        ],
+        "quality": [
+          "colicky",
+          "pressure"
+        ],
+        "timing": [
+          "nocturnal",
+          "persistent"
+        ],
+        "region": [
+          "suprapubic",
+          "flank"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "urine-dipstick",
+          "suprapubic-tenderness"
+        ],
+        "other symptoms": [
+          "dysuria"
+        ]
       },
       "freq": "common"
     },
@@ -139,17 +357,46 @@
       "system": "Detrusor Instability",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic",
+          "relapsing"
+        ],
+        "progression": [
+          "stable"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "coughing",
+          "alcohol",
+          "urination"
+        ],
+        "quality": [
+          "colicky",
+          "pressure"
+        ],
+        "timing": [
+          "nocturnal",
+          "persistent"
+        ],
+        "region": [
+          "suprapubic",
+          "flank"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "urine-dipstick",
+          "suprapubic-tenderness"
+        ],
+        "other symptoms": [
+          "dysuria"
+        ]
       },
       "freq": "common"
     },
@@ -158,17 +405,46 @@
       "system": "Detrusor Instability",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic",
+          "relapsing"
+        ],
+        "progression": [
+          "stable"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "coughing",
+          "alcohol",
+          "urination"
+        ],
+        "quality": [
+          "colicky",
+          "pressure"
+        ],
+        "timing": [
+          "nocturnal",
+          "persistent"
+        ],
+        "region": [
+          "suprapubic",
+          "flank"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "urine-dipstick",
+          "suprapubic-tenderness"
+        ],
+        "other symptoms": [
+          "dysuria"
+        ]
       },
       "freq": "common"
     },
@@ -177,17 +453,46 @@
       "system": "Detrusor Instability",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic",
+          "relapsing"
+        ],
+        "progression": [
+          "stable"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "coughing",
+          "alcohol",
+          "urination"
+        ],
+        "quality": [
+          "colicky",
+          "pressure"
+        ],
+        "timing": [
+          "nocturnal",
+          "persistent"
+        ],
+        "region": [
+          "suprapubic",
+          "flank"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "urine-dipstick",
+          "suprapubic-tenderness"
+        ],
+        "other symptoms": [
+          "dysuria"
+        ]
       },
       "freq": "uncommon"
     },
@@ -196,17 +501,50 @@
       "system": "Detrusor Instability",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic",
+          "relapsing",
+          "acute"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "coughing",
+          "alcohol",
+          "caffeine"
+        ],
+        "quality": [
+          "colicky",
+          "pressure"
+        ],
+        "timing": [
+          "nocturnal",
+          "persistent"
+        ],
+        "region": [
+          "suprapubic",
+          "flank"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "urine-dipstick",
+          "suprapubic-tenderness"
+        ],
+        "other symptoms": [
+          "dysuria",
+          "fever",
+          "malaise"
+        ]
       },
       "freq": "uncommon"
     },
@@ -215,17 +553,46 @@
       "system": "Detrusor Instability",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic",
+          "relapsing"
+        ],
+        "progression": [
+          "stable"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "coughing",
+          "alcohol",
+          "urination"
+        ],
+        "quality": [
+          "colicky",
+          "pressure"
+        ],
+        "timing": [
+          "nocturnal",
+          "persistent"
+        ],
+        "region": [
+          "suprapubic",
+          "flank"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "urine-dipstick",
+          "suprapubic-tenderness"
+        ],
+        "other symptoms": [
+          "dysuria"
+        ]
       },
       "freq": "uncommon"
     },
@@ -234,17 +601,50 @@
       "system": "Detrusor Instability",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic",
+          "relapsing",
+          "insidious"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "coughing",
+          "alcohol",
+          "urination"
+        ],
+        "quality": [
+          "colicky",
+          "pressure"
+        ],
+        "timing": [
+          "nocturnal",
+          "persistent"
+        ],
+        "region": [
+          "suprapubic",
+          "flank"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate",
+          "severe"
+        ],
+        "clinical tests": [
+          "urine-dipstick",
+          "suprapubic-tenderness"
+        ],
+        "other symptoms": [
+          "dysuria",
+          "weight-loss"
+        ]
       },
       "freq": "uncommon"
     },
@@ -253,17 +653,49 @@
       "system": "Lower Motor Neurone Lesions",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic",
+          "relapsing",
+          "gradual"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "coughing",
+          "alcohol",
+          "urination"
+        ],
+        "quality": [
+          "colicky",
+          "pressure"
+        ],
+        "timing": [
+          "nocturnal",
+          "persistent"
+        ],
+        "region": [
+          "suprapubic",
+          "flank"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "urine-dipstick",
+          "suprapubic-tenderness",
+          "motor-strength-testing"
+        ],
+        "other symptoms": [
+          "dysuria"
+        ]
       },
       "freq": "common"
     },
@@ -272,17 +704,53 @@
       "system": "Lower Motor Neurone Lesions",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic",
+          "relapsing",
+          "sudden"
+        ],
+        "progression": [
+          "stable"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "coughing",
+          "alcohol",
+          "stress"
+        ],
+        "quality": [
+          "colicky",
+          "pressure",
+          "sharp"
+        ],
+        "timing": [
+          "nocturnal",
+          "persistent",
+          "post-traumatic"
+        ],
+        "region": [
+          "suprapubic",
+          "flank"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "urine-dipstick",
+          "suprapubic-tenderness",
+          "motor-strength-testing"
+        ],
+        "other symptoms": [
+          "dysuria",
+          "stroke-symptoms",
+          "numbness",
+          "paresthesia"
+        ]
       },
       "freq": "rare"
     },
@@ -291,17 +759,50 @@
       "system": "Lower Motor Neurone Lesions",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic",
+          "relapsing",
+          "sudden"
+        ],
+        "progression": [
+          "stable"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "coughing",
+          "alcohol",
+          "stress"
+        ],
+        "quality": [
+          "colicky",
+          "pressure",
+          "sharp"
+        ],
+        "timing": [
+          "nocturnal",
+          "persistent",
+          "post-traumatic"
+        ],
+        "region": [
+          "suprapubic",
+          "flank"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "urine-dipstick",
+          "suprapubic-tenderness"
+        ],
+        "other symptoms": [
+          "dysuria",
+          "stroke-symptoms"
+        ]
       },
       "freq": "rare"
     },
@@ -310,17 +811,50 @@
       "system": "Chronic Outflow Obstruction",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic",
+          "relapsing"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "coughing",
+          "alcohol",
+          "urination"
+        ],
+        "quality": [
+          "colicky",
+          "pressure"
+        ],
+        "timing": [
+          "nocturnal",
+          "persistent",
+          "constant"
+        ],
+        "region": [
+          "suprapubic",
+          "flank"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "urine-dipstick",
+          "suprapubic-tenderness",
+          "digital-rectal-exam"
+        ],
+        "other symptoms": [
+          "dysuria",
+          "urinary-incontinence"
+        ]
       },
       "freq": "common"
     },
@@ -329,17 +863,48 @@
       "system": "Upper Motor Neurone Lesion",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic",
+          "relapsing"
+        ],
+        "progression": [
+          "stable"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "coughing",
+          "alcohol",
+          "urination"
+        ],
+        "quality": [
+          "colicky",
+          "pressure"
+        ],
+        "timing": [
+          "nocturnal",
+          "persistent"
+        ],
+        "region": [
+          "suprapubic",
+          "flank"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "urine-dipstick",
+          "suprapubic-tenderness",
+          "motor-strength-testing"
+        ],
+        "other symptoms": [
+          "dysuria",
+          "stroke-symptoms"
+        ]
       },
       "freq": "common"
     },
@@ -348,17 +913,49 @@
       "system": "Upper Motor Neurone Lesion",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic",
+          "relapsing",
+          "sudden"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "coughing",
+          "alcohol",
+          "urination"
+        ],
+        "quality": [
+          "colicky",
+          "pressure"
+        ],
+        "timing": [
+          "nocturnal",
+          "persistent"
+        ],
+        "region": [
+          "suprapubic",
+          "flank"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "urine-dipstick",
+          "suprapubic-tenderness"
+        ],
+        "other symptoms": [
+          "dysuria",
+          "stroke-symptoms"
+        ]
       },
       "freq": "common"
     },
@@ -367,17 +964,50 @@
       "system": "Upper Motor Neurone Lesion",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic",
+          "relapsing",
+          "sudden"
+        ],
+        "progression": [
+          "stable"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "coughing",
+          "alcohol",
+          "stress"
+        ],
+        "quality": [
+          "colicky",
+          "pressure",
+          "sharp"
+        ],
+        "timing": [
+          "nocturnal",
+          "persistent",
+          "post-traumatic"
+        ],
+        "region": [
+          "suprapubic",
+          "flank"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "urine-dipstick",
+          "suprapubic-tenderness"
+        ],
+        "other symptoms": [
+          "dysuria",
+          "stroke-symptoms"
+        ]
       },
       "freq": "uncommon"
     },
@@ -386,17 +1016,52 @@
       "system": "Upper Motor Neurone Lesion",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic",
+          "relapsing",
+          "sudden"
+        ],
+        "progression": [
+          "stable"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "coughing",
+          "alcohol",
+          "stress"
+        ],
+        "quality": [
+          "colicky",
+          "pressure",
+          "sharp"
+        ],
+        "timing": [
+          "nocturnal",
+          "persistent",
+          "post-traumatic"
+        ],
+        "region": [
+          "suprapubic",
+          "flank"
+        ],
+        "radiation": [
+          "legs"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "urine-dipstick",
+          "suprapubic-tenderness",
+          "motor-strength-testing"
+        ],
+        "other symptoms": [
+          "dysuria",
+          "limb-weakness",
+          "stroke-symptoms"
+        ]
       },
       "freq": "uncommon"
     },
@@ -405,36 +1070,101 @@
       "system": "Upper Motor Neurone Lesion",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic",
+          "relapsing",
+          "insidious"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "coughing",
+          "alcohol",
+          "urination"
+        ],
+        "quality": [
+          "colicky",
+          "pressure"
+        ],
+        "timing": [
+          "nocturnal",
+          "persistent"
+        ],
+        "region": [
+          "suprapubic",
+          "flank"
+        ],
+        "radiation": [
+          "legs"
+        ],
+        "severity": [
+          "moderate",
+          "severe"
+        ],
+        "clinical tests": [
+          "urine-dipstick",
+          "suprapubic-tenderness",
+          "motor-strength-testing"
+        ],
+        "other symptoms": [
+          "dysuria",
+          "limb-weakness",
+          "weight-loss"
+        ]
       },
       "freq": "uncommon"
     },
     {
-      "name": "Parkinson\u2019s disease",
+      "name": "Parkinson’s disease",
       "system": "Upper Motor Neurone Lesion",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic",
+          "relapsing"
+        ],
+        "progression": [
+          "stable"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "coughing",
+          "alcohol",
+          "urination"
+        ],
+        "quality": [
+          "colicky",
+          "pressure"
+        ],
+        "timing": [
+          "nocturnal",
+          "persistent"
+        ],
+        "region": [
+          "suprapubic",
+          "flank"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "urine-dipstick",
+          "suprapubic-tenderness"
+        ],
+        "other symptoms": [
+          "dysuria",
+          "stroke-symptoms"
+        ]
       },
       "freq": "uncommon"
     },
@@ -443,17 +1173,47 @@
       "system": "Upper Motor Neurone Lesion",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic",
+          "relapsing"
+        ],
+        "progression": [
+          "stable"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "coughing",
+          "alcohol",
+          "stress"
+        ],
+        "quality": [
+          "colicky",
+          "pressure"
+        ],
+        "timing": [
+          "nocturnal",
+          "persistent"
+        ],
+        "region": [
+          "suprapubic",
+          "flank"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "urine-dipstick",
+          "suprapubic-tenderness"
+        ],
+        "other symptoms": [
+          "dysuria",
+          "stroke-symptoms"
+        ]
       },
       "freq": "uncommon"
     },
@@ -462,17 +1222,47 @@
       "system": "Upper Motor Neurone Lesion",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic",
+          "relapsing"
+        ],
+        "progression": [
+          "stable"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "coughing",
+          "alcohol",
+          "urination"
+        ],
+        "quality": [
+          "colicky",
+          "pressure"
+        ],
+        "timing": [
+          "nocturnal",
+          "persistent"
+        ],
+        "region": [
+          "suprapubic",
+          "flank"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "urine-dipstick",
+          "suprapubic-tenderness"
+        ],
+        "other symptoms": [
+          "dysuria",
+          "stroke-symptoms"
+        ]
       },
       "freq": "rare"
     },
@@ -481,17 +1271,46 @@
       "system": "Anatomical",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic",
+          "relapsing"
+        ],
+        "progression": [
+          "stable"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "coughing",
+          "alcohol",
+          "urination"
+        ],
+        "quality": [
+          "colicky",
+          "pressure"
+        ],
+        "timing": [
+          "nocturnal",
+          "persistent"
+        ],
+        "region": [
+          "suprapubic",
+          "flank"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "urine-dipstick",
+          "suprapubic-tenderness"
+        ],
+        "other symptoms": [
+          "dysuria"
+        ]
       },
       "freq": "rare"
     },
@@ -500,36 +1319,94 @@
       "system": "Anatomical",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic",
+          "relapsing"
+        ],
+        "progression": [
+          "stable"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "coughing",
+          "alcohol",
+          "urination"
+        ],
+        "quality": [
+          "colicky",
+          "pressure"
+        ],
+        "timing": [
+          "nocturnal",
+          "persistent"
+        ],
+        "region": [
+          "suprapubic",
+          "flank"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "urine-dipstick",
+          "suprapubic-tenderness"
+        ],
+        "other symptoms": [
+          "dysuria"
+        ]
       },
       "freq": "rare"
     },
     {
-      "name": "Vesicovaginal \ufb01stula",
+      "name": "Vesicovaginal ﬁstula",
       "system": "Anatomical",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic",
+          "relapsing"
+        ],
+        "progression": [
+          "stable"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "coughing",
+          "alcohol",
+          "urination"
+        ],
+        "quality": [
+          "colicky",
+          "pressure"
+        ],
+        "timing": [
+          "nocturnal",
+          "persistent"
+        ],
+        "region": [
+          "suprapubic",
+          "flank"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "urine-dipstick",
+          "suprapubic-tenderness"
+        ],
+        "other symptoms": [
+          "dysuria"
+        ]
       },
       "freq": "rare"
     },
@@ -538,17 +1415,47 @@
       "system": "Anatomical",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic",
+          "relapsing"
+        ],
+        "progression": [
+          "stable"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "coughing",
+          "alcohol",
+          "urination"
+        ],
+        "quality": [
+          "colicky",
+          "pressure"
+        ],
+        "timing": [
+          "nocturnal",
+          "persistent"
+        ],
+        "region": [
+          "suprapubic",
+          "flank"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "urine-dipstick",
+          "suprapubic-tenderness",
+          "digital-rectal-exam"
+        ],
+        "other symptoms": [
+          "dysuria"
+        ]
       },
       "freq": "common"
     },
@@ -557,17 +1464,47 @@
       "system": "Anatomical",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic",
+          "relapsing"
+        ],
+        "progression": [
+          "stable"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "coughing",
+          "alcohol",
+          "urination"
+        ],
+        "quality": [
+          "colicky",
+          "pressure"
+        ],
+        "timing": [
+          "nocturnal",
+          "persistent"
+        ],
+        "region": [
+          "suprapubic",
+          "flank"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "urine-dipstick",
+          "suprapubic-tenderness"
+        ],
+        "other symptoms": [
+          "dysuria",
+          "nausea"
+        ]
       },
       "freq": "common"
     }

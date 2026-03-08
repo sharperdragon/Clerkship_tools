@@ -6,17 +6,47 @@
       "system": "Infective",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "exercise",
+          "exertion"
+        ],
+        "quality": [
+          "burning",
+          "sharp"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "neck"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe",
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation"
+        ],
+        "other symptoms": [
+          "odynophagia",
+          "sore-throat",
+          "fever",
+          "malaise"
+        ]
       },
       "freq": "common"
     },
@@ -25,17 +55,46 @@
       "system": "Infective",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "exercise",
+          "exertion"
+        ],
+        "quality": [
+          "burning",
+          "sharp"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "neck"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation"
+        ],
+        "other symptoms": [
+          "odynophagia",
+          "sore-throat",
+          "fever",
+          "malaise"
+        ]
       },
       "freq": "common"
     },
@@ -44,17 +103,46 @@
       "system": "Infective",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "exercise",
+          "exertion"
+        ],
+        "quality": [
+          "burning",
+          "sharp"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "neck"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation"
+        ],
+        "other symptoms": [
+          "odynophagia",
+          "sore-throat",
+          "fever",
+          "reflux-symptoms"
+        ]
       },
       "freq": "uncommon"
     },
@@ -63,17 +151,48 @@
       "system": "Infective",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "subacute",
+          "chronic"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "exercise",
+          "exertion"
+        ],
+        "quality": [
+          "burning",
+          "sharp",
+          "heaviness"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "neck"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation"
+        ],
+        "other symptoms": [
+          "odynophagia",
+          "sore-throat",
+          "fever",
+          "malaise"
+        ]
       },
       "freq": "common"
     },
@@ -82,17 +201,46 @@
       "system": "Infective",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "exercise",
+          "exertion"
+        ],
+        "quality": [
+          "burning",
+          "sharp"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "neck"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation"
+        ],
+        "other symptoms": [
+          "odynophagia",
+          "sore-throat",
+          "fever",
+          "malaise"
+        ]
       },
       "freq": "rare"
     },
@@ -101,17 +249,46 @@
       "system": "Infective",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "exercise",
+          "exertion"
+        ],
+        "quality": [
+          "burning",
+          "sharp"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "neck"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation"
+        ],
+        "other symptoms": [
+          "odynophagia",
+          "sore-throat",
+          "fever",
+          "malaise"
+        ]
       },
       "freq": "rare"
     },
@@ -120,17 +297,46 @@
       "system": "Infective",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "exercise",
+          "exertion"
+        ],
+        "quality": [
+          "burning",
+          "sharp"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "neck"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation"
+        ],
+        "other symptoms": [
+          "odynophagia",
+          "sore-throat",
+          "fever",
+          "malaise"
+        ]
       },
       "freq": "rare"
     },
@@ -139,17 +345,51 @@
       "system": "Inflammatory",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "subacute",
+          "chronic"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "exercise",
+          "exertion",
+          "oral-intake"
+        ],
+        "quality": [
+          "burning",
+          "sharp",
+          "tender"
+        ],
+        "timing": [
+          "persistent",
+          "intermittent"
+        ],
+        "region": [
+          "neck",
+          "diffuse"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation"
+        ],
+        "other symptoms": [
+          "odynophagia",
+          "sore-throat",
+          "fever",
+          "malaise"
+        ]
       },
       "freq": "rare"
     },
@@ -158,17 +398,48 @@
       "system": "Neoplastic",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "subacute",
+          "insidious"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "exercise",
+          "exertion",
+          "oral-intake"
+        ],
+        "quality": [
+          "burning",
+          "sharp"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "neck"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate",
+          "severe"
+        ],
+        "clinical tests": [
+          "palpation"
+        ],
+        "other symptoms": [
+          "odynophagia",
+          "sore-throat",
+          "weight-loss"
+        ]
       },
       "freq": "rare"
     },
@@ -177,17 +448,45 @@
       "system": "Neoplastic",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "stable"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "exercise",
+          "exertion"
+        ],
+        "quality": [
+          "burning",
+          "sharp"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "neck"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "palpation"
+        ],
+        "other symptoms": [
+          "odynophagia",
+          "sore-throat",
+          "fever",
+          "malaise"
+        ]
       },
       "freq": "rare"
     },
@@ -196,36 +495,93 @@
       "system": "Neoplastic",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "stable"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "exercise",
+          "exertion",
+          "oral-intake"
+        ],
+        "quality": [
+          "burning",
+          "sharp",
+          "stabbing"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "neck"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation"
+        ],
+        "other symptoms": [
+          "odynophagia",
+          "sore-throat"
+        ]
       },
       "freq": "rare"
     },
     {
-      "name": "Larynx \u2022 (common in Far East including Hong Kong",
+      "name": "Larynx • (common in Far East including Hong Kong",
       "system": "Neoplastic",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "stable"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "exercise",
+          "exertion"
+        ],
+        "quality": [
+          "burning",
+          "sharp"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "neck"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "palpation",
+          "digital-rectal-exam"
+        ],
+        "other symptoms": [
+          "odynophagia",
+          "sore-throat",
+          "fever",
+          "malaise"
+        ]
       },
       "freq": "rare"
     },
@@ -234,17 +590,44 @@
       "system": "Neoplastic",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "stable"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "exercise",
+          "exertion"
+        ],
+        "quality": [
+          "burning",
+          "sharp"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "neck"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation",
+          "digital-rectal-exam"
+        ],
+        "other symptoms": [
+          "odynophagia",
+          "sore-throat"
+        ]
       },
       "freq": "rare"
     },
@@ -253,17 +636,43 @@
       "system": "Referred",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "stable"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "exercise",
+          "exertion"
+        ],
+        "quality": [
+          "burning",
+          "sharp"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "neck"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation"
+        ],
+        "other symptoms": [
+          "odynophagia",
+          "sore-throat"
+        ]
       },
       "freq": "common"
     },
@@ -272,17 +681,46 @@
       "system": "Referred",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "stable"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "exercise",
+          "exertion"
+        ],
+        "quality": [
+          "burning",
+          "sharp"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "neck",
+          "diffuse"
+        ],
+        "radiation": [
+          "chest",
+          "jaw"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation"
+        ],
+        "other symptoms": [
+          "odynophagia",
+          "sore-throat",
+          "chest-pain"
+        ]
       },
       "freq": "common"
     },
@@ -291,17 +729,43 @@
       "system": "Referred",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "stable"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "exercise",
+          "exertion"
+        ],
+        "quality": [
+          "burning",
+          "sharp"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "neck"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation"
+        ],
+        "other symptoms": [
+          "odynophagia",
+          "sore-throat"
+        ]
       },
       "freq": "common"
     },
@@ -310,17 +774,46 @@
       "system": "Referred",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "subacute",
+          "chronic"
+        ],
+        "progression": [
+          "stable"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "exercise",
+          "exertion"
+        ],
+        "quality": [
+          "burning",
+          "sharp",
+          "heaviness"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "neck",
+          "fingers"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation"
+        ],
+        "other symptoms": [
+          "odynophagia",
+          "sore-throat"
+        ]
       },
       "freq": "common"
     },
@@ -329,36 +822,93 @@
       "system": "Referred",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "stable"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "exercise",
+          "exertion"
+        ],
+        "quality": [
+          "burning",
+          "sharp"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "neck"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation"
+        ],
+        "other symptoms": [
+          "odynophagia",
+          "sore-throat",
+          "reflux-symptoms",
+          "heartburn"
+        ]
       },
       "freq": "uncommon"
     },
     {
-      "name": "Re\ufb02ux oesophagitis",
+      "name": "Reﬂux oesophagitis",
       "system": "Referred",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "stable"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "exercise",
+          "exertion"
+        ],
+        "quality": [
+          "burning",
+          "sharp"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "neck",
+          "lower-chest"
+        ],
+        "radiation": [
+          "chest"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation"
+        ],
+        "other symptoms": [
+          "odynophagia",
+          "sore-throat",
+          "reflux-symptoms",
+          "heartburn"
+        ]
       },
       "freq": "common"
     },
@@ -367,17 +917,46 @@
       "system": "Referred",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "stable"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "exercise",
+          "exertion"
+        ],
+        "quality": [
+          "burning",
+          "sharp"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "neck",
+          "lower-chest"
+        ],
+        "radiation": [
+          "chest"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation"
+        ],
+        "other symptoms": [
+          "odynophagia",
+          "sore-throat",
+          "fever",
+          "weight-loss"
+        ]
       },
       "freq": "uncommon"
     }

@@ -6,17 +6,43 @@
       "system": "Sudden (seconds To Minutes)",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "elevation"
+        ],
+        "provoke": [
+          "coughing",
+          "exercise",
+          "exertion"
+        ],
+        "quality": [
+          "dull"
+        ],
+        "timing": [
+          "nocturnal"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "dyspnea",
+          "shortness-of-breath"
+        ]
       },
       "freq": "common"
     },
@@ -25,17 +51,46 @@
       "system": "Sudden (seconds To Minutes)",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "elevation"
+        ],
+        "provoke": [
+          "coughing",
+          "exercise",
+          "movement"
+        ],
+        "quality": [
+          "dull",
+          "sharp"
+        ],
+        "timing": [
+          "nocturnal",
+          "post-traumatic"
+        ],
+        "region": [
+          "face",
+          "lower-chest"
+        ],
+        "radiation": [
+          "chest"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "cough",
+          "dyspnea"
+        ]
       },
       "freq": "common"
     },
@@ -44,17 +99,41 @@
       "system": "Sudden (seconds To Minutes)",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "elevation"
+        ],
+        "provoke": [
+          "coughing",
+          "exercise"
+        ],
+        "quality": [
+          "dull"
+        ],
+        "timing": [
+          "nocturnal"
+        ],
+        "region": [
+          "lower-chest"
+        ],
+        "radiation": [
+          "chest"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "vomiting"
+        ]
       },
       "freq": "common"
     },
@@ -63,17 +142,44 @@
       "system": "Sudden (seconds To Minutes)",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "elevation"
+        ],
+        "provoke": [
+          "coughing",
+          "exercise",
+          "exertion"
+        ],
+        "quality": [
+          "dull"
+        ],
+        "timing": [
+          "nocturnal"
+        ],
+        "region": [
+          "lower-chest"
+        ],
+        "radiation": [
+          "chest"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "auscultation"
+        ],
+        "other symptoms": [
+          "dyspnea",
+          "shortness-of-breath"
+        ]
       },
       "freq": "common"
     },
@@ -82,17 +188,44 @@
       "system": "Sudden (seconds To Minutes)",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "elevation"
+        ],
+        "provoke": [
+          "coughing",
+          "exercise",
+          "exertion"
+        ],
+        "quality": [
+          "dull"
+        ],
+        "timing": [
+          "nocturnal"
+        ],
+        "region": [
+          "lower-chest"
+        ],
+        "radiation": [
+          "chest"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "auscultation"
+        ],
+        "other symptoms": [
+          "dyspnea",
+          "shortness-of-breath"
+        ]
       },
       "freq": "common"
     },
@@ -101,17 +234,42 @@
       "system": "Sudden (seconds To Minutes)",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "hours"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "elevation"
+        ],
+        "provoke": [
+          "coughing",
+          "exercise"
+        ],
+        "quality": [
+          "dull"
+        ],
+        "timing": [
+          "nocturnal"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "auscultation"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "uncommon"
     },
@@ -120,17 +278,44 @@
       "system": "Acute (hours To Days)",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "elevation"
+        ],
+        "provoke": [
+          "coughing",
+          "exercise"
+        ],
+        "quality": [
+          "dull"
+        ],
+        "timing": [
+          "nocturnal"
+        ],
+        "region": [
+          "lower-chest"
+        ],
+        "radiation": [
+          "chest"
+        ],
+        "severity": [
+          "catastrophic",
+          "severe"
+        ],
+        "clinical tests": [
+          "auscultation"
+        ],
+        "other symptoms": [
+          "dyspnea",
+          "shortness-of-breath"
+        ]
       },
       "freq": "common"
     },
@@ -139,17 +324,45 @@
       "system": "Acute (hours To Days)",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "elevation"
+        ],
+        "provoke": [
+          "coughing",
+          "exercise"
+        ],
+        "quality": [
+          "dull"
+        ],
+        "timing": [
+          "nocturnal"
+        ],
+        "region": [
+          "lower-chest"
+        ],
+        "radiation": [
+          "chest"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "cough",
+          "dyspnea",
+          "fever",
+          "malaise"
+        ]
       },
       "freq": "common"
     },
@@ -158,36 +371,89 @@
       "system": "Acute (hours To Days)",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "elevation"
+        ],
+        "provoke": [
+          "coughing",
+          "exercise"
+        ],
+        "quality": [
+          "dull"
+        ],
+        "timing": [
+          "nocturnal"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "catastrophic",
+          "severe"
+        ],
+        "clinical tests": [
+          "percussion"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "common"
     },
     {
-      "name": "Chronic air\ufb02ow limitation (COPD)",
+      "name": "Chronic airﬂow limitation (COPD)",
       "system": "Chronic (months To Years)",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "elevation"
+        ],
+        "provoke": [
+          "coughing",
+          "exercise"
+        ],
+        "quality": [
+          "dull"
+        ],
+        "timing": [
+          "nocturnal"
+        ],
+        "region": [
+          "face",
+          "lower-chest"
+        ],
+        "radiation": [
+          "chest"
+        ],
+        "severity": [
+          "catastrophic",
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "dyspnea",
+          "shortness-of-breath"
+        ]
       },
       "freq": "common"
     },
@@ -196,17 +462,41 @@
       "system": "Chronic (months To Years)",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "elevation"
+        ],
+        "provoke": [
+          "coughing",
+          "exercise"
+        ],
+        "quality": [
+          "dull"
+        ],
+        "timing": [
+          "nocturnal"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "common"
     },
@@ -215,17 +505,42 @@
       "system": "Chronic (months To Years)",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "elevation"
+        ],
+        "provoke": [
+          "coughing",
+          "exercise"
+        ],
+        "quality": [
+          "dull"
+        ],
+        "timing": [
+          "nocturnal"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "dyspnea",
+          "shortness-of-breath"
+        ]
       },
       "freq": "common"
     },
@@ -234,17 +549,44 @@
       "system": "Chronic (months To Years)",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "elevation"
+        ],
+        "provoke": [
+          "coughing",
+          "exercise"
+        ],
+        "quality": [
+          "dull"
+        ],
+        "timing": [
+          "nocturnal"
+        ],
+        "region": [
+          "lower-chest"
+        ],
+        "radiation": [
+          "chest"
+        ],
+        "severity": [
+          "catastrophic",
+          "severe"
+        ],
+        "clinical tests": [
+          "auscultation"
+        ],
+        "other symptoms": [
+          "dyspnea",
+          "shortness-of-breath"
+        ]
       },
       "freq": "common"
     },
@@ -253,55 +595,134 @@
       "system": "Chronic (months To Years)",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "elevation"
+        ],
+        "provoke": [
+          "coughing",
+          "exercise",
+          "lying-down"
+        ],
+        "quality": [
+          "dull"
+        ],
+        "timing": [
+          "nocturnal"
+        ],
+        "region": [
+          "lower-chest"
+        ],
+        "radiation": [
+          "chest"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "dyspnea",
+          "shortness-of-breath"
+        ]
       },
       "freq": "common"
     },
     {
-      "name": "Cystic \ufb01brosis",
+      "name": "Cystic ﬁbrosis",
       "system": "Chronic (months To Years)",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "elevation"
+        ],
+        "provoke": [
+          "coughing",
+          "exercise"
+        ],
+        "quality": [
+          "dull"
+        ],
+        "timing": [
+          "nocturnal"
+        ],
+        "region": [
+          "lower-chest"
+        ],
+        "radiation": [
+          "chest"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "dyspnea",
+          "shortness-of-breath"
+        ]
       },
       "freq": "uncommon"
     },
     {
-      "name": "Idiopathic pulmonary \ufb01brosis",
+      "name": "Idiopathic pulmonary ﬁbrosis",
       "system": "Chronic (months To Years)",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "elevation"
+        ],
+        "provoke": [
+          "coughing",
+          "exercise",
+          "exertion"
+        ],
+        "quality": [
+          "dull"
+        ],
+        "timing": [
+          "nocturnal"
+        ],
+        "region": [
+          "lower-chest"
+        ],
+        "radiation": [
+          "chest"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "auscultation"
+        ],
+        "other symptoms": [
+          "dyspnea",
+          "shortness-of-breath"
+        ]
       },
       "freq": "uncommon"
     },
@@ -310,17 +731,43 @@
       "system": "Chronic (months To Years)",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "elevation"
+        ],
+        "provoke": [
+          "coughing",
+          "exercise"
+        ],
+        "quality": [
+          "dull"
+        ],
+        "timing": [
+          "nocturnal"
+        ],
+        "region": [
+          "face",
+          "lower-chest"
+        ],
+        "radiation": [
+          "chest"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "cough",
+          "dyspnea"
+        ]
       },
       "freq": "rare"
     },
@@ -329,17 +776,41 @@
       "system": "Chronic (months To Years)",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "elevation"
+        ],
+        "provoke": [
+          "coughing",
+          "exercise"
+        ],
+        "quality": [
+          "dull"
+        ],
+        "timing": [
+          "nocturnal"
+        ],
+        "region": [
+          "lower-chest"
+        ],
+        "radiation": [
+          "chest"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "rare"
     },
@@ -348,17 +819,46 @@
       "system": "Chronic (months To Years)",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "elevation"
+        ],
+        "provoke": [
+          "coughing",
+          "exercise",
+          "exertion"
+        ],
+        "quality": [
+          "dull"
+        ],
+        "timing": [
+          "nocturnal"
+        ],
+        "region": [
+          "lower-chest"
+        ],
+        "radiation": [
+          "chest"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "auscultation"
+        ],
+        "other symptoms": [
+          "dyspnea",
+          "shortness-of-breath",
+          "headache"
+        ]
       },
       "freq": "rare"
     }

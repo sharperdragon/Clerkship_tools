@@ -2,78 +2,187 @@
   "presentation": "Steatorrhea",
   "items": [
     {
-      "name": "Impaired secretion \u2013 chronic pancreatitis",
+      "name": "Impaired secretion – chronic pancreatitis",
       "system": "Lipase Deficiency",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "cramping",
+          "tender"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen",
+          "epigastrium"
+        ],
+        "radiation": [
+          "back"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation",
+          "auscultation"
+        ],
+        "other symptoms": [
+          "abdominal-pain"
+        ]
       },
       "freq": "uncommon"
     },
     {
-      "name": "Inactivation \u2013 excess gastric acid",
+      "name": "Inactivation – excess gastric acid",
       "system": "Lipase Deficiency",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "cramping",
+          "tender"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen",
+          "epigastrium"
+        ],
+        "radiation": [
+          "back"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation",
+          "auscultation"
+        ],
+        "other symptoms": [
+          "abdominal-pain"
+        ]
       },
       "freq": "rare"
     },
     {
-      "name": "Underproduction \u2013 liver disease",
+      "name": "Underproduction – liver disease",
       "system": "Bile Deficiency",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "cramping",
+          "tender"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen",
+          "perianal"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation",
+          "auscultation"
+        ],
+        "other symptoms": [
+          "abdominal-pain",
+          "jaundice",
+          "rash"
+        ]
       },
       "freq": "uncommon"
     },
     {
-      "name": "Obstruction \u2013 obstructive jaundice",
+      "name": "Obstruction – obstructive jaundice",
       "system": "Bile Deficiency",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "cramping",
+          "tender"
+        ],
+        "timing": [
+          "intermittent",
+          "constant"
+        ],
+        "region": [
+          "abdomen",
+          "perianal"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "palpation",
+          "auscultation"
+        ],
+        "other symptoms": [
+          "abdominal-pain",
+          "fever",
+          "jaundice"
+        ]
       },
       "freq": "uncommon"
     },
@@ -82,17 +191,45 @@
       "system": "Mucosal Disease",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "cramping",
+          "tender"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen",
+          "perianal"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation",
+          "auscultation"
+        ],
+        "other symptoms": [
+          "abdominal-pain",
+          "jaundice",
+          "rash"
+        ]
       },
       "freq": "common"
     },
@@ -101,36 +238,91 @@
       "system": "Mucosal Disease",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "cramping",
+          "tender"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation",
+          "auscultation"
+        ],
+        "other symptoms": [
+          "abdominal-pain"
+        ]
       },
       "freq": "uncommon"
     },
     {
-      "name": "Crohn\u2019s disease",
+      "name": "Crohn’s disease",
       "system": "Mucosal Disease",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic",
+          "subacute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "cramping",
+          "tender",
+          "aching"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen",
+          "perianal"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation",
+          "auscultation"
+        ],
+        "other symptoms": [
+          "abdominal-pain",
+          "jaundice",
+          "rash"
+        ]
       },
       "freq": "uncommon"
     },
@@ -139,17 +331,42 @@
       "system": "Impaired Fat Transport",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "cramping",
+          "tender"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation",
+          "auscultation"
+        ],
+        "other symptoms": [
+          "abdominal-pain"
+        ]
       },
       "freq": "rare"
     },
@@ -158,36 +375,89 @@
       "system": "Lymphatic Deficiency",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "cramping",
+          "tender"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation",
+          "auscultation"
+        ],
+        "other symptoms": [
+          "abdominal-pain"
+        ]
       },
       "freq": "rare"
     },
     {
-      "name": "Whipple\u2019s disease",
+      "name": "Whipple’s disease",
       "system": "Lymphatic Deficiency",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "cramping",
+          "tender"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen",
+          "perianal"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation",
+          "auscultation"
+        ],
+        "other symptoms": [
+          "abdominal-pain",
+          "jaundice",
+          "rash"
+        ]
       },
       "freq": "rare"
     },
@@ -196,17 +466,42 @@
       "system": "Lymphatic Deficiency",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "cramping",
+          "tender"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation",
+          "auscultation"
+        ],
+        "other symptoms": [
+          "abdominal-pain"
+        ]
       },
       "freq": "uncommon"
     }

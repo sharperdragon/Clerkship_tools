@@ -2,40 +2,95 @@
   "presentation": "Jaundice",
   "items": [
     {
-      "name": "Gilbert\u2019s disease",
+      "name": "Gilbert’s disease",
       "system": "Congenital Defects",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "alcohol"
+        ],
+        "quality": [
+          "colicky",
+          "sharp"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation",
+          "percussion",
+          "shifting-dullness"
+        ],
+        "other symptoms": [
+          "abdominal-swelling",
+          "jaundice"
+        ]
       },
       "freq": "uncommon"
     },
     {
-      "name": "Crigler\u2013Najjar syndrome",
+      "name": "Crigler–Najjar syndrome",
       "system": "Congenital Defects",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "alcohol"
+        ],
+        "quality": [
+          "colicky",
+          "sharp"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation",
+          "percussion",
+          "shifting-dullness"
+        ],
+        "other symptoms": [
+          "abdominal-swelling"
+        ]
       },
       "freq": "rare"
     },
@@ -44,112 +99,275 @@
       "system": "Freq",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "alcohol"
+        ],
+        "quality": [
+          "colicky",
+          "sharp"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation",
+          "percussion",
+          "shifting-dullness"
+        ],
+        "other symptoms": [
+          "abdominal-swelling"
+        ]
       },
       "freq": "unknown"
     },
     {
       "name": "Incompatible blood transfusion",
-      "system": "Malaria \u2022 (common where malaria is endemic)",
+      "system": "Malaria • (common where malaria is endemic)",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "alcohol"
+        ],
+        "quality": [
+          "colicky",
+          "sharp"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation",
+          "percussion",
+          "shifting-dullness"
+        ],
+        "other symptoms": [
+          "abdominal-swelling",
+          "jaundice"
+        ]
       },
       "freq": "rare"
     },
     {
       "name": "Autoimmune",
-      "system": "Malaria \u2022 (common where malaria is endemic)",
+      "system": "Malaria • (common where malaria is endemic)",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "alcohol"
+        ],
+        "quality": [
+          "colicky",
+          "sharp"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation",
+          "percussion",
+          "shifting-dullness"
+        ],
+        "other symptoms": [
+          "abdominal-swelling"
+        ]
       },
       "freq": "rare"
     },
     {
       "name": "Hemolytic disease of the newborn",
-      "system": "Malaria \u2022 (common where malaria is endemic)",
+      "system": "Malaria • (common where malaria is endemic)",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "alcohol"
+        ],
+        "quality": [
+          "colicky",
+          "sharp"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation",
+          "percussion",
+          "shifting-dullness"
+        ],
+        "other symptoms": [
+          "abdominal-swelling",
+          "fever",
+          "weight-loss"
+        ]
       },
       "freq": "rare"
     },
     {
       "name": "Absorbing large hematoma",
-      "system": "Malaria \u2022 (common where malaria is endemic)",
+      "system": "Malaria • (common where malaria is endemic)",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "alcohol"
+        ],
+        "quality": [
+          "colicky",
+          "sharp"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation",
+          "percussion",
+          "shifting-dullness"
+        ],
+        "other symptoms": [
+          "abdominal-swelling"
+        ]
       },
       "freq": "rare"
     },
     {
       "name": "Hypersplenism",
-      "system": "Malaria \u2022 (common where malaria is endemic)",
+      "system": "Malaria • (common where malaria is endemic)",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "gradual"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "alcohol"
+        ],
+        "quality": [
+          "colicky",
+          "sharp"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation",
+          "percussion",
+          "shifting-dullness"
+        ],
+        "other symptoms": [
+          "abdominal-swelling"
+        ]
       },
       "freq": "rare"
     },
@@ -158,17 +376,49 @@
       "system": "Acute Hepatocellular Disease",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "alcohol"
+        ],
+        "quality": [
+          "colicky",
+          "sharp",
+          "tender"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild",
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation",
+          "percussion",
+          "shifting-dullness"
+        ],
+        "other symptoms": [
+          "abdominal-swelling",
+          "jaundice",
+          "fever",
+          "malaise"
+        ]
       },
       "freq": "common"
     },
@@ -177,17 +427,46 @@
       "system": "Acute Hepatocellular Disease",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "alcohol"
+        ],
+        "quality": [
+          "colicky",
+          "sharp",
+          "tender"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild"
+        ],
+        "clinical tests": [
+          "palpation",
+          "percussion",
+          "shifting-dullness"
+        ],
+        "other symptoms": [
+          "abdominal-swelling",
+          "jaundice"
+        ]
       },
       "freq": "common"
     },
@@ -196,17 +475,43 @@
       "system": "Acute Hepatocellular Disease",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "alcohol"
+        ],
+        "quality": [
+          "colicky",
+          "sharp"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation",
+          "percussion",
+          "shifting-dullness"
+        ],
+        "other symptoms": [
+          "abdominal-swelling"
+        ]
       },
       "freq": "uncommon"
     },
@@ -215,17 +520,43 @@
       "system": "Acute Hepatocellular Disease",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "alcohol"
+        ],
+        "quality": [
+          "colicky",
+          "sharp"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation",
+          "percussion",
+          "shifting-dullness"
+        ],
+        "other symptoms": [
+          "abdominal-swelling"
+        ]
       },
       "freq": "rare"
     },
@@ -234,17 +565,44 @@
       "system": "Acute Hepatocellular Disease",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "alcohol"
+        ],
+        "quality": [
+          "colicky",
+          "sharp"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation",
+          "percussion",
+          "shifting-dullness"
+        ],
+        "other symptoms": [
+          "abdominal-swelling",
+          "nausea"
+        ]
       },
       "freq": "uncommon"
     },
@@ -253,17 +611,46 @@
       "system": "Acute Hepatocellular Disease",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "alcohol"
+        ],
+        "quality": [
+          "colicky",
+          "sharp"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation",
+          "percussion",
+          "shifting-dullness"
+        ],
+        "other symptoms": [
+          "abdominal-swelling",
+          "fever",
+          "malaise"
+        ]
       },
       "freq": "rare"
     },
@@ -272,17 +659,45 @@
       "system": "Acute Hepatocellular Disease",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "alcohol"
+        ],
+        "quality": [
+          "colicky",
+          "sharp"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "abdomen",
+          "low-back"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation",
+          "percussion",
+          "shifting-dullness"
+        ],
+        "other symptoms": [
+          "abdominal-swelling",
+          "jaundice"
+        ]
       },
       "freq": "rare"
     },
@@ -291,17 +706,44 @@
       "system": "Acute Hepatocellular Disease",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "alcohol"
+        ],
+        "quality": [
+          "colicky",
+          "sharp"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation",
+          "percussion",
+          "shifting-dullness"
+        ],
+        "other symptoms": [
+          "abdominal-swelling",
+          "nausea"
+        ]
       },
       "freq": "rare"
     },
@@ -310,17 +752,44 @@
       "system": "Acute Hepatocellular Disease",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "alcohol"
+        ],
+        "quality": [
+          "colicky",
+          "sharp"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation",
+          "percussion",
+          "shifting-dullness"
+        ],
+        "other symptoms": [
+          "abdominal-swelling"
+        ]
       },
       "freq": "rare"
     },
@@ -329,17 +798,49 @@
       "system": "Chronic Hepatocellular Disease",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "alcohol"
+        ],
+        "quality": [
+          "colicky",
+          "sharp",
+          "tender"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild",
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation",
+          "percussion",
+          "shifting-dullness"
+        ],
+        "other symptoms": [
+          "abdominal-swelling",
+          "jaundice",
+          "fever",
+          "malaise"
+        ]
       },
       "freq": "uncommon"
     },
@@ -348,17 +849,46 @@
       "system": "Chronic Hepatocellular Disease",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "alcohol"
+        ],
+        "quality": [
+          "colicky",
+          "sharp",
+          "tender"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild"
+        ],
+        "clinical tests": [
+          "palpation",
+          "percussion",
+          "shifting-dullness"
+        ],
+        "other symptoms": [
+          "abdominal-swelling",
+          "jaundice"
+        ]
       },
       "freq": "uncommon"
     },
@@ -367,17 +897,46 @@
       "system": "Chronic Hepatocellular Disease",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "alcohol"
+        ],
+        "quality": [
+          "colicky",
+          "sharp",
+          "tender"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation",
+          "percussion",
+          "shifting-dullness"
+        ],
+        "other symptoms": [
+          "abdominal-swelling",
+          "jaundice"
+        ]
       },
       "freq": "uncommon"
     },
@@ -386,17 +945,44 @@
       "system": "Chronic Hepatocellular Disease",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "alcohol"
+        ],
+        "quality": [
+          "colicky",
+          "sharp"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation",
+          "percussion",
+          "shifting-dullness"
+        ],
+        "other symptoms": [
+          "abdominal-swelling",
+          "nausea"
+        ]
       },
       "freq": "uncommon"
     },
@@ -405,17 +991,44 @@
       "system": "Chronic Hepatocellular Disease",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "alcohol"
+        ],
+        "quality": [
+          "colicky",
+          "sharp"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation",
+          "percussion",
+          "shifting-dullness"
+        ],
+        "other symptoms": [
+          "abdominal-swelling",
+          "nausea"
+        ]
       },
       "freq": "uncommon"
     },
@@ -424,36 +1037,90 @@
       "system": "Chronic Hepatocellular Disease",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "alcohol"
+        ],
+        "quality": [
+          "colicky",
+          "sharp"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation",
+          "percussion",
+          "shifting-dullness"
+        ],
+        "other symptoms": [
+          "abdominal-swelling"
+        ]
       },
       "freq": "rare"
     },
     {
-      "name": "Wilson\u2019s disease",
+      "name": "Wilson’s disease",
       "system": "Chronic Hepatocellular Disease",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "alcohol"
+        ],
+        "quality": [
+          "colicky",
+          "sharp"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation",
+          "percussion",
+          "shifting-dullness"
+        ],
+        "other symptoms": [
+          "abdominal-swelling",
+          "jaundice"
+        ]
       },
       "freq": "rare"
     },
@@ -462,17 +1129,46 @@
       "system": "Intrahepatic",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "gradual"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "alcohol"
+        ],
+        "quality": [
+          "colicky",
+          "sharp"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation",
+          "percussion",
+          "shifting-dullness"
+        ],
+        "other symptoms": [
+          "abdominal-swelling",
+          "nausea"
+        ]
       },
       "freq": "uncommon"
     },
@@ -481,17 +1177,45 @@
       "system": "Intrahepatic",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "gradual"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "alcohol"
+        ],
+        "quality": [
+          "colicky",
+          "sharp"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation",
+          "percussion",
+          "shifting-dullness"
+        ],
+        "other symptoms": [
+          "abdominal-swelling"
+        ]
       },
       "freq": "uncommon"
     },
@@ -500,17 +1224,50 @@
       "system": "Intrahepatic",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "alcohol"
+        ],
+        "quality": [
+          "colicky",
+          "sharp",
+          "tender"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild",
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation",
+          "percussion",
+          "shifting-dullness"
+        ],
+        "other symptoms": [
+          "abdominal-swelling",
+          "jaundice",
+          "fever",
+          "malaise"
+        ]
       },
       "freq": "uncommon"
     },
@@ -519,17 +1276,47 @@
       "system": "Intrahepatic",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "days"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "alcohol"
+        ],
+        "quality": [
+          "colicky",
+          "sharp"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "palpation",
+          "percussion",
+          "shifting-dullness"
+        ],
+        "other symptoms": [
+          "abdominal-swelling",
+          "abdominal-pain",
+          "jaundice"
+        ]
       },
       "freq": "rare"
     },
@@ -538,17 +1325,45 @@
       "system": "Intrahepatic",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "gradual"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "alcohol"
+        ],
+        "quality": [
+          "colicky",
+          "sharp"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation",
+          "percussion",
+          "shifting-dullness"
+        ],
+        "other symptoms": [
+          "abdominal-swelling"
+        ]
       },
       "freq": "rare"
     },
@@ -557,17 +1372,46 @@
       "system": "Extrahepatic (obstructive)",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "gradual"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "alcohol"
+        ],
+        "quality": [
+          "colicky",
+          "sharp"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "abdomen",
+          "epigastrium"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "palpation",
+          "percussion",
+          "shifting-dullness"
+        ],
+        "other symptoms": [
+          "abdominal-swelling"
+        ]
       },
       "freq": "common"
     },
@@ -576,17 +1420,45 @@
       "system": "Extrahepatic (obstructive)",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "gradual"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "alcohol"
+        ],
+        "quality": [
+          "colicky",
+          "sharp"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "palpation",
+          "percussion",
+          "shifting-dullness"
+        ],
+        "other symptoms": [
+          "abdominal-swelling"
+        ]
       },
       "freq": "rare"
     },
@@ -595,17 +1467,45 @@
       "system": "Extrahepatic (obstructive)",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "gradual"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "alcohol"
+        ],
+        "quality": [
+          "colicky",
+          "sharp"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "palpation",
+          "percussion",
+          "shifting-dullness"
+        ],
+        "other symptoms": [
+          "abdominal-swelling"
+        ]
       },
       "freq": "uncommon"
     },
@@ -614,17 +1514,45 @@
       "system": "Extrahepatic (obstructive)",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "gradual"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "alcohol"
+        ],
+        "quality": [
+          "colicky",
+          "sharp"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "palpation",
+          "percussion",
+          "shifting-dullness"
+        ],
+        "other symptoms": [
+          "abdominal-swelling"
+        ]
       },
       "freq": "uncommon"
     },
@@ -633,17 +1561,47 @@
       "system": "Extrahepatic (obstructive)",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "days"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "alcohol"
+        ],
+        "quality": [
+          "colicky",
+          "sharp"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "palpation",
+          "percussion",
+          "shifting-dullness"
+        ],
+        "other symptoms": [
+          "abdominal-swelling",
+          "abdominal-pain",
+          "jaundice"
+        ]
       },
       "freq": "rare"
     },
@@ -652,17 +1610,47 @@
       "system": "Extrahepatic (obstructive)",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "insidious"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "alcohol"
+        ],
+        "quality": [
+          "colicky",
+          "sharp"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate",
+          "severe"
+        ],
+        "clinical tests": [
+          "palpation",
+          "percussion",
+          "shifting-dullness"
+        ],
+        "other symptoms": [
+          "abdominal-swelling",
+          "weight-loss"
+        ]
       },
       "freq": "rare"
     },
@@ -671,17 +1659,45 @@
       "system": "Extrahepatic (obstructive)",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "gradual"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "alcohol"
+        ],
+        "quality": [
+          "colicky",
+          "sharp"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "palpation",
+          "percussion",
+          "shifting-dullness"
+        ],
+        "other symptoms": [
+          "abdominal-swelling"
+        ]
       },
       "freq": "rare"
     },
@@ -690,17 +1706,45 @@
       "system": "Extrahepatic (obstructive)",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "gradual"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "alcohol"
+        ],
+        "quality": [
+          "colicky",
+          "sharp"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "palpation",
+          "percussion",
+          "shifting-dullness"
+        ],
+        "other symptoms": [
+          "abdominal-swelling"
+        ]
       },
       "freq": "rare"
     },
@@ -709,17 +1753,49 @@
       "system": "Extrahepatic (obstructive)",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "insidious"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "alcohol"
+        ],
+        "quality": [
+          "colicky",
+          "sharp"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "abdomen",
+          "epigastrium"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate",
+          "severe"
+        ],
+        "clinical tests": [
+          "palpation",
+          "percussion",
+          "shifting-dullness"
+        ],
+        "other symptoms": [
+          "abdominal-swelling",
+          "jaundice",
+          "weight-loss"
+        ]
       },
       "freq": "uncommon"
     },
@@ -728,17 +1804,49 @@
       "system": "Extrahepatic (obstructive)",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "insidious"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "alcohol"
+        ],
+        "quality": [
+          "colicky",
+          "sharp"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "abdomen",
+          "epigastrium"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate",
+          "severe"
+        ],
+        "clinical tests": [
+          "palpation",
+          "percussion",
+          "shifting-dullness"
+        ],
+        "other symptoms": [
+          "abdominal-swelling",
+          "jaundice",
+          "weight-loss"
+        ]
       },
       "freq": "uncommon"
     },
@@ -747,17 +1855,47 @@
       "system": "Extrahepatic (obstructive)",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "alcohol"
+        ],
+        "quality": [
+          "colicky",
+          "sharp"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate",
+          "severe"
+        ],
+        "clinical tests": [
+          "palpation",
+          "percussion",
+          "shifting-dullness"
+        ],
+        "other symptoms": [
+          "abdominal-swelling",
+          "weight-loss"
+        ]
       },
       "freq": "uncommon"
     },
@@ -766,17 +1904,45 @@
       "system": "Extrahepatic (obstructive)",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "alcohol"
+        ],
+        "quality": [
+          "colicky",
+          "sharp"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "palpation",
+          "percussion",
+          "shifting-dullness"
+        ],
+        "other symptoms": [
+          "abdominal-swelling"
+        ]
       },
       "freq": "rare"
     },
@@ -785,17 +1951,45 @@
       "system": "Extrahepatic (obstructive)",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "alcohol"
+        ],
+        "quality": [
+          "colicky",
+          "sharp"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "palpation",
+          "percussion",
+          "shifting-dullness"
+        ],
+        "other symptoms": [
+          "abdominal-swelling"
+        ]
       },
       "freq": "rare"
     }

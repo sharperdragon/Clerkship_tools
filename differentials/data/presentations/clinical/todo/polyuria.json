@@ -2,40 +2,92 @@
   "presentation": "Polyuria",
   "items": [
     {
-      "name": "Loop \u2013 , bumetanide",
+      "name": "Loop – , bumetanide",
       "system": "Therapeutic",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute", "subacute"],
-        "progression": ["worsening", "stable"],
-        "palliate": ["reduce-dose", "hold-med"],
-        "provoke": ["diuretics", "high-dose"],
-        "quality": ["excess-urine"],
-        "timing": ["daytime", "nocturnal"],
-        "region": ["n/a"],
-        "radiation": ["n/a"],
-        "severity": ["mild", "moderate", "severe"],
-        "clinical tests": ["electrolytes", "urine-osmolality", "urine-sodium", "specific-gravity"],
-        "other symptoms": ["nocturia", "thirst", "dizziness", "orthostasis", "cramps", "dry-mouth"]
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "nsaids",
+          "urination"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "suprapubic",
+          "flank"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "urine-dipstick",
+          "suprapubic-tenderness"
+        ],
+        "other symptoms": [
+          "dysuria"
+        ]
       },
       "freq": "common"
     },
     {
-      "name": "Thiazide \u2013 , metolazone, indapamide",
+      "name": "Thiazide – , metolazone, indapamide",
       "system": "Therapeutic",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute", "subacute"],
-        "progression": ["stable", "worsening"],
-        "palliate": ["reduce-dose", "hold-med"],
-        "provoke": ["diuretics"],
-        "quality": ["excess-urine"],
-        "timing": ["daytime", "nocturnal"],
-        "region": ["n/a"],
-        "radiation": ["n/a"],
-        "severity": ["mild", "moderate"],
-        "clinical tests": ["electrolytes", "urine-osmolality", "urine-sodium", "specific-gravity"],
-        "other symptoms": ["nocturia", "thirst", "dry-mouth", "weakness"]
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "nsaids",
+          "urination"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "suprapubic",
+          "flank"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "urine-dipstick",
+          "suprapubic-tenderness"
+        ],
+        "other symptoms": [
+          "dysuria"
+        ]
       },
       "freq": "common"
     },
@@ -44,17 +96,43 @@
       "system": "Therapeutic",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute", "subacute"],
-        "progression": ["stable"],
-        "palliate": ["adjust-dose"],
-        "provoke": ["diuretics"],
-        "quality": ["excess-urine"],
-        "timing": ["daytime"],
-        "region": ["n/a"],
-        "radiation": ["n/a"],
-        "severity": ["mild", "moderate"],
-        "clinical tests": ["electrolytes", "urine-osmolality", "specific-gravity"],
-        "other symptoms": ["nocturia", "thirst"]
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "nsaids",
+          "urination"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "suprapubic",
+          "flank"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "urine-dipstick",
+          "suprapubic-tenderness"
+        ],
+        "other symptoms": [
+          "dysuria"
+        ]
       },
       "freq": "common"
     },
@@ -63,17 +141,45 @@
       "system": "Osmotic",
       "redFlag": false,
       "hpi": {
-        "onset": ["subacute", "chronic", "acute"],
-        "progression": ["worsening"],
-        "palliate": ["insulin", "oral-hypoglycemics"],
-        "provoke": ["high-sugar-intake", "infection", "steroids"],
-        "quality": ["osmotic-diuresis"],
-        "timing": ["daytime", "nocturnal"],
-        "region": ["n/a"],
-        "radiation": ["n/a"],
-        "severity": ["mild", "moderate", "severe"],
-        "clinical tests": ["glucose", "hba1c", "serum-osmolality", "urine-glucose", "ketones", "specific-gravity"],
-        "other symptoms": ["polydipsia", "weight-loss", "blurred-vision", "fatigue", "nocturia", "dehydration"]
+        "onset": [
+          "acute",
+          "chronic",
+          "gradual"
+        ],
+        "progression": [
+          "improving",
+          "stable"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "nsaids",
+          "urination"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "suprapubic",
+          "flank"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "urine-dipstick",
+          "suprapubic-tenderness"
+        ],
+        "other symptoms": [
+          "dysuria"
+        ]
       },
       "freq": "common"
     },
@@ -82,17 +188,45 @@
       "system": "Osmotic",
       "redFlag": false,
       "hpi": {
-        "onset": ["subacute", "chronic"],
-        "progression": ["worsening", "stable"],
-        "palliate": ["iv-fluids"],
-        "provoke": ["calcium-supplements", "thiazides"],
-        "quality": ["nephrogenic-diuresis"],
-        "timing": ["daytime", "nocturnal"],
-        "region": ["n/a"],
-        "radiation": ["n/a"],
-        "severity": ["mild", "moderate"],
-        "clinical tests": ["calcium", "pth", "electrolytes", "urine-osmolality", "specific-gravity"],
-        "other symptoms": ["polyuria", "polydipsia", "constipation", "nausea", "kidney-stones", "dehydration"]
+        "onset": [
+          "acute",
+          "chronic",
+          "gradual"
+        ],
+        "progression": [
+          "improving",
+          "stable"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "nsaids",
+          "urination"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "suprapubic",
+          "flank"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "urine-dipstick",
+          "suprapubic-tenderness"
+        ],
+        "other symptoms": [
+          "dysuria"
+        ]
       },
       "freq": "uncommon"
     },
@@ -101,17 +235,43 @@
       "system": "Osmotic",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute"],
-        "progression": ["worsening", "improving"],
-        "palliate": ["stop-infusion"],
-        "provoke": ["mannitol"],
-        "quality": ["osmotic-diuresis"],
-        "timing": ["during-infusion", "post-infusion"],
-        "region": ["n/a"],
-        "radiation": ["n/a"],
-        "severity": ["mild", "moderate"],
-        "clinical tests": ["serum-osmolality", "urine-osmolality", "electrolytes", "specific-gravity"],
-        "other symptoms": ["thirst", "hypotension", "dizziness"]
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "nsaids",
+          "urination"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "suprapubic",
+          "flank"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "urine-dipstick",
+          "suprapubic-tenderness"
+        ],
+        "other symptoms": [
+          "dysuria"
+        ]
       },
       "freq": "rare"
     },
@@ -120,17 +280,44 @@
       "system": "Osmotic",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute"],
-        "progression": ["stable"],
-        "palliate": ["stop-med"],
-        "provoke": ["urea"],
-        "quality": ["osmotic-diuresis"],
-        "timing": ["daytime"],
-        "region": ["n/a"],
-        "radiation": ["n/a"],
-        "severity": ["mild", "moderate"],
-        "clinical tests": ["serum-osmolality", "urine-osmolality", "electrolytes"],
-        "other symptoms": ["thirst", "dizziness"]
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "nsaids",
+          "urination"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "suprapubic",
+          "flank"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "urine-dipstick",
+          "suprapubic-tenderness"
+        ],
+        "other symptoms": [
+          "dysuria",
+          "polydipsia"
+        ]
       },
       "freq": "rare"
     },
@@ -139,56 +326,141 @@
       "system": "Freq",
       "redFlag": false,
       "hpi": {
-        "onset": ["unknown"],
-        "progression": ["unknown"],
-        "palliate": ["n/a"],
-        "provoke": ["n/a"],
-        "quality": ["n/a"],
-        "timing": ["n/a"],
-        "region": ["n/a"],
-        "radiation": ["n/a"],
-        "severity": ["n/a"],
-        "clinical tests": ["n/a"],
-        "other symptoms": ["n/a"]
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "nsaids",
+          "urination"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "suprapubic",
+          "flank"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "urine-dipstick",
+          "suprapubic-tenderness"
+        ],
+        "other symptoms": [
+          "dysuria"
+        ]
       },
       "freq": "unknown"
     },
-
     {
       "name": "where TB is endemic)",
-      "system": "Pituitary granulomas, , TB \u2022 (more common",
+      "system": "Pituitary granulomas, , TB • (more common",
       "redFlag": false,
       "hpi": {
-        "onset": ["subacute", "chronic"],
-        "progression": ["worsening"],
-        "palliate": ["desmopressin"],
-        "provoke": ["infection"],
-        "quality": ["central-diabetes-insipidus"],
-        "timing": ["daytime", "nocturnal"],
-        "region": ["n/a"],
-        "radiation": ["n/a"],
-        "severity": ["moderate", "severe"],
-        "clinical tests": ["serum-sodium", "serum-osmolality", "urine-osmolality", "water-deprivation-test", "desmopressin-challenge", "mri-brain"],
-        "other symptoms": ["polydipsia", "nocturia", "dehydration", "headache", "visual-changes"]
+        "onset": [
+          "acute",
+          "chronic",
+          "subacute"
+        ],
+        "progression": [
+          "improving",
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "nsaids",
+          "urination"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "suprapubic",
+          "flank"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "urine-dipstick",
+          "suprapubic-tenderness"
+        ],
+        "other symptoms": [
+          "dysuria",
+          "fever",
+          "malaise"
+        ]
       },
       "freq": "rare"
     },
     {
       "name": "Opiates",
-      "system": "Pituitary granulomas, , TB \u2022 (more common",
+      "system": "Pituitary granulomas, , TB • (more common",
       "redFlag": false,
       "hpi": {
-        "onset": ["subacute"],
-        "progression": ["stable"],
-        "palliate": ["stop-med"],
-        "provoke": ["opioids"],
-        "quality": ["hormonal-effect"],
-        "timing": ["daytime"],
-        "region": ["n/a"],
-        "radiation": ["n/a"],
-        "severity": ["mild"],
-        "clinical tests": ["serum-sodium", "serum-osmolality", "urine-osmolality"],
-        "other symptoms": ["dry-mouth", "sedation"]
+        "onset": [
+          "acute",
+          "chronic",
+          "subacute"
+        ],
+        "progression": [
+          "improving",
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "nsaids",
+          "urination"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "suprapubic",
+          "flank"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "urine-dipstick",
+          "suprapubic-tenderness"
+        ],
+        "other symptoms": [
+          "dysuria",
+          "fever",
+          "malaise"
+        ]
       },
       "freq": "rare"
     },
@@ -197,17 +469,46 @@
       "system": "Nephrogenic",
       "redFlag": false,
       "hpi": {
-        "onset": ["subacute", "chronic"],
-        "progression": ["worsening", "stable"],
-        "palliate": ["stop-med"],
-        "provoke": ["medications"],
-        "quality": ["nephrogenic-diabetes-insipidus"],
-        "timing": ["daytime", "nocturnal"],
-        "region": ["n/a"],
-        "radiation": ["n/a"],
-        "severity": ["mild", "moderate"],
-        "clinical tests": ["serum-sodium", "serum-osmolality", "urine-osmolality", "desmopressin-challenge"],
-        "other symptoms": ["polydipsia", "nocturia", "dehydration"]
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "nsaids",
+          "urination",
+          "alcohol"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "suprapubic",
+          "flank"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "urine-dipstick",
+          "suprapubic-tenderness"
+        ],
+        "other symptoms": [
+          "dysuria",
+          "polyuria",
+          "nausea"
+        ]
       },
       "freq": "uncommon"
     },
@@ -216,17 +517,43 @@
       "system": "Nephrogenic",
       "redFlag": false,
       "hpi": {
-        "onset": ["chronic"],
-        "progression": ["worsening"],
-        "palliate": ["stop-med"],
-        "provoke": ["lithium"],
-        "quality": ["nephrogenic-diabetes-insipidus"],
-        "timing": ["daytime", "nocturnal"],
-        "region": ["n/a"],
-        "radiation": ["n/a"],
-        "severity": ["moderate"],
-        "clinical tests": ["lithium-level", "serum-sodium", "serum-osmolality", "urine-osmolality", "desmopressin-challenge"],
-        "other symptoms": ["polydipsia", "nocturia", "dehydration"]
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "nsaids",
+          "urination"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "suprapubic",
+          "flank"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "urine-dipstick",
+          "suprapubic-tenderness"
+        ],
+        "other symptoms": [
+          "dysuria"
+        ]
       },
       "freq": "uncommon"
     },
@@ -235,17 +562,43 @@
       "system": "Nephrogenic",
       "redFlag": false,
       "hpi": {
-        "onset": ["subacute", "chronic"],
-        "progression": ["worsening"],
-        "palliate": ["stop-med"],
-        "provoke": ["demeclocycline"],
-        "quality": ["nephrogenic-diabetes-insipidus"],
-        "timing": ["daytime", "nocturnal"],
-        "region": ["n/a"],
-        "radiation": ["n/a"],
-        "severity": ["mild", "moderate"],
-        "clinical tests": ["serum-sodium", "serum-osmolality", "urine-osmolality", "desmopressin-challenge"],
-        "other symptoms": ["polydipsia", "nocturia", "dehydration"]
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "nsaids",
+          "urination"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "suprapubic",
+          "flank"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "urine-dipstick",
+          "suprapubic-tenderness"
+        ],
+        "other symptoms": [
+          "dysuria"
+        ]
       },
       "freq": "rare"
     },
@@ -254,17 +607,45 @@
       "system": "Nephrogenic",
       "redFlag": false,
       "hpi": {
-        "onset": ["subacute"],
-        "progression": ["worsening"],
-        "palliate": ["potassium-repletion"],
-        "provoke": ["diuretics", "gi-losses"],
-        "quality": ["nephrogenic-diuresis"],
-        "timing": ["daytime"],
-        "region": ["n/a"],
-        "radiation": ["n/a"],
-        "severity": ["mild", "moderate"],
-        "clinical tests": ["potassium", "electrolytes", "urine-osmolality"],
-        "other symptoms": ["weakness", "cramps", "constipation", "nocturia"]
+        "onset": [
+          "acute",
+          "chronic",
+          "gradual"
+        ],
+        "progression": [
+          "improving",
+          "stable"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "nsaids",
+          "urination"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "suprapubic",
+          "flank"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "urine-dipstick",
+          "suprapubic-tenderness"
+        ],
+        "other symptoms": [
+          "dysuria"
+        ]
       },
       "freq": "uncommon"
     },
@@ -273,17 +654,45 @@
       "system": "Nephrogenic",
       "redFlag": false,
       "hpi": {
-        "onset": ["chronic"],
-        "progression": ["worsening"],
-        "palliate": ["treat-underlying"],
-        "provoke": ["analgesics", "toxins"],
-        "quality": ["impaired-concentration"],
-        "timing": ["daytime", "nocturnal"],
-        "region": ["n/a"],
-        "radiation": ["n/a"],
-        "severity": ["moderate"],
-        "clinical tests": ["creatinine", "urinalysis", "urine-osmolality", "specific-gravity"],
-        "other symptoms": ["fatigue", "nocturia", "hypertension"]
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "nsaids",
+          "urination"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "suprapubic",
+          "flank"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "urine-dipstick",
+          "suprapubic-tenderness"
+        ],
+        "other symptoms": [
+          "dysuria",
+          "polyuria",
+          "polydipsia"
+        ]
       },
       "freq": "uncommon"
     },
@@ -292,17 +701,45 @@
       "system": "Nephrogenic",
       "redFlag": false,
       "hpi": {
-        "onset": ["subacute"],
-        "progression": ["improving"],
-        "palliate": ["time", "iv-fluids"],
-        "provoke": ["post-ischemic", "post-toxin"],
-        "quality": ["post-ATN-diuresis"],
-        "timing": ["daytime", "nocturnal"],
-        "region": ["n/a"],
-        "radiation": ["n/a"],
-        "severity": ["mild", "moderate"],
-        "clinical tests": ["creatinine", "electrolytes", "urine-output-trend"],
-        "other symptoms": ["thirst", "dizziness"]
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "nsaids",
+          "urination"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "suprapubic",
+          "flank"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "urine-dipstick",
+          "suprapubic-tenderness"
+        ],
+        "other symptoms": [
+          "dysuria",
+          "polyuria",
+          "polydipsia"
+        ]
       },
       "freq": "uncommon"
     },
@@ -311,17 +748,44 @@
       "system": "Nephrogenic",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute", "subacute"],
-        "progression": ["improving"],
-        "palliate": ["catheterization", "relieve-obstruction"],
-        "provoke": ["post-obstruction"],
-        "quality": ["post-obstructive-diuresis"],
-        "timing": ["daytime", "nocturnal"],
-        "region": ["n/a"],
-        "radiation": ["n/a"],
-        "severity": ["moderate", "severe"],
-        "clinical tests": ["electrolytes", "urine-output-trend"],
-        "other symptoms": ["thirst", "dehydration", "dizziness"]
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "improving",
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "nsaids",
+          "urination"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "suprapubic",
+          "flank"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "urine-dipstick",
+          "suprapubic-tenderness"
+        ],
+        "other symptoms": [
+          "dysuria"
+        ]
       },
       "freq": "uncommon"
     },
@@ -330,36 +794,94 @@
       "system": "Nephrogenic",
       "redFlag": false,
       "hpi": {
-        "onset": ["chronic"],
-        "progression": ["worsening", "stable"],
-        "palliate": ["iv-fluids"],
-        "provoke": ["calcium-supplements"],
-        "quality": ["nephrogenic-diuresis"],
-        "timing": ["daytime", "nocturnal"],
-        "region": ["n/a"],
-        "radiation": ["n/a"],
-        "severity": ["mild", "moderate"],
-        "clinical tests": ["calcium", "pth", "electrolytes", "urine-osmolality"],
-        "other symptoms": ["polyuria", "polydipsia", "dehydration"]
+        "onset": [
+          "acute",
+          "chronic",
+          "gradual"
+        ],
+        "progression": [
+          "improving",
+          "stable"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "nsaids",
+          "urination"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "suprapubic",
+          "flank"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "urine-dipstick",
+          "suprapubic-tenderness"
+        ],
+        "other symptoms": [
+          "dysuria"
+        ]
       },
       "freq": "rare"
     },
     {
-      "name": "Drug-induced thirst \u2013 anticholinergics",
+      "name": "Drug-induced thirst – anticholinergics",
       "system": "Excessive Fluid Intake",
       "redFlag": false,
       "hpi": {
-        "onset": ["subacute"],
-        "progression": ["stable"],
-        "palliate": ["stop-med"],
-        "provoke": ["anticholinergics"],
-        "quality": ["excess-fluid-intake"],
-        "timing": ["daytime", "evening"],
-        "region": ["n/a"],
-        "radiation": ["n/a"],
-        "severity": ["mild"],
-        "clinical tests": ["serum-sodium", "serum-osmolality", "urine-osmolality"],
-        "other symptoms": ["dry-mouth", "blurred-vision", "constipation"]
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "nsaids",
+          "urination",
+          "alcohol"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "suprapubic",
+          "flank"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "urine-dipstick",
+          "suprapubic-tenderness"
+        ],
+        "other symptoms": [
+          "dysuria",
+          "polyuria",
+          "polydipsia",
+          "nausea"
+        ]
       },
       "freq": "uncommon"
     },
@@ -368,17 +890,45 @@
       "system": "Excessive Fluid Intake",
       "redFlag": false,
       "hpi": {
-        "onset": ["chronic"],
-        "progression": ["worsening", "stable"],
-        "palliate": ["fluid-restriction"],
-        "provoke": ["stress"],
-        "quality": ["excess-fluid-intake"],
-        "timing": ["daytime", "evening"],
-        "region": ["n/a"],
-        "radiation": ["n/a"],
-        "severity": ["mild", "moderate"],
-        "clinical tests": ["serum-sodium", "serum-osmolality", "urine-osmolality", "water-deprivation-test"],
-        "other symptoms": ["hyponatremia", "habit-water-drinking", "psychiatric-history"]
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "nsaids",
+          "urination"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "suprapubic",
+          "flank"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "urine-dipstick",
+          "suprapubic-tenderness"
+        ],
+        "other symptoms": [
+          "dysuria",
+          "polyuria",
+          "polydipsia"
+        ]
       },
       "freq": "rare"
     },
@@ -387,17 +937,47 @@
       "system": "Excessive Fluid Intake",
       "redFlag": false,
       "hpi": {
-        "onset": ["subacute", "chronic"],
-        "progression": ["worsening"],
-        "palliate": ["desmopressin"],
-        "provoke": ["tumor", "inflammation", "trauma"],
-        "quality": ["central-diabetes-insipidus"],
-        "timing": ["daytime", "nocturnal"],
-        "region": ["n/a"],
-        "radiation": ["n/a"],
-        "severity": ["moderate", "severe"],
-        "clinical tests": ["serum-sodium", "serum-osmolality", "urine-osmolality", "water-deprivation-test", "desmopressin-challenge", "mri-brain"],
-        "other symptoms": ["polydipsia", "nocturia", "headache", "visual-changes", "dehydration"]
+        "onset": [
+          "acute",
+          "chronic",
+          "gradual"
+        ],
+        "progression": [
+          "improving",
+          "stable"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "nsaids",
+          "urination"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "suprapubic",
+          "flank"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "urine-dipstick",
+          "suprapubic-tenderness"
+        ],
+        "other symptoms": [
+          "dysuria",
+          "polydipsia",
+          "reflux-symptoms"
+        ]
       },
       "freq": "rare"
     }

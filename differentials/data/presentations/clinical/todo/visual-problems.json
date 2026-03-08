@@ -6,17 +6,44 @@
       "system": "General",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "movement",
+          "pressure"
+        ],
+        "quality": [
+          "pressure",
+          "throbbing"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "slit-lamp-exam",
+          "visual-field-test"
+        ],
+        "other symptoms": [
+          "visual-problem"
+        ]
       },
       "freq": "common"
     },
@@ -25,17 +52,46 @@
       "system": "General",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "gradual"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "movement",
+          "pressure"
+        ],
+        "quality": [
+          "pressure",
+          "throbbing"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "scalp"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "slit-lamp-exam",
+          "visual-field-test",
+          "reflex-testing"
+        ],
+        "other symptoms": [
+          "visual-problem"
+        ]
       },
       "freq": "common"
     },
@@ -44,17 +100,46 @@
       "system": "General",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "movement",
+          "pressure"
+        ],
+        "quality": [
+          "pressure",
+          "throbbing"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "slit-lamp-exam",
+          "visual-field-test"
+        ],
+        "other symptoms": [
+          "visual-problem",
+          "nausea",
+          "vomiting"
+        ]
       },
       "freq": "common"
     },
@@ -63,17 +148,44 @@
       "system": "General",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "movement",
+          "pressure"
+        ],
+        "quality": [
+          "pressure",
+          "throbbing"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "scalp"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "slit-lamp-exam",
+          "visual-field-test"
+        ],
+        "other symptoms": [
+          "visual-problem"
+        ]
       },
       "freq": "common"
     },
@@ -82,17 +194,46 @@
       "system": "General",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "movement",
+          "pressure"
+        ],
+        "quality": [
+          "pressure",
+          "throbbing"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "slit-lamp-exam",
+          "visual-field-test"
+        ],
+        "other symptoms": [
+          "visual-problem",
+          "nausea",
+          "vomiting"
+        ]
       },
       "freq": "uncommon"
     },
@@ -101,17 +242,45 @@
       "system": "Blurring Of Vision",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "movement",
+          "pressure"
+        ],
+        "quality": [
+          "pressure",
+          "throbbing"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "slit-lamp-exam",
+          "visual-field-test"
+        ],
+        "other symptoms": [
+          "visual-problem",
+          "stroke-symptoms"
+        ]
       },
       "freq": "common"
     },
@@ -120,190 +289,479 @@
       "system": "Blurring Of Vision",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "movement",
+          "pressure"
+        ],
+        "quality": [
+          "pressure",
+          "throbbing",
+          "sharp"
+        ],
+        "timing": [
+          "post-traumatic"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "slit-lamp-exam",
+          "visual-field-test"
+        ],
+        "other symptoms": [
+          "visual-problem"
+        ]
       },
       "freq": "uncommon"
     },
     {
-      "name": "Homonymous hemianopia \u2013 stroke, tumour",
+      "name": "Homonymous hemianopia – stroke, tumour",
       "system": "Partial Loss",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "insidious"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "movement",
+          "pressure"
+        ],
+        "quality": [
+          "pressure",
+          "throbbing"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "scalp"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate",
+          "severe"
+        ],
+        "clinical tests": [
+          "slit-lamp-exam",
+          "visual-field-test"
+        ],
+        "other symptoms": [
+          "visual-problem",
+          "stroke-symptoms",
+          "weight-loss"
+        ]
       },
       "freq": "common"
     },
     {
-      "name": "Peripheral \ufb01eld loss \u2013 glaucoma, papilloedema",
+      "name": "Peripheral ﬁeld loss – glaucoma, papilloedema",
       "system": "Partial Loss",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "movement",
+          "pressure"
+        ],
+        "quality": [
+          "pressure",
+          "throbbing"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "scalp"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "slit-lamp-exam",
+          "visual-field-test"
+        ],
+        "other symptoms": [
+          "visual-problem",
+          "stroke-symptoms"
+        ]
       },
       "freq": "common"
     },
     {
-      "name": "Central \ufb01eld loss \u2013 age-related macular degeneration",
+      "name": "Central ﬁeld loss – age-related macular degeneration",
       "system": "Partial Loss",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "movement",
+          "pressure"
+        ],
+        "quality": [
+          "pressure",
+          "throbbing"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "scalp"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "slit-lamp-exam",
+          "visual-field-test",
+          "reflex-testing"
+        ],
+        "other symptoms": [
+          "visual-problem",
+          "stroke-symptoms"
+        ]
       },
       "freq": "common"
     },
     {
-      "name": "Bitemporal hemianopia \u2013 pituitary tumour",
+      "name": "Bitemporal hemianopia – pituitary tumour",
       "system": "Partial Loss",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "insidious"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "movement",
+          "pressure"
+        ],
+        "quality": [
+          "pressure",
+          "throbbing"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "scalp"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate",
+          "severe"
+        ],
+        "clinical tests": [
+          "slit-lamp-exam",
+          "visual-field-test"
+        ],
+        "other symptoms": [
+          "visual-problem",
+          "stroke-symptoms",
+          "weight-loss"
+        ]
       },
       "freq": "uncommon"
     },
     {
-      "name": "Horizontal \ufb01eld loss \u2013 retinal vascular occlusion",
+      "name": "Horizontal ﬁeld loss – retinal vascular occlusion",
       "system": "Partial Loss",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "movement",
+          "pressure"
+        ],
+        "quality": [
+          "pressure",
+          "throbbing"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "scalp"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "slit-lamp-exam",
+          "visual-field-test",
+          "reflex-testing"
+        ],
+        "other symptoms": [
+          "visual-problem",
+          "stroke-symptoms"
+        ]
       },
       "freq": "rare"
     },
-
     {
       "name": "uncommon",
       "system": "Freq",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "movement",
+          "pressure"
+        ],
+        "quality": [
+          "pressure",
+          "throbbing"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "slit-lamp-exam",
+          "visual-field-test"
+        ],
+        "other symptoms": [
+          "visual-problem"
+        ]
       },
       "freq": "unknown"
     },
-
     {
       "name": "lesions at the optic chiasma or more posteriorly cause binocular loss",
-      "system": "Vitamin A de\ufb01ciency \u2022 (common in underdeveloped countries)",
+      "system": "Vitamin A deﬁciency • (common in underdeveloped countries)",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "movement",
+          "pressure"
+        ],
+        "quality": [
+          "pressure",
+          "throbbing"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "scalp"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "slit-lamp-exam",
+          "visual-field-test",
+          "reflex-testing"
+        ],
+        "other symptoms": [
+          "visual-problem",
+          "stroke-symptoms"
+        ]
       },
       "freq": "rare"
     },
     {
       "name": "Sudden onset of visual disturbance or loss is an opthalmic",
-      "system": "Vitamin A de\ufb01ciency \u2022 (common in underdeveloped countries)",
+      "system": "Vitamin A deﬁciency • (common in underdeveloped countries)",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "movement",
+          "pressure"
+        ],
+        "quality": [
+          "pressure",
+          "throbbing"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "fingers",
+          "scalp"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "slit-lamp-exam",
+          "visual-field-test",
+          "reflex-testing"
+        ],
+        "other symptoms": [
+          "visual-problem",
+          "stroke-symptoms"
+        ]
       },
       "freq": "common"
     },
     {
       "name": "If temporal arteritis is suspected consider treatment",
-      "system": "Vitamin A de\ufb01ciency \u2022 (common in underdeveloped countries)",
+      "system": "Vitamin A deﬁciency • (common in underdeveloped countries)",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "movement",
+          "pressure"
+        ],
+        "quality": [
+          "pressure",
+          "throbbing",
+          "tender"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "face",
+          "scalp"
+        ],
+        "radiation": [
+          "jaw"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "slit-lamp-exam",
+          "visual-field-test"
+        ],
+        "other symptoms": [
+          "visual-problem"
+        ]
       },
       "freq": "common"
     }

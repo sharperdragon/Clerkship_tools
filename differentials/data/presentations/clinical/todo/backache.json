@@ -6,17 +6,44 @@
       "system": "Congenital",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "rest",
+          "antacids"
+        ],
+        "provoke": [
+          "movement",
+          "coughing"
+        ],
+        "quality": [
+          "colicky",
+          "dull"
+        ],
+        "timing": [
+          "morning"
+        ],
+        "region": [
+          "low-back"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "straight-leg-raise",
+          "palpation"
+        ],
+        "other symptoms": [
+          "backache"
+        ]
       },
       "freq": "uncommon"
     },
@@ -25,17 +52,48 @@
       "system": "Traumatic",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "rest",
+          "antacids"
+        ],
+        "provoke": [
+          "movement",
+          "coughing"
+        ],
+        "quality": [
+          "colicky",
+          "dull",
+          "sharp"
+        ],
+        "timing": [
+          "morning",
+          "post-traumatic"
+        ],
+        "region": [
+          "low-back",
+          "groin"
+        ],
+        "radiation": [
+          "groin"
+        ],
+        "severity": [
+          "catastrophic",
+          "severe"
+        ],
+        "clinical tests": [
+          "straight-leg-raise",
+          "palpation"
+        ],
+        "other symptoms": [
+          "backache"
+        ]
       },
       "freq": "common"
     },
@@ -44,17 +102,46 @@
       "system": "Traumatic",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "rest",
+          "antacids"
+        ],
+        "provoke": [
+          "movement",
+          "coughing"
+        ],
+        "quality": [
+          "colicky",
+          "dull",
+          "sharp"
+        ],
+        "timing": [
+          "morning",
+          "post-traumatic"
+        ],
+        "region": [
+          "low-back"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "straight-leg-raise",
+          "palpation"
+        ],
+        "other symptoms": [
+          "backache"
+        ]
       },
       "freq": "common"
     },
@@ -63,17 +150,48 @@
       "system": "Traumatic",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "rest",
+          "antacids"
+        ],
+        "provoke": [
+          "movement",
+          "coughing"
+        ],
+        "quality": [
+          "colicky",
+          "dull",
+          "tearing"
+        ],
+        "timing": [
+          "morning",
+          "post-traumatic"
+        ],
+        "region": [
+          "low-back"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "straight-leg-raise",
+          "palpation"
+        ],
+        "other symptoms": [
+          "backache",
+          "cough"
+        ]
       },
       "freq": "common"
     },
@@ -82,37 +200,98 @@
       "system": "Traumatic",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "rest",
+          "antacids"
+        ],
+        "provoke": [
+          "movement",
+          "coughing"
+        ],
+        "quality": [
+          "colicky",
+          "dull",
+          "tearing"
+        ],
+        "timing": [
+          "morning",
+          "post-traumatic"
+        ],
+        "region": [
+          "low-back"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "catastrophic",
+          "severe"
+        ],
+        "clinical tests": [
+          "straight-leg-raise",
+          "palpation"
+        ],
+        "other symptoms": [
+          "backache"
+        ]
       },
       "freq": "common"
     },
-
     {
       "name": "Discitis",
-      "system": "TB \u2022 (common in parts of the world where TB is endemic)",
+      "system": "TB • (common in parts of the world where TB is endemic)",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "rest",
+          "antacids"
+        ],
+        "provoke": [
+          "movement",
+          "coughing"
+        ],
+        "quality": [
+          "colicky",
+          "dull"
+        ],
+        "timing": [
+          "morning"
+        ],
+        "region": [
+          "low-back",
+          "leg"
+        ],
+        "radiation": [
+          "legs"
+        ],
+        "severity": [
+          "mild",
+          "moderate"
+        ],
+        "clinical tests": [
+          "straight-leg-raise",
+          "palpation"
+        ],
+        "other symptoms": [
+          "backache",
+          "fever",
+          "malaise"
+        ]
       },
       "freq": "rare"
     },
@@ -121,17 +300,48 @@
       "system": "Inflammatory",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "rest",
+          "antacids"
+        ],
+        "provoke": [
+          "movement",
+          "coughing"
+        ],
+        "quality": [
+          "colicky",
+          "dull",
+          "aching"
+        ],
+        "timing": [
+          "morning",
+          "intermittent"
+        ],
+        "region": [
+          "low-back"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "catastrophic",
+          "severe"
+        ],
+        "clinical tests": [
+          "straight-leg-raise",
+          "palpation"
+        ],
+        "other symptoms": [
+          "backache"
+        ]
       },
       "freq": "common"
     },
@@ -140,36 +350,93 @@
       "system": "Inflammatory",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "rest",
+          "antacids"
+        ],
+        "provoke": [
+          "movement",
+          "coughing"
+        ],
+        "quality": [
+          "colicky",
+          "dull",
+          "aching"
+        ],
+        "timing": [
+          "morning",
+          "intermittent"
+        ],
+        "region": [
+          "low-back"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "straight-leg-raise",
+          "palpation"
+        ],
+        "other symptoms": [
+          "backache"
+        ]
       },
       "freq": "common"
     },
     {
-      "name": "Metastases \u2013 multiple myeloma",
+      "name": "Metastases – multiple myeloma",
       "system": "Neoplastic",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "rest",
+          "antacids"
+        ],
+        "provoke": [
+          "movement",
+          "coughing"
+        ],
+        "quality": [
+          "colicky",
+          "dull"
+        ],
+        "timing": [
+          "morning"
+        ],
+        "region": [
+          "low-back"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "straight-leg-raise",
+          "palpation"
+        ],
+        "other symptoms": [
+          "backache"
+        ]
       },
       "freq": "uncommon"
     },
@@ -178,17 +445,44 @@
       "system": "Neoplastic",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "rest",
+          "antacids"
+        ],
+        "provoke": [
+          "movement",
+          "coughing"
+        ],
+        "quality": [
+          "colicky",
+          "dull"
+        ],
+        "timing": [
+          "morning"
+        ],
+        "region": [
+          "low-back"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "straight-leg-raise",
+          "palpation"
+        ],
+        "other symptoms": [
+          "backache"
+        ]
       },
       "freq": "rare"
     },
@@ -197,17 +491,47 @@
       "system": "Degenerative",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "rest",
+          "antacids"
+        ],
+        "provoke": [
+          "movement",
+          "coughing"
+        ],
+        "quality": [
+          "colicky",
+          "dull",
+          "aching"
+        ],
+        "timing": [
+          "morning",
+          "intermittent"
+        ],
+        "region": [
+          "low-back"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "straight-leg-raise",
+          "palpation"
+        ],
+        "other symptoms": [
+          "backache"
+        ]
       },
       "freq": "common"
     },
@@ -216,17 +540,45 @@
       "system": "Degenerative",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "rest",
+          "antacids"
+        ],
+        "provoke": [
+          "movement",
+          "coughing"
+        ],
+        "quality": [
+          "colicky",
+          "dull"
+        ],
+        "timing": [
+          "morning"
+        ],
+        "region": [
+          "low-back",
+          "pelvic"
+        ],
+        "radiation": [
+          "legs"
+        ],
+        "severity": [
+          "mild"
+        ],
+        "clinical tests": [
+          "straight-leg-raise",
+          "palpation"
+        ],
+        "other symptoms": [
+          "backache"
+        ]
       },
       "freq": "common"
     },
@@ -235,17 +587,52 @@
       "system": "Metabolic",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "gradual"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "rest",
+          "antacids"
+        ],
+        "provoke": [
+          "movement",
+          "coughing"
+        ],
+        "quality": [
+          "colicky",
+          "dull",
+          "tearing"
+        ],
+        "timing": [
+          "morning",
+          "post-traumatic"
+        ],
+        "region": [
+          "low-back",
+          "lower-chest"
+        ],
+        "radiation": [
+          "groin",
+          "chest"
+        ],
+        "severity": [
+          "catastrophic",
+          "severe"
+        ],
+        "clinical tests": [
+          "straight-leg-raise",
+          "palpation"
+        ],
+        "other symptoms": [
+          "backache",
+          "chest-pain"
+        ]
       },
       "freq": "common"
     },
@@ -254,74 +641,192 @@
       "system": "Metabolic",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "gradual"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "rest",
+          "antacids"
+        ],
+        "provoke": [
+          "movement",
+          "coughing"
+        ],
+        "quality": [
+          "colicky",
+          "dull"
+        ],
+        "timing": [
+          "morning"
+        ],
+        "region": [
+          "low-back"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "straight-leg-raise",
+          "palpation"
+        ],
+        "other symptoms": [
+          "backache"
+        ]
       },
       "freq": "uncommon"
     },
     {
-      "name": "Cushing\u2019s disease (osteoporosis)",
+      "name": "Cushing’s disease (osteoporosis)",
       "system": "Endocrine",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "gradual"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "rest",
+          "antacids"
+        ],
+        "provoke": [
+          "movement",
+          "coughing"
+        ],
+        "quality": [
+          "colicky",
+          "dull"
+        ],
+        "timing": [
+          "morning"
+        ],
+        "region": [
+          "low-back",
+          "face"
+        ],
+        "radiation": [
+          "legs"
+        ],
+        "severity": [
+          "catastrophic",
+          "severe"
+        ],
+        "clinical tests": [
+          "straight-leg-raise",
+          "palpation"
+        ],
+        "other symptoms": [
+          "backache"
+        ]
       },
       "freq": "uncommon"
     },
     {
-      "name": "Paget\u2019s disease",
+      "name": "Paget’s disease",
       "system": "Idiopathic",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "gradual"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "rest",
+          "antacids"
+        ],
+        "provoke": [
+          "movement",
+          "coughing"
+        ],
+        "quality": [
+          "colicky",
+          "dull"
+        ],
+        "timing": [
+          "morning"
+        ],
+        "region": [
+          "low-back",
+          "face"
+        ],
+        "radiation": [
+          "legs"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "straight-leg-raise",
+          "palpation"
+        ],
+        "other symptoms": [
+          "backache"
+        ]
       },
       "freq": "uncommon"
     },
     {
-      "name": "Scheuermann\u2019s disease",
+      "name": "Scheuermann’s disease",
       "system": "Idiopathic",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "gradual"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "rest",
+          "antacids"
+        ],
+        "provoke": [
+          "movement",
+          "coughing"
+        ],
+        "quality": [
+          "colicky",
+          "dull"
+        ],
+        "timing": [
+          "morning"
+        ],
+        "region": [
+          "low-back",
+          "face"
+        ],
+        "radiation": [
+          "legs"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "straight-leg-raise",
+          "palpation"
+        ],
+        "other symptoms": [
+          "backache"
+        ]
       },
       "freq": "rare"
     },
@@ -330,17 +835,47 @@
       "system": "Psychogenic",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "rest",
+          "antacids"
+        ],
+        "provoke": [
+          "movement",
+          "coughing"
+        ],
+        "quality": [
+          "colicky",
+          "dull"
+        ],
+        "timing": [
+          "morning"
+        ],
+        "region": [
+          "low-back",
+          "rectum"
+        ],
+        "radiation": [
+          "legs"
+        ],
+        "severity": [
+          "severe",
+          "mild"
+        ],
+        "clinical tests": [
+          "straight-leg-raise",
+          "palpation",
+          "digital-rectal-exam"
+        ],
+        "other symptoms": [
+          "backache"
+        ]
       },
       "freq": "common"
     },
@@ -349,17 +884,45 @@
       "system": "Visceral",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "rest",
+          "antacids"
+        ],
+        "provoke": [
+          "movement",
+          "coughing"
+        ],
+        "quality": [
+          "colicky",
+          "dull"
+        ],
+        "timing": [
+          "morning"
+        ],
+        "region": [
+          "low-back",
+          "epigastrium"
+        ],
+        "radiation": [
+          "back"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "straight-leg-raise",
+          "palpation"
+        ],
+        "other symptoms": [
+          "backache"
+        ]
       },
       "freq": "uncommon"
     },
@@ -368,17 +931,50 @@
       "system": "Visceral",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "insidious"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "rest",
+          "antacids"
+        ],
+        "provoke": [
+          "movement",
+          "coughing"
+        ],
+        "quality": [
+          "colicky",
+          "dull",
+          "aching"
+        ],
+        "timing": [
+          "morning"
+        ],
+        "region": [
+          "low-back",
+          "rectum"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate",
+          "severe"
+        ],
+        "clinical tests": [
+          "straight-leg-raise",
+          "palpation",
+          "digital-rectal-exam"
+        ],
+        "other symptoms": [
+          "backache",
+          "weight-loss"
+        ]
       },
       "freq": "uncommon"
     },
@@ -387,17 +983,50 @@
       "system": "Visceral",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "insidious"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "rest",
+          "antacids"
+        ],
+        "provoke": [
+          "movement",
+          "coughing"
+        ],
+        "quality": [
+          "colicky",
+          "dull",
+          "aching"
+        ],
+        "timing": [
+          "morning"
+        ],
+        "region": [
+          "low-back",
+          "rectum"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate",
+          "severe"
+        ],
+        "clinical tests": [
+          "straight-leg-raise",
+          "palpation",
+          "digital-rectal-exam"
+        ],
+        "other symptoms": [
+          "backache",
+          "weight-loss"
+        ]
       },
       "freq": "uncommon"
     },
@@ -406,17 +1035,46 @@
       "system": "Vascular",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "rest",
+          "antacids"
+        ],
+        "provoke": [
+          "movement",
+          "coughing"
+        ],
+        "quality": [
+          "colicky",
+          "dull",
+          "aching"
+        ],
+        "timing": [
+          "morning"
+        ],
+        "region": [
+          "low-back",
+          "flank"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "straight-leg-raise",
+          "palpation"
+        ],
+        "other symptoms": [
+          "backache"
+        ]
       },
       "freq": "common"
     },
@@ -425,55 +1083,146 @@
       "system": "Vascular",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "insidious"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "rest",
+          "antacids"
+        ],
+        "provoke": [
+          "movement",
+          "coughing"
+        ],
+        "quality": [
+          "colicky",
+          "dull",
+          "aching"
+        ],
+        "timing": [
+          "morning"
+        ],
+        "region": [
+          "low-back",
+          "lower-chest"
+        ],
+        "radiation": [
+          "chest"
+        ],
+        "severity": [
+          "moderate",
+          "severe"
+        ],
+        "clinical tests": [
+          "straight-leg-raise",
+          "palpation",
+          "digital-rectal-exam"
+        ],
+        "other symptoms": [
+          "backache",
+          "weight-loss"
+        ]
       },
       "freq": "uncommon"
     },
     {
-      "name": "In\ufb02ammatory disease",
+      "name": "Inﬂammatory disease",
       "system": "Vascular",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "gradual"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "rest",
+          "antacids"
+        ],
+        "provoke": [
+          "movement",
+          "coughing"
+        ],
+        "quality": [
+          "colicky",
+          "dull"
+        ],
+        "timing": [
+          "morning"
+        ],
+        "region": [
+          "low-back",
+          "face"
+        ],
+        "radiation": [
+          "legs"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "straight-leg-raise",
+          "palpation"
+        ],
+        "other symptoms": [
+          "backache"
+        ]
       },
       "freq": "uncommon"
     },
     {
-      "name": "Pelvic in\ufb02ammatory disease",
+      "name": "Pelvic inﬂammatory disease",
       "system": "Gynecological",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "gradual"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "rest",
+          "antacids"
+        ],
+        "provoke": [
+          "movement",
+          "coughing"
+        ],
+        "quality": [
+          "colicky",
+          "dull"
+        ],
+        "timing": [
+          "morning"
+        ],
+        "region": [
+          "low-back",
+          "face"
+        ],
+        "radiation": [
+          "legs"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "straight-leg-raise",
+          "palpation"
+        ],
+        "other symptoms": [
+          "backache"
+        ]
       },
       "freq": "common"
     },
@@ -482,17 +1231,45 @@
       "system": "Gynecological",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "rest",
+          "antacids"
+        ],
+        "provoke": [
+          "movement",
+          "coughing"
+        ],
+        "quality": [
+          "colicky",
+          "dull"
+        ],
+        "timing": [
+          "morning"
+        ],
+        "region": [
+          "low-back",
+          "pelvic"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "straight-leg-raise",
+          "palpation"
+        ],
+        "other symptoms": [
+          "backache"
+        ]
       },
       "freq": "common"
     },
@@ -501,17 +1278,47 @@
       "system": "Gynecological",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "insidious"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "rest",
+          "antacids"
+        ],
+        "provoke": [
+          "movement",
+          "coughing"
+        ],
+        "quality": [
+          "colicky",
+          "dull"
+        ],
+        "timing": [
+          "morning"
+        ],
+        "region": [
+          "low-back"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate",
+          "severe"
+        ],
+        "clinical tests": [
+          "straight-leg-raise",
+          "palpation"
+        ],
+        "other symptoms": [
+          "backache",
+          "weight-loss"
+        ]
       },
       "freq": "uncommon"
     }

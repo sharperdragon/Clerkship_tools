@@ -2,59 +2,151 @@
   "presentation": "Joint disorders",
   "items": [
     {
-      "name": "Achondroplasia (dwar\ufb01sm)",
+      "name": "Achondroplasia (dwarﬁsm)",
       "system": "Congenital",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "walking"
+        ],
+        "quality": [
+          "aching",
+          "burning"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "pain"
+        ]
       },
       "freq": "rare"
     },
     {
-      "name": "Ehlers\u2013Danlos syndrome",
+      "name": "Ehlers–Danlos syndrome",
       "system": "Congenital",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "walking"
+        ],
+        "quality": [
+          "aching",
+          "burning",
+          "tearing"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal",
+          "with-activity"
+        ],
+        "region": [
+          "n/a",
+          "neck"
+        ],
+        "radiation": [
+          "chest",
+          "arm"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "pain"
+        ]
       },
       "freq": "rare"
     },
     {
-      "name": "Klippel\u2013Feil syndrome",
+      "name": "Klippel–Feil syndrome",
       "system": "Congenital",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "walking"
+        ],
+        "quality": [
+          "aching",
+          "burning",
+          "tearing"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal",
+          "with-activity"
+        ],
+        "region": [
+          "n/a",
+          "neck"
+        ],
+        "radiation": [
+          "chest",
+          "arm"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "pain"
+        ]
       },
       "freq": "rare"
     },
@@ -63,76 +155,193 @@
       "system": "Congenital",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "walking"
+        ],
+        "quality": [
+          "aching",
+          "burning"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "n/a",
+          "hip"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "pain"
+        ]
       },
       "freq": "uncommon"
     },
-
-
     {
       "name": "increase in developed countries)",
-      "system": "TB \u2022 (very common in the developing world and on the",
+      "system": "TB • (very common in the developing world and on the",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "walking"
+        ],
+        "quality": [
+          "aching",
+          "burning",
+          "waddling"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation",
+          "gait-assessment"
+        ],
+        "other symptoms": [
+          "pain",
+          "fever",
+          "malaise"
+        ]
       },
       "freq": "uncommon"
     },
     {
       "name": "Endocarditis",
-      "system": "Rheumatic fever \u2022 (very common in developing countries)",
+      "system": "Rheumatic fever • (very common in developing countries)",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "walking"
+        ],
+        "quality": [
+          "aching",
+          "burning"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "pain",
+          "fever"
+        ]
       },
       "freq": "rare"
     },
     {
       "name": "Brucellosis",
-      "system": "Rheumatic fever \u2022 (very common in developing countries)",
+      "system": "Rheumatic fever • (very common in developing countries)",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "walking"
+        ],
+        "quality": [
+          "aching",
+          "burning"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "pain"
+        ]
       },
       "freq": "rare"
     },
@@ -141,17 +350,46 @@
       "system": "Freq",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "walking"
+        ],
+        "quality": [
+          "aching",
+          "burning"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "n/a",
+          "wrist"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "pain"
+        ]
       },
       "freq": "unknown"
     },
@@ -160,17 +398,52 @@
       "system": "Inflammatory",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "walking"
+        ],
+        "quality": [
+          "aching",
+          "burning",
+          "tearing"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal",
+          "morning"
+        ],
+        "region": [
+          "n/a",
+          "face"
+        ],
+        "radiation": [
+          "legs"
+        ],
+        "severity": [
+          "severe",
+          "mild"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "pain",
+          "fever",
+          "malaise"
+        ]
       },
       "freq": "common"
     },
@@ -179,17 +452,47 @@
       "system": "Inflammatory",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "walking"
+        ],
+        "quality": [
+          "aching",
+          "burning"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal",
+          "morning"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "pain"
+        ]
       },
       "freq": "common"
     },
@@ -198,55 +501,159 @@
       "system": "Inflammatory",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "walking"
+        ],
+        "quality": [
+          "aching",
+          "burning",
+          "tearing"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal",
+          "morning"
+        ],
+        "region": [
+          "n/a",
+          "face"
+        ],
+        "radiation": [
+          "legs"
+        ],
+        "severity": [
+          "severe",
+          "mild"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "pain",
+          "fever",
+          "malaise"
+        ]
       },
       "freq": "uncommon"
     },
     {
-      "name": "Henoch\u2013Sch\u00f6nlein disease",
+      "name": "Henoch–Schönlein disease",
       "system": "Inflammatory",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "walking"
+        ],
+        "quality": [
+          "aching",
+          "burning",
+          "limp"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal",
+          "morning"
+        ],
+        "region": [
+          "n/a",
+          "face"
+        ],
+        "radiation": [
+          "legs"
+        ],
+        "severity": [
+          "mild"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "pain",
+          "fever",
+          "fatigue"
+        ]
       },
       "freq": "uncommon"
     },
     {
-      "name": "Reactive arthritis (Reiter\u2019s disease)",
+      "name": "Reactive arthritis (Reiter’s disease)",
       "system": "Inflammatory",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "walking"
+        ],
+        "quality": [
+          "aching",
+          "burning",
+          "tearing"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal",
+          "morning"
+        ],
+        "region": [
+          "n/a",
+          "face"
+        ],
+        "radiation": [
+          "legs"
+        ],
+        "severity": [
+          "severe",
+          "mild"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "pain",
+          "fever",
+          "malaise"
+        ]
       },
       "freq": "uncommon"
     },
@@ -255,17 +662,47 @@
       "system": "Inflammatory",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "walking"
+        ],
+        "quality": [
+          "aching",
+          "burning"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "pain",
+          "fever"
+        ]
       },
       "freq": "uncommon"
     },
@@ -274,17 +711,50 @@
       "system": "Inflammatory",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "walking"
+        ],
+        "quality": [
+          "aching",
+          "burning",
+          "limp"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "n/a",
+          "face"
+        ],
+        "radiation": [
+          "legs"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "pain",
+          "fever",
+          "fatigue"
+        ]
       },
       "freq": "uncommon"
     },
@@ -293,17 +763,50 @@
       "system": "Inflammatory",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "walking"
+        ],
+        "quality": [
+          "aching",
+          "burning",
+          "limp"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "n/a",
+          "face"
+        ],
+        "radiation": [
+          "legs"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "pain",
+          "fever",
+          "fatigue"
+        ]
       },
       "freq": "uncommon"
     },
@@ -312,17 +815,48 @@
       "system": "Inflammatory",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "walking"
+        ],
+        "quality": [
+          "aching",
+          "burning",
+          "tender"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "n/a",
+          "wrist"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "pain"
+        ]
       },
       "freq": "common"
     },
@@ -331,36 +865,97 @@
       "system": "Inflammatory",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "walking"
+        ],
+        "quality": [
+          "aching",
+          "burning",
+          "tender"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "n/a",
+          "wrist"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "pain"
+        ]
       },
       "freq": "common"
     },
     {
-      "name": "de Quervain\u2019s",
+      "name": "de Quervain’s",
       "system": "Inflammatory",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "walking"
+        ],
+        "quality": [
+          "aching",
+          "burning"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "n/a",
+          "wrist"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "pain"
+        ]
       },
       "freq": "common"
     },
@@ -369,17 +964,49 @@
       "system": "Inflammatory",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "walking"
+        ],
+        "quality": [
+          "aching",
+          "burning",
+          "stabbing"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "n/a",
+          "buttocks"
+        ],
+        "radiation": [
+          "legs"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "pain",
+          "rash"
+        ]
       },
       "freq": "common"
     },
@@ -388,55 +1015,155 @@
       "system": "Inflammatory",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "walking"
+        ],
+        "quality": [
+          "aching",
+          "burning",
+          "tearing"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal",
+          "with-activity"
+        ],
+        "region": [
+          "n/a",
+          "neck"
+        ],
+        "radiation": [
+          "chest",
+          "arm"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation",
+          "percussion"
+        ],
+        "other symptoms": [
+          "pain"
+        ]
       },
       "freq": "common"
     },
     {
-      "name": "Avascular necrosis of the lunate (Kienb\u00f6ck\u2019s disease)",
+      "name": "Avascular necrosis of the lunate (Kienböck’s disease)",
       "system": "Inflammatory",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "walking"
+        ],
+        "quality": [
+          "aching",
+          "burning",
+          "tender"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "n/a",
+          "neck"
+        ],
+        "radiation": [
+          "legs"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "pain",
+          "fever",
+          "fatigue"
+        ]
       },
       "freq": "uncommon"
     },
     {
-      "name": "Reactive/Reiter\u2019s syndrome",
+      "name": "Reactive/Reiter’s syndrome",
       "system": "Inflammatory",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "walking"
+        ],
+        "quality": [
+          "aching",
+          "burning",
+          "tearing"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal",
+          "with-activity"
+        ],
+        "region": [
+          "n/a",
+          "neck"
+        ],
+        "radiation": [
+          "chest",
+          "arm"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "pain"
+        ]
       },
       "freq": "uncommon"
     },
@@ -445,17 +1172,49 @@
       "system": "Degenerative",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "walking"
+        ],
+        "quality": [
+          "aching",
+          "burning",
+          "tearing"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "n/a",
+          "face"
+        ],
+        "radiation": [
+          "legs"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "pain",
+          "fever"
+        ]
       },
       "freq": "common"
     },
@@ -464,17 +1223,47 @@
       "system": "Degenerative",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "walking"
+        ],
+        "quality": [
+          "aching",
+          "burning",
+          "tearing"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "n/a",
+          "shoulder"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "pain"
+        ]
       },
       "freq": "common"
     },
@@ -483,17 +1272,47 @@
       "system": "Degenerative",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "walking"
+        ],
+        "quality": [
+          "aching",
+          "burning",
+          "tearing"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "n/a",
+          "arm"
+        ],
+        "radiation": [
+          "arm"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "pain"
+        ]
       },
       "freq": "common"
     },
@@ -502,17 +1321,47 @@
       "system": "Degenerative",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "walking"
+        ],
+        "quality": [
+          "aching",
+          "burning",
+          "tearing"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "n/a",
+          "shoulder"
+        ],
+        "radiation": [
+          "arm"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "pain"
+        ]
       },
       "freq": "common"
     },
@@ -521,17 +1370,50 @@
       "system": "Degenerative",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "walking"
+        ],
+        "quality": [
+          "aching",
+          "burning",
+          "tearing"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "n/a",
+          "neck"
+        ],
+        "radiation": [
+          "shoulder-tip",
+          "arm"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "pain",
+          "fever",
+          "malaise"
+        ]
       },
       "freq": "common"
     },
@@ -540,17 +1422,49 @@
       "system": "Degenerative",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "walking"
+        ],
+        "quality": [
+          "aching",
+          "burning",
+          "tearing"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "n/a",
+          "face"
+        ],
+        "radiation": [
+          "legs"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "pain",
+          "fever"
+        ]
       },
       "freq": "uncommon"
     },
@@ -559,17 +1473,47 @@
       "system": "Degenerative",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "walking"
+        ],
+        "quality": [
+          "aching",
+          "burning",
+          "tearing"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "n/a",
+          "arm"
+        ],
+        "radiation": [
+          "arm"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "pain"
+        ]
       },
       "freq": "common"
     },
@@ -578,17 +1522,45 @@
       "system": "Degenerative",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "walking"
+        ],
+        "quality": [
+          "aching",
+          "burning"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "pain"
+        ]
       },
       "freq": "uncommon"
     },
@@ -597,17 +1569,47 @@
       "system": "Degenerative",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "walking"
+        ],
+        "quality": [
+          "aching",
+          "burning",
+          "tearing"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "n/a",
+          "elbow"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "pain"
+        ]
       },
       "freq": "rare"
     },
@@ -616,17 +1618,46 @@
       "system": "Degenerative",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "walking"
+        ],
+        "quality": [
+          "aching",
+          "burning"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "n/a",
+          "ankle"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "pain"
+        ]
       },
       "freq": "common"
     },
@@ -635,17 +1666,46 @@
       "system": "Degenerative",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "walking"
+        ],
+        "quality": [
+          "aching",
+          "burning"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "n/a",
+          "face"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "pain"
+        ]
       },
       "freq": "common"
     },
@@ -654,17 +1714,47 @@
       "system": "Degenerative",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "walking"
+        ],
+        "quality": [
+          "aching",
+          "burning",
+          "tender"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "n/a",
+          "neck"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "pain"
+        ]
       },
       "freq": "uncommon"
     },
@@ -673,36 +1763,101 @@
       "system": "Enteropathic",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "relapsing"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "walking"
+        ],
+        "quality": [
+          "aching",
+          "burning"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "pain",
+          "fever",
+          "fatigue",
+          "malaise"
+        ]
       },
       "freq": "uncommon"
     },
     {
-      "name": "In\ufb02ammatory bowel disease",
+      "name": "Inﬂammatory bowel disease",
       "system": "Enteropathic",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "walking"
+        ],
+        "quality": [
+          "aching",
+          "burning",
+          "limp"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "n/a",
+          "face"
+        ],
+        "radiation": [
+          "legs"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "pain",
+          "fever",
+          "night-sweats"
+        ]
       },
       "freq": "uncommon"
     },
@@ -711,17 +1866,47 @@
       "system": "Endocrine",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "gradual"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "walking"
+        ],
+        "quality": [
+          "aching",
+          "burning"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "n/a",
+          "hand"
+        ],
+        "radiation": [
+          "hand"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "pain"
+        ]
       },
       "freq": "rare"
     },
@@ -730,17 +1915,48 @@
       "system": "Metabolic",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "walking"
+        ],
+        "quality": [
+          "aching",
+          "burning"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "n/a",
+          "elbow"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "pain",
+          "fever"
+        ]
       },
       "freq": "common"
     },
@@ -749,17 +1965,47 @@
       "system": "Metabolic",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "gradual"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "walking"
+        ],
+        "quality": [
+          "aching",
+          "burning"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "n/a",
+          "knee"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "pain"
+        ]
       },
       "freq": "common"
     },
@@ -768,55 +2014,154 @@
       "system": "Metabolic",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "gradual"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "walking"
+        ],
+        "quality": [
+          "aching",
+          "burning"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "pain"
+        ]
       },
       "freq": "rare"
     },
     {
-      "name": "Charcot\u2019s joints",
+      "name": "Charcot’s joints",
       "system": "Neuropathic",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "relapsing"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "walking"
+        ],
+        "quality": [
+          "aching",
+          "burning"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal",
+          "morning"
+        ],
+        "region": [
+          "n/a",
+          "neck"
+        ],
+        "radiation": [
+          "hand"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "pain",
+          "fever",
+          "abdominal-pain"
+        ]
       },
       "freq": "uncommon"
     },
     {
-      "name": "Charcot\u2019s joint",
+      "name": "Charcot’s joint",
       "system": "Neuropathic",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "walking"
+        ],
+        "quality": [
+          "aching",
+          "burning",
+          "stabbing"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal",
+          "morning"
+        ],
+        "region": [
+          "n/a",
+          "neck"
+        ],
+        "radiation": [
+          "legs",
+          "arm"
+        ],
+        "severity": [
+          "severe",
+          "mild"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation",
+          "digital-rectal-exam"
+        ],
+        "other symptoms": [
+          "pain",
+          "fever",
+          "abdominal-pain"
+        ]
       },
       "freq": "uncommon"
     },
@@ -825,17 +2170,45 @@
       "system": "Hematological",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "walking"
+        ],
+        "quality": [
+          "aching",
+          "burning"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "pain"
+        ]
       },
       "freq": "uncommon"
     },
@@ -844,17 +2217,45 @@
       "system": "Hematological",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "walking"
+        ],
+        "quality": [
+          "aching",
+          "burning"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "pain"
+        ]
       },
       "freq": "uncommon"
     },
@@ -863,36 +2264,98 @@
       "system": "Hematological",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "walking"
+        ],
+        "quality": [
+          "aching",
+          "burning",
+          "limp"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "n/a",
+          "face"
+        ],
+        "radiation": [
+          "legs"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "pain",
+          "fever",
+          "fatigue"
+        ]
       },
       "freq": "uncommon"
     },
     {
       "name": "countries)",
-      "system": "Beh\u00e7et\u2019s disease \u2022 (more common in certain Mediterranean",
+      "system": "Behçet’s disease • (more common in certain Mediterranean",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "walking"
+        ],
+        "quality": [
+          "aching",
+          "burning"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "pain",
+          "fever"
+        ]
       },
       "freq": "rare"
     },
@@ -901,17 +2364,51 @@
       "system": "Traumatic",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "walking"
+        ],
+        "quality": [
+          "aching",
+          "burning",
+          "tender"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal",
+          "post-traumatic"
+        ],
+        "region": [
+          "n/a",
+          "neck"
+        ],
+        "radiation": [
+          "legs",
+          "arm"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation",
+          "digital-rectal-exam"
+        ],
+        "other symptoms": [
+          "pain",
+          "stroke-symptoms"
+        ]
       },
       "freq": "common"
     },
@@ -920,17 +2417,51 @@
       "system": "Traumatic",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "walking"
+        ],
+        "quality": [
+          "aching",
+          "burning",
+          "tender"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal",
+          "post-traumatic"
+        ],
+        "region": [
+          "n/a",
+          "neck"
+        ],
+        "radiation": [
+          "legs",
+          "arm"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation",
+          "digital-rectal-exam"
+        ],
+        "other symptoms": [
+          "pain",
+          "stroke-symptoms"
+        ]
       },
       "freq": "rare"
     },
@@ -939,17 +2470,51 @@
       "system": "Traumatic",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "walking"
+        ],
+        "quality": [
+          "aching",
+          "burning",
+          "tender"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal",
+          "post-traumatic"
+        ],
+        "region": [
+          "n/a",
+          "neck"
+        ],
+        "radiation": [
+          "legs",
+          "arm"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation",
+          "digital-rectal-exam"
+        ],
+        "other symptoms": [
+          "pain",
+          "stroke-symptoms"
+        ]
       },
       "freq": "common"
     },
@@ -958,17 +2523,50 @@
       "system": "Traumatic",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "walking"
+        ],
+        "quality": [
+          "aching",
+          "burning",
+          "tearing"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal",
+          "post-traumatic"
+        ],
+        "region": [
+          "n/a",
+          "neck"
+        ],
+        "radiation": [
+          "arm",
+          "hand"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation",
+          "digital-rectal-exam"
+        ],
+        "other symptoms": [
+          "pain"
+        ]
       },
       "freq": "uncommon"
     },
@@ -977,17 +2575,49 @@
       "system": "Traumatic",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "walking"
+        ],
+        "quality": [
+          "aching",
+          "burning",
+          "tearing"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal",
+          "post-traumatic"
+        ],
+        "region": [
+          "n/a",
+          "elbow"
+        ],
+        "radiation": [
+          "hand"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation",
+          "digital-rectal-exam"
+        ],
+        "other symptoms": [
+          "pain"
+        ]
       },
       "freq": "rare"
     },
@@ -996,17 +2626,51 @@
       "system": "Traumatic",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "walking"
+        ],
+        "quality": [
+          "aching",
+          "burning",
+          "tender"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal",
+          "post-traumatic"
+        ],
+        "region": [
+          "n/a",
+          "neck"
+        ],
+        "radiation": [
+          "groin",
+          "legs"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation",
+          "digital-rectal-exam"
+        ],
+        "other symptoms": [
+          "pain",
+          "stroke-symptoms"
+        ]
       },
       "freq": "rare"
     },
@@ -1015,17 +2679,48 @@
       "system": "Traumatic",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "walking"
+        ],
+        "quality": [
+          "aching",
+          "burning",
+          "tender"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal",
+          "post-traumatic"
+        ],
+        "region": [
+          "n/a",
+          "neck"
+        ],
+        "radiation": [
+          "legs"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "pain"
+        ]
       },
       "freq": "rare"
     },
@@ -1034,55 +2729,152 @@
       "system": "Traumatic",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "relapsing"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "walking"
+        ],
+        "quality": [
+          "aching",
+          "burning",
+          "tender"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal",
+          "post-traumatic"
+        ],
+        "region": [
+          "n/a",
+          "neck"
+        ],
+        "radiation": [
+          "legs"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "pain"
+        ]
       },
       "freq": "rare"
     },
     {
-      "name": "Myositis ossi\ufb01cans",
+      "name": "Myositis ossiﬁcans",
       "system": "Traumatic",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "walking"
+        ],
+        "quality": [
+          "aching",
+          "burning",
+          "tearing"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal",
+          "post-traumatic"
+        ],
+        "region": [
+          "n/a",
+          "elbow"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "pain"
+        ]
       },
       "freq": "rare"
     },
     {
-      "name": "Distal radial fracture, , Smith\u2019s",
+      "name": "Distal radial fracture, , Smith’s",
       "system": "Traumatic",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "walking"
+        ],
+        "quality": [
+          "aching",
+          "burning",
+          "tender"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal",
+          "post-traumatic"
+        ],
+        "region": [
+          "n/a",
+          "neck"
+        ],
+        "radiation": [
+          "legs",
+          "arm"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation",
+          "digital-rectal-exam"
+        ],
+        "other symptoms": [
+          "pain",
+          "stroke-symptoms"
+        ]
       },
       "freq": "common"
     },
@@ -1091,17 +2883,51 @@
       "system": "Traumatic",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "walking"
+        ],
+        "quality": [
+          "aching",
+          "burning",
+          "tender"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal",
+          "post-traumatic"
+        ],
+        "region": [
+          "n/a",
+          "neck"
+        ],
+        "radiation": [
+          "legs",
+          "arm"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation",
+          "digital-rectal-exam"
+        ],
+        "other symptoms": [
+          "pain",
+          "stroke-symptoms"
+        ]
       },
       "freq": "common"
     },
@@ -1110,17 +2936,47 @@
       "system": "Traumatic",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "walking"
+        ],
+        "quality": [
+          "aching",
+          "burning",
+          "sharp"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal",
+          "post-traumatic"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "pain"
+        ]
       },
       "freq": "rare"
     },
@@ -1129,17 +2985,49 @@
       "system": "Traumatic",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "walking"
+        ],
+        "quality": [
+          "aching",
+          "burning",
+          "sharp"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal",
+          "with-activity"
+        ],
+        "region": [
+          "n/a",
+          "wrist"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation",
+          "percussion"
+        ],
+        "other symptoms": [
+          "pain"
+        ]
       },
       "freq": "rare"
     },
@@ -1148,17 +3036,49 @@
       "system": "Traumatic",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "walking"
+        ],
+        "quality": [
+          "aching",
+          "burning",
+          "tender"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal",
+          "post-traumatic"
+        ],
+        "region": [
+          "n/a",
+          "neck"
+        ],
+        "radiation": [
+          "groin",
+          "legs"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "pain"
+        ]
       },
       "freq": "common"
     },
@@ -1167,17 +3087,51 @@
       "system": "Traumatic",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "walking"
+        ],
+        "quality": [
+          "aching",
+          "burning",
+          "tender"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal",
+          "post-traumatic"
+        ],
+        "region": [
+          "n/a",
+          "neck"
+        ],
+        "radiation": [
+          "legs",
+          "arm"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation",
+          "digital-rectal-exam"
+        ],
+        "other symptoms": [
+          "pain",
+          "stroke-symptoms"
+        ]
       },
       "freq": "common"
     },
@@ -1186,17 +3140,51 @@
       "system": "Traumatic",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "walking"
+        ],
+        "quality": [
+          "aching",
+          "burning",
+          "tender"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal",
+          "post-traumatic"
+        ],
+        "region": [
+          "n/a",
+          "neck"
+        ],
+        "radiation": [
+          "arm",
+          "hand"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation",
+          "digital-rectal-exam"
+        ],
+        "other symptoms": [
+          "pain"
+        ]
       },
       "freq": "rare"
     },
@@ -1205,17 +3193,51 @@
       "system": "Traumatic",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "walking"
+        ],
+        "quality": [
+          "aching",
+          "burning",
+          "tender"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal",
+          "post-traumatic"
+        ],
+        "region": [
+          "n/a",
+          "neck"
+        ],
+        "radiation": [
+          "legs",
+          "arm"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation",
+          "digital-rectal-exam"
+        ],
+        "other symptoms": [
+          "pain",
+          "stroke-symptoms"
+        ]
       },
       "freq": "rare"
     },
@@ -1224,17 +3246,49 @@
       "system": "Traumatic",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "walking"
+        ],
+        "quality": [
+          "aching",
+          "burning",
+          "tender"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal",
+          "post-traumatic"
+        ],
+        "region": [
+          "n/a",
+          "neck"
+        ],
+        "radiation": [
+          "legs",
+          "arm"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "pain"
+        ]
       },
       "freq": "uncommon"
     },
@@ -1243,17 +3297,50 @@
       "system": "Traumatic",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "walking"
+        ],
+        "quality": [
+          "aching",
+          "burning",
+          "tender"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal",
+          "post-traumatic"
+        ],
+        "region": [
+          "n/a",
+          "neck"
+        ],
+        "radiation": [
+          "groin",
+          "legs"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation",
+          "digital-rectal-exam"
+        ],
+        "other symptoms": [
+          "pain"
+        ]
       },
       "freq": "uncommon"
     },
@@ -1262,17 +3349,49 @@
       "system": "Traumatic",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "walking"
+        ],
+        "quality": [
+          "aching",
+          "burning",
+          "tender"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal",
+          "post-traumatic"
+        ],
+        "region": [
+          "n/a",
+          "neck"
+        ],
+        "radiation": [
+          "arm",
+          "hand"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "pain"
+        ]
       },
       "freq": "rare"
     },
@@ -1281,17 +3400,50 @@
       "system": "Traumatic",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "relapsing"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "walking",
+          "pressure"
+        ],
+        "quality": [
+          "aching",
+          "burning",
+          "pressure"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal",
+          "post-traumatic"
+        ],
+        "region": [
+          "n/a",
+          "elbow"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "pain"
+        ]
       },
       "freq": "common"
     },
@@ -1300,17 +3452,51 @@
       "system": "Traumatic",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "walking"
+        ],
+        "quality": [
+          "aching",
+          "burning",
+          "tearing"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal",
+          "post-traumatic"
+        ],
+        "region": [
+          "n/a",
+          "neck"
+        ],
+        "radiation": [
+          "arm",
+          "hand"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "pain",
+          "fever",
+          "malaise"
+        ]
       },
       "freq": "common"
     },
@@ -1319,17 +3505,49 @@
       "system": "Traumatic",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "walking"
+        ],
+        "quality": [
+          "aching",
+          "burning",
+          "tearing"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal",
+          "post-traumatic"
+        ],
+        "region": [
+          "n/a",
+          "shoulder"
+        ],
+        "radiation": [
+          "legs"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "pain",
+          "limb-weakness"
+        ]
       },
       "freq": "uncommon"
     },
@@ -1338,17 +3556,46 @@
       "system": "Referred",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "walking"
+        ],
+        "quality": [
+          "aching",
+          "burning"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "n/a",
+          "neck"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "pain"
+        ]
       },
       "freq": "common"
     },
@@ -1357,36 +3604,97 @@
       "system": "Referred",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "walking"
+        ],
+        "quality": [
+          "aching",
+          "burning"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "n/a",
+          "neck"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "pain"
+        ]
       },
       "freq": "uncommon"
     },
     {
-      "name": "Pancoast\u2019s tumour",
+      "name": "Pancoast’s tumour",
       "system": "Referred",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "insidious"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "walking"
+        ],
+        "quality": [
+          "aching",
+          "burning"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "n/a",
+          "lower-chest"
+        ],
+        "radiation": [
+          "chest"
+        ],
+        "severity": [
+          "moderate",
+          "severe"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "pain",
+          "weight-loss"
+        ]
       },
       "freq": "uncommon"
     },
@@ -1395,17 +3703,47 @@
       "system": "Neurological",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "walking"
+        ],
+        "quality": [
+          "aching",
+          "burning"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "n/a",
+          "neck"
+        ],
+        "radiation": [
+          "arm",
+          "hand"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "pain"
+        ]
       },
       "freq": "rare"
     },
@@ -1414,17 +3752,51 @@
       "system": "Neurological",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "walking"
+        ],
+        "quality": [
+          "aching",
+          "burning",
+          "tender"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "n/a",
+          "lower-chest"
+        ],
+        "radiation": [
+          "hand"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation",
+          "percussion"
+        ],
+        "other symptoms": [
+          "pain",
+          "numbness",
+          "paresthesia"
+        ]
       },
       "freq": "uncommon"
     },
@@ -1433,17 +3805,47 @@
       "system": "Neurological",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "walking"
+        ],
+        "quality": [
+          "aching",
+          "burning",
+          "tender"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "n/a",
+          "elbow"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "pain"
+        ]
       },
       "freq": "common"
     },
@@ -1452,36 +3854,98 @@
       "system": "Neurological",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "walking"
+        ],
+        "quality": [
+          "aching",
+          "burning",
+          "tearing"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "n/a",
+          "elbow"
+        ],
+        "radiation": [
+          "hand"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation",
+          "digital-rectal-exam"
+        ],
+        "other symptoms": [
+          "pain"
+        ]
       },
       "freq": "common"
     },
     {
-      "name": "Golfer\u2019s elbow",
+      "name": "Golfer’s elbow",
       "system": "Neurological",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "walking"
+        ],
+        "quality": [
+          "aching",
+          "burning",
+          "tearing"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "n/a",
+          "elbow"
+        ],
+        "radiation": [
+          "hand"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation",
+          "digital-rectal-exam"
+        ],
+        "other symptoms": [
+          "pain"
+        ]
       },
       "freq": "common"
     },
@@ -1490,17 +3954,47 @@
       "system": "Neurological",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "walking"
+        ],
+        "quality": [
+          "aching",
+          "burning",
+          "tender"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "n/a",
+          "elbow"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "pain"
+        ]
       },
       "freq": "rare"
     },
@@ -1509,17 +4003,49 @@
       "system": "Ligaments",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "relapsing"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "walking",
+          "pressure"
+        ],
+        "quality": [
+          "aching",
+          "burning",
+          "stabbing"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "n/a",
+          "face"
+        ],
+        "radiation": [
+          "legs"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "pain"
+        ]
       },
       "freq": "common"
     },
@@ -1528,17 +4054,48 @@
       "system": "Ligaments",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "rapid"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "walking"
+        ],
+        "quality": [
+          "aching",
+          "burning",
+          "stabbing"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "n/a",
+          "face"
+        ],
+        "radiation": [
+          "legs"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "pain"
+        ]
       },
       "freq": "common"
     },
@@ -1547,17 +4104,49 @@
       "system": "Ligaments",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "walking"
+        ],
+        "quality": [
+          "aching",
+          "burning",
+          "tearing"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "n/a",
+          "shoulder"
+        ],
+        "radiation": [
+          "legs"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation",
+          "gait-assessment"
+        ],
+        "other symptoms": [
+          "pain",
+          "limb-weakness"
+        ]
       },
       "freq": "uncommon"
     },
@@ -1566,17 +4155,48 @@
       "system": "Ligaments",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "walking"
+        ],
+        "quality": [
+          "aching",
+          "burning",
+          "tearing"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "n/a",
+          "shoulder"
+        ],
+        "radiation": [
+          "legs"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "pain",
+          "limb-weakness"
+        ]
       },
       "freq": "rare"
     },
@@ -1585,17 +4205,47 @@
       "system": "Menisci",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "walking"
+        ],
+        "quality": [
+          "aching",
+          "burning",
+          "tearing"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "n/a",
+          "shoulder"
+        ],
+        "radiation": [
+          "arm"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "pain"
+        ]
       },
       "freq": "common"
     },
@@ -1604,36 +4254,100 @@
       "system": "Other",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "walking"
+        ],
+        "quality": [
+          "aching",
+          "burning",
+          "tender"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "n/a",
+          "wrist"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "pain"
+        ]
       },
       "freq": "common"
     },
     {
-      "name": "Footballer\u2019s ankle",
+      "name": "Footballer’s ankle",
       "system": "Other",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "walking"
+        ],
+        "quality": [
+          "aching",
+          "burning",
+          "tearing"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "n/a",
+          "calf"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe",
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "pain",
+          "fever",
+          "malaise"
+        ]
       },
       "freq": "uncommon"
     },
@@ -1642,17 +4356,50 @@
       "system": "Other",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "walking"
+        ],
+        "quality": [
+          "aching",
+          "burning",
+          "tearing"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal",
+          "with-activity"
+        ],
+        "region": [
+          "n/a",
+          "neck"
+        ],
+        "radiation": [
+          "chest",
+          "arm"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation",
+          "percussion"
+        ],
+        "other symptoms": [
+          "pain"
+        ]
       },
       "freq": "uncommon"
     },
@@ -1661,17 +4408,47 @@
       "system": "Other",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "walking"
+        ],
+        "quality": [
+          "aching",
+          "burning",
+          "tearing"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "n/a",
+          "elbow"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "pain"
+        ]
       },
       "freq": "rare"
     }

@@ -6,17 +6,42 @@
       "system": "General",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "relapsing"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "tender"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "suprapubic",
+          "flank"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "urine-dipstick",
+          "suprapubic-tenderness"
+        ],
+        "other symptoms": [
+          "dysuria",
+          "itching"
+        ]
       },
       "freq": "common"
     },
@@ -25,17 +50,45 @@
       "system": "General",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "relapsing",
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "tender"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "suprapubic",
+          "flank"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "urine-dipstick",
+          "suprapubic-tenderness"
+        ],
+        "other symptoms": [
+          "dysuria",
+          "fever",
+          "malaise"
+        ]
       },
       "freq": "common"
     },
@@ -44,17 +97,41 @@
       "system": "General",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "relapsing"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "tender"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "suprapubic",
+          "flank"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "urine-dipstick",
+          "suprapubic-tenderness"
+        ],
+        "other symptoms": [
+          "dysuria"
+        ]
       },
       "freq": "common"
     },
@@ -63,17 +140,41 @@
       "system": "General",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "relapsing"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "tender"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "suprapubic",
+          "flank"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "urine-dipstick",
+          "suprapubic-tenderness"
+        ],
+        "other symptoms": [
+          "dysuria"
+        ]
       },
       "freq": "common"
     },
@@ -82,17 +183,41 @@
       "system": "General",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "relapsing"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "tender"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "suprapubic",
+          "flank"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "urine-dipstick",
+          "suprapubic-tenderness"
+        ],
+        "other symptoms": [
+          "dysuria"
+        ]
       },
       "freq": "common"
     },
@@ -101,17 +226,41 @@
       "system": "General",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "relapsing"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "tender"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "suprapubic",
+          "flank"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "urine-dipstick",
+          "suprapubic-tenderness"
+        ],
+        "other symptoms": [
+          "dysuria"
+        ]
       },
       "freq": "uncommon"
     },
@@ -120,17 +269,41 @@
       "system": "General",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "relapsing"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "tender"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "suprapubic",
+          "flank"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "urine-dipstick",
+          "suprapubic-tenderness"
+        ],
+        "other symptoms": [
+          "dysuria"
+        ]
       },
       "freq": "uncommon"
     },
@@ -139,36 +312,88 @@
       "system": "General",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "relapsing"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "tender"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "suprapubic",
+          "flank"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "urine-dipstick",
+          "suprapubic-tenderness"
+        ],
+        "other symptoms": [
+          "dysuria"
+        ]
       },
       "freq": "uncommon"
     },
     {
-      "name": "Infection of Bartholin\u2019s glands",
+      "name": "Infection of Bartholin’s glands",
       "system": "General",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "relapsing",
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "tender"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "suprapubic",
+          "flank"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "urine-dipstick",
+          "suprapubic-tenderness"
+        ],
+        "other symptoms": [
+          "dysuria",
+          "fever",
+          "malaise"
+        ]
       },
       "freq": "uncommon"
     },
@@ -177,17 +402,46 @@
       "system": "General",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "relapsing",
+          "insidious",
+          "chronic"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "tender"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "suprapubic",
+          "flank"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate",
+          "severe"
+        ],
+        "clinical tests": [
+          "urine-dipstick",
+          "suprapubic-tenderness"
+        ],
+        "other symptoms": [
+          "dysuria",
+          "itching",
+          "weight-loss"
+        ]
       },
       "freq": "rare"
     },
@@ -196,36 +450,84 @@
       "system": "General",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "relapsing"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "tender"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "suprapubic",
+          "flank"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "urine-dipstick",
+          "suprapubic-tenderness"
+        ],
+        "other symptoms": [
+          "dysuria"
+        ]
       },
       "freq": "rare"
     },
     {
-      "name": "Colovaginal \ufb01stula",
+      "name": "Colovaginal ﬁstula",
       "system": "General",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "relapsing"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "tender"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "suprapubic",
+          "flank"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "urine-dipstick",
+          "suprapubic-tenderness"
+        ],
+        "other symptoms": [
+          "dysuria"
+        ]
       },
       "freq": "rare"
     }

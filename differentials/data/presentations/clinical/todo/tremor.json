@@ -6,17 +6,48 @@
       "system": "Resting Tremor",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "rest",
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "exercise"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a",
+          "arm"
+        ],
+        "radiation": [
+          "arm",
+          "hand"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "cranial-nerve-exam",
+          "motor-strength-testing",
+          "gait-assessment"
+        ],
+        "other symptoms": [
+          "altered-mental-status",
+          "palpitations",
+          "tremor"
+        ]
       },
       "freq": "common"
     },
@@ -25,17 +56,44 @@
       "system": "Action Tremor",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "rest",
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "exercise"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "cranial-nerve-exam",
+          "motor-strength-testing"
+        ],
+        "other symptoms": [
+          "altered-mental-status",
+          "tremor"
+        ]
       },
       "freq": "common"
     },
@@ -44,17 +102,47 @@
       "system": "Action Tremor",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "rest",
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "exercise"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a",
+          "arm"
+        ],
+        "radiation": [
+          "arm",
+          "hand"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "cranial-nerve-exam",
+          "motor-strength-testing"
+        ],
+        "other symptoms": [
+          "altered-mental-status",
+          "palpitations",
+          "tremor"
+        ]
       },
       "freq": "common"
     },
@@ -63,17 +151,44 @@
       "system": "Action Tremor",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "rest",
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "exercise"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "cranial-nerve-exam",
+          "motor-strength-testing"
+        ],
+        "other symptoms": [
+          "altered-mental-status",
+          "tremor"
+        ]
       },
       "freq": "common"
     },
@@ -82,17 +197,48 @@
       "system": "Action Tremor",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic",
+          "gradual"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "rest",
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "exercise",
+          "exertion"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild",
+          "moderate"
+        ],
+        "clinical tests": [
+          "cranial-nerve-exam",
+          "motor-strength-testing"
+        ],
+        "other symptoms": [
+          "altered-mental-status",
+          "weight-loss",
+          "palpitations"
+        ]
       },
       "freq": "common"
     },
@@ -101,17 +247,45 @@
       "system": "Action Tremor",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "rest",
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "exercise",
+          "exertion"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "cranial-nerve-exam",
+          "motor-strength-testing"
+        ],
+        "other symptoms": [
+          "altered-mental-status",
+          "tremor"
+        ]
       },
       "freq": "common"
     },
@@ -120,17 +294,47 @@
       "system": "Action Tremor",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "rest",
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "exercise",
+          "exertion"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "cranial-nerve-exam",
+          "motor-strength-testing",
+          "auscultation"
+        ],
+        "other symptoms": [
+          "altered-mental-status",
+          "fatigue",
+          "tremor"
+        ]
       },
       "freq": "uncommon"
     },
@@ -139,17 +343,46 @@
       "system": "Action Tremor",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic",
+          "gradual"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "rest",
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "exercise"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "cranial-nerve-exam",
+          "motor-strength-testing",
+          "palpation"
+        ],
+        "other symptoms": [
+          "altered-mental-status",
+          "tremor"
+        ]
       },
       "freq": "uncommon"
     },
@@ -158,17 +391,47 @@
       "system": "Intention Tremor",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "chronic"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "rest",
+          "heat"
+        ],
+        "provoke": [
+          "movement",
+          "exercise",
+          "exertion"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "cranial-nerve-exam",
+          "motor-strength-testing",
+          "auscultation"
+        ],
+        "other symptoms": [
+          "altered-mental-status",
+          "fatigue",
+          "tremor"
+        ]
       },
       "freq": "uncommon"
     }

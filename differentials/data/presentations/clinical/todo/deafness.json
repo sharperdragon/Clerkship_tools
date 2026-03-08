@@ -6,17 +6,43 @@
       "system": "Acquired",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "movement"
+        ],
+        "quality": [
+          "tearing",
+          "tender"
+        ],
+        "timing": [
+          "episodic"
+        ],
+        "region": [
+          "face"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "otoscopy",
+          "weber-test",
+          "rinne-test"
+        ],
+        "other symptoms": [
+          "deafness"
+        ]
       },
       "freq": "common"
     },
@@ -25,17 +51,44 @@
       "system": "Acquired",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "movement"
+        ],
+        "quality": [
+          "tearing",
+          "tender"
+        ],
+        "timing": [
+          "episodic"
+        ],
+        "region": [
+          "face"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "otoscopy",
+          "weber-test",
+          "rinne-test"
+        ],
+        "other symptoms": [
+          "deafness",
+          "visual-problem"
+        ]
       },
       "freq": "common"
     },
@@ -44,17 +97,44 @@
       "system": "Acquired",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "movement"
+        ],
+        "quality": [
+          "tearing",
+          "tender"
+        ],
+        "timing": [
+          "episodic"
+        ],
+        "region": [
+          "face"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "otoscopy",
+          "weber-test",
+          "rinne-test"
+        ],
+        "other symptoms": [
+          "deafness",
+          "visual-problem"
+        ]
       },
       "freq": "common"
     },
@@ -63,17 +143,43 @@
       "system": "Acquired",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "movement"
+        ],
+        "quality": [
+          "tearing",
+          "tender"
+        ],
+        "timing": [
+          "episodic"
+        ],
+        "region": [
+          "face"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "otoscopy",
+          "weber-test",
+          "rinne-test"
+        ],
+        "other symptoms": [
+          "deafness"
+        ]
       },
       "freq": "common"
     },
@@ -82,17 +188,45 @@
       "system": "Acquired",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "gradual"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "movement"
+        ],
+        "quality": [
+          "tearing",
+          "tender"
+        ],
+        "timing": [
+          "episodic"
+        ],
+        "region": [
+          "face"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "otoscopy",
+          "weber-test",
+          "rinne-test"
+        ],
+        "other symptoms": [
+          "deafness",
+          "reduced-hearing"
+        ]
       },
       "freq": "common"
     },
@@ -101,17 +235,44 @@
       "system": "Acquired",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "movement"
+        ],
+        "quality": [
+          "tearing",
+          "tender"
+        ],
+        "timing": [
+          "episodic"
+        ],
+        "region": [
+          "face"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "otoscopy",
+          "weber-test",
+          "rinne-test"
+        ],
+        "other symptoms": [
+          "deafness",
+          "reduced-hearing"
+        ]
       },
       "freq": "uncommon"
     },
@@ -120,17 +281,44 @@
       "system": "Acquired",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "movement"
+        ],
+        "quality": [
+          "tearing",
+          "tender"
+        ],
+        "timing": [
+          "episodic"
+        ],
+        "region": [
+          "face"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "otoscopy",
+          "weber-test",
+          "rinne-test"
+        ],
+        "other symptoms": [
+          "deafness",
+          "reduced-hearing"
+        ]
       },
       "freq": "uncommon"
     },
@@ -139,17 +327,45 @@
       "system": "Acquired",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "movement"
+        ],
+        "quality": [
+          "tearing",
+          "tender",
+          "sharp"
+        ],
+        "timing": [
+          "episodic",
+          "post-traumatic"
+        ],
+        "region": [
+          "face"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "otoscopy",
+          "weber-test",
+          "rinne-test"
+        ],
+        "other symptoms": [
+          "deafness"
+        ]
       },
       "freq": "uncommon"
     },
@@ -158,17 +374,43 @@
       "system": "Acquired",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "movement"
+        ],
+        "quality": [
+          "tearing",
+          "tender"
+        ],
+        "timing": [
+          "episodic"
+        ],
+        "region": [
+          "face"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "otoscopy",
+          "weber-test",
+          "rinne-test"
+        ],
+        "other symptoms": [
+          "deafness"
+        ]
       },
       "freq": "rare"
     },
@@ -177,17 +419,44 @@
       "system": "Acquired",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "movement"
+        ],
+        "quality": [
+          "tearing",
+          "tender"
+        ],
+        "timing": [
+          "episodic"
+        ],
+        "region": [
+          "face"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "otoscopy",
+          "weber-test",
+          "rinne-test"
+        ],
+        "other symptoms": [
+          "deafness",
+          "reduced-hearing"
+        ]
       },
       "freq": "common"
     },
@@ -196,36 +465,93 @@
       "system": "Acquired",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "movement"
+        ],
+        "quality": [
+          "tearing",
+          "tender",
+          "sharp"
+        ],
+        "timing": [
+          "episodic",
+          "post-traumatic"
+        ],
+        "region": [
+          "face"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "otoscopy",
+          "weber-test",
+          "rinne-test"
+        ],
+        "other symptoms": [
+          "deafness",
+          "reduced-hearing"
+        ]
       },
       "freq": "common"
     },
     {
-      "name": "Meniere\u2019s disease",
+      "name": "Meniere’s disease",
       "system": "Acquired",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "gradual"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "movement"
+        ],
+        "quality": [
+          "tearing",
+          "tender"
+        ],
+        "timing": [
+          "episodic"
+        ],
+        "region": [
+          "face"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "otoscopy",
+          "weber-test",
+          "rinne-test"
+        ],
+        "other symptoms": [
+          "deafness",
+          "dizziness"
+        ]
       },
       "freq": "uncommon"
     },
@@ -234,17 +560,43 @@
       "system": "Acquired",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "movement"
+        ],
+        "quality": [
+          "tearing",
+          "tender"
+        ],
+        "timing": [
+          "episodic"
+        ],
+        "region": [
+          "face"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "otoscopy",
+          "weber-test",
+          "rinne-test"
+        ],
+        "other symptoms": [
+          "deafness"
+        ]
       },
       "freq": "uncommon"
     },
@@ -253,17 +605,44 @@
       "system": "Acquired",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "movement"
+        ],
+        "quality": [
+          "tearing",
+          "tender"
+        ],
+        "timing": [
+          "episodic"
+        ],
+        "region": [
+          "face"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "otoscopy",
+          "weber-test",
+          "rinne-test"
+        ],
+        "other symptoms": [
+          "deafness",
+          "stroke-symptoms"
+        ]
       },
       "freq": "uncommon"
     },
@@ -272,17 +651,44 @@
       "system": "Acquired",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "movement"
+        ],
+        "quality": [
+          "tearing",
+          "tender"
+        ],
+        "timing": [
+          "episodic"
+        ],
+        "region": [
+          "face"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "otoscopy",
+          "weber-test",
+          "rinne-test"
+        ],
+        "other symptoms": [
+          "deafness",
+          "stroke-symptoms"
+        ]
       },
       "freq": "uncommon"
     },
@@ -291,17 +697,49 @@
       "system": "Acquired",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "movement"
+        ],
+        "quality": [
+          "tearing",
+          "tender"
+        ],
+        "timing": [
+          "episodic"
+        ],
+        "region": [
+          "face",
+          "neck"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe",
+          "moderate"
+        ],
+        "clinical tests": [
+          "otoscopy",
+          "weber-test",
+          "rinne-test"
+        ],
+        "other symptoms": [
+          "deafness",
+          "visual-problem",
+          "fever",
+          "malaise"
+        ]
       },
       "freq": "rare"
     },
@@ -310,17 +748,44 @@
       "system": "Acquired",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "movement"
+        ],
+        "quality": [
+          "tearing",
+          "tender"
+        ],
+        "timing": [
+          "episodic"
+        ],
+        "region": [
+          "face"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "otoscopy",
+          "weber-test",
+          "rinne-test"
+        ],
+        "other symptoms": [
+          "deafness",
+          "reduced-hearing"
+        ]
       },
       "freq": "rare"
     },
@@ -329,17 +794,47 @@
       "system": "Acquired",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "insidious"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "movement"
+        ],
+        "quality": [
+          "tearing",
+          "tender"
+        ],
+        "timing": [
+          "episodic"
+        ],
+        "region": [
+          "face"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate",
+          "severe"
+        ],
+        "clinical tests": [
+          "otoscopy",
+          "weber-test",
+          "rinne-test"
+        ],
+        "other symptoms": [
+          "deafness",
+          "reduced-hearing",
+          "weight-loss"
+        ]
       },
       "freq": "rare"
     },
@@ -348,17 +843,44 @@
       "system": "Congenital",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "movement"
+        ],
+        "quality": [
+          "tearing",
+          "tender"
+        ],
+        "timing": [
+          "episodic"
+        ],
+        "region": [
+          "face"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "otoscopy",
+          "weber-test",
+          "rinne-test"
+        ],
+        "other symptoms": [
+          "deafness",
+          "reduced-hearing"
+        ]
       },
       "freq": "rare"
     },
@@ -367,17 +889,46 @@
       "system": "Congenital",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "movement"
+        ],
+        "quality": [
+          "tearing",
+          "tender"
+        ],
+        "timing": [
+          "episodic"
+        ],
+        "region": [
+          "face"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "otoscopy",
+          "weber-test",
+          "rinne-test"
+        ],
+        "other symptoms": [
+          "deafness",
+          "fever",
+          "malaise"
+        ]
       },
       "freq": "rare"
     },
@@ -386,17 +937,43 @@
       "system": "Congenital",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "movement"
+        ],
+        "quality": [
+          "tearing",
+          "tender"
+        ],
+        "timing": [
+          "episodic"
+        ],
+        "region": [
+          "face"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "otoscopy",
+          "weber-test",
+          "rinne-test"
+        ],
+        "other symptoms": [
+          "deafness"
+        ]
       },
       "freq": "rare"
     }

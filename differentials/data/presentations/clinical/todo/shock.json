@@ -18,6 +18,48 @@
         "severity": [],
         "clinical tests": [],
         "other symptoms": []
+      },
+      "hpi": {
+        "onset": [
+          "acute",
+          "gradual",
+          "chronic"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "deep-breathing",
+          "Touch"
+        ],
+        "quality": [
+          "colicky",
+          "burning"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "retrosternal",
+          "lower-chest"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "auscultation",
+          "orthostatic-blood-pressure"
+        ],
+        "other symptoms": [
+          "shortness-of-breath"
+        ]
       }
     },
     {
@@ -37,6 +79,48 @@
         "severity": [],
         "clinical tests": [],
         "other symptoms": []
+      },
+      "hpi": {
+        "onset": [
+          "acute",
+          "gradual",
+          "chronic"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "deep-breathing",
+          "Touch"
+        ],
+        "quality": [
+          "colicky",
+          "burning"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "retrosternal",
+          "lower-chest"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "auscultation",
+          "orthostatic-blood-pressure"
+        ],
+        "other symptoms": [
+          "shortness-of-breath"
+        ]
       }
     },
     {
@@ -56,6 +140,50 @@
         "severity": [],
         "clinical tests": [],
         "other symptoms": []
+      },
+      "hpi": {
+        "onset": [
+          "acute",
+          "gradual",
+          "chronic"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "deep-breathing",
+          "Touch"
+        ],
+        "quality": [
+          "colicky",
+          "burning"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "retrosternal",
+          "lower-chest"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "auscultation",
+          "orthostatic-blood-pressure"
+        ],
+        "other symptoms": [
+          "shortness-of-breath",
+          "vomiting",
+          "constipation"
+        ]
       }
     },
     {
@@ -75,6 +203,49 @@
         "severity": [],
         "clinical tests": [],
         "other symptoms": []
+      },
+      "hpi": {
+        "onset": [
+          "acute",
+          "sudden"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "deep-breathing",
+          "Touch"
+        ],
+        "quality": [
+          "colicky",
+          "burning",
+          "crushing"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "retrosternal",
+          "lower-chest"
+        ],
+        "radiation": [
+          "chest"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "auscultation",
+          "orthostatic-blood-pressure"
+        ],
+        "other symptoms": [
+          "shortness-of-breath",
+          "chest-pain",
+          "pleuritic-pain"
+        ]
       }
     },
     {
@@ -94,6 +265,48 @@
         "severity": [],
         "clinical tests": [],
         "other symptoms": []
+      },
+      "hpi": {
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "deep-breathing",
+          "Touch"
+        ],
+        "quality": [
+          "colicky",
+          "burning"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "retrosternal",
+          "lower-chest"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "catastrophic",
+          "severe"
+        ],
+        "clinical tests": [
+          "auscultation",
+          "orthostatic-blood-pressure"
+        ],
+        "other symptoms": [
+          "shortness-of-breath",
+          "shock",
+          "hypotension"
+        ]
       }
     },
     {
@@ -113,6 +326,48 @@
         "severity": [],
         "clinical tests": [],
         "other symptoms": []
+      },
+      "hpi": {
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "deep-breathing",
+          "Touch"
+        ],
+        "quality": [
+          "colicky",
+          "burning"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "retrosternal",
+          "lower-chest"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "catastrophic",
+          "severe"
+        ],
+        "clinical tests": [
+          "auscultation",
+          "orthostatic-blood-pressure"
+        ],
+        "other symptoms": [
+          "shortness-of-breath",
+          "shock",
+          "hypotension"
+        ]
       }
     },
     {
@@ -132,6 +387,48 @@
         "severity": [],
         "clinical tests": [],
         "other symptoms": []
+      },
+      "hpi": {
+        "onset": [
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "deep-breathing",
+          "Touch"
+        ],
+        "quality": [
+          "colicky",
+          "burning"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "retrosternal",
+          "lower-chest"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "auscultation",
+          "orthostatic-blood-pressure"
+        ],
+        "other symptoms": [
+          "shortness-of-breath",
+          "fever",
+          "malaise"
+        ]
       }
     },
     {
@@ -151,6 +448,48 @@
         "severity": [],
         "clinical tests": [],
         "other symptoms": []
+      },
+      "hpi": {
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "deep-breathing",
+          "Touch"
+        ],
+        "quality": [
+          "colicky",
+          "burning"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "retrosternal",
+          "lower-chest"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "catastrophic",
+          "severe"
+        ],
+        "clinical tests": [
+          "auscultation",
+          "orthostatic-blood-pressure"
+        ],
+        "other symptoms": [
+          "shortness-of-breath",
+          "shock",
+          "hypotension"
+        ]
       }
     },
     {
@@ -170,6 +509,51 @@
         "severity": [],
         "clinical tests": [],
         "other symptoms": []
+      },
+      "hpi": {
+        "onset": [
+          "acute",
+          "sudden"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "deep-breathing",
+          "Touch",
+          "pressure"
+        ],
+        "quality": [
+          "colicky",
+          "burning",
+          "pressure"
+        ],
+        "timing": [
+          "post-traumatic"
+        ],
+        "region": [
+          "retrosternal",
+          "lower-chest"
+        ],
+        "radiation": [
+          "chest"
+        ],
+        "severity": [
+          "catastrophic",
+          "severe"
+        ],
+        "clinical tests": [
+          "auscultation",
+          "orthostatic-blood-pressure"
+        ],
+        "other symptoms": [
+          "shortness-of-breath",
+          "vomiting",
+          "dyspnea"
+        ]
       }
     },
     {
@@ -189,6 +573,49 @@
         "severity": [],
         "clinical tests": [],
         "other symptoms": []
+      },
+      "hpi": {
+        "onset": [
+          "acute",
+          "sudden"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "deep-breathing",
+          "Touch"
+        ],
+        "quality": [
+          "colicky",
+          "burning",
+          "crushing"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "retrosternal",
+          "lower-chest"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "catastrophic",
+          "severe"
+        ],
+        "clinical tests": [
+          "auscultation",
+          "orthostatic-blood-pressure"
+        ],
+        "other symptoms": [
+          "shortness-of-breath",
+          "dyspnea"
+        ]
       }
     },
     {
@@ -208,6 +635,48 @@
         "severity": [],
         "clinical tests": [],
         "other symptoms": []
+      },
+      "hpi": {
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "deep-breathing",
+          "Touch"
+        ],
+        "quality": [
+          "colicky",
+          "burning"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "retrosternal",
+          "lower-chest"
+        ],
+        "radiation": [
+          "chest"
+        ],
+        "severity": [
+          "catastrophic",
+          "severe"
+        ],
+        "clinical tests": [
+          "auscultation",
+          "orthostatic-blood-pressure"
+        ],
+        "other symptoms": [
+          "shortness-of-breath",
+          "vomiting",
+          "constipation"
+        ]
       }
     },
     {
@@ -227,6 +696,45 @@
         "severity": [],
         "clinical tests": [],
         "other symptoms": []
+      },
+      "hpi": {
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "deep-breathing",
+          "Touch"
+        ],
+        "quality": [
+          "colicky",
+          "burning"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "retrosternal",
+          "lower-chest"
+        ],
+        "radiation": [
+          "chest"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "auscultation",
+          "orthostatic-blood-pressure"
+        ],
+        "other symptoms": [
+          "shortness-of-breath"
+        ]
       }
     }
   ],

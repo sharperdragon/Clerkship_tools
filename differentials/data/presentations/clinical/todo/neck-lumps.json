@@ -6,17 +6,43 @@
       "system": "Superficial",
       "redFlag": false,
       "hpi": {
-        "onset": ["chronic", "slow"],
-        "progression": ["worsening", "stable"],
-        "palliate": ["none"],
-        "provoke": ["trauma", "infection"],
-        "quality": ["fluctuant", "firm"],
-        "timing": ["persistent"],
-        "region": ["scalp", "neck"],
-        "radiation": ["n/a"],
-        "severity": ["mild"],
-        "clinical tests": ["inspection", "ultrasound"],
-        "other symptoms": ["discharge", "pain", "infection"]
+        "onset": [
+          "n/a"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "coughing",
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "tender",
+          "firm"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "neck",
+          "face"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation"
+        ],
+        "other symptoms": [
+          "neck-pain"
+        ]
       },
       "freq": "common"
     },
@@ -25,17 +51,42 @@
       "system": "Superficial",
       "redFlag": false,
       "hpi": {
-        "onset": ["chronic", "slow"],
-        "progression": ["stable"],
-        "palliate": ["none"],
-        "provoke": ["pressure"],
-        "quality": ["soft", "mobile", "painless"],
-        "timing": ["persistent"],
-        "region": ["posterior-neck", "shoulder"],
-        "radiation": ["n/a"],
-        "severity": ["mild"],
-        "clinical tests": ["ultrasound", "fine-needle-aspiration"],
-        "other symptoms": ["cosmetic-concern"]
+        "onset": [
+          "n/a"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "coughing",
+          "oral-intake"
+        ],
+        "quality": [
+          "tender",
+          "firm"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "neck",
+          "face"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation"
+        ],
+        "other symptoms": [
+          "neck-pain"
+        ]
       },
       "freq": "common"
     },
@@ -44,17 +95,43 @@
       "system": "Superficial",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute", "subacute", "chronic"],
-        "progression": ["worsening", "resolving"],
-        "palliate": ["antibiotics", "time"],
-        "provoke": ["infection", "malignancy"],
-        "quality": ["firm", "tender", "rubbery"],
-        "timing": ["persistent", "intermittent"],
-        "region": ["submandibular", "posterior-cervical", "anterior-cervical"],
-        "radiation": ["n/a"],
-        "severity": ["mild", "moderate", "severe"],
-        "clinical tests": ["cbc", "esr", "ultrasound", "biopsy"],
-        "other symptoms": ["fever", "weight-loss", "night-sweats", "sore-throat"]
+        "onset": [
+          "n/a"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "coughing",
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "tender",
+          "firm"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "neck",
+          "face"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation"
+        ],
+        "other symptoms": [
+          "neck-pain"
+        ]
       },
       "freq": "common"
     },
@@ -63,17 +140,45 @@
       "system": "Superficial",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute"],
-        "progression": ["worsening"],
-        "palliate": ["antibiotics", "drainage"],
-        "provoke": ["infection", "skin-breakdown"],
-        "quality": ["fluctuant", "tender", "warm"],
-        "timing": ["constant"],
-        "region": ["submandibular", "posterior-neck"],
-        "radiation": ["n/a"],
-        "severity": ["moderate", "severe"],
-        "clinical tests": ["ultrasound", "aspiration", "cbc"],
-        "other symptoms": ["fever", "pain", "erythema", "swelling"]
+        "onset": [
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "coughing",
+          "oral-intake"
+        ],
+        "quality": [
+          "tender",
+          "firm"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "neck",
+          "face"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation"
+        ],
+        "other symptoms": [
+          "neck-pain",
+          "fever",
+          "malaise"
+        ]
       },
       "freq": "uncommon"
     },
@@ -82,17 +187,43 @@
       "system": "Superficial",
       "redFlag": false,
       "hpi": {
-        "onset": ["congenital", "slow"],
-        "progression": ["stable", "gradual"],
-        "palliate": ["none"],
-        "provoke": ["infection"],
-        "quality": ["firm", "mobile", "painless"],
-        "timing": ["persistent"],
-        "region": ["midline-neck", "submental"],
-        "radiation": ["n/a"],
-        "severity": ["mild"],
-        "clinical tests": ["ultrasound", "ct-scan"],
-        "other symptoms": ["none"]
+        "onset": [
+          "n/a"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "coughing",
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "tender",
+          "firm"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "neck",
+          "face"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation"
+        ],
+        "other symptoms": [
+          "neck-pain"
+        ]
       },
       "freq": "rare"
     },
@@ -101,17 +232,45 @@
       "system": "Anterior Triangle",
       "redFlag": false,
       "hpi": {
-        "onset": ["chronic", "gradual"],
-        "progression": ["worsening", "stable"],
-        "palliate": ["none"],
-        "provoke": ["iodine", "infection"],
-        "quality": ["diffuse", "nodular"],
-        "timing": ["persistent"],
-        "region": ["midline-lower-neck"],
-        "radiation": ["n/a"],
-        "severity": ["mild", "moderate"],
-        "clinical tests": ["tsh", "ultrasound", "fnac", "radioiodine-scan"],
-        "other symptoms": ["dysphagia", "voice-change", "palpitations", "weight-change"]
+        "onset": [
+          "gradual",
+          "chronic"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "coughing",
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "tender",
+          "firm"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "neck"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation",
+          "tracheal-deviation"
+        ],
+        "other symptoms": [
+          "neck-pain"
+        ]
       },
       "freq": "common"
     },
@@ -120,17 +279,45 @@
       "system": "Anterior Triangle",
       "redFlag": false,
       "hpi": {
-        "onset": ["congenital", "slow"],
-        "progression": ["stable", "infected"],
-        "palliate": ["none"],
-        "provoke": ["infection", "upper-respiratory-infection"],
-        "quality": ["midline-cystic", "mobile-with-tongue-protrusion"],
-        "timing": ["persistent"],
-        "region": ["midline-neck"],
-        "radiation": ["n/a"],
-        "severity": ["mild"],
-        "clinical tests": ["ultrasound", "ct-scan"],
-        "other symptoms": ["pain", "swelling", "infection"]
+        "onset": [
+          "gradual",
+          "chronic"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "coughing",
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "tender",
+          "firm"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "neck",
+          "face"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation"
+        ],
+        "other symptoms": [
+          "neck-pain"
+        ]
       },
       "freq": "rare"
     },
@@ -139,17 +326,43 @@
       "system": "Anterior Triangle",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute", "chronic"],
-        "progression": ["worsening", "intermittent"],
-        "palliate": ["sialogogues", "massage"],
-        "provoke": ["meals", "dehydration"],
-        "quality": ["swelling", "tender", "firm"],
-        "timing": ["during-meals", "persistent"],
-        "region": ["parotid", "submandibular"],
-        "radiation": ["ear", "jaw"],
-        "severity": ["mild", "moderate"],
-        "clinical tests": ["ultrasound", "sialography", "culture"],
-        "other symptoms": ["dry-mouth", "pain", "purulent-discharge"]
+        "onset": [
+          "n/a"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "coughing",
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "tender",
+          "firm"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "neck"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation"
+        ],
+        "other symptoms": [
+          "neck-pain",
+          "dizziness"
+        ]
       },
       "freq": "common"
     },
@@ -158,36 +371,92 @@
       "system": "Anterior Triangle",
       "redFlag": false,
       "hpi": {
-        "onset": ["chronic", "gradual"],
-        "progression": ["worsening"],
-        "palliate": ["none"],
-        "provoke": ["hypertension"],
-        "quality": ["pulsatile-mass"],
-        "timing": ["constant"],
-        "region": ["carotid-bifurcation"],
-        "radiation": ["jaw", "ear"],
-        "severity": ["moderate", "severe"],
-        "clinical tests": ["doppler-ultrasound", "ct-angiography", "mra"],
-        "other symptoms": ["bruit", "neurological-deficit"]
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "coughing",
+          "oral-intake"
+        ],
+        "quality": [
+          "tender",
+          "firm"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "neck"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "palpation"
+        ],
+        "other symptoms": [
+          "neck-pain",
+          "dizziness"
+        ]
       },
       "freq": "rare"
     },
     {
-      "name": "Sternomastoid \u2018tumour\u2019",
+      "name": "Sternomastoid ‘tumour’",
       "system": "Anterior Triangle",
       "redFlag": false,
       "hpi": {
-        "onset": ["infant", "weeks-after-birth"],
-        "progression": ["improving"],
-        "palliate": ["physiotherapy"],
-        "provoke": ["birth-trauma"],
-        "quality": ["firm", "non-tender"],
-        "timing": ["constant"],
-        "region": ["sternomastoid"],
-        "radiation": ["n/a"],
-        "severity": ["mild"],
-        "clinical tests": ["ultrasound"],
-        "other symptoms": ["torticollis"]
+        "onset": [
+          "insidious",
+          "chronic"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "coughing",
+          "oral-intake"
+        ],
+        "quality": [
+          "tender",
+          "firm"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "neck",
+          "face"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate",
+          "severe"
+        ],
+        "clinical tests": [
+          "palpation",
+          "tracheal-deviation"
+        ],
+        "other symptoms": [
+          "neck-pain",
+          "dizziness",
+          "weight-loss"
+        ]
       },
       "freq": "rare"
     },
@@ -196,17 +465,41 @@
       "system": "Posterior Triangle",
       "redFlag": false,
       "hpi": {
-        "onset": ["chronic"],
-        "progression": ["stable", "worsening"],
-        "palliate": ["arm-rest"],
-        "provoke": ["arm-elevation"],
-        "quality": ["bony-hard", "nontender"],
-        "timing": ["persistent"],
-        "region": ["supraclavicular"],
-        "radiation": ["arm"],
-        "severity": ["mild", "moderate"],
-        "clinical tests": ["x-ray", "doppler-ultrasound"],
-        "other symptoms": ["arm-tingling", "weakness", "pulsation"]
+        "onset": [
+          "n/a"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "coughing",
+          "oral-intake"
+        ],
+        "quality": [
+          "tender",
+          "firm"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "neck"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation"
+        ],
+        "other symptoms": [
+          "neck-pain"
+        ]
       },
       "freq": "uncommon"
     },
@@ -215,17 +508,42 @@
       "system": "Posterior Triangle",
       "redFlag": false,
       "hpi": {
-        "onset": ["chronic"],
-        "progression": ["worsening"],
-        "palliate": ["none"],
-        "provoke": ["hypertension", "atherosclerosis"],
-        "quality": ["pulsatile"],
-        "timing": ["constant"],
-        "region": ["supraclavicular"],
-        "radiation": ["arm"],
-        "severity": ["moderate", "severe"],
-        "clinical tests": ["doppler-ultrasound", "ct-angiography"],
-        "other symptoms": ["bruit", "arm-ischemia", "paresthesia"]
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "coughing",
+          "oral-intake"
+        ],
+        "quality": [
+          "tender",
+          "firm"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "neck"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "palpation"
+        ],
+        "other symptoms": [
+          "neck-pain"
+        ]
       },
       "freq": "rare"
     },
@@ -234,17 +552,42 @@
       "system": "Posterior Triangle",
       "redFlag": false,
       "hpi": {
-        "onset": ["chronic", "slow"],
-        "progression": ["worsening"],
-        "palliate": ["none"],
-        "provoke": ["swallowing"],
-        "quality": ["fluctuant", "regurgitating"],
-        "timing": ["postprandial"],
-        "region": ["posterior-triangle"],
-        "radiation": ["n/a"],
-        "severity": ["moderate"],
-        "clinical tests": ["barium-swallow", "endoscopy"],
-        "other symptoms": ["dysphagia", "regurgitation", "gurgling"]
+        "onset": [
+          "n/a"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "coughing",
+          "oral-intake"
+        ],
+        "quality": [
+          "tender",
+          "firm"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "neck"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation"
+        ],
+        "other symptoms": [
+          "neck-pain",
+          "cough"
+        ]
       },
       "freq": "rare"
     },
@@ -253,17 +596,42 @@
       "system": "Posterior Triangle",
       "redFlag": false,
       "hpi": {
-        "onset": ["congenital", "infant"],
-        "progression": ["enlarging"],
-        "palliate": ["none"],
-        "provoke": ["infection", "crying"],
-        "quality": ["soft", "transilluminant"],
-        "timing": ["persistent"],
-        "region": ["posterior-triangle"],
-        "radiation": ["n/a"],
-        "severity": ["moderate"],
-        "clinical tests": ["ultrasound", "mri"],
-        "other symptoms": ["airway-compression", "dysphagia"]
+        "onset": [
+          "n/a"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "coughing",
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "tender",
+          "firm"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "neck"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation"
+        ],
+        "other symptoms": [
+          "neck-pain"
+        ]
       },
       "freq": "rare"
     }

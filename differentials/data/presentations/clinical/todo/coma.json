@@ -6,17 +6,48 @@
       "system": "Trauma",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "alcohol",
+          "pressure",
+          "movement"
+        ],
+        "quality": [
+          "pressure",
+          "sharp"
+        ],
+        "timing": [
+          "post-traumatic"
+        ],
+        "region": [
+          "n/a",
+          "diffuse"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "cranial-nerve-exam",
+          "motor-strength-testing"
+        ],
+        "other symptoms": [
+          "altered-mental-status",
+          "vomiting",
+          "photophobia"
+        ]
       },
       "freq": "common"
     },
@@ -25,17 +56,46 @@
       "system": "Trauma",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "alcohol",
+          "pressure",
+          "movement"
+        ],
+        "quality": [
+          "pressure",
+          "sharp"
+        ],
+        "timing": [
+          "post-traumatic"
+        ],
+        "region": [
+          "n/a",
+          "diffuse"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "cranial-nerve-exam",
+          "motor-strength-testing"
+        ],
+        "other symptoms": [
+          "altered-mental-status"
+        ]
       },
       "freq": "common"
     },
@@ -44,17 +104,47 @@
       "system": "Trauma",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "alcohol",
+          "pressure",
+          "movement"
+        ],
+        "quality": [
+          "pressure",
+          "sharp"
+        ],
+        "timing": [
+          "post-traumatic"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "cranial-nerve-exam",
+          "motor-strength-testing"
+        ],
+        "other symptoms": [
+          "altered-mental-status",
+          "coma"
+        ]
       },
       "freq": "common"
     },
@@ -63,17 +153,45 @@
       "system": "Metabolic",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "gradual"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "alcohol",
+          "pressure"
+        ],
+        "quality": [
+          "pressure"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "cranial-nerve-exam",
+          "motor-strength-testing",
+          "urine-dipstick"
+        ],
+        "other symptoms": [
+          "altered-mental-status"
+        ]
       },
       "freq": "common"
     },
@@ -82,17 +200,44 @@
       "system": "Metabolic",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "gradual"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "alcohol",
+          "pressure"
+        ],
+        "quality": [
+          "pressure"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "cranial-nerve-exam",
+          "motor-strength-testing"
+        ],
+        "other symptoms": [
+          "altered-mental-status"
+        ]
       },
       "freq": "uncommon"
     },
@@ -101,17 +246,44 @@
       "system": "Metabolic",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "gradual"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "alcohol",
+          "pressure"
+        ],
+        "quality": [
+          "pressure"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "cranial-nerve-exam",
+          "motor-strength-testing"
+        ],
+        "other symptoms": [
+          "altered-mental-status"
+        ]
       },
       "freq": "rare"
     },
@@ -120,17 +292,44 @@
       "system": "Metabolic",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "gradual"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "alcohol",
+          "pressure"
+        ],
+        "quality": [
+          "pressure"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "cranial-nerve-exam",
+          "motor-strength-testing"
+        ],
+        "other symptoms": [
+          "altered-mental-status"
+        ]
       },
       "freq": "rare"
     },
@@ -139,17 +338,48 @@
       "system": "Organ Failure",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "alcohol",
+          "pressure"
+        ],
+        "quality": [
+          "pressure"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a",
+          "lower-chest"
+        ],
+        "radiation": [
+          "chest"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "cranial-nerve-exam",
+          "motor-strength-testing",
+          "auscultation"
+        ],
+        "other symptoms": [
+          "altered-mental-status",
+          "abdominal-swelling",
+          "distension"
+        ]
       },
       "freq": "uncommon"
     },
@@ -158,17 +388,47 @@
       "system": "Organ Failure",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "alcohol",
+          "pressure"
+        ],
+        "quality": [
+          "pressure"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a",
+          "lower-chest"
+        ],
+        "radiation": [
+          "chest"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "cranial-nerve-exam",
+          "motor-strength-testing",
+          "auscultation"
+        ],
+        "other symptoms": [
+          "altered-mental-status",
+          "coma"
+        ]
       },
       "freq": "uncommon"
     },
@@ -177,17 +437,47 @@
       "system": "Organ Failure",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "alcohol",
+          "pressure"
+        ],
+        "quality": [
+          "pressure"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a",
+          "lower-chest"
+        ],
+        "radiation": [
+          "chest"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "cranial-nerve-exam",
+          "motor-strength-testing",
+          "auscultation"
+        ],
+        "other symptoms": [
+          "altered-mental-status",
+          "coma"
+        ]
       },
       "freq": "uncommon"
     },
@@ -196,17 +486,48 @@
       "system": "Organ Failure",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "gradual"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "alcohol",
+          "pressure"
+        ],
+        "quality": [
+          "pressure"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a",
+          "neck"
+        ],
+        "radiation": [
+          "chest"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "cranial-nerve-exam",
+          "motor-strength-testing",
+          "auscultation"
+        ],
+        "other symptoms": [
+          "altered-mental-status",
+          "vomiting",
+          "coma"
+        ]
       },
       "freq": "uncommon"
     },
@@ -215,17 +536,45 @@
       "system": "Organ Failure",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "gradual"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "alcohol",
+          "pressure"
+        ],
+        "quality": [
+          "pressure"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "cranial-nerve-exam",
+          "motor-strength-testing"
+        ],
+        "other symptoms": [
+          "altered-mental-status",
+          "coma"
+        ]
       },
       "freq": "rare"
     },
@@ -234,17 +583,45 @@
       "system": "Vascular",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "alcohol",
+          "pressure"
+        ],
+        "quality": [
+          "pressure"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "cranial-nerve-exam",
+          "motor-strength-testing"
+        ],
+        "other symptoms": [
+          "altered-mental-status",
+          "fever",
+          "stroke-symptoms"
+        ]
       },
       "freq": "common"
     },
@@ -253,17 +630,46 @@
       "system": "Vascular",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "alcohol",
+          "pressure"
+        ],
+        "quality": [
+          "pressure"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a",
+          "neck"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "cranial-nerve-exam",
+          "motor-strength-testing"
+        ],
+        "other symptoms": [
+          "altered-mental-status",
+          "neck-stiffness",
+          "coma"
+        ]
       },
       "freq": "common"
     },
@@ -272,36 +678,88 @@
       "system": "Freq",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "alcohol",
+          "pressure"
+        ],
+        "quality": [
+          "pressure"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "cranial-nerve-exam",
+          "motor-strength-testing"
+        ],
+        "other symptoms": [
+          "altered-mental-status"
+        ]
       },
       "freq": "unknown"
     },
     {
       "name": "endemic areas)",
-      "system": "Cerebral malaria in the developed world \u2022 (common in",
+      "system": "Cerebral malaria in the developed world • (common in",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "alcohol",
+          "pressure"
+        ],
+        "quality": [
+          "pressure"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "cranial-nerve-exam",
+          "motor-strength-testing"
+        ],
+        "other symptoms": [
+          "altered-mental-status"
+        ]
       },
       "freq": "rare"
     },
@@ -310,17 +768,45 @@
       "system": "Toxin/Drug-Induced",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "alcohol",
+          "pressure"
+        ],
+        "quality": [
+          "pressure"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "cranial-nerve-exam",
+          "motor-strength-testing"
+        ],
+        "other symptoms": [
+          "altered-mental-status",
+          "coma",
+          "nausea"
+        ]
       },
       "freq": "common"
     },
@@ -329,17 +815,45 @@
       "system": "Toxin/Drug-Induced",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "alcohol",
+          "pressure"
+        ],
+        "quality": [
+          "pressure"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "cranial-nerve-exam",
+          "motor-strength-testing"
+        ],
+        "other symptoms": [
+          "altered-mental-status",
+          "rash",
+          "nausea"
+        ]
       },
       "freq": "common"
     },
@@ -348,17 +862,44 @@
       "system": "Toxin/Drug-Induced",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "alcohol",
+          "pressure"
+        ],
+        "quality": [
+          "pressure"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "cranial-nerve-exam",
+          "motor-strength-testing"
+        ],
+        "other symptoms": [
+          "altered-mental-status",
+          "nausea"
+        ]
       },
       "freq": "uncommon"
     },
@@ -367,17 +908,44 @@
       "system": "Cerebral",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "alcohol",
+          "pressure"
+        ],
+        "quality": [
+          "pressure"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "cranial-nerve-exam",
+          "motor-strength-testing"
+        ],
+        "other symptoms": [
+          "altered-mental-status",
+          "coma"
+        ]
       },
       "freq": "common"
     },
@@ -386,17 +954,49 @@
       "system": "Cerebral",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "rapid"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "alcohol",
+          "pressure"
+        ],
+        "quality": [
+          "pressure"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a",
+          "diffuse"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe",
+          "moderate"
+        ],
+        "clinical tests": [
+          "cranial-nerve-exam",
+          "motor-strength-testing"
+        ],
+        "other symptoms": [
+          "altered-mental-status",
+          "vomiting",
+          "coma",
+          "weight-loss"
+        ]
       },
       "freq": "rare"
     },
@@ -405,17 +1005,48 @@
       "system": "Cerebral",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "rapid"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "heat"
+        ],
+        "provoke": [
+          "alcohol",
+          "pressure"
+        ],
+        "quality": [
+          "pressure"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "n/a",
+          "diffuse"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe",
+          "moderate"
+        ],
+        "clinical tests": [
+          "cranial-nerve-exam",
+          "motor-strength-testing"
+        ],
+        "other symptoms": [
+          "altered-mental-status",
+          "fever",
+          "malaise"
+        ]
       },
       "freq": "rare"
     }

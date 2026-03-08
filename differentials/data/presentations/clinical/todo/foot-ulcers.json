@@ -6,17 +6,42 @@
       "system": "Large Vessel Disease",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "walking",
+          "pressure"
+        ],
+        "quality": [
+          "pressure"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "foot"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "foot-pain"
+        ]
       },
       "freq": "common"
     },
@@ -25,17 +50,43 @@
       "system": "Large Vessel Disease",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic",
+          "sudden"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "walking",
+          "pressure"
+        ],
+        "quality": [
+          "pressure"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "foot"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "foot-pain"
+        ]
       },
       "freq": "uncommon"
     },
@@ -44,36 +95,88 @@
       "system": "Small Vessel Disease",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic",
+          "gradual"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "walking",
+          "pressure"
+        ],
+        "quality": [
+          "pressure"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "foot"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "foot-pain"
+        ]
       },
       "freq": "common"
     },
     {
-      "name": "Raynaud\u2019s disease",
+      "name": "Raynaud’s disease",
       "system": "Small Vessel Disease",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "walking",
+          "pressure"
+        ],
+        "quality": [
+          "pressure"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "foot"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "foot-pain"
+        ]
       },
       "freq": "uncommon"
     },
@@ -82,17 +185,43 @@
       "system": "Small Vessel Disease",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic",
+          "sudden"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "walking",
+          "pressure"
+        ],
+        "quality": [
+          "pressure"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "foot"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "foot-pain"
+        ]
       },
       "freq": "uncommon"
     },
@@ -101,17 +230,44 @@
       "system": "Small Vessel Disease",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic",
+          "subacute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "walking",
+          "pressure"
+        ],
+        "quality": [
+          "pressure",
+          "aching"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "foot"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "foot-pain"
+        ]
       },
       "freq": "uncommon"
     },
@@ -120,17 +276,47 @@
       "system": "Peripheral Nerve Lesions",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic",
+          "gradual"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "walking",
+          "pressure"
+        ],
+        "quality": [
+          "pressure",
+          "aching"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "foot"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "foot-pain",
+          "numbness",
+          "paresthesia"
+        ]
       },
       "freq": "common"
     },
@@ -139,36 +325,92 @@
       "system": "Peripheral Nerve Lesions",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "walking",
+          "pressure"
+        ],
+        "quality": [
+          "pressure",
+          "aching"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "foot"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "foot-pain",
+          "numbness",
+          "paresthesia"
+        ]
       },
       "freq": "uncommon"
     },
     {
-      "name": "Leprosy \u2022JOFOEFNJDBSFBT",
+      "name": "Leprosy •JOFOEFNJDBSFBT",
       "system": "Peripheral Nerve Lesions",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "walking",
+          "pressure"
+        ],
+        "quality": [
+          "pressure",
+          "aching"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "foot"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "foot-pain",
+          "numbness",
+          "paresthesia"
+        ]
       },
       "freq": "rare"
     },
@@ -177,36 +419,91 @@
       "system": "Peripheral Nerve Lesions",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "walking",
+          "pressure",
+          "alcohol"
+        ],
+        "quality": [
+          "pressure",
+          "aching"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "foot"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "foot-pain",
+          "nausea",
+          "numbness",
+          "paresthesia"
+        ]
       },
       "freq": "rare"
     },
     {
-      "name": "Spina bi\ufb01da",
+      "name": "Spina biﬁda",
       "system": "Spinal Cord Lesions",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "walking",
+          "pressure"
+        ],
+        "quality": [
+          "pressure"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "foot"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "foot-pain"
+        ]
       },
       "freq": "rare"
     },
@@ -215,17 +512,42 @@
       "system": "Spinal Cord Lesions",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "walking",
+          "pressure"
+        ],
+        "quality": [
+          "pressure"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "foot"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "foot-pain"
+        ]
       },
       "freq": "rare"
     },
@@ -234,17 +556,42 @@
       "system": "Spinal Cord Lesions",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "walking",
+          "pressure"
+        ],
+        "quality": [
+          "pressure"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "foot"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "foot-pain"
+        ]
       },
       "freq": "rare"
     },
@@ -253,17 +600,45 @@
       "system": "Neoplastic",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic",
+          "insidious"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "walking",
+          "pressure"
+        ],
+        "quality": [
+          "pressure"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "foot"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate",
+          "severe"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "foot-pain",
+          "weight-loss"
+        ]
       },
       "freq": "uncommon"
     },
@@ -272,55 +647,141 @@
       "system": "Neoplastic",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic",
+          "insidious"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "walking",
+          "pressure"
+        ],
+        "quality": [
+          "pressure"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "foot"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate",
+          "severe"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "foot-pain",
+          "weight-loss"
+        ]
       },
       "freq": "uncommon"
     },
     {
-      "name": "Ill-\ufb01tting footwear",
+      "name": "Ill-ﬁtting footwear",
       "system": "Traumatic",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic",
+          "sudden"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "walking",
+          "pressure",
+          "movement"
+        ],
+        "quality": [
+          "pressure",
+          "sharp"
+        ],
+        "timing": [
+          "intermittent",
+          "post-traumatic"
+        ],
+        "region": [
+          "foot"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "foot-pain"
+        ]
       },
       "freq": "common"
     },
     {
-      "name": "Madura foot \u2022FOEFNJDJO\"GSJDB*OEJB",
+      "name": "Madura foot •FOEFNJDJO\"GSJDB*OEJB",
       "system": "Infective",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic",
+          "subacute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "walking",
+          "pressure"
+        ],
+        "quality": [
+          "pressure"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "foot"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "foot-pain",
+          "itching",
+          "fever",
+          "malaise"
+        ]
       },
       "freq": "rare"
     }

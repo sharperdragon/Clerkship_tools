@@ -5,63 +5,438 @@
       "name": "Peptic ulcer disease",
       "system": "Upper Gastrointestinal",
       "redFlag": true,
-      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
+      "hpi": {
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "alcohol",
+          "large-meals"
+        ],
+        "quality": [
+          "burning",
+          "tearing"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "abdomen",
+          "epigastrium"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation",
+          "percussion",
+          "shifting-dullness"
+        ],
+        "other symptoms": [
+          "abdominal-swelling"
+        ]
+      },
       "freq": "common"
     },
     {
       "name": "Erosive gastritis",
       "system": "Upper Gastrointestinal",
       "redFlag": false,
-      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
+      "hpi": {
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "alcohol",
+          "large-meals"
+        ],
+        "quality": [
+          "burning",
+          "tearing"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation",
+          "percussion",
+          "shifting-dullness"
+        ],
+        "other symptoms": [
+          "abdominal-swelling"
+        ]
+      },
       "freq": "common"
     },
     {
       "name": "Mallory-Weiss tear",
       "system": "Esophageal",
       "redFlag": false,
-      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
+      "hpi": {
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "alcohol",
+          "large-meals",
+          "nsaids"
+        ],
+        "quality": [
+          "burning",
+          "tearing"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation",
+          "percussion",
+          "shifting-dullness"
+        ],
+        "other symptoms": [
+          "abdominal-swelling"
+        ]
+      },
       "freq": "common"
     },
     {
       "name": "Esophageal varices",
       "system": "Portal Hypertension Related",
       "redFlag": true,
-      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
+      "hpi": {
+        "onset": [
+          "acute",
+          "chronic",
+          "gradual"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "alcohol",
+          "large-meals"
+        ],
+        "quality": [
+          "burning",
+          "tearing"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "abdomen",
+          "retrosternal"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "palpation",
+          "percussion",
+          "shifting-dullness"
+        ],
+        "other symptoms": [
+          "abdominal-swelling",
+          "weight-loss",
+          "reflux-symptoms",
+          "headache"
+        ]
+      },
       "freq": "common"
     },
     {
       "name": "Esophagitis",
       "system": "Esophageal",
       "redFlag": false,
-      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
+      "hpi": {
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "alcohol",
+          "large-meals"
+        ],
+        "quality": [
+          "burning",
+          "tearing"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "abdomen",
+          "retrosternal"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation",
+          "percussion",
+          "shifting-dullness"
+        ],
+        "other symptoms": [
+          "abdominal-swelling",
+          "reflux-symptoms",
+          "heartburn"
+        ]
+      },
       "freq": "uncommon"
     },
     {
       "name": "Gastric malignancy",
       "system": "Neoplastic",
       "redFlag": true,
-      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
+      "hpi": {
+        "onset": [
+          "acute",
+          "chronic",
+          "insidious"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "alcohol",
+          "large-meals"
+        ],
+        "quality": [
+          "burning",
+          "tearing",
+          "tender"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "abdomen",
+          "epigastrium"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate",
+          "severe"
+        ],
+        "clinical tests": [
+          "palpation",
+          "percussion",
+          "shifting-dullness"
+        ],
+        "other symptoms": [
+          "abdominal-swelling",
+          "weight-loss"
+        ]
+      },
       "freq": "uncommon"
     },
     {
       "name": "Dieulafoy lesion",
       "system": "Vascular Lesion",
       "redFlag": true,
-      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
+      "hpi": {
+        "onset": [
+          "acute",
+          "chronic",
+          "sudden"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "alcohol",
+          "large-meals"
+        ],
+        "quality": [
+          "burning",
+          "tearing"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "abdomen",
+          "lower-chest"
+        ],
+        "radiation": [
+          "chest"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "palpation",
+          "percussion",
+          "shifting-dullness"
+        ],
+        "other symptoms": [
+          "abdominal-swelling"
+        ]
+      },
       "freq": "rare"
     },
     {
       "name": "Anticoagulant-associated bleeding",
       "system": "Medication Related",
       "redFlag": true,
-      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
+      "hpi": {
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "alcohol",
+          "large-meals",
+          "nsaids"
+        ],
+        "quality": [
+          "burning",
+          "tearing"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "abdomen",
+          "retrosternal"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation",
+          "percussion",
+          "shifting-dullness"
+        ],
+        "other symptoms": [
+          "abdominal-swelling",
+          "dyspnea",
+          "shortness-of-breath",
+          "nausea"
+        ]
+      },
       "freq": "uncommon"
     },
     {
       "name": "Aortoenteric fistula",
       "system": "Vascular Catastrophe",
       "redFlag": true,
-      "hpi": {"onset":[],"progression":[],"palliate":[],"provoke":[],"quality":[],"timing":[],"region":[],"radiation":[],"severity":[],"clinical tests":[],"other symptoms":[]},
+      "hpi": {
+        "onset": [
+          "acute",
+          "chronic",
+          "sudden"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "alcohol",
+          "large-meals"
+        ],
+        "quality": [
+          "burning",
+          "tearing"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "palpation",
+          "percussion",
+          "shifting-dullness"
+        ],
+        "other symptoms": [
+          "abdominal-swelling"
+        ]
+      },
       "freq": "rare"
     }
   ]

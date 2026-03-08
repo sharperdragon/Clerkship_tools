@@ -42,6 +42,7 @@
 }
 
 .appbar {
+  --brand-icon-size: calc(var(--appbar-h) - 10px);
   position: sticky;
   top: 0;
   z-index: 4;
@@ -60,12 +61,25 @@
 }
 
 .app-title-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   font-size: 150%;
   background-color: transparent;
   padding: 3px 8px;
   border-radius: 8px;
   text-decoration: none;
   color: var(--ink);
+}
+
+.app-title-icon {
+  width: auto;
+  height: var(--brand-icon-size, 28px);
+  max-height: 100%;
+  aspect-ratio: 1 / 1;
+  flex: 0 0 auto;
+  border-radius: 0.35em;
+  object-fit: contain;
 }
 
 .app-footer {

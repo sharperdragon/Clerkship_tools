@@ -6,36 +6,96 @@
       "system": "Congenital",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "coughing",
+          "oral-intake"
+        ],
+        "quality": [
+          "burning",
+          "aching"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "neck"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation"
+        ],
+        "other symptoms": [
+          "odynophagia",
+          "sore-throat"
+        ]
       },
       "freq": "rare"
     },
     {
-      "name": "Gastro-oesophageal re\ufb02ux",
+      "name": "Gastro-oesophageal reﬂux",
       "system": "In The Wall",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "coughing",
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "burning",
+          "aching"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "neck",
+          "retrosternal"
+        ],
+        "radiation": [
+          "chest"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation"
+        ],
+        "other symptoms": [
+          "odynophagia",
+          "sore-throat",
+          "reflux-symptoms",
+          "heartburn"
+        ]
       },
       "freq": "common"
     },
@@ -44,17 +104,51 @@
       "system": "In The Wall",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "rapid"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "coughing",
+          "oral-intake",
+          "pressure"
+        ],
+        "quality": [
+          "burning",
+          "aching",
+          "pressure"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "neck"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate",
+          "severe"
+        ],
+        "clinical tests": [
+          "palpation"
+        ],
+        "other symptoms": [
+          "odynophagia",
+          "sore-throat",
+          "weight-loss",
+          "reflux-symptoms"
+        ]
       },
       "freq": "common"
     },
@@ -63,17 +157,46 @@
       "system": "In The Wall",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "coughing",
+          "oral-intake"
+        ],
+        "quality": [
+          "burning",
+          "aching"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "neck",
+          "lower-chest"
+        ],
+        "radiation": [
+          "chest"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation"
+        ],
+        "other symptoms": [
+          "odynophagia",
+          "sore-throat"
+        ]
       },
       "freq": "uncommon"
     },
@@ -82,17 +205,46 @@
       "system": "In The Wall",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "coughing",
+          "oral-intake"
+        ],
+        "quality": [
+          "burning",
+          "aching"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "neck",
+          "face"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation"
+        ],
+        "other symptoms": [
+          "odynophagia",
+          "sore-throat"
+        ]
       },
       "freq": "uncommon"
     },
@@ -101,17 +253,51 @@
       "system": "In The Wall",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "months"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "coughing",
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "burning",
+          "aching"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal",
+          "constant"
+        ],
+        "region": [
+          "neck",
+          "lower-chest"
+        ],
+        "radiation": [
+          "chest"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "palpation"
+        ],
+        "other symptoms": [
+          "odynophagia",
+          "sore-throat",
+          "reflux-symptoms",
+          "heartburn"
+        ]
       },
       "freq": "rare"
     },
@@ -120,17 +306,45 @@
       "system": "In The Wall",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "coughing",
+          "oral-intake"
+        ],
+        "quality": [
+          "burning",
+          "aching"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "neck"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation"
+        ],
+        "other symptoms": [
+          "odynophagia",
+          "sore-throat"
+        ]
       },
       "freq": "rare"
     },
@@ -139,55 +353,142 @@
       "system": "In The Wall",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "coughing",
+          "oral-intake"
+        ],
+        "quality": [
+          "burning",
+          "aching"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "neck",
+          "lower-chest"
+        ],
+        "radiation": [
+          "chest"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation"
+        ],
+        "other symptoms": [
+          "odynophagia",
+          "sore-throat"
+        ]
       },
       "freq": "rare"
     },
     {
-      "name": "Plummer\u2013Vinson syndrome",
+      "name": "Plummer–Vinson syndrome",
       "system": "In The Wall",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "coughing",
+          "oral-intake"
+        ],
+        "quality": [
+          "burning",
+          "aching"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "neck"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation",
+          "motor-strength-testing"
+        ],
+        "other symptoms": [
+          "odynophagia",
+          "sore-throat"
+        ]
       },
       "freq": "rare"
     },
     {
-      "name": "Chagas\u2019 disease \u2022 (South America)",
+      "name": "Chagas’ disease • (South America)",
       "system": "In The Wall",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "coughing",
+          "oral-intake"
+        ],
+        "quality": [
+          "burning",
+          "aching"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "neck"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation",
+          "motor-strength-testing"
+        ],
+        "other symptoms": [
+          "odynophagia",
+          "sore-throat"
+        ]
       },
       "freq": "unknown"
     },
@@ -196,17 +497,46 @@
       "system": "Outside The Wall",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "coughing",
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "burning",
+          "aching"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "neck"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation"
+        ],
+        "other symptoms": [
+          "odynophagia",
+          "sore-throat"
+        ]
       },
       "freq": "common"
     },
@@ -215,17 +545,48 @@
       "system": "Outside The Wall",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "coughing",
+          "oral-intake"
+        ],
+        "quality": [
+          "burning",
+          "aching"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "neck",
+          "retrosternal"
+        ],
+        "radiation": [
+          "chest"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation"
+        ],
+        "other symptoms": [
+          "odynophagia",
+          "sore-throat",
+          "reflux-symptoms",
+          "heartburn"
+        ]
       },
       "freq": "common"
     },
@@ -234,17 +595,48 @@
       "system": "Outside The Wall",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute",
+          "insidious"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "coughing",
+          "oral-intake"
+        ],
+        "quality": [
+          "burning",
+          "aching"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "neck"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate",
+          "severe"
+        ],
+        "clinical tests": [
+          "palpation"
+        ],
+        "other symptoms": [
+          "odynophagia",
+          "sore-throat",
+          "weight-loss"
+        ]
       },
       "freq": "common"
     },
@@ -253,17 +645,46 @@
       "system": "Outside The Wall",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "coughing",
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "burning",
+          "aching"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "neck"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation"
+        ],
+        "other symptoms": [
+          "odynophagia",
+          "sore-throat"
+        ]
       },
       "freq": "uncommon"
     },
@@ -272,17 +693,49 @@
       "system": "Outside The Wall",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "coughing",
+          "oral-intake",
+          "pressure"
+        ],
+        "quality": [
+          "burning",
+          "aching",
+          "pressure"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "neck",
+          "lower-chest"
+        ],
+        "radiation": [
+          "groin"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation"
+        ],
+        "other symptoms": [
+          "odynophagia",
+          "sore-throat",
+          "cyanosis"
+        ]
       },
       "freq": "rare"
     },
@@ -291,17 +744,46 @@
       "system": "Outside The Wall",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "coughing",
+          "oral-intake"
+        ],
+        "quality": [
+          "burning",
+          "aching"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "neck",
+          "lower-chest"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "palpation"
+        ],
+        "other symptoms": [
+          "odynophagia",
+          "sore-throat"
+        ]
       },
       "freq": "rare"
     },
@@ -310,17 +792,49 @@
       "system": "Outside The Wall",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "coughing",
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "burning",
+          "aching",
+          "pressure"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "neck",
+          "lower-chest"
+        ],
+        "radiation": [
+          "groin"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation"
+        ],
+        "other symptoms": [
+          "odynophagia",
+          "sore-throat",
+          "dehydration"
+        ]
       },
       "freq": "rare"
     },
@@ -329,17 +843,45 @@
       "system": "Neuromuscular Disorders",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "coughing",
+          "oral-intake"
+        ],
+        "quality": [
+          "burning",
+          "aching"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "neck"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation"
+        ],
+        "other symptoms": [
+          "odynophagia",
+          "sore-throat"
+        ]
       },
       "freq": "common"
     },
@@ -348,36 +890,93 @@
       "system": "Neuromuscular Disorders",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "coughing",
+          "oral-intake"
+        ],
+        "quality": [
+          "burning",
+          "aching"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "neck"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation"
+        ],
+        "other symptoms": [
+          "odynophagia",
+          "sore-throat"
+        ]
       },
       "freq": "uncommon"
     },
     {
-      "name": "Guillain\u2013Barr\u00e9 syndrome",
+      "name": "Guillain–Barré syndrome",
       "system": "Neuromuscular Disorders",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "coughing",
+          "oral-intake"
+        ],
+        "quality": [
+          "burning",
+          "aching"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "neck"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation",
+          "motor-strength-testing"
+        ],
+        "other symptoms": [
+          "odynophagia",
+          "sore-throat"
+        ]
       },
       "freq": "uncommon"
     },
@@ -386,17 +985,46 @@
       "system": "Neuromuscular Disorders",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "coughing",
+          "oral-intake"
+        ],
+        "quality": [
+          "burning",
+          "aching"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "neck"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation",
+          "motor-strength-testing"
+        ],
+        "other symptoms": [
+          "odynophagia",
+          "sore-throat"
+        ]
       },
       "freq": "uncommon"
     },
@@ -405,17 +1033,46 @@
       "system": "Neuromuscular Disorders",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "coughing",
+          "oral-intake"
+        ],
+        "quality": [
+          "burning",
+          "aching"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "neck"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation",
+          "motor-strength-testing"
+        ],
+        "other symptoms": [
+          "odynophagia",
+          "sore-throat"
+        ]
       },
       "freq": "rare"
     },
@@ -424,17 +1081,45 @@
       "system": "Other",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening",
+          "improving"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "coughing",
+          "oral-intake"
+        ],
+        "quality": [
+          "burning",
+          "aching"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "neck"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation"
+        ],
+        "other symptoms": [
+          "odynophagia",
+          "sore-throat"
+        ]
       },
       "freq": "uncommon"
     }

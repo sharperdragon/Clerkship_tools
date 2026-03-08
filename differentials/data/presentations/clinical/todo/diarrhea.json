@@ -3,115 +3,294 @@
   "items": [
     {
       "name": "Escherichia coli",
-      "system": "Salmonella spp \u2022 (rare in tropical Africa)",
+      "system": "Salmonella spp • (rare in tropical Africa)",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "antacids",
+          "ppi"
+        ],
+        "provoke": [
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "cramping",
+          "colicky",
+          "tender"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen",
+          "rectum"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe",
+          "mild"
+        ],
+        "clinical tests": [
+          "palpation",
+          "auscultation"
+        ],
+        "other symptoms": [
+          "abdominal-pain",
+          "diarrhea",
+          "dehydration"
+        ]
       },
       "freq": "common"
     },
     {
-      "name": "Clostridium dif\ufb01cile",
-      "system": "Salmonella spp \u2022 (rare in tropical Africa)",
+      "name": "Clostridium difﬁcile",
+      "system": "Salmonella spp • (rare in tropical Africa)",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic",
+          "subacute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "antacids",
+          "ppi"
+        ],
+        "provoke": [
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "cramping",
+          "colicky"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation",
+          "auscultation"
+        ],
+        "other symptoms": [
+          "abdominal-pain",
+          "diarrhea",
+          "fever",
+          "malaise"
+        ]
       },
       "freq": "common"
     },
     {
       "name": "Staphylococci",
-      "system": "Salmonella spp \u2022 (rare in tropical Africa)",
+      "system": "Salmonella spp • (rare in tropical Africa)",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "antacids",
+          "ppi"
+        ],
+        "provoke": [
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "cramping",
+          "colicky"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation",
+          "auscultation"
+        ],
+        "other symptoms": [
+          "abdominal-pain",
+          "dehydration"
+        ]
       },
       "freq": "uncommon"
     },
     {
       "name": "Shigella spp",
-      "system": "Salmonella spp \u2022 (rare in tropical Africa)",
+      "system": "Salmonella spp • (rare in tropical Africa)",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "antacids",
+          "ppi"
+        ],
+        "provoke": [
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "cramping",
+          "colicky"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation",
+          "auscultation"
+        ],
+        "other symptoms": [
+          "abdominal-pain",
+          "dehydration"
+        ]
       },
       "freq": "uncommon"
     },
     {
       "name": "Vibrio cholerae",
-      "system": "Salmonella spp \u2022 (rare in tropical Africa)",
+      "system": "Salmonella spp • (rare in tropical Africa)",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic",
+          "subacute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "antacids",
+          "ppi"
+        ],
+        "provoke": [
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "cramping",
+          "colicky"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation",
+          "auscultation"
+        ],
+        "other symptoms": [
+          "abdominal-pain",
+          "fever",
+          "malaise",
+          "dehydration"
+        ]
       },
       "freq": "rare"
     },
     {
       "name": "Entamoeba histolytica",
-      "system": "Giardia lamblia \u2022 (more common in children worldwide)",
+      "system": "Giardia lamblia • (more common in children worldwide)",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "antacids",
+          "ppi"
+        ],
+        "provoke": [
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "cramping",
+          "colicky"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation",
+          "auscultation",
+          "digital-rectal-exam"
+        ],
+        "other symptoms": [
+          "abdominal-pain",
+          "dehydration"
+        ]
       },
       "freq": "rare"
     },
@@ -120,36 +299,101 @@
       "system": "Inflammatory",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic",
+          "subacute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "antacids",
+          "ppi"
+        ],
+        "provoke": [
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "cramping",
+          "colicky",
+          "tender"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe",
+          "mild"
+        ],
+        "clinical tests": [
+          "palpation",
+          "auscultation"
+        ],
+        "other symptoms": [
+          "abdominal-pain",
+          "diarrhea",
+          "dehydration"
+        ]
       },
       "freq": "uncommon"
     },
     {
-      "name": "Crohn\u2019s disease",
+      "name": "Crohn’s disease",
       "system": "Inflammatory",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic",
+          "subacute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "antacids",
+          "ppi"
+        ],
+        "provoke": [
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "cramping",
+          "colicky",
+          "tender"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen",
+          "rectum"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild"
+        ],
+        "clinical tests": [
+          "palpation",
+          "auscultation"
+        ],
+        "other symptoms": [
+          "abdominal-pain",
+          "weight-loss",
+          "diarrhea",
+          "dehydration"
+        ]
       },
       "freq": "uncommon"
     },
@@ -158,17 +402,49 @@
       "system": "Malabsorption",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "antacids",
+          "ppi"
+        ],
+        "provoke": [
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "cramping",
+          "colicky",
+          "tender"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen",
+          "rectum"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild"
+        ],
+        "clinical tests": [
+          "palpation",
+          "auscultation"
+        ],
+        "other symptoms": [
+          "abdominal-pain",
+          "weight-loss",
+          "diarrhea",
+          "dehydration"
+        ]
       },
       "freq": "uncommon"
     },
@@ -177,17 +453,48 @@
       "system": "Malabsorption",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic",
+          "relapsing"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "antacids",
+          "ppi"
+        ],
+        "provoke": [
+          "oral-intake",
+          "eating",
+          "alcohol"
+        ],
+        "quality": [
+          "cramping",
+          "colicky"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation",
+          "auscultation"
+        ],
+        "other symptoms": [
+          "abdominal-pain",
+          "diarrhea",
+          "dehydration"
+        ]
       },
       "freq": "rare"
     },
@@ -196,17 +503,49 @@
       "system": "Malabsorption",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic",
+          "relapsing"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "antacids",
+          "ppi"
+        ],
+        "provoke": [
+          "oral-intake",
+          "eating",
+          "alcohol"
+        ],
+        "quality": [
+          "cramping",
+          "colicky",
+          "tender"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild"
+        ],
+        "clinical tests": [
+          "palpation",
+          "auscultation"
+        ],
+        "other symptoms": [
+          "abdominal-pain",
+          "diarrhea",
+          "dehydration"
+        ]
       },
       "freq": "rare"
     },
@@ -215,17 +554,45 @@
       "system": "Malabsorption",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "antacids",
+          "ppi"
+        ],
+        "provoke": [
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "cramping",
+          "colicky"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation",
+          "auscultation"
+        ],
+        "other symptoms": [
+          "abdominal-pain",
+          "dehydration"
+        ]
       },
       "freq": "rare"
     },
@@ -234,17 +601,52 @@
       "system": "Neoplastic",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic",
+          "insidious"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "antacids",
+          "ppi"
+        ],
+        "provoke": [
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "cramping",
+          "colicky",
+          "tender"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen",
+          "epigastrium"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate",
+          "severe"
+        ],
+        "clinical tests": [
+          "palpation",
+          "auscultation",
+          "digital-rectal-exam"
+        ],
+        "other symptoms": [
+          "abdominal-pain",
+          "diarrhea",
+          "weight-loss",
+          "dehydration"
+        ]
       },
       "freq": "common"
     },
@@ -253,93 +655,255 @@
       "system": "Neoplastic",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic",
+          "insidious"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "antacids",
+          "ppi"
+        ],
+        "provoke": [
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "cramping",
+          "colicky"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen",
+          "rectum"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe",
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation",
+          "auscultation",
+          "digital-rectal-exam"
+        ],
+        "other symptoms": [
+          "abdominal-pain",
+          "diarrhea",
+          "limb-weakness",
+          "weight-loss"
+        ]
       },
       "freq": "rare"
     },
     {
       "name": "Irritable bowel syndrome",
-      "system": "Diverticular disease \u2022 (rare in rural Africa and Asia)",
+      "system": "Diverticular disease • (rare in rural Africa and Asia)",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic",
+          "relapsing"
+        ],
+        "progression": [
+          "stable"
+        ],
+        "palliate": [
+          "antacids",
+          "ppi"
+        ],
+        "provoke": [
+          "oral-intake",
+          "eating",
+          "alcohol"
+        ],
+        "quality": [
+          "cramping",
+          "colicky",
+          "tender"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild",
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation",
+          "auscultation"
+        ],
+        "other symptoms": [
+          "abdominal-pain",
+          "diarrhea",
+          "dehydration"
+        ]
       },
       "freq": "common"
     },
     {
-      "name": "Fecal impaction \u2013 over\ufb02ow Diarrhea",
-      "system": "Diverticular disease \u2022 (rare in rural Africa and Asia)",
+      "name": "Fecal impaction – overﬂow Diarrhea",
+      "system": "Diverticular disease • (rare in rural Africa and Asia)",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "antacids",
+          "ppi"
+        ],
+        "provoke": [
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "cramping",
+          "colicky"
+        ],
+        "timing": [
+          "intermittent",
+          "constant"
+        ],
+        "region": [
+          "abdomen",
+          "rectum"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "palpation",
+          "auscultation",
+          "digital-rectal-exam"
+        ],
+        "other symptoms": [
+          "abdominal-pain",
+          "diarrhea",
+          "dehydration"
+        ]
       },
       "freq": "common"
     },
     {
       "name": "Ischemic colitis",
-      "system": "Diverticular disease \u2022 (rare in rural Africa and Asia)",
+      "system": "Diverticular disease • (rare in rural Africa and Asia)",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic",
+          "sudden"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "antacids",
+          "ppi"
+        ],
+        "provoke": [
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "cramping",
+          "colicky",
+          "tender"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe",
+          "mild"
+        ],
+        "clinical tests": [
+          "palpation",
+          "auscultation"
+        ],
+        "other symptoms": [
+          "abdominal-pain",
+          "diarrhea",
+          "dehydration"
+        ]
       },
       "freq": "uncommon"
     },
     {
-      "name": "Ileocolic \ufb01stula",
-      "system": "Diverticular disease \u2022 (rare in rural Africa and Asia)",
+      "name": "Ileocolic ﬁstula",
+      "system": "Diverticular disease • (rare in rural Africa and Asia)",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "antacids",
+          "ppi"
+        ],
+        "provoke": [
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "cramping",
+          "colicky",
+          "tender"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen",
+          "rectum"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation",
+          "auscultation"
+        ],
+        "other symptoms": [
+          "abdominal-pain",
+          "diarrhea",
+          "dehydration"
+        ]
       },
       "freq": "rare"
     },
@@ -348,17 +912,45 @@
       "system": "Gastric",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "antacids",
+          "ppi"
+        ],
+        "provoke": [
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "cramping",
+          "colicky"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation",
+          "auscultation"
+        ],
+        "other symptoms": [
+          "abdominal-pain",
+          "dehydration"
+        ]
       },
       "freq": "rare"
     },
@@ -367,36 +959,93 @@
       "system": "Pancreatic",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "antacids",
+          "ppi"
+        ],
+        "provoke": [
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "cramping",
+          "colicky"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen",
+          "epigastrium"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation",
+          "auscultation"
+        ],
+        "other symptoms": [
+          "abdominal-pain",
+          "dehydration"
+        ]
       },
       "freq": "uncommon"
     },
     {
-      "name": "Cystic \ufb01brosis",
+      "name": "Cystic ﬁbrosis",
       "system": "Pancreatic",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "antacids",
+          "ppi"
+        ],
+        "provoke": [
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "cramping",
+          "colicky"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation",
+          "auscultation"
+        ],
+        "other symptoms": [
+          "abdominal-pain",
+          "dehydration"
+        ]
       },
       "freq": "uncommon"
     },
@@ -405,17 +1054,52 @@
       "system": "Pancreatic",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic",
+          "insidious"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "antacids",
+          "ppi"
+        ],
+        "provoke": [
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "cramping",
+          "colicky",
+          "tender"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen",
+          "epigastrium"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate",
+          "severe"
+        ],
+        "clinical tests": [
+          "palpation",
+          "auscultation",
+          "digital-rectal-exam"
+        ],
+        "other symptoms": [
+          "abdominal-pain",
+          "diarrhea",
+          "weight-loss",
+          "dehydration"
+        ]
       },
       "freq": "rare"
     },
@@ -424,17 +1108,49 @@
       "system": "Pancreatic",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "antacids",
+          "ppi"
+        ],
+        "provoke": [
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "cramping",
+          "colicky",
+          "tender"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen",
+          "epigastrium"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation",
+          "auscultation"
+        ],
+        "other symptoms": [
+          "abdominal-pain",
+          "weight-loss",
+          "diarrhea",
+          "dehydration"
+        ]
       },
       "freq": "rare"
     },
@@ -443,17 +1159,48 @@
       "system": "Endocrine",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic",
+          "gradual"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "antacids",
+          "ppi"
+        ],
+        "provoke": [
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "cramping",
+          "colicky"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation",
+          "auscultation"
+        ],
+        "other symptoms": [
+          "abdominal-pain",
+          "diarrhea",
+          "dehydration"
+        ]
       },
       "freq": "uncommon"
     },
@@ -462,17 +1209,49 @@
       "system": "Endocrine",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic",
+          "hours"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "antacids",
+          "ppi"
+        ],
+        "provoke": [
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "cramping",
+          "colicky"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation",
+          "auscultation",
+          "reflex-testing"
+        ],
+        "other symptoms": [
+          "abdominal-pain",
+          "tachycardia",
+          "dehydration"
+        ]
       },
       "freq": "uncommon"
     },
@@ -481,36 +1260,100 @@
       "system": "Endocrine",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic",
+          "relapsing"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "antacids",
+          "ppi"
+        ],
+        "provoke": [
+          "oral-intake",
+          "eating",
+          "alcohol"
+        ],
+        "quality": [
+          "cramping",
+          "colicky"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation",
+          "auscultation"
+        ],
+        "other symptoms": [
+          "abdominal-pain",
+          "diarrhea",
+          "dehydration"
+        ]
       },
       "freq": "rare"
     },
     {
-      "name": "Zollinger\u2013Ellison syndrome",
+      "name": "Zollinger–Ellison syndrome",
       "system": "Endocrine",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic",
+          "relapsing"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "antacids",
+          "ppi"
+        ],
+        "provoke": [
+          "oral-intake",
+          "eating",
+          "alcohol"
+        ],
+        "quality": [
+          "cramping",
+          "colicky"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation",
+          "auscultation"
+        ],
+        "other symptoms": [
+          "abdominal-pain",
+          "diarrhea",
+          "dehydration"
+        ]
       },
       "freq": "rare"
     },
@@ -519,17 +1362,49 @@
       "system": "Endocrine",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic",
+          "gradual"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "antacids",
+          "ppi"
+        ],
+        "provoke": [
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "cramping",
+          "colicky"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "palpation",
+          "auscultation"
+        ],
+        "other symptoms": [
+          "abdominal-pain",
+          "diarrhea",
+          "limb-weakness",
+          "dehydration"
+        ]
       },
       "freq": "rare"
     },
@@ -538,17 +1413,50 @@
       "system": "Endocrine",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic",
+          "insidious"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "antacids",
+          "ppi"
+        ],
+        "provoke": [
+          "oral-intake",
+          "eating"
+        ],
+        "quality": [
+          "cramping",
+          "colicky"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate",
+          "severe"
+        ],
+        "clinical tests": [
+          "palpation",
+          "auscultation"
+        ],
+        "other symptoms": [
+          "abdominal-pain",
+          "diarrhea",
+          "weight-loss",
+          "dehydration"
+        ]
       },
       "freq": "rare"
     },
@@ -557,17 +1465,49 @@
       "system": "Drug-Induced",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "antacids",
+          "ppi"
+        ],
+        "provoke": [
+          "oral-intake",
+          "eating",
+          "alcohol"
+        ],
+        "quality": [
+          "cramping",
+          "colicky"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe",
+          "mild"
+        ],
+        "clinical tests": [
+          "palpation",
+          "auscultation"
+        ],
+        "other symptoms": [
+          "abdominal-pain",
+          "diarrhea",
+          "nausea",
+          "dehydration"
+        ]
       },
       "freq": "common"
     },
@@ -576,17 +1516,48 @@
       "system": "Drug-Induced",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "antacids",
+          "ppi"
+        ],
+        "provoke": [
+          "oral-intake",
+          "eating",
+          "alcohol"
+        ],
+        "quality": [
+          "cramping",
+          "colicky"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation",
+          "auscultation"
+        ],
+        "other symptoms": [
+          "abdominal-pain",
+          "diarrhea",
+          "nausea",
+          "dehydration"
+        ]
       },
       "freq": "common"
     },
@@ -595,17 +1566,47 @@
       "system": "Drug-Induced",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "antacids",
+          "ppi"
+        ],
+        "provoke": [
+          "oral-intake",
+          "eating",
+          "alcohol"
+        ],
+        "quality": [
+          "cramping",
+          "colicky"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation",
+          "auscultation"
+        ],
+        "other symptoms": [
+          "abdominal-pain",
+          "nausea",
+          "dehydration"
+        ]
       },
       "freq": "uncommon"
     },
@@ -614,17 +1615,47 @@
       "system": "Drug-Induced",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "antacids",
+          "ppi"
+        ],
+        "provoke": [
+          "oral-intake",
+          "eating",
+          "alcohol"
+        ],
+        "quality": [
+          "cramping",
+          "colicky"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation",
+          "auscultation"
+        ],
+        "other symptoms": [
+          "abdominal-pain",
+          "nausea",
+          "dehydration"
+        ]
       },
       "freq": "uncommon"
     },
@@ -633,17 +1664,47 @@
       "system": "Drug-Induced",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "antacids",
+          "ppi"
+        ],
+        "provoke": [
+          "oral-intake",
+          "eating",
+          "alcohol"
+        ],
+        "quality": [
+          "cramping",
+          "colicky"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation",
+          "auscultation"
+        ],
+        "other symptoms": [
+          "abdominal-pain",
+          "nausea",
+          "dehydration"
+        ]
       },
       "freq": "rare"
     },
@@ -652,17 +1713,50 @@
       "system": "Drug-Induced",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic",
+          "gradual"
+        ],
+        "progression": [
+          "stable"
+        ],
+        "palliate": [
+          "antacids",
+          "ppi"
+        ],
+        "provoke": [
+          "oral-intake",
+          "eating",
+          "alcohol"
+        ],
+        "quality": [
+          "cramping",
+          "colicky"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild",
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation",
+          "auscultation"
+        ],
+        "other symptoms": [
+          "abdominal-pain",
+          "diarrhea",
+          "tremor",
+          "nausea"
+        ]
       },
       "freq": "uncommon"
     },
@@ -671,17 +1765,48 @@
       "system": "Drug-Induced",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "antacids",
+          "ppi"
+        ],
+        "provoke": [
+          "oral-intake",
+          "eating",
+          "alcohol"
+        ],
+        "quality": [
+          "cramping",
+          "colicky"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "palpation",
+          "auscultation"
+        ],
+        "other symptoms": [
+          "abdominal-pain",
+          "diarrhea",
+          "nausea",
+          "dehydration"
+        ]
       },
       "freq": "uncommon"
     }
