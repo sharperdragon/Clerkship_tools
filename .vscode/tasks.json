@@ -27,6 +27,15 @@
         "cwd": "${workspaceFolder}"
       },
       "problemMatcher": []
+    },
+    {
+      "label": "Pharm: Import DrugBank TSV",
+      "type": "shell",
+      "command": "python3 ${workspaceFolder}/pharm/scripts/import_drugbank_tsv.py",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
     }
   ]
 }

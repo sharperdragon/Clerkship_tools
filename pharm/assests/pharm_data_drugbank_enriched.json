@@ -1,0 +1,1848 @@
+{
+  "medications": [
+    {
+      "id": "acetaminophen",
+      "name": "Acetaminophen",
+      "drugClass": "Analgesic / Antipyretic",
+      "routes": [
+        "PO",
+        "PR",
+        "IV"
+      ],
+      "moa": "Central prostaglandin synthesis inhibition with minimal peripheral anti-inflammatory activity.",
+      "indications": [
+        "Mild to moderate pain",
+        "Fever reduction",
+        "Adjunct for multimodal analgesia"
+      ],
+      "contraindications": [
+        "Severe hepatic impairment",
+        "Known hypersensitivity"
+      ],
+      "adverseEffects": [
+        "Hepatotoxicity with overdose",
+        "Rare rash"
+      ],
+      "majorInteractions": [
+        "Chronic alcohol use increases hepatotoxic risk",
+        "Warfarin effect may increase with frequent high doses"
+      ],
+      "monitoring": [
+        "Total daily dose from all combination products",
+        "Liver function when prolonged high-dose use is needed"
+      ],
+      "aliases": [
+        "Paracetamol"
+      ],
+      "brandExamples": [
+        "Tylenol"
+      ],
+      "pearls": [
+        "Standard adult maximum is often 4 g/day; many institutions use lower limits."
+      ],
+      "drugbank": {
+        "drugbank_id": "DB00316",
+        "name": "Acetaminophen",
+        "type": "small molecule",
+        "groups": [
+          "approved"
+        ],
+        "atc_codes": [],
+        "categories": [
+          "Analgesics, Non-Narcotic",
+          "Antipyretics"
+        ],
+        "inchikey": "InChIKey=RZVAJINKPMORJF-UHFFFAOYSA-N",
+        "inchi": "InChI=1S/C8H9NO2/c1-6(10)9-7-2-4-8(11)5-3-7/h2-5,11H,1H3,(H,9,10)",
+        "description_first_sentence": "Acetaminophen, also known as paracetamol, is commonly used for its analgesic and antipyretic effects."
+      }
+    },
+    {
+      "id": "ibuprofen",
+      "name": "Ibuprofen",
+      "drugClass": "NSAID",
+      "routes": [
+        "PO"
+      ],
+      "moa": "Reversible cyclooxygenase (COX) inhibition reducing prostaglandin-mediated inflammation and pain.",
+      "indications": [
+        "Musculoskeletal pain",
+        "Fever",
+        "Inflammatory pain syndromes"
+      ],
+      "contraindications": [
+        "Active GI bleeding",
+        "Advanced kidney injury",
+        "NSAID hypersensitivity"
+      ],
+      "adverseEffects": [
+        "Gastritis or ulceration",
+        "Acute kidney injury",
+        "Fluid retention"
+      ],
+      "majorInteractions": [
+        "Anticoagulants increase bleeding risk",
+        "ACE inhibitor/diuretic combination may worsen kidney injury"
+      ],
+      "monitoring": [
+        "Renal function in high-risk patients",
+        "GI bleeding symptoms",
+        "Blood pressure"
+      ],
+      "aliases": [],
+      "brandExamples": [
+        "Advil",
+        "Motrin"
+      ],
+      "pearls": [
+        "Use caution in older adults and in volume-depleted patients."
+      ],
+      "drugbank": {
+        "drugbank_id": "DB01050",
+        "name": "Ibuprofen",
+        "type": "small molecule",
+        "groups": [
+          "approved"
+        ],
+        "atc_codes": [
+          "C01EB16",
+          "G02CC01",
+          "M01AE01",
+          "M01AE14",
+          "M02AA13"
+        ],
+        "categories": [
+          "Anti-Inflammatory Agents, Non-Steroidal",
+          "Cyclooxygenase Inhibitors",
+          "Analgesics, Non-Narcotic"
+        ],
+        "inchikey": "InChIKey=HEFNNWSXXWATRW-UHFFFAOYSA-N",
+        "inchi": "InChI=1S/C13H18O2/c1-9(2)8-11-4-6-12(7-5-11)10(3)13(14)15/h4-7,9-10H,8H2,1-3H3,(H,14,15)",
+        "description_first_sentence": "Ibuprofen, a propionic acid derivative, is a prototypical nonsteroidal anti-inflammatory agent (NSAIA) with analgesic and antipyretic properties."
+      }
+    },
+    {
+      "id": "ketorolac",
+      "name": "Ketorolac",
+      "drugClass": "NSAID",
+      "routes": [
+        "IV",
+        "IM",
+        "PO"
+      ],
+      "moa": "Potent nonselective COX inhibition for short-term analgesia.",
+      "indications": [
+        "Short-term moderate to severe acute pain",
+        "Opioid-sparing perioperative pain strategy"
+      ],
+      "contraindications": [
+        "Advanced kidney disease",
+        "Active bleeding",
+        "Perioperative CABG pain"
+      ],
+      "adverseEffects": [
+        "GI bleeding",
+        "Renal injury",
+        "Platelet dysfunction"
+      ],
+      "majorInteractions": [
+        "Other NSAIDs increase toxicity",
+        "Anticoagulants increase bleeding risk"
+      ],
+      "monitoring": [
+        "Duration of therapy",
+        "Renal function",
+        "Signs of bleeding"
+      ],
+      "aliases": [],
+      "brandExamples": [
+        "Toradol"
+      ],
+      "pearls": [
+        "Use is generally limited to a short course because toxicity rises with duration."
+      ],
+      "drugbank": {
+        "drugbank_id": "DB00465",
+        "name": "Ketorolac",
+        "type": "small molecule",
+        "groups": [
+          "approved"
+        ],
+        "atc_codes": [
+          "M01AB15",
+          "S01BC05"
+        ],
+        "categories": [
+          "Anti-Inflammatory Agents, Non-Steroidal",
+          "Cyclooxygenase Inhibitors"
+        ],
+        "inchikey": "InChIKey=OZWKMVRBQXNZKK-UHFFFAOYSA-N",
+        "inchi": "InChI=1S/C15H13NO3/c17-14(10-4-2-1-3-5-10)13-7-6-12-11(15(18)19)8-9-16(12)13/h1-7,11H,8-9H2,(H,18,19)",
+        "description_first_sentence": "A pyrrolizine carboxylic acid derivative structurally related to indomethacin."
+      }
+    },
+    {
+      "id": "amoxicillin",
+      "name": "Amoxicillin",
+      "drugClass": "Aminopenicillin",
+      "routes": [
+        "PO"
+      ],
+      "moa": "Beta-lactam antibiotic that inhibits bacterial cell wall synthesis.",
+      "indications": [
+        "Otitis media",
+        "Streptococcal pharyngitis",
+        "Susceptible community respiratory infections"
+      ],
+      "contraindications": [
+        "Serious immediate penicillin allergy"
+      ],
+      "adverseEffects": [
+        "Rash",
+        "Diarrhea",
+        "Candidiasis"
+      ],
+      "majorInteractions": [
+        "Warfarin INR may increase",
+        "Allopurinol may increase rash risk"
+      ],
+      "monitoring": [
+        "Clinical response",
+        "Allergic reaction signs",
+        "Renal function when prolonged therapy is used"
+      ],
+      "aliases": [],
+      "brandExamples": [
+        "Amoxil"
+      ],
+      "pearls": [
+        "Consider local resistance patterns when selecting empiric therapy."
+      ],
+      "drugbank": {
+        "drugbank_id": "DB01060",
+        "name": "Amoxicillin",
+        "type": "small molecule",
+        "groups": [
+          "approved"
+        ],
+        "atc_codes": [
+          "J01CA04"
+        ],
+        "categories": [
+          "Anti-Bacterial Agents",
+          "Penicillins"
+        ],
+        "inchikey": "InChIKey=LSQZJLSUYDQPKJ-NJBDSQKTSA-N",
+        "inchi": "InChI=1S/C16H19N3O5S/c1-16(2)11(15(23)24)19-13(22)10(14(19)25-16)18-12(21)9(17)7-3-5-8(20)6-4-7/h3-6,9-11,14,20H,17H2,1-2H3,(H,18,21)(H,23,24)/t9-,10-,11+,14-/m1/s1",
+        "description_first_sentence": "A broad-spectrum semisynthetic antibiotic similar to ampicillin except that its resistance to gastric acid permits higher serum levels with oral administration."
+      }
+    },
+    {
+      "id": "amoxicillin-clavulanate",
+      "name": "Amoxicillin-Clavulanate",
+      "drugClass": "Beta-lactam/Beta-lactamase inhibitor",
+      "routes": [
+        "PO"
+      ],
+      "moa": "Amoxicillin inhibits cell wall synthesis; clavulanate inhibits beta-lactamase enzymes.",
+      "indications": [
+        "Sinusitis",
+        "Bite wound prophylaxis/treatment",
+        "Polymicrobial skin or respiratory infections"
+      ],
+      "contraindications": [
+        "Severe penicillin allergy",
+        "Prior cholestatic jaundice with this combination"
+      ],
+      "adverseEffects": [
+        "Diarrhea",
+        "GI upset",
+        "Drug-induced liver injury"
+      ],
+      "majorInteractions": [
+        "Warfarin INR may increase",
+        "Methotrexate clearance may be reduced"
+      ],
+      "monitoring": [
+        "GI tolerance",
+        "Liver enzymes for prolonged courses",
+        "Clinical infection response"
+      ],
+      "aliases": [
+        "Amoxicillin"
+      ],
+      "brandExamples": [
+        "Augmentin"
+      ],
+      "pearls": [
+        "Higher clavulanate content can increase GI adverse effects."
+      ],
+      "drugbank": {
+        "drugbank_id": "DB01060",
+        "name": "Amoxicillin",
+        "type": "small molecule",
+        "groups": [
+          "approved"
+        ],
+        "atc_codes": [
+          "J01CA04"
+        ],
+        "categories": [
+          "Anti-Bacterial Agents",
+          "Penicillins"
+        ],
+        "inchikey": "InChIKey=LSQZJLSUYDQPKJ-NJBDSQKTSA-N",
+        "inchi": "InChI=1S/C16H19N3O5S/c1-16(2)11(15(23)24)19-13(22)10(14(19)25-16)18-12(21)9(17)7-3-5-8(20)6-4-7/h3-6,9-11,14,20H,17H2,1-2H3,(H,18,21)(H,23,24)/t9-,10-,11+,14-/m1/s1",
+        "description_first_sentence": "A broad-spectrum semisynthetic antibiotic similar to ampicillin except that its resistance to gastric acid permits higher serum levels with oral administration."
+      }
+    },
+    {
+      "id": "azithromycin",
+      "name": "Azithromycin",
+      "drugClass": "Macrolide antibiotic",
+      "routes": [
+        "PO",
+        "IV"
+      ],
+      "moa": "Binds 50S ribosomal subunit to inhibit bacterial protein synthesis.",
+      "indications": [
+        "Atypical pneumonia coverage",
+        "COPD exacerbation adjunct therapy",
+        "Selected STI regimens"
+      ],
+      "contraindications": [
+        "Known macrolide hypersensitivity",
+        "History of azithromycin-related cholestatic jaundice"
+      ],
+      "adverseEffects": [
+        "GI upset",
+        "QT prolongation",
+        "Transient liver enzyme elevation"
+      ],
+      "majorInteractions": [
+        "Other QT-prolonging drugs increase arrhythmia risk",
+        "Digoxin concentration may increase"
+      ],
+      "monitoring": [
+        "ECG risk profile in high-risk patients",
+        "Clinical response",
+        "Liver function when indicated"
+      ],
+      "aliases": [],
+      "brandExamples": [
+        "Zithromax"
+      ],
+      "pearls": [
+        "Long tissue half-life allows short-course regimens for some indications."
+      ],
+      "drugbank": {
+        "drugbank_id": "DB00207",
+        "name": "Azithromycin",
+        "type": "small molecule",
+        "groups": [
+          "approved"
+        ],
+        "atc_codes": [
+          "J01FA10",
+          "S01AA26"
+        ],
+        "categories": [
+          "Anti-Bacterial Agents",
+          "Macrolides"
+        ],
+        "inchikey": "InChIKey=MQTOSJVFKKJCRP-BICOPXKESA-N",
+        "inchi": "InChI=1S/C38H72N2O12/c1-15-27-38(10,46)31(42)24(6)40(13)19-20(2)17-36(8,45)33(52-35-29(41)26(39(11)12)16-21(3)48-35)22(4)30(23(5)34(44)50-27)51-28-18-37(9,47-14)32(43)25(7)49-28/h20-33,35,41-43,45-46H,15-19H2,1-14H3/t20-,21-,22+,23-,24-,25+,26+,27-,28+,29-,30+,31-,32+,33-,35+,36-,37-,38-/m1/s1",
+        "description_first_sentence": "Azithromycin is a semi-synthetic  macrolide antibiotic of the azalide class."
+      }
+    },
+    {
+      "id": "ceftriaxone",
+      "name": "Ceftriaxone",
+      "drugClass": "Third-generation cephalosporin",
+      "routes": [
+        "IV",
+        "IM"
+      ],
+      "moa": "Beta-lactam antibiotic that inhibits bacterial cell wall synthesis.",
+      "indications": [
+        "Community-acquired pneumonia",
+        "Pyelonephritis",
+        "Gonococcal infection"
+      ],
+      "contraindications": [
+        "Severe cephalosporin anaphylaxis",
+        "Neonates receiving calcium-containing IV products"
+      ],
+      "adverseEffects": [
+        "Injection site pain",
+        "Biliary sludge",
+        "Hypersensitivity reactions"
+      ],
+      "majorInteractions": [
+        "Calcium-containing IV solutions in neonates",
+        "Warfarin anticoagulant effect may increase"
+      ],
+      "monitoring": [
+        "Clinical response",
+        "Hypersensitivity",
+        "Liver function if prolonged use"
+      ],
+      "aliases": [],
+      "brandExamples": [
+        "Rocephin"
+      ],
+      "pearls": [
+        "Broad gram-negative activity makes it common in empiric inpatient regimens."
+      ],
+      "drugbank": {
+        "drugbank_id": "DB01212",
+        "name": "Ceftriaxone",
+        "type": "small molecule",
+        "groups": [
+          "approved"
+        ],
+        "atc_codes": [
+          "J01DD04"
+        ],
+        "categories": [
+          "Anti-Bacterial Agents",
+          "Cephalosporins"
+        ],
+        "inchikey": "InChIKey=VAAUVRVFOQPIGI-SPQHTLEESA-N",
+        "inchi": "InChI=1S/C18H18N8O7S3/c1-25-18(22-12(28)13(29)23-25)36-4-6-3-34-15-9(14(30)26(15)10(6)16(31)32)21-11(27)8(24-33-2)7-5-35-17(19)20-7/h5,9,15H,3-4H2,1-2H3,(H2,19,20)(H,21,27)(H,23,29)(H,31,32)/b24-8-/t9-,15-/m1/s1",
+        "description_first_sentence": "A broad-spectrum cephalosporin antibiotic with a very long half-life and high penetrability to meninges, eyes and inner ears."
+      }
+    },
+    {
+      "id": "vancomycin",
+      "name": "Vancomycin",
+      "drugClass": "Glycopeptide antibiotic",
+      "routes": [
+        "IV",
+        "PO"
+      ],
+      "moa": "Inhibits bacterial cell wall synthesis by binding D-Ala-D-Ala cell wall precursors.",
+      "indications": [
+        "Serious gram-positive infections including MRSA",
+        "C. difficile colitis (oral only)"
+      ],
+      "contraindications": [
+        "Known hypersensitivity"
+      ],
+      "adverseEffects": [
+        "Nephrotoxicity",
+        "Infusion-related flushing",
+        "Ototoxicity (rare)"
+      ],
+      "majorInteractions": [
+        "Concurrent nephrotoxic agents increase kidney injury risk",
+        "Loop diuretics may increase ototoxic risk"
+      ],
+      "monitoring": [
+        "Renal function",
+        "Therapeutic drug levels per protocol",
+        "Infusion reaction symptoms"
+      ],
+      "aliases": [],
+      "brandExamples": [
+        "Vancocin"
+      ],
+      "pearls": [
+        "Oral formulation treats gut infection and does not provide systemic coverage."
+      ],
+      "drugbank": {
+        "drugbank_id": "DB00512",
+        "name": "Vancomycin",
+        "type": "small molecule",
+        "groups": [
+          "approved"
+        ],
+        "atc_codes": [
+          "A07AA09",
+          "J01XA01"
+        ],
+        "categories": [
+          "Anti-Bacterial Agents"
+        ],
+        "inchikey": "InChIKey=MYPYJXKWCTUITO-LYRMYLQWSA-N",
+        "inchi": "InChI=1S/C66H75Cl2N9O24/c1-23(2)12-34(71-5)58(88)76-49-51(83)26-7-10-38(32(67)14-26)97-40-16-28-17-41(55(40)101-65-56(54(86)53(85)42(22-78)99-65)100-44-21-66(4,70)57(87)24(3)96-44)98-39-11-8-27(15-33(39)68)52(84)50-63(93)75-48(64(94)95)31-18-29(79)19-37(81)45(31)30-13-25(6-9-36(30)80)46(60(90)77-50)74-61(91)47(28)73-59(89)35(20-43(69)82)72-62(49)92/h6-11,13-19,23-24,34-35,42,44,46-54,56-57,65,71,78-81,83-87H,12,20-22,70H2,1-5H3,(H2,69,82)(H,72,92)(H,73,89)(H,74,91)(H,75,93)(H,76,88)(H,77,90)(H,94,95)/t24-,34+,35-,42+,44-,46+,47+,48-,49+,50-,51+,52+,53+,54-,56+,57+,65-,66-/m0/s1",
+        "description_first_sentence": "Antibacterial obtained from Streptomyces orientalis."
+      }
+    },
+    {
+      "id": "lisinopril",
+      "name": "Lisinopril",
+      "drugClass": "ACE inhibitor",
+      "routes": [
+        "PO"
+      ],
+      "moa": "Blocks conversion of angiotensin I to angiotensin II, reducing vasoconstriction and aldosterone effects.",
+      "indications": [
+        "Hypertension",
+        "Heart failure with reduced EF",
+        "Renal protection in selected patients with diabetes"
+      ],
+      "contraindications": [
+        "Pregnancy",
+        "History of ACE inhibitor angioedema",
+        "Bilateral renal artery stenosis"
+      ],
+      "adverseEffects": [
+        "Cough",
+        "Hyperkalemia",
+        "Acute kidney injury"
+      ],
+      "majorInteractions": [
+        "Potassium supplements increase hyperkalemia risk",
+        "NSAIDs may blunt effect and worsen renal function"
+      ],
+      "monitoring": [
+        "Blood pressure",
+        "Serum creatinine",
+        "Serum potassium"
+      ],
+      "aliases": [],
+      "brandExamples": [
+        "Zestril",
+        "Prinivil"
+      ],
+      "pearls": [
+        "A creatinine rise can occur after initiation; evaluate trend and clinical context."
+      ],
+      "drugbank": {
+        "drugbank_id": "DB00722",
+        "name": "Lisinopril",
+        "type": "small molecule",
+        "groups": [
+          "approved",
+          "investigational"
+        ],
+        "atc_codes": [],
+        "categories": [],
+        "inchikey": "InChIKey=RLAWWYSOJDYHDC-BZSNNMDCSA-N",
+        "inchi": "InChI=1S/C21H31N3O5/c22-13-5-4-9-16(19(25)24-14-6-10-18(24)21(28)29)23-17(20(26)27)12-11-15-7-2-1-3-8-15/h1-3,7-8,16-18,23H,4-6,9-14,22H2,(H,26,27)(H,28,29)/t16-,17-,18-/m0/s1",
+        "description_first_sentence": "Lisinopril is a potent, competitive inhibitor of angiotensin-converting enzyme (ACE), the enzyme responsible for the conversion of angiotensin I (ATI) to angiotensin II (ATII)."
+      }
+    },
+    {
+      "id": "amlodipine",
+      "name": "Amlodipine",
+      "drugClass": "Dihydropyridine calcium channel blocker",
+      "routes": [
+        "PO"
+      ],
+      "moa": "Blocks L-type calcium channels in vascular smooth muscle to reduce peripheral vascular resistance.",
+      "indications": [
+        "Hypertension",
+        "Chronic stable angina",
+        "Vasospastic angina"
+      ],
+      "contraindications": [
+        "Known hypersensitivity"
+      ],
+      "adverseEffects": [
+        "Peripheral edema",
+        "Flushing",
+        "Headache"
+      ],
+      "majorInteractions": [
+        "Strong CYP3A4 inhibitors may increase concentration",
+        "Simvastatin exposure increases with coadministration"
+      ],
+      "monitoring": [
+        "Blood pressure",
+        "Edema",
+        "Heart rate when used with other rate-lowering agents"
+      ],
+      "aliases": [],
+      "brandExamples": [
+        "Norvasc"
+      ],
+      "pearls": [
+        "Edema is dose-related and may improve with regimen adjustment."
+      ],
+      "drugbank": {
+        "drugbank_id": "DB00381",
+        "name": "Amlodipine",
+        "type": "small molecule",
+        "groups": [
+          "approved"
+        ],
+        "atc_codes": [
+          "C08CA01"
+        ],
+        "categories": [
+          "Antihypertensive Agents",
+          "Vasodilator Agents",
+          "Calcium Channel Blockers",
+          "Antianginal Agents"
+        ],
+        "inchikey": "InChIKey=HTIQEAQVCYTUBX-UHFFFAOYSA-N",
+        "inchi": "InChI=1S/C20H25ClN2O5/c1-4-28-20(25)18-15(11-27-10-9-22)23-12(2)16(19(24)26-3)17(18)13-7-5-6-8-14(13)21/h5-8,17,23H,4,9-11,22H2,1-3H3",
+        "description_first_sentence": "Amlodipine is a long-acting 1,4-dihydropyridine calcium channel blocker."
+      }
+    },
+    {
+      "id": "metoprolol-tartrate",
+      "name": "Metoprolol Tartrate",
+      "drugClass": "Beta blocker",
+      "routes": [
+        "PO",
+        "IV"
+      ],
+      "moa": "Selective beta-1 adrenergic blockade lowering heart rate, contractility, and blood pressure.",
+      "indications": [
+        "Rate control in atrial fibrillation",
+        "Hypertension",
+        "Angina"
+      ],
+      "contraindications": [
+        "Severe bradycardia",
+        "Second/third-degree heart block without pacing",
+        "Cardiogenic shock"
+      ],
+      "adverseEffects": [
+        "Bradycardia",
+        "Hypotension",
+        "Fatigue"
+      ],
+      "majorInteractions": [
+        "Non-dihydropyridine calcium channel blockers may cause excessive AV nodal suppression",
+        "CYP2D6 inhibitors may increase concentration"
+      ],
+      "monitoring": [
+        "Heart rate",
+        "Blood pressure",
+        "Symptoms of dizziness or syncope"
+      ],
+      "aliases": [
+        "Metoprolol"
+      ],
+      "brandExamples": [
+        "Lopressor"
+      ],
+      "pearls": [
+        "Avoid abrupt discontinuation in patients with ischemic heart disease."
+      ],
+      "drugbank": {
+        "drugbank_id": "DB00264",
+        "name": "Metoprolol",
+        "type": "small molecule",
+        "groups": [
+          "approved",
+          "investigational"
+        ],
+        "atc_codes": [
+          "C07AB02",
+          "C07AB52"
+        ],
+        "categories": [
+          "Antihypertensive Agents",
+          "Adrenergic beta-1 Receptor Antagonists",
+          "Sympatholytics",
+          "Anti-Arrhythmia Agents"
+        ],
+        "inchikey": "InChIKey=IUBSYMUCCVWXPE-UHFFFAOYSA-N",
+        "inchi": "InChI=1S/C15H25NO3/c1-12(2)16-10-14(17)11-19-15-6-4-13(5-7-15)8-9-18-3/h4-7,12,14,16-17H,8-11H2,1-3H3",
+        "description_first_sentence": "Metoprolol is a cardioselective  \u03b21-adrenergic blocking agent used for acute myocardial infarction (MI), heart failure, angina pectoris and mild to moderate hypertension."
+      }
+    },
+    {
+      "id": "furosemide",
+      "name": "Furosemide",
+      "drugClass": "Loop diuretic",
+      "routes": [
+        "PO",
+        "IV",
+        "IM"
+      ],
+      "moa": "Inhibits sodium-potassium-chloride cotransporter in the loop of Henle, promoting natriuresis.",
+      "indications": [
+        "Volume overload",
+        "Pulmonary edema",
+        "Hypertension adjunct"
+      ],
+      "contraindications": [
+        "Anuria",
+        "Known severe sulfonamide reaction (relative depending on context)"
+      ],
+      "adverseEffects": [
+        "Hypokalemia",
+        "Dehydration",
+        "Ototoxicity with high-dose rapid IV use"
+      ],
+      "majorInteractions": [
+        "Aminoglycosides increase ototoxic risk",
+        "NSAIDs may reduce diuretic response"
+      ],
+      "monitoring": [
+        "Volume status",
+        "Electrolytes",
+        "Renal function"
+      ],
+      "aliases": [],
+      "brandExamples": [
+        "Lasix"
+      ],
+      "pearls": [
+        "IV onset is faster than PO and useful for acute decompensated states."
+      ],
+      "drugbank": {
+        "drugbank_id": "DB00695",
+        "name": "Furosemide",
+        "type": "small molecule",
+        "groups": [
+          "approved"
+        ],
+        "atc_codes": [],
+        "categories": [
+          "Diuretics",
+          "Sodium Potassium Chloride Symporter Inhibitors"
+        ],
+        "inchikey": "InChIKey=ZZUFCTLCJUWOSV-UHFFFAOYSA-N",
+        "inchi": "InChI=1S/C12H11ClN2O5S/c13-9-5-10(15-6-7-2-1-3-20-7)8(12(16)17)4-11(9)21(14,18)19/h1-5,15H,6H2,(H,16,17)(H2,14,18,19)",
+        "description_first_sentence": "A benzoic-sulfonamide-furan."
+      }
+    },
+    {
+      "id": "atorvastatin",
+      "name": "Atorvastatin",
+      "drugClass": "HMG-CoA reductase inhibitor (statin)",
+      "routes": [
+        "PO"
+      ],
+      "moa": "Inhibits hepatic HMG-CoA reductase, reducing cholesterol synthesis and increasing LDL receptor activity.",
+      "indications": [
+        "Primary and secondary ASCVD prevention",
+        "Hyperlipidemia"
+      ],
+      "contraindications": [
+        "Pregnancy",
+        "Active liver disease"
+      ],
+      "adverseEffects": [
+        "Myalgias",
+        "Transaminase elevation",
+        "Rare rhabdomyolysis"
+      ],
+      "majorInteractions": [
+        "Strong CYP3A4 inhibitors increase myopathy risk",
+        "Grapefruit products may increase exposure"
+      ],
+      "monitoring": [
+        "Lipid profile response",
+        "Muscle symptoms",
+        "Liver enzymes when clinically indicated"
+      ],
+      "aliases": [],
+      "brandExamples": [
+        "Lipitor"
+      ],
+      "pearls": [
+        "Most LDL reduction occurs at moderate doses; intensity can be tailored to risk."
+      ],
+      "drugbank": {
+        "drugbank_id": "DB01076",
+        "name": "Atorvastatin",
+        "type": "small molecule",
+        "groups": [
+          "approved"
+        ],
+        "atc_codes": [
+          "C10AA05"
+        ],
+        "categories": [
+          "Anticholesteremic Agents",
+          "Hydroxymethylglutaryl-CoA Reductase Inhibitors"
+        ],
+        "inchikey": "InChIKey=XUKUURHRXDUEBC-UHFFFAOYNA-M",
+        "inchi": "InChI=1/C33H35FN2O5/c1-21(2)31-30(33(41)35-25-11-7-4-8-12-25)29(22-9-5-3-6-10-22)32(23-13-15-24(34)16-14-23)36(31)18-17-26(37)19-27(38)20-28(39)40/h3-16,21,26-27,37-38H,17-20H2,1-2H3,(H,35,41)(H,39,40)/p-1",
+        "description_first_sentence": "Atorvastatin (Lipitor) is a member of the drug class known as statins."
+      }
+    },
+    {
+      "id": "aspirin",
+      "name": "Aspirin",
+      "drugClass": "Antiplatelet / NSAID",
+      "routes": [
+        "PO"
+      ],
+      "moa": "Irreversibly inhibits platelet COX-1, reducing thromboxane-mediated platelet aggregation.",
+      "indications": [
+        "Secondary prevention of ASCVD",
+        "Acute coronary syndrome protocols",
+        "Analgesia/antipyresis in selected patients"
+      ],
+      "contraindications": [
+        "Active bleeding",
+        "Aspirin hypersensitivity",
+        "Children with viral illness due to Reye syndrome risk"
+      ],
+      "adverseEffects": [
+        "GI irritation",
+        "Bleeding",
+        "Tinnitus at high exposure"
+      ],
+      "majorInteractions": [
+        "Concurrent anticoagulants increase bleeding risk",
+        "NSAIDs can interfere with antiplatelet effect timing"
+      ],
+      "monitoring": [
+        "Bleeding signs",
+        "GI symptoms",
+        "Clinical cardiovascular outcomes"
+      ],
+      "aliases": [
+        "Acetylsalicylic acid"
+      ],
+      "brandExamples": [
+        "Bayer Aspirin"
+      ],
+      "pearls": [
+        "Use with food or GI protection when bleeding risk is elevated."
+      ],
+      "drugbank": {
+        "drugbank_id": "DB00945",
+        "name": "Acetylsalicylic acid",
+        "type": "small molecule",
+        "groups": [
+          "approved"
+        ],
+        "atc_codes": [
+          "A01AD05",
+          "B01AC06",
+          "N02BA01"
+        ],
+        "categories": [
+          "Fibrinolytic Agents",
+          "Platelet Aggregation Inhibitors",
+          "Anti-Inflammatory Agents, Non-Steroidal",
+          "Cyclooxygenase Inhibitors",
+          "Antipyretics",
+          "Salicylates"
+        ],
+        "inchikey": "InChIKey=BSYNRYMUTXBXSQ-UHFFFAOYSA-N",
+        "inchi": "InChI=1S/C9H8O4/c1-6(10)13-8-5-3-2-4-7(8)9(11)12/h2-5H,1H3,(H,11,12)",
+        "description_first_sentence": "The prototypical analgesic used in the treatment of mild to moderate pain."
+      }
+    },
+    {
+      "id": "heparin",
+      "name": "Heparin",
+      "drugClass": "Anticoagulant (unfractionated heparin)",
+      "routes": [
+        "IV",
+        "SQ"
+      ],
+      "moa": "Potentiates antithrombin activity, inhibiting thrombin and factor Xa.",
+      "indications": [
+        "VTE treatment and prophylaxis",
+        "ACS anticoagulation",
+        "Periprocedural bridging"
+      ],
+      "contraindications": [
+        "Active major bleeding",
+        "History of heparin-induced thrombocytopenia"
+      ],
+      "adverseEffects": [
+        "Bleeding",
+        "Heparin-induced thrombocytopenia",
+        "Hyperkalemia with prolonged use"
+      ],
+      "majorInteractions": [
+        "Antiplatelet agents increase bleeding risk",
+        "Other anticoagulants increase bleeding risk"
+      ],
+      "monitoring": [
+        "aPTT or anti-Xa per protocol",
+        "CBC/platelets",
+        "Clinical bleeding signs"
+      ],
+      "aliases": [
+        "Unfractionated heparin",
+        "UFH"
+      ],
+      "brandExamples": [],
+      "pearls": [
+        "Short half-life makes UFH useful when rapid reversal flexibility is needed."
+      ],
+      "drugbank": {
+        "drugbank_id": "DB01109",
+        "name": "Heparin",
+        "type": "small molecule",
+        "groups": [
+          "approved",
+          "investigational"
+        ],
+        "atc_codes": [
+          "C05BA01",
+          "C05BA03",
+          "S01XA09",
+          "S01XA14"
+        ],
+        "categories": [
+          "Fibrinolytic Agents",
+          "Anticoagulants",
+          "Heparins"
+        ],
+        "inchikey": "",
+        "inchi": "",
+        "description_first_sentence": "Unfractionated heparin (UH) is a heterogenous preparation of anionic, sulfated glycosaminoglycan polymers with weights ranging from 3000 to 30,000 Da."
+      }
+    },
+    {
+      "id": "enoxaparin",
+      "name": "Enoxaparin",
+      "drugClass": "Anticoagulant (LMWH)",
+      "routes": [
+        "SQ"
+      ],
+      "moa": "Potentiates antithrombin with predominant anti-factor Xa activity.",
+      "indications": [
+        "VTE prophylaxis",
+        "VTE treatment",
+        "Selected ACS regimens"
+      ],
+      "contraindications": [
+        "Active major bleeding",
+        "History of HIT with antibodies"
+      ],
+      "adverseEffects": [
+        "Bleeding",
+        "Injection site hematoma",
+        "Thrombocytopenia"
+      ],
+      "majorInteractions": [
+        "Antiplatelets increase bleeding risk",
+        "Other anticoagulants increase bleeding risk"
+      ],
+      "monitoring": [
+        "CBC/platelets",
+        "Renal function",
+        "Anti-Xa in selected high-risk scenarios"
+      ],
+      "aliases": [],
+      "brandExamples": [
+        "Lovenox"
+      ],
+      "pearls": [
+        "Renal function strongly influences accumulation risk."
+      ],
+      "drugbank": {
+        "drugbank_id": "DB01225",
+        "name": "Enoxaparin",
+        "type": "small molecule",
+        "groups": [
+          "approved"
+        ],
+        "atc_codes": [],
+        "categories": [
+          "Fibrinolytic Agents",
+          "Anticoagulants",
+          "Heparins"
+        ],
+        "inchikey": "InChIKey=HTTJABKRGRZYRN-UHFFFAOYSA-N",
+        "inchi": "InChI=1S/C26H42N2O37S5/c1-4(30)27-7-9(31)13(6(56-23(7)39)3-55-67(43,44)45)58-26-19(65-70(52,53)54)12(34)16(20(62-26)22(37)38)60-24-8(28-66(40,41)42)15(63-68(46,47)48)14(5(2-29)57-24)59-25-18(64-69(49,50)51)11(33)10(32)17(61-25)21(35)36/h5-20,23-26,28-29,31-34,39H,2-3H2,1H3,(H,27,30)(H,35,36)(H,37,38)(H,40,41,42)(H,43,44,45)(H,46,47,48)(H,49,50,51)(H,52,53,54)",
+        "description_first_sentence": "Enoxaparin is a low molecular weight heparin."
+      }
+    },
+    {
+      "id": "apixaban",
+      "name": "Apixaban",
+      "drugClass": "Direct factor Xa inhibitor",
+      "routes": [
+        "PO"
+      ],
+      "moa": "Directly inhibits factor Xa to reduce thrombin generation.",
+      "indications": [
+        "Atrial fibrillation stroke prevention",
+        "VTE treatment",
+        "VTE secondary prevention"
+      ],
+      "contraindications": [
+        "Active pathological bleeding",
+        "Severe hypersensitivity"
+      ],
+      "adverseEffects": [
+        "Bleeding",
+        "Anemia",
+        "Nausea"
+      ],
+      "majorInteractions": [
+        "Strong dual CYP3A4/P-gp inhibitors may increase levels",
+        "Strong inducers may reduce efficacy"
+      ],
+      "monitoring": [
+        "Bleeding and thrombosis signs",
+        "Renal and hepatic function periodically",
+        "Adherence"
+      ],
+      "aliases": [],
+      "brandExamples": [
+        "Eliquis"
+      ],
+      "pearls": [
+        "Routine coagulation monitoring is not required but does not imply no bleeding risk."
+      ],
+      "drugbank": {
+        "drugbank_id": "DB06605",
+        "name": "Apixaban",
+        "type": "small molecule",
+        "groups": [
+          "approved"
+        ],
+        "atc_codes": [
+          "B01AF02"
+        ],
+        "categories": [],
+        "inchikey": "InChIKey=QNZCBYKSOIHPEH-UHFFFAOYSA-N",
+        "inchi": "InChI=1S/C25H25N5O4/c1-34-19-11-9-18(10-12-19)30-23-20(22(27-30)24(26)32)13-15-29(25(23)33)17-7-5-16(6-8-17)28-14-3-2-4-21(28)31/h5-12H,2-4,13-15H2,1H3,(H2,26,32)",
+        "description_first_sentence": "Apixaban is an oral, direct, and highly selective factor Xa (FXa) inhibitor (of both free and prothrombinase-bound FXa independently of antithrombin III) for the prevention and treatment of thromboembolic diseases."
+      }
+    },
+    {
+      "id": "insulin-glargine",
+      "name": "Insulin Glargine",
+      "drugClass": "Long-acting insulin",
+      "routes": [
+        "SQ"
+      ],
+      "moa": "Basal insulin analog providing prolonged glucose-lowering activity.",
+      "indications": [
+        "Basal insulin replacement in diabetes mellitus"
+      ],
+      "contraindications": [
+        "Hypoglycemia episode at time of administration",
+        "Known hypersensitivity"
+      ],
+      "adverseEffects": [
+        "Hypoglycemia",
+        "Weight gain",
+        "Injection site reactions"
+      ],
+      "majorInteractions": [
+        "Other glucose-lowering agents can increase hypoglycemia risk",
+        "Beta blockers may mask hypoglycemia symptoms"
+      ],
+      "monitoring": [
+        "Fasting glucose trends",
+        "Hypoglycemia events",
+        "A1c trend"
+      ],
+      "aliases": [],
+      "brandExamples": [
+        "Lantus",
+        "Basaglar"
+      ],
+      "pearls": [
+        "Do not mix in the same syringe with rapid-acting insulin."
+      ],
+      "drugbank": {
+        "drugbank_id": "DB00047",
+        "name": "Insulin Glargine",
+        "type": "biotech",
+        "groups": [
+          "approved"
+        ],
+        "atc_codes": [],
+        "categories": [
+          "Hypoglycemic Agents",
+          "Antidiabetic Agents"
+        ],
+        "inchikey": "",
+        "inchi": "",
+        "description_first_sentence": "Insulin glargine is produced by recombinant DNA technology using a non-pathogenic laboratory strain of Escherichia coli (K12) as the production organism."
+      }
+    },
+    {
+      "id": "insulin-lispro",
+      "name": "Insulin Lispro",
+      "drugClass": "Rapid-acting insulin",
+      "routes": [
+        "SQ",
+        "IV"
+      ],
+      "moa": "Rapid-onset insulin analog that facilitates peripheral glucose uptake and suppresses hepatic glucose output.",
+      "indications": [
+        "Prandial glucose control",
+        "Correction insulin",
+        "IV insulin protocols in selected inpatient settings"
+      ],
+      "contraindications": [
+        "Hypoglycemia episode",
+        "Known hypersensitivity"
+      ],
+      "adverseEffects": [
+        "Hypoglycemia",
+        "Hypokalemia",
+        "Weight gain"
+      ],
+      "majorInteractions": [
+        "Other antidiabetic agents increase hypoglycemia risk",
+        "Steroids can increase insulin requirements"
+      ],
+      "monitoring": [
+        "Point-of-care glucose",
+        "Potassium in high-dose IV use",
+        "Hypoglycemia symptoms"
+      ],
+      "aliases": [],
+      "brandExamples": [
+        "Humalog"
+      ],
+      "pearls": [
+        "Timing with meals is critical to reduce hypoglycemia risk."
+      ],
+      "drugbank": {
+        "drugbank_id": "DB00046",
+        "name": "Insulin Lispro",
+        "type": "biotech",
+        "groups": [
+          "approved"
+        ],
+        "atc_codes": [
+          "A10AC04",
+          "A10AD04"
+        ],
+        "categories": [
+          "Hypoglycemic Agents",
+          "Antidiabetic Agents"
+        ],
+        "inchikey": "",
+        "inchi": "",
+        "description_first_sentence": "Insulin lispro is a recombinant human insulin analogue produced in a specialized laboratory strain of Escherischia coli."
+      }
+    },
+    {
+      "id": "metformin",
+      "name": "Metformin",
+      "drugClass": "Biguanide",
+      "routes": [
+        "PO"
+      ],
+      "moa": "Reduces hepatic gluconeogenesis and improves insulin sensitivity.",
+      "indications": [
+        "Type 2 diabetes",
+        "Prediabetes in selected patients"
+      ],
+      "contraindications": [
+        "Severe kidney dysfunction",
+        "Metabolic acidosis"
+      ],
+      "adverseEffects": [
+        "GI upset",
+        "Vitamin B12 deficiency with chronic use",
+        "Rare lactic acidosis"
+      ],
+      "majorInteractions": [
+        "Iodinated contrast may transiently increase risk of lactic acidosis in select patients",
+        "Alcohol excess increases lactic acidosis risk"
+      ],
+      "monitoring": [
+        "Renal function",
+        "A1c trend",
+        "B12 level over long-term therapy"
+      ],
+      "aliases": [],
+      "brandExamples": [
+        "Glucophage"
+      ],
+      "pearls": [
+        "Taking with meals improves GI tolerance."
+      ],
+      "drugbank": {
+        "drugbank_id": "DB00331",
+        "name": "Metformin",
+        "type": "small molecule",
+        "groups": [
+          "approved"
+        ],
+        "atc_codes": [
+          "A10BD11",
+          "A10BA02"
+        ],
+        "categories": [
+          "Antidiabetic Agents"
+        ],
+        "inchikey": "InChIKey=XZWYZXLIPXDOLR-UHFFFAOYSA-N",
+        "inchi": "InChI=1S/C4H11N5/c1-9(2)4(7)8-3(5)6/h1-2H3,(H5,5,6,7,8)",
+        "description_first_sentence": "Metformin is a biguanide antihyperglycemic agent used for treating non-insulin-dependent diabetes mellitus (NIDDM)."
+      }
+    },
+    {
+      "id": "levothyroxine",
+      "name": "Levothyroxine",
+      "drugClass": "Thyroid hormone",
+      "routes": [
+        "PO",
+        "IV"
+      ],
+      "moa": "Synthetic thyroxine (T4) replacement converted peripherally to active triiodothyronine (T3).",
+      "indications": [
+        "Hypothyroidism",
+        "Myxedema coma protocol adjunct (IV)"
+      ],
+      "contraindications": [
+        "Untreated thyrotoxicosis",
+        "Uncorrected adrenal insufficiency"
+      ],
+      "adverseEffects": [
+        "Palpitations from overtreatment",
+        "Tremor",
+        "Insomnia"
+      ],
+      "majorInteractions": [
+        "Calcium and iron reduce oral absorption",
+        "Warfarin anticoagulant effect may increase"
+      ],
+      "monitoring": [
+        "TSH trends",
+        "Free T4 in selected settings",
+        "Symptoms of over- or under-replacement"
+      ],
+      "aliases": [
+        "T4"
+      ],
+      "brandExamples": [
+        "Synthroid",
+        "Levoxyl"
+      ],
+      "pearls": [
+        "Separate oral doses from binding agents to preserve absorption."
+      ],
+      "drugbank": {
+        "drugbank_id": "DB00451",
+        "name": "Levothyroxine",
+        "type": "small molecule",
+        "groups": [
+          "approved"
+        ],
+        "atc_codes": [
+          "H03AA01"
+        ],
+        "categories": [],
+        "inchikey": "InChIKey=XUIIKFGFIJCVMT-LBPRGKRZSA-N",
+        "inchi": "InChI=1S/C15H11I4NO4/c16-8-4-7(5-9(17)13(8)21)24-14-10(18)1-6(2-11(14)19)3-12(20)15(22)23/h1-2,4-5,12,21H,3,20H2,(H,22,23)/t12-/m0/s1",
+        "description_first_sentence": "The major hormone derived from the thyroid gland."
+      }
+    },
+    {
+      "id": "albuterol",
+      "name": "Albuterol",
+      "drugClass": "Short-acting beta-2 agonist",
+      "routes": [
+        "INH"
+      ],
+      "moa": "Stimulates beta-2 receptors to relax bronchial smooth muscle.",
+      "indications": [
+        "Acute bronchospasm relief",
+        "Exercise-induced bronchospasm prevention"
+      ],
+      "contraindications": [
+        "Known hypersensitivity"
+      ],
+      "adverseEffects": [
+        "Tremor",
+        "Tachycardia",
+        "Hypokalemia"
+      ],
+      "majorInteractions": [
+        "Nonselective beta blockers can blunt bronchodilation",
+        "Other sympathomimetics increase tachycardia risk"
+      ],
+      "monitoring": [
+        "Symptom relief",
+        "Heart rate",
+        "Rescue use frequency"
+      ],
+      "aliases": [
+        "Salbutamol"
+      ],
+      "brandExamples": [
+        "Ventolin",
+        "ProAir"
+      ],
+      "pearls": [
+        "Frequent rescue use suggests poor baseline control and need for regimen reassessment."
+      ],
+      "drugbank": {
+        "drugbank_id": "DB01001",
+        "name": "Salbutamol",
+        "type": "small molecule",
+        "groups": [
+          "approved"
+        ],
+        "atc_codes": [
+          "R03CC02",
+          "R03AC02"
+        ],
+        "categories": [
+          "Adrenergic beta-2 Receptor Agonists",
+          "Bronchodilator Agents",
+          "Tocolytic Agents"
+        ],
+        "inchikey": "InChIKey=NDAUXUAQIAJITI-UHFFFAOYSA-N",
+        "inchi": "InChI=1S/C13H21NO3/c1-13(2,3)14-7-12(17)9-4-5-11(16)10(6-9)8-15/h4-6,12,14-17H,7-8H2,1-3H3",
+        "description_first_sentence": "Salbutamol is a short-acting, selective beta2-adrenergic receptor agonist used in the treatment of asthma and COPD."
+      }
+    },
+    {
+      "id": "ipratropium-albuterol",
+      "name": "Ipratropium-Albuterol",
+      "drugClass": "Anticholinergic/SABA combination",
+      "routes": [
+        "INH"
+      ],
+      "moa": "Combines muscarinic antagonism and beta-2 agonism to improve bronchodilation.",
+      "indications": [
+        "COPD exacerbation",
+        "Adjunct in severe asthma exacerbation"
+      ],
+      "contraindications": [
+        "Hypersensitivity to either component"
+      ],
+      "adverseEffects": [
+        "Dry mouth",
+        "Tachycardia",
+        "Tremor"
+      ],
+      "majorInteractions": [
+        "Additional anticholinergics increase anticholinergic effects",
+        "Other sympathomimetics increase tachycardia risk"
+      ],
+      "monitoring": [
+        "Respiratory status",
+        "Heart rate",
+        "Need for escalating bronchodilator therapy"
+      ],
+      "aliases": [],
+      "brandExamples": [
+        "DuoNeb",
+        "Combivent"
+      ],
+      "pearls": [
+        "Often given as scheduled plus PRN in COPD exacerbation pathways."
+      ]
+    },
+    {
+      "id": "prednisone",
+      "name": "Prednisone",
+      "drugClass": "Glucocorticoid",
+      "routes": [
+        "PO"
+      ],
+      "moa": "Suppresses inflammatory cytokine signaling and immune-cell activity.",
+      "indications": [
+        "Asthma/COPD exacerbation",
+        "Autoimmune or inflammatory flares",
+        "Allergic reactions"
+      ],
+      "contraindications": [
+        "Systemic fungal infection",
+        "Known hypersensitivity"
+      ],
+      "adverseEffects": [
+        "Hyperglycemia",
+        "Mood changes",
+        "Fluid retention"
+      ],
+      "majorInteractions": [
+        "NSAIDs increase GI irritation risk",
+        "CYP3A4 modifiers may alter steroid exposure"
+      ],
+      "monitoring": [
+        "Glucose in high-risk patients",
+        "Blood pressure",
+        "Infection signs"
+      ],
+      "aliases": [],
+      "brandExamples": [
+        "Deltasone"
+      ],
+      "pearls": [
+        "Short courses may still cause glucose elevation and sleep disturbance."
+      ],
+      "drugbank": {
+        "drugbank_id": "DB00635",
+        "name": "Prednisone",
+        "type": "small molecule",
+        "groups": [
+          "approved"
+        ],
+        "atc_codes": [
+          "A07EA03",
+          "H02AB07",
+          "H02AB15"
+        ],
+        "categories": [
+          "Antineoplastic Agents, Hormonal",
+          "Anti-Inflammatory Agents",
+          "Glucocorticoids"
+        ],
+        "inchikey": "InChIKey=XOFYZVNMUHMLCC-ZPOLXVRWSA-N",
+        "inchi": "InChI=1S/C21H26O5/c1-19-7-5-13(23)9-12(19)3-4-14-15-6-8-21(26,17(25)11-22)20(15,2)10-16(24)18(14)19/h5,7,9,14-15,18,22,26H,3-4,6,8,10-11H2,1-2H3/t14-,15-,18+,19-,20-,21-/m0/s1",
+        "description_first_sentence": "A synthetic anti-inflammatory glucocorticoid derived from cortisone."
+      }
+    },
+    {
+      "id": "omeprazole",
+      "name": "Omeprazole",
+      "drugClass": "Proton pump inhibitor",
+      "routes": [
+        "PO"
+      ],
+      "moa": "Irreversibly inhibits gastric parietal cell H+/K+ ATPase, reducing acid secretion.",
+      "indications": [
+        "GERD",
+        "Peptic ulcer disease",
+        "Stress ulcer prophylaxis in selected patients"
+      ],
+      "contraindications": [
+        "Known hypersensitivity"
+      ],
+      "adverseEffects": [
+        "Headache",
+        "Diarrhea",
+        "Hypomagnesemia with long-term use"
+      ],
+      "majorInteractions": [
+        "May reduce clopidogrel activation",
+        "Can reduce absorption of acid-dependent medications"
+      ],
+      "monitoring": [
+        "Symptom response",
+        "Magnesium/B12 in long-term therapy",
+        "Need for ongoing therapy"
+      ],
+      "aliases": [],
+      "brandExamples": [
+        "Prilosec"
+      ],
+      "pearls": [
+        "Use the lowest effective duration to limit long-term adverse effects."
+      ],
+      "drugbank": {
+        "drugbank_id": "DB00338",
+        "name": "Omeprazole",
+        "type": "small molecule",
+        "groups": [
+          "approved",
+          "investigational"
+        ],
+        "atc_codes": [
+          "A02BC01",
+          "A02BC05"
+        ],
+        "categories": [
+          "Enzyme Inhibitors",
+          "Anti-Ulcer Agents",
+          "Proton Pump Inhibitors"
+        ],
+        "inchikey": "InChIKey=SUBDBMMJDZJVOS-UHFFFAOYSA-N",
+        "inchi": "InChI=1S/C17H19N3O3S/c1-10-8-18-15(11(2)16(10)23-4)9-24(21)17-19-13-6-5-12(22-3)7-14(13)20-17/h5-8H,9H2,1-4H3,(H,19,20)",
+        "description_first_sentence": "A highly effective inhibitor of gastric acid secretion used in the therapy of stomach ulcers and Zollinger-Ellison syndrome."
+      }
+    },
+    {
+      "id": "ondansetron",
+      "name": "Ondansetron",
+      "drugClass": "5-HT3 receptor antagonist",
+      "routes": [
+        "PO",
+        "IV",
+        "IM"
+      ],
+      "moa": "Blocks serotonin 5-HT3 receptors centrally and peripherally to reduce nausea signaling.",
+      "indications": [
+        "Postoperative nausea/vomiting",
+        "Chemotherapy-related nausea",
+        "Symptomatic emesis control"
+      ],
+      "contraindications": [
+        "Known hypersensitivity",
+        "Concurrent apomorphine use"
+      ],
+      "adverseEffects": [
+        "Constipation",
+        "Headache",
+        "QT prolongation"
+      ],
+      "majorInteractions": [
+        "Other QT-prolonging drugs raise arrhythmia risk",
+        "Serotonergic combinations may increase serotonin syndrome risk"
+      ],
+      "monitoring": [
+        "Nausea/vomiting control",
+        "ECG risk profile in high-risk patients",
+        "Bowel function"
+      ],
+      "aliases": [],
+      "brandExamples": [
+        "Zofran"
+      ],
+      "pearls": [
+        "Consider ECG risk factors when repeated IV dosing is needed."
+      ],
+      "drugbank": {
+        "drugbank_id": "DB00904",
+        "name": "Ondansetron",
+        "type": "small molecule",
+        "groups": [
+          "approved"
+        ],
+        "atc_codes": [
+          "A04AA01"
+        ],
+        "categories": [
+          "Antipsychotic Agents"
+        ],
+        "inchikey": "InChIKey=FELGMEQIXOGIFQ-UHFFFAOYSA-N",
+        "inchi": "InChI=1S/C18H19N3O/c1-12-19-9-10-21(12)11-13-7-8-16-17(18(13)22)14-5-3-4-6-15(14)20(16)2/h3-6,9-10,13H,7-8,11H2,1-2H3",
+        "description_first_sentence": "A competitive serotonin type 3 receptor antagonist."
+      }
+    },
+    {
+      "id": "senna-docusate",
+      "name": "Senna-Docusate",
+      "drugClass": "Stimulant + stool softener laxative",
+      "routes": [
+        "PO"
+      ],
+      "moa": "Senna stimulates colonic motility; docusate lowers stool surface tension to soften stool.",
+      "indications": [
+        "Constipation prevention with opioids",
+        "General constipation management"
+      ],
+      "contraindications": [
+        "Bowel obstruction suspicion",
+        "Acute abdominal symptoms without diagnosis"
+      ],
+      "adverseEffects": [
+        "Abdominal cramping",
+        "Diarrhea",
+        "Electrolyte imbalance with overuse"
+      ],
+      "majorInteractions": [
+        "Other laxatives increase diarrhea risk",
+        "Chronic overuse may alter absorption of some oral medications"
+      ],
+      "monitoring": [
+        "Bowel movement frequency",
+        "Stool consistency",
+        "Hydration status"
+      ],
+      "aliases": [],
+      "brandExamples": [
+        "Senokot-S"
+      ],
+      "pearls": [
+        "A bowel regimen is often paired with scheduled opioid therapy."
+      ]
+    },
+    {
+      "id": "sertraline",
+      "name": "Sertraline",
+      "drugClass": "SSRI antidepressant",
+      "routes": [
+        "PO"
+      ],
+      "moa": "Selectively inhibits serotonin reuptake in the central nervous system.",
+      "indications": [
+        "Major depressive disorder",
+        "Generalized anxiety spectrum disorders",
+        "PTSD or OCD"
+      ],
+      "contraindications": [
+        "Concurrent MAOI use",
+        "Known hypersensitivity"
+      ],
+      "adverseEffects": [
+        "GI upset",
+        "Sexual dysfunction",
+        "Insomnia or somnolence"
+      ],
+      "majorInteractions": [
+        "Other serotonergic agents increase serotonin syndrome risk",
+        "Anticoagulants/antiplatelets increase bleeding risk"
+      ],
+      "monitoring": [
+        "Mood and anxiety symptom trends",
+        "Suicidality risk early in treatment",
+        "Hyponatremia risk in vulnerable patients"
+      ],
+      "aliases": [],
+      "brandExamples": [
+        "Zoloft"
+      ],
+      "pearls": [
+        "Therapeutic response is delayed; counsel patients on expected onset."
+      ],
+      "drugbank": {
+        "drugbank_id": "DB01104",
+        "name": "Sertraline",
+        "type": "small molecule",
+        "groups": [
+          "approved"
+        ],
+        "atc_codes": [
+          "N06AB06"
+        ],
+        "categories": [
+          "Serotonin Uptake Inhibitors",
+          "Antidepressive Agents"
+        ],
+        "inchikey": "InChIKey=VGKDLMBJGBXTGI-SJCJKPOMSA-N",
+        "inchi": "InChI=1S/C17H17Cl2N/c1-20-17-9-7-12(13-4-2-3-5-14(13)17)11-6-8-15(18)16(19)10-11/h2-6,8,10,12,17,20H,7,9H2,1H3/t12-,17-/m0/s1",
+        "description_first_sentence": "Sertraline hydrochloride belongs to a class of antidepressant agents known as selective serotonin-reuptake inhibitors (SSRIs)."
+      }
+    },
+    {
+      "id": "lorazepam",
+      "name": "Lorazepam",
+      "drugClass": "Benzodiazepine",
+      "routes": [
+        "PO",
+        "IV",
+        "IM",
+        "SL"
+      ],
+      "moa": "Enhances GABA-A receptor activity to produce anxiolytic, sedative, and anticonvulsant effects.",
+      "indications": [
+        "Acute anxiety",
+        "Alcohol withdrawal protocols",
+        "Status epilepticus adjunct"
+      ],
+      "contraindications": [
+        "Acute narrow-angle glaucoma",
+        "Severe respiratory depression without ventilatory support"
+      ],
+      "adverseEffects": [
+        "Sedation",
+        "Respiratory depression",
+        "Delirium in susceptible patients"
+      ],
+      "majorInteractions": [
+        "Opioids significantly increase respiratory depression risk",
+        "Other CNS depressants increase sedation"
+      ],
+      "monitoring": [
+        "Respiratory status",
+        "Level of sedation",
+        "Withdrawal symptoms with prolonged use"
+      ],
+      "aliases": [],
+      "brandExamples": [
+        "Ativan"
+      ],
+      "pearls": [
+        "Use the lowest effective dose and shortest duration feasible."
+      ],
+      "drugbank": {
+        "drugbank_id": "DB00186",
+        "name": "Lorazepam",
+        "type": "small molecule",
+        "groups": [
+          "approved"
+        ],
+        "atc_codes": [
+          "N05BA06"
+        ],
+        "categories": [
+          "Hypnotics and Sedatives",
+          "Benzodiazepines"
+        ],
+        "inchikey": "InChIKey=DIWRORZWFLOCLC-UHFFFAOYSA-N",
+        "inchi": "InChI=1S/C15H10Cl2N2O2/c16-8-5-6-12-10(7-8)13(19-15(21)14(20)18-12)9-3-1-2-4-11(9)17/h1-7,15,21H,(H,18,20)",
+        "description_first_sentence": "A benzodiazepine used as an anti-anxiety agent with few side effects."
+      }
+    },
+    {
+      "id": "haloperidol",
+      "name": "Haloperidol",
+      "drugClass": "Typical antipsychotic",
+      "routes": [
+        "PO",
+        "IV",
+        "IM"
+      ],
+      "moa": "Primarily dopamine D2 receptor antagonism in central pathways.",
+      "indications": [
+        "Acute agitation",
+        "Psychosis",
+        "Delirium-associated severe agitation in selected settings"
+      ],
+      "contraindications": [
+        "Known hypersensitivity",
+        "Parkinson disease with severe motor symptoms (relative)"
+      ],
+      "adverseEffects": [
+        "Extrapyramidal symptoms",
+        "QT prolongation",
+        "Neuroleptic malignant syndrome (rare)"
+      ],
+      "majorInteractions": [
+        "Other QT-prolonging agents increase arrhythmia risk",
+        "Dopaminergic medications may have antagonized effects"
+      ],
+      "monitoring": [
+        "Mental status and agitation response",
+        "ECG risk profile",
+        "Signs of dystonia or akathisia"
+      ],
+      "aliases": [],
+      "brandExamples": [
+        "Haldol"
+      ],
+      "pearls": [
+        "Combine with de-escalation and monitor closely for dystonic reactions."
+      ],
+      "drugbank": {
+        "drugbank_id": "DB00502",
+        "name": "Haloperidol",
+        "type": "small molecule",
+        "groups": [
+          "approved"
+        ],
+        "atc_codes": [
+          "N05AD01"
+        ],
+        "categories": [
+          "Antipsychotic Agents",
+          "Butyrophenones",
+          "Antidyskinetics"
+        ],
+        "inchikey": "InChIKey=LNEPOXFFQSENCJ-UHFFFAOYSA-N",
+        "inchi": "InChI=1S/C21H23ClFNO2/c22-18-7-5-17(6-8-18)21(26)11-14-24(15-12-21)13-1-2-20(25)16-3-9-19(23)10-4-16/h3-10,26H,1-2,11-15H2",
+        "description_first_sentence": "A phenyl-piperidinyl-butyrophenone that is used primarily to treat schizophrenia and other psychoses."
+      }
+    },
+    {
+      "id": "epinephrine",
+      "name": "Epinephrine",
+      "drugClass": "Adrenergic agonist",
+      "routes": [
+        "IM",
+        "IV",
+        "SQ",
+        "INH"
+      ],
+      "moa": "Agonist at alpha and beta adrenergic receptors causing vasoconstriction, bronchodilation, and inotropy/chronotropy.",
+      "indications": [
+        "Anaphylaxis",
+        "Cardiac arrest protocols",
+        "Severe bronchospasm in selected scenarios"
+      ],
+      "contraindications": [
+        "No absolute contraindication in life-threatening anaphylaxis"
+      ],
+      "adverseEffects": [
+        "Tachycardia",
+        "Hypertension",
+        "Tremor"
+      ],
+      "majorInteractions": [
+        "Nonselective beta blockers can blunt bronchodilation and worsen alpha-mediated effects",
+        "Other sympathomimetics increase arrhythmia risk"
+      ],
+      "monitoring": [
+        "Airway and hemodynamics",
+        "Cardiac rhythm",
+        "Clinical response timing"
+      ],
+      "aliases": [
+        "Adrenaline"
+      ],
+      "brandExamples": [
+        "EpiPen"
+      ],
+      "pearls": [
+        "IM thigh administration is preferred first-line for anaphylaxis."
+      ],
+      "drugbank": {
+        "drugbank_id": "DB00668",
+        "name": "Epinephrine",
+        "type": "small molecule",
+        "groups": [
+          "approved"
+        ],
+        "atc_codes": [
+          "A01AD01",
+          "B02BC09",
+          "C01CA24",
+          "R01AA14",
+          "R03AA01",
+          "S01EA01"
+        ],
+        "categories": [
+          "Vasoconstrictor Agents",
+          "Sympathomimetics",
+          "Bronchodilator Agents",
+          "Adrenergic alpha-Agonists",
+          "Mydriatics",
+          "Adrenergic beta-Agonists"
+        ],
+        "inchikey": "InChIKey=UCTWMZQNUQWSLP-VIFPVBQESA-N",
+        "inchi": "InChI=1S/C9H13NO3/c1-10-5-9(13)6-2-3-7(11)8(12)4-6/h2-4,9-13H,5H2,1H3/t9-/m0/s1",
+        "description_first_sentence": "The active sympathomimetic hormone from the adrenal medulla in most species."
+      }
+    },
+    {
+      "id": "naloxone",
+      "name": "Naloxone",
+      "drugClass": "Opioid antagonist",
+      "routes": [
+        "IN",
+        "IV",
+        "IM",
+        "SQ"
+      ],
+      "moa": "Competitive opioid receptor antagonism reversing opioid-induced respiratory depression.",
+      "indications": [
+        "Suspected opioid overdose",
+        "Iatrogenic opioid-induced hypoventilation"
+      ],
+      "contraindications": [
+        "Known hypersensitivity"
+      ],
+      "adverseEffects": [
+        "Precipitated opioid withdrawal",
+        "Agitation",
+        "Nausea/vomiting"
+      ],
+      "majorInteractions": [
+        "Opioid agonists have antagonized effects",
+        "Partial agonists may require repeated dosing"
+      ],
+      "monitoring": [
+        "Respiratory rate and oxygenation",
+        "Need for repeat doses",
+        "Recurrence due to long-acting opioids"
+      ],
+      "aliases": [],
+      "brandExamples": [
+        "Narcan"
+      ],
+      "pearls": [
+        "Observe for renarcotization after initial response, especially with long-acting opioids."
+      ],
+      "drugbank": {
+        "drugbank_id": "DB01183",
+        "name": "Naloxone",
+        "type": "small molecule",
+        "groups": [
+          "approved"
+        ],
+        "atc_codes": [
+          "V03AB15"
+        ],
+        "categories": [
+          "Narcotic Antagonists",
+          "Central Nervous System Depressants"
+        ],
+        "inchikey": "InChIKey=UZHSEJADLWPNLE-GRGSLBFTSA-N",
+        "inchi": "InChI=1S/C19H21NO4/c1-2-8-20-9-7-18-15-11-3-4-12(21)16(15)24-17(18)13(22)5-6-19(18,23)14(20)10-11/h2-4,14,17,21,23H,1,5-10H2/t14-,17+,18+,19-/m1/s1",
+        "description_first_sentence": "A specific opiate antagonist that has no agonist activity."
+      }
+    }
+  ]
+}
