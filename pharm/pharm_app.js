@@ -3,7 +3,7 @@
   // Configurable values (change here)
   // ================================================================
   const CONFIG = {
-    dataPath: "./pharm_data.json",
+    dataPath: "./assests/pharm_data_drugbank_enriched.json",
     searchDebounceMs: 170,
     mobileBreakpointPx: 1080,
     emptyStateCopy: "No medications match the current filters.",
@@ -46,7 +46,11 @@
 
   const SELECTORS = {
     searchInput: "#searchInput",
-    classFilter: "#classFilter",
+    classTreeControl: "#classTreeControl",
+    classTreeTrigger: "#classTreeTrigger",
+    classTreeTriggerText: "#classTreeTriggerText",
+    classTreeMenu: "#classTreeMenu",
+    classTreeColumns: "#classTreeColumns",
     routeFilter: "#routeFilter",
     clearFiltersButton: "#btnClearFilters",
     resultCount: "#resultCount",
@@ -199,7 +203,13 @@
     groupingIndex: null,
     selectedId: null,
     query: "",
-    classFilter: "",
+    classFilterNodeId: "",
+    classFilterLabel: "All classes",
+    classFilterClassSet: null,
+    classTreeRoot: null,
+    classTreeById: new Map(),
+    classTreePath: [],
+    classTreeMenuOpen: false,
     routeFilter: "",
     viewMode: CONFIG.defaultViewMode,
     expandedClassId: null,
@@ -239,10 +249,45 @@
       );
     }
 
-    if (EL.classFilter) {
-      EL.classFilter.addEventListener("change", () => {
-        STATE.classFilter = EL.classFilter.value;
-        applyFiltersAndRender();
+    if (EL.classTreeTrigger) {
+      EL.classTreeTrigger.addEventListener("click", () => {
+        if (STATE.classTreeMenuOpen) {
+          closeClassTreeMenu();
+        } else {
+          openClassTreeMenu();
+        }
+      });
+    }
+
+    if (EL.classTreeColumns) {
+      EL.classTreeColumns.addEventListener("click", (event) => {
+        const option = event.target.closest(".class-tree-option");
+        if (!option) return;
+
+        const action = cleanText(option.dataset.action);
+        const nodeId = cleanText(option.dataset.nodeId);
+        const depth = Number(option.dataset.depth);
+        const safeDepth = Number.isFinite(depth) && depth >= 0 ? depth : 0;
+
+        if (action === "all") {
+          resetClassFilter();
+          applyFiltersAndRender();
+          closeClassTreeMenu();
+          return;
+        }
+
+        if (!nodeId || !STATE.classTreeById.has(nodeId)) return;
+
+        const node = STATE.classTreeById.get(nodeId);
+        STATE.classTreePath = STATE.classTreePath.slice(0, safeDepth);
+        STATE.classTreePath[safeDepth] = nodeId;
+
+        applyClassFilterNode(node);
+        renderClassTreeColumns();
+
+        if (!node.children || node.children.length === 0) {
+          closeClassTreeMenu();
+        }
       });
     }
 
@@ -309,9 +354,22 @@
     }
 
     document.addEventListener("keydown", (event) => {
-      if (event.key === "Escape" && EL.detailPanel && EL.detailPanel.classList.contains("open")) {
+      if (event.key !== "Escape") return;
+
+      if (STATE.classTreeMenuOpen) {
+        closeClassTreeMenu();
+        return;
+      }
+
+      if (EL.detailPanel && EL.detailPanel.classList.contains("open")) {
         closeMobileDetailPanel();
       }
+    });
+
+    document.addEventListener("click", (event) => {
+      if (!STATE.classTreeMenuOpen || !EL.classTreeControl) return;
+      if (EL.classTreeControl.contains(event.target)) return;
+      closeClassTreeMenu();
     });
 
     window.addEventListener("resize", () => {
@@ -338,12 +396,12 @@
 
   function clearFilters() {
     if (EL.searchInput) EL.searchInput.value = "";
-    if (EL.classFilter) EL.classFilter.value = "";
     if (EL.routeFilter) EL.routeFilter.value = "";
 
     STATE.query = "";
-    STATE.classFilter = "";
+    resetClassFilter();
     STATE.routeFilter = "";
+    closeClassTreeMenu();
   }
 
   function handleClassToggleClick(classId) {
@@ -473,11 +531,11 @@
 
   function applyFiltersAndRender() {
     const q = normalizeSearch(STATE.query);
-    const classFilter = STATE.classFilter;
+    const classFilterClassSet = STATE.classFilterClassSet;
     const routeFilter = STATE.routeFilter;
 
     STATE.filtered = STATE.medications.filter((medication) => {
-      if (classFilter && medication.drugClass !== classFilter) return false;
+      if (classFilterClassSet && !classFilterClassSet.has(medication.drugClass)) return false;
       if (routeFilter && !medication.routes.includes(routeFilter)) return false;
       if (q && !medication.searchBlob.includes(q)) return false;
       return true;
@@ -555,13 +613,252 @@
   }
 
   function populateClassFilter() {
-    const classes = uniq(STATE.medications.map((medication) => medication.drugClass)).sort((a, b) =>
-      a.localeCompare(b)
-    );
-    setSelectOptions(EL.classFilter, [
-      { value: "", label: "All classes" },
-      ...classes.map((item) => ({ value: item, label: item })),
-    ]);
+    const { root, byId } = buildClassFilterTree(STATE.medications);
+    STATE.classTreeRoot = root;
+    STATE.classTreeById = byId;
+
+    if (STATE.classFilterNodeId && STATE.classTreeById.has(STATE.classFilterNodeId)) {
+      const currentNode = STATE.classTreeById.get(STATE.classFilterNodeId);
+      applyClassFilterNode(currentNode, { rerender: false });
+    } else {
+      resetClassFilter({ rerender: false });
+    }
+
+    syncClassTreeTrigger();
+    renderClassTreeColumns();
+  }
+
+  function buildClassFilterTree(medications) {
+    let nodeSequence = 0;
+    const root = createClassFilterNode("class-tree-root", "All classes", null);
+
+    medications.forEach((medication, index) => {
+      const medicationId = cleanText(medication.id) || `med-${index + 1}`;
+      const classValue = cleanText(medication.drugClass) || CONFIG.uncategorizedClassLabel;
+      const rawPath = Array.isArray(medication.classPath) && medication.classPath.length > 0
+        ? medication.classPath
+        : [classValue];
+
+      let node = root;
+      node.classSet.add(classValue);
+      node.medicationSet.add(medicationId);
+
+      rawPath.forEach((segment) => {
+        const label = cleanText(segment) || CONFIG.uncategorizedClassLabel;
+        const lookupKey = normalizeSearch(label);
+        if (!node.childMap.has(lookupKey)) {
+          nodeSequence += 1;
+          const childId = `class-tree-${nodeSequence}`;
+          node.childMap.set(lookupKey, createClassFilterNode(childId, label, node.id));
+        }
+
+        const child = node.childMap.get(lookupKey);
+        node = child;
+        node.classSet.add(classValue);
+        node.medicationSet.add(medicationId);
+      });
+    });
+
+    const byId = new Map();
+
+    function finalize(node) {
+      node.children = Array.from(node.childMap.values()).sort((a, b) => a.label.localeCompare(b.label));
+      node.classValues = Array.from(node.classSet.values());
+      node.medicationCount = node.medicationSet.size;
+      byId.set(node.id, node);
+      node.children.forEach(finalize);
+    }
+
+    finalize(root);
+    return { root, byId };
+  }
+
+  function createClassFilterNode(id, label, parentId) {
+    return {
+      id,
+      label,
+      parentId,
+      childMap: new Map(),
+      children: [],
+      classSet: new Set(),
+      medicationSet: new Set(),
+      classValues: [],
+      medicationCount: 0,
+    };
+  }
+
+  function resetClassFilter(options = {}) {
+    const { rerender = true } = options;
+    STATE.classFilterNodeId = "";
+    STATE.classFilterLabel = "All classes";
+    STATE.classFilterClassSet = null;
+    STATE.classTreePath = [];
+    syncClassTreeTrigger();
+
+    if (rerender) {
+      renderClassTreeColumns();
+    }
+  }
+
+  function applyClassFilterNode(node, options = {}) {
+    const { rerender = true } = options;
+    if (!node) {
+      resetClassFilter({ rerender });
+      return;
+    }
+
+    STATE.classFilterNodeId = node.id;
+    STATE.classFilterLabel = node.label;
+    STATE.classFilterClassSet = new Set(node.classValues);
+    STATE.classTreePath = getClassTreePath(node.id);
+    syncClassTreeTrigger();
+
+    if (rerender) {
+      renderClassTreeColumns();
+    }
+  }
+
+  function getClassTreePath(nodeId) {
+    const path = [];
+    let current = STATE.classTreeById.get(nodeId);
+    while (current && current.parentId) {
+      path.unshift(current.id);
+      current = STATE.classTreeById.get(current.parentId);
+    }
+    return path;
+  }
+
+  function syncClassTreeTrigger() {
+    if (!EL.classTreeTrigger || !EL.classTreeTriggerText) return;
+    EL.classTreeTriggerText.textContent = STATE.classFilterLabel || "All classes";
+    EL.classTreeTrigger.classList.toggle("is-filtered", Boolean(STATE.classFilterNodeId));
+  }
+
+  function openClassTreeMenu() {
+    if (!EL.classTreeMenu || !EL.classTreeTrigger) return;
+    STATE.classTreeMenuOpen = true;
+    EL.classTreeMenu.hidden = false;
+    EL.classTreeTrigger.setAttribute("aria-expanded", "true");
+    if (EL.classTreeControl) {
+      EL.classTreeControl.classList.add("is-open");
+    }
+    renderClassTreeColumns();
+  }
+
+  function closeClassTreeMenu() {
+    if (!EL.classTreeMenu || !EL.classTreeTrigger) return;
+    STATE.classTreeMenuOpen = false;
+    EL.classTreeMenu.hidden = true;
+    EL.classTreeTrigger.setAttribute("aria-expanded", "false");
+    if (EL.classTreeControl) {
+      EL.classTreeControl.classList.remove("is-open");
+    }
+  }
+
+  function renderClassTreeColumns() {
+    if (!EL.classTreeColumns) return;
+    EL.classTreeColumns.innerHTML = "";
+
+    const root = STATE.classTreeRoot;
+    if (!root) return;
+
+    const validPath = [];
+    let parent = root;
+    for (const nodeId of STATE.classTreePath) {
+      const candidate = STATE.classTreeById.get(nodeId);
+      if (!candidate || candidate.parentId !== parent.id) break;
+      validPath.push(candidate.id);
+      parent = candidate;
+    }
+    STATE.classTreePath = validPath;
+
+    const activePathIds = new Set(validPath);
+    const columns = [{ depth: 0, parent: root, nodes: root.children }];
+
+    let cursor = root;
+    for (let depth = 0; depth < validPath.length; depth += 1) {
+      const selectedId = validPath[depth];
+      const selectedNode = STATE.classTreeById.get(selectedId);
+      if (!selectedNode || selectedNode.parentId !== cursor.id) break;
+      if (!selectedNode.children || selectedNode.children.length === 0) break;
+      columns.push({ depth: depth + 1, parent: selectedNode, nodes: selectedNode.children });
+      cursor = selectedNode;
+    }
+
+    columns.forEach((column) => {
+      const columnEl = document.createElement("section");
+      columnEl.className = "class-tree-column";
+
+      const title = document.createElement("p");
+      title.className = "class-tree-column__title";
+      title.textContent = column.depth === 0 ? "All classes" : column.parent.label;
+      columnEl.appendChild(title);
+
+      const list = document.createElement("div");
+      list.className = "class-tree-list";
+
+      if (column.depth === 0) {
+        const allOption = document.createElement("button");
+        allOption.type = "button";
+        allOption.className = `class-tree-option${STATE.classFilterNodeId ? "" : " is-active"}`;
+        allOption.dataset.action = "all";
+        allOption.dataset.depth = "0";
+        allOption.setAttribute("role", "treeitem");
+        allOption.setAttribute("aria-selected", String(!STATE.classFilterNodeId));
+
+        const label = document.createElement("span");
+        label.className = "class-tree-option__label";
+        label.textContent = "All classes";
+        allOption.appendChild(label);
+
+        const count = document.createElement("span");
+        count.className = "class-tree-option__count";
+        count.textContent = `${root.medicationCount}`;
+        allOption.appendChild(count);
+
+        list.appendChild(allOption);
+      }
+
+      column.nodes.forEach((node) => {
+        const option = document.createElement("button");
+        option.type = "button";
+        option.dataset.action = "node";
+        option.dataset.nodeId = node.id;
+        option.dataset.depth = String(column.depth);
+        option.setAttribute("role", "treeitem");
+        option.setAttribute("aria-selected", String(node.id === STATE.classFilterNodeId));
+
+        const isActive = node.id === STATE.classFilterNodeId;
+        const isBranch = activePathIds.has(node.id);
+        option.className = `class-tree-option${isActive ? " is-active" : ""}${isBranch && !isActive ? " is-branch" : ""}`;
+
+        const label = document.createElement("span");
+        label.className = "class-tree-option__label";
+        label.textContent = node.label;
+        option.appendChild(label);
+
+        const meta = document.createElement("span");
+        meta.className = "class-tree-option__meta";
+
+        const count = document.createElement("span");
+        count.className = "class-tree-option__count";
+        count.textContent = `${node.medicationCount}`;
+        meta.appendChild(count);
+
+        if (node.children && node.children.length > 0) {
+          const caret = document.createElement("span");
+          caret.className = "class-tree-option__caret";
+          caret.textContent = "›";
+          meta.appendChild(caret);
+        }
+
+        option.appendChild(meta);
+        list.appendChild(option);
+      });
+
+      columnEl.appendChild(list);
+      EL.classTreeColumns.appendChild(columnEl);
+    });
   }
 
   function populateRouteFilter() {

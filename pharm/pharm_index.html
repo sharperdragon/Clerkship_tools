@@ -44,12 +44,23 @@
     </section>
 
     <section class="controls controls--secondary" aria-label="Medication filters">
-      <label class="control">
+      <div id="classTreeControl" class="control control--class-tree">
         <span class="control__label">Drug Class</span>
-        <select id="classFilter" class="select">
-          <option value="">All classes</option>
-        </select>
-      </label>
+        <button
+          id="classTreeTrigger"
+          class="class-tree-trigger"
+          type="button"
+          aria-haspopup="true"
+          aria-expanded="false"
+          aria-controls="classTreeMenu"
+        >
+          <span id="classTreeTriggerText">All classes</span>
+          <span class="class-tree-trigger__caret" aria-hidden="true">▸</span>
+        </button>
+        <div id="classTreeMenu" class="class-tree-menu" hidden>
+          <div id="classTreeColumns" class="class-tree-columns" role="tree" aria-label="Drug class filter tree"></div>
+        </div>
+      </div>
 
       <label class="control">
         <span class="control__label">Route</span>

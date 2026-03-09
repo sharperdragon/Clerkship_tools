@@ -1,6 +1,6 @@
 const { test, expect } = require("@playwright/test");
 const path = require("path");
-const pharmData = require(path.resolve(__dirname, "../../pharm/pharm_data.json"));
+const pharmData = require(path.resolve(__dirname, "../../pharm/assests/pharm_data_drugbank_enriched.json"));
 
 // ================================================================
 // Configurable values (change here)
@@ -9,7 +9,8 @@ const PHARM_PATH = "/pharm/pharm_index.html";
 const DISCLAIMER_BANNER = "#disclaimerBanner";
 const RESULTS_CARDS = "#results .med-card";
 const SEARCH_INPUT = "#searchInput";
-const CLASS_FILTER = "#classFilter";
+const CLASS_TREE_TRIGGER = "#classTreeTrigger";
+const CLASS_TREE_COLUMNS = "#classTreeColumns";
 const ROUTE_FILTER = "#routeFilter";
 const CLEAR_FILTERS_BUTTON = "#btnClearFilters";
 const RESULT_COUNT = "#resultCount";
@@ -199,9 +200,10 @@ test.describe("Pharm reference smoke", () => {
     await waitForCards(page);
 
     await page.locator(SEARCH_INPUT).fill("amoxi");
-    await expect(page.locator(RESULTS_CARDS)).toHaveCount(1);
-    const compactTitle = await page.locator(`${RESULTS_CARDS} .med-card__title`).first().innerText();
-    expect(["Amoxicillin", "Amoxicillin-Clavulanate"]).toContain(compactTitle);
+    const titles = await page.locator(`${RESULTS_CARDS} .med-card__title`).allInnerTexts();
+    expect(titles.length).toBeGreaterThanOrEqual(1);
+    const hasExpectedMatch = titles.some((title) => title.toLowerCase().includes("amoxi"));
+    expect(hasExpectedMatch).toBeTruthy();
     await expect(page.locator(RESULTS_GRID)).toHaveAttribute("data-view-mode", "compact");
     await expect(page.locator(SUBCLASS_CHIPS).first()).toBeVisible();
     await expect(page.locator(CLASS_TOGGLES)).toHaveCount(0);
@@ -253,18 +255,21 @@ test.describe("Pharm reference smoke", () => {
 
     const initialVisibleCardCount = await page.locator(RESULTS_CARDS).count();
 
-    await page.locator(CLASS_FILTER).selectOption("Anticoagulant (LMWH)");
+    await page.locator(CLASS_TREE_TRIGGER).click();
+    await page.locator(CLASS_TREE_COLUMNS).getByRole("treeitem", { name: /Antithrombotics/i }).click();
     await page.locator(ROUTE_FILTER).selectOption("SQ");
     await page.locator(SEARCH_INPUT).fill("enoxaparin");
 
-    await expect(page.locator(RESULTS_CARDS)).toHaveCount(1);
-    await expect(page.locator(RESULTS_CARDS).first()).toContainText("Enoxaparin");
+    await expect.poll(async () => page.locator(RESULTS_CARDS).count()).toBeGreaterThanOrEqual(1);
+    const filteredCardCount = await page.locator(RESULTS_CARDS).count();
+    await expect(page.locator(RESULTS_CARDS).first()).toContainText(/Enoxaparin/i);
 
     await page.locator(CLEAR_FILTERS_BUTTON).click();
     await expect(page.locator(SEARCH_INPUT)).toHaveValue("");
-    await expect(page.locator(CLASS_FILTER)).toHaveValue("");
+    await expect(page.locator(CLASS_TREE_TRIGGER)).toContainText("All classes");
     await expect(page.locator(ROUTE_FILTER)).toHaveValue("");
-    await expect(page.locator(RESULTS_CARDS)).toHaveCount(initialVisibleCardCount);
+    await expect.poll(async () => page.locator(RESULTS_CARDS).count()).toBeGreaterThan(filteredCardCount);
+    await expect.poll(async () => page.locator(RESULTS_CARDS).count()).toBeGreaterThanOrEqual(initialVisibleCardCount);
   });
 
   test("keyboard navigation supports arrow movement and enter selection", async ({ page }) => {

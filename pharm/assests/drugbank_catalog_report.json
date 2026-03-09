@@ -1,0 +1,392 @@
+{
+  "input_files": {
+    "enriched_json": "/Users/claytongoddard/Git dub/Clerkship_tools_v2/pharm/assests/pharm_data_drugbank_enriched.json",
+    "drugbank_tsv": "/Users/claytongoddard/Git dub/Clerkship_tools_v2/pharm/assests/drugbank.tsv"
+  },
+  "output_files": {
+    "enriched_json": "/Users/claytongoddard/Git dub/Clerkship_tools_v2/pharm/assests/pharm_data_drugbank_enriched.json",
+    "report_json": "/Users/claytongoddard/Git dub/Clerkship_tools_v2/pharm/assests/drugbank_catalog_report.json"
+  },
+  "config": {
+    "include_groups": [],
+    "exclude_groups": [],
+    "exclude_if_only_groups": [
+      "experimental"
+    ],
+    "default_route": "PO",
+    "fallback_class": "Unclassified",
+    "sort_output_by_name": true
+  },
+  "summary": {
+    "existing_records": 1763,
+    "selected_drugbank_unique_names": 2819,
+    "added_records": 1059,
+    "final_records": 2822,
+    "skipped_existing_name_matches": 1760,
+    "skipped_existing_drugbank_id_matches": 0,
+    "invalid_records": 0
+  },
+  "added_examples": [
+    {
+      "id": "drugbank-db01562",
+      "name": "1-(2-Phenylethyl)-4-phenyl-4-acetoxypiperidine",
+      "drugClass": "DrugBank Experimental",
+      "routes": [
+        "PO"
+      ],
+      "drugbank_id": "DB01562"
+    },
+    {
+      "id": "drugbank-db01503",
+      "name": "1-Androstenediol",
+      "drugClass": "DrugBank Experimental",
+      "routes": [
+        "PO"
+      ],
+      "drugbank_id": "DB01503"
+    },
+    {
+      "id": "drugbank-db01451",
+      "name": "1-Androstenedione",
+      "drugClass": "DrugBank Experimental",
+      "routes": [
+        "PO"
+      ],
+      "drugbank_id": "DB01451"
+    },
+    {
+      "id": "drugbank-db01506",
+      "name": "1-Phenylcyclohexylamine",
+      "drugClass": "DrugBank Experimental",
+      "routes": [
+        "PO"
+      ],
+      "drugbank_id": "DB01506"
+    },
+    {
+      "id": "drugbank-db01539",
+      "name": "1-Piperidinocyclohexanecarbonitrile",
+      "drugClass": "DrugBank Experimental",
+      "routes": [
+        "PO"
+      ],
+      "drugbank_id": "DB01539"
+    },
+    {
+      "id": "drugbank-db05113",
+      "name": "105AD7",
+      "drugClass": "DrugBank Investigational",
+      "routes": [
+        "PO"
+      ],
+      "drugbank_id": "DB05113"
+    },
+    {
+      "id": "drugbank-db05462",
+      "name": "131-I-TM-601",
+      "drugClass": "DrugBank Investigational",
+      "routes": [
+        "PO"
+      ],
+      "drugbank_id": "DB05462"
+    },
+    {
+      "id": "drugbank-db01543",
+      "name": "13Beta-ethyl-17beta-hydroxygon-4-en-3-one",
+      "drugClass": "DrugBank Experimental",
+      "routes": [
+        "PO"
+      ],
+      "drugbank_id": "DB01543"
+    },
+    {
+      "id": "drugbank-db01479",
+      "name": "17Alpha-methyl-3alpha,17beta-dihydroxy-5alpha-androstane",
+      "drugClass": "DrugBank Experimental",
+      "routes": [
+        "PO"
+      ],
+      "drugbank_id": "DB01479"
+    },
+    {
+      "id": "drugbank-db01513",
+      "name": "17Alpha-methyl-3beta,17beta-dihydroxy-5alpha-androstane",
+      "drugClass": "DrugBank Experimental",
+      "routes": [
+        "PO"
+      ],
+      "drugbank_id": "DB01513"
+    },
+    {
+      "id": "drugbank-db01474",
+      "name": "17Alpha-methyl-3beta,17beta-dihydroxyandrost-4-ene",
+      "drugClass": "DrugBank Experimental",
+      "routes": [
+        "PO"
+      ],
+      "drugbank_id": "DB01474"
+    },
+    {
+      "id": "drugbank-db01540",
+      "name": "17Alpha-methyl-4-hydroxynandrolone",
+      "drugClass": "DrugBank Experimental",
+      "routes": [
+        "PO"
+      ],
+      "drugbank_id": "DB01540"
+    },
+    {
+      "id": "drugbank-db01572",
+      "name": "17Alpha-methyl-delta1-dihydrotestosterone",
+      "drugClass": "DrugBank Experimental",
+      "routes": [
+        "PO"
+      ],
+      "drugbank_id": "DB01572"
+    },
+    {
+      "id": "drugbank-db01554",
+      "name": "19-Nor-4-androstenediol",
+      "drugClass": "DrugBank Experimental",
+      "routes": [
+        "PO"
+      ],
+      "drugbank_id": "DB01554"
+    },
+    {
+      "id": "drugbank-db01448",
+      "name": "19-Nor-4-androstenedione",
+      "drugClass": "DrugBank Experimental",
+      "routes": [
+        "PO"
+      ],
+      "drugbank_id": "DB01448"
+    },
+    {
+      "id": "drugbank-db01455",
+      "name": "19-Nor-5-androstenediol",
+      "drugClass": "DrugBank Experimental",
+      "routes": [
+        "PO"
+      ],
+      "drugbank_id": "DB01455"
+    },
+    {
+      "id": "drugbank-db01443",
+      "name": "19-Nor-5-androstenedione",
+      "drugClass": "Steroids",
+      "routes": [
+        "PO"
+      ],
+      "drugbank_id": "DB01443"
+    },
+    {
+      "id": "drugbank-db01434",
+      "name": "19-norandrostenedione",
+      "drugClass": "Steroids",
+      "routes": [
+        "PO"
+      ],
+      "drugbank_id": "DB01434"
+    },
+    {
+      "id": "drugbank-db05121",
+      "name": "1D09C3",
+      "drugClass": "Antineoplastic Agents",
+      "routes": [
+        "PO"
+      ],
+      "drugbank_id": "DB05121"
+    },
+    {
+      "id": "drugbank-db01467",
+      "name": "2,5-Dimethoxy-4-ethylamphetamine",
+      "drugClass": "DrugBank Experimental",
+      "routes": [
+        "PO"
+      ],
+      "drugbank_id": "DB01467"
+    },
+    {
+      "id": "drugbank-db01458",
+      "name": "2,5-Dimethoxy-4-(n)-propylthiophenethylamine",
+      "drugClass": "DrugBank Experimental",
+      "routes": [
+        "PO"
+      ],
+      "drugbank_id": "DB01458"
+    },
+    {
+      "id": "drugbank-db01465",
+      "name": "2,5-Dimethoxyamphetamine",
+      "drugClass": "DrugBank Experimental",
+      "routes": [
+        "PO"
+      ],
+      "drugbank_id": "DB01465"
+    },
+    {
+      "id": "drugbank-db08831",
+      "name": "2-deoxyglucose",
+      "drugClass": "Antineoplastic Agents",
+      "routes": [
+        "PO"
+      ],
+      "drugbank_id": "DB08831"
+    },
+    {
+      "id": "drugbank-db02342",
+      "name": "2-Methoxyestradiol",
+      "drugClass": "Antineoplastic Agents",
+      "routes": [
+        "PO"
+      ],
+      "drugbank_id": "DB02342"
+    },
+    {
+      "id": "drugbank-db01516",
+      "name": "3,4,5-Trimethoxyamphetamine",
+      "drugClass": "DrugBank Experimental",
+      "routes": [
+        "PO"
+      ],
+      "drugbank_id": "DB01516"
+    },
+    {
+      "id": "drugbank-db01566",
+      "name": "3,4-Methylenedioxy-N-ethylamphetamine",
+      "drugClass": "DrugBank Experimental",
+      "routes": [
+        "PO"
+      ],
+      "drugbank_id": "DB01566"
+    },
+    {
+      "id": "drugbank-db01509",
+      "name": "3,4-Methylenedioxyamphetamine",
+      "drugClass": "Adrenergic Uptake Inhibitors",
+      "routes": [
+        "PO"
+      ],
+      "drugbank_id": "DB01509"
+    },
+    {
+      "id": "drugbank-db01454",
+      "name": "3,4-Methylenedioxymethamphetamine",
+      "drugClass": "DrugBank Experimental",
+      "routes": [
+        "PO"
+      ],
+      "drugbank_id": "DB01454"
+    },
+    {
+      "id": "drugbank-db01571",
+      "name": "3-Methylfentanyl",
+      "drugClass": "Analgesics",
+      "routes": [
+        "PO"
+      ],
+      "drugbank_id": "DB01571"
+    },
+    {
+      "id": "drugbank-db01439",
+      "name": "3-Methylthiofentanyl",
+      "drugClass": "DrugBank Experimental",
+      "routes": [
+        "PO"
+      ],
+      "drugbank_id": "DB01439"
+    },
+    {
+      "id": "drugbank-db01530",
+      "name": "3Alpha,17beta-dihydroxy-5alpha-androstane",
+      "drugClass": "DrugBank Experimental",
+      "routes": [
+        "PO"
+      ],
+      "drugbank_id": "DB01530"
+    },
+    {
+      "id": "drugbank-db01526",
+      "name": "4-Androstenediol",
+      "drugClass": "DrugBank Experimental",
+      "routes": [
+        "PO"
+      ],
+      "drugbank_id": "DB01526"
+    },
+    {
+      "id": "drugbank-db01536",
+      "name": "4-Androstenedione",
+      "drugClass": "DrugBank Experimental",
+      "routes": [
+        "PO"
+      ],
+      "drugbank_id": "DB01536"
+    },
+    {
+      "id": "drugbank-db01484",
+      "name": "4-Bromo-2,5-dimethoxyamphetamine",
+      "drugClass": "Serotonin Receptor Agonists",
+      "routes": [
+        "PO"
+      ],
+      "drugbank_id": "DB01484"
+    },
+    {
+      "id": "drugbank-db01537",
+      "name": "4-Bromo-2,5-dimethoxyphenethylamine",
+      "drugClass": "DrugBank Experimental",
+      "routes": [
+        "PO"
+      ],
+      "drugbank_id": "DB01537"
+    },
+    {
+      "id": "drugbank-db01500",
+      "name": "4-Hydroxy-19-nortestosterone",
+      "drugClass": "DrugBank Experimental",
+      "routes": [
+        "PO"
+      ],
+      "drugbank_id": "DB01500"
+    },
+    {
+      "id": "drugbank-db01485",
+      "name": "4-Hydroxytestosterone",
+      "drugClass": "Steroids",
+      "routes": [
+        "PO"
+      ],
+      "drugbank_id": "DB01485"
+    },
+    {
+      "id": "drugbank-db01472",
+      "name": "4-Methoxyamphetamine",
+      "drugClass": "DrugBank Experimental",
+      "routes": [
+        "PO"
+      ],
+      "drugbank_id": "DB01472"
+    },
+    {
+      "id": "drugbank-db01528",
+      "name": "4-Methyl-2,5-dimethoxyamphetamine",
+      "drugClass": "Serotonin Receptor Agonists",
+      "routes": [
+        "PO"
+      ],
+      "drugbank_id": "DB01528"
+    },
+    {
+      "id": "drugbank-db01447",
+      "name": "4-Methylaminorex",
+      "drugClass": "DrugBank Experimental",
+      "routes": [
+        "PO"
+      ],
+      "drugbank_id": "DB01447"
+    }
+  ],
+  "invalid_examples": []
+}
