@@ -1,0 +1,8 @@
+{
+  "primaryClass": "Solvents",
+  "slug": "solvents",
+  "stem": "solvents",
+  "subclasses": [
+    "Solvents"
+  ]
+}

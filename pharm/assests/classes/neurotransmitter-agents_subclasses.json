@@ -1,0 +1,9 @@
+{
+  "primaryClass": "Neurotransmitter Agents",
+  "slug": "neurotransmitter-agents",
+  "stem": "neurotransmitter",
+  "subclasses": [
+    "Neurotransmitter Agents",
+    "Neurotransmitter Uptake Inhibitors"
+  ]
+}

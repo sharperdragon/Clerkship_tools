@@ -1,0 +1,8 @@
+{
+  "primaryClass": "Coagulants",
+  "slug": "coagulants",
+  "stem": "coagulants",
+  "subclasses": [
+    "Coagulants"
+  ]
+}

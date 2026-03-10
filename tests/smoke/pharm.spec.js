@@ -1,6 +1,7 @@
 const { test, expect } = require("@playwright/test");
 const path = require("path");
 const pharmData = require(path.resolve(__dirname, "../../pharm/assests/pharm_data_drugbank_enriched.json"));
+const classTaxonomyIndex = require(path.resolve(__dirname, "../../pharm/assests/classes/class_subclasses_index.json"));
 
 // ================================================================
 // Configurable values (change here)
@@ -42,10 +43,105 @@ const RXNORM_CLASSES_FIELD = `${RXNORM_SECTION} [data-rxnorm-field="classes"]`;
 const VIEW_MODE_COMPACT = `${VIEW_MODE_CONTROL} [data-view-mode="compact"]`;
 const VIEW_MODE_STRUCTURED = `${VIEW_MODE_CONTROL} [data-view-mode="structured"]`;
 const VIEW_MODE_TREE = `${VIEW_MODE_CONTROL} [data-view-mode="tree"]`;
-const EXPECTED_TOTAL_MEDICATIONS = pharmData.medications.length;
+const PHARM_MEDICATIONS = Array.isArray(pharmData) ? pharmData : (pharmData.medications || []);
+const EXPECTED_TOTAL_MEDICATIONS = PHARM_MEDICATIONS.length;
 const MOBILE_WIDTH = 900;
 const MOBILE_HEIGHT = 1000;
 const RXNORM_TEST_RXCUI = "435";
+const CLASS_TREE_DATASET = buildClassTreeDataset(PHARM_MEDICATIONS, classTaxonomyIndex);
+
+function normalizeText(value) {
+  return String(value || "")
+    .normalize("NFKD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[\u2019']/g, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function toTextArray(value) {
+  if (Array.isArray(value)) return value.map((item) => String(item || "").trim()).filter(Boolean);
+  const text = String(value || "").trim();
+  return text ? [text] : [];
+}
+
+function buildClassTreeDataset(medications, taxonomyIndex) {
+  const primaries = Array.isArray(taxonomyIndex?.primaries) ? taxonomyIndex.primaries : [];
+  const labelSet = new Set();
+  const normalizedToCanonical = new Map();
+
+  primaries.forEach((primary) => {
+    toTextArray(primary?.subclasses).forEach((subclass) => {
+      labelSet.add(subclass);
+      const key = normalizeText(subclass);
+      if (key && !normalizedToCanonical.has(key)) {
+        normalizedToCanonical.set(key, subclass);
+      }
+    });
+  });
+
+  const medicationTags = medications.map((medication) => {
+    const tags = new Set();
+    const classValue = String(medication?.drugClass || "").trim();
+    const categories = toTextArray(medication?.drugbank?.categories);
+    const candidates = [classValue, ...categories];
+
+    candidates.forEach((candidate) => {
+      const key = normalizeText(candidate);
+      const canonical = normalizedToCanonical.get(key);
+      if (canonical) tags.add(canonical);
+    });
+
+    return tags;
+  });
+
+  const total = medications.length;
+  const primarySummaries = [];
+
+  primaries.forEach((primary) => {
+    const primaryClass = String(primary?.primaryClass || "").trim();
+    const subclasses = toTextArray(primary?.subclasses);
+    if (!primaryClass || subclasses.length === 0) return;
+
+    let primaryCount = 0;
+    const subclassCounts = new Map(subclasses.map((name) => [name, 0]));
+
+    medicationTags.forEach((tags) => {
+      let hasPrimaryMatch = false;
+      subclasses.forEach((subclass) => {
+        if (!tags.has(subclass)) return;
+        hasPrimaryMatch = true;
+        subclassCounts.set(subclass, (subclassCounts.get(subclass) || 0) + 1);
+      });
+      if (hasPrimaryMatch) primaryCount += 1;
+    });
+
+    if (primaryCount === 0 || primaryCount >= total) return;
+
+    const narrowingSubclass = subclasses.find((subclass) => {
+      const count = subclassCounts.get(subclass) || 0;
+      return count > 0 && count < primaryCount;
+    });
+
+    if (!narrowingSubclass) return;
+
+    primarySummaries.push({
+      primaryClass,
+      primaryCount,
+      subclass: narrowingSubclass,
+      subclassCount: subclassCounts.get(narrowingSubclass) || 0,
+    });
+  });
+
+  const candidate = primarySummaries[0] || null;
+  if (!candidate) {
+    throw new Error("Unable to derive class tree smoke-test candidate from taxonomy index.");
+  }
+
+  return { candidate };
+}
 
 async function mockRxNormSuccess(page, { lookupName = "albuterol", responseDelayMs = 0 } = {}) {
   const requestCounts = { byName: 0, related: 0, properties: 0, classes: 0 };
@@ -249,27 +345,47 @@ test.describe("Pharm reference smoke", () => {
     await expect(page.locator(VIEW_MODE_STRUCTURED)).toHaveAttribute("aria-pressed", "true");
   });
 
-  test("filters combine correctly and clear resets all controls", async ({ page }) => {
+  test("class tree taxonomy applies primary then subclass narrowing and clear resets", async ({ page }) => {
     await page.goto(PHARM_PATH);
     await waitForCards(page);
 
+    const { primaryClass, subclass } = CLASS_TREE_DATASET.candidate;
     const initialVisibleCardCount = await page.locator(RESULTS_CARDS).count();
 
     await page.locator(CLASS_TREE_TRIGGER).click();
-    await page.locator(CLASS_TREE_COLUMNS).getByRole("treeitem", { name: /Antithrombotics/i }).click();
-    await page.locator(ROUTE_FILTER).selectOption("SQ");
-    await page.locator(SEARCH_INPUT).fill("enoxaparin");
+    const primaryOptions = page.locator(`${CLASS_TREE_COLUMNS} .class-tree-option[data-depth=\"0\"][data-action=\"node\"]`);
+    const primaryOption = primaryOptions.filter({ hasText: primaryClass }).first();
+    await expect(primaryOption).toBeVisible();
+    await primaryOption.evaluate((el) => el.click());
 
-    await expect.poll(async () => page.locator(RESULTS_CARDS).count()).toBeGreaterThanOrEqual(1);
-    const filteredCardCount = await page.locator(RESULTS_CARDS).count();
-    await expect(page.locator(RESULTS_CARDS).first()).toContainText(/Enoxaparin/i);
+    const primaryFilteredCount = await page.locator(RESULTS_CARDS).count();
+    expect(primaryFilteredCount).toBeGreaterThan(0);
+    expect(primaryFilteredCount).toBeLessThan(initialVisibleCardCount);
+
+    const subclassOptions = page.locator(`${CLASS_TREE_COLUMNS} .class-tree-option[data-depth=\"1\"][data-action=\"node\"]`);
+    const subclassOption = subclassOptions.filter({ hasText: subclass }).first();
+    await subclassOption.evaluate((el) => el.click());
+    const subclassFilteredCount = await page.locator(RESULTS_CARDS).count();
+    expect(subclassFilteredCount).toBeGreaterThan(0);
+    expect(subclassFilteredCount).toBeLessThan(primaryFilteredCount);
 
     await page.locator(CLEAR_FILTERS_BUTTON).click();
     await expect(page.locator(SEARCH_INPUT)).toHaveValue("");
     await expect(page.locator(CLASS_TREE_TRIGGER)).toContainText("All classes");
     await expect(page.locator(ROUTE_FILTER)).toHaveValue("");
-    await expect.poll(async () => page.locator(RESULTS_CARDS).count()).toBeGreaterThan(filteredCardCount);
+    await expect.poll(async () => page.locator(RESULTS_CARDS).count()).toBeGreaterThan(subclassFilteredCount);
     await expect.poll(async () => page.locator(RESULTS_CARDS).count()).toBeGreaterThanOrEqual(initialVisibleCardCount);
+  });
+
+  test("class tree excludes DrugBank status-only classes", async ({ page }) => {
+    await page.goto(PHARM_PATH);
+    await waitForCards(page);
+
+    await page.locator(CLASS_TREE_TRIGGER).click();
+    const statusOnlyOption = page.locator(CLASS_TREE_COLUMNS)
+      .getByRole("treeitem")
+      .filter({ hasText: /DrugBank (Experimental|Investigational|Illicit|Withdrawn|Nutraceutical)/i });
+    await expect(statusOnlyOption).toHaveCount(0);
   });
 
   test("keyboard navigation supports arrow movement and enter selection", async ({ page }) => {

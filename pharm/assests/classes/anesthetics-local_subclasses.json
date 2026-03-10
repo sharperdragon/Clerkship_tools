@@ -1,0 +1,12 @@
+{
+  "primaryClass": "Anesthetics, Local",
+  "slug": "anesthetics-local",
+  "stem": "anesthetics",
+  "subclasses": [
+    "Anesthetics",
+    "Anesthetics, Dissociative",
+    "Anesthetics, Inhalation",
+    "Anesthetics, Intravenous",
+    "Anesthetics, Local"
+  ]
+}

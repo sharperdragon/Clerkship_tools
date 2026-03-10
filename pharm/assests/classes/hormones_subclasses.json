@@ -1,0 +1,8 @@
+{
+  "primaryClass": "Hormones",
+  "slug": "hormones",
+  "stem": "hormones",
+  "subclasses": [
+    "Hormones"
+  ]
+}

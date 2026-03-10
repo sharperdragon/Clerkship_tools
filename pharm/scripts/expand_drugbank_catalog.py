@@ -32,10 +32,13 @@ EXCLUDE_IF_ONLY_GROUPS: Set[str] = {"experimental"}
 
 DEFAULT_ROUTE = "PO"
 FALLBACK_CLASS = "Unclassified"
-PLACEHOLDER_CONTRAINDICATION = "Refer to official prescribing information."
-PLACEHOLDER_ADVERSE_EFFECT = "Common adverse effects vary by formulation and dose."
-PLACEHOLDER_INTERACTION = "Review full interaction profile before prescribing."
-PLACEHOLDER_MONITORING = "Monitor per indication, route, and patient-specific risk factors."
+REMOVE_GENERIC_PLACEHOLDER_TEXT = True
+GENERIC_PLACEHOLDER_BY_FIELD = {
+    "contraindications": "Refer to official prescribing information.",
+    "adverseEffects": "Common adverse effects vary by formulation and dose.",
+    "majorInteractions": "Review full interaction profile before prescribing.",
+    "monitoring": "Monitor per indication, route, and patient-specific risk factors.",
+}
 
 SORT_OUTPUT_BY_NAME = True
 MAX_EXAMPLE_COUNT = 40
@@ -47,10 +50,6 @@ REQUIRED_FIELDS = [
     "routes",
     "moa",
     "indications",
-    "contraindications",
-    "adverseEffects",
-    "majorInteractions",
-    "monitoring",
 ]
 
 ROUTE_PRIORITY = ["PO", "IV", "IM", "SQ", "INH", "IN", "SL", "Topical", "PR"]
@@ -257,6 +256,109 @@ def ensure_non_empty_list(values: List[str], fallback: str) -> List[str]:
     return cleaned if cleaned else [fallback]
 
 
+def parse_drugbank_categories_from_indication(text: object) -> List[str]:
+    raw = clean_text(text)
+    if not raw:
+        return []
+    prefix = "drugbank categories:"
+    if not raw.lower().startswith(prefix):
+        return []
+
+    remainder = raw[len(prefix) :].strip()
+    if not remainder:
+        return []
+    return [item.strip() for item in remainder.split(",") if item.strip()]
+
+
+def remove_generic_placeholders(record: Dict[str, object]) -> Dict[str, object]:
+    if not REMOVE_GENERIC_PLACEHOLDER_TEXT:
+        return record
+
+    for field, placeholder in GENERIC_PLACEHOLDER_BY_FIELD.items():
+        if field not in record:
+            continue
+
+        value = record.get(field)
+        placeholder_norm = normalize_name(placeholder)
+
+        if isinstance(value, list):
+            cleaned = []
+            for item in value:
+                item_text = clean_text(item)
+                if not item_text:
+                    continue
+                if normalize_name(item_text) == placeholder_norm:
+                    continue
+                cleaned.append(item_text)
+            record[field] = cleaned
+            continue
+
+        item_text = clean_text(value)
+        if item_text and normalize_name(item_text) == placeholder_norm:
+            record[field] = []
+
+    return record
+
+
+def normalize_drugbank_categories_into_class(record: Dict[str, object]) -> Dict[str, object]:
+    indications_raw = record.get("indications", [])
+    extracted_categories: List[str] = []
+    cleaned_indications: List[str] = []
+
+    if isinstance(indications_raw, list):
+        for item in indications_raw:
+            item_text = clean_text(item)
+            if not item_text:
+                continue
+            from_indication = parse_drugbank_categories_from_indication(item_text)
+            if from_indication:
+                extracted_categories.extend(from_indication)
+                continue
+            cleaned_indications.append(item_text)
+        record["indications"] = cleaned_indications
+
+    drugbank_meta = record.get("drugbank", {})
+    if isinstance(drugbank_meta, dict):
+        categories = drugbank_meta.get("categories", [])
+        if isinstance(categories, list):
+            extracted_categories.extend([clean_text(item) for item in categories if clean_text(item)])
+
+    deduped_categories: List[str] = []
+    seen = set()
+    for item in extracted_categories:
+        key = normalize_name(item)
+        if not key or key in seen:
+            continue
+        seen.add(key)
+        deduped_categories.append(item)
+
+    if deduped_categories:
+        primary_category = deduped_categories[0]
+        current_class = clean_text(record.get("drugClass", ""))
+        should_replace_class = (
+            not current_class
+            or normalize_name(current_class) == normalize_name(primary_category)
+            or current_class.startswith("DrugBank ")
+            or current_class == FALLBACK_CLASS
+        )
+        if should_replace_class:
+            record["drugClass"] = primary_category
+
+    indications_final = record.get("indications", [])
+    if isinstance(indications_final, list) and len(indications_final) == 0:
+        moa_text = clean_text(record.get("moa", ""))
+        if moa_text:
+            record["indications"] = [moa_text]
+        else:
+            med_name = clean_text(record.get("name", ""))
+            if med_name:
+                record["indications"] = [f"See DrugBank entry for {med_name}."]
+            else:
+                record["indications"] = ["See DrugBank entry."]
+
+    return record
+
+
 def build_generated_record(row: Dict[str, str], existing_ids: Set[str]) -> Dict[str, object]:
     drugbank_id = clean_text(row.get("drugbank_id", ""))
     name = clean_text(row.get("name", ""))
@@ -272,8 +374,6 @@ def build_generated_record(row: Dict[str, str], existing_ids: Set[str]) -> Dict[
     indications = []
     if desc_sentence:
         indications.append(desc_sentence)
-    if categories:
-        indications.append(f"DrugBank categories: {', '.join(categories[:3])}")
 
     pearls = []
     if drugbank_id:
@@ -292,10 +392,10 @@ def build_generated_record(row: Dict[str, str], existing_ids: Set[str]) -> Dict[
         "routes": infer_routes(row),
         "moa": moa,
         "indications": ensure_non_empty_list(indications, f"See DrugBank entry for {name}."),
-        "contraindications": [PLACEHOLDER_CONTRAINDICATION],
-        "adverseEffects": [PLACEHOLDER_ADVERSE_EFFECT],
-        "majorInteractions": [PLACEHOLDER_INTERACTION],
-        "monitoring": [PLACEHOLDER_MONITORING],
+        "contraindications": [],
+        "adverseEffects": [],
+        "majorInteractions": [],
+        "monitoring": [],
         "aliases": [],
         "brandExamples": [],
         "pearls": pearls,
@@ -328,9 +428,16 @@ def missing_required_fields(record: Dict[str, object]) -> List[str]:
 
 def run() -> Dict[str, object]:
     source_payload = load_json(INPUT_ENRICHED_JSON_PATH)
-    existing_medications = source_payload.get("medications", [])
-    if not isinstance(existing_medications, list):
+    existing_medications_raw = source_payload.get("medications", [])
+    if not isinstance(existing_medications_raw, list):
         raise ValueError("Expected `medications` array in enriched JSON input.")
+    existing_medications: List[Dict[str, object]] = []
+    for med in existing_medications_raw:
+        if not isinstance(med, dict):
+            continue
+        cleaned = remove_generic_placeholders(med)
+        cleaned = normalize_drugbank_categories_into_class(cleaned)
+        existing_medications.append(cleaned)
 
     rows = load_tsv_rows(DRUGBANK_TSV_PATH)
     include_groups = {g.lower() for g in INCLUDE_GROUPS}
@@ -434,6 +541,7 @@ def run() -> Dict[str, object]:
             "include_groups": sorted(include_groups),
             "exclude_groups": sorted(exclude_groups),
             "exclude_if_only_groups": sorted(exclude_if_only_groups),
+            "remove_generic_placeholder_text": REMOVE_GENERIC_PLACEHOLDER_TEXT,
             "default_route": DEFAULT_ROUTE,
             "fallback_class": FALLBACK_CLASS,
             "sort_output_by_name": SORT_OUTPUT_BY_NAME,

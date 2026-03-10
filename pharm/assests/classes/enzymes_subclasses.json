@@ -1,0 +1,8 @@
+{
+  "primaryClass": "Enzymes",
+  "slug": "enzymes",
+  "stem": "enzymes",
+  "subclasses": [
+    "Enzymes"
+  ]
+}

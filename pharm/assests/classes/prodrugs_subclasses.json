@@ -1,0 +1,8 @@
+{
+  "primaryClass": "Prodrugs",
+  "slug": "prodrugs",
+  "stem": "prodrugs",
+  "subclasses": [
+    "Prodrugs"
+  ]
+}

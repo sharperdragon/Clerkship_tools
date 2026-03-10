@@ -1,0 +1,8 @@
+{
+  "primaryClass": "Nutritional Support",
+  "slug": "nutritional-support",
+  "stem": "nutritional",
+  "subclasses": [
+    "Nutritional Support"
+  ]
+}

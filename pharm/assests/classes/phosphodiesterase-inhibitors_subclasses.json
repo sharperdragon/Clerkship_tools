@@ -1,0 +1,10 @@
+{
+  "primaryClass": "Phosphodiesterase Inhibitors",
+  "slug": "phosphodiesterase-inhibitors",
+  "stem": "phosphodiesterase",
+  "subclasses": [
+    "Phosphodiesterase 3 Inhibitors",
+    "Phosphodiesterase 5 Inhibitors",
+    "Phosphodiesterase Inhibitors"
+  ]
+}

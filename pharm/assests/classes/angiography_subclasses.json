@@ -1,0 +1,8 @@
+{
+  "primaryClass": "Angiography",
+  "slug": "angiography",
+  "stem": "angiography",
+  "subclasses": [
+    "Angiography"
+  ]
+}

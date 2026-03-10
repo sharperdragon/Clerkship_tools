@@ -1,0 +1,10 @@
+{
+  "primaryClass": "Diuretics, Mercurial",
+  "slug": "diuretics-mercurial",
+  "stem": "diuretics",
+  "subclasses": [
+    "Diuretics",
+    "Diuretics, Mercurial",
+    "Diuretics, Osmotic"
+  ]
+}

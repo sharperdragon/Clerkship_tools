@@ -1,0 +1,11 @@
+{
+  "primaryClass": "Antibiotics, Topical",
+  "slug": "antibiotics-topical",
+  "stem": "antibiotics",
+  "subclasses": [
+    "Antibiotics",
+    "Antibiotics, Antineoplastic",
+    "Antibiotics, Antitubercular",
+    "Antibiotics, Topical"
+  ]
+}

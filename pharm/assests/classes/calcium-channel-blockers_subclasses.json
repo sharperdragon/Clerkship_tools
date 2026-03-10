@@ -1,0 +1,9 @@
+{
+  "primaryClass": "Calcium Channel Blockers",
+  "slug": "calcium-channel-blockers",
+  "stem": "calcium",
+  "subclasses": [
+    "Calcium Channel Agonists",
+    "Calcium Channel Blockers"
+  ]
+}

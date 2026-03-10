@@ -1,0 +1,8 @@
+{
+  "primaryClass": "Pesticides",
+  "slug": "pesticides",
+  "stem": "pesticides",
+  "subclasses": [
+    "Pesticides"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "primaryClass": "Cholinesterase Reactivators",
+  "slug": "cholinesterase-reactivators",
+  "stem": "cholinesterase",
+  "subclasses": [
+    "Cholinesterase Inhibitors",
+    "Cholinesterase Reactivators"
+  ]
+}

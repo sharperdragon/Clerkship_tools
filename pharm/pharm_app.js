@@ -4,7 +4,10 @@
   // ================================================================
   const CONFIG = {
     dataPath: "./assests/pharm_data_drugbank_enriched.json",
+    classTaxonomyPath: "./assests/classes/class_subclasses_index.json",
     searchDebounceMs: 170,
+    classTreeHoverOpenEnabled: true,
+    classTreeHoverCloseDelayMs: 140,
     mobileBreakpointPx: 1080,
     emptyStateCopy: "No medications match the current filters.",
     noSelectionTitle: "No selection",
@@ -17,6 +20,7 @@
     themeChangedEvent: "core-theme-changed",
     themeToggleLightLabel: "Light mode",
     themeToggleDarkLabel: "Dark mode",
+    cardSnippetExcludedIndicationPrefixes: ["DrugBank categories:"],
     relevanceWeights: {
       exactName: 100,
       namePrefix: 80,
@@ -188,10 +192,6 @@
     "routes",
     "moa",
     "indications",
-    "contraindications",
-    "adverseEffects",
-    "majorInteractions",
-    "monitoring",
   ];
 
   // ================================================================
@@ -210,6 +210,8 @@
     classTreeById: new Map(),
     classTreePath: [],
     classTreeMenuOpen: false,
+    classTreeOpenedByHover: false,
+    classTaxonomy: null,
     routeFilter: "",
     viewMode: CONFIG.defaultViewMode,
     expandedClassId: null,
@@ -218,6 +220,7 @@
     rxnormByMedicationId: {},
   };
   const RXNORM_IN_FLIGHT = new Map();
+  let classTreeCloseTimer = null;
 
   const EL = {};
 
@@ -252,14 +255,55 @@
     if (EL.classTreeTrigger) {
       EL.classTreeTrigger.addEventListener("click", () => {
         if (STATE.classTreeMenuOpen) {
-          closeClassTreeMenu();
+          if (STATE.classTreeOpenedByHover) {
+            openClassTreeMenu({ source: "click" });
+          } else {
+            closeClassTreeMenu();
+          }
         } else {
-          openClassTreeMenu();
+          openClassTreeMenu({ source: "click" });
         }
       });
     }
 
+    if (EL.classTreeControl) {
+      EL.classTreeControl.addEventListener("mouseenter", () => {
+        if (!CONFIG.classTreeHoverOpenEnabled || !hasHoverPointer()) return;
+        cancelClassTreeClose();
+        openClassTreeMenu({ source: "hover" });
+      });
+
+      EL.classTreeControl.addEventListener("mouseleave", () => {
+        if (!CONFIG.classTreeHoverOpenEnabled || !hasHoverPointer()) return;
+        if (!STATE.classTreeOpenedByHover) return;
+        scheduleClassTreeClose();
+      });
+    }
+
     if (EL.classTreeColumns) {
+      EL.classTreeColumns.addEventListener("mouseover", (event) => {
+        if (!CONFIG.classTreeHoverOpenEnabled || !hasHoverPointer()) return;
+        const option = event.target.closest(".class-tree-option");
+        if (!option) return;
+        const action = cleanText(option.dataset.action);
+        if (action !== "node") return;
+
+        const nodeId = cleanText(option.dataset.nodeId);
+        const depth = Number(option.dataset.depth);
+        const safeDepth = Number.isFinite(depth) && depth >= 0 ? depth : 0;
+        if (!nodeId || !STATE.classTreeById.has(nodeId)) return;
+
+        const node = STATE.classTreeById.get(nodeId);
+        if (!Array.isArray(node.children) || node.children.length === 0) return;
+
+        const nextPath = STATE.classTreePath.slice(0, safeDepth);
+        nextPath[safeDepth] = nodeId;
+        if (nextPath.join("|") === STATE.classTreePath.join("|")) return;
+
+        STATE.classTreePath = nextPath;
+        renderClassTreeColumns();
+      });
+
       EL.classTreeColumns.addEventListener("click", (event) => {
         const option = event.target.closest(".class-tree-option");
         if (!option) return;
@@ -270,7 +314,8 @@
         const safeDepth = Number.isFinite(depth) && depth >= 0 ? depth : 0;
 
         if (action === "all") {
-          resetClassFilter();
+          resetClassFilter({ rerender: false });
+          STATE.classTreePath = [];
           applyFiltersAndRender();
           closeClassTreeMenu();
           return;
@@ -279,13 +324,32 @@
         if (!nodeId || !STATE.classTreeById.has(nodeId)) return;
 
         const node = STATE.classTreeById.get(nodeId);
+        const currentNodeIdAtDepth = cleanText(STATE.classTreePath[safeDepth]);
+        const isSameNodeAtDepth = currentNodeIdAtDepth === nodeId;
+        const isPathEndingAtDepth = STATE.classTreePath.length === safeDepth + 1;
+        const hasChildren = Array.isArray(node.children) && node.children.length > 0;
+
+        if (isSameNodeAtDepth && isPathEndingAtDepth) {
+          STATE.classTreePath = STATE.classTreePath.slice(0, safeDepth);
+          const parentId = cleanText(node.parentId);
+          if (parentId && parentId !== "class-tree-root" && STATE.classTreeById.has(parentId)) {
+            applyClassFilterNode(STATE.classTreeById.get(parentId), { rerender: false });
+          } else {
+            resetClassFilter({ rerender: false });
+          }
+          renderClassTreeColumns();
+          applyFiltersAndRender();
+          return;
+        }
+
         STATE.classTreePath = STATE.classTreePath.slice(0, safeDepth);
         STATE.classTreePath[safeDepth] = nodeId;
 
-        applyClassFilterNode(node);
+        applyClassFilterNode(node, { rerender: false });
         renderClassTreeColumns();
+        applyFiltersAndRender();
 
-        if (!node.children || node.children.length === 0) {
+        if (!hasChildren) {
           closeClassTreeMenu();
         }
       });
@@ -419,20 +483,24 @@
   async function loadData() {
     hideError();
     try {
-      const response = await fetch(CONFIG.dataPath, { cache: "no-store" });
-      if (!response.ok) {
-        throw new Error(`Failed to load medication data (${response.status})`);
-      }
+      const [payload, classTaxonomy] = await Promise.all([
+        loadMedicationPayload(),
+        loadClassTaxonomyIndex(),
+      ]);
 
-      const payload = await response.json();
       const records = Array.isArray(payload)
         ? payload
         : Array.isArray(payload.medications)
           ? payload.medications
           : [];
 
+      STATE.classTaxonomy = classTaxonomy;
+      const classLabelMap = classTaxonomy?.labelMap instanceof Map
+        ? classTaxonomy.labelMap
+        : null;
+
       STATE.medications = records
-        .map((record, index) => normalizeMedication(record, index))
+        .map((record, index) => normalizeMedication(record, index, classLabelMap))
         .filter(Boolean)
         .sort((a, b) => a.name.localeCompare(b.name));
 
@@ -442,11 +510,37 @@
     } catch (error) {
       showError(error instanceof Error ? error.message : "Unable to load medication data.");
       STATE.medications = [];
+      STATE.classTaxonomy = null;
       applyFiltersAndRender();
     }
   }
 
-  function normalizeMedication(record, index) {
+  async function loadMedicationPayload() {
+    const response = await fetch(CONFIG.dataPath, { cache: "no-store" });
+    if (!response.ok) {
+      throw new Error(`Failed to load medication data (${response.status})`);
+    }
+    return response.json();
+  }
+
+  async function loadClassTaxonomyIndex() {
+    try {
+      const response = await fetch(CONFIG.classTaxonomyPath, { cache: "no-store" });
+      if (!response.ok) {
+        throw new Error(`Failed to load class taxonomy (${response.status})`);
+      }
+
+      const payload = await response.json();
+      const taxonomy = normalizeClassTaxonomyIndex(payload);
+      if (!taxonomy || taxonomy.primaries.length === 0) return null;
+      return taxonomy;
+    } catch (error) {
+      console.warn("Class taxonomy unavailable; falling back to derived class paths.", error);
+      return null;
+    }
+  }
+
+  function normalizeMedication(record, index, classLabelMap = null) {
     if (!record || typeof record !== "object") return null;
 
     const id = cleanText(record.id) || `med-${index + 1}`;
@@ -462,6 +556,7 @@
     const aliases = toTextArray(record.aliases);
     const brandExamples = toTextArray(record.brandExamples);
     const pearls = toTextArray(record.pearls);
+    const classTags = deriveMedicationClassTags(record, drugClass, classLabelMap);
 
     const normalized = {
       id,
@@ -477,6 +572,7 @@
       aliases,
       brandExamples,
       pearls,
+      classTags,
     };
 
     const missing = REQUIRED_FIELDS.filter((field) => {
@@ -529,13 +625,73 @@
     return normalized;
   }
 
+  function deriveMedicationClassTags(record, drugClass, classLabelMap = null) {
+    const raw = [];
+    const classValue = cleanText(drugClass);
+    if (classValue) raw.push(classValue);
+
+    const drugbankMeta = record && typeof record === "object"
+      ? record.drugbank
+      : null;
+    if (drugbankMeta && typeof drugbankMeta === "object") {
+      raw.push(...toTextArray(drugbankMeta.categories));
+    }
+
+    const deduped = uniq(raw.map((item) => cleanText(item)).filter(Boolean));
+    if (!(classLabelMap instanceof Map) || classLabelMap.size === 0) {
+      return deduped;
+    }
+
+    const mapped = deduped
+      .map((item) => classLabelMap.get(normalizeSearch(item)))
+      .filter(Boolean);
+    return uniq(mapped);
+  }
+
+  function normalizeClassTaxonomyIndex(payload) {
+    const entries = Array.isArray(payload?.primaries) ? payload.primaries : [];
+    const primaries = [];
+    const labelMap = new Map();
+    const seenPrimaries = new Set();
+
+    entries.forEach((entry) => {
+      const primaryClass = cleanText(entry?.primaryClass);
+      if (!primaryClass) return;
+
+      const primaryKey = normalizeSearch(primaryClass);
+      if (!primaryKey || seenPrimaries.has(primaryKey)) return;
+
+      const subclasses = uniq(toTextArray(entry?.subclasses))
+        .map((item) => cleanText(item))
+        .filter(Boolean)
+        .sort((a, b) => a.localeCompare(b));
+      if (subclasses.length === 0) return;
+
+      seenPrimaries.add(primaryKey);
+      primaries.push({
+        primaryClass,
+        slug: cleanText(entry?.slug) || makeStableId(primaryClass),
+        subclasses,
+      });
+
+      subclasses.forEach((label) => {
+        const key = normalizeSearch(label);
+        if (key && !labelMap.has(key)) {
+          labelMap.set(key, label);
+        }
+      });
+    });
+
+    return { primaries, labelMap };
+  }
+
   function applyFiltersAndRender() {
     const q = normalizeSearch(STATE.query);
     const classFilterClassSet = STATE.classFilterClassSet;
     const routeFilter = STATE.routeFilter;
 
     STATE.filtered = STATE.medications.filter((medication) => {
-      if (classFilterClassSet && !classFilterClassSet.has(medication.drugClass)) return false;
+      if (classFilterClassSet && !hasClassTagMatch(classFilterClassSet, medication.classTags)) return false;
       if (routeFilter && !medication.routes.includes(routeFilter)) return false;
       if (q && !medication.searchBlob.includes(q)) return false;
       return true;
@@ -558,6 +714,12 @@
     renderResultCount();
     renderCards();
     renderDetail();
+  }
+
+  function hasClassTagMatch(classFilterClassSet, classTags) {
+    if (!(classFilterClassSet instanceof Set) || classFilterClassSet.size === 0) return true;
+    const tags = Array.isArray(classTags) ? classTags : [];
+    return tags.some((tag) => classFilterClassSet.has(tag));
   }
 
   function compareByRelevance(a, b, query) {
@@ -629,21 +791,23 @@
   }
 
   function buildClassFilterTree(medications) {
+    if (hasActiveClassTaxonomy()) {
+      return buildClassFilterTreeFromTaxonomy(medications, STATE.classTaxonomy);
+    }
+
     let nodeSequence = 0;
     const root = createClassFilterNode("class-tree-root", "All classes", null);
 
     medications.forEach((medication, index) => {
       const medicationId = cleanText(medication.id) || `med-${index + 1}`;
       const classValue = cleanText(medication.drugClass) || CONFIG.uncategorizedClassLabel;
-      const rawPath = Array.isArray(medication.classPath) && medication.classPath.length > 0
-        ? medication.classPath
-        : [classValue];
+      const path = buildClassFilterPath(medication, classValue);
 
       let node = root;
       node.classSet.add(classValue);
       node.medicationSet.add(medicationId);
 
-      rawPath.forEach((segment) => {
+      path.forEach((segment) => {
         const label = cleanText(segment) || CONFIG.uncategorizedClassLabel;
         const lookupKey = normalizeSearch(label);
         if (!node.childMap.has(lookupKey)) {
@@ -662,7 +826,7 @@
     const byId = new Map();
 
     function finalize(node) {
-      node.children = Array.from(node.childMap.values()).sort((a, b) => a.label.localeCompare(b.label));
+      node.children = Array.from(node.childMap.values()).sort(compareClassFilterNodes);
       node.classValues = Array.from(node.classSet.values());
       node.medicationCount = node.medicationSet.size;
       byId.set(node.id, node);
@@ -673,11 +837,136 @@
     return { root, byId };
   }
 
-  function createClassFilterNode(id, label, parentId) {
+  function hasActiveClassTaxonomy() {
+    return Boolean(
+      STATE.classTaxonomy
+      && Array.isArray(STATE.classTaxonomy.primaries)
+      && STATE.classTaxonomy.primaries.length > 0
+    );
+  }
+
+  function buildClassFilterTreeFromTaxonomy(medications, taxonomy) {
+    let nodeSequence = 0;
+    const root = createClassFilterNode("class-tree-root", "All classes", null, 0);
+    const byId = new Map();
+    const subclassLookup = new Map();
+    const primaries = Array.isArray(taxonomy?.primaries) ? taxonomy.primaries : [];
+
+    primaries.forEach((primaryEntry, primaryIndex) => {
+      const primaryLabel = cleanText(primaryEntry?.primaryClass);
+      if (!primaryLabel) return;
+
+      nodeSequence += 1;
+      const primaryNode = createClassFilterNode(
+        `class-tree-${nodeSequence}`,
+        primaryLabel,
+        root.id,
+        primaryIndex
+      );
+      root.childMap.set(`primary-${primaryIndex}`, primaryNode);
+
+      const subclasses = uniq(toTextArray(primaryEntry?.subclasses))
+        .map((item) => cleanText(item))
+        .filter(Boolean)
+        .sort((a, b) => a.localeCompare(b));
+
+      subclasses.forEach((subclassLabel, subclassIndex) => {
+        nodeSequence += 1;
+        const subclassNode = createClassFilterNode(
+          `class-tree-${nodeSequence}`,
+          subclassLabel,
+          primaryNode.id,
+          subclassIndex
+        );
+        primaryNode.childMap.set(`subclass-${subclassIndex}`, subclassNode);
+        primaryNode.classSet.add(subclassLabel);
+        subclassNode.classSet.add(subclassLabel);
+        root.classSet.add(subclassLabel);
+
+        const subclassKey = normalizeSearch(subclassLabel);
+        if (!subclassLookup.has(subclassKey)) {
+          subclassLookup.set(subclassKey, []);
+        }
+        subclassLookup.get(subclassKey).push({ primaryNode, subclassNode });
+      });
+    });
+
+    medications.forEach((medication, index) => {
+      const medicationId = cleanText(medication.id) || `med-${index + 1}`;
+      root.medicationSet.add(medicationId);
+
+      const classTags = Array.isArray(medication.classTags) ? medication.classTags : [];
+      classTags.forEach((tag) => {
+        const refs = subclassLookup.get(normalizeSearch(tag));
+        if (!Array.isArray(refs)) return;
+
+        refs.forEach(({ primaryNode, subclassNode }) => {
+          primaryNode.medicationSet.add(medicationId);
+          subclassNode.medicationSet.add(medicationId);
+        });
+      });
+    });
+
+    function finalize(node) {
+      node.children = Array.from(node.childMap.values()).sort(compareClassFilterNodes);
+      node.classValues = Array.from(node.classSet.values());
+      node.medicationCount = node.medicationSet.size;
+      byId.set(node.id, node);
+      node.children.forEach(finalize);
+    }
+
+    finalize(root);
+    return { root, byId };
+  }
+
+  function compareClassFilterNodes(a, b) {
+    const aOrder = Number.isFinite(a.sortIndex) ? a.sortIndex : Number.POSITIVE_INFINITY;
+    const bOrder = Number.isFinite(b.sortIndex) ? b.sortIndex : Number.POSITIVE_INFINITY;
+    if (aOrder !== bOrder) {
+      return aOrder - bOrder;
+    }
+    return a.label.localeCompare(b.label);
+  }
+
+  function buildClassFilterPath(medication, classValue) {
+    const sourcePath = Array.isArray(medication.classPath)
+      ? medication.classPath
+        .map((segment) => cleanText(segment))
+        .filter((segment) => segment && !isAlphabeticalClassBucketLabel(segment))
+      : [];
+
+    const rawTop = sourcePath[0] || classValue;
+    const normalizedClass = normalizeSearch(classValue);
+    const topLabel = rawTop;
+
+    const segments = [topLabel];
+
+    // Preserve one intermediate hierarchy level when available.
+    if (sourcePath.length > 1) {
+      const mid = sourcePath[1];
+      const normalizedMid = normalizeSearch(mid);
+      if (
+        normalizedMid
+        && normalizedMid !== normalizeSearch(topLabel)
+        && normalizedMid !== normalizedClass
+      ) {
+        segments.push(mid);
+      }
+    }
+
+    if (normalizeSearch(segments[segments.length - 1]) !== normalizedClass) {
+      segments.push(classValue);
+    }
+
+    return dedupeClassPath(segments);
+  }
+
+  function createClassFilterNode(id, label, parentId, sortIndex = Number.POSITIVE_INFINITY) {
     return {
       id,
       label,
       parentId,
+      sortIndex,
       childMap: new Map(),
       children: [],
       classSet: new Set(),
@@ -734,9 +1023,33 @@
     EL.classTreeTrigger.classList.toggle("is-filtered", Boolean(STATE.classFilterNodeId));
   }
 
-  function openClassTreeMenu() {
+  function hasHoverPointer() {
+    return window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+  }
+
+  function cancelClassTreeClose() {
+    if (!classTreeCloseTimer) return;
+    clearTimeout(classTreeCloseTimer);
+    classTreeCloseTimer = null;
+  }
+
+  function scheduleClassTreeClose() {
+    cancelClassTreeClose();
+    classTreeCloseTimer = setTimeout(() => {
+      classTreeCloseTimer = null;
+      closeClassTreeMenu();
+    }, CONFIG.classTreeHoverCloseDelayMs);
+  }
+
+  function openClassTreeMenu(options = {}) {
+    const { source = "click" } = options;
     if (!EL.classTreeMenu || !EL.classTreeTrigger) return;
+    cancelClassTreeClose();
+    if (STATE.classTreeMenuOpen && source === "hover" && !STATE.classTreeOpenedByHover) {
+      return;
+    }
     STATE.classTreeMenuOpen = true;
+    STATE.classTreeOpenedByHover = source === "hover";
     EL.classTreeMenu.hidden = false;
     EL.classTreeTrigger.setAttribute("aria-expanded", "true");
     if (EL.classTreeControl) {
@@ -747,7 +1060,9 @@
 
   function closeClassTreeMenu() {
     if (!EL.classTreeMenu || !EL.classTreeTrigger) return;
+    cancelClassTreeClose();
     STATE.classTreeMenuOpen = false;
+    STATE.classTreeOpenedByHover = false;
     EL.classTreeMenu.hidden = true;
     EL.classTreeTrigger.setAttribute("aria-expanded", "false");
     if (EL.classTreeControl) {
@@ -791,7 +1106,9 @@
 
       const title = document.createElement("p");
       title.className = "class-tree-column__title";
-      title.textContent = column.depth === 0 ? "All classes" : column.parent.label;
+      title.textContent = column.depth === 0
+        ? (hasActiveClassTaxonomy() ? "Primary classes" : "All classes")
+        : column.parent.label;
       columnEl.appendChild(title);
 
       const list = document.createElement("div");
@@ -1299,9 +1616,7 @@
 
     const snippet = document.createElement("p");
     snippet.className = "med-card__snippet";
-    const snippetValues = medication.indications.length > 0
-      ? medication.indications.slice(0, 2)
-      : [medication.moa];
+    const snippetValues = getCardSnippetValues(medication);
     snippet.textContent = snippetValues.join(" • ");
 
     card.appendChild(title);
@@ -1309,6 +1624,23 @@
     card.appendChild(routeRow);
     card.appendChild(snippet);
     return card;
+  }
+
+  function getCardSnippetValues(medication) {
+    const excludedPrefixes = CONFIG.cardSnippetExcludedIndicationPrefixes.map((prefix) =>
+      normalizeSearch(prefix)
+    );
+    const indicationValues = medication.indications.filter((item) => {
+      const normalizedItem = normalizeSearch(item);
+      return !excludedPrefixes.some((prefix) => normalizedItem.startsWith(prefix));
+    });
+
+    if (indicationValues.length > 0) {
+      return indicationValues.slice(0, 2);
+    }
+
+    const moa = cleanText(medication.moa);
+    return moa ? [moa] : ["No summary available."];
   }
 
   function handleResultsGridKeydown(event) {
@@ -2099,7 +2431,7 @@
     const deduped = [];
     path.forEach((segment) => {
       const label = cleanText(segment);
-      if (!label) return;
+      if (!label || isAlphabeticalClassBucketLabel(label)) return;
 
       const prior = deduped[deduped.length - 1];
       if (prior && normalizeSearch(prior) === normalizeSearch(label)) return;
@@ -2111,6 +2443,12 @@
     }
 
     return deduped;
+  }
+
+  function isAlphabeticalClassBucketLabel(value) {
+    const label = cleanText(value);
+    if (!label) return false;
+    return /^classes?\s+[#_a-z0-9](?:\s*[-/]\s*[#_a-z0-9])?$/i.test(label);
   }
 
   function showError(message) {

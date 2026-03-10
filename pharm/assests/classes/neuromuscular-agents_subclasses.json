@@ -1,0 +1,11 @@
+{
+  "primaryClass": "Neuromuscular Agents",
+  "slug": "neuromuscular-agents",
+  "stem": "neuromuscular",
+  "subclasses": [
+    "Neuromuscular Agents",
+    "Neuromuscular Blocking Agents",
+    "Neuromuscular Depolarizing Agents",
+    "Neuromuscular Nondepolarizing Agents"
+  ]
+}

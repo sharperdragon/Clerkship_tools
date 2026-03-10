@@ -1,0 +1,9 @@
+{
+  "primaryClass": "Fertility Agents, Female",
+  "slug": "fertility-agents-female",
+  "stem": "fertility",
+  "subclasses": [
+    "Fertility Agents",
+    "Fertility Agents, Female"
+  ]
+}

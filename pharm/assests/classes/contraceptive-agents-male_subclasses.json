@@ -1,0 +1,10 @@
+{
+  "primaryClass": "Contraceptive Agents, Male",
+  "slug": "contraceptive-agents-male",
+  "stem": "contraceptive",
+  "subclasses": [
+    "Contraceptive Agents",
+    "Contraceptive Agents, Female",
+    "Contraceptive Agents, Male"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "primaryClass": "Narcotics",
+  "slug": "narcotics",
+  "stem": "narcotics",
+  "subclasses": [
+    "Narcotics"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "primaryClass": "Vitamin A",
+  "slug": "vitamin-a",
+  "stem": "vitamin",
+  "subclasses": [
+    "Vitamin A",
+    "Vitamin B Complex",
+    "Vitamin D",
+    "Vitamin K"
+  ]
+}

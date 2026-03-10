@@ -1,0 +1,10 @@
+{
+  "primaryClass": "Contraceptives, Oral, Combined",
+  "slug": "contraceptives-oral-combined",
+  "stem": "contraceptives",
+  "subclasses": [
+    "Contraceptives, Oral, Combined",
+    "Contraceptives, Oral, Synthetic",
+    "Contraceptives, Postcoital, Synthetic"
+  ]
+}

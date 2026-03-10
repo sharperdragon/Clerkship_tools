@@ -1,0 +1,8 @@
+{
+  "primaryClass": "Vitamins",
+  "slug": "vitamins",
+  "stem": "vitamins",
+  "subclasses": [
+    "Vitamins"
+  ]
+}

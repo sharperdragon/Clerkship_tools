@@ -1,0 +1,8 @@
+{
+  "primaryClass": "Supplements",
+  "slug": "supplements",
+  "stem": "supplements",
+  "subclasses": [
+    "Supplements"
+  ]
+}

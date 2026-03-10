@@ -1,0 +1,11 @@
+{
+  "primaryClass": "Dopamine Antagonists",
+  "slug": "dopamine-antagonists",
+  "stem": "dopamine",
+  "subclasses": [
+    "Dopamine Agents",
+    "Dopamine Agonists",
+    "Dopamine Antagonists",
+    "Dopamine Uptake Inhibitors"
+  ]
+}

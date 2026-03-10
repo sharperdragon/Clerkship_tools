@@ -1,0 +1,8 @@
+{
+  "primaryClass": "Mutagens",
+  "slug": "mutagens",
+  "stem": "mutagens",
+  "subclasses": [
+    "Mutagens"
+  ]
+}

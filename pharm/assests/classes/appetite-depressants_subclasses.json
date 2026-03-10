@@ -1,0 +1,9 @@
+{
+  "primaryClass": "Appetite Depressants",
+  "slug": "appetite-depressants",
+  "stem": "appetite",
+  "subclasses": [
+    "Appetite Depressants",
+    "Appetite Stimulants"
+  ]
+}

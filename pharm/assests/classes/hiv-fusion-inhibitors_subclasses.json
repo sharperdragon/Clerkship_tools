@@ -1,0 +1,9 @@
+{
+  "primaryClass": "HIV Fusion Inhibitors",
+  "slug": "hiv-fusion-inhibitors",
+  "stem": "hiv",
+  "subclasses": [
+    "HIV Fusion Inhibitors",
+    "HIV Protease Inhibitors"
+  ]
+}

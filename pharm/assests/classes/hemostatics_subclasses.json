@@ -1,0 +1,8 @@
+{
+  "primaryClass": "Hemostatics",
+  "slug": "hemostatics",
+  "stem": "hemostatics",
+  "subclasses": [
+    "Hemostatics"
+  ]
+}

@@ -184,6 +184,7 @@ body {
 
 .control--class-tree {
   position: relative;
+  isolation: isolate;
 }
 
 .control__label {
@@ -210,23 +211,44 @@ body {
 .class-tree-trigger {
   width: 100%;
   min-height: 44px;
-  border: 1px solid var(--border);
+  border: 1px solid color-mix(in oklab, var(--border), var(--surface) 10%);
   border-radius: var(--radius-md);
   padding: 10px 12px;
-  background: var(--surface);
+  background:
+    linear-gradient(
+      180deg,
+      color-mix(in oklab, var(--surface), var(--brand-soft) 12%) 0%,
+      var(--surface) 100%
+    );
   color: var(--text);
   font-family: var(--font-body);
   font-size: 15px;
+  font-weight: 650;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 10px;
   cursor: pointer;
+  box-shadow: inset 0 1px 0 color-mix(in oklab, var(--surface), transparent 30%);
+  transition:
+    border-color var(--motion-fast) ease,
+    background-color var(--motion-fast) ease,
+    box-shadow var(--motion-fast) ease;
+}
+
+.class-tree-trigger:hover {
+  border-color: color-mix(in oklab, var(--brand), var(--border) 45%);
+  box-shadow: 0 3px 14px color-mix(in oklab, var(--brand), transparent 90%);
 }
 
 .class-tree-trigger.is-filtered {
-  border-color: color-mix(in oklab, var(--brand), var(--border) 48%);
-  background: color-mix(in oklab, var(--brand-soft), var(--surface) 74%);
+  border-color: color-mix(in oklab, var(--brand), var(--border) 35%);
+  background:
+    linear-gradient(
+      180deg,
+      color-mix(in oklab, var(--brand-soft), var(--surface) 64%) 0%,
+      color-mix(in oklab, var(--brand-soft), var(--surface) 78%) 100%
+    );
 }
 
 .class-tree-trigger__caret {
@@ -244,28 +266,36 @@ body {
   top: calc(100% + 6px);
   left: 0;
   z-index: 80;
-  width: min(960px, 90vw);
-  max-height: min(65vh, 560px);
-  border: 1px solid color-mix(in oklab, var(--brand), var(--border) 56%);
-  border-radius: var(--radius-md);
-  background: color-mix(in oklab, var(--surface), transparent 4%);
+  width: clamp(360px, 58vw, 920px);
+  max-height: min(64vh, 560px);
+  border: 1px solid color-mix(in oklab, var(--brand), var(--border) 58%);
+  border-radius: 12px;
+  background: color-mix(in oklab, var(--surface), transparent 2%);
   box-shadow: var(--shadow-lg);
-  overflow: auto;
+  overflow: hidden;
 }
 
 .class-tree-columns {
   display: flex;
   align-items: stretch;
   min-width: max-content;
+  max-width: 100%;
+  max-height: inherit;
+  overflow: auto;
+  overscroll-behavior: contain;
+  scrollbar-gutter: stable;
+  background: color-mix(in oklab, var(--surface-muted), transparent 12%);
 }
 
 .class-tree-column {
-  min-width: 240px;
-  max-width: 280px;
-  border-right: 1px solid var(--border);
-  padding: 8px;
+  min-width: 248px;
+  max-width: 312px;
+  border-right: 1px solid color-mix(in oklab, var(--border), transparent 10%);
+  padding: 10px 11px;
   display: grid;
-  gap: 6px;
+  gap: 8px;
+  align-content: start;
+  background: color-mix(in oklab, var(--surface), var(--surface-muted) 16%);
 }
 
 .class-tree-column:last-child {
@@ -274,51 +304,59 @@ body {
 
 .class-tree-column__title {
   margin: 0;
-  padding: 3px 6px;
+  padding: 2px 6px 7px;
   font-size: 11px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.06em;
   color: var(--text-muted);
+  border-bottom: 1px solid color-mix(in oklab, var(--border), transparent 18%);
 }
 
 .class-tree-list {
   display: grid;
   gap: 3px;
+  align-content: start;
 }
 
 .class-tree-option {
   width: 100%;
   border: 1px solid transparent;
-  border-radius: 9px;
+  border-radius: 8px;
   background: transparent;
   color: var(--text);
   text-align: left;
-  padding: 7px 8px;
+  padding: 8px 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 8px;
+  gap: 9px;
   cursor: pointer;
+  transition:
+    border-color var(--motion-fast) ease,
+    background-color var(--motion-fast) ease,
+    color var(--motion-fast) ease;
 }
 
 .class-tree-option:hover {
-  background: color-mix(in oklab, var(--surface-muted), transparent 6%);
-  border-color: color-mix(in oklab, var(--brand), var(--border) 68%);
+  background: color-mix(in oklab, var(--surface-muted), var(--surface) 34%);
+  border-color: color-mix(in oklab, var(--brand), var(--border) 72%);
 }
 
 .class-tree-option.is-branch {
-  background: color-mix(in oklab, var(--brand-soft), var(--surface) 80%);
+  background: color-mix(in oklab, var(--brand-soft), var(--surface) 82%);
+  border-color: color-mix(in oklab, var(--brand), var(--border) 76%);
 }
 
 .class-tree-option.is-active {
-  background: color-mix(in oklab, var(--brand-soft), var(--surface) 64%);
-  border-color: color-mix(in oklab, var(--brand), var(--border) 40%);
+  background: color-mix(in oklab, var(--brand-soft), var(--surface) 66%);
+  border-color: color-mix(in oklab, var(--brand), var(--border) 44%);
   color: var(--brand-strong);
 }
 
 .class-tree-option__label {
   font-size: 13px;
+  font-weight: 600;
   line-height: 1.25;
 }
 
@@ -330,22 +368,31 @@ body {
 }
 
 .class-tree-option__count {
-  font-size: 11px;
+  font-size: 10px;
   font-weight: 700;
   color: var(--text-muted);
-  border: 1px solid color-mix(in oklab, var(--brand), var(--border) 62%);
+  border: 1px solid color-mix(in oklab, var(--border), transparent 10%);
   border-radius: var(--radius-pill);
-  padding: 1px 7px;
+  padding: 1px 6px;
+  background: color-mix(in oklab, var(--surface-muted), transparent 4%);
 }
 
 .class-tree-option.is-active .class-tree-option__count {
   color: var(--brand-strong);
-  border-color: color-mix(in oklab, var(--brand), var(--border) 40%);
+  border-color: color-mix(in oklab, var(--brand), var(--border) 46%);
+  background: color-mix(in oklab, var(--brand-soft), var(--surface) 72%);
 }
 
 .class-tree-option__caret {
   color: var(--text-muted);
-  font-size: 13px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.class-tree-option:hover .class-tree-option__caret,
+.class-tree-option.is-branch .class-tree-option__caret,
+.class-tree-option.is-active .class-tree-option__caret {
+  color: var(--brand-strong);
 }
 
 .input::placeholder {
@@ -992,8 +1039,13 @@ body.detail-open {
     max-height: min(56vh, 460px);
   }
 
+  .class-tree-columns {
+    min-width: max-content;
+  }
+
   .class-tree-column {
-    min-width: 220px;
+    min-width: 228px;
+    max-width: 86vw;
   }
 
   .control--result-meta {
